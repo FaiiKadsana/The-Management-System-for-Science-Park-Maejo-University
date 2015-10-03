@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research-MJU</title>
+<title>The Science Park MJU</title>
 <!-- Bootstrap -->
 <!--<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/> -->
 <link href="<?php echo base_url("asset/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css">	
