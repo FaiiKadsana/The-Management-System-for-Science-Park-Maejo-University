@@ -9,7 +9,7 @@
                              <small>Home</small>
                         </h1>
                         <ol class="breadcrumb">
-                             <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index")?>">Home</a></li><li><i class="fa fa-pencil"></i><a href="<?php echo base_url("backend/research")?>">จัดการข้อมูลผลงานวิจัย</a></li>
+                             <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index")?>">Home</a></li><li><i class="fa fa-pencil"></i><a href="<?php echo base_url("backend/specialization")?>">จัดการประเภทความเชี่ยวชาญ</a></li>
                         </ol>
                     </div>
                 </div></br>
@@ -41,16 +41,16 @@
                 <div class="row">
                     <div class="col-sm-12">
                     <div class="panel panel-default">
-          <div class="panel-heading">จัดการข้อมูลผลงานวิจัย</div>
+          <div class="panel-heading">จัดการประเภทความเชี่ยวชาญ</div>
             <div class="panel-body">
                <table class="table table-striped">
                    <tr class="bg-success"></p>
                         <td width="5%">#</td>
-                        <td width="10%">ชื่อ</td>
-                        <td width="10%">นามสกุล</td>
-                         <td width="25%">ผลงานวิจัย</td>
-                        <td width="20%">หน่วยงาน</td>
-                        <td width="20%">ประเภทผลงานวิจัย</td>
+                        <td width="20%">รหัสนักวิจัย</td>
+                        <td width="20%">ชื่อ</td>
+                        <td width="20%">นามสกุล</td>
+                         <td width="25%">ความเชี่ยวชาญ</td>
+                       
                                        
                      </tr>   
                     
@@ -58,15 +58,13 @@
 
                      <tr class="bg-success"></p>
                        <td width="5%">1</td>
-                        <td width="10%">อลงกรณ์</td>
-                        <td width="10%">เอยู่เกิด</td>
-                         <td width="20%">กังหันลมน้ำ</td>
-                        <td width="20%">มหาลัยแม่โจ้</td>
-                        <td width="20%">วิทยาการคอมพิวเตอร์</td>    
-                        <td><a href=""><button type="button" class="btn btn-info" id="viewresearcher"><i class="fa fa-eye"></i>  ดู</button></a></td> 
+                       <td width="20%">2101</td>
+                        <td width="20%">องกรณ์</td>
+                        <td width="20%">อยู่เกิด</td>
+                         <td width="25%">น้ำ</td> 
                         <td><a href=""><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></a></td>           
                         <td><a href=""><button type="button" class="btn btn-warning" id="editresearcher"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-                        <td><a href=""><button type="button" class="btn btn-danger"><i class="fa fa-times"></i>  ลบ</button></a></td>                     
+                                         
                      </tr>       
                      
                      <!-- End -->
