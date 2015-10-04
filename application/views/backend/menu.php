@@ -5,7 +5,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-pencil"></i> นักวิจัย <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo1" class="collapse">
                            <li><a class="" href="<?php echo base_url("backend/researcher")?>">จัดการข้อมูลนักวิจัย</a></li>                          
-                          <li><a class="" href="<?php echo base_url("backend/research1")?>">จัดการข้อมูลผลงานวิจัย</a></li>
+                          <li><a class="" href="<?php echo base_url("backend/research")?>">จัดการข้อมูลผลงานวิจัย</a></li>
                           <li><a class="" href="<?php echo base_url("backend/researchaward")?>">จัดการข้อมูลรางวัลงานวิจัย</a></li>
                           <li><a class="" href="<?php echo base_url("backend/specialization")?>">จัดการประเภทความเชี่ยวชาญ</a></li>
                         </ul>

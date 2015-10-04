@@ -9,7 +9,7 @@
                              <small>Home</small>
                         </h1>
                         <ol class="breadcrumb">
-                             <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index")?>">Home</a></li><li><i class="fa fa-pencil"></i><a href="<?php echo base_url("backend/researcher")?>">จัดการข้อมูลนักวิจัย</a></li>
+                             <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index")?>">Home</a></li><li><i class="fa fa-pencil"></i><a href="<?php echo base_url("backend/research")?>">จัดการข้อมูลผลงานวิจัย</a></li>
                         </ol>
                     </div>
                 </div></br>
@@ -45,19 +45,24 @@
             <div class="panel-body">
                <table class="table table-striped">
                    <tr class="bg-success"></p>
-                        <td width="15%">#</td>
-                        <td width="20%">รหัสนักวิจัย</td>
-                        <td width="25%">ชื่อ</td>
-                        <td width="25%">นามสกุล</td>                      
+                        <td width="5%">#</td>
+                        <td width="10%">ชื่อ</td>
+                        <td width="10%">นามสกุล</td>
+                         <td width="25%">ชื่อผลงานวิจัย</td>
+                        <td width="20%">หน่วยงาน</td>
+                        <td width="20%">ประเภทผลงานวิจัย</td>
+                                       
                      </tr>   
                     
                     <!-- Show &Join table -->
 
                      <tr class="bg-success"></p>
-                        <td width="15%">1</td>
-                        <td width="20%">2589</td>
-                        <td width="25%">อลงกรณ์</td>
-                        <td width="25%">อยู่เกิด</td>        
+                       <td width="5%">1</td>
+                        <td width="10%">อลงกรณ์</td>
+                        <td width="10%">เอยู่เกิด</td>
+                         <td width="20%">กังหันลมน้ำ</td>
+                        <td width="20%">มหาลัยแม่โจ้</td>
+                        <td width="20%">วิทยาการคอมพิวเตอร์</td>    
                         <td><a href=""><button type="button" class="btn btn-info" id="viewresearcher"><i class="fa fa-eye"></i>  ดู</button></a></td>          
                         <td><a href=""><button type="button" class="btn btn-warning" id="editresearcher"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
                         <td><a href=""><button type="button" class="btn btn-danger"><i class="fa fa-times"></i>  ลบ</button></a></td>                     
@@ -67,26 +72,8 @@
 
                </table>
 
- <!-- Large modal -->
 
-<script>
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $("p").hide();
-    });
-    $("#show").click(function(){
-        $("p").show();
-    });
-});
-</script>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="researcher1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
 
 
 
