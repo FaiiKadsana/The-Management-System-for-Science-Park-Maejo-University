@@ -15,7 +15,7 @@
                 </div></br>
                 <!-- /.row -->
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12" >
                         <center>
                             <table >
                               <tr>
@@ -29,7 +29,10 @@
                                       </span>
                                   </div>
                                </td>
+                               <td width="30%">
+                             </td>
                                <td>
+                               <a href=""><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่มความเชี่ยวชาญ</button></a>
                                </td>
                               </tr>
                              </table>
@@ -61,7 +64,8 @@
                        <td width="20%">2101</td>
                         <td width="20%">องกรณ์</td>
                         <td width="20%">อยู่เกิด</td>
-                         <td width="25%">น้ำ</td> 
+                         <td width="25%">น้ำ</td>
+                         <td><a href=""><button type="button" class="btn btn-info" id="viewresearcher"><i class="fa fa-eye"></i>  ดู</button></a></td>   
                         <td><a href=""><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></a></td>           
                         <td><a href=""><button type="button" class="btn btn-warning" id="editresearcher"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
                                          

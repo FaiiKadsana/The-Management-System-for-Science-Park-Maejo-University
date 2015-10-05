@@ -11,7 +11,7 @@
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
-                                <i class="fa fa-home"></i> Home
+                                <i class="active"><i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index")?>">Home</a>
                             </li>
                         </ol>
                     </div>

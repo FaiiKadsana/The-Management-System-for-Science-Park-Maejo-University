@@ -44,11 +44,16 @@
           <div class="panel-heading">ข้อมูลนักวิจัย</div>
             <div class="panel-body">
                <table class="table table-striped">
-                   <tr class="bg-success"></p>
-                        <td width="15%">#</td>
-                        <td width="20%">รหัสนักวิจัย</td>
-                        <td width="25%">ชื่อ</td>
-                        <td width="25%">นามสกุล</td>                      
+                   <tr class="bg-success">
+                        <th width="15%">#</th>
+                        <th width="20%">รหัสนักวิจัย</th>
+                        <th width="25%">ชื่อ</th>
+                        <th width="25%">นามสกุล</th>   
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+
                      </tr>   
                     
                     <!-- Show &Join table -->
@@ -58,7 +63,7 @@
                         <td width="20%">2589</td>
                         <td width="25%">อลงกรณ์</td>
                         <td width="25%">อยู่เกิด</td>        
-                        <td><a href=""><button type="button" class="btn btn-info" id="viewresearcher"><i class="fa fa-eye"></i>  ดู</button></a></td>  
+                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-eye"></i>  ดู</button></td>  
                         <td><a href=""><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></a></td>          
                         <td><a href=""><button type="button" class="btn btn-warning" id="editresearcher"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
                         <td><a href=""><button type="button" class="btn btn-danger"><i class="fa fa-times"></i>  ลบ</button></a></td>                     
@@ -70,18 +75,14 @@
 
  <!-- Large modal -->
 
-<script>
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $("p").hide();
-    });
-    $("#show").click(function(){
-        $("p").show();
-    });
-});
-</script>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="researcher1">
+
+
+
+<!-- Large modal -->
+
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       ...
@@ -91,11 +92,10 @@ $(document).ready(function(){
 
 
 
+
             </div>
       </div>
-                      
-
-                    </div>
+                   </div>
                 </div>
                 <!-- /.row -->
             </div>
