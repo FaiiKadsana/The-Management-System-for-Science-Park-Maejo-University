@@ -44,14 +44,17 @@
       <div class="panel-heading">จัดการข้อมูลรางวัลงานวิจัย</div>
       <div class="panel-body">
        <table class="table table-striped">
-         <tr class="bg-success"></p>
-          <td width="5%">#</td>
-          <td width="10%">ชื่อ</td>
-          <td width="10%">นามสกุล</td>
-          <td width="25%">ผลงานวิจัย</td>
-          <td width="20%">รางวัลผลงานวิจัย</td>
-          <td width="20%">ประเภทรางวัลผลงานวิจัย</td>
-          
+         <tr class="bg-success">
+          <th width="5%">#</th>
+          <th width="10%">ชื่อ</th>
+          <th width="10%">นามสกุล</th>
+          <th width="20%">ผลงานวิจัย</th>
+          <th width="20%">รางวัลผลงานวิจัย</th>
+          <th width="20%">ประเภทรางวัลผลงานวิจัย</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
         </tr>   
         
         <!-- Show &Join table -->
@@ -60,7 +63,7 @@
          <td width="5%">1</td>
          <td width="10%">อลงกรณ์</td>
          <td width="10%">อยู่เกิด</td>
-         <td width="25%">กังหันลม</td>
+         <td width="20%">กังหันลม</td>
          <td width="20%">RS</td>
          <td width="20%">คิดสร้างสรรค์</td>   
          <td><a href=""><button type="button" class="btn btn-info" id="viewresearcher"><i class="fa fa-eye"></i>  ดู</button></a></td> 

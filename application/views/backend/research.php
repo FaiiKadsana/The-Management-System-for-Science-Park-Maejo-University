@@ -44,14 +44,17 @@
       <div class="panel-heading">จัดการข้อมูลผลงานวิจัย</div>
       <div class="panel-body">
        <table class="table table-striped">
-         <tr class="bg-success"></p>
-          <td width="5%">#</td>
-          <td width="10%">ชื่อ</td>
-          <td width="10%">นามสกุล</td>
-          <td width="25%">ผลงานวิจัย</td>
-          <td width="20%">หน่วยงาน</td>
-          <td width="20%">ประเภทผลงานวิจัย</td>
-          
+         <tr class="bg-success">
+          <th width="5%">#</th>
+          <th width="10%">ชื่อ</th>
+          <th width="10%">นามสกุล</th>
+          <th width="25%">ผลงานวิจัย</th>
+          <th width="20%">หน่วยงาน</th>
+          <th width="20%">ประเภทผลงานวิจัย</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
         </tr>   
         
         <!-- Show &Join table -->

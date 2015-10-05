@@ -63,7 +63,7 @@
           <td width="20%">2589</td>
           <td width="25%">อลงกรณ์</td>
           <td width="25%">อยู่เกิด</td>        
-          <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-eye"></i>  ดู</button></td> 
+          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-eye"></i>  ดู</button></td> 
           <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">

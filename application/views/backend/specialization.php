@@ -32,7 +32,7 @@
           <td width="30%">
           </td>
           <td>
-           <a href=""><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่มความเชี่ยวชาญ</button></a>
+           <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่มความเชี่ยวชาญ</button>
          </td>
        </tr>
      </table>
@@ -48,12 +48,15 @@
       <div class="panel-heading">จัดการประเภทความเชี่ยวชาญ</div>
       <div class="panel-body">
        <table class="table table-striped">
-         <tr class="bg-success"></p>
-          <td width="5%">#</td>
-          <td width="20%">รหัสนักวิจัย</td>
-          <td width="20%">ชื่อ</td>
-          <td width="20%">นามสกุล</td>
-          <td width="25%">ความเชี่ยวชาญ</td>
+         <tr class="bg-success">
+          <th width="5%">#</th>
+          <th width="20%">รหัสนักวิจัย</th>
+          <th width="20%">ชื่อ</th>
+          <th width="20%">นามสกุล</th>
+          <th width="25%">ความเชี่ยวชาญ</th>
+          <th></th>
+          <th></th>
+          <th></th>
 
 
         </tr>   
