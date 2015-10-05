@@ -1,8 +1,5 @@
-
         <div id="page-wrapper">
-
             <div class="container-fluid">
-
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
@@ -18,53 +15,26 @@
                 </div>
                 <!-- /.row -->
 <div class="row cal" >
-            <div class="col-md-10 portlets " >
+            <div class="col-sm-10 portlets " >
             <div class="panel panel-default">
                 <div class="panel-heading">
                   <h2><strong>Calendar</strong></h2>
                 <div class="panel-actions">
                     <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
                     <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                </div>  
-                 
-                </div><br><br><br>
+                </div>   
+                </div><br>
                 <div class="panel-body">
-                  <!-- Widget content -->
-                  
-                    <!-- Below line produces calendar. I am using FullCalendar plugin. -->
-                    <div id="calendar"></div>
-                  
+                  <!-- Calenda -->
+                  <!-- Below line produces calendar. I am using FullCalendar plugin. -->
+                    <div id="calendar">
+                    	<?php echo $calendar; ?>
+                    </div>
                 </div>
               </div>               
       </div>
 </div>
-                
-
- <!-- /.row -->
-<div class="row cal" >
-            <div class="col-md-10 portlets " >
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2><strong>Calendar</strong></h2>
-                <div class="panel-actions">
-                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
-                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                </div>  
-                 
-                </div><br><br><br>
-                <div class="panel-body">
-                  <!-- Widget content -->
-                  
-                    <!-- Below line produces calendar. I am using FullCalendar plugin. -->
-                    <div id="calendar"></div>
-                  
-                </div>
-              </div>               
-      </div>
-</div>
-                
-
- <!-- /.row -->
+             
 
             </div>
             <!-- /.container-fluid -->

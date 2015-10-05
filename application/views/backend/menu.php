@@ -37,6 +37,10 @@
                     <li>
                         <a href="tables.html"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
                     </li>
+                     <li>
+                        <a href="tables.html"><i class="fa fa-bullhorn"></i> จัดการสิทธิ์ผู้เข้าใช้</a>
+                    </li>
+                   
                    
                 </ul>
             </div>

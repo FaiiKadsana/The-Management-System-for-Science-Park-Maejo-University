@@ -3,19 +3,21 @@
 class Index extends CI_Controller {
 
 	public function __construct (){
+		
 		parent::__construct();
+		$this->load->model('backend/calendar_model');
 	
 
 	}
-	public function index(){
+	
+	function display($year = null, $month = null){
 		
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/index');
+		$data['calendar'] = $this->calendar_model->generate($year, $month);
+		$this->load->view('backend/index' , $data);
 		$this->load->view('backend/script');	
 		
-	}
-
-	
+		}
 }
