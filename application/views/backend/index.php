@@ -1,8 +1,5 @@
-
         <div id="page-wrapper">
-
             <div class="container-fluid">
-
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
@@ -18,7 +15,7 @@
                 </div>
                 <!-- /.row -->
 <div class="row cal" >
-            <div class="col-md-10 portlets " >
+            <div class="col-sm-10 portlets " >
             <div class="panel panel-default">
                 <div class="panel-heading">
                   <h2><strong>Calendar</strong></h2>

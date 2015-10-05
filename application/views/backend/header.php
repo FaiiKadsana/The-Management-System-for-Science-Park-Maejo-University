@@ -38,7 +38,7 @@
 			vertical-align: top;
 			background-color: #DEF;
 		}
-		.calendar .day td:hover{
+		.calendar .days td:hover{
 			background-color: #FFF;
 		}
 		.calendar .highlight{

@@ -34,7 +34,7 @@
 	  <div class= 'col-md-6'>
 	<div class='col-md-12'>
 		<center>
-			<p class='title-header org'>งานวิจัย</p>
+			<p class='title-header org'>ปฎิทินการนัดหมาย</p>
 			
 		</center><br>
 	</div>
@@ -42,11 +42,8 @@
 		<div class='container'>
 			<div class="row">
 				<div class="col-md-4">
-					<img src='<?php echo base_url("asset/images/about2.jpg") ?>' width='60%' height='40%'>
-				</div>
-				<div class="col-md-8" > 
-					<font size='3px'>ชื่องานวิจัย </font>
-					<p>รายละเอียด</p>
+					
+					
 				</div>
 			</div>
 		</div>
