@@ -14,7 +14,8 @@
                 <li class= "bo"><a href="http://stdb.most.go.th/Home"style="font-size: 15px;margin-left: 0px;">ฐานข้อมูลโครงสร้างพื้นฐาน ภาครัฐ</a></li>  
                 <li class= "bo"><a href=""style="font-size: 15px;margin-left: 0px;">Co-Research Platform</a></li>
                 <li class= "bo"><a href=""style="font-size: 15px;margin-left: 0px;">IRCT Platform</a></li>	
-                <li class= "bo"><a href=""style="font-size: 15px;margin-left: 0px;">บ่มเพาะ TBI Platform </a></li>	 				
+                <li class= "bo"><a href=""style="font-size: 15px;margin-left: 0px;">บ่มเพาะ TBI Platform </a></li>
+                <li class= "bo"><a href="http://www.nsp.or.th"style="font-size: 15px;margin-left: 0px;">Privilege Card </a></li>  	 				
       </ul>
 	          </li>
 			<li><a href="<?php echo base_url("frontend/contact")?>"><i class="fa fa-phone"></i> ติดต่อ</a></li>

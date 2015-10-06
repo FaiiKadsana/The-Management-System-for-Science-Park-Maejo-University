@@ -7,6 +7,7 @@
 
 <div class='row'>
 <div class= 'col-md-12'>
+   
    <div class= 'col-md-6'>
 	<div class='col-md-12'>
 		<center>
@@ -18,7 +19,7 @@
 		<div class='container'>
 			<div class="row">
 				<div class="col-md-4">
-					<img src='<?php echo base_url("asset/images/about2.jpg") ?>' width='60%' height='40%'>
+					<img src='<?php echo base_url("asset/images/banner1.png") ?>' width='60%' height='40%'>
 				</div>
 				<div class="col-md-8" > 
 					<font size='3px'>หัวข้อข่าว </font>
@@ -42,13 +43,23 @@
 		<div class='container'>
 			<div class="row">
 				<div class="col-md-4">
-					
+					 <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h2><strong>Calendar</strong></h2>
+                </div><br>
+                <div class="panel-body">
+                  <!-- Calenda -->
+                  
+                  
+               </div>
+             </div>          
 					
 				</div>
 			</div>
 		</div>
 	</div>
 	</div>
+
 </div>
 </div>
 
