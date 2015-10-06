@@ -6,10 +6,10 @@ class Calendar_Model extends CI_Model {
 			
 			$this->conf = array(
                'start_day' => 'sunday',
-               'month_type' => 'long',
-               'day_type' => 'shot',
+               //'month_type' => 'long',
+               //'day_type' => 'shot',
                'show_naxt_prev' => TRUE,
-               'naxt_prev_url' => base_url().'backend/index/display' 
+               'naxt_prev_url' => base_url() .'backend/index/display' 
 		);
 		
 		$this->conf['template'] = '
