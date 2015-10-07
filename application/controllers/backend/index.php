@@ -5,12 +5,11 @@ class Index extends CI_Controller {
 	public function __construct (){
 		
 		parent::__construct();
-		$this->load->model('backend/calendar_model');
-	
-
+		$this->load->model("backend/calendar_model");
 	}
 	
 	function display($year = null, $month = null){
+		echo 'year'.$year;
 		
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
@@ -19,5 +18,5 @@ class Index extends CI_Controller {
 		$this->load->view('backend/index' , $data);
 		$this->load->view('backend/script');	
 		
-		}
+	}
 }
