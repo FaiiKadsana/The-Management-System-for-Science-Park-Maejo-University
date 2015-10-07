@@ -2,14 +2,9 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
   <ul class="nav navbar-nav side-nav">
     <li class="active">
-      <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-pencil"></i> นักวิจัย <i class="fa fa-fw fa-caret-down"></i></a>
-      <ul id="demo1" class="collapse">
-       <li><a class="" href="<?php echo base_url("backend/researcher")?>">จัดการข้อมูลนักวิจัย</a></li>                          
-       <li><a class="" href="<?php echo base_url("backend/research")?>">จัดการข้อมูลผลงานวิจัย</a></li>
-       <li><a class="" href="<?php echo base_url("backend/researchaward")?>">จัดการข้อมูลรางวัลงานวิจัย</a></li>
-       <li><a class="" href="<?php echo base_url("backend/specialization")?>">จัดการประเภทความเชี่ยวชาญ</a></li>
-     </ul>
-   </li><li>
+      <a href="<?php echo base_url("backend/researcher")?>"><i class="fa fa-pencil"></i> จัดการข้อมูลฆนักวิจัย </i></a>
+   </li>
+   <li>
    <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-pencil"></i> ผู้ประกอบการ <i class="fa fa-fw fa-caret-down"></i></a>
    <ul id="demo2" class="collapse">
     <li><a class="" href="<?php echo base_url("backend/establishment")?>">จัดการสถานประกอบการ</a></li>                          
