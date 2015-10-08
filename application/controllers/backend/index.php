@@ -9,7 +9,7 @@ class Index extends CI_Controller {
 	}
 	
 	function display($year = null, $month = null){
-		echo 'year'.$year;
+		//echo 'year'.$year;
 		
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
