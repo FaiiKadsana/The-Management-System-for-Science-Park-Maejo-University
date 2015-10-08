@@ -68,14 +68,14 @@
           <td width="20%">2589</td>
           <td width="25%">อลงกรณ์</td>
           <td width="25%">อยู่เกิด</td>        
-          <td><a href="<?php echo base_url("backend/viewresearcher")?>"><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewresearcher"><i class="fa fa-eye"></i>  ดู</button></a></td> 
+          <td><a href="<?php echo base_url("backend/viewresearcher")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addresearcher"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
-          <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editresearcher"><i class="fa fa-wrench"></i>  แก้ไข</button></td>
+          <td><a href="<?php echo base_url("backend/editresearcher")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-lg-delresearcher"><i class="fa fa-times"></i>  ลบ</button></td>                     
         </tr>       
       </table>     
       <!-- End -->
-      <form >
+      <form id="" method="post" class="form-horizontal" action="">
 
         <div class="modal fade bs-example-modal-lg-addresearcher" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">
@@ -90,7 +90,7 @@
                   <div class="form-group">
                     <label class="col-lg-2 control-label">ชื่อ</label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="nth" placeholder="ภาษาไทย"  />
+                      <input type="text" class="form-control" name="nth" placeholder="ภาษาไทย"  reqquired />
                     </div>
                     <label class="col-lg-2 control-label">นามสกุล</label>
                     <div class="col-lg-4">
@@ -140,218 +140,223 @@
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="pos_detail"   />
                     </div>
-                    <label class="col-lg-2 control-label">ความเชียวชาญ</label>
-                    <div class="col-lg-4">
-                      <select class="form-control"  name="detail">
-                        <option value="th">ไทย</option>
-                        <option value="en">อังกฤษ</option>
-                      </select>
-                    </div>
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
                     <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="work_unit"   />
                     </div>
+
                   </div>
                   <br><br>
 
+                  <div class="form-group">
+                   <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+                   <div class="col-lg-4">
+                    <input type="file" name="upimg">
+                  </div>
+                  <label class="col-lg-2 control-label">ความเชียวชาญ</label>
+                  <div class="col-lg-4">
+                  <select class="form-control"  name="detail">
+                    <option value="th">ไทย</option>
+                    <option value="en">อังกฤษ</option>
+                  </select>
                 </div>
               </div>
-              <!-- End  row ประวัติส่วนตัว-->
+              <br><br>
 
-              <!-- Start  row ผลงานวิจัย-->
-              <div class="row">
-                <div class="col-lg-9 col-lg-offset-1">
-                  <hr>
-                  <center><h3>ข้อมูลผลงานวิจัย</h3></center> <br>
+            </div>
+          </div>
+          <!-- End  row ประวัติส่วนตัว-->
 
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">ชื่อผลงานวิจัย</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="name" placeholder="ภาษาไทย"   />
-                    </div>
-                    <label class="col-lg-2 control-label"></label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="name_eng"  placeholder="ภาษาอังกฤษ"  />
-                    </div>
-                  </div>
-                  <br><br>
+          <!-- Start  row ผลงานวิจัย-->
+          <div class="row">
+            <div class="col-lg-9 col-lg-offset-1">
+              <hr>
+              <center><h3>ข้อมูลผลงานวิจัย</h3></center> <br>
 
-                  <div class="form-group"> 
-                    <label class="col-lg-2 control-label">ประเภทผลงาน</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="ret_detail"  />
-                    </div>
-                    <label class="col-lg-2 control-label">หน่วยงานวิจัย</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="m_id"   />
-                    </div> 
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">สิทธิบัตร</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="patent"   />
-                    </div>
-                    <label class="col-lg-2 control-label">สถานภาพผลงาน</label>
-                    <div class="col-lg-4">
-                      <select class="form-control"  name="status" >
-                        <option value="th">อย่ในช่วงดำเนินงาน</option>
-                        <option value="en">สำเร้จแล้ว</option>
-                      </select>
-                    </div>
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-3 control-label">ปีที่เริ่มทำโครงการ</label>
-                    <div class="col-lg-3">
-                      <input type="text" class="form-control" name="re_start"   />
-                    </div>
-                    <label class="col-lg-3 control-label">ปีที่สิ้นสุดการทำโครงการ</label>
-                    <div class="col-lg-3">
-                      <input type="text" class="form-control" name="re_end"  />
-                    </div>
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">บทคัดย่อ</label>
-                    <div class="col-lg-4">
-                      <textarea class="form-control" name="abstract"></textarea>
-                    </div>
-                    <label class="col-lg-2 control-label">แหล่งเงินทุน</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="finances"  />
-                    </div>
-                  </div><br><br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">รางวัลผลงานวิจัย</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="award"   />
-                    </div>
-                    <label class="col-lg-2 control-label">ประเภทรางวัล</label>
-                    <div class="col-lg-4">
-                      <select class="form-control"  name="rea_type">
-                        <option value="th">ไทย</option>
-                        <option value="en">อังกฤษ</option>
-                      </select>
-                    </div>
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">วันรับรางวัลผลงานวิจัย</label>
-                    <div class="col-lg-4">
-                      <input type="date" class="form-control" name="rea_date"   />
-                    </div>
-                    <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
-                    <div class="col-lg-4">
-                      <input type="file" name="upfile">
-                    </div>
-                  </div><br><br>
-
-
+              <div class="form-group">
+                <label class="col-lg-2 control-label">ชื่อผลงานวิจัย</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="name" placeholder="ภาษาไทย"   />
+                </div>
+                <label class="col-lg-2 control-label"></label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="name_eng"  placeholder="ภาษาอังกฤษ"  />
                 </div>
               </div>
-              <!-- End  row ผลงานวิจัย-->
-              <!-- Start  row ประวัติการทำงาน-->
-              <div class="row">
-                <div class="col-lg-9 col-lg-offset-1">
-                  <hr>
-                  <center><h3>ประวัติการทำงาน</h3></center> <br>
+              <br><br>
 
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">วันที่เริ่มทำงาน</label>
-                    <div class="col-lg-4">
-                      <input type="date" class="form-control" name="work_start"  />
-                    </div>
-                    <label class="col-lg-2 control-label">วันที่สินสุดการทำงาน</label>
-                    <div class="col-lg-4">
-                      <input type="date" class="form-control" name="work_end"  />
-                    </div>
-                  </div>
-                  <br><br>
+              <div class="form-group"> 
+                <label class="col-lg-2 control-label">ประเภทผลงาน</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="ret_detail"  />
+                </div>
+                <label class="col-lg-2 control-label">หน่วยงานวิจัย</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="m_id"   />
+                </div> 
+              </div>
+              <br><br>
 
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="work_office"  />
-                    </div>
-
-                  </div>
-                  <br><br>
-
+              <div class="form-group">
+                <label class="col-lg-2 control-label">สิทธิบัตร</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="patent"   />
+                </div>
+                <label class="col-lg-2 control-label">สถานภาพผลงาน</label>
+                <div class="col-lg-4">
+                  <select class="form-control"  name="status" >
+                    <option value="th">อย่ในช่วงดำเนินงาน</option>
+                    <option value="en">สำเร้จแล้ว</option>
+                  </select>
                 </div>
               </div>
-              <!-- End  row ประวัติการทำงาน-->
-              <!-- Start  row ประวัติการศึกษา-->
-              <div class="row">
-                <div class="col-lg-9 col-lg-offset-1">
-                  <hr>
-                  <center><h3>ประวัติการศึกษา</h3></center> <br>
+              <br><br>
 
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">ระดับการศึกษา</label>
-                    <div class="col-lg-4">
-                      <select class="form-control"  name="degree">
-                        <option value="ปริญญาเอก">ปริญญาเอก</option>
-                        <option value="ปริญญาโท">ปริญญาโท</option>
-                        <option value="ปริญญาตรี">ปริญญาตรี</option>
-                      </select>
-                    </div>
-                    <label class="col-lg-2 control-label">ปีการศึกษา</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="dct_year"  />
-                    </div>
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">คณะ</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="faculty"  />
-                    </div>
-                    <label class="col-lg-2 control-label">สาขาวิชา</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="major"  />
-                    </div>
-                  </div>
-                  <br><br>
-
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">มหาวิทยาลัย</label>
-                    <div class="col-lg-4">
-                     <select class="form-control"  name="degree">
-                      <option value="แม่โจ้">แม่โจ้</option>
-                      <option value="เชียงใหม่">เชียงใหม่</option>
-                    </select>
-                  </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">ปีที่เริ่มทำโครงการ</label>
+                <div class="col-lg-3">
+                  <input type="text" class="form-control" name="re_start"   />
                 </div>
-                <br><br>
+                <label class="col-lg-3 control-label">ปีที่สิ้นสุดการทำโครงการ</label>
+                <div class="col-lg-3">
+                  <input type="text" class="form-control" name="re_end"  />
+                </div>
+              </div>
+              <br><br>
 
+              <div class="form-group">
+                <label class="col-lg-2 control-label">บทคัดย่อ</label>
+                <div class="col-lg-4">
+                  <textarea class="form-control" name="abstract"></textarea>
+                </div>
+                <label class="col-lg-2 control-label">แหล่งเงินทุน</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="finances"  />
+                </div>
+              </div><br><br><br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">รางวัลผลงานวิจัย</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="award"   />
+                </div>
+                <label class="col-lg-2 control-label">ประเภทรางวัล</label>
+                <div class="col-lg-4">
+                  <select class="form-control"  name="rea_type">
+                    <option value="th">ไทย</option>
+                    <option value="en">อังกฤษ</option>
+                  </select>
+                </div>
+              </div>
+              <br><br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">วันรับรางวัลผลงานวิจัย</label>
+                <div class="col-lg-4">
+                  <input type="date" class="form-control" name="rea_date"   />
+                </div>
+                <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+                <div class="col-lg-4">
+                  <input type="file" name="upfile">
+                </div>
+              </div><br><br>
+
+
+            </div>
+          </div>
+          <!-- End  row ผลงานวิจัย-->
+          <!-- Start  row ประวัติการทำงาน-->
+          <div class="row">
+            <div class="col-lg-9 col-lg-offset-1">
+              <hr>
+              <center><h3>ประวัติการทำงาน</h3></center> <br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">วันที่เริ่มทำงาน</label>
+                <div class="col-lg-4">
+                  <input type="date" class="form-control" name="work_start"  />
+                </div>
+                <label class="col-lg-2 control-label">วันที่สินสุดการทำงาน</label>
+                <div class="col-lg-4">
+                  <input type="date" class="form-control" name="work_end"  />
+                </div>
+              </div>
+              <br><br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="work_office"  />
+                </div>
+
+              </div>
+              <br><br>
+
+            </div>
+          </div>
+          <!-- End  row ประวัติการทำงาน-->
+          <!-- Start  row ประวัติการศึกษา-->
+          <div class="row">
+            <div class="col-lg-9 col-lg-offset-1">
+              <hr>
+              <center><h3>ประวัติการศึกษา</h3></center> <br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">ระดับการศึกษา</label>
+                <div class="col-lg-4">
+                  <select class="form-control"  name="degree">
+                    <option value="ปริญญาเอก">ปริญญาเอก</option>
+                    <option value="ปริญญาโท">ปริญญาโท</option>
+                    <option value="ปริญญาตรี">ปริญญาตรี</option>
+                  </select>
+                </div>
+                <label class="col-lg-2 control-label">ปีการศึกษา</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="dct_year"  />
+                </div>
+              </div>
+              <br><br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">คณะ</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="faculty"  />
+                </div>
+                <label class="col-lg-2 control-label">สาขาวิชา</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="major"  />
+                </div>
+              </div>
+              <br><br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">มหาวิทยาลัย</label>
+                <div class="col-lg-4">
+                 <select class="form-control"  name="degree">
+                  <option value="แม่โจ้">แม่โจ้</option>
+                  <option value="เชียงใหม่">เชียงใหม่</option>
+                </select>
               </div>
             </div>
-            <!-- End  row ประวัติการศึกษา-->
+            <br><br>
+
+          </div>
+        </div>
+        <!-- End  row ประวัติการศึกษา-->
 
 
-            <div class="modal-footer">
-             <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-           </div>
-
-         </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
        </div>
+
      </div>
-
-   </form>
-
+   </div>
  </div>
+
+</form>
+
+</div>
 </div>
 </div>
 </div>

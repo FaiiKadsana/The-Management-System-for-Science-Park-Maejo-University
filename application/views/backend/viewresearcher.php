@@ -11,7 +11,7 @@
        </h1>
        <ol class="breadcrumb">
          <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i><a href="<?php echo base_url("backend/researcher")?>">จัดการข้อมูลนักวิจัย</a></li>
-        <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewresearcher")?>">ดูข้อมูลการ</a></li>
+        <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewresearcher")?>">ดูข้อมูลนักวิจัย</a></li>
        </ol>
      </div>
    </div></br>
