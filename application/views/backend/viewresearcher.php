@@ -10,8 +10,8 @@
          <small>Home</small>
        </h1>
        <ol class="breadcrumb">
-         <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i><a href="<?php echo base_url("backend/researcher")?>">จัดการข้อมูลนักวิจัย</a></li>
-        <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewresearcher")?>">ดูข้อมูลนักวิจัย</a></li>
+         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/researcher")?>">จัดการข้อมูลนักวิจัย</a></li>
+        <li><i class="fa fa-eye"></i> <a href="<?php echo base_url("backend/viewresearcher")?>">ดูข้อมูลนักวิจัย</a></li>
        </ol>
      </div>
    </div></br>
@@ -46,7 +46,7 @@
                     <td>ที่อยู่ที่สามรถติดต่อไดั : นนทบุรี่</td>
                   </tr>
                   <tr>
-                    <td>เบอร์โทรศัยท์ : 0857856130</td>
+                    <td>เบอร์โทรศัพท์ : 0857856130</td>
                   </tr>
                   <tr>
                     <td>E-mail : Alongkornyukerd@gmail.com</td>    
@@ -83,7 +83,7 @@
           <div class="row">
             <div class=" col-md-offset-1 col-sm-10">
              <!-- ผลงานวิจัย -->
-             <div class="panel panel-primary">
+             <div class="panel panel-info">
                <div class="panel-heading">ผลงานวิจัย</div>
 
                <table class="table table-hover  table-hover table-striped table-condensed">
@@ -98,7 +98,7 @@
                 <!-- Show &Join table -->
                 <tr>
                   <td>1</td>
-                  <td><a  href="" >กังหันลบ</a></td>
+                  <td><p data-toggle="modal" data-target=".bs-example-modal-lg">กังหันลบ</p></td>
                   <td>2558</td>
                   <td>สำเร็จ</td>
                   <td>นานาชาติ</td>
@@ -106,7 +106,13 @@
                 </tr>
                 <!--end -->
               </table>
-
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      .555555
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -115,7 +121,7 @@
         <div class="row">
           <div class=" col-md-offset-1 col-sm-10">
            <!-- ประวัติการทำงาน -->
-           <div class="panel panel-primary">
+           <div class="panel panel-info">
              <div class="panel-heading">ประวัติการทำงาน</div>
 
              <table class="table table-hover  table-hover table-striped table-condensed">
@@ -145,7 +151,7 @@
       <div class="row">
         <div class=" col-md-offset-1 col-sm-10">
          <!-- ประวัติการศึกษา -->
-         <div class="panel panel-primary">
+         <div class="panel panel-info">
            <div class="panel-heading">ประวัติการศึกษา</div>
 
            <table class="table table-hover  table-hover table-striped table-condensed">
@@ -182,7 +188,7 @@
           <td width="80%">
           </td>
            <td>
-             <a href="<?php echo base_url("backend/researcher")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i>กลับ</button></a>
+             <a href="<?php echo base_url("backend/researcher")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i>  กลับ</button></a>
            </td>
          </tr>
        </table>
