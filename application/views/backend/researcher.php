@@ -75,8 +75,12 @@
         </tr>       
       </table>     
       <!-- End -->
+<<<<<<< HEAD
       <!-- popup add ข้อมูล-->
       <form id="" method="post" class="form-horizontal" action="">
+=======
+      <form id="" method="post" class="form-horizontal" action="<?php echo $action ?>">
+>>>>>>> Science-Park
 
         <div class="modal fade bs-example-modal-lg-addresearcher" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">
@@ -164,6 +168,28 @@
                 </div>
                 <br><br>
 
+<<<<<<< HEAD
+=======
+            </div>
+          </div>
+          <!-- End  row ประวัติส่วนตัว-->
+
+          <!-- Start  row ผลงานวิจัย-->
+          <div class="row">
+            <div class="col-lg-9 col-lg-offset-1">
+              <hr>
+              <center><h3>ข้อมูลผลงานวิจัย</h3></center> <br>
+
+              <div class="form-group">
+                <label class="col-lg-2 control-label">ชื่อผลงานวิจัย</label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="recname" placeholder="ภาษาไทย"   />
+                </div>
+                <label class="col-lg-2 control-label"></label>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="recname_eng"  placeholder="ภาษาอังกฤษ"  />
+                </div>
+>>>>>>> Science-Park
               </div>
             </div>
             <!-- End  row ประวัติส่วนตัว-->
@@ -262,8 +288,11 @@
                   </div>
                 </div><br><br>
 
+<<<<<<< HEAD
 
               </div>
+=======
+>>>>>>> Science-Park
             </div>
             <!-- End  row ผลงานวิจัย-->
             <!-- Start  row ประวัติการทำงาน-->
@@ -341,6 +370,17 @@
               </div>
               <br><br>
 
+<<<<<<< HEAD
+=======
+              <div class="form-group">
+                <label class="col-lg-2 control-label">มหาวิทยาลัย</label>
+                <div class="col-lg-4">
+                 <select class="form-control"  name="university">
+                  <option value="แม่โจ้">แม่โจ้</option>
+                  <option value="เชียงใหม่">เชียงใหม่</option>
+                </select>
+              </div>
+>>>>>>> Science-Park
             </div>
           </div>
           <!-- End  row ประวัติการศึกษา-->
