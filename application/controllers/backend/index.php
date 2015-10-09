@@ -9,13 +9,27 @@ class Index extends CI_Controller {
 	}
 	
 	function display($year = null, $month = null){
-		//echo 'year'.$year;
+		
 		
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
+
+		if (!$year) {
+			$year = date('Y');
+		}
+		if (!$month) {
+			$month = date('m');
+		}
+		//$this->load->model('Calendar_model');
+		if ($day = $this->input->post('day')) {
+			$this->calendar_model->add_calendar_data('$year-$month-$day',$this->input->post('Cd_date')
+			);
+		}
+
 		$data['calendar'] = $this->calendar_model->generate($year, $month);
 		$this->load->view('backend/index' , $data);
+
 		$this->load->view('backend/script');	
 		
 	}

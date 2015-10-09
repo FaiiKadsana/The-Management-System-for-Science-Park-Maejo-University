@@ -4,7 +4,7 @@ class Researcher extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-		$this->load->model("backend/researcher_model");
+		$this->load->model("researcher_model","researcher_model");
 		$this->load->library('session');
 		
 
@@ -25,6 +25,7 @@ class Researcher extends CI_Controller {
 	public function add (){
 
 		// Start  row ประวัติส่วนตัว
+
 		$nth=$this->input->post('nth');
 		$lnth=$this->input->post('lnth');
 		$neng=$this->input->post('neng');
