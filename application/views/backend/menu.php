@@ -1,19 +1,18 @@
 <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 <div class="collapse navbar-collapse navbar-ex1-collapse">
   <ul class="nav navbar-nav side-nav">
-    <li class="active">
-      <a href="<?php echo base_url("backend/researcher")?>"><i class="fa fa-pencil"></i> จัดการข้อมูลฆนักวิจัย </i></a>
-   </li>
-   <li>
-   <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-pencil"></i> ผู้ประกอบการ <i class="fa fa-fw fa-caret-down"></i></a>
-   <ul id="demo2" class="collapse">
-    <li><a class="" href="<?php echo base_url("backend/establishment")?>">จัดการสถานประกอบการ</a></li>                          
-    <li><a class="" href="<?php echo base_url("backend/entrepreneur")?>">จัดการข้อมูลผู้ประกอบการ</a></li>
-    <li><a class="" href="<?php echo base_url("backend/industrytype")?>">จัดการประเภทอุตสาหกรรม</a></li>
-  </ul>
-</li><li>
-<a href="javascript:;" data-toggle="collapse" data-target="#demo3"><i class="fa fa-file"></i> แบบฟอร์มขอรับบริการ <i class="fa fa-fw fa-caret-down"></i></a>
-<ul id="demo3" class="collapse">
+       <li class="active">
+<a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-pencil"></i>  จัดการโครงการ <i class="fa fa-fw fa-caret-down"></i></a>
+<ul id="demo1" class="collapse">
+  <li><a class="" href="form_validation.html">Service Forms</a></li>
+  <li><a class="" href="<?php echo base_url("backend/project_coresearcher")?>">Co-Research Forms</a></li>
+  <li><a class="" href="<?php echo base_url("backend/fromirct")?>">IRTC Forms</a></li>                          
+  <li><a class="" href="form_validation.html">TBI Forms</a></li>
+</ul>
+</li>
+  <li>
+<a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-file"></i> จัดการข้อเสนอโครงการ <i class="fa fa-fw fa-caret-down"></i></a>
+<ul id="demo2" class="collapse">
   <li><a class="" href="form_validation.html">Service Forms</a></li>
   <li><a class="" href="form_validation.html">Co-Research Forms</a></li>
   <li><a class="" href="<?php echo base_url("backend/fromirct")?>">IRTC Forms</a></li>                          

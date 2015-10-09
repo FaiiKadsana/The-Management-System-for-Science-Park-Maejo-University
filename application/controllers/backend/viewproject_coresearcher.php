@@ -1,6 +1,6 @@
 <?php defined ('BASEPATH') OR exit ('No direct script access allwed');
 
-class Research extends CI_Controller {
+class Viewproject_coresearcher extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
@@ -12,7 +12,7 @@ class Research extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/research');
+		$this->load->view('backend/viewproject_coresearcher');
 		$this->load->view('backend/script');	
 		
 	}
