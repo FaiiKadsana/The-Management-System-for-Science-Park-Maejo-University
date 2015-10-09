@@ -4,7 +4,7 @@ class Researcher extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-		$this->load->model("researcher_model","researcher_model");
+		$this->load->model("backend/researcher_model");
 		$this->load->library('session');
 		
 
