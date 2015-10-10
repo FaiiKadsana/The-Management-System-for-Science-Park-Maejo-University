@@ -10,7 +10,7 @@
          <small>Home</small>
        </h1>
        <ol class="breadcrumb">
-         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/viewproject_coresearcher")?>">จัดการโครงการ</a></li>
+       <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_coresearcher")?>">จัดการโครงการ</a></li>
        </ol>
      </div>
    </div></br>
