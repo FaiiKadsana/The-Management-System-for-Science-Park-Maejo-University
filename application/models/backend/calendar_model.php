@@ -102,11 +102,12 @@ function get_calendar_data($year, $month)
 		$cal_data = array();
 
 		foreach ($query->result() as $row)
-			
+
 		if (isset($cal_data[0]->subject))
 			{
 				
 				$cal_data[substr($row->date,8,2)] = $row->data;
+				 
 
 			}
 		return $cal_data;
