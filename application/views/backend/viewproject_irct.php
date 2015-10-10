@@ -10,8 +10,8 @@
          <small>Home</small>
        </h1>
        <ol class="breadcrumb">
-         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_coresearcher")?>">จัดการโครงการ</a></li>
-         <li><i class="fa fa-eye"></i> <a href="<?php echo base_url("backend/viewproject_coresearcher")?>">ดูโครงการ</a></li>
+         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_irct")?>">จัดการโครงการ</a></li>
+         <li><i class="fa fa-eye"></i> <a href="<?php echo base_url("backend/viewproject_irct")?>">ดูโครงการ</a></li>
        </ol>
      </div>
    </div></br>
@@ -385,7 +385,7 @@
              <td width="80%">
              </td>
              <td>
-               <a href="<?php echo base_url("backend/project_coresearcher")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i>กลับ</button></a>
+               <a href="<?php echo base_url("backend/project_irct")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i>กลับ</button></a>
              </td>
            </tr>
          </table>
