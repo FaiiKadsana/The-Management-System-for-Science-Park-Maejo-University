@@ -346,7 +346,7 @@
              <br><br>
 
              <div class="modal-footer">
-              <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>เพิ่ม</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
 
@@ -944,7 +944,7 @@
               </div>
 
               <div class="modal-footer">
-                <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>เพิ่ม</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
 
