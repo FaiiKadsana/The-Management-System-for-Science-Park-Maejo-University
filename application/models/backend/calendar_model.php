@@ -56,11 +56,11 @@ class Calendar_Model extends CI_Model {
 		';
 	}
 
-	public function get_calendar_data($year, $month){
+	/*public function get_calendar_data($year, $month){
 
-		//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" , 'after')->get();
+		$query = $this->db->select('Cd_date' , 'Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" , 'after')->get();
 	
-		$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
+		//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
 
 		//print_r($this->db->last_query());
 
@@ -88,4 +88,47 @@ class Calendar_Model extends CI_Model {
 		return $this->calendar->generate($year,$month,$cal_data);
 
 	}
+}*/
+function get_calendar_data($year, $month)
+	{
+		//$query = $this->db->select(‘date, data’)->from(‘calendar’)->like(‘date’, “$year-$month”, ‘after’)->get();
+
+		$query = $this->db->select('Cd_date','Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" ,'$day')->get();
+
+		//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
+
+		print_r($this->db->last_query());
+
+		$cal_data = array();
+
+		foreach ($query->result() as $row)
+			
+		if (isset($cal_data[0]->subject))
+			{
+				
+				$cal_data[substr($row->date,8,2)] = $row->data;
+
+			}
+		return $cal_data;
+	}
+
+	function add_calendar_data($date, $data){
+		
+		if ($this->db->select('Cd_date')->from('calendar')->where('Cd_date', $date)->count_all_results()) {
+			$this->db->where('Cd_date', $date)->update('calendar', array('Cd_date' => $date,'Cd_detail' => $data
+			
+			));
+
+	} else {
+		$this->db->insert('calendar', array('Cd_date' => $date,'Cd_detail' => $data
+			));
+	}
+}
+
+	function generate ($year, $month){
+		
+	$this->load->library('calendar', $this->conf);
+	$cal_data = $this->get_calendar_data($year, $month);
+	return $this->calendar->generate($year, $month, $cal_data);
+}
 }
