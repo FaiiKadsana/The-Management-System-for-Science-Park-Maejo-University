@@ -6338,6 +6338,10 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
+@font-face{
+font-family:'bangna-new';
+src:url('.../fonts/bangna-new.ttf');
+}
 .center-block {
   display: block;
   margin-right: auto;
@@ -6582,4 +6586,3 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-ผผ

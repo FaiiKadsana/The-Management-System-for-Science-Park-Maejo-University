@@ -9,7 +9,7 @@
 			<li class="dropdown "><a  data-toggle="dropdown" class="" href=""><i class="fa fa-university"></i> เกี่ยวกับเรา<span class="caret"></span></a>
 <ul class="dropdown-menu  " >
                 <li class= "bo"><a href="<?php echo base_url("frontend/about")?>" style="font-size: 15px;margin-left: 0px;">อุทยานวิทยาศาสตร์ภาคเหนือ</a></li>
-                <li class= "bo"><a href="http://stdb.most.go.th/Home"style="font-size: 15px;margin-left: 0px;">อุทยานวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</a></li>  
+                <li class= "bo"><a href="<?php echo base_url("frontend/about1")?>"style="font-size: 15px;margin-left: 0px;">อุทยานวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</a></li>  
 </ul>
       </li>
 			<li><a href="<?php echo base_url("frontend/catalog ")?>"><i class="fa fa-align-justify"></i> ผลงาน</a></li>

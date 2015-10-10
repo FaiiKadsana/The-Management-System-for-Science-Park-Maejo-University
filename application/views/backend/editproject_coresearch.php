@@ -10,8 +10,8 @@
          <small>Home</small>
        </h1>
        <ol class="breadcrumb">
-         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_coresearcher")?>">จัดการโครงการ</a></li>
-         <li><i class="fa fa-eye"></i> <a href="<?php echo base_url("backend/viewproject_coresearcher")?>">ดูโครงการ</a></li>
+         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_coresearch")?>">จัดการโครงการ</a></li>
+         <li><i class="fa fa-wrench"></i> <a href="<?php echo base_url("backend/editproject_coresearch")?>">แก้ไขโครงการ</a></li>
        </ol>
      </div>
    </div></br>
@@ -182,7 +182,7 @@
     <tr>
       <th>#</th>
       <th>ความเชี่ยวชาญ</th>
-      <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-sm-addspecialization"><i class="fa fa-plus"></i>เพิ่มความเชียวชาญ</button></th>
+      <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-sm-addspecialization"><i class="fa fa-plus"></i> เพิ่มความเชียวชาญ</button></th>
     </tr>
     <!-- Show &Join table -->
     <tr>
@@ -218,7 +218,7 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>เพิ่มความเชียวชาญ</button>
+          <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่มความเชียวชาญ</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
 
@@ -284,7 +284,7 @@
         <th>คณะ</th>
         <th>สาขาวิชา</th>
         <th>ชื่อสถาบัน</th>
-        <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-lg-addeducation"><i class="fa fa-plus"></i>เพิ่มการศึกษา</button></th>
+        <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-lg-addeducation"><i class="fa fa-plus"></i> เพิ่มการศึกษา</button></th>
       </tr>
       <!-- Show &Join table -->
       <tr>
@@ -346,7 +346,7 @@
              <br><br>
 
              <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>เพิ่ม</button>
+              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
 
@@ -818,7 +818,7 @@
               <th style="width: 20%">รางวัลงานวิจัย</th>
               <th style="width: 15%">ประเภทรางวัล</th>
               <th></th>
-              <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-lg-addportfolio"><i class="fa fa-plus"></i>เพิ่มโครงการ</button></th>
+              <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-lg-addportfolio"><i class="fa fa-plus"></i> เพิ่มโครงการ</button></th>
 
               <!-- Show &Join table -->
               <tr>
@@ -1094,7 +1094,7 @@
        <td width="80%">
        </td>
        <td>
-         <a href="<?php echo base_url("backend/project_coresearcher")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i>กลับ</button></a>
+         <a href="<?php echo base_url("backend/project_coresearch")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
        </td>
      </tr>
    </table>

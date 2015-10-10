@@ -18,26 +18,25 @@
    <!-- Star row-->
    <div class="row">
     <div class=" col-sm-12">
-      <center>
+       <center>
 
-        <table >
-          <tr>
-           <td>
-           </td>
-           <td >
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" required>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button" ><i class="fa fa-search"></i></button>
-              </span>
+      <table >
+       
+        <tr>
+          <td></td>
+          <td><input type="text" class="form-control" placeholder="กรอกชื่อหนักวิจัย" name="research"></td>
+          <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
+          <td><select class="form-control"  name="statussearch">
+             <option value=""> เลือกสถานะ</option>
+             <option value="สำเร็จ"> สำเร็จ</option>
+            <option value="อยู่ในช่วงดำเนินงาน"> อยู่ในช่วงดำเนินงาน</option>
+          </select></td>
+          <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
+          <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
 
-            </div>
-          </td>
-          <td width="10px"></td>
 
         </tr>
       </table>
-
     </center>
   </div>
 </div><br>
@@ -72,8 +71,8 @@
           <td >อยู่ในช่วงดำเนินงาน</td>
           <td><a href="<?php echo base_url("backend/viewproject_irct")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_irct"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
-          <td><a href="<?php echo base_url("backend/editproject_irct")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delproject_irct"><i class="fa fa-times"></i>  ลบ</button></td>                     
+          <td><a href="<?php echo base_url("backend/editproject_irct")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button></a></td>
+          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delproject_irct"><i class="fa fa-times"></i> ลบ</button></td>                     
         </tr>       
       </table>     
       <!-- End -->
@@ -650,7 +649,7 @@
 
 
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>เพิ่ม</button>
+  <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 

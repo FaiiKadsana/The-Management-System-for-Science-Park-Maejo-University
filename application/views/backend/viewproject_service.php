@@ -375,31 +375,31 @@
 
      </div>
      <!-- /. row-->
-</div>
-     <div class="row">
-       <div class="col-sm-12">
-         <table>
-           <tr>
-             <td width="80%">
-             </td>
-             <td width="80%">
-             </td>
-             <td>
-               <a href="<?php echo base_url("backend/project_service")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i>กลับ</button></a>
-             </td>
-           </tr>
-         </table>
-       </div>
-
+   </div>
+   <div class="row">
+     <div class="col-sm-12">
+       <table>
+         <tr>
+           <td width="80%">
+           </td>
+           <td width="80%">
+           </td>
+           <td>
+             <a href="<?php echo base_url("backend/project_service")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
+           </td>
+         </tr>
+       </table>
      </div>
 
-
-
    </div>
-   <!-- /.container-fluid -->
+
+
 
  </div>
- <!-- /#page-wrapper -->
+ <!-- /.container-fluid -->
+
+</div>
+<!-- /#page-wrapper -->
 
 </div>
 <!-- /#wrapper -->
