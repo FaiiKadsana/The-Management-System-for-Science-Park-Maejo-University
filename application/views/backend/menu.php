@@ -4,7 +4,7 @@
        <li class="active">
 <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-pencil"></i>  จัดการโครงการ <i class="fa fa-fw fa-caret-down"></i></a>
 <ul id="demo1" class="collapse">
-  <li><a class="" href="<?php echo base_url("backend/project_service")?>">project_service</a></li>
+  <li><a class="" href="<?php echo base_url("backend/project_service")?>">Service Platform</a></li>
   <li><a class="" href="<?php echo base_url("backend/project_coresearcher")?>">Co-Research Forms</a></li>
   <li><a class="" href="<?php echo base_url("backend/project_irct")?>">IRTC Forms</a></li>                          
   <li><a class="" href="form_validation.html">TBI Forms</a></li>
