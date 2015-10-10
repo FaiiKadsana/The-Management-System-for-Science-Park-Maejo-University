@@ -93,7 +93,7 @@ function get_calendar_data($year, $month)
 	{
 		//$query = $this->db->select(‘date, data’)->from(‘calendar’)->like(‘date’, “$year-$month”, ‘after’)->get();
 
-		$query = $this->db->select('Cd_date','Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" , '$day')->get();
+		$query = $this->db->select('Cd_date','Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" ,'$day')->get();
 
 		//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
 
@@ -102,6 +102,7 @@ function get_calendar_data($year, $month)
 		$cal_data = array();
 
 		foreach ($query->result() as $row)
+			
 		if (isset($cal_data[0]->subject))
 			{
 				
