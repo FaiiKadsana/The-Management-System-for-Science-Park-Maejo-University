@@ -24,50 +24,71 @@ class Project_Service extends CI_Controller {
 	}
 	public function add (){
 
-		// Start  row ประวัติส่วนตัว
-
-		$nth=$this->input->post('nth');
-		$lnth=$this->input->post('lnth');
-		$neng=$this->input->post('neng');
-		$lneng=$this->input->post('lneng');
-		$idres=$this->input->post('idres');
-		$tell=$this->input->post('tell');
+		// Start  row ข้อมูลนักวิจัย
+		$rec_name_thai=$this->input->post('rec_name_thai');
+		$rec_ln_thai=$this->input->post('rec_ln_thai');
+		$rec_name_eng=$this->input->post('rec_name_eng');
+		$rec_ln_eng=$this->input->post('rec_ln_eng');
+		$rec_address=$this->input->post('rec_address');
+		$rec_phone=$this->input->post('rec_phone');
 		$address=$this->input->post('address');
-		$email=$this->input->post('email');
-		$pos_detail=$this->input->post('pos_detail');
-		$work_unit=$this->input->post('work_unit');
-		$upimg=$this->input->post('upimg');
-		$detail=$this->input->post('detail');
-		// End  row ประวัติส่วนตัว
-
-		// Start  row ผลงานวิจัย
-		$recname=$this->input->post('recname');
-		$recname_eng=$this->input->post('recname_eng');
-		$ret_detail=$this->input->post('ret_detail');
-		$m_id=$this->input->post('m_id');
-		$patent=$this->input->post('patent');
-		$status=$this->input->post('status');
-		$re_start=$this->input->post('re_start');
-		$re_end=$this->input->post('re_end');
-		$abstract=$this->input->post('abstract');
-		$award=$this->input->post('award');
-		$rea_type=$this->input->post('rea_type');
-		$rea_date=$this->input->post('rea_date');
-		// End  row ผลงานวิจัย
-
-		// ประวัติการทำงาน
-		$work_start=$this->input->post('work_start');
-		$work_end=$this->input->post('work_end');
-		$work_office=$this->input->post('work_office');
-		// End  row ประวัติการทำงาน
+		$rec_mail=$this->input->post('rec_mail');
+		$rec_pos_detail=$this->input->post('rec_pos_detail');
+		$rec_unit=$this->input->post('rec_unit');
+		$rec_office=$this->input->post('rec_office');
+		$sct_detail=$this->input->post('sct_detail');
+		// End  row ข้อมูลนักวิจัย
 
 		// Start  row ประวัติการศึกษา
-		$degree=$this->input->post('degree');
+		$dct_degree=$this->input->post('dct_degree');
 		$dct_year=$this->input->post('dct_year');
-		$faculty=$this->input->post('faculty');
-		$major=$this->input->post('major');
-		$university=$this->input->post('university');
+		$dct_faculty=$this->input->post('dct_faculty');
+		$dct_major=$this->input->post('dct_major');
+		$dct_university=$this->input->post('dct_university');
 		// End  row ประวัติการศึกษา
+
+		// Start  row ข้อมูลผู้ติดต่อ
+		$bus_title=$this->input->post('bus_title');
+		$bus_name=$this->input->post('bus_name');
+		$bus_ln=$this->input->post('bus_ln');
+		$bus_code=$this->input->post('bus_code');
+		$bus_position=$this->input->post('bus_position');
+		$bus_phone=$this->input->post('bus_phone');
+		$bus_mail=$this->input->post('bus_mail');
+		// End  row ข้อมูลผู้ติดต่อ
+
+		// Start  row ข้อมูลทางธุรกิจ
+		$bus_name=$this->input->post('bus_name');
+		$bus_owners=$this->input->post('bus_owners');
+		$bus_address=$this->input->post('bus_address');
+		$bus_phone=$this->input->post('bus_phone');
+		$bus_fax=$this->input->post('bus_fax');
+		$bus_website=$this->input->post('bus_website');
+		$bus_id=$this->input->post('bus_id');
+		$bus_type=$this->input->post('bus_type');
+		$industry_type=$this->input->post('industry_type');
+		$undertaking=$this->input->post('undertaking');
+		$bus_mony=$this->input->post('bus_mony');
+		$bus_amount=$this->input->post('bus_amount');
+		// End  row ข้อมูลทางธุรกิจ
+
+		// Start  row ข้อมูลโครงการ
+		$re_name=$this->input->post('re_name');
+		$re_name_eng=$this->input->post('re_name_eng');
+		$ret_detail=$this->input->post('ret_detail');
+		$m_id=$this->input->post('m_id');
+		$re_start=$this->input->post('re_start');
+		$re_end=$this->input->post('re_end');
+		$re_id_patent=$this->input->post('re_id_patent');
+		$re_status=$this->input->post('re_status');
+		$re_finances_1=$this->input->post('re_finances_1');
+		$re_finances_2=$this->input->post('re_finances_2');
+		$re_abstract=$this->input->post('re_abstract');
+		$res_award=$this->input->post('res_award');
+		$rea_type=$this->input->post('rea_type');
+		$rea_date=$this->input->post('rea_date');
+		$re_picture=$this->input->post('re_picture');
+		// End  row ข้อมูลโครงการ
 
 		$this->project_service_model->adddata();
 		redirect("project_service");
