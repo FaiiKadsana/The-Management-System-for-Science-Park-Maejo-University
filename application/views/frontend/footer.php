@@ -29,11 +29,10 @@
                 <i class="fa fa-asterisk"></i> <a href=""style="font-size: 15px;margin-left: 0px;">บ่มเพาะ TBI Platform</a>	 
 					
 				</div>
+    </div><br>
+ <div class="row" >
+      <div class="col-md-8"> <span class="copyright">* Copyright &copy; 2015 Your Website Name. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
     </div>
-
-    <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015 Your Website Name. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
   </div>
-    <div class="row" >//จัดหน่อยนะแอม
-      <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015 Your Website Name. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
-    </div>
+   
 </div>

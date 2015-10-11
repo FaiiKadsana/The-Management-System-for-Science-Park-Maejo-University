@@ -23,13 +23,13 @@
     <a href="index.html"><i class="fa fa-shopping-cart"></i> จัดการการซื้อขายงานวิจัย</a>
   </li>
   <li>
-    <a href="charts.html"><i class="fa fa-list"></i> จัดการแค็ตตาล็อก</a>
+    <a href="<?php echo base_url("backend/catalog")?>"><i class="fa fa-list"></i> จัดการแค็ตตาล็อก</a>
   </li>
   <li>
     <a href="tables.html"><i class="fa fa-print"></i> ปริ้นท์เอกสาร</a>
   </li>
   <li>
-    <a href="tables.html"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
+    <a href="<?php echo base_url("backend/new")?>"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
   </li>
   <li>
     <a href="tables.html"><i class="fa fa-user"></i> จัดการข้อมุลบุคลากร</a>

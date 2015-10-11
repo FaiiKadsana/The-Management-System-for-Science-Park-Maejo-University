@@ -705,3 +705,12 @@ address {
 	font-size: 18px;
 	width: 400px;
 }
+
+.title-header2{
+	border-bottom: 2px  dashed #FF6930;
+	padding: 8px;
+	color: #FF6930;
+	font-weight: bold;
+	font-size: 18px;
+	width: 500px;
+}
