@@ -31,7 +31,7 @@
 				</div>
     </div>
   </div>
-    <div class="row">//จัดหน่อยนะแอม
+    <div class="row" >//จัดหน่อยนะแอม
       <div class="col-md-8"> <span class="copyright">Copyright &copy; 2015 Your Website Name. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
     </div>
 </div>
