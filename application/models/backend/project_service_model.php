@@ -1,0 +1,45 @@
+<?php defined ('BASEPATH') OR exit ('No direct script access allwed');
+
+class Project_Service_Model extends CI_Model {
+
+	public function adddata
+
+	($nth="",$lnth="",$neng="" ,$lneng="",$idres="",$tell="",
+	$address="",$email="",$pos_detail="" ,$work_unit="",$upimg="",
+	$detail="" ,$recname="",$recname_eng="",$ret_detail="" ,$m_id="",
+	$patent="",$status="",$re_start="",$re_end="",$abstract="" ,
+	$award="",$rea_type="",$rea_date="", $work_start="",$work_end="",
+	$work_office="",$degree="",$dct_year="",$faculty="",$major="",
+	$university="" ){
+
+		$insert=array(
+			"Rec_picture"=>$upimg,"Rec_code"=>$idres,"Rec_name_thai"=>$nth,
+			"Rec_ln_thai"=>$lnth,"Rec_name_eng"=>$lneng,
+			"Rec_ln_eng"=>$idres,"Rec_address"=>$address,
+			"Rec_phone"=>$tell,"Rec_mail"=>$email,
+			"Rec_position"=>$pos_detail,"Rec_unit"=>$work_unit,
+			"Sct_id"=>$detail
+
+			);
+
+		$insert1=array(
+			"Re_picture"=>$recname,"Re_id_patent"=>$recname_eng,
+			"Re_name"=>$ret_detail,"Re_name_eng"=>$recname,
+			"Re_start"=>$recname_eng,"Re_end"=>$ret_detail,
+			"Re_status"=>$ret_detail,"Re_abstract"=>$recname,
+			"Re_finances"=>$recname_eng,"Re_end"=>$ret_detail
+			);
+
+		$insert2=array(
+			"Dct_year"=>$dct_year,"Dct_degree"=>$lastname,
+			"Dct_faculty"=>$faculty,"Dct_major"=>$major,
+			"Uy_id"=>$university,"Rec_id"=>$phone,
+			);
+
+		$this->db->insert("researcher",$insert);
+		$this->db->insert("research",$insert1);
+		$this->db->insert("education",$insert2);
+	
+		return true;
+	}
+}
