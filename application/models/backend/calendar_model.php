@@ -91,7 +91,7 @@ class Calendar_Model extends CI_Model {
 }*/
 function get_calendar_data($year, $month)
 	{
-		//$query = $this->db->select(‘date, data’)->from(‘calendar’)->like(‘date’, “$year-$month”, ‘after’)->get();
+		$query = $this->db->select(‘date, data’)->from(‘calendar’)->like(‘date’, “$year-$month”, ‘after’)->get();
 
 		$query = $this->db->select('Cd_date','Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" ,'after')->get();
 
