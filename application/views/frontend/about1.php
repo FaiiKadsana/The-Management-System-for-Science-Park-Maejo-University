@@ -5,8 +5,8 @@
 
 <div class="row">
 
-  <div class="col-sm-7">
-    <div class="col-md-offset-1 col-sm-11">
+  <div class="col-sm-12">
+    <div class="col-md-offset-1 col-sm-10">
       <h4 class='title-header1 org'>อุทยานวิทยาศาสตร์มหาวิทยาลัยแม่โจ้</h4><br>
 
       <p>อุทยานวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ อยู่ภายใต้การกำกับตั้งสภามหาวิทยาลัย อธิการบดี
@@ -40,14 +40,11 @@
        </div>
    </div>
 
-   <div class="col-sm-5"><img src='<?php echo base_url("asset/images/N.jpg") ?>' style="width:450px"></div>
-
-
 </div>
 
 <div class="row">
-    <div class="col-sm-7">
-       <div class="col-md-offset-1 col-sm-11">
+    <div class="col-sm-12">
+       <div class="col-md-offset-1 col-sm-10">
         <h4 class='title-header1 org'>วัตถุประสงค์ในการจัดตั้งจากการมีอุทยานวิทยาศาสตร์</h4>
 
         <p>ประโยชน์ที่มหาวิทยาลัยจะได้รับจากอุทยานวิทยาศาสตร์  
@@ -84,7 +81,7 @@
             </div>
 
 
-            <div class="col-sm-5"><img src='<?php echo base_url("asset/images/map.jpg") ?>' style="width:400px"></div>
+           
 
 
         </div>
