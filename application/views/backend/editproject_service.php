@@ -787,10 +787,10 @@
 </div>
 </div>
 
-</form>
+
 <!-- End popup เแก้ไขผู้ประกอบการ-->  
 </div>
-
+</form>
 </div>
 
 </div>

@@ -627,9 +627,6 @@
 
               </div>
 
-
-
-
               <div class="row">
                <div class="col-lg-12">
 
@@ -714,8 +711,6 @@
 
               </div>
 
-
-
               <div class="row">
                <div class="col-lg-12">
 
@@ -787,10 +782,10 @@
 </div>
 </div>
 
-</form>
+
 <!-- End popup เแก้ไขผู้ประกอบการ-->  
 </div>
-
+</form>
 </div>
 
 </div>

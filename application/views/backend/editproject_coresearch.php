@@ -714,8 +714,6 @@
 
               </div>
 
-
-
               <div class="row">
                <div class="col-lg-12">
 
@@ -782,14 +780,14 @@
       </div>
     </div>
 
-
   </div>
 </div>
 </div>
 
-</form>
 <!-- End popup เแก้ไขผู้ประกอบการ-->  
 </div>
+
+</form>
 
 </div>
 
