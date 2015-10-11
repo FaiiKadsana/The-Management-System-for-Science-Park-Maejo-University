@@ -1,6 +1,6 @@
 <!-- Section -->
 <div id="section_header">
-  <h2>เกี่ยวกับเรา</h2>
+  <h2>เกี่ยวกับอุทยานวิทยาศาสตร์ภาคเหนือ</h2>
 </div>
 
 <div class="row">
