@@ -35,7 +35,7 @@
       <!-- /input-group -->
     </div>
   </div><br>        
- <!-- /.row -->
+  <!-- /.row -->
 
   <!-- Star row-->
   <div class="row">
@@ -73,12 +73,116 @@
         </table>     
         <!-- End -->
 
-      </div>
+        <!-- start popup แก้ไขผลงาน-->
+        <form id="" method="post" class="form-horizontal" action="">
 
+          <div class="modal fade bs-example-modal-lg-addcatalog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+               <div class="row">
+                 <div class="col-lg-9 col-lg-offset-1">
+                  <hr>
+                  <center><h3>ข้อมูลแค็ตตาล็อก</h3></center><br> 
+                  <center>
+                    <div class="form-group">
+                      <div class="input-group col-lg-4 control-label">
+                        <input type="text" class="form-control" placeholder="Search ">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                      </div>
+                    </div><br><br>
+                  </center>
+                  <div class="form-group">
+                   <label class="col-lg-2 control-label">เลขที่สิทธิ</label>
+                   <div class="col-lg-4">
+                    <input type="tel" class="form-control" name="rec_phone"   />
+                  </div>
+                  <label class="col-lg-2 control-label">ผลงานวิจัย</label>
+                  <div class="col-lg-4">
+                    <input type="tel" class="form-control" name="rec_phone"   />
+                  </div>
+                </div>
+                <br><br>
+
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">นักวิจัย</label>
+                  <div class="col-lg-4">
+                    <input type="text" class="form-control" name="rec_work_unit"   />
+                  </div>
+                  <label class="col-lg-2 control-label">ราคา</label>
+                  <div class="col-lg-4">
+                    <input type="text" class="form-control" name="rec_work_unit"   />
+                  </div>
+                </div>
+                <br><br>
+
+                <div class="form-group">
+                 <label class="col-lg-2 control-label">รายละเอียด</label>
+                 <div class="col-lg-4">
+                   <textarea >    </textarea>
+                 </div>
+                 <label class="col-lg-2 control-label">เบอร์โทรศัพท์ติดต่อ</label>
+                 <div class="col-lg-4">
+                   <input type="text" class="form-control" name="rec_work_unit"   />
+                 </div>
+               </div>
+               <br><br>
+
+               <div class="form-group">
+                <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+                <div class="col-lg-4">
+                  <input type="file" name="rec_img">
+                </div>
+              </div><br><br>
+
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+
+
+        </div>
+      </div>
     </div>
-  </div>
+
+  </form>
+  <!-- End popup แก้ไขผลงาน--> 
+  <!--end popup ลบ -->
+  <form id="" method="post" class="form-horizontal" action="">
+    <div class="modal fade bs-example-modal-sm-delcatalog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+         <div class="row">
+           <div class="col-lg-11 ">
+            <div class="form-group">
+             <label class="col-lg-9 control-label">ยืนยันการลบ</label>
+           </div>
+
+         </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-success">ตกลง</button>
+         <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+</form>
+<!--end popup ลบ-->
+
 </div>
- <!-- /.row -->
+
+</div>
+</div>
+</div>
+<!-- /.row -->
 
 
 
