@@ -31,10 +31,10 @@ class Project_Service extends CI_Controller {
 		$rec_ln_eng=$this->input->post('rec_ln_eng');
 		$rec_address=$this->input->post('rec_address');
 		$rec_phone=$this->input->post('rec_phone');
-		$address=$this->input->post('address');
 		$rec_mail=$this->input->post('rec_mail');
-		$rec_pos_detail=$this->input->post('rec_pos_detail');
+		$rec_pos_detail=$this->input->post('rec_position');
 		$rec_unit=$this->input->post('rec_unit');
+		$rec_img=$this->input->post('rec_img');
 		$rec_office=$this->input->post('rec_office');
 		$sct_detail=$this->input->post('sct_detail');
 		// End  row ข้อมูลนักวิจัย
