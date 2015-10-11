@@ -29,7 +29,7 @@
     <a href="tables.html"><i class="fa fa-print"></i> ปริ้นท์เอกสาร</a>
   </li>
   <li>
-    <a href="<?php echo base_url("backend/new")?>"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
+    <a href="<?php echo base_url("backend/news")?>"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
   </li>
   <li>
     <a href="tables.html"><i class="fa fa-user"></i> จัดการข้อมุลบุคลากร</a>
