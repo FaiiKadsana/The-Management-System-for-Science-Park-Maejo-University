@@ -667,11 +667,8 @@
 </form>
 
 
-
-
-
 <!--end popup ลบ -->
-<form id="" method="post" class="form-horizontal" action="">
+<form id="" method="post" class="form-horizontal" action="<?php echo $action ?>">
   <div class="modal fade bs-example-modal-sm-delproject_service" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
