@@ -21,7 +21,7 @@
      <center>
 
       <table >
-       
+
         <tr>
           <td></td>
           <td><input type="text" class="form-control" placeholder="กรอกชื่อหนักวิจัย" name="research"></td>
@@ -80,7 +80,9 @@
 
       <!-- /.row -->
     </div>
+    
     <form id="" method="post" class="form-horizontal" action="">
+
       <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -656,6 +658,7 @@
 
 </div>
 
+</div>
 </div>
 </div>
 
