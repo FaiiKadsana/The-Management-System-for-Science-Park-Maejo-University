@@ -82,7 +82,7 @@
       <!-- /.row -->
     </div>
 
-    <form id="" method="post" class="form-horizontal" action="">
+    <form id="" method="post" class="form-horizontal" action="<?php echo $action ?>">
 
       <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
@@ -142,7 +142,7 @@
                   </div>
                   <label class="col-lg-2 control-label">ตำแหน่ง</label>
                   <div class="col-lg-4">
-                    <select class="form-control"  name="rec_pos_detail">
+                    <select class="form-control"  name="rec_position">
                       <option value="ศ.ดร.">ศ.ดร.</option>
                       <option value="รศ.ดร.">รศ.ดร.</option>
                       <option value="พศ.ดร.">พศ.ดร.</option>
@@ -160,7 +160,7 @@
 
                   <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
                   <div class="col-lg-4">
-                    <input type="text" class="form-control" name="rec_work_unit"   />
+                    <input type="text" class="form-control" name="rec_unit"   />
                   </div>
                   <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
                   <div class="col-lg-4">
@@ -173,7 +173,7 @@
                 <div class="form-group">
                  <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
                  <div class="col-lg-4">
-                  <input type="text" name="rec_work_office">
+                  <input type="text" name="rec_office">
                 </div>
                 <label class="col-lg-2 control-label">ความเชียวชาญ</label>
                 <div class="col-lg-4">
@@ -192,7 +192,7 @@
               <div class="form-group">
                 <label class="col-lg-2 control-label">ระดับการศึกษา</label>
                 <div class="col-lg-4">
-                  <select class="form-control"  name="dg_detail">
+                  <select class="form-control"  name="dct_degree">
                     <option value="ปริญญาเอก">ปริญญาเอก</option>
                     <option value="ปริญญาโท">ปริญญาโท</option>
                     <option value="ปริญญาตรี">ปริญญาตรี</option>
@@ -220,7 +220,7 @@
               <div class="form-group">
                 <label class="col-lg-2 control-label">มหาวิทยาลัย</label>
                 <div class="col-lg-4">
-                 <input type="text" class="form-control" name="uy_detail"  />
+                 <input type="text" class="form-control" name="dct_university"  />
                </div>
              </div>
              <br><br>
@@ -242,7 +242,7 @@
 
            <div class="form-group">
             <div class="col-lg-4">
-              <select class="form-control"  name="title">
+              <select class="form-control"  name="bus_title">
                <option value="นาย">นาย</option>
                <option value="นาง">นาง</option>
                <option value="นางสาว">นางสาว</option>
@@ -261,11 +261,11 @@
          <div class="form-group">
           <label class="col-lg-2 control-label">เลขที่บัตรประชาชน</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="bus_id"  />
+            <input type="text" class="form-control" name="bus_code"  />
           </div>
           <label class="col-lg-2 control-label">ตำแหน่ง</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="bus_detil"  />
+            <input type="text" class="form-control" name="bus_position"  />
           </div>
         </div>
         <br><br>
@@ -273,7 +273,7 @@
         <div class="form-group">
           <label class="col-lg-2 control-label">เบอร์โทรติดต่อ</label>
           <div class="col-lg-4">
-            <input type="tel" class="form-control" name="bus_tel"  />
+            <input type="tel" class="form-control" name="bus_phone"  />
           </div>
           <label class="col-lg-2 control-label">E-mail</label>
           <div class="col-lg-4">
@@ -288,11 +288,11 @@
         <div class="form-group">
           <label class="col-lg-2 control-label">ชื่อกิจการ</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="bus"  />
+            <input type="text" class="form-control" name="bus_name"  />
           </div>
           <label class="col-lg-2 control-label">ชื่อเจ้าของธุรกิจ</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="bus_ owners"  />
+            <input type="text" class="form-control" name="bus_owners"  />
           </div>
         </div>
         <br><br>
@@ -304,7 +304,7 @@
           </div>
           <label class="col-lg-2 control-label">โทรศัพท์</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="bus_ tell"  />
+            <input type="text" class="form-control" name="bus_phone"  />
           </div>
         </div>
         <br><br>
@@ -329,18 +329,18 @@
             <table>
               <tr>
                <td width="25%"><div class="funkyradio-warning">
-                <input type="radio" name="radio" id="radio1" />
+                <input type="radio" name="bus_id" id="radio1" />
                 <label for="radio1">ไม่มี</label>
               </div></td> 
               <td width="25%">      <div class="funkyradio-success">
-                <input type="radio" name="radio" id="radio29" />
+                <input type="radio" name="bus_id" id="radio29" />
                 <label for="radio29">อื่นๆ ระบุ:</label>
               </div></td> 
             </tr>
             <tr>
               <td width="25%"> </td> 
               <td width="25%"> 
-                <input type="text" class="form-control" name=""  /></td> 
+                <input type="text" class="form-control" name="bus_id"  /></td> 
               </tr>
             </table>
           </div>
@@ -356,33 +356,33 @@
          <table>
           <tr>    
             <td  width="25%">  <div class="funkyradio-warning">
-             <input type="radio" name="radio1" id="radio3" />
+             <input type="radio" name="bus_type" id="radio3" />
              <label for="radio3">เจ้าของกิจการ(ธรรมดา)</label>
            </div></td>  
            <td  width="25%"> <div class="funkyradio-info">
-            <input type="radio" name="radio1" id="radio4" />
+            <input type="radio" name="bus_type" id="radio4" />
             <label for="radio4">ห้างหุ่นส่วนสามัญ </label>
           </div></td>  
           <td  width="25%">  <div class="funkyradio-success">
-            <input type="radio" name="radio1" id="radio5" />
+            <input type="radio" name="bus_type" id="radio5" />
             <label for="radio5">ห้างหุ่นส่วนจำกัด</label>
           </div>  </td>  </tr> 
           <tr>                 
            <td  width="25%">  <div class="funkyradio-warning">
-            <input type="radio" name="radio1" id="radio6" />
+            <input type="radio" name="bus_type" id="radio6" />
             <label for="radio6">บริษัทจำกัด</label>
           </div></td> 
           <td  width="25%">  <div class="funkyradio-info">
-            <input type="radio" name="radio1" id="radio7" />
+            <input type="radio" name="bus_type" id="radio7" />
             <label for="radio7">วิสาหกิจชุมชน </label>
           </div></td> 
           <td  width="25%">  <div class="funkyradio-success">
-            <input type="radio" name="radio1" id="radio28" />
+            <input type="radio" name="bus_type" id="radio28" />
             <label for="radio28">อื่นๆ ระบุ:</label>
           </div> </td> </tr>
           <tr>   <td  width="25%"></td>
             <td  width="25%"></td>
-            <td  width="25%"> <input type="text" class="form-control" name=""  /></td>
+            <td  width="25%"> <input type="text" class="form-control" name="bus_type"  /></td>
 
           </table>
         </div>
@@ -402,73 +402,73 @@
         <tr>
          <td width="25%">  
            <div class="funkyradio-warning">
-             <input type="radio" name="radio3" id="radio12" />
+             <input type="radio" name="industry_type" id="radio12" />
              <label for="radio12">อาหาร/อาหารสัตว์</label>
            </div>
            <td width="25%">  <div class="funkyradio-info">
-            <input type="radio" name="radio3" id="radio13" />
+            <input type="radio" name="industry_type" id="radio13" />
             <label for="radio13">สิ่งทอ/เครื่องนุ่งห่ม </label>
           </div>
           <td width="25%">  <div class="funkyradio-success">
-            <input type="radio" name="radio3" id="radio14" />
+            <input type="radio" name="industry_type" id="radio14" />
             <label for="radio14">รองเท้า/เครื่องหนัง</label>
           </div>                    
           <tr> </td>  </tr> 
           <td width="30%">    <div class="funkyradio-warning">
-            <input type="radio" name="radio3" id="radio15" />
+            <input type="radio" name="industry_type" id="radio15" />
             <label for="radio15">ผลิตภัณฑ์พลาสติก/เครื่องเรือน</label>
           </div>
           <td width="25%">  <div class="funkyradio-info">
-            <input type="radio" name="radio3" id="radio16" />
+            <input type="radio" name="industry_type" id="radio16" />
             <label for="radio16">ยา/เคมีภัณฑ์ </label>
           </div>
           <td width="25%">  <div class="funkyradio-default">
-            <input type="radio" name="radio3" id="radio17" />
+            <input type="radio" name="industry_type" id="radio17" />
             <label for="radio17">ยางพารา/ผลิตภัณฑ์</label>
           </div> </td>  </tr> 
           <tr>
            <td width="25%"> <div class="funkyradio-primary">
-            <input type="radio" name="radio3" id="radio18" />
+            <input type="radio" name="industry_type" id="radio18" />
             <label for="radio18">บรรจุภัณฑ์/ผลิตภัณฑ์พลาสติก</label>
           </div>
           <td width="20%">  <div class="funkyradio-success">
-            <input type="radio" name="radio3" id="radio19" />
+            <input type="radio" name="industry_type" id="radio19" />
             <label for="radio19">เซรามิกส์/แก้ว</label>
           </div>
           <td width="30%">    <div class="funkyradio-danger">
-            <input type="radio" name="radio3" id="radio20" />
+            <input type="radio" name="industry_type" id="radio20" />
             <label for="radio20">เครื่องใช้ไฟฟ้า/อิเล็กทรอนิกส์</label>
           </div> </td>  </tr> 
           <tr>
            <td width="25%"> <div class="funkyradio-warning">
-            <input type="radio" name="radio3" id="radio21" />
+            <input type="radio" name="industry_type" id="radio21" />
             <label for="radio21">ชิ้นส่วน/ยานยนตื</label>
           </div>
           <td width="25%"> <div class="funkyradio-info">
-            <input type="radio" name="radio3" id="radio22" />
+            <input type="radio" name="industry_type" id="radio22" />
             <label for="radio22">อัญมณี/เครื่องประดับ</label>
           </div>
           <td width="25%"> <div class="funkyradio-primary">
-            <input type="radio" name="radio3" id="radio23" />
+            <input type="radio" name="industry_type" id="radio23" />
             <label for="radio23">เหล็ก/โลหะการ</label>
           </div> </td>  </tr> 
           <tr>
            <td width="25%"> <div class="funkyradio-success">
-            <input type="radio" name="radio3" id="radio24" />
+            <input type="radio" name="industry_type" id="radio24" />
             <label for="radio24">เครื่องจักรกล</label>
           </div>
           <td width="25%"> <div class="funkyradio-danger">
-            <input type="radio" name="radio3" id="radio25" />
+            <input type="radio" name="industry_type" id="radio25" />
             <label for="radio25">ท่องเที่ยว</label>
           </div>
           <td width="25%">  <div class="funkyradio-warning">
-            <input type="radio" name="radio3" id="radio26" />
+            <input type="radio" name="industry_type" id="radio26" />
             <label for="radio26">บริการด้านสุขภาพ</label>
           </div> </td>  </tr> 
           <tr> 
            <td width="25%"> 
             <div class="funkyradio-info">
-              <input type="radio" name="radio3" id="radio27" />
+              <input type="radio" name="industry_type" id="radio27" />
               <label for="radio27">อื่น</label>
             </div> </td>  </tr> 
           </table>
@@ -488,20 +488,20 @@
         <tr>
          <td width="25%">                  
            <div class="funkyradio-warning">
-            <input type="radio" name="radio2" id="radio9" />
+            <input type="radio" name="undertaking" id="radio9" />
             <label for="radio9">การผลิต</label>
           </div></td> 
           <td width="25%">   <div class="funkyradio-info">
-            <input type="radio" name="radio2" id="radio10" />
+            <input type="radio" name="undertaking" id="radio10" />
             <label for="radio10">การค้า (ปลีกส่ง) </label>
           </div></td> 
           <td width="25%"> <div class="funkyradio-default">
-            <input type="radio" name="radio2" id="radio11" />
+            <input type="radio" name="undertaking" id="radio11" />
             <label for="radio11">บริการ</label>
           </div>  </td>  </tr>  
           <tr>
            <td width="25%">      <div class="funkyradio-success">
-            <input type="radio" name="radio2" id="radio30" />
+            <input type="radio" name="undertaking" id="radio30" />
             <label for="radio30">อื่นๆ ระบุ:</label>
           </div></td> 
 
@@ -509,7 +509,7 @@
           <td width="25%"> </td>  </tr> 
           <tr>
            <td width="25%">
-             <input type="text" class="form-control" name=""  /></td>
+             <input type="text" class="form-control" name="undertaking"  /></td>
              <td width="25%"></td> 
              <td width="25%">   </td>  </tr>   
            </table>
@@ -526,11 +526,11 @@
    <div class="form-group">
     <label class="col-lg-2 control-label">เงินจดทะเบียน</label>
     <div class="col-lg-4">
-      <input type="text" class="form-control" name="bus_ mony"  />
+      <input type="text" class="form-control" name="bus_mony"  />
     </div>
     <label class="col-lg-2 control-label">จำนวนปีที่ประกอบการ</label>
     <div class="col-lg-4">
-      <input type="text" class="form-control" name="bus_ amount"  />
+      <input type="text" class="form-control" name="bus_amount"  />
     </div>
   </div>
 
