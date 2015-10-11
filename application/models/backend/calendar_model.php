@@ -5,7 +5,7 @@ class Calendar_Model extends CI_Model {
 	var $conf;
 
 	 function Calendar_model (){
-	// 	parent::Model();
+
 	 	parent::__construct();
 		$this->conf = array(
 			'start_day' => 'sunday',
@@ -113,7 +113,7 @@ function get_calendar_data($year, $month)
 		return $cal_data;
 	}
 
-	function add_calendar_data($date, $data){
+	/*function add_calendar_data($date, $data){
 		
 		if ($this->db->select('Cd_date')->from('calendar')->where('Cd_date', $date)->count_all_results()) {
 			$this->db->where('Cd_date', $date)->update('calendar', array('Cd_date' => $date,'Cd_detail' => $data
@@ -124,7 +124,7 @@ function get_calendar_data($year, $month)
 		$this->db->insert('calendar', array('Cd_date' => $date,'Cd_detail' => $data
 			));
 	}
-}
+}*/
 
 	function generate ($year, $month){
 		

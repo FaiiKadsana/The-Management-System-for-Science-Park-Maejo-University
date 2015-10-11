@@ -19,8 +19,10 @@ class Index extends CI_Controller {
 			$year = date('Y');
 		}
 		if (!$month) {
+
 			$month = date('m');
 		}
+	
 		//$this->load->model('Calendar_model');
 		if ($day = $this->input->post('day')) {
 			$this->calendar_model->add_calendar_data('$year-$month-$day',$this->input->post('Cd_date')
