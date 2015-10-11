@@ -19,7 +19,7 @@
    <div class="row">
     <div class=" col-sm-12">
      <center>
-
+ <form id="" method="post" class="form-horizontal" action="">
       <table >
 
         <tr>
@@ -37,6 +37,7 @@
 
        </tr>
      </table>
+     </form>
    </center>
  </div>
 </div><br>
@@ -80,7 +81,7 @@
 
       <!-- /.row -->
     </div>
-    
+
     <form id="" method="post" class="form-horizontal" action="">
 
       <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
