@@ -4,10 +4,12 @@ class Project_Service_Model extends CI_Model {
 
 	public function adddata
 
-	($nth="",$lnth="",$neng="" ,$lneng="",$idres="",$tell="",
-	$address="",$email="",$pos_detail="" ,$work_unit="",$upimg="",
-	$detail="" ,$recname="",$recname_eng="",$ret_detail="" ,$m_id="",
-	$patent="",$status="",$re_start="",$re_end="",$abstract="" ,
+	($rec_name_thai="",$rec_ln_thai="",$rec_name_eng="",$rec_ln_eng="",$rec_address="",
+	$rec_phone="",$rec_mail="",$rec_position="" ,$rec_unit="",$rec_img="",
+	$rec_office="" ,$sct_detail="",$dct_degree="",$dct_year="" ,$dct_faculty="",
+	$dct_major="",$dct_university="",
+
+	$re_start="",$re_end="",$abstract="" ,
 	$award="",$rea_type="",$rea_date="", $work_start="",$work_end="",
 	$work_office="",$degree="",$dct_year="",$faculty="",$major="",
 	$university="" ){
@@ -23,17 +25,17 @@ class Project_Service_Model extends CI_Model {
 			);
 
 		$insert1=array(
+			"Dct_year"=>$dct_year,"Dct_degree"=>$lastname,
+			"Dct_faculty"=>$faculty,"Dct_major"=>$major,
+			"Uy_id"=>$university,"Rec_id"=>$phone,
+			);
+
+		$insert2=array(
 			"Re_picture"=>$recname,"Re_id_patent"=>$recname_eng,
 			"Re_name"=>$ret_detail,"Re_name_eng"=>$recname,
 			"Re_start"=>$recname_eng,"Re_end"=>$ret_detail,
 			"Re_status"=>$ret_detail,"Re_abstract"=>$recname,
 			"Re_finances"=>$recname_eng,"Re_end"=>$ret_detail
-			);
-
-		$insert2=array(
-			"Dct_year"=>$dct_year,"Dct_degree"=>$lastname,
-			"Dct_faculty"=>$faculty,"Dct_major"=>$major,
-			"Uy_id"=>$university,"Rec_id"=>$phone,
 			);
 
 		$this->db->insert("researcher",$insert);
