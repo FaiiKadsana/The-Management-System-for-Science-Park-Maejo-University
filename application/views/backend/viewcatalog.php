@@ -60,13 +60,13 @@
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="panel panel-danger">
-                    <div class="panel-heading">ข้อมูลแค็ตตาล็อก </div>
+                    <div class="panel-heading">ข้อมูลโครงการ</div>
                     <div class="panel-body">
                       <div class="row">
                         <div class="col-lg-offset-3  col-sm-6">
 
                           <div class="panel panel-info">
-                            <div class="panel-heading">แค็ตตาล็อก </div>
+                            <div class="panel-heading">โครงการ</div>
 
                             <!-- Show &Join table -->
 
@@ -139,13 +139,13 @@
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="panel panel-danger">
-                  <div class="panel-heading">ข้อมูลโครงการ</div>
+                  <div class="panel-heading">ข้อมูลนักวิจัย</div>
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-lg-offset-3  col-sm-6">
 
                         <div class="panel panel-info">
-                          <div class="panel-heading">โครงการ</div>
+                          <div class="panel-heading">นักวิจัย</div>
 
 
                           <!-- Show &Join table -->

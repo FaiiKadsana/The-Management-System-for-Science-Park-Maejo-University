@@ -32,7 +32,7 @@
     <a href="<?php echo base_url("backend/news")?>"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
   </li>
   <li>
-    <a href="tables.html"><i class="fa fa-user"></i> จัดการข้อมุลบุคลากร</a>
+    <a href="<?php echo base_url("backend/person")?>"><i class="fa fa-user"></i> จัดการข้อมุลบุคลากร</a>
   </li>
 </ul>
 </div>
