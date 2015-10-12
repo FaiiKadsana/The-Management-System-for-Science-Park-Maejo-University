@@ -1,13 +1,13 @@
 html, body {
-    font-family:"Bangna New";
+    font-family:"WDB Bangna";
   background: #FFf;
   font-weight: 300;
   font-size: 14px;
   color: #555;
 }
 @font-face {
-  font-family:"Bangna New";
-  src:url(../fonts/bangna-new.ttf);
+   font-family:"WDB Bangna";
+  src:url(../fonts/WDB_Bangna.ttf);
   font-weight: normal;
   font-style: normal;
 }
