@@ -50,7 +50,7 @@
               <td>หน่วยงานสังกัด : clud FriA</td> 
             </tr>
             <tr>
-              <td>ที่อยู่ที่สามรถติดต่อไดั : นนทบุรี่</td>
+              <td>ที่อยู่ที่สามรถติดต่อไดั : นนทบุรี่  ตำบล  อำเภอ  จังหวัด</td>
             </tr>
             <tr>
               <td>เบอร์โทรศัพท์ : 0857856130</td>
@@ -107,70 +107,103 @@
                    <div class="col-lg-4">
                     <textarea class="form-control"  name="rec_address">   </textarea>
                   </div>
-                  <label class="col-lg-2 control-label">เบอร์โทร</label>
+                  <label class="col-lg-2 control-label">ตำบล</label>
                   <div class="col-lg-4">
-                    <input type="tel" class="form-control" name="rec_phone"   />
-                  </div>
-                </div>
-                <br><br>
-
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">E-mail</label>
-                  <div class="col-lg-4">
-                    <input type="email" class="form-control" name="rec_mail"   />
-                  </div>
-                  <label class="col-lg-2 control-label">ตำแหน่ง</label>
-                  <div class="col-lg-4">
-                    <select class="form-control"  name="rec_pos_detail">
+                    <select class="form-control"  name="rec_subdistrict">
                       <option value="ศ.ดร.">ศ.ดร.</option>
                       <option value="รศ.ดร.">รศ.ดร.</option>
                       <option value="พศ.ดร.">พศ.ดร.</option>
                       <option value="ศ.">ศ.</option>
-                      <option value="รศ.">รศ.</option>
-                      <option value="พศ.">พศ.</option>
-                      <option value="ดร.">ดร.</option>
-                      <option value="อ.">อ.</option>
                     </select>
                   </div>
-                </div>
-                <br><br><br>
-
-                <div class="form-group">
-
-                  <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
-                  <div class="col-lg-4">
-                    <input type="text" class="form-control" name="rec_work_unit"   />
-                  </div>
-                  <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
-                  <div class="col-lg-4">
-                    <input type="file" name="rec_img">
-                  </div>
-
                 </div>
                 <br><br>
 
                 <div class="form-group">
-                 <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
+                 <label class="col-lg-2 control-label">อำเภอ</label>
                  <div class="col-lg-4">
-                  <input type="text" name="rec_work_office">
+                  <select class="form-control"  name="rec_district">
+                    <option value="ศ.ดร.">ศ.ดร.</option>
+                    <option value="รศ.ดร.">รศ.ดร.</option>
+                    <option value="พศ.ดร.">พศ.ดร.</option>
+                    <option value="ศ.">ศ.</option>
+                  </select>
                 </div>
+                <label class="col-lg-2 control-label">จังหวัด</label>
+                <div class="col-lg-4">
+                  <select class="form-control"  name="rec_province">
+                    <option value="ศ.ดร.">ศ.ดร.</option>
+                    <option value="รศ.ดร.">รศ.ดร.</option>
+                    <option value="พศ.ดร.">พศ.ดร.</option>
+                    <option value="ศ.">ศ.</option>
+                  </select>
+                </div>
+              </div>
+              <br><br>
+
+              <div class="form-group">
+               <label class="col-lg-2 control-label">เบอร์โทร</label>
+               <div class="col-lg-4">
+                <input type="tel" class="form-control" name="rec_phone"   />
+              </div>
+              <label class="col-lg-2 control-label">E-mail</label>
+              <div class="col-lg-4">
+                <input type="email" class="form-control" name="rec_mail"   />
               </div>
 
             </div>
+            <br><br>
+
+
+            <div class="form-group">
+              <label class="col-lg-2 control-label">ตำแหน่ง</label>
+              <div class="col-lg-4">
+                <select class="form-control"  name="rec_position">
+                  <option value="ศ.ดร.">ศ.ดร.</option>
+                  <option value="รศ.ดร.">รศ.ดร.</option>
+                  <option value="พศ.ดร.">พศ.ดร.</option>
+                  <option value="ศ.">ศ.</option>
+                  <option value="รศ.">รศ.</option>
+                  <option value="พศ.">พศ.</option>
+                  <option value="ดร.">ดร.</option>
+                  <option value="อ.">อ.</option>
+                </select>
+              </div>
+              <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
+              <div class="col-lg-4">
+                <input type="text" class="form-control" name="rec_unit"   />
+              </div>
+            </div>
+            <br><br><br>
+
+            <div class="form-group">
+
+              <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+              <div class="col-lg-4">
+                <input type="file" name="rec_img">
+              </div>
+              <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
+              <div class="col-lg-4">
+                <input type="text" name="rec_office">
+              </div>
+            </div>
+            <br><br>
+
           </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-
-
         </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+
       </div>
     </div>
+  </div>
 
-  </form>
-  <!-- End popup แก้ไขข้อมูลนักวิจัย --> 
+</form>
+<!-- End popup แก้ไขข้อมูลนักวิจัย --> 
 </div>
 
 <div class="col-sm-5">
@@ -539,18 +572,54 @@
                     <div class="col-lg-4">
                       <textarea name="bus_address"></textarea>
                     </div>
-                    <label class="col-lg-2 control-label">โทรศัพท์</label>
+                    <label class="col-lg-2 control-label">ตำบล</label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="bus_ tell"  />
+                      <select class="form-control"  name="bus_subdistrict">
+                        <option value="ศ.ดร.">ศ.ดร.</option>
+                        <option value="รศ.ดร.">รศ.ดร.</option>
+                        <option value="พศ.ดร.">พศ.ดร.</option>
+                        <option value="ศ.">ศ.</option>
+                      </select>
                     </div>
                   </div>
                   <br><br>
 
                   <div class="form-group">
+                    <label class="col-lg-2 control-label">อำเภอ</label>
+                    <div class="col-lg-4">
+                      <select class="form-control"  name="bus_district">
+                        <option value="ศ.ดร.">ศ.ดร.</option>
+                        <option value="รศ.ดร.">รศ.ดร.</option>
+                        <option value="พศ.ดร.">พศ.ดร.</option>
+                        <option value="ศ.">ศ.</option>
+                      </select>
+                    </div>
+                    <label class="col-lg-2 control-label">จังหวัด</label>
+                    <div class="col-lg-4">
+                      <select class="form-control"  name="bus_province">
+                        <option value="ศ.ดร.">ศ.ดร.</option>
+                        <option value="รศ.ดร.">รศ.ดร.</option>
+                        <option value="พศ.ดร.">พศ.ดร.</option>
+                        <option value="ศ.">ศ.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <br><br>
+
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">โทรศัพท์</label>
+                    <div class="col-lg-4">
+                      <input type="text" class="form-control" name="bus_ tell"  />
+                    </div>
                     <label class="col-lg-2 control-label">โทรสาร</label>
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="bus_ fax"  />
                     </div>
+                  </div>
+                  <br><br>
+
+                  <div class="form-group">
+                   
                     <label class="col-lg-2 control-label">website</label>
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="bus_ website"  />

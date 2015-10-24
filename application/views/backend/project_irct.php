@@ -120,64 +120,98 @@
                 </div>
                 <br><br>
 
-                <div class="form-group">
-                 <label class="col-lg-2 control-label">ที่อยู่</label>
-                 <div class="col-lg-4">
-                  <textarea class="form-control"  name="rec_address">   </textarea>
+                   <div class="form-group">
+                   <label class="col-lg-2 control-label">ที่อยู่</label>
+                   <div class="col-lg-4">
+                    <textarea class="form-control"  name="rec_address">   </textarea>
+                  </div>
+                  <label class="col-lg-2 control-label">ตำบล</label>
+                  <div class="col-lg-4">
+                    <select class="form-control"  name="rec_subdistrict">
+                      <option value="ศ.ดร.">ศ.ดร.</option>
+                      <option value="รศ.ดร.">รศ.ดร.</option>
+                      <option value="พศ.ดร.">พศ.ดร.</option>
+                      <option value="ศ.">ศ.</option>
+                    </select>
+                  </div>
                 </div>
-                <label class="col-lg-2 control-label">เบอร์โทร</label>
-                <div class="col-lg-4">
-                  <input type="tel" class="form-control" name="rec_phone"   />
-                </div>
-              </div>
-              <br><br>
+                <br><br>
 
-              <div class="form-group">
-                <label class="col-lg-2 control-label">E-mail</label>
-                <div class="col-lg-4">
-                  <input type="email" class="form-control" name="rec_mail"   />
-                </div>
-                <label class="col-lg-2 control-label">ตำแหน่ง</label>
-                <div class="col-lg-4">
-                  <select class="form-control"  name="rec_pos_detail">
+                <div class="form-group">
+                 <label class="col-lg-2 control-label">อำเภอ</label>
+                 <div class="col-lg-4">
+                  <select class="form-control"  name="rec_district">
                     <option value="ศ.ดร.">ศ.ดร.</option>
                     <option value="รศ.ดร.">รศ.ดร.</option>
                     <option value="พศ.ดร.">พศ.ดร.</option>
                     <option value="ศ.">ศ.</option>
-                    <option value="รศ.">รศ.</option>
-                    <option value="พศ.">พศ.</option>
-                    <option value="ดร.">ดร.</option>
-                    <option value="อ.">อ.</option>
                   </select>
                 </div>
-              </div>
-              <br><br><br>
-
-              <div class="form-group">
-
-                <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
+                <label class="col-lg-2 control-label">จังหวัด</label>
                 <div class="col-lg-4">
-                  <input type="text" class="form-control" name="rec_work_unit"   />
+                  <select class="form-control"  name="rec_province">
+                    <option value="ศ.ดร.">ศ.ดร.</option>
+                    <option value="รศ.ดร.">รศ.ดร.</option>
+                    <option value="พศ.ดร.">พศ.ดร.</option>
+                    <option value="ศ.">ศ.</option>
+                  </select>
                 </div>
-                <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
-                <div class="col-lg-4">
-                  <input type="file" name="rec_img">
-                </div>
-
               </div>
               <br><br>
 
               <div class="form-group">
-               <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
+               <label class="col-lg-2 control-label">เบอร์โทร</label>
                <div class="col-lg-4">
-                <input type="text" name="rec_work_office">
+                <input type="tel" class="form-control" name="rec_phone"   />
               </div>
+              <label class="col-lg-2 control-label">E-mail</label>
+              <div class="col-lg-4">
+                <input type="email" class="form-control" name="rec_mail"   />
+              </div>
+
+            </div>
+            <br><br>
+
+
+            <div class="form-group">
+              <label class="col-lg-2 control-label">ตำแหน่ง</label>
+              <div class="col-lg-4">
+                <select class="form-control"  name="rec_position">
+                  <option value="ศ.ดร.">ศ.ดร.</option>
+                  <option value="รศ.ดร.">รศ.ดร.</option>
+                  <option value="พศ.ดร.">พศ.ดร.</option>
+                  <option value="ศ.">ศ.</option>
+                  <option value="รศ.">รศ.</option>
+                  <option value="พศ.">พศ.</option>
+                  <option value="ดร.">ดร.</option>
+                  <option value="อ.">อ.</option>
+                </select>
+              </div>
+              <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
+              <div class="col-lg-4">
+                <input type="text" class="form-control" name="rec_unit"   />
+              </div>
+            </div>
+            <br><br><br>
+
+            <div class="form-group">
+
+              <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+              <div class="col-lg-4">
+                <input type="file" name="rec_img">
+              </div>
+              <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
+              <div class="col-lg-4">
+                <input type="text" name="rec_office">
+              </div>
+            </div>
+            <br><br>
+            <div class="form-group">    
               <label class="col-lg-2 control-label">ความเชียวชาญ</label>
               <div class="col-lg-4">
                 <input type="text" class="form-control" name="sct_detail"   />
               </div>
             </div>
-
           </div>
         </div>
 
@@ -295,28 +329,64 @@
       <br><br>
 
       <div class="form-group">
-        <label class="col-lg-2 control-label">ที่อยู่</label>
-        <div class="col-lg-4">
-          <textarea name="bus_address"></textarea>
-        </div>
-        <label class="col-lg-2 control-label">โทรศัพท์</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_ tell"  />
-        </div>
+       <label class="col-lg-2 control-label">ที่อยู่</label>
+       <div class="col-lg-4">
+        <textarea class="form-control"  name="bus_address">   </textarea>
       </div>
-      <br><br>
+      <label class="col-lg-2 control-label">ตำบล</label>
+      <div class="col-lg-4">
+        <select class="form-control"  name="bus_subdistrict">
+          <option value="ศ.ดร.">ศ.ดร.</option>
+          <option value="รศ.ดร.">รศ.ดร.</option>
+          <option value="พศ.ดร.">พศ.ดร.</option>
+          <option value="ศ.">ศ.</option>
+        </select>
+      </div>
+    </div>
+    <br><br>
 
-      <div class="form-group">
-        <label class="col-lg-2 control-label">โทรสาร</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_ fax"  />
-        </div>
-        <label class="col-lg-2 control-label">website</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_ website"  />
-        </div>
-      </div>
-      <br><br>
+    <div class="form-group">
+     <label class="col-lg-2 control-label">อำเภอ</label>
+     <div class="col-lg-4">
+      <select class="form-control"  name="bus_district">
+        <option value="ศ.ดร.">ศ.ดร.</option>
+        <option value="รศ.ดร.">รศ.ดร.</option>
+        <option value="พศ.ดร.">พศ.ดร.</option>
+        <option value="ศ.">ศ.</option>
+      </select>
+    </div>
+    <label class="col-lg-2 control-label">จังหวัด</label>
+    <div class="col-lg-4">
+      <select class="form-control"  name="bus_province">
+        <option value="ศ.ดร.">ศ.ดร.</option>
+        <option value="รศ.ดร.">รศ.ดร.</option>
+        <option value="พศ.ดร.">พศ.ดร.</option>
+        <option value="ศ.">ศ.</option>
+      </select>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="form-group">
+    <label class="col-lg-2 control-label">โทรศัพท์</label>
+    <div class="col-lg-4">
+      <input type="text" class="form-control" name="bus_phone"  />
+    </div>
+    <label class="col-lg-2 control-label">โทรสาร</label>
+    <div class="col-lg-4">
+      <input type="text" class="form-control" name="bus_ fax"  />
+    </div> 
+  </div>
+  <br><br>
+
+  <div class="form-group">
+
+    <label class="col-lg-2 control-label">website</label>
+    <div class="col-lg-4">
+      <input type="text" class="form-control" name="bus_ website"  />
+    </div>
+  </div>
+  <br><br>
 
       <div class="row">
        <div class="col-lg-12">

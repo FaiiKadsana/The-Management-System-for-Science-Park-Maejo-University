@@ -136,7 +136,7 @@
               </div>
               <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
               <div class="col-lg-4">
-                <input type="detail" class="form-control" name="rec_phone"   />
+                <textarea ></textarea>
               </div>
             </div>
             <br><br>

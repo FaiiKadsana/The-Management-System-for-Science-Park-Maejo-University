@@ -235,7 +235,7 @@
        <div class="row">
          <div class="col-lg-9 col-lg-offset-1">
           <hr>
-          <center><h3>ข้อมูลข่าว</h3></center><br> 
+          <center><h3>ข้อมูลบุคลากร</h3></center><br> 
           <center>
 
            <div class="form-group">

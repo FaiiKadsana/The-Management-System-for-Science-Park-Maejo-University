@@ -13,9 +13,9 @@
   <li>
     <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-file"></i> จัดการข้อเสนอโครงการ <i class="fa fa-fw fa-caret-down"></i></a>
     <ul id="demo2" class="collapse">
-      <li><a class="" href="form_validation.html">Service Platform</a></li>
-      <li><a class="" href="form_validation.html">Co-Research Platform</a></li>
-      <li><a class="" href="<?php echo base_url("backend/fromirct")?>">IRTC Platform</a></li>                          
+      <li><a class="" href="<?php echo base_url("backend/service")?>">Service Platform</a></li>
+      <li><a class="" href="<?php echo base_url("backend/coresearch")?>">Co-Research Platform</a></li>
+      <li><a class="" href="<?php echo base_url("backend/irtc")?>">IRTC Platform</a></li>                          
       <li><a class="" href="form_validation.html">TBI Platform</a></li>
     </ul>
   </li>
