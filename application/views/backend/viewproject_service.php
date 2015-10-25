@@ -48,7 +48,7 @@
               <td>หน่วยงานสังกัด : clud FriA</td> 
             </tr>
             <tr>
-              <td>ที่อยู่ที่สามรถติดต่อไดั : นนทบุรี่  ตำบล  อำเภอ  จังหวัด </td>
+              <td>ที่อยู่ที่สามรถติดต่อไดั : 57/2 ม.1  ตำบล นาหมื่นศรี  อำเภอ นาโยง  จังหวัด ตรัง</td>
             </tr>
             <tr>
               <td>เบอร์โทรศัพท์ : 0857856130</td>
@@ -128,19 +128,18 @@
         <div class="panel panel-info">
           <div class="panel-heading"></div>
 
-          <table class="table table-hover  table-hover table-striped table-condensed">
-            <table class="table table-hover  table-hover table-striped table-condensed">
+           <table class="table table-hover  table-hover table-striped table-condensed">
               <tr>
                 <th>#</th>
                 <th>ชื่อกิจการ</th>
                 <th>ชื่อเจ้าของกิจการ</th>
                 <th>นามสกุลเจ้าของกิจการ</th>
-                <th>ประเภทกิจการา</th>
+                <th>ประเภทกิจการ</th>
               </tr>
               <!-- Show &Join table -->
               <tr>
                 <td>1</td>
-                <td><p  class="co" data-toggle="modal" data-target=".bs-example-modal-lg-businessman" >585</p></td>
+                <td><p  class="co" data-toggle="modal" data-target=".bs-example-modal-lg-businessman" >Hotel</p></td>
                 <td>อลงกร</td>
                 <td>อยู่เกิด</td>
                 <td>บริษัทจำกัด</td>
@@ -164,19 +163,19 @@
 
                             <table class="table table-bordered">
                               <tr>
-                                <td>ชื่อผู้ติดต่อ : นาย อลงกรณ์  อยู่เกิด</td> 
+                                <td>ชื่อผู้ติดต่อ : นางสาว กมลฉัตร สินไชย</td> 
                               </tr>
                               <tr>
-                                <td> เลขที่บัตรประชาชน: 1985566322987</td>
+                                <td> เลขที่บัตรประชาชน: 1929900366417</td>
                               </tr>
                               <tr>
                                 <td>ตำแหน่ง: ประชาสัมพันธ์</td>
                               </tr>
                               <tr>
-                                <td>เบอร์โทรศัพท์ : 0857856130</td>
+                                <td>เบอร์โทรศัพท์ : 0915247393</td>
                               </tr>
                               <tr>
-                                <td>E-mail : Alongkornyukerd@gmail.com</td>    
+                                <td>E-mail : kamonchatsinchai305@gmail.com</td>    
                               </tr>
                             </table>
                           </div>
@@ -194,25 +193,25 @@
                           
                           <table class="table table-bordered">
                             <tr>
-                              <td>ชื่อกิจการ :  2525</td> 
+                              <td>ชื่อกิจการ :  Hotel</td> 
                             </tr>
                             <tr>
-                              <td>ชื่อเจ้าของกิจการ : 85852</td>
+                              <td>ชื่อเจ้าของกิจการ : นางสาว เกศนา ปัญญา</td>
                             </tr>
                             <tr>
-                              <td>ที่อยู่ : fhfhfhfhfhf  ตำบล  อำเภอ  จังหวัด </td>
+                              <td>ที่อยู่ : 892/6 ม.3  ตำบล หนองหาร  อำเภอ สันทราย จังหวัด เชียงใหม่</td>
                             </tr>
                             <tr>
                               <td>โทรศัพท์ : 075242500</td> 
                             </tr>
                             <tr>
-                              <td>โทรสาร : 856955</td>
+                              <td>โทรสาร : 075896258</td>
                             </tr>
                             <tr>
-                              <td>website : fhfhfhfhfhhbc</td>
+                              <td>website : www.Hotlecom.com</td>
                             </tr>
                             <tr>
-                              <td>เลขที่ทะเบียนพาณิชย์ : 58759</td>    
+                              <td>เลขที่ทะเบียนพาณิชย์ : กห28956</td>    
                             </tr>
                             <tr>
                               <td>ประเภทกิจการ: บริษัทจำกัด</td>    
@@ -284,7 +283,7 @@
               <tr>
                 <td>1</td>
                 <td><p class="co" data-toggle="modal" data-target=".bs-example-modal-lg-portfolio">กังหันลบ</p></td>
-                <td>2558</td>
+                <td>2554</td>
                 <td>สำเร็จ</td>
                 <td>นานาชาติ</td>
                 <td>n/s</td>
@@ -309,13 +308,13 @@
 
                             <table class="table table-bordered">
                               <tr>
-                                <td>ชื่อโครงการ : ดหดหดหดหดหดหดห</td> 
+                                <td>ชื่อโครงการ : กังหันลม</td> 
                               </tr>
                               <tr>
                                 <td> Service</td>
                               </tr>
                               <tr>
-                                <td>กลุ่มอุตสาหกรรม: sdfgsfsf</td>
+                                <td>กลุ่มอุตสาหกรรม: พาณิชย์</td>
                               </tr>
                               <tr>
                                 <td>หน่วยงานวิจัย : วิทยาการคอม</td>
@@ -327,7 +326,7 @@
                                 <td>ปีที่สิ้นสุดทำโครงการ: 2558</td>    
                               </tr>
                               <tr>
-                                <td>เลขที่สิทธิบัตร: 5865</td>    
+                                <td>เลขที่สิทธิบัตร: กห25896</td>    
                               </tr>
                               <tr>
                                 <td>สถานภาพโครงการ: อยู่ในช่วงดำเนินงาน</td>    
@@ -339,13 +338,13 @@
                                 <td>แหล่งเงินทุนบริษัท: 50 %</td>    
                               </tr>
                               <tr>
-                                <td>บทสรุป: sgfdfdsfsfsfsfssfsf</td>    
+                                <td>บทสรุป: ทำกังหันลมเพื่อใช้ในการเกษร</td>    
                               </tr>
                               <tr>
-                                <td>รางวัลผลงานวิจัย: olkok</td>    
+                                <td>รางวัลผลงานวิจัย: นานาชาติ</td>    
                               </tr>
                               <tr>
-                                <td>ประเภทรางวัล: dadada</td>    
+                                <td>ประเภทรางวัล: n/s</td>    
                               </tr>
                               <tr>
                                 <td>วันรับรางวัลผลงานวิจัย: 15/08/58</td>    
