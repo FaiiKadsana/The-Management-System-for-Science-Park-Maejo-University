@@ -62,8 +62,8 @@
 
         <tr class="bg-success">
           <td >1</td>
-          <td >อลงกรณ์</td>
-          <td >อยู่เกิด</td>   
+          <td >นวัตกรรมใหม่</td>
+          <td >เป็นนวัตกรรมใหม่ที่เกี่ยวกับ เกตรกร</td>   
           <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewnew"><i class="fa fa-eye"></i>  ดู</button></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addnew"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
           <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editnew"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
@@ -93,10 +93,10 @@
                      <!-- Show &Join table -->
                      <table class="table table-bordered">
                       <tr>
-                        <td>หัวข้อข่าว: 52896</td> 
+                        <td>หัวข้อข่าว: นวัตกรรมใหม่</td> 
                       </tr>
                       <tr>
-                        <td>รายละเอียด :  500  บาท</td> 
+                        <td>รายละเอียด :  เป็นนวัตกรรมใหม่ที่เกี่ยวกับ ข้าว ที่ มีสารอาหารครบ</td> 
                       </tr>
                     </table>
                     <!-- End -->   

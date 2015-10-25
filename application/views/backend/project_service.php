@@ -24,7 +24,7 @@
 
           <tr>
             <td></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อหนักวิจัย" name="research"></td>
+            <td><input type="text" class="form-control" placeholder="กรอกชื่อนักวิจัย" name="research"></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
@@ -131,10 +131,8 @@
                   <label class="col-lg-2 control-label">ตำบล</label>
                   <div class="col-lg-4">
                     <select class="form-control"  name="rec_subdistrict">
-                      <option value="ศ.ดร.">ศ.ดร.</option>
-                      <option value="รศ.ดร.">รศ.ดร.</option>
-                      <option value="พศ.ดร.">พศ.ดร.</option>
-                      <option value="ศ.">ศ.</option>
+                      <option value="ศ.ดร.">หนองหาร</option>
+                      <option value="รศ.ดร.">นาหมื่นศรี</option>
                     </select>
                   </div>
                 </div>
@@ -144,19 +142,15 @@
                  <label class="col-lg-2 control-label">อำเภอ</label>
                  <div class="col-lg-4">
                   <select class="form-control"  name="rec_district">
-                    <option value="ศ.ดร.">ศ.ดร.</option>
-                    <option value="รศ.ดร.">รศ.ดร.</option>
-                    <option value="พศ.ดร.">พศ.ดร.</option>
-                    <option value="ศ.">ศ.</option>
+                    <option value="ศ.ดร.">สันทราย</option>
+                    <option value="รศ.ดร.">นาโยง</option>
                   </select>
                 </div>
                 <label class="col-lg-2 control-label">จังหวัด</label>
                 <div class="col-lg-4">
                   <select class="form-control"  name="rec_province">
-                    <option value="ศ.ดร.">ศ.ดร.</option>
-                    <option value="รศ.ดร.">รศ.ดร.</option>
-                    <option value="พศ.ดร.">พศ.ดร.</option>
-                    <option value="ศ.">ศ.</option>
+                    <option value="ศ.ดร.">เชียงใหม่</option>
+                    <option value="รศ.ดร.">ตรัง</option>
                   </select>
                 </div>
               </div>
@@ -340,10 +334,8 @@
       <label class="col-lg-2 control-label">ตำบล</label>
       <div class="col-lg-4">
         <select class="form-control"  name="bus_subdistrict">
-          <option value="ศ.ดร.">ศ.ดร.</option>
-          <option value="รศ.ดร.">รศ.ดร.</option>
-          <option value="พศ.ดร.">พศ.ดร.</option>
-          <option value="ศ.">ศ.</option>
+          <option value="ศ.ดร.">หนองหาร</option>
+          <option value="รศ.ดร.">นาหมื่นศรี</option>
         </select>
       </div>
     </div>
@@ -353,19 +345,15 @@
      <label class="col-lg-2 control-label">อำเภอ</label>
      <div class="col-lg-4">
       <select class="form-control"  name="bus_district">
-        <option value="ศ.ดร.">ศ.ดร.</option>
-        <option value="รศ.ดร.">รศ.ดร.</option>
-        <option value="พศ.ดร.">พศ.ดร.</option>
-        <option value="ศ.">ศ.</option>
+        <option value="ศ.ดร.">นาโยง</option>
+        <option value="รศ.ดร.">สันทราย</option>
       </select>
     </div>
     <label class="col-lg-2 control-label">จังหวัด</label>
     <div class="col-lg-4">
       <select class="form-control"  name="bus_province">
-        <option value="ศ.ดร.">ศ.ดร.</option>
-        <option value="รศ.ดร.">รศ.ดร.</option>
-        <option value="พศ.ดร.">พศ.ดร.</option>
-        <option value="ศ.">ศ.</option>
+        <option value="ศ.ดร.">เชียงใหม่</option>
+        <option value="รศ.ดร.">ตรัง</option>
       </select>
     </div>
   </div>

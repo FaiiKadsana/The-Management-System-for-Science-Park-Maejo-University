@@ -129,10 +129,8 @@
                   <label class="col-lg-2 control-label">ตำบล</label>
                   <div class="col-lg-4">
                     <select class="form-control"  name="rec_subdistrict">
-                      <option value="ศ.ดร.">ศ.ดร.</option>
-                      <option value="รศ.ดร.">รศ.ดร.</option>
-                      <option value="พศ.ดร.">พศ.ดร.</option>
-                      <option value="ศ.">ศ.</option>
+                      <option value="ศ.ดร.">นาหมื่นศรี</option>
+                      <option value="รศ.ดร.">หนองหาร</option>
                     </select>
                   </div>
                 </div>
@@ -142,19 +140,14 @@
                  <label class="col-lg-2 control-label">อำเภอ</label>
                  <div class="col-lg-4">
                   <select class="form-control"  name="rec_district">
-                    <option value="ศ.ดร.">ศ.ดร.</option>
-                    <option value="รศ.ดร.">รศ.ดร.</option>
-                    <option value="พศ.ดร.">พศ.ดร.</option>
-                    <option value="ศ.">ศ.</option>
-                  </select>
+                    <option value="ศ.ดร.">สันทราย</option>
+                    <option value="รศ.ดร.">นาโยง </option>
                 </div>
                 <label class="col-lg-2 control-label">จังหวัด</label>
                 <div class="col-lg-4">
                   <select class="form-control"  name="rec_province">
-                    <option value="ศ.ดร.">ศ.ดร.</option>
-                    <option value="รศ.ดร.">รศ.ดร.</option>
-                    <option value="พศ.ดร.">พศ.ดร.</option>
-                    <option value="ศ.">ศ.</option>
+                    <option value="ศ.ดร.">เชียงใหม่</option>
+                    <option value="รศ.ดร.">ตรัง</option>
                   </select>
                 </div>
               </div>
@@ -329,44 +322,38 @@
         </div>
       </div>
       <br><br>
+    
       <div class="form-group">
-       <label class="col-lg-2 control-label">ที่อยู่</label>
-       <div class="col-lg-4">
-        <textarea class="form-control"  name="bus_address">   </textarea>
-      </div>
-      <label class="col-lg-2 control-label">ตำบล</label>
-      <div class="col-lg-4">
-        <select class="form-control"  name="bus_subdistrict">
-          <option value="ศ.ดร.">ศ.ดร.</option>
-          <option value="รศ.ดร.">รศ.ดร.</option>
-          <option value="พศ.ดร.">พศ.ดร.</option>
-          <option value="ศ.">ศ.</option>
-        </select>
-      </div>
-    </div>
-    <br><br>
+                   <label class="col-lg-2 control-label">ที่อยู่</label>
+                   <div class="col-lg-4">
+                    <textarea class="form-control"  name="rec_address">   </textarea>
+                  </div>
+                  <label class="col-lg-2 control-label">ตำบล</label>
+                  <div class="col-lg-4">
+                    <select class="form-control"  name="rec_subdistrict">
+                      <option value="ศ.ดร.">นาหมื่นศรี</option>
+                      <option value="รศ.ดร.">หนองหาร</option>
+                    </select>
+                  </div>
+                </div>
+                <br><br>
 
-    <div class="form-group">
-     <label class="col-lg-2 control-label">อำเภอ</label>
-     <div class="col-lg-4">
-      <select class="form-control"  name="bus_district">
-        <option value="ศ.ดร.">ศ.ดร.</option>
-        <option value="รศ.ดร.">รศ.ดร.</option>
-        <option value="พศ.ดร.">พศ.ดร.</option>
-        <option value="ศ.">ศ.</option>
-      </select>
-    </div>
-    <label class="col-lg-2 control-label">จังหวัด</label>
-    <div class="col-lg-4">
-      <select class="form-control"  name="bus_province">
-        <option value="ศ.ดร.">ศ.ดร.</option>
-        <option value="รศ.ดร.">รศ.ดร.</option>
-        <option value="พศ.ดร.">พศ.ดร.</option>
-        <option value="ศ.">ศ.</option>
-      </select>
-    </div>
-  </div>
-  <br><br>
+                <div class="form-group">
+                 <label class="col-lg-2 control-label">อำเภอ</label>
+                 <div class="col-lg-4">
+                  <select class="form-control"  name="rec_district">
+                    <option value="ศ.ดร.">สันทราย</option>
+                    <option value="รศ.ดร.">นาโยง </option>
+                </div>
+                <label class="col-lg-2 control-label">จังหวัด</label>
+                <div class="col-lg-4">
+                  <select class="form-control"  name="rec_province">
+                    <option value="ศ.ดร.">เชียงใหม่</option>
+                    <option value="รศ.ดร.">ตรัง</option>
+                  </select>
+                </div>
+              </div>
+              <br><br>
 
   <div class="form-group">
     <label class="col-lg-2 control-label">โทรศัพท์</label>

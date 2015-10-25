@@ -63,7 +63,7 @@
             <td >1</td>
             <td >กังหันลม</td>
             <td >อลงกรณ์</td>   
-            <td >500</td>
+            <td >500 บาท</td>
             <td >085666666</td>
             <td><a href="<?php echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
             <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>          

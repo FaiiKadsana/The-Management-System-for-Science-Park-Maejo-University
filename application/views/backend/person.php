@@ -94,7 +94,7 @@
                      <!-- Show &Join table -->
                      <table class="table table-bordered">
                       <tr>
-                        <td>นาย: อลงกรณ์  อยู่เกิด</td> 
+                        <td>นาย: มนตรี  ศรีษะเกษ</td> 
                       </tr>
                       <tr>
                         <td>รหัสบัตรประชาชน: 2569788699523</td> 
