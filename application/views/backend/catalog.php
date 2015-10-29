@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="page-header">
-         <small>Catalog</small>
+         <small>Catalogg</small>
        </h1>
        <ol class="breadcrumb">
          <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/catalog")?>"> จัดการแค็ตตาล็อก</a></li>
