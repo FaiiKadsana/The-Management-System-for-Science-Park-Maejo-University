@@ -80,7 +80,7 @@ ul {
 #section_header {
 	text-align: center;
 	background-color: #f6f6f6;
-	padding: 30px 0;
+	padding: 15px 0;
 	margin-bottom: 30px;
 	margin-top: 20px;
 }
@@ -190,7 +190,7 @@ ul {
 }
 #footerwrap span.copyright {
 	color: #888;
-	font-size: 16px;
+	font-size: 14px;
 }
 #footerwrap span.copyright a {
 	color: #888;
@@ -639,13 +639,7 @@ address {
 	background-color: pink ;
 	padding:10px;
 }
-.title-header{
-	border-bottom: 2px  dashed #FF6930;
-	padding: 8px;
-	color: #FF6930;
-	font-weight: bold;
-	font-size: 18px;
-}
+
 .nav.navbar-nav.nav-menu > li > a:hover /* hover ที่ำให้เวลาเมาส์ชี้มีสี*/
 {
 	background-color: #FF6930 ;
@@ -713,4 +707,11 @@ address {
 	font-weight: bold;
 	font-size: 18px;
 	width: 500px;
+}
+.title-header{
+	border-bottom: 2px  dashed #FF6930;
+	/*padding: 8px;*/
+	color: #FF6930;
+	font-weight: bold;
+	font-size: 16px;
 }

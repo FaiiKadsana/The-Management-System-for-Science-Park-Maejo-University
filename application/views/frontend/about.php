@@ -28,8 +28,8 @@
          </ul>
        </div>
      </div>
-
-               <div class="col-sm-5"><img src='<?php echo base_url("asset/images/N.jpg") ?>' style="width:450px"></div>
+<br><br><br>
+               <div class="col-sm-5"><img src='<?php echo base_url("asset/images/N.jpg") ?>' style="width:400px"></div>
 
             <div class="row">
 
@@ -77,8 +77,8 @@
 
                    </div>
                  </div>
-
-                 <div class="col-sm-5"><img src='<?php echo base_url("asset/images/map.jpg") ?>' style="width:400px"></div>
+<br><br><br>
+                 <div class="col-sm-5"><img src='<?php echo base_url("asset/images/map.jpg") ?>' style="width:500px"></div>
 
                  <div class="row">
                    <div class="col-md-offset-1 col-sm-10">

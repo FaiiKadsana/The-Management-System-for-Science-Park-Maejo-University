@@ -1,22 +1,17 @@
 
 <!-- Welcome Section -->
 <div id="section_header">
-  <h2>ยินดีต้อนรับ</h2>
+	<h2>ยินดีต้อนรับ</h2>
 </div>
 <!-- ข่าวสาร -->
 
 <div class='row'>
-<div class= 'col-md-12'>
-   
-   <div class= 'col-md-6'>
-	<div class='col-md-12'>
-		<center>
-			<p class='title-header org'>ข่าวประชาสัมพันธ์</p>
-			
-		</center><br>
-	</div>
-	<div class='col-md-12 mgt30'>
-		<div class='container'>
+	<div class= 'col-md-12'>
+
+		<div class= 'col-md-7'>	
+			<center>
+				<p class='title-header org'>ข่าวประชาสัมพันธ์</p>			
+			</center><br>
 			<div class="row">
 				<div class="col-md-4">
 					<img src='<?php echo base_url("asset/images/banner1.png") ?>' width='60%' height='40%'>
@@ -26,41 +21,26 @@
 					<p>รายละเอียด</p>
 				</div>
 			</div>
-		</div>
-	</div>
-	
-	</div>
-	
-	
-	  <div class= 'col-md-6'>
-	<div class='col-md-12'>
-		<center>
-			<p class='title-header org'>ปฎิทินการนัดหมาย</p>
-			
-		</center><br>
-	</div>
-	<div class='col-md-12 mgt30'>
-		<div class='container'>
+		</div>	
+
+		<div class= 'col-md-5'>	
+			<center>
+				<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
+			</center><br>
 			<div class="row">
-				<div class="col-md-4">
-					 <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2><strong>Calendar</strong></h2>
-                </div><br>
-                <div class="panel-body">
-                  <!-- Calenda -->
-                  
-                  
-               </div>
-             </div>          
-					
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2><strong>Calendar</strong></h2>
+						</div><br>
+						<div class="panel-body">
+							<!-- Calenda -->
+						</div>
+					</div> 
 				</div>
 			</div>
-		</div>
-	</div>
-	</div>
+		</div>	 
 
-</div>
+	</div>
 </div>
 
-				
