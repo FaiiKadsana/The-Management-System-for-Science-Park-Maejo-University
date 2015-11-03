@@ -15,7 +15,7 @@ class Project_Service_Model extends CI_Model {
 	$university="" ){
 
 		$insert=array(
-			"Rec_picture"=>$upimg,"Rec_code"=>$idres,"Rec_name_thai"=>$nth,
+			"Rec_picture"=>$rec_img,"Rec_code"=>$idres,"Rec_name_thai"=>$nth,
 			"Rec_ln_thai"=>$lnth,"Rec_name_eng"=>$lneng,
 			"Rec_ln_eng"=>$idres,"Rec_address"=>$address,
 			"Rec_phone"=>$tell,"Rec_mail"=>$email,

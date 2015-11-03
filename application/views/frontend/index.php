@@ -1,3 +1,23 @@
+<style type=”text/css”>
+.calendar {
+font-family: Arial; font-size: 12px;
+}
+table.calendar {
+margin: auto; border-collapse: collapse;
+}
+.calendar .days td {
+width: 60px; height: 60px; padding: 4px;
+border: 1px solid #999;
+vertical-align: top;
+background-color: #DEF;
+}
+.calendar .days td:hover {
+background-color: #FFF;
+}
+.calendar .highlight {
+font-weight: bold; color: #00F;
+}
+</style>
 
 <!-- Welcome Section -->
 <div id="section_header">
@@ -41,6 +61,7 @@
 				<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
 			</center><br>
 			<div class="row">
+
 				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -48,9 +69,10 @@
 						</div><br>
 						<div class="panel-body">
 							<!-- Calenda -->
+							 <?php echo $calendar; ?>
+                 
 						</div>
 					</div> 
-				</div>
 			</div>
 		</div>	 
 

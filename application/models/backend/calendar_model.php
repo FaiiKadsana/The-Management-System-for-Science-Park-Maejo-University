@@ -97,7 +97,7 @@ function get_calendar_data($year, $month)
 
 		//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
 
-		print_r($this->db->last_query());
+		//print_r($this->db->last_query());
 
 		$cal_data = array();
 
