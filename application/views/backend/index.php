@@ -44,7 +44,7 @@ font-weight: bold; color: #00F;
           <!-- Calenda -->
           <!-- Below line produces calendar. I am using FullCalendar plugin. -->
           <div id="calendar">
-          <!--<?php echo $calendar; ?>
+           <?php echo $calendar; ?>
 
            <script type=”text/javascript”>
            $(document).ready(function() {
@@ -71,7 +71,7 @@ font-weight: bold; color: #00F;
 
           });
 
-           </script>-->
+           </script>
          </div>
        </div>
      </div>               

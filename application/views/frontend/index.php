@@ -48,7 +48,7 @@ font-weight: bold; color: #00F;
 				<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
 			</center><br>
 			<div class="row">
-<<<<<<< HEAD
+
 				<div class="col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
@@ -56,23 +56,10 @@ font-weight: bold; color: #00F;
 						</div><br>
 						<div class="panel-body">
 							<!-- Calenda -->
+							 <?php echo $calendar; ?>
+                 
 						</div>
 					</div> 
-=======
-				<div class="col-md-4">
-					 <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2><strong>Calendar</strong></h2>
-                </div><br>
-                <div class="panel-body">
-                  <!-- Calenda -->
-                  <?php echo $calendar; ?>
-                  
-               </div>
-             </div>          
-					
->>>>>>> Science-Park
-				</div>
 			</div>
 		</div>	 
 
