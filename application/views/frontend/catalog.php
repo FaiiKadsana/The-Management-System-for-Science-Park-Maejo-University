@@ -12,9 +12,10 @@
 						<img src='<?php echo base_url("asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="250px">
 					</div>
 					<div class="team-date">
-						<p><font size='3'>ชือ่ผลงาน  : กังหันลม</font></p>
+						<p><font size='3'>ชื่อผลงาน  : กังหันลม</font></p>
 						<i class="piksell-color small-text">ชื่อนักวิจัย : นางสาวนิตยา&nbsp;ถาวัน</font></i><br>
-						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i>&nbsp;<i class="piksell-color small-text">ราคา:500 บาท</i><br>
+						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i><br>
+						<i class="piksell-color small-text">ราคา:ขึ้นอยู่กับการเจรจา</i><br>
 						<!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
 						<i class="piksell-color small-text">รายละเอียด:เป็นกังหนลม</i><br>
 						<i class="piksell-color small-text">เบอร์โทร:0857856130</i>
@@ -31,9 +32,10 @@
 						<img src='<?php echo base_url("asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="250px">
 					</div>
 					<div class="team-date">
-						<p><font size='3'>ชือ่ผลงาน  : กังหันลม</font></p>
+						<p><font size='3'>>ชื่อผลงานผลงาน  : กังหันลม</font></p>
 						<i class="piksell-color small-text">ชื่อนักวิจัย : นางสาวนิตยา&nbsp;ถาวัน</font></i><br>
-						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i>&nbsp;<i class="piksell-color small-text">ราคา:500 บาท</i><br>
+						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i><br>
+						<i class="piksell-color small-text">ราคา:ขึ้นอยู่กับการเจรจา</i><br>
 						<!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
 						<i class="piksell-color small-text">รายละเอียด:เป็นกังหนลม</i><br>
 						<i class="piksell-color small-text">เบอร์โทร:0857856130</i>
@@ -49,9 +51,10 @@
 						<img src='<?php echo base_url("asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="250px">
 					</div>
 					<div class="team-date">	
-						<p><font size='3'>ชือ่ผลงาน  : กังหันลม</font></p>
+						<p><font size='3'>>ชื่อผลงานผลงาน  : กังหันลม</font></p>
 						<i class="piksell-color small-text">ชื่อนักวิจัย : นางสาวนิตยา&nbsp;ถาวัน</font></i><br>
-						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i>&nbsp;<i class="piksell-color small-text">ราคา:500 บาท</i><br>
+						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i><br>
+						<i class="piksell-color small-text">ราคา:ขึ้นอยู่กับการเจรจา</i><br>
 						<!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
 						<i class="piksell-color small-text">รายละเอียด:เป็นกังหนลม</i><br>
 						<i class="piksell-color small-text">เบอร์โทร:0857856130</i>
@@ -67,9 +70,10 @@
 						<img src='<?php echo base_url("asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="250px">
 					</div>
 					<div class="team-date">	
-						<p><font size='3'>ชือ่ผลงาน  : กังหันลม</font></p>
+						<p><font size='3'>>ชื่อผลงานผลงาน  : กังหันลม</font></p>
 						<i class="piksell-color small-text">ชื่อนักวิจัย : นางสาวนิตยา&nbsp;ถาวัน</font></i><br>
-						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i>&nbsp;<i class="piksell-color small-text">ราคา:500 บาท</i><br>
+						<i class="piksell-color small-text">รหัสสนธิบัตร:กห2575</i><br>
+						<i class="piksell-color small-text">ราคา:ขึ้นอยู่กับการเจรจา</i><br>
 						<!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
 						<i class="piksell-color small-text">รายละเอียด:เป็นกังหนลม</i><br>
 						<i class="piksell-color small-text">เบอร์โทร:0857856130</i>

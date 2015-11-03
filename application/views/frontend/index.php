@@ -13,12 +13,25 @@
 				<p class='title-header org'>ข่าวประชาสัมพันธ์</p>			
 			</center><br>
 			<div class="row">
-				<div class="col-md-4">
-					<img src='<?php echo base_url("asset/images/banner1.png") ?>' width='60%' height='40%'>
-				</div>
-				<div class="col-md-8" > 
-					<font size='3px'>หัวข้อข่าว </font>
-					<p>รายละเอียด</p>
+				<div class="col-md-12">
+				<table >
+						<tr>
+						<td rowspan="2" width="30%">
+					<img src='<?php echo base_url("asset/images/banner1.png") ?>' width='100%' height='20%'>
+						</td>	
+						<td width="55%" >
+								หัวข้อข่าว
+							</td>
+							<td>
+								วันที่ : 16/08/58
+							</td>
+						</tr>
+						<tr>
+							<td  colspan="2" >
+								<p>รายละเอียด</p>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>	
