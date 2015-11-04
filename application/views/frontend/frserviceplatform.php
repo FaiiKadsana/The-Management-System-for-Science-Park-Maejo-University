@@ -44,9 +44,12 @@
 						</td>
 					</tr>
 					<tr>
-						<td align="center">เลขที่บัตรประชาชน:<input type="text" size="30" name="" ></td>
-						<td align="center">เบอร์โทรติดต่อ:<input type="tel" size="30" name="" ></td>
-						<td align="center">E-mail:<input type="email" size="30" name="" ></td>
+						<td  colspan="3" align="center">เลขที่บัตรประชาชน:<input type="text" size="70" name="" ></td>
+						
+					</tr>
+					<tr>
+						<td colspan="3"  align="center">เบอร์โทรติดต่อ:<input type="tel" size="30" name="" >
+						&nbsp;&nbsp;&nbsp;&nbsp;E-mail:<input type="email" size="40" name="" ></td>
 					</tr>
 				</table>
 			</center>
