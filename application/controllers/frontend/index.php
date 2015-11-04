@@ -5,6 +5,7 @@ class Index extends CI_Controller {
 	public function __construct (){
 		parent::__construct();
 		$this->load->library('pagination');
+		$this->load->model("frontend/calendar_model");
 		
 		//$this->load->library('session');
 
@@ -18,7 +19,7 @@ class Index extends CI_Controller {
 		//แบ่งหน้า
 		$config["base_url"]=base_url()."/frontend/index/index";
 		$config["total_rows"] = $this->db->count_all("news");
-		$config["per_page"]=10;
+		$config["per_page"]=4;
 		$config['uri_segment'] = 4;
 		$config['full_tag_open'] = '<ul>'; 
 		$config['full_tag_close'] = '</ul>'; 
@@ -48,12 +49,13 @@ class Index extends CI_Controller {
 
 		$this->db->select('*');
 		$this->db->from('news');
+		$this->db->join('upload','news.ne_id = upload.up_id_data');
 		$this->db->group_by("ne_date_up"); 
 		$this->db->order_by("ne_date_cre", "desc");
 
 		//print_r($this->db->last_query());
 
-		$this->db->limit(10,0);
+		$this->db->limit(4,0);
 		$newlist = $this->db->get();
 		$data['news'] = $newlist->result();
 
@@ -63,6 +65,27 @@ class Index extends CI_Controller {
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
 		
+		
+	}
+
+	function display($year = null, $month = null){
+		
+		if (!$year) {
+			$year = date('Y');
+		}
+		if (!$month) {
+
+			$month = date('m');
+		}
+	
+		//$this->load->model('Calendar_model');
+		if ($day = $this->input->post('day')) {
+			$this->calendar_model->add_calendar_data('$year-$month-$day',$this->input->post('Cd_date')
+			);
+		}
+
+		$data['calendar'] = $this->calendar_model->generate($year, $month);
+		$this->load->view('frontend/index' , $data);
 		
 	}
 

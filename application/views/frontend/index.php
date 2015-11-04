@@ -22,11 +22,10 @@
 
 						<div class="row">
 							<div class="col-md-4">
-								<div class="col-md-4 " style="heigth:200px;">
-									<!--<?php //echo '<img src="'.base_url().$rownew['up_name'].'" " style="height:200px;">'; ?>-->
+								<div class="col-md-4 " style="heigth:100px;">
+									<?php echo '<img src= "'.base_url().$rownew->up_name.'" " style="height:130px;">'; ?>
 								</div>
 							</div>
-
 							<div class="col-md-8" > 
 								<br>
 								<h4><?php echo $rownew->ne_sub;?></h4>
@@ -47,7 +46,7 @@
 							<div class="paginationnext" >
 
 								<div class="col-md-12" >
-									<?php echo $page ?>
+									<?php echo $page; ?>
 								</div>
 							</div>
 						</div>  
@@ -71,7 +70,6 @@
 							<div class="panel-body">
 								<!-- Calenda -->
 								<?php echo $calendar; ?>
-
 							</div>
 						</div> 
 					</div>
