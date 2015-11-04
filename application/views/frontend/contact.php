@@ -64,11 +64,11 @@
             <textarea class="form-control" name="detail" placeholder="รายละเอียด" rows="6"></textarea>
           </div>
 
-      <form method="post" action="contact.php">
+      <!--<form method="post" action="contact.php">
               <?php
-                   require_once('recaptchalib.php');
-                   $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; // you got this from the signup page
-                    echo recaptcha_get_html($publickey);?>
+                  // require_once('recaptchalib.php');
+                   $publickey // = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; // you got this from the signup page
+                   // echo recaptcha_get_html($publickey);?>
      
            </div>
            </div>
@@ -86,7 +86,7 @@
                 </div>
 
             </div>
-       </form>
+       </form>-->
 
           <div class="form-group">
             <input type="submit" class="btn btn-info  btn-lg btn-block" value="ส่ง">
