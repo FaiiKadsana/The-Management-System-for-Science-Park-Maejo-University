@@ -11,7 +11,7 @@
 					<tr>
 						<td><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research"></td>
 						<td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-						<td><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></td>
+						<td><a href="<?php echo base_url("frontend/frcoresearchplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
 						<td><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></td>
 					</tr>
 				</table>

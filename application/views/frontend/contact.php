@@ -48,12 +48,16 @@
             <input type="text" class="form-control" name="username" placeholder="ชื่อ-สกุล">
           </div>
 
+<div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="ชื่อบริษัท">
+          </div>
+
           <div class="form-group">
             <input type="text" class="form-control" name="subject" placeholder="หัวเรื่อง">
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" name="email" placeholder="Email">
+            <input type="email" class="form-control" name="email" placeholder="Email">
           </div>
 
           <div class="form-group">

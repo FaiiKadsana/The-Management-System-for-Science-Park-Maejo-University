@@ -715,3 +715,19 @@ address {
 	font-weight: bold;
 	font-size: 16px;
 }
+@font-face {
+  font-family:"THSarabun";
+  src:url(../fonts/THSarabun.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+.fromfont {
+    font-family:"THSarabun";
+	background: #FFf;
+	font-weight: 300;
+	font-size: 22px;
+	color: black;
+}
+.fr{
+	color: red;
+}
