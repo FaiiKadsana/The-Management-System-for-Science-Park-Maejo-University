@@ -4,7 +4,7 @@ class Contact extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-		//$this->load->model("index_model","index_model");
+
 		//$this->load->library('session');
 
 	}
@@ -19,47 +19,46 @@ class Contact extends CI_Controller {
 			
 			
 			$insertData=array();
-			$insertData["username"]=$this->input->post("username");
+			$insertData["company"]=$this->input->post("company");
+			$insertData["name"]=$this->input->post("username");
 			$insertData["subject"]=$this->input->post("subject");
 			$insertData["email"]=$this->input->post("email");
 			$insertData["detail"]=$this->input->post("detail");
 			$insertData["date"]= date("Y-m-d H:i:s");
-			$insertData["con_type"]= 1;
-			$insertData["con_status"]= 1;
-
-
-
-			
-			$this->load->view('index/recaptchalib');
+		
+			$this->load->view('frontend/recaptchalib');
 			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
 			$resp = recaptcha_check_answer ($privatekey,
 				$_SERVER["REMOTE_ADDR"],
 				$_POST["recaptcha_challenge_field"],
 				$_POST["recaptcha_response_field"]);
 
-			if($insertData["username"]=="" || $insertData["subject"]=="" || $insertData["email"]=="" ||  $insertData["detail"]=="" ){
+			if($insertData["company"]=="" || $insertData["name"]=="" || $insertData["subject"]=="" || $insertData["email"]=="" ||  $insertData["detail"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
-				redirect('index/contact', 'refresh');
+				redirect('frontend/contact', 'refresh');
 			}else if (!$resp->is_valid) {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-				redirect('index/contact', 'refresh');
+				redirect('frontend/contact', 'refresh');
 
 			} else {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('ส่งข้อความเรียบร้อยแล้วครับ');</script>";
+				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
 				$this->db->insert('contact', $insertData);
-				redirect('index/contact', 'refresh');
+				print_r($this->db->last_query());
+				redirect('frontend/contact', 'refresh');
+
+
 			}
-			
 
 
 		}
 
+		$data['action']=site_url('frontend/contact/index/');
 
-		$this->load->view('frontend/contact');
+		$this->load->view('frontend/contact',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
 	

@@ -43,55 +43,45 @@
      <div class="row">
       <div class="col-md-offset-1 col-sm-8 padd">
         <h4><span>สอบถามเพิ่มเติม</span></h4>
-     
-          <div class="form-group">
-            <input type="text" class="form-control" name="username" placeholder="ชื่อ-สกุล">
-          </div>
 
-<div class="form-group">
-            <input type="text" class="form-control" name="name" placeholder="ชื่อบริษัท">
-          </div>
+        <form method="post" action="<?php echo $action; ?>">
 
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" placeholder="หัวเรื่อง">
+            <input type="text" class="form-control" name="company" placeholder="ชื่อบริษัท">
           </div>
 
           <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email">
+            <input type="text" class="form-control" name="username" placeholder="ชื่อ-สกุลผู้ติดต่อ">
           </div>
 
           <div class="form-group">
+            <input type="text" class="form-control" name="subject" placeholder="หัวข้อ">
+          </div>
+
+           <div class="form-group">
             <textarea class="form-control" name="detail" placeholder="รายละเอียด" rows="6"></textarea>
           </div>
 
-      <!--<form method="post" action="contact.php">
-              <?php
-                  // require_once('recaptchalib.php');
-                   $publickey // = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; // you got this from the signup page
-                   // echo recaptcha_get_html($publickey);?>
-     
-           </div>
-           </div>
-
-           </div>
-                <div class="col-md-12" style="padding: 0px">
-                  <div id="email-panel" class="form-group col-sm-2   ">
-                      </div>
-                          <div id="email-panel" class="form-group col-sm-10  "style="padding: 0px">
-                          <div class=" btn-send-contact" >
-                          <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
-                          <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
-                      </div>
-                  </div>
-                </div>
-
-            </div>
-       </form>-->
-
           <div class="form-group">
-            <input type="submit" class="btn btn-info  btn-lg btn-block" value="ส่ง">
+            <input type="text" class="form-control" name="email" placeholder="Email">
           </div>
-    
+ 
+           <form method="post" action="contact.php">
+              <?php
+                require_once('recaptchalib.php');
+                  $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; // you got this from the signup page
+                  echo recaptcha_get_html($publickey);
+              ?>
+
+               <div class="form-group">
+                  <br>
+                 
+                      <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
+                      <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
+              </div>
+              
+            </form>
+        </form><!-- end form -->
       </div><!-- end col-md-5 -->
     </div><!-- end row -->
 
