@@ -7,6 +7,19 @@
 	<div class="col-sm-12">
 		
 		<div class="row">
+			<div class="col-sm-12">
+				<center>
+					<table width="55%">
+						<tr>
+							<td width="30%"></td>
+							<td align="right">เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
+
+		<div class="row">
 			<div class="col-sm-12 ">
 
 				<center>
@@ -15,7 +28,7 @@
 					<p>เพื่อขอรับการสนับสนุนตามกลไกอุทยานวิทยาศาสตร์ภาคเหนือ</p>
 					<p>ปีงบประมาณ 2558</p>
 					<br>
-					<table  width="55%" border="1">
+					<table  width="55%" >
 						<tr>
 							<td width="30%">1.ชื่อโครงการ</td>
 							<td >
@@ -79,7 +92,7 @@
 						<tr>
 							<td width="30%">11.แผนการดำเนินงาน</td>
 							<td >
-								
+
 								<center>
 									<br>
 									<table border="1" width="100%">
@@ -276,7 +289,7 @@
 
 							</td>
 						</tr>
-						
+
 
 					</table>
 

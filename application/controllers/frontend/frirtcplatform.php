@@ -12,7 +12,6 @@ class Frirtcplatform extends CI_Controller {
 		
 		$this->load->view('frontend/header');
 		$this->load->view('frontend/menu');
-		$this->load->view('frontend/slider');
 		$this->load->view('frontend/frirtcplatform');
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
