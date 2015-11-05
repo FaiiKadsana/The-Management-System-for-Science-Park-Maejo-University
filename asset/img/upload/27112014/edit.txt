@@ -1,0 +1,22 @@
+		public function edit(){
+
+		
+				if( $_SERVER["REQUEST_METHOD"] == "POST"){
+					$id=$this->input->post('id');
+					$update=array(
+					"de_text"=>$this->input->post("de_text"),
+					"p_id"=>$this->session->userdata("set_id_pro"),
+					"u_id"=>$this->session->userdata("set_id"),
+					"de_date_up"=>date("Y-m-d H:i:s")
+				
+					);
+					
+						$this->db->where('de_id', $id);
+						$this->db->update('detal',$update);
+
+					redirect('staff/createprogram', 'refresh');
+					exit();
+			
+					}
+		
+		}
