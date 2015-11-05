@@ -22,8 +22,8 @@
 
 						<div class="row">
 							<div class="col-md-4">
-								<div class="col-md-4 " style="heigth:100px;">
-									<?php echo '<img src= "'.base_url().$rownew->up_name.'" " style="height:130px;">'; ?>
+								<div class="col-md-4 " style="heigth:100px;" style="width:40px;">
+									<?php echo '<img src= "'.base_url().$rownew->up_name.'" style="height:130px;" style="width:40px;">'; ?>
 								</div>
 							</div>
 							<div class="col-md-8" > 
