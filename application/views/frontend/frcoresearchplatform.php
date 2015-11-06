@@ -12,13 +12,13 @@
 					<table width="55%">
 						<tr>
 							<td width="30%"></td>
-							<td align="right">เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+							<td align="right"><b style="color:red;">-หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
 						</tr>
 					</table>
 				</center>
 			</div>
 		</div>
-
+<br>
 		<div class="row">
 			<div class="col-sm-12 ">
 
