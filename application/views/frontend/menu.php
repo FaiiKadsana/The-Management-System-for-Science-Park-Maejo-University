@@ -24,9 +24,7 @@
       </ul>
     </li>
     <li><a href="<?php echo base_url("frontend/contact")?>"><i class="fa fa-phone"></i> ติดต่อ</a></li>
-    <li class="dropdown "><a  data-toggle="dropdown" class="" href="#"><i class="fa fa-key"></i> เข้าสู่ระบบ  </a>
-     
-    </li>
+    <li><a href="<?php echo base_url("frontend/personlogin")?>"><i class="fa fa-key"></i> เข้าสู่ระบบ  </a></li>
   </ul>
 </div>
 </div>

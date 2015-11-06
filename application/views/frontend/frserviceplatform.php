@@ -337,7 +337,18 @@
 	</tr>
 </table>
 </center>
-
+<br>
+<center>
+<table width="90%">
+	<tr>
+		<td>หนังสือรับรองการจดทะเบียนนิติบุคคล:<input type="file" name=""></td>
+		<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม:<input type="file" name=""></td>
+		<td>หนังสือมอบอำนาจ(ถ้ามี):<input type="file" name=""></td>
+		<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย:<input type="file" name=""></td>
+	</tr>
+</table>
+</center>
+<br>
 </div>
 </div>
 

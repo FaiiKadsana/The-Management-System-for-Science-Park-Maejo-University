@@ -6,20 +6,20 @@
 <div class="row fromfont">
 	<div class="col-sm-12">
 		
-		 <div class="row">
-		 	<div class="col-sm-12">
-		 		<center>
-		 			<table width="55%">
-		 				<tr>
-		 					<td width="30%"></td>
-		 					<td align="right"><b style="color:red;">-หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
-		 				</tr>
-		 			</table>
-		 		</center>
-		 	</div>
-		 </div>
+		<div class="row">
+			<div class="col-sm-12">
+				<center>
+					<table width="55%">
+						<tr>
+							<td width="30%"></td>
+							<td align="right"><b style="color:red;">-หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
 
-<br>
+		<br>
 		<div class="row">
 			<div class="col-sm-12 ">
 
@@ -292,11 +292,22 @@
 
 							</td>
 						</tr>
-						
-
 					</table>
+				</center>	
+				<br>
 
-				</center>		
+				<center>
+					<table width="90%">
+						<tr>
+							<td>หนังสือรับรองการจดทะเบียนนิติบุคคล:<input type="file" name=""></td>
+							<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม:<input type="file" name=""></td>
+							<td>หนังสือมอบอำนาจ(ถ้ามี):<input type="file" name=""></td>
+							<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย:<input type="file" name=""></td>
+						</tr>
+					</table>
+				</center>
+				<br>
+				
 			</div>
 		</div>
 
