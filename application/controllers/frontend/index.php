@@ -39,14 +39,12 @@ class Index extends CI_Controller {
 		$config['first_tag_close'] = '</li>'; 
 		$config['last_tag_open'] = '<li>'; 
 		$config['last_tag_close'] = '</li>'; 
-            //จบแบ่งหน้า
+        //จบแบ่งหน้า
 		$this->pagination->initialize($config);
 		
-			//ดึกข้อมูลสำหรับบ่งหน้า
+		//ดึกข้อมูลสำหรับบ่งหน้า
 		$this->db->limit($config['per_page'],$this->uri->segment(4));
 		
-			
-
 		$this->db->select('*');
 		$this->db->from('news');
 		$this->db->join('upload','news.ne_id = upload.up_id_data');
@@ -56,8 +54,8 @@ class Index extends CI_Controller {
 		//print_r($this->db->last_query());
 
 		$this->db->limit(4,0);
-		$newlist = $this->db->get();
-		$data['news'] = $newlist->result();
+		$news = $this->db->get();
+		$data['news'] = $news->result();
 
 		$data['page']=$this->pagination->create_links();
 
