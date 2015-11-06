@@ -4,14 +4,14 @@
 </div>
 
 <div class="row">
-	<div class="col-sm-12">
+	<div class="col-md-offset-3  col-sm-9">
 		<center>
 			<form id="" method="post" class="form-horizontal" action="">
 				<table >
 					<tr>
-						<td><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research"></td>
-						<td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-						<td><a href="<?php echo base_url("frontend/frirtcplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
+						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research"></td>
+						<td width="15%"><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
+						<td width="15%"><a href="<?php echo base_url("frontend/frirtcplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
 						<td><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></td>
 					</tr>
 				</table>

@@ -12,7 +12,7 @@
 					<table width="55%">
 						<tr>
 							<td width="30%"></td>
-							<td align="right"><b style="color:red;">-หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
 						</tr>
 					</table>
 				</center>
@@ -267,7 +267,7 @@
 									</tr>
 								</table>
 								<br>
-								<p>หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 50% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 50%</p>
+								<p style="color:red;">*หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 50% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 50%</p>
 								<br>
 							</td>	
 						</tr>
@@ -293,27 +293,28 @@
 							</td>
 						</tr>
 					</table>
-				</center>	
-				<br>
-
-				<center>
-					<table width="90%">
-						<tr>
-							<td>หนังสือรับรองการจดทะเบียนนิติบุคคล:<input type="file" name=""></td>
-							<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม:<input type="file" name=""></td>
-							<td>หนังสือมอบอำนาจ(ถ้ามี):<input type="file" name=""></td>
-							<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย:<input type="file" name=""></td>
-						</tr>
-					</table>
-				</center>
-				<br>
-				
+				</center>			
 			</div>
 		</div>
 
 	</div>
 </div>
-<br>
+<br><br>
+<div class="row">
+	<div class="col-sm-12">
+		<center>
+			<table width="95%">
+				<tr>
+					<td>หนังสือรับรองการจดทะเบียนนิติบุคคล:<input type="file" name=""></td>
+					<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม:<input type="file" name=""></td>
+					<td>หนังสือมอบอำนาจ(ถ้ามี):<input type="file" name=""></td>
+					<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย:<input type="file" name=""></td>
+				</tr>
+			</table>
+		</center>
+	</div>
+</div>
+<br><br>
 <div class="row">
 	<div class="col-md-offset-5  col-sm-7">
 		<button type="button" class="btn btn-success  btn-lg" >ตกลง</button>

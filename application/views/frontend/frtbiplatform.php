@@ -12,7 +12,7 @@
 					<table width="70%">
 						<tr>
 							<td width="30%"></td>
-							<td align="right"><b style="color:red;">-หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <input type="text" size="20" name=""></td>
 						</tr>
 					</table>
 				</center>
@@ -60,7 +60,7 @@
 							<td colspan="2" align="left">
 								วันที่:<input type="date" name=""  >
 							</td>
-							<td align="right">เลขที่:<input type="text" name="" size="20" ></td>
+							<td align="right">เลขที่: <input type="text" name="" size="20" ></td>
 						</tr>
 						<tr>
 							<td colspan="3" align="left">
@@ -69,46 +69,46 @@
 						</tr>
 						<tr>
 							<td colspan="3" align="left">
-								&nbsp;&nbsp;&nbsp;&nbsp;1.1<select name=""> 
+								&nbsp;&nbsp;&nbsp;&nbsp;1.1 <select name=""> 
 								<option value="นาย">นาย</option>
 								<option value="นาง">นาง</option>
 								<option value="นางสาว">นางสาว</option>
 							</select> 
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ<input type="text" size="30" name="" >
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล<input type="text" size="30" name="" >
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <input type="text" size="30" name="" >
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="" >
 						</td>
 					</tr>
 					<tr>
 						<td colspan="3" align="left">
 							&nbsp;&nbsp;&nbsp;&nbsp;1.2
-							เลขประจำตัวประชาชน <input type="text" size="50" name="" >
+							เลขประจำตัวประชาชน: <input type="text" size="50" name="" >
 						</td>
 					</tr>
 					<tr>
 						<td colspan="3" align="left">
 							&nbsp;&nbsp;&nbsp;&nbsp;1.3
-							เกิดวันที่<input type="date"  name="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปัจจุบันอายุ<input type="text" size="10" name="" >ปี
+							เกิดวันที่: <input type="date"  name="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปัจจุบันอายุ: <input type="text" size="10" name="" > ปี
 						</td>
 					</tr>
 					<tr>
 						<td colspan="3" align="left">
 							&nbsp;&nbsp;&nbsp;&nbsp;1.4
-							ชื้อชาติ :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="1" value="ไทย">ไทย  
+							ชื้อชาติ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="1" value="ไทย"> ไทย  
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="1" value="อื่นๆ">อื่นๆ
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="1" value="อื่นๆ"> อื่นๆ
 							&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุ" > 
 						</td>
 					</tr>
 					<tr>
 						<td colspan="3" align="left">
 							&nbsp;&nbsp;&nbsp;&nbsp;1.5
-							ศาสนา :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="พุทธ">พุทธ 
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="คริสต์">คริสต์  
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="อิสลาม">อิสลาม  
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="ฮินดู">ฮินดู   
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="2" value="อื่นๆ">อื่นๆ
+							ศาสนา:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="พุทธ"> พุทธ 
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="คริสต์"> คริสต์  
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="อิสลาม"> อิสลาม  
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="ฮินดู"> ฮินดู   
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="2" value="อื่นๆ"> อื่นๆ
 							&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุ" > 
 						</td>
 					</tr>
@@ -122,17 +122,17 @@
 						<td colspan="3" align="center">
 							<textarea name="" cols="30" rows="3" placeholder="ที่อยู่"></textarea>
 							&nbsp;&nbsp;&nbsp;&nbsp;
-							ตำบล <select name=""> 
+							ตำบล: <select name=""> 
 							<option value="นาหมื่นครี">นาหมื่นครี</option>
 							<option value="นาโยง">นาโยง</option>
 						</select>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						อำเภอ <select name=""> 
+						อำเภอ: <select name=""> 
 						<option value="นาโยง">นาโยง</option>
 						<option value="สันทราย">สันทราย</option>
 					</select>
 					&nbsp;&nbsp;&nbsp;&nbsp; 
-					จังหวัด <select name=""> 
+					จังหวัด: <select name=""> 
 					<option value="ตรัง">ตรัง</option>
 					<option value="เชียงใหม่">เชียงใหม่</option>
 				</select>
@@ -141,10 +141,10 @@
 		<tr>
 			<td colspan="3" align="left">
 				&nbsp;&nbsp;&nbsp;&nbsp;1.7
-				โทรศัพท์ที่ติดต่อสะดวก <input type="tel" size="10" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
-				โทรสาร <input type="text" size="10" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
-				มือถือ <input type="tel" size="10" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
-				E-mail <input type="email" size="20" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
+				โทรศัพท์ที่ติดต่อสะดวก: <input type="tel" size="10" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
+				โทรสาร: <input type="text" size="10" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
+				มือถือ: <input type="tel" size="10" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
+				E-mail: <input type="email" size="20" name="" >&nbsp;&nbsp;&nbsp;&nbsp;
 			</td>
 		</tr>
 		<tr>
@@ -155,31 +155,31 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="center">
-				<input type="radio" name="3" value="สำเร็จการศึกษา">สำเร็จการศึกษา เมื่อ ปี พ.ศ.<input type="text" size="20" name="" >
-				สาขาวิชา<input type="text" size="20" name="" >สถาบัน<input type="text" size="20" name="" ><br>
+				<input type="radio" name="3" value="สำเร็จการศึกษา"> สำเร็จการศึกษา เมื่อ ปี พ.ศ. <input type="text" size="20" name="" >
+				สาขาวิชา<input type="text" size="20" name="" > สถาบัน <input type="text" size="20" name="" ><br>
 				&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="4" value="มัธยมศึกษาตอนปลาย/ปวช.">มัธยมศึกษาตอนปลาย/ปวช. 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="อนุปริญญา/ปวส./ปวท.">อนุปริญญา/ปวส./ปวท.  
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="ปริญญาตรี">ปริญญาตรี	<br>
+				<input type="radio" name="4" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="ปริญญาตรี"> ปริญญาตรี	<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="4" value="ปริญญาโทหรือสูงกว่า">ปริญญาโทหรือสูงกว่า     
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="ปริญญาเอก">ปริญญาเอก  
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ">อื่นๆ 
+				<input type="radio" name="4" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="ปริญญาเอก"> ปริญญาเอก  
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ"> อื่นๆ 
 				&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
 			</td>
 		</tr>
 		<tr>
 			<td colspan="3" align="center">
-				<input type="radio" name="3" value="กำลังศึกษา">กำลังศึกษา ในชั้นปีที่<input type="text" size="20" name="" >
-				สาขาวิชา<input type="text" size="20" name="" >สถาบัน<input type="text" size="20" name="" ><br>
+				<input type="radio" name="3" value="กำลังศึกษา"> กำลังศึกษา ในชั้นปีที่ <input type="text" size="20" name="" >
+				สาขาวิชา <input type="text" size="20" name="" > สถาบัน <input type="text" size="20" name="" ><br>
 				&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="5" value="มัธยมศึกษาตอนปลาย/ปวช.">มัธยมศึกษาตอนปลาย/ปวช. 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="อนุปริญญา/ปวส./ปวท.">อนุปริญญา/ปวส./ปวท.  
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="ปริญญาตรี">ปริญญาตรี	<br>
+				<input type="radio" name="5" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="ปริญญาตรี"> ปริญญาตรี<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="5" value="ปริญญาโทหรือสูงกว่า">ปริญญาโทหรือสูงกว่า     
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="ปริญญาเอก">ปริญญาเอก  
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="อื่นๆ">อื่นๆ 
+				<input type="radio" name="5" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="ปริญญาเอก"> ปริญญาเอก  
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="อื่นๆ"> อื่นๆ 
 				&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
 			</td>
 		</tr>
@@ -191,16 +191,16 @@
 		</tr>
 		<tr>
 			<td  colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="เพิ่งสำเร็จการศึกษา">เพิ่งสำเร็จการศึกษา ไม่เกิน 1 ปี และยังหางานทำไม่ได้<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ไม่ได้ประกอบอาชีพใดๆ">ไม่ได้ประกอบอาชีพใดๆ (เช่น ว่างงาน ลาออกจากงาน ถูกเลิกจ้าง เกษียณอายุ ปิดกิจการ สำเร็จการศึกษาเกิน 1ปี และยังหางานทำไม่ได้) <br>
-				&nbsp;&nbsp;&nbsp;&nbsp;มาเป็นเวลา<input type="text" size="20" name="" > ปี<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="เพิ่งสำเร็จการศึกษา"> เพิ่งสำเร็จการศึกษา ไม่เกิน 1 ปี และยังหางานทำไม่ได้<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ไม่ได้ประกอบอาชีพใดๆ"> ไม่ได้ประกอบอาชีพใดๆ (เช่น ว่างงาน ลาออกจากงาน ถูกเลิกจ้าง เกษียณอายุ ปิดกิจการ สำเร็จการศึกษาเกิน 1ปี และยังหางานทำไม่ได้) <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;มาเป็นเวลา <input type="text" size="20" name="" > ปี<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="พนักงานประจำ/ลูกจ้างประจำ บริษัท">พนักงานประจำ/ลูกจ้างประจำ บริษัท<input type="text" size="20" name="" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;อยู่ในภาคธุรกิจใด(เลือกเพียงข้อเดียว)&nbsp;&nbsp;<input type="radio" name="7" value="การผลิต">การผลิต&nbsp;&nbsp;<input type="radio" name="7" value="การค้า">การค้า&nbsp;&nbsp;<input type="radio" name="7" value="การบริการ">การบริการ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;อยู่ในภาคธุรกิจใด(เลือกเพียงข้อเดียว)&nbsp;&nbsp;<input type="radio" name="7" value="การผลิต"> การผลิต&nbsp;&nbsp;<input type="radio" name="7" value="การค้า"> การค้า&nbsp;&nbsp;<input type="radio" name="7" value="การบริการ"> การบริการ<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ข้าราชการ หรือพนักงานรัฐวิสาหกิจ สังกัด">ข้าราชการ หรือพนักงานรัฐวิสาหกิจ สังกัด<input type="text" size="20" name="" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ลูกจ้างรายวัน หรือรับจ้างทั่วไป">ลูกจ้างรายวัน หรือรับจ้างทั่วไป<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ)">ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ)<input type="text" size="20" name="" placeholder="โปรดระบุ"><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ประกอบธุรกิจส่วนตัว">ประกอบธุรกิจส่วนตัว หรือ เป็นเจ้าของกิจการ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="อื่นๆ">อื่นๆ<input type="text" size="20" name="" placeholder="โปรดระบุ" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ลูกจ้างรายวัน หรือรับจ้างทั่วไป"> ลูกจ้างรายวัน หรือรับจ้างทั่วไป<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ)"> ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ)<input type="text" size="20" name="" placeholder="โปรดระบุ"><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ประกอบธุรกิจส่วนตัว"> ประกอบธุรกิจส่วนตัว หรือ เป็นเจ้าของกิจการ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="อื่นๆ"> อื่นๆ<input type="text" size="20" name="" placeholder="โปรดระบุ" ><br>
 			</td>
 		</tr>
 		<tr>
@@ -211,9 +211,9 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="เป็นเจ้าของ">เป็นเจ้าของ หรือหุ้นส่วนผู้จัดการในธุรกิจอยู่แล้ว ตั้งแต่ปี พ.ศ. <input type="text" size="20" name="" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="เป็นทายาทของเจ้าของธุรกิจ">เป็นทายาทของเจ้าของธุรกิจ และกำลังเตรียมรับสืบทอดธุรกิจ <br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="ไม่เคยเป็นเจ้าของธุรกิจ">ไม่เคยเป็นเจ้าของธุรกิจ และไม่ได้เป็นทายาทธุรกิจ                                       <br>        
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="เป็นเจ้าของ"> เป็นเจ้าของ หรือหุ้นส่วนผู้จัดการในธุรกิจอยู่แล้ว ตั้งแต่ปี พ.ศ. <input type="text" size="20" name="" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="เป็นทายาทของเจ้าของธุรกิจ"> เป็นทายาทของเจ้าของธุรกิจ และกำลังเตรียมรับสืบทอดธุรกิจ <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="ไม่เคยเป็นเจ้าของธุรกิจ"> ไม่เคยเป็นเจ้าของธุรกิจ และไม่ได้เป็นทายาทธุรกิจ                                       <br>        
 			</td>
 		</tr>
 		<tr>
@@ -229,8 +229,8 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="8" value="ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร">ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="8" value="มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว">มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="8" value="ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร"> ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="8" value="มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว"> มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว<br>
 			</td>
 		</tr>
 		<tr>
@@ -241,10 +241,10 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การผลิต">การผลิต&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุประเภทสินค้าที่จะผลิต" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การบริการ">การบริการ&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุลักษณะของบริการ" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การค้าส่ง">การค้าส่ง&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุประเภทสินค้า" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การค้าปลีก">การค้าปลีก&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุประเภทสินค้า" > 
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การผลิต"> การผลิต&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุประเภทสินค้าที่จะผลิต" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การบริการ"> การบริการ&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุลักษณะของบริการ" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การค้าส่ง"> การค้าส่ง&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุประเภทสินค้า" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การค้าปลีก"> การค้าปลีก&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุประเภทสินค้า" > 
 			</td>
 		</tr>
 		<tr>
@@ -255,10 +255,10 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว">มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน">มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="กำลังจัดทำแผนธุรกิจ">กำลังจัดทำแผนธุรกิจ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ">ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว"> มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน"> มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="กำลังจัดทำแผนธุรกิจ"> กำลังจัดทำแผนธุรกิจ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ"> ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ
 			</td>
 		</tr>
 		<tr>
@@ -269,15 +269,15 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="11" value="ภายในเดือน">ภายในเดือน<input type="text" size="30" name="" >ปี<input type="text" size="20" name="" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="11" value="ยังไม่มีเป้าหมายกำหนดเวลา">ยังไม่มีเป้าหมายกำหนดเวลา
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="11" value="ภายในเดือน"> ภายในเดือน<input type="text" size="30" name="" >ปี<input type="text" size="20" name="" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="11" value="ยังไม่มีเป้าหมายกำหนดเวลา"> ยังไม่มีเป้าหมายกำหนดเวลา
 				
 			</td>
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
 				&nbsp;&nbsp;&nbsp;&nbsp;2.5
-				ท่านคาดว่ากิจการที่จะเริ่มจัดตั้ง จะต้องใช้เงินลงทุนในปีแรก ประมาณ <input type="text" size="30" name="" >บาท        
+				ท่านคาดว่ากิจการที่จะเริ่มจัดตั้ง จะต้องใช้เงินลงทุนในปีแรก ประมาณ <input type="text" size="30" name="" > บาท        
 			</td>
 		</tr>
 		<tr>
@@ -288,18 +288,18 @@
 		</tr>
 		<tr>
 			<td  colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินส่วนตัวของท่าน">เงินส่วนตัวของท่าน ประมาณ <input type="text" size="20" name="" >บาท<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินจากหุ้นส่วน">เงินจากหุ้นส่วน หรือผู้ร่วมทุน ประมาณ<input type="text" size="20" name="" >บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินส่วนตัวของท่าน"> เงินส่วนตัวของท่าน ประมาณ <input type="text" size="20" name="" > บาท<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินจากหุ้นส่วน"> เงินจากหุ้นส่วน หรือผู้ร่วมทุน ประมาณ<input type="text" size="20" name="" > บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="13" value="ญาติ สมาชิกในครอบครัว">ญาติ สมาชิกในครอบครัว 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="13" value="บุคคลอื่นที่ไม่ใช่ญาติ">บุคคลอื่นที่ไม่ใช่ญาติ 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="13" value="บริษัทหรือกิจการอื่น">บริษัทหรือกิจการอื่น&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินกู้ยืม">เงินกู้ยืม ประมาณ <input type="text" size="20" name="" >บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
+				<input type="radio" name="13" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="13" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="13" value="บริษัทหรือกิจการอื่น"> บริษัทหรือกิจการอื่น&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินกู้ยืม"> เงินกู้ยืม ประมาณ <input type="text" size="20" name="" > บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="radio" name="14" value="ญาติ สมาชิกในครอบครัว">ญาติ สมาชิกในครอบครัว &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="บุคคลอื่นที่ไม่ใช่ญาติ">บุคคลอื่นที่ไม่ใช่ญาติ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารของรัฐ">ธนาคารของรัฐ &nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารพาณิชย์ของเอกชน">ธนาคารพาณิชย์ของเอกชน&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="สถาบันการเงินที่ไม่ใช่ธนาคาร">สถาบันการเงินที่ไม่ใช่ธนาคาร (นันแบงค์ เช่น บริษัทเครดิต, ลิสซิ่ง) &nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
+				<input type="radio" name="14" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารของรัฐ"> ธนาคารของรัฐ &nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารพาณิชย์ของเอกชน"> ธนาคารพาณิชย์ของเอกชน&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" ><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="สถาบันการเงินที่ไม่ใช่ธนาคาร"> สถาบันการเงินที่ไม่ใช่ธนาคาร (นันแบงค์ เช่น บริษัทเครดิต, ลิสซิ่ง) &nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
 			</td>
 		</tr>
 		<tr>
@@ -310,13 +310,13 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ตัวท่านเอง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="18" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="18" value="มี">มี<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- หุ้นส่วนที่ร่วมบริหารจัดการ/ดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="15" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="15" value="มีประมาณ">มีประมาณ
-				<input type="text" size="30" name="" >คน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงาน/ผู้ปฏิบัติงานที่เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="16" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="16" value="มีประมาณ">มีประมาณ
-				<input type="text" size="30" name="" >คน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงานอื่นๆที่ไม่ได้เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="17" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="17" value="มีประมาณ">มีประมาณ
-				<input type="text" size="30" name="" >คน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ตัวท่านเอง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="18" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="18" value="มี"> มี<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- หุ้นส่วนที่ร่วมบริหารจัดการ/ดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="15" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="15" value="มีประมาณ"> มีประมาณ
+				<input type="text" size="30" name="" > คน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงาน/ผู้ปฏิบัติงานที่เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="16" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="16" value="มีประมาณ"> มีประมาณ
+				<input type="text" size="30" name="" > คน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงานอื่นๆที่ไม่ได้เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="17" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="17" value="มีประมาณ"> มีประมาณ
+				<input type="text" size="30" name="" > คน<br>
 			</td>
 		</tr>
 		<tr>
@@ -332,11 +332,11 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ">การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การจัดทำแผนธุรกิจ">การจัดทำแผนธุรกิจ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การจัดทำ เว็บไซต์">การจัดทำ เว็บไซต์<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การออกแบบและจัดทำโลโก้">การออกแบบและจัดทำโลโก้<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ"> การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การจัดทำแผนธุรกิจ"> การจัดทำแผนธุรกิจ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การจัดทำ เว็บไซต์"> การจัดทำ เว็บไซต์<br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การออกแบบและจัดทำโลโก้"> การออกแบบและจัดทำโลโก้<br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
 			</td>
 		</tr>
 		<tr>
@@ -347,11 +347,11 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การตลาด">การตลาด<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การบัญชี-การเงิน">การบัญชี-การเงิน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การผลิต">การผลิต<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การทรัพยากรบุคคล">การทรัพยากรบุคคล<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การตลาด"> การตลาด<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การบัญชี-การเงิน"> การบัญชี-การเงิน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การผลิต"> การผลิต<br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การทรัพยากรบุคคล"> การทรัพยากรบุคคล<br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
 			</td>
 		</tr>
 		<tr>
@@ -362,10 +362,10 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การวิจัยและพัฒนาเทคโนโลยีการผลิต">การวิจัยและพัฒนาเทคโนโลยีการผลิต<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การวิจัยและพัฒนาผลิตภัณฑ์">การวิจัยและพัฒนาผลิตภัณฑ์<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การพัฒนาบรรจุภัณฑ์">การพัฒนาบรรจุภัณฑ์<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การวิจัยและพัฒนาเทคโนโลยีการผลิต"> การวิจัยและพัฒนาเทคโนโลยีการผลิต<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การวิจัยและพัฒนาผลิตภัณฑ์"> การวิจัยและพัฒนาผลิตภัณฑ์<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การพัฒนาบรรจุภัณฑ์"> การพัฒนาบรรจุภัณฑ์<br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
 			</td>
 		</tr>
 		<tr>
@@ -376,10 +376,10 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การใช้พื้นที่">การใช้พื้นที่<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การใช้เลขานุการกลาง">การใช้เลขานุการกลาง<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การบริการจัดทำบัญชี">การบริการจัดทำบัญชี<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การใช้พื้นที่"> การใช้พื้นที่<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การใช้เลขานุการกลาง"> การใช้เลขานุการกลาง<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การบริการจัดทำบัญชี"> การบริการจัดทำบัญชี<br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
 			</td>
 		</tr>
 		<tr>
@@ -390,19 +390,19 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="แหล่งเงินทุน">แหล่งเงินทุน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การร่วมลงทุน">การร่วมลงทุน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล">การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การตั้งโรงงาน">การตั้งโรงงาน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การตลาด">การตลาด<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การเงิน">การเงิน<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบัญชี">การบัญชี<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบริหารบุคคล">การบริหารบุคคล<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบริหารการผลิต">การบริหารการผลิต<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="ภาษี">ภาษี<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="กฎหมาย">กฎหมาย<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การค้าระหว่างประเทศ">การค้าระหว่างประเทศ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="แหล่งเงินทุน"> แหล่งเงินทุน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การร่วมลงทุน"> การร่วมลงทุน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล"> การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การตั้งโรงงาน"> การตั้งโรงงาน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การตลาด"> การตลาด<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การเงิน"> การเงิน<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบัญชี"> การบัญชี<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบริหารบุคคล"> การบริหารบุคคล<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบริหารการผลิต"> การบริหารการผลิต<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="ภาษี"> ภาษี<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="กฎหมาย"> กฎหมาย<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การค้าระหว่างประเทศ"> การค้าระหว่างประเทศ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" >        
 			</td>
 		</tr>
 		<tr>
@@ -422,8 +422,8 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value=" อย."> อย.<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value=" GMP"> GMP<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value=" HACCP"> HACCP<br>    
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value="ISO">ISO  <input type="text" size="30" name=""> <br>      
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value="ISO"> ISO  <input type="text" size="30" name=""> <br>      
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
 			</td>
 		</tr>
 		<tr>
@@ -434,9 +434,9 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge">การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge"> การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="การจัดนิทรรศการ ออกบูธ"> การจัดนิทรรศการ ออกบูธ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
 			</td>
 		</tr>
 		<tr>
@@ -447,11 +447,11 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="OIL">OIL<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="NIA">NIA<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="I03 CR (รัฐร่วมเอกชน)">I03 CR (รัฐร่วมเอกชน)<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="IP Fund">IP Fund<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="OIL"> OIL<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="NIA"> NIA<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="I03 CR (รัฐร่วมเอกชน)"> I03 CR (รัฐร่วมเอกชน)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="IP Fund"> IP Fund<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
 			</td>
 		</tr>
 		<tr>
@@ -462,10 +462,10 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)">การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ">การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การส่งเสริมทางการตลาด">การส่งเสริมทางการตลาด<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)"> การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ"> การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การส่งเสริมทางการตลาด"> การส่งเสริมทางการตลาด<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
 			</td>
 		</tr>
 		<tr>
@@ -476,13 +476,13 @@
 		</tr>
 		<tr>
 			<td colspan="3" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การให้บริการข้อมูล">การให้บริการข้อมูล<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การสืบค้นข้อมูลทรัพย์สินทางปัญญา">การสืบค้นข้อมูลทรัพย์สินทางปัญญา<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การจดทะเบียนทรัพย์สินทางปัญญา">การจดทะเบียนทรัพย์สินทางปัญญา<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การอนุญาตใช้สิทธ์">การอนุญาตใช้สิทธ์<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การเจรจาใช้สิทธิ์">การเจรจาใช้สิทธิ์<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การประเมินมูลค่าทรัพย์สินทางปัญญา">การประเมินมูลค่าทรัพย์สินทางปัญญา<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="อื่นๆ">อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การให้บริการข้อมูล"> การให้บริการข้อมูล<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การสืบค้นข้อมูลทรัพย์สินทางปัญญา"> การสืบค้นข้อมูลทรัพย์สินทางปัญญา<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การจดทะเบียนทรัพย์สินทางปัญญา"> การจดทะเบียนทรัพย์สินทางปัญญา<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การอนุญาตใช้สิทธ์"> การอนุญาตใช้สิทธ์<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การเจรจาใช้สิทธิ์"> การเจรจาใช้สิทธิ์<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การประเมินมูลค่าทรัพย์สินทางปัญญา"> การประเมินมูลค่าทรัพย์สินทางปัญญา<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="อื่นๆ"> อื่นๆ  <input type="text" size="30" name="" placeholder="ระบุ" > <br>    
 			</td>
 		</tr>
 		<tr>
@@ -503,10 +503,10 @@
 									</td>
 								</tr>
 							</table><br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ)<input type="text" size="30" name="" ><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) <input type="text" size="30" name="" ><br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้สมัคร</b><br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (<input type="text" size="30" name="" >)<br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่:<input type="date" size="30" name="" >
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่: <input type="date" size="30" name="" >
 						</td>
 					</tr>
 				</table>
@@ -532,32 +532,32 @@
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										<b>การนัดหมาย</b><br>
-										<input type="radio" name="28" value="ใบสมัคร">ใบสมัคร
+										<input type="radio" name="28" value="ใบสมัคร"> ใบสมัคร
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<input type="radio" name="29" value="นัดนำเสนอแนวคิดธุรกิจ ">นัดนำเสนอแนวคิดธุรกิจ<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว">สำเนาบัตรประชาชน  เลขประจำตัว <input type="text" size="15" name="" >
+										<input type="radio" name="29" value="นัดนำเสนอแนวคิดธุรกิจ "> นัดนำเสนอแนวคิดธุรกิจ<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว <input type="text" size="15" name="" >
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										วันที่: <input type="date"  name="" ><br> 
-										<input type="radio" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา">สำเนาหลักฐานการศึกษา วุฒิการศึกษา<input type="text" size="15" name="" >
+										<input type="radio" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา<input type="text" size="15" name="" >
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<input type="radio" name="29" value="นัดเข้าพบสถานประกอบการธุรกิจ">นัดเข้าพบสถานประกอบการธุรกิจ<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน">เอกสารรับรองการทำงาน  ชื่อหน่วยงาน<input type="text" size="15" name="" >
+										<input type="radio" name="29" value="นัดเข้าพบสถานประกอบการธุรกิจ"> นัดเข้าพบสถานประกอบการธุรกิจ<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน <input type="text" size="15" name="" >
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										วันที่: <input type="date"  name="" ><br> 
 									</td>
 								</tr>	
 								<tr><td colspan="3" align="left">
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป">รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="Concept paper">Concept paper<br> 
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="แผนธุรกิจ">แผนธุรกิจ<br> 
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม">ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="Concept paper"> Concept paper<br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> 
 								</td></tr>
 							</table><br>
 						</td>
@@ -577,18 +577,18 @@
 								<tr>
 									<td colspan="3" align="left">
 										&nbsp;&nbsp;
-										<input type="radio" name="30" value="มีผลงานวิจัยสนับสนุน">มีผลงานวิจัยสนับสนุน<br>
-										<input type="radio" name="30" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว">เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
-										<input type="radio" name="30" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี">ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
-										<input type="radio" name="30" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า">มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
-										<input type="radio" name="30" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ">มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
+										<input type="radio" name="30" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
+										<input type="radio" name="30" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
+										<input type="radio" name="30" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
+										<input type="radio" name="30" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า"> มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
+										<input type="radio" name="30" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ"> มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
 									</td>
 								</tr>
 							</table><br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ)<input type="text" size="30" name="" ><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) <input type="text" size="30" name="" ><br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ตรวจใบสมัคร</b><br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (<input type="text" size="30" name="" >)<br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่:<input type="date" size="30" name="" >
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่: <input type="date" size="30" name="" >
 						</td>
 					</tr>
 				</table>
@@ -597,24 +597,27 @@
 		</tr>
 	</table>
 </center>
+
+</div>
+</div>
+
+</div>
+</div>
 <br>
+<div class="row">
+	<div class="col-sm-12">
+		<center>
+			<table width="90%">
+				<tr>
+					<td>หนังสือรับรองการจดทะเบียนนิติบุคคล: <input type="file" name=""></td>
+					<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม: <input type="file" name=""></td>
+					<td>หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name=""></td>
+					<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name=""></td>
+				</tr>
+			</table>
+		</center>
 
-<center>
-<table width="90%">
-	<tr>
-		<td>หนังสือรับรองการจดทะเบียนนิติบุคคล:<input type="file" name=""></td>
-		<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม:<input type="file" name=""></td>
-		<td>หนังสือมอบอำนาจ(ถ้ามี):<input type="file" name=""></td>
-		<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย:<input type="file" name=""></td>
-	</tr>
-</table>
-</center>
-
-<br>
-</div>
-</div>
-
-</div>
+	</div>
 </div>
 <br>
 <div class="row">
