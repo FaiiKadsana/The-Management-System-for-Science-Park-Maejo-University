@@ -38,7 +38,7 @@
 						<tr>
 							<td width="30%">2.กลุ่มอุตสาหกรรม</td>
 							<td >
-								<input type="text" size="66" name="">
+								<input type="radio"  name="1" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)<input type="radio"  name="1" value="4 Focus Industries"> 4 Focus Industries<input type="radio"  name="1" value="Others"> Others ระบุ <input type="text" name="" size="15">   
 							</td>
 						</tr>
 						<tr>

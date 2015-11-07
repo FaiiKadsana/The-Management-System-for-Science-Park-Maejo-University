@@ -434,10 +434,12 @@
 						<table border="1" width="80%">
 							<tr>
 								<td colspan="3" align="center">
+								<br>
 									<p><b>คำรับรองของผู้สมัคร</b></p>
 									<table>
 										<tr>
 											<td colspan="3" align="center">
+											<br>
 												&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้ารับรองว่าหากข้าพเจ้าได้รับคัดเลือกเข้าร่วมโครงการบ่มเพาะวิสาหกิจ ในครั้งนี้ <br>
 												ข้าพเจ้าจะเข้าร่วมกิจกรรมตามหลักสูตรหรือ ตามหลักเกณฑ์ที่กำหนดของสถาบันบ่มเพาะ<br>
 												วิสาหกิจ มหาวิทยาลัยแม่โจ้ รวมทั้งจะร่วมมือให้ข้อมูลแก่ สถาบันบ่มเพาะวิสาหกิจ มหาวิทยาลัย<br>
@@ -447,13 +449,15 @@
 										</tr>
 									</table><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) .....................................<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้สมัคร</b><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้สมัคร</b><br><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (..............................)<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่......./.........../......<br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่......./.........../......<br> <br>
+								<br>
+								<br>
 								</td>
 							</tr>
 						</table>
-
+<br>
 					</td>
 				</tr>
 
@@ -464,15 +468,16 @@
 						<table border="1" width="80%">
 							<tr>
 								<td colspan="3" align="center">
+								<br>
 									<p><b>สำหรับเจ้าหน้าที่</b></p>
 									<table>
 										<tr>
 											<td colspan="2" align="left">
 												<p><b>หลักฐานประกอบการยื่นสมัคร</b></p>								
-												<input type="radio" name="28" value="ใบสมัคร"> ใบสมัคร<br>
-												<input type="radio" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว ................................................<br> 
-												<input type="radio" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา............................................<br> 
-												<input type="radio" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน .............................................<br> 
+												<input type="checkbox" name="28" value="ใบสมัคร"> ใบสมัคร<br>
+												<input type="checkbox" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว ................................................<br> 
+												<input type="checkbox" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา............................................<br> 
+												<input type="checkbox" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน .............................................<br> 
 											</td>
 											<td align="left">
 												<p><b>การนัดหมาย</b></p>
@@ -484,10 +489,10 @@
 											</td>
 										</tr>	
 										<tr><td colspan="3" align="left">
-											<input type="radio" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
-											<input type="radio" name="28" value="Concept paper"> Concept paper<br> 
-											<input type="radio" name="28" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
-											<input type="radio" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> 
+											<input type="checkbox" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
+											<input type="checkbox" name="28" value="Concept paper"> Concept paper<br> 
+											<input type="checkbox" name="28" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
+											<input type="checkbox" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> <br>
 										</td></tr>
 									</table><br>
 								</td>
@@ -502,22 +507,23 @@
 						<table border="1" width="80%">
 							<tr>
 								<td colspan="3" align="center">
+								<br>
 									<p><b>แนวปฏิบัติของการบ่มเพาะผู้ประกอบการ</b></p>
 									<table>
 										<tr>
 											<td colspan="3" align="left">
-												<input type="radio" name="30" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
-												<input type="radio" name="30" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
-												<input type="radio" name="30" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
-												<input type="radio" name="30" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า"> มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
-												<input type="radio" name="30" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ"> มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
+												<input type="checkbox" name="30" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
+												<input type="checkbox" name="30" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
+												<input type="checkbox" name="30" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
+												<input type="checkbox" name="30" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า"> มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
+												<input type="checkbox" name="30" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ"> มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
 											</td>
 										</tr>
 									</table><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) ...................................<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ตรวจใบสมัคร</b><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ตรวจใบสมัคร</b><br><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (................................)<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่......./.........../......<br> 
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่......./.........../......<br> <br>
 								</td>
 							</tr>
 						</table>

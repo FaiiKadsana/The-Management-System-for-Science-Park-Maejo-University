@@ -1,16 +1,16 @@
 
-		<div class="row">
-			<div class="col-sm-12">
-				<center>
-					<table width="55%">
-						<tr>
-							<td width="20%"></td>
-							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
-						</tr>
-					</table>
-				</center>
-			</div>
-		</div>
+<div class="row">
+	<div class="col-sm-12">
+		<center>
+			<table width="55%">
+				<tr>
+					<td width="20%"></td>
+					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+</div>
 
 <div class="row fromfont">
 	<div class="col-sm-12">
@@ -32,7 +32,7 @@
 				<tr>
 					<td width="30%">2.กลุ่มอุตสาหกรรม</td>
 					<td >
-						
+						<input type="radio"  name="1" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)<input type="radio"  name="1" value="4 Focus Industries"> 4 Focus Industries<input type="radio"  name="1" value="Others"> Others ระบุ..................
 					</td>
 				</tr>
 				<tr>

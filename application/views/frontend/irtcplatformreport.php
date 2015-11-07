@@ -1,16 +1,16 @@
 
-		<div class="row">
-			<div class="col-sm-12">
-				<center>
-					<table width="55%">
-						<tr>
-							<td width="20%"></td>
-							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
-						</tr>
-					</table>
-				</center>
-			</div>
-		</div>
+<div class="row">
+	<div class="col-sm-12">
+		<center>
+			<table width="55%">
+				<tr>
+					<td width="20%"></td>
+					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+</div>
 
 <div class="row fromfont">
 	<div class="col-sm-12">
@@ -31,7 +31,7 @@
 				<tr>
 					<td width="30%">2.กลุ่มอุตสาหกรรม</td>
 					<td >
-						
+						<input type="radio"  name="1" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)<input type="radio"  name="1" value="4 Focus Industries"> 4 Focus Industries<input type="radio"  name="1" value="Others"> Others ระบุ..................
 					</td>
 				</tr>
 				<tr>
@@ -196,7 +196,7 @@
 							<tr>
 								<td width="20%">1.งบดำเนินการ<br>&nbsp;1.1ค่าตอบแทน<br>&nbsp;1.2ค่าจ้าง<br>&nbsp;1.3ค่าใช้จ่ายในการดำเนินงาน<br>&nbsp;1.4ค่าวัสดุ<br>&nbsp;1.5ค่าใช้สอย<br>&nbsp;1.6ค่าบริหารจัดการ</td>										
 								<td width="30%"><br>
-								
+									
 								</td>
 								<td width="30%">
 									
