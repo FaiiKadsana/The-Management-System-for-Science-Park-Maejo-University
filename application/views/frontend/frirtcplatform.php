@@ -33,61 +33,71 @@
 						<tr>
 							<td width="30%">1.ชื่อโครงการ</td>
 							<td >
-								<input type="text" size="66" name=""  placeholder="(เป็นโครงการวิจัยและพัฒนาที่ภาคเอกชนพร้อมร่วมมือในการวิจัยและพัฒนาร่วมกัน)">
+								<textarea type="text" cols="80" name="" rows="3" placeholder="(เป็นโครงการวิจัยและพัฒนาที่ภาคเอกชนพร้อมร่วมมือในการวิจัยและพัฒนาร่วมกัน)"></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">2.กลุ่มอุตสาหกรรม</td>
 							<td >
-								<input type="radio"  name="1" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)<input type="radio"  name="1" value="4 Focus Industries"> 4 Focus Industries<input type="radio"  name="1" value="Others"> Others ระบุ <input type="text" name="" size="15">
+								<input type="radio"  name="1" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)<input type="radio"  name="1" value="4 Focus Industries"> 4 Focus Industries<input type="radio"  name="1" value="Others"> Others ระบุ <input type="text" name="" size="15">   
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">3.ผู้รับผิดชอบโครงการและความเชี่ยวชาญ</td>
 							<td >
-								<textarea name="" cols="66" rows="3" placeholder="(ชื่อผู้รับผิดชอบ / ตำแหน่ง / หน่วยงานรับผิดชอบ / ที่อยู่ / เบอร์โทรศัพท์ / แฟกซ์ / อีเมล์)" ></textarea>
+								<br>
+								ชื่อผู้รับผิดชอบ: <input type="text" name="" size="26"> ตำแหน่ง: <input type="text" name="" size="26"> <br>
+								หน่วยงานรับผิดชอบ: <input type="text" name="" size="22"> เบอร์โทรศัพท์: <input type="tel" name="" size="22"> <br>
+								แฟกซ์: <input type="text" name="" size="30"> อีเมล์: <input type="email" name="" size="30"> <br>
+								ที่อยู่: <textarea name="" cols="40" rows="3" placeholder=" ที่อยู่" ></textarea>ตำบล: <input type="email" name="" size="25"> <br>
+								อำเภอ: <input type="text" name="" size="30"> จังหวัด: <input type="email" name="" size="30"> <br><br>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">4.ที่มาของโครงการ</td>
 							<td >
-								<textarea name="" cols="66" rows="3" ></textarea>
+								<textarea name="" cols="80" rows="3" ></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">5.วัตถุประสงค์</td>
 							<td >
-								<textarea name="" cols="66" rows="3" ></textarea>
+								<textarea name="" cols="80" rows="3" ></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">6.รายละเอียดผู้ประกอบการ</td>
 							<td >
-								<textarea name="" cols="66" rows="3"  placeholder="(ประเภทนิติบุคคล / ทุนจดทะเบียน / จำนวนพนักงาน / ผลิตภัณฑ์หลักขององค์กร / ที่อยู่ / ผู้ติดต่อประสานงานพร้อมเบอร์ติดต่อ)"></textarea>
+								<br>
+								ประเภทนิติบุคคล: <input type="text" name="" size="24"> ทุนจดทะเบียน: <input type="text" name="" size="20"> <br>
+								จำนวนพนักงาน: <input type="text" name="" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="" size="18"> <br>
+								ที่อยู่: <textarea name="" cols="40" rows="3" placeholder=" ที่อยู่" ></textarea>ตำบล: <input type="email" name="" size="25"> <br>
+								อำเภอ: <input type="text" name="" size="30"> จังหวัด: <input type="email" name="" size="30"> <br>
+								ผู้ติดต่อประสานงาน: <input type="text" name="" size="18"> เบอร์ผู้ติดต่อประสานงาน: <input type="email" name="" size="16"> <br><br>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">7.เหตุผลที่สนใจร่วมงานวิจัยและพัฒนาสำหรับโครงการนี้</td>
 							<td >
-								<textarea name="" cols="66" rows="3" ></textarea>
+								<textarea name="" cols="80" rows="3" ></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">8.โครงการ/งานวิจัยที่เคยทำร่วมกับผู้เชี่ยวชาญ</td>
 							<td >
-								<textarea name="" cols="66" rows="3" ></textarea>
+								<textarea name="" cols="80" rows="3" ></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">9.การใช้ผลงานวิจัยเดิมที่นำมาต่อยอดเพื่อพัฒนาสู่เชิงพาณิชย์</td>
 							<td >
-								<textarea name="" cols="66" rows="3" ></textarea>
+								<textarea name="" cols="80" rows="3" ></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td width="30%">10.รายละเอียดห้องปฏิบัติการ และนักวิจัย</td>
 							<td >
-								<textarea name="" cols="66" rows="3" ></textarea>
+								<textarea name="" cols="80" rows="3" ></textarea>
 							</td>
 						</tr>
 						<tr>
@@ -172,7 +182,7 @@
 						<tr>
 							<td width="30%">12.ผลที่คาดว่าจะได้รับ</td>
 							<td > 
-								<textarea name="" cols="66" rows="3" placeholder="•รายได้เพิ่มขึ้นของผู้ประกอบการในภาคเอกชนที่เป็นผลมาจากโครงการ xxx บาท  • มูลค่าการลงทุนในการวิจัยและพัฒนา (R&D) ของภาคเอกชนที่เพิ่มขึ้น xxx บาท  • จำนวนการจ้างงานวิจัยที่อยู่ในภาคเอกชนเพิ่มขึ้น xxx คน  •..." ></textarea>
+								<textarea name="" cols="80" rows="3" placeholder="•รายได้เพิ่มขึ้นของผู้ประกอบการในภาคเอกชนที่เป็นผลมาจากโครงการ xxx บาท  • มูลค่าการลงทุนในการวิจัยและพัฒนา (R&D) ของภาคเอกชนที่เพิ่มขึ้น xxx บาท  • จำนวนการจ้างงานวิจัยที่อยู่ในภาคเอกชนเพิ่มขึ้น xxx คน  •..." ></textarea>
 							</td>
 						</tr>
 						<tr>
