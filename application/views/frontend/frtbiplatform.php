@@ -154,14 +154,14 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="3" align="center">
-				<input type="radio" name="3" value="สำเร็จการศึกษา"> สำเร็จการศึกษา เมื่อ ปี พ.ศ. <input type="text" size="20" name="" >
+			<td colspan="3" align="left">
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="3" value="สำเร็จการศึกษา"> สำเร็จการศึกษา เมื่อ ปี พ.ศ. <input type="text" size="20" name="" >
 				สาขาวิชา<input type="text" size="20" name="" > สถาบัน <input type="text" size="20" name="" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="4" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="ปริญญาตรี"> ปริญญาตรี	<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="4" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="ปริญญาเอก"> ปริญญาเอก  
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ"> อื่นๆ 
@@ -169,14 +169,14 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="3" align="center">
-				<input type="radio" name="3" value="กำลังศึกษา"> กำลังศึกษา ในชั้นปีที่ <input type="text" size="20" name="" >
+			<td colspan="3" align="left">
+				&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="3" value="กำลังศึกษา"> กำลังศึกษา ในชั้นปีที่ <input type="text" size="20" name="" >
 				สาขาวิชา <input type="text" size="20" name="" > สถาบัน <input type="text" size="20" name="" ><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="5" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="ปริญญาตรี"> ปริญญาตรี<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="5" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="ปริญญาเอก"> ปริญญาเอก  
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="อื่นๆ"> อื่นๆ 
@@ -524,40 +524,27 @@
 							<p><b>สำหรับเจ้าหน้าที่</b></p>
 							<table>
 								<tr>
-									<td colspan="3" align="center">
-										<b>หลักฐานประกอบการยื่นสมัคร</b>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										<b>การนัดหมาย</b><br>
-										<input type="radio" name="28" value="ใบสมัคร"> ใบสมัคร
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<td colspan="2" align="left">
+										<p><b>หลักฐานประกอบการยื่นสมัคร</b></p>								
+										<input type="radio" name="28" value="ใบสมัคร"> ใบสมัคร<br>
+										<input type="radio" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว <input type="text" size="15" name="" ><br> 
+										<input type="radio" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา<input type="text" size="15" name="" ><br> 
+										<input type="radio" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน <input type="text" size="15" name="" ><br> 
+									</td>
+									<td align="left">
+										<p><b>การนัดหมาย</b></p>
 										<input type="radio" name="29" value="นัดนำเสนอแนวคิดธุรกิจ "> นัดนำเสนอแนวคิดธุรกิจ<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว <input type="text" size="15" name="" >
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										วันที่: <input type="date"  name="" ><br> 
-										<input type="radio" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา<input type="text" size="15" name="" >
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										<input type="radio" name="29" value="นัดเข้าพบสถานประกอบการธุรกิจ"> นัดเข้าพบสถานประกอบการธุรกิจ<br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน <input type="text" size="15" name="" >
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										วันที่: <input type="date"  name="" ><br> 
+
 									</td>
 								</tr>	
 								<tr><td colspan="3" align="left">
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="Concept paper"> Concept paper<br> 
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> 
+									<input type="radio" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
+									<input type="radio" name="28" value="Concept paper"> Concept paper<br> 
+									<input type="radio" name="28" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
+									<input type="radio" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> 
 								</td></tr>
 							</table><br>
 						</td>
@@ -576,7 +563,6 @@
 							<table>
 								<tr>
 									<td colspan="3" align="left">
-										&nbsp;&nbsp;
 										<input type="radio" name="30" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
 										<input type="radio" name="30" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
 										<input type="radio" name="30" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>

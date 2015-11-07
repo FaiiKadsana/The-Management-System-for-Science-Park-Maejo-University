@@ -1,108 +1,76 @@
-<!-- Section -->
-<div id="section_header">
-	<h2>Service Platform</h2>
-</div>
-
-<div class="row fromfont">
-	<div class="col-sm-12">
 
 		<div class="row">
 			<div class="col-sm-12">
 				<center>
-					<table width="70%">
+					<table width="55%">
 						<tr>
-							<td width="30%"></td>
-							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+							<td width="20%"></td>
+							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
 						</tr>
 					</table>
 				</center>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-12 ">
+<div class="row fromfont">
+	<div class="col-sm-12">
 
-				<center>
-					<table  width="70%" >
-						<tr>
-							<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
-							<td width="60%" align="center">
-								<p>แบบฟอร์มกรอกข้อมูลผู้ประกอบการ/SMEs/วิสาหกิจชุมชน</p>
-								<p>ที่มารับบริการอุทยานวิทยาศาสตร์ภูมิภาค เครือข่ายภาคเหนือ</p>
-							</td>
-							<td width="25%" align="center"><img src='<?php echo base_url("asset/images/banner1.png") ?>' width='50%' height='20%'></td>
-						</tr>
-						<tr>
-							<td colspan="2" > </td>
-							<td  align="left"> 
-								<p> สถาบันบ่มเพาะวิสาหกิจ มหาวิทยาลัย </p>
-								<p> วันที่มารับบริการ <input type="date"  name="" > </p>
-							</td>
-						</tr>
-						<tr>
-							<td  align="left"> 
-								<p><b><u>ข้อมูลส่วนตัว</u></b></p>
-							</td>
-							<td colspan="2" > </td>
-						</tr>
-						<tr>
-							<td colspan="3"  align="center"><br>
-								ชื่อ: <select name=""> 
-								<option value="นาย">นาย</option>
-								<option value="นาง">นาง</option>
-								<option value="นางสาว">นางสาว</option>
-							</select>
-							&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" >
-							&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="" >
-						</td>
-					</tr>
-					<tr>
-						<td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="" >
-							&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="" ></td>
-						</tr>
-						<tr>
-							<td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="" >
-								&nbsp;&nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="" ></td>
-							</tr>
-							<tr>
-								<td  align="left"> 
-									<p><b><u>ข้อมูลทางธุรกิจ</u></b></p>
-								</td>
-								<td colspan="2" > </td>
-							</tr>
-							<tr>
-								<td colspan="3" align="center">
-								ชื่อกิจการ: <input type="text" size="30" name="" ><br>
-									<textarea name="" cols="30" rows="3" placeholder="ที่อยู่"></textarea>
-									&nbsp;&nbsp;&nbsp;&nbsp;
-									ตำบล <select name=""> 
-									<option value="นาหมื่นครี">นาหมื่นครี</option>
-									<option value="นาโยง">นาโยง</option>
-								</select>
-								&nbsp;&nbsp;&nbsp;&nbsp;
-								อำเภอ <select name=""> 
-								<option value="นาโยง">นาโยง</option>
-								<option value="สันทราย">สันทราย</option>
-							</select>
-							&nbsp;&nbsp;&nbsp;&nbsp; 
-							จังหวัด <select name=""> 
-							<option value="ตรัง">ตรัง</option>
-							<option value="เชียงใหม่">เชียงใหม่</option>
-						</select>
+		<center>
+
+			<table  width="70%"  >
+				<tr>
+					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
+					<td width="60%" align="center">
+						<p>แบบฟอร์มกรอกข้อมูลผู้ประกอบการ/SMEs/วิสาหกิจชุมชน</p>
+						<p>ที่มารับบริการอุทยานวิทยาศาสตร์ภูมิภาค เครือข่ายภาคเหนือ</p>
+					</td>
+					<td width="25%" align="center"><img src='<?php echo base_url("asset/images/banner1.png") ?>' width='50%' height='20%'></td>
+				</tr>
+				<tr>
+					<td colspan="2" > </td>
+					<td  align="left"> 
+						<p>สถาบันบ่มเพาะวิสาหกิจมหาวิทยาลัย</p>
+						<p> วันที่มารับบริการ ....../............/.......</p>
+					</td>
+				</tr>
+				<tr>
+					<td  align="left"> 
+						<p><b><u>ข้อมูลส่วนตัว</u></b></p>
+					</td>
+					<td colspan="2" > </td>
+				</tr>
+				<tr>
+					<td colspan="3"  align="center"><br>
+						ชื่อ (นาย/นาง/นางสาว) ................................................................... นามสกุล.............................................................................................
+					</td>
+				</tr>
+				<tr>
+					<td  colspan="3" align="center">เลขที่บัตรประชาชน...............................................................................................&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง....................................................................</td><tr>
+					<td colspan="3"  align="center">เบอร์โทรติดต่อ.................................................................................................&nbsp;&nbsp;&nbsp;&nbsp;E-mail:......................................................</td>
+				</tr>
+				<tr>
+					<td  align="left"> 
+						<p><b><u>ข้อมูลทางธุรกิจ</u></b></p>
+					</td>
+					<td colspan="2" > </td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						ชื่อกิจการ................................................................................................................................................................................................................<br>
+						ที่อยู่............................................................................................................................................................................................................................<br>
+						ตำบล.......................................................................อำเภอ.......................................................จังหวัด............................................................................<br>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="center">
-						โทรศัพท์: <input type="text" size="20" name="" >
-						&nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="" >
-						&nbsp;&nbsp;&nbsp;Website: <input type="text" size="30" name="" >
+						โทรศัพท์.................................................................&nbsp;&nbsp;&nbsp;โทรสาร..........................................................&nbsp;&nbsp;&nbsp;Website.............................................................<br>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
 						<b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="1" value="ไม่มี"> ไม่มี  
-						&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="1" value="มี"> มี
-						&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="กรุณากรอก" >                                                                                                                
+						&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="1" value="มี"> มี กรุณากรอก
+						&nbsp;&nbsp;................................................................................................................                                                                                                                
 					</td>
 				</tr>
 				<tr>
@@ -117,7 +85,7 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="2" value="ห้างหุ้นส่วนจำกัด"> ห้างหุ่นส่วนจำกัด<br>
 						<input type="radio" name="2" value="เบริษัทจำกัด"> บริษัทจำกัด  
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="2" value="วิสาหกิจชุมชน"> วิสาหกิจชุมชน
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >                                                                                                            
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="อื่นๆ"> อื่นๆ ระบุ&nbsp;&nbsp;.........................................................................................................                                                                                                          
 					</td>
 				</tr>
 				<tr>
@@ -130,7 +98,7 @@
 						<input type="radio" name="3" value="การผลิต"> การผลิต 
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="3" value="การค้า(ปลีก-ส่ง)"> การค้า(ปลีก-ส่ง)
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="3" value="บริการ"> บริการ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="3" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="3" value="อื่นๆ"> อื่นๆ ระบุ&nbsp;&nbsp;...........................................................................................................
 					</td>
 				</tr>
 				<tr>
@@ -155,22 +123,22 @@
 						<input type="radio" name="4" value="เครื่องจักรกล"> เครื่องจักรกล
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="ท่องเที่ยว"> ท่องเที่ยว
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="บริการด้านสุขภาพ"> บริการด้านสุขภาพ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="ระบุ" >
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ"> อื่นๆ ระบุ&nbsp;&nbsp;...............................................................................................................
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						เงินจดทะเบียน: <input type="text" size="20" name="" >&nbsp;&nbsp;บาท(ถ้ามี)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวนปีที่ประกอบการ: <input type="text" size="20" name="" >&nbsp;&nbsp;ปี
+						เงินจดทะเบียน................................................................บาท(ถ้ามี)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวนปีที่ประกอบการ...........................................................................ปี
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						จำนวนลูกจ้างทั้งหมด: <input type="text" size="15" name="" >&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;แบ่งเป็นลูกค้าปรจำ <input type="text" size="15" name="" >&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;ลูกจ้างชั่วคราว <input type="text" size="15" name="" >&nbsp;&nbsp;อัตรา
+						จำนวนลูกจ้างทั้งหมด.........................&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;แบ่งเป็นลูกค้าปรจำ..................................&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;ลูกจ้างชั่วคราว....................................&nbsp;&nbsp;อัตรา
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						ผลิตภัณฑ์หลัก:&nbsp;&nbsp;1.) <input type="text" size="20" name="" >&nbsp;&nbsp;2.) <input type="text" size="20" name="" >&nbsp;&nbsp;3.) <input type="text" size="20" name="" >
+						ผลิตภัณฑ์หลัก&nbsp;&nbsp;1.).......................................................&nbsp;&nbsp;2.)..............................................................&nbsp;&nbsp;3.)................................................................
 					</td>
 				</tr>
 				<tr>
@@ -179,14 +147,15 @@
 						<table width="100%" border="1">
 							<tr>
 								<td colspan="3" align="center">
-									<p>อุทยานวิทยาศาสตร์และเทคโนโลยีเครือข่ายภาคเหนือตอนบนจะเป็นผู้เก็บรักษาความลับของผู้มารับบริการ โดยข้อมุลทั้งหมดจะเปิดเผยให้เฉพาะกับเจ้าหน้าที่</p>
-									<p>ที่เป็นหน่วยร่วมด้านการปรึกษาแนะนำเท่านั้น  ซึ่งจุดประสงค์ของการบันทึกข้อมูลก็เพื่อให้บริการจะเป็นไปด้วยความรวดเร็วและหาแนวทางแก้ไขได้อย่างถูกต้อง</p>
+									<p>อุทยานวิทยาศาสตร์และเทคโนโลยีเครือข่ายภาคเหนือตอนบนจะเป็นผู้เก็บรักษาความลับของผู้มารับบริการ </p>
+									<p>โดยข้อมุลทั้งหมดจะเปิดเผยให้เฉพาะกับเจ้าหน้าที่ ที่เป็นหน่วยร่วมด้านการปรึกษาแนะนำเท่านั้น</p>
+									<p> ซึ่งจุดประสงค์ของการบันทึกข้อมูลก็เพื่อให้บริการจะเป็นไปด้วยความรวดเร็วและหาแนวทางแก้ไขได้อย่างถูกต้อง</p>
 								</td>
 							</tr>
 							<tr>
 								<td align="center"><br><br>
-									ลงชื่อ <input type="text" size="25" name="" ><br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<input type="text" size="25" name="" >)<br>
+									ลงชื่อ.........................................................<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(......................................................)<br>
 									<b>ผู้ขอรับบริการ</b>
 								</td>
 								<td align="center" colspan="2">
@@ -291,7 +260,7 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="12" value="ทรัพย์สินทางปัญญา"> ทรัพย์สินทางปัญญา
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="12" value="การประหยัดพลังงาน"> การประหยัดพลังงาน
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="12" value="มาตรการด้านสิ่งแวดล้อม"> มาตรการด้านสิ่งแวดล้อม<br>
-						 <input type="radio" name="12" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="" placeholder="โปรดระบุ" >
+						<input type="radio" name="12" value="อื่นๆ"> อื่นๆ โปรดระบุ..................................................................................................................................................
 					</td>
 				</tr>
 				<tr>
@@ -301,11 +270,14 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="center">
-						<textarea name="" cols="80" rows="3" ></textarea>
+						........................................................................................................................................................................................................................................<br>
+						........................................................................................................................................................................................................................................<br>
+						........................................................................................................................................................................................................................................
 					</td>
 				</tr>
 				<hr>
 				<tr>
+					<br><br>
 					<td colspan="3" align="left">
 						<b>วิธีการแนะนำและแนวทางแก้ไข (สำหรับเจ้าหน้าที่)</b>
 					</td>
@@ -320,7 +292,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="center">
-						<textarea name="" cols="80" rows="3" ></textarea>
+						.......................................................................................................................................................................................................................................<br>
+						.......................................................................................................................................................................................................................................<br>
+						.......................................................................................................................................................................................................................................<br>
+						.......................................................................................................................................................................................................................................
 					</td>
 				</tr>
 				<tr>
@@ -328,41 +303,13 @@
 					<td colspan="2" align="right">
 						<table>
 							<tr>
-								<td>ชื่อผู้ให้การแนะนำ: <input type="text" size="30" name=""  ></td>
+								<td>ชื่อผู้ให้การแนะนำ..................................................</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
 			</table>
-	</center>
-
-</div>
-</div>
-
-</div>
-</div>
-<br>
-<div class="row">
-	<div class="col-sm-12">
-		<center>
-			<table width="90%">
-				<tr>
-					<td>หนังสือรับรองการจดทะเบียนนิติบุคคล: <input type="file" name=""></td>
-					<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม: <input type="file" name=""></td>
-					<td>หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name=""></td>
-					<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name=""></td>
-				</tr>
-			</table>
 		</center>
+
 	</div>
 </div>
-<br>
-<div class="row">
-	<div class="col-md-offset-5  col-sm-7">
-		<button type="button" class="btn btn-success  btn-lg" >ตกลง</button>
-		<button type="button" class="btn btn-success  btn-lg">ยกเลิก</button>
-	</div>
-</div>
-
-
-<br><br><br>

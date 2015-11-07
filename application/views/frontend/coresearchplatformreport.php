@@ -15,6 +15,7 @@
 <div class="row fromfont">
 	<div class="col-sm-12">
 
+
 		<center>
 			<p>(Industrial Research and Technology Capacity Development Program: IRTC)</p>
 			<p>ข้อเสนอโครงการฉบับย่อ</p>
@@ -173,8 +174,8 @@
 						<table  border="1" width="100%">
 							<tr>
 								<th rowspan="2" align="center" width="20%">กิจกรรม</th>
-								<th rowspan="2"  align="center" width="30%">ค่าใช้จ่ายสนับสนุนโดยอุทยานฯ(ไม่เกิน 50%)</th>
-								<th   align="center"width="30%">ค่าใช้จ่ายสนับสนุนโดยเอกชน(มากกว่าหรือเท่ากับ 50%)</th>
+								<th rowspan="2"  align="center" width="30%">ค่าใช้จ่ายสนับสนุนโดยอุทยานฯ(ไม่เกิน 40%)</th>
+								<th   align="center"width="30%">ค่าใช้จ่ายสนับสนุนโดยเอกชน(มากกว่าหรือเท่ากับ 60%)</th>
 								<th rowspan="2"  align="center">รวม(บาท)</th>
 							</tr>
 							<tr>
@@ -183,11 +184,11 @@
 										<tr>
 											<th width="50%">
 												IN-CASH<br>
-												(ไม่ต่ำกว่า50%)
+												
 											</th>
 											<th>
 												IN-KIND<br>
-												(ไม่ต่ำกว่า50%)
+												
 											</th>
 										</tr>
 									</table>
@@ -196,7 +197,7 @@
 							<tr>
 								<td width="20%">1.งบดำเนินการ<br>&nbsp;1.1ค่าตอบแทน<br>&nbsp;1.2ค่าจ้าง<br>&nbsp;1.3ค่าใช้จ่ายในการดำเนินงาน<br>&nbsp;1.4ค่าวัสดุ<br>&nbsp;1.5ค่าใช้สอย<br>&nbsp;1.6ค่าบริหารจัดการ</td>										
 								<td width="30%"><br>
-								
+									
 								</td>
 								<td width="30%">
 									
@@ -238,7 +239,7 @@
 							</tr>
 						</table>
 						<br>
-						<p style="color:red;">*หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 50% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 50%</p>
+						<p style="color:red;">*หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 60% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 40%</p>
 						<br>
 					</td>	
 				</tr>
