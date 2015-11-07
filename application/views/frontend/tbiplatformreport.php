@@ -245,12 +245,12 @@
 					<td  colspan="3" align="left">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินส่วนตัวของท่าน"> เงินส่วนตัวของท่าน ประมาณ ...................................... บาท<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินจากหุ้นส่วน"> เงินจากหุ้นส่วน หรือผู้ร่วมทุน ประมาณ.................................... บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="radio" name="13" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว 
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="13" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ 
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="13" value="บริษัทหรือกิจการอื่น"> บริษัทหรือกิจการอื่น&nbsp;&nbsp;ระบุ...............................<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินกู้ยืม"> เงินกู้ยืม ประมาณ .......................................... บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="radio" name="14" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารของรัฐ"> ธนาคารของรัฐ &nbsp;&nbsp;ระบุ..........................................
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารพาณิชย์ของเอกชน"> ธนาคารพาณิชย์ของเอกชน&nbsp;&nbsp;ระบุ....................................................<br>

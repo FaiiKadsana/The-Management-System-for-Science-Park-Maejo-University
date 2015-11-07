@@ -40,7 +40,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-5 col-sm-7">
-						<button type="submit" class="btn btn-default" style="width:200px;margin-left:-20px;">Sign in</button>
+						<button type="submit" class="btn btn-info" style="width:200px;margin-left:-20px;">Sign in</button>
 					</div>
 				</div>
 			</form>
