@@ -59,6 +59,8 @@ class Catalog extends CI_Controller {
 		$data['catalog'] = $catalog->result();
 		//**************************//
 
+		
+
 		$this->load->view('frontend/catalog',$data);
 
 		$this->load->view('frontend/script');	
