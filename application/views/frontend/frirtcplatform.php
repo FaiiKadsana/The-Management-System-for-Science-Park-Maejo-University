@@ -31,6 +31,11 @@
 					<br>
 					<table  width="55%" >
 						<tr>
+							<td width="30%" colspan="2">
+								วันที่: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"  name="dateca" >
+							</td>
+						</tr>
+						<tr>
 							<td width="30%">1.ชื่อโครงการ</td>
 							<td >
 								<textarea type="text" cols="80" name="" rows="3" placeholder="(เป็นโครงการวิจัยและพัฒนาที่ภาคเอกชนพร้อมร่วมมือในการวิจัยและพัฒนาร่วมกัน)"></textarea>

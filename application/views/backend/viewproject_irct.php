@@ -324,19 +324,29 @@
                               </tr>
                               <tr>
                                 <td>
-                                รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
-                                 </td>    
+                                  รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
+                                </td>
                               </tr>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                              <tr> 
+                                <td>
+                                สถานะโครงการ: อนุมัติ 
+                               </td>    
+                             </tr>
+                             <tr> 
+                                <td>
+                                หมายเหตุ: รออนุมัติ
+                               </td>    
+                             </tr>
+                           </table>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
 
-                    <!-- End -->
+                   <!-- End -->
 
-                  </div>
-                  <div class="modal-footer">
+                 </div>
+                 <div class="modal-footer">
                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                  </div>
                </div> 

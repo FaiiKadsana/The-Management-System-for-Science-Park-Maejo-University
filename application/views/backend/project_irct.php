@@ -26,11 +26,17 @@
             <td></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อหนักวิจัย" name="research"></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
-             <td><input type="date" class="form-control"  name="dateresearch"></td>
+             <td><input type="text" class="form-control" placeholder="ปีที่ทำโครงการ" name="yearresearch"></td>
             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
-             <option value="สำเร็จ"> สำเร็จ</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> อยู่ในช่วงดำเนินงาน</option>
+            <option value="สำเร็จ"> อนุมัติ</option>
+             <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+             <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
            </select></td>
            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
            <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
@@ -47,19 +53,21 @@
 <div class="row">
   <div class="col-sm-12">
     <div class="panel panel-default">
-      <div class="panel-heading">ข้อมูลนักวิจัย</div>
+      <div class="panel-heading">IRTC Platform</div>
       <div class="panel-body">
        <table class="table table-striped">
          <tr class="bg-success">
-          <th width="5%">#</th>
-          <th width="25%">ชื่อ</th>
-          <th width="25%">นามสกุล</th>
-          <th width="25%">ชื่อโครงการ</th> 
-          <th width="30%">สถานะ</th>     
+            <th width="5%">#</th>
+          <th width="15%">ชื่อนักวิจัย</th>
+          <th width="15%">ชื่อโครงการ</th>
+          <th width="20%">ชื่อสถานประกอบการ</th> 
+          <th width="35%">สถานะ</th>     
+          <th width="25%">ปีที่ทำวิจัย</th>
           <th></th>
           <th></th>
           <th></th>
           <th></th>
+
 
         </tr>   
 
@@ -71,10 +79,11 @@
           <td >อยู่เกิด</td>   
           <td >กังหันลม</td>
           <td >อยู่ในช่วงดำเนินงาน</td>
+           <td >2558</td>
           <td><a href="<?php echo base_url("backend/viewproject_irct")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_irct"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
           <td><a href="<?php echo base_url("backend/editproject_irct")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button></a></td>
-          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delproject_irct"><i class="fa fa-times"></i> ลบ</button></td>                     
+         <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i> </button></a></td>                            
         </tr>       
       </table>     
       <!-- End -->
@@ -657,6 +666,28 @@
       </div>
     </div>
 
+    <br>
+
+                  <div class="form-group">
+                   <label class="col-lg-2 control-label">สถานะ</label>
+                   <div class="col-lg-4">
+                    <select class="form-control"  name="statussearch">
+                      <option value="สำเร็จ"> อนุมัติ</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
+                    </select>
+                  </div>
+                  <label class="col-lg-2 control-label">หมายเหตุ</label>
+                  <div class="col-lg-4">
+                  <input type="text" class="form-control" name="1"   />
+                  </div>
+                </div>
+
   </div>
 </form>
 </div>
@@ -682,29 +713,6 @@
 
 
 
-<!--end popup ลบ -->
-<form id="" method="post" class="form-horizontal" action="">
-  <div class="modal fade bs-example-modal-sm-delproject_irct" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-
-       <div class="row">
-         <div class="col-lg-11 ">
-          <div class="form-group">
-           <label class="col-lg-9 control-label">ยืนยันการลบ</label>
-         </div>
-
-       </div>
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-success">ตกลง</button>
-       <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-     </div>
-   </div>
- </div>
-</div>
-</form>
-<!--end popup ลบ-->
 
 
 

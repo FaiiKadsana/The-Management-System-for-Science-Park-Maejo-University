@@ -322,7 +322,17 @@
                               </tr>
                                <td>
                                 รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
-                                 </td>  
+                                 </td>
+                                <tr> 
+                                <td>
+                                สถานะโครงการ: อนุมัติ 
+                               </td>    
+                             </tr>
+                             <tr> 
+                                <td>
+                                หมายเหตุ: รออนุมัติ
+                               </td>    
+                             </tr>  
                             </table>
                           </div>
                         </div>

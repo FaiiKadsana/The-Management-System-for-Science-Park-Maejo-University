@@ -29,6 +29,11 @@
 					<p>ปีงบประมาณ 2558</p>
 					<br>
 					<table  width="55%" >
+					<tr>
+							<td width="30%" colspan="2"> 
+								วันที่:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"  name="dateca" >
+							</td>
+						</tr>
 						<tr>
 							<td width="30%">1.ชื่อโครงการ</td>
 							<td >

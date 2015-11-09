@@ -26,11 +26,17 @@
             <td></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อนักวิจัย" name="research"></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
-             <td><input type="date" class="form-control"  name="dateresearch"></td>
+            <td><input type="text" class="form-control" placeholder="ปีที่ทำโครงการ" name="yearresearch"></td>
             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
-             <option value="สำเร็จ"> สำเร็จ</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> อยู่ในช่วงดำเนินงาน</option>
+            <option value="สำเร็จ"> อนุมัติ</option>
+             <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+             <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+           <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
            </select></td>
            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
            <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
@@ -47,34 +53,35 @@
 <div class="row">
   <div class="col-sm-12">
     <div class="panel panel-default">
-      <div class="panel-heading">ข้อมูลนักวิจัย</div>
+      <div class="panel-heading">Service Platform</div>
       <div class="panel-body">
        <table class="table table-striped">
          <tr class="bg-success">
-          <th width="5%">#</th>
-          <th width="25%">ชื่อ</th>
-          <th width="25%">นามสกุล</th>
-          <th width="25%">ชื่อโครงการ</th> 
-          <th width="30%">สถานะ</th>     
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
+           <th width="5%">#</th>
+           <th width="15%">ชื่อนักวิจัย</th>
+           <th width="15%">ชื่อโครงการ</th>
+           <th width="20%">ชื่อสถานประกอบการ</th> 
+           <th width="35%">สถานะ</th>     
+           <th width="25%">ปีที่ทำวิจัย</th>
+           <th></th>
+           <th></th>
+           <th></th>
+           <th></th>
+         </tr>   
 
-        </tr>   
+         <!-- Show &Join table -->
 
-        <!-- Show &Join table -->
-
-        <tr class="bg-success">
+         <tr class="bg-success">
           <td >1</td>
           <td >อลงกรณ์</td>
           <td >อยู่เกิด</td>   
           <td >กังหันลม</td>
           <td >อยู่ในช่วงดำเนินงาน</td>
+          <td >2558</td>
           <td><a href="<?php echo base_url("backend/viewproject_service")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i> ดู</button></a></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_service"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
           <td><a href="<?php echo base_url("backend/editproject_service")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button></a></td>
-          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delproject_service"><i class="fa fa-times"></i> ลบ</button></td>                     
+           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i> </button></a></td>                  
         </tr>       
       </table>     
       <!-- End -->
@@ -155,7 +162,7 @@
                   </select>
                 </div>
               </div>
-             
+
 
               <div class="form-group">
                <label class="col-lg-2 control-label">เบอร์โทร</label>
@@ -215,195 +222,195 @@
         </div>
 
 
-     </div>
-   </div>
-   <!-- ข้อมูลนักวิจัย -->
+      </div>
+    </div>
+    <!-- ข้อมูลนักวิจัย -->
 
-   <div class="panel panel-warning">
-    <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
-    <div class="panel-body">
+    <div class="panel panel-warning">
+      <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
+      <div class="panel-body">
 
-      <div class="row">
-        <div class="col-lg-9 col-lg-offset-1">
+        <div class="row">
+          <div class="col-lg-9 col-lg-offset-1">
 
-         <center><h3>ข้อมูลผู้ติดต่อ</h3></center> <br>
+           <center><h3>ข้อมูลผู้ติดต่อ</h3></center> <br>
+
+           <div class="form-group">
+            <div class="col-lg-4">
+              <select class="form-control"  name="bus_title">
+               <option value="นาย">นาย</option>
+               <option value="นาง">นาง</option>
+               <option value="นางสาว">นางสาว</option>
+             </select>
+           </div>
+           <div class="col-lg-4">
+             <input type="text" class="form-control" name="bus_name" placeholder="ชื่อ"   />
+           </div>
+           <div class="col-lg-4">
+             <input type="text" class="form-control" name="bus_ln" placeholder="นามสกุล"   />
+           </div>
+         </div>
+         <br><br>
+
 
          <div class="form-group">
+          <label class="col-lg-2 control-label">เลขที่บัตรประชาชน</label>
           <div class="col-lg-4">
-            <select class="form-control"  name="bus_title">
-             <option value="นาย">นาย</option>
-             <option value="นาง">นาง</option>
-             <option value="นางสาว">นางสาว</option>
-           </select>
-         </div>
+            <input type="text" class="form-control" name="bus_code"  />
+          </div>
+          <label class="col-lg-2 control-label">ตำแหน่ง</label>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" name="bus_position"  />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-2 control-label">เบอร์โทรติดต่อ</label>
+          <div class="col-lg-4">
+            <input type="tel" class="form-control" name="bus_phone"  />
+          </div>
+          <label class="col-lg-2 control-label">E-mail</label>
+          <div class="col-lg-4">
+            <input type="email" class="form-control" name="bus_mail"  />
+          </div>
+        </div>
+
+        <hr>
+
+        <center><h3>ข้อมูลทางธุรกิจ</h3></center> <br>
+
+        <div class="form-group">
+          <label class="col-lg-2 control-label">ชื่อกิจการ</label>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" name="bus_name"  />
+          </div>
+          <label class="col-lg-2 control-label">ชื่อเจ้าของธุรกิจ</label>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" name="bus_owners"  />
+          </div>
+        </div>
+
+
+        <div class="form-group">
+         <label class="col-lg-2 control-label">ที่อยู่</label>
          <div class="col-lg-4">
-           <input type="text" class="form-control" name="bus_name" placeholder="ชื่อ"   />
-         </div>
-         <div class="col-lg-4">
-           <input type="text" class="form-control" name="bus_ln" placeholder="นามสกุล"   />
-         </div>
-       </div>
-       <br><br>
-
-
-       <div class="form-group">
-        <label class="col-lg-2 control-label">เลขที่บัตรประชาชน</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_code"  />
+          <textarea class="form-control"  name="bus_address">   </textarea>
         </div>
-        <label class="col-lg-2 control-label">ตำแหน่ง</label>
+        <label class="col-lg-2 control-label">ตำบล</label>
         <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_position"  />
+          <select class="form-control"  name="bus_subdistrict">
+            <option value="ศ.ดร.">หนองหาร</option>
+            <option value="รศ.ดร.">นาหมื่นศรี</option>
+          </select>
         </div>
       </div>
-    
-      <div class="form-group">
-        <label class="col-lg-2 control-label">เบอร์โทรติดต่อ</label>
-        <div class="col-lg-4">
-          <input type="tel" class="form-control" name="bus_phone"  />
-        </div>
-        <label class="col-lg-2 control-label">E-mail</label>
-        <div class="col-lg-4">
-          <input type="email" class="form-control" name="bus_mail"  />
-        </div>
-      </div>
-      
-      <hr>
 
-      <center><h3>ข้อมูลทางธุรกิจ</h3></center> <br>
 
       <div class="form-group">
-        <label class="col-lg-2 control-label">ชื่อกิจการ</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_name"  />
-        </div>
-        <label class="col-lg-2 control-label">ชื่อเจ้าของธุรกิจ</label>
-        <div class="col-lg-4">
-          <input type="text" class="form-control" name="bus_owners"  />
-        </div>
-      </div>
-    
-
-      <div class="form-group">
-       <label class="col-lg-2 control-label">ที่อยู่</label>
+       <label class="col-lg-2 control-label">อำเภอ</label>
        <div class="col-lg-4">
-        <textarea class="form-control"  name="bus_address">   </textarea>
+        <select class="form-control"  name="bus_district">
+          <option value="ศ.ดร.">นาโยง</option>
+          <option value="รศ.ดร.">สันทราย</option>
+        </select>
       </div>
-      <label class="col-lg-2 control-label">ตำบล</label>
+      <label class="col-lg-2 control-label">จังหวัด</label>
       <div class="col-lg-4">
-        <select class="form-control"  name="bus_subdistrict">
-          <option value="ศ.ดร.">หนองหาร</option>
-          <option value="รศ.ดร.">นาหมื่นศรี</option>
+        <select class="form-control"  name="bus_province">
+          <option value="ศ.ดร.">เชียงใหม่</option>
+          <option value="รศ.ดร.">ตรัง</option>
         </select>
       </div>
     </div>
-  
+
 
     <div class="form-group">
-     <label class="col-lg-2 control-label">อำเภอ</label>
-     <div class="col-lg-4">
-      <select class="form-control"  name="bus_district">
-        <option value="ศ.ดร.">นาโยง</option>
-        <option value="รศ.ดร.">สันทราย</option>
-      </select>
+      <label class="col-lg-2 control-label">โทรศัพท์</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" name="bus_phone"  />
+      </div>
+      <label class="col-lg-2 control-label">โทรสาร</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" name="bus_ fax"  />
+      </div> 
     </div>
-    <label class="col-lg-2 control-label">จังหวัด</label>
-    <div class="col-lg-4">
-      <select class="form-control"  name="bus_province">
-        <option value="ศ.ดร.">เชียงใหม่</option>
-        <option value="รศ.ดร.">ตรัง</option>
-      </select>
+
+
+    <div class="form-group">
+
+      <label class="col-lg-2 control-label">website</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" name="bus_ website"  />
+      </div>
+    </div>
+
+
+    <div class="row">
+     <div class="col-lg-12">
+
+      <label class="control-label">เลขที่ทะเบียนพาณิชย์</label>
+      <div class="funkyradio"> 
+        <table>
+          <tr>
+           <td width="25%"><div class="funkyradio-warning">
+            <input type="radio" name="bus_id" id="radio1" />
+            <label for="radio1">ไม่มี</label>
+          </div></td> 
+          <td width="25%">      <div class="funkyradio-success">
+            <input type="radio" name="bus_id" id="radio29" />
+            <label for="radio29">อื่นๆ ระบุ:</label>
+          </div></td> 
+        </tr>
+        <tr>
+          <td width="25%"> </td> 
+          <td width="25%"> 
+            <input type="text" class="form-control" name="bus_id"  /></td> 
+          </tr>
+        </table>
+      </div>
+
     </div>
   </div>
 
-
-  <div class="form-group">
-    <label class="col-lg-2 control-label">โทรศัพท์</label>
-    <div class="col-lg-4">
-      <input type="text" class="form-control" name="bus_phone"  />
-    </div>
-    <label class="col-lg-2 control-label">โทรสาร</label>
-    <div class="col-lg-4">
-      <input type="text" class="form-control" name="bus_ fax"  />
-    </div> 
-  </div>
-
-
-  <div class="form-group">
-
-    <label class="col-lg-2 control-label">website</label>
-    <div class="col-lg-4">
-      <input type="text" class="form-control" name="bus_ website"  />
-    </div>
-  </div>
- 
 
   <div class="row">
    <div class="col-lg-12">
+    <label class="control-label">ประเภทกิจการ</label>
+    <div class="funkyradio">                      
+     <table>
+      <tr>    
+        <td  width="25%">  <div class="funkyradio-warning">
+         <input type="radio" name="bus_type" id="radio3" />
+         <label for="radio3">เจ้าของกิจการ(ธรรมดา)</label>
+       </div></td>  
+       <td  width="25%"> <div class="funkyradio-info">
+        <input type="radio" name="bus_type" id="radio4" />
+        <label for="radio4">ห้างหุ่นส่วนสามัญ </label>
+      </div></td>  
+      <td  width="25%">  <div class="funkyradio-success">
+        <input type="radio" name="bus_type" id="radio5" />
+        <label for="radio5">ห้างหุ่นส่วนจำกัด</label>
+      </div>  </td>  </tr> 
+      <tr>                 
+       <td  width="25%">  <div class="funkyradio-warning">
+        <input type="radio" name="bus_type" id="radio6" />
+        <label for="radio6">บริษัทจำกัด</label>
+      </div></td> 
+      <td  width="25%">  <div class="funkyradio-info">
+        <input type="radio" name="bus_type" id="radio7" />
+        <label for="radio7">วิสาหกิจชุมชน </label>
+      </div></td> 
+      <td  width="25%">  <div class="funkyradio-success">
+        <input type="radio" name="bus_type" id="radio28" />
+        <label for="radio28">อื่นๆ ระบุ:</label>
+      </div> </td> </tr>
+      <tr>   <td  width="25%"></td>
+        <td  width="25%"></td>
+        <td  width="25%"> <input type="text" class="form-control" name="bus_type"  /></td>
 
-    <label class="control-label">เลขที่ทะเบียนพาณิชย์</label>
-    <div class="funkyradio"> 
-      <table>
-        <tr>
-         <td width="25%"><div class="funkyradio-warning">
-          <input type="radio" name="bus_id" id="radio1" />
-          <label for="radio1">ไม่มี</label>
-        </div></td> 
-        <td width="25%">      <div class="funkyradio-success">
-          <input type="radio" name="bus_id" id="radio29" />
-          <label for="radio29">อื่นๆ ระบุ:</label>
-        </div></td> 
-      </tr>
-      <tr>
-        <td width="25%"> </td> 
-        <td width="25%"> 
-          <input type="text" class="form-control" name="bus_id"  /></td> 
-        </tr>
       </table>
     </div>
-
   </div>
-</div>
-
-
-<div class="row">
- <div class="col-lg-12">
-  <label class="control-label">ประเภทกิจการ</label>
-  <div class="funkyradio">                      
-   <table>
-    <tr>    
-      <td  width="25%">  <div class="funkyradio-warning">
-       <input type="radio" name="bus_type" id="radio3" />
-       <label for="radio3">เจ้าของกิจการ(ธรรมดา)</label>
-     </div></td>  
-     <td  width="25%"> <div class="funkyradio-info">
-      <input type="radio" name="bus_type" id="radio4" />
-      <label for="radio4">ห้างหุ่นส่วนสามัญ </label>
-    </div></td>  
-    <td  width="25%">  <div class="funkyradio-success">
-      <input type="radio" name="bus_type" id="radio5" />
-      <label for="radio5">ห้างหุ่นส่วนจำกัด</label>
-    </div>  </td>  </tr> 
-    <tr>                 
-     <td  width="25%">  <div class="funkyradio-warning">
-      <input type="radio" name="bus_type" id="radio6" />
-      <label for="radio6">บริษัทจำกัด</label>
-    </div></td> 
-    <td  width="25%">  <div class="funkyradio-info">
-      <input type="radio" name="bus_type" id="radio7" />
-      <label for="radio7">วิสาหกิจชุมชน </label>
-    </div></td> 
-    <td  width="25%">  <div class="funkyradio-success">
-      <input type="radio" name="bus_type" id="radio28" />
-      <label for="radio28">อื่นๆ ระบุ:</label>
-    </div> </td> </tr>
-    <tr>   <td  width="25%"></td>
-      <td  width="25%"></td>
-      <td  width="25%"> <input type="text" class="form-control" name="bus_type"  /></td>
-
-    </table>
-  </div>
-</div>
 
 </div>
 
@@ -586,7 +593,7 @@
             <input type="text" class="form-control" name="m_id"   />
           </div> 
         </div>
-       
+
 
         <div class="form-group">
           <label class="col-lg-2 control-label">ปีที่เริ่ม<br>ทำโครงการ</label>
@@ -598,7 +605,7 @@
             <input type="text" class="form-control" name="re_end"  />
           </div>
         </div>
-       
+
 
         <div class="form-group">
           <label class="col-lg-2 control-label">เลขที่<br>สิทธิบัตร</label>
@@ -637,7 +644,7 @@
           <input type="text" class="form-control" name="res_award"   />
         </div>
       </div>
-     
+
 
       <div class="form-group">
        <label class="col-lg-2 control-label">ประเภทรางวัล</label>
@@ -657,6 +664,28 @@
         <input type="file" name="re_picture">
       </div>
     </div>
+
+    <br>
+
+                  <div class="form-group">
+                   <label class="col-lg-2 control-label">สถานะ</label>
+                   <div class="col-lg-4">
+                    <select class="form-control"  name="statussearch">
+                      <option value="สำเร็จ"> อนุมัติ</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
+                    </select>
+                  </div>
+                  <label class="col-lg-2 control-label">หมายเหตุ</label>
+                  <div class="col-lg-4">
+                  <input type="text" class="form-control" name="1"   />
+                  </div>
+                </div>
 
   </div>
 </div>
@@ -679,31 +708,6 @@
 
 
 </form>
-
-
-<!--end popup ลบ -->
-<form id="" method="post" class="form-horizontal" action="<?php echo $action ?>">
-  <div class="modal fade bs-example-modal-sm-delproject_service" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-
-       <div class="row">
-         <div class="col-lg-11 ">
-          <div class="form-group">
-           <label class="col-lg-9 control-label">ยืนยันการลบ</label>
-         </div>
-
-       </div>
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-success"> ตกลง</button>
-       <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-     </div>
-   </div>
- </div>
-</div>
-</form>
-<!--end popup ลบ-->
 
 
 

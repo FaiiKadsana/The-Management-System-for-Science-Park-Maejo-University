@@ -801,6 +801,28 @@
                     </div>
                   </div>
 
+                  <br>
+
+                  <div class="form-group">
+                   <label class="col-lg-2 control-label">สถานะ</label>
+                   <div class="col-lg-4">
+                    <select class="form-control"  name="statussearch">
+                      <option value="สำเร็จ"> อนุมัติ</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
+                    </select>
+                  </div>
+                  <label class="col-lg-2 control-label">หมายเหตุ</label>
+                  <div class="col-lg-4">
+                  <input type="text" class="form-control" name="1"   />
+                  </div>
+                </div>
+
                 </div>
               </div>
 
@@ -919,6 +941,28 @@
                 <input type="file" name="re_picture">
               </div>
             </div>
+
+            <br>
+
+                  <div class="form-group">
+                   <label class="col-lg-2 control-label">สถานะ</label>
+                   <div class="col-lg-4">
+                    <select class="form-control"  name="statussearch">
+                      <option value="สำเร็จ"> อนุมัติ</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+                      <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
+                    </select>
+                  </div>
+                  <label class="col-lg-2 control-label">หมายเหตุ</label>
+                  <div class="col-lg-4">
+                  <input type="text" class="form-control" name="1"   />
+                  </div>
+                </div>
 
           </div>
         </div>

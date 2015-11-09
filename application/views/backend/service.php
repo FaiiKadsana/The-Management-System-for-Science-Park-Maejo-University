@@ -31,9 +31,10 @@
             <td><input type="date" class="form-control"  name="dateresearch"></td>
             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
-             <option value="สำเร็จ">รอดำเนินงาน</option>
-             <option value="อยู่ในช่วงดำเนินงาน">รออนุมัติ</option>
-             <option value="อยู่ในช่วงดำเนินงาน">อนุมัติ</option>
+             <option value="รอดำเนินงาน">รอดำเนินงาน</option>
+             <option value="รออนุมัติ">รออนุมัติ</option>
+             <option value="อนุมัติ">อนุมัติ</option>
+             <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
            </select></td>
            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
            <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
@@ -55,10 +56,12 @@
       <div class="panel-body">
        <table class="table table-striped">
          <tr class="bg-success">
-          <th width="5%">#</th>
-          <th width="30%">ชื่อผู้เสนอโครงการ</th>
-          <th width="30%">ชื่อโครงการ</th>
+         <th width="5%">#</th>
+          <th width="20%">ชื่อสถานประกอบการ</th>
+          <th width="20%">ชื่อผู้ประสานงาน</th>
+           <th width="20%">วันที่ยืนโครงการ</th> 
           <th width="30%">สถานะ</th>    
+          <th></th>
           <th></th>
           <th></th>
           <th></th>
@@ -69,11 +72,13 @@
         <tr class="bg-success">
           <td >1</td>
           <td >อลงกรณ์</td>
-          <td >กังหันลม</td>   
+          <td >กังหันลม</td>  
+          <td >12/05/2558</td>  
           <td >รอดำเนินการ</td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ดาว์นโหลด</button></td>                     
+        <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
         </tr>       
       </table>     
       <!-- End -->
