@@ -43,7 +43,7 @@
 						<?php  } ?>
 
 						<div class="row">
-							<div class="paginationnext" >
+							<div >
 
 								<div class="col-md-12" >
 									<?php echo $page; ?>
