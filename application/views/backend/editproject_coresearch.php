@@ -88,7 +88,7 @@
                       <input type="text" class="form-control" name="rec_ln_thai" placeholder="ภาษาไทย"  />
                     </div>
                   </div>
-                  <br><br>
+               
 
                   <div class="form-group">
                     <label class="col-lg-2 control-label"></label>
@@ -100,7 +100,7 @@
                       <input type="text" class="form-control" name="rec_ln_eng" placeholder="ภาษาอังกฤษ"  />
                     </div>
                   </div>
-                  <br><br>
+                
 
                   <div class="form-group">
                    <label class="col-lg-2 control-label">ที่อยู่</label>
@@ -115,7 +115,7 @@
                     </select>
                   </div>
                 </div>
-                <br><br>
+                
 
                 <div class="form-group">
                  <label class="col-lg-2 control-label">อำเภอ</label>
@@ -133,7 +133,7 @@
                   </select>
                 </div>
               </div>
-              <br><br>
+            
 
               <div class="form-group">
                <label class="col-lg-2 control-label">เบอร์โทร</label>
@@ -146,7 +146,7 @@
               </div>
 
             </div>
-            <br><br>
+           
 
 
             <div class="form-group">
@@ -168,7 +168,7 @@
                 <input type="text" class="form-control" name="rec_unit"   />
               </div>
             </div>
-            <br><br><br>
+           
 
             <div class="form-group">
 
@@ -178,10 +178,10 @@
               </div>
               <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
               <div class="col-lg-4">
-                <input type="text" name="rec_office">
+                <input type="text"  class="form-control" name="rec_office">
               </div>
             </div>
-            <br><br>
+           
 
           </div>
         </div>
@@ -215,7 +215,7 @@
     <tr>
       <td>1</td>
       <td>คอมพิวเตอร์</td>
-      <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-sm-editspecialization"><i class="fa fa-wrench"></i> แก้ไข</button></td>
+      <td></td>
     </tr>
 
     <!--end -->
@@ -239,7 +239,7 @@
                 <input type="text" class="form-control" name="sct_detail"   />
               </div>
             </div>
-            <br><br>
+         
 
           </div>
         </div>
@@ -256,197 +256,7 @@
 
 </form>
 <!-- End popup เพิ่มความเชี่ยชาญ-->   
-<!-- start popup แก้ไขความเชี่ยชาญ -->
-<form id="" method="post" class="form-horizontal" action="">
 
-  <div class="modal fade bs-example-modal-sm-editspecialization" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-
-       <div class="row">
-         <div class="col-lg-9 col-lg-offset-1">
-          <hr>
-          <center><h3>ความเชี่ยวชาญ</h3></center><br> 
-
-          <div class="form-group">
-            <label class="control-label">ความเชียวชาญ</label>
-            <div >
-              <select class="form-control"  name="sct_detail">
-                <option value="th">ไทย</option>
-                <option value="en">อังกฤษ</option>
-              </select>
-              <br><br>
-            </div>
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-</form>
-<!-- End popup แก้ไขความเชี่ยชาญ-->   
-
-
-</div>
-</div>
-
-
-<div class="row">
-  <div class="col-lg-offset-1 col-sm-10">
-    <div class="panel panel-info">
-     <div class="panel-heading">ประวัติการศึกษา</div>
-
-     <table class="table table-hover  table-hover table-striped table-condensed">
-      <tr>
-        <th>ปีการศึกษา</th>
-        <th>ระดับการศึกษา</th>
-        <th>คณะ</th>
-        <th>สาขาวิชา</th>
-        <th>ชื่อสถาบัน</th>
-        <th><button type="button" class="btn btn-primary"data-toggle="modal" data-target=".bs-example-modal-lg-addeducation"><i class="fa fa-plus"></i> เพิ่มการศึกษา</button></th>
-      </tr>
-      <!-- Show &Join table -->
-      <tr>
-        <td>2553</td>
-        <td>ปริญญาตรี</td>
-        <td>วิทยาศาสตร์</td>
-        <td>วิทยาการคอม</td>
-        <td>แม่โจ้</td>
-        <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-education "><i class="fa fa-wrench"></i> แก้ไขการศึกษา</button></td>
-      </tr>
-
-      <!--end -->
-    </table>
-    <!-- start popup เพิ่มประวัติการศึกษา-->
-    <form id="" method="post" class="form-horizontal" action="">
-
-      <div  class="modal fade bs-example-modal-lg-addeducation" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-           <div class="row">
-            <div class="col-lg-9 col-lg-offset-1">
-              <hr>
-              <center><h3>ประวัติการศึกษา</h3></center> <br>
-
-              <div class="form-group">
-                <label class="col-lg-2 control-label">ระดับการศึกษา</label>
-                <div class="col-lg-4">
-                  <select class="form-control"  name="dg_detail">
-                    <option value="ปริญญาเอก">ปริญญาเอก</option>
-                    <option value="ปริญญาโท">ปริญญาโท</option>
-                    <option value="ปริญญาตรี">ปริญญาตรี</option>
-                  </select>
-                </div>
-                <label class="col-lg-2 control-label">ปีการศึกษา</label>
-                <div class="col-lg-4">
-                  <input type="text" class="form-control" name="dct_year"  />
-                </div>
-              </div>
-              <br><br>
-
-              <div class="form-group">
-                <label class="col-lg-2 control-label">คณะ</label>
-                <div class="col-lg-4">
-                  <input type="text" class="form-control" name="dct_faculty"  />
-                </div>
-                <label class="col-lg-2 control-label">สาขาวิชา</label>
-                <div class="col-lg-4">
-                  <input type="text" class="form-control" name="dct_major"  />
-                </div>
-              </div>
-              <br><br>
-
-              <div class="form-group">
-                <label class="col-lg-2 control-label">มหาวิทยาลัย</label>
-                <div class="col-lg-4">
-                 <input type="text" class="form-control" name="uy_detail"  />
-               </div>
-             </div>
-             <br><br>
-
-             <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</form>
-<!-- End popup เพิ่มประวัติการศึกษา-->
-<!-- start popup แก้ไขประวัติการศึกษา-->
-<form id="" method="post" class="form-horizontal" action="">
-
-  <div  class="modal fade bs-example-modal-lg-education" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-       <div class="row">
-        <div class="col-lg-9 col-lg-offset-1">
-          <hr>
-          <center><h3>ประวัติการศึกษา</h3></center> <br>
-
-          <div class="form-group">
-            <label class="col-lg-2 control-label">ระดับการศึกษา</label>
-            <div class="col-lg-4">
-              <select class="form-control"  name="dg_detail">
-                <option value="ปริญญาเอก">ปริญญาเอก</option>
-                <option value="ปริญญาโท">ปริญญาโท</option>
-                <option value="ปริญญาตรี">ปริญญาตรี</option>
-              </select>
-            </div>
-            <label class="col-lg-2 control-label">ปีการศึกษา</label>
-            <div class="col-lg-4">
-              <input type="text" class="form-control" name="dct_year"  />
-            </div>
-          </div>
-          <br><br>
-
-          <div class="form-group">
-            <label class="col-lg-2 control-label">คณะ</label>
-            <div class="col-lg-4">
-              <input type="text" class="form-control" name="dct_faculty"  />
-            </div>
-            <label class="col-lg-2 control-label">สาขาวิชา</label>
-            <div class="col-lg-4">
-              <input type="text" class="form-control" name="dct_major"  />
-            </div>
-          </div>
-          <br><br>
-
-          <div class="form-group">
-            <label class="col-lg-2 control-label">มหาวิทยาลัย</label>
-            <div class="col-lg-4">
-             <input type="text" class="form-control" name="uy_detail"  />
-           </div>
-         </div>
-         <br><br>
-
-         <div class="modal-footer">
-          <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-
-</form>
-<!-- End popup แก้ไขประวัติการศึกษา-->
 
 </div>
 </div>
@@ -519,10 +329,9 @@
                        <input type="text" class="form-control" name="bus_ln" placeholder="นามสกุล"   />
                      </div>
                    </div>
-                   <br><br>
+                   
 
-
-                   <div class="form-group">
+                               <div class="form-group">
                     <label class="col-lg-2 control-label">เลขที่บัตรประชาชน</label>
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="bus_id"  />
@@ -532,7 +341,7 @@
                       <input type="text" class="form-control" name="bus_detil"  />
                     </div>
                   </div>
-                  <br><br>
+                
 
                   <div class="form-group">
                     <label class="col-lg-2 control-label">เบอร์โทรติดต่อ</label>
@@ -544,7 +353,7 @@
                       <input type="email" class="form-control" name="bus_mail"  />
                     </div>
                   </div>
-                  <br><br>
+                
                   <hr>
 
                   <center><h3>ข้อมูลทางธุรกิจ</h3></center> <br>
@@ -559,12 +368,12 @@
                       <input type="text" class="form-control" name="bus_ owners"  />
                     </div>
                   </div>
-                  <br><br>
+               
 
                   <div class="form-group">
                     <label class="col-lg-2 control-label">ที่อยู่</label>
                     <div class="col-lg-4">
-                      <textarea name="bus_address"></textarea>
+                      <textarea name="bus_address"  class="form-control"></textarea>
                     </div>
                     <label class="col-lg-2 control-label">ตำบล</label>
                     <div class="col-lg-4">
@@ -576,7 +385,7 @@
                       </select>
                     </div>
                   </div>
-                  <br><br>
+        
 
                   <div class="form-group">
                     <label class="col-lg-2 control-label">อำเภอ</label>
@@ -598,7 +407,7 @@
                       </select>
                     </div>
                   </div>
-                  <br><br>
+           
 
                   <div class="form-group">
                     <label class="col-lg-2 control-label">โทรศัพท์</label>
@@ -610,16 +419,16 @@
                       <input type="text" class="form-control" name="bus_ fax"  />
                     </div>
                   </div>
-                  <br><br>
+
 
                   <div class="form-group">
-                   
+
                     <label class="col-lg-2 control-label">website</label>
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="bus_ website"  />
                     </div>
                   </div>
-                  <br><br>
+                  
 
                   <div class="row">
                    <div class="col-lg-12">
@@ -917,7 +726,7 @@
                           <input type="text" class="form-control" name="re_name_eng"  placeholder="ภาษาอังกฤษ"  />
                         </div>
                       </div>
-                      <br><br>
+                 
 
                       <div class="form-group"> 
                         <label class="col-lg-2 control-label">กลุ่มอุตสาหกรรม</label>
@@ -929,7 +738,7 @@
                           <input type="text" class="form-control" name="m_id"   />
                         </div> 
                       </div>
-                      <br><br>
+                      
 
                       <div class="form-group">
                         <label class="col-lg-2 control-label">ปีที่เริ่ม<br>ทำโครงการ</label>
@@ -941,7 +750,7 @@
                           <input type="text" class="form-control" name="re_end"  />
                         </div>
                       </div>
-                      <br><br>
+                
 
                       <div class="form-group">
                         <label class="col-lg-2 control-label">เลขที่<br>สิทธิบัตร</label>
@@ -956,7 +765,7 @@
                           </select>
                         </div>
                       </div>
-                      <br><br>
+                     
 
 
                       <div class="form-group">
@@ -968,7 +777,7 @@
                         <div class="col-lg-4">
                           <input type="text" class="form-control" name="re_finances_2"  />
                         </div>
-                      </div><br><br><br>
+                      </div>
 
                       <div class="form-group">
                        <label class="col-lg-2 control-label">บทสรุป</label>
@@ -980,7 +789,7 @@
                         <input type="text" class="form-control" name="res_award"   />
                       </div>
                     </div>
-                    <br><br>
+                
 
                     <div class="form-group">
                      <label class="col-lg-2 control-label">ประเภทรางวัล</label>
@@ -992,14 +801,14 @@
                       <input type="date" class="form-control" name="rea_date"   />
                     </div>
 
-                  </div><br><br>
+                  </div>
 
                   <div class="form-group">             
                     <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
                     <div class="col-lg-4">
                       <input type="file" name="re_picture">
                     </div>
-                  </div><br><br>
+                  </div>
 
                 </div>
               </div>
@@ -1036,7 +845,7 @@
                     <input type="text" class="form-control" name="re_name_eng"  placeholder="ภาษาอังกฤษ"  />
                   </div>
                 </div>
-                <br><br>
+              
 
                 <div class="form-group"> 
                   <label class="col-lg-2 control-label">กลุ่มอุตสาหกรรม</label>
@@ -1048,7 +857,7 @@
                     <input type="text" class="form-control" name="m_id"   />
                   </div> 
                 </div>
-                <br><br>
+       
 
                 <div class="form-group">
                   <label class="col-lg-2 control-label">ปีที่เริ่ม<br>ทำโครงการ</label>
@@ -1060,7 +869,7 @@
                     <input type="text" class="form-control" name="re_end"  />
                   </div>
                 </div>
-                <br><br>
+                
 
                 <div class="form-group">
                   <label class="col-lg-2 control-label">เลขที่<br>สิทธิบัตร</label>
@@ -1075,7 +884,7 @@
                     </select>
                   </div>
                 </div>
-                <br><br>
+              
 
 
                 <div class="form-group">
@@ -1087,7 +896,7 @@
                   <div class="col-lg-4">
                     <input type="text" class="form-control" name="re_finances_2"  />
                   </div>
-                </div><br><br><br>
+                </div>
 
                 <div class="form-group">
                  <label class="col-lg-2 control-label">บทสรุป</label>
@@ -1099,7 +908,7 @@
                   <input type="text" class="form-control" name="res_award"   />
                 </div>
               </div>
-              <br><br>
+        
 
               <div class="form-group">
                <label class="col-lg-2 control-label">ประเภทรางวัล</label>
@@ -1111,14 +920,14 @@
                 <input type="date" class="form-control" name="rea_date"   />
               </div>
               
-            </div><br><br>
+            </div>
 
             <div class="form-group">             
               <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
               <div class="col-lg-4">
                 <input type="file" name="re_picture">
               </div>
-            </div><br><br>
+            </div>
 
           </div>
         </div>

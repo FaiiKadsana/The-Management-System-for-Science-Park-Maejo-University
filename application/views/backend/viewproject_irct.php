@@ -85,178 +85,149 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-offset-1 col-sm-10">
-          <div class="panel panel-info">
-           <div class="panel-heading">ประวัติการศึกษา</div>
-
-           <table class="table table-hover  table-hover table-striped table-condensed">
-            <tr>
-              <th>ปีการศึกษา</th>
-              <th>ระดับการศึกษา</th>
-              <th>คณะ</th>
-              <th>สาขาวิชา</th>
-              <th>ชื่อสถาบัน</th>
-            </tr>
-            <!-- Show &Join table -->
-            <tr>
-              <td>2553</td>
-              <td>ปริญญาตรี</td>
-              <td>วิทยาศาสตร์</td>
-              <td>วิทยาการคอม</td>
-              <td>แม่โจ้</td>
-            </tr>
-
-            <!--end -->
-          </table>
-
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
-<!-- /. row-->
+  <!-- /. row-->
 
-<!-- Star row-->
-<div class="row">
- <div class="col-sm-12">
-   <div class="panel panel-warning">
-    <div class="panel-heading">ผู้ประกอบการ</div>
-    <div class="panel-body">
+  <!-- Star row-->
+  <div class="row">
+   <div class="col-sm-12">
+     <div class="panel panel-warning">
+      <div class="panel-heading">ผู้ประกอบการ</div>
+      <div class="panel-body">
 
-      <div class="col-lg-offset-1 col-sm-10">
-        <div class="panel panel-info">
-          <div class="panel-heading"></div>
+        <div class="col-lg-offset-1 col-sm-10">
+          <div class="panel panel-info">
+            <div class="panel-heading"></div>
 
-          <table class="table table-hover  table-hover table-striped table-condensed">
             <table class="table table-hover  table-hover table-striped table-condensed">
-              <tr>
-                <th>#</th>
-                <th>ชื่อกิจการ</th>
-                <th>ชื่อเจ้าของกิจการ</th>
-                <th>นามสกุลเจ้าของกิจการ</th>
-                <th>ประเภทกิจการา</th>
-              </tr>
-              <!-- Show &Join table -->
-              <tr>
-                <td>1</td>
-                <td><p  class="co" data-toggle="modal" data-target=".bs-example-modal-lg-businessman" >Hotel</p></td>
-                <td>อลงกร</td>
-                <td>อยู่เกิด</td>
-                <td>บริษัทจำกัด</td>
-              </tr>
-              <!--end -->
-            </table>
-            
-            <div class="modal fade bs-example-modal-lg-businessman " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="panel panel-danger">
-                    <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
-                    <div class="panel-body">
-                      <div class="row">
-                        <div class="col-lg-offset-3  col-sm-6">
+              <table class="table table-hover  table-hover table-striped table-condensed">
+                <tr>
+                  <th>#</th>
+                  <th>ชื่อกิจการ</th>
+                  <th>ชื่อเจ้าของกิจการ</th>
+                  <th>นามสกุลเจ้าของกิจการ</th>
+                  <th>ประเภทกิจการา</th>
+                </tr>
+                <!-- Show &Join table -->
+                <tr>
+                  <td>1</td>
+                  <td><p  class="co" data-toggle="modal" data-target=".bs-example-modal-lg-businessman" >Hotel</p></td>
+                  <td>อลงกร</td>
+                  <td>อยู่เกิด</td>
+                  <td>บริษัทจำกัด</td>
+                </tr>
+                <!--end -->
+              </table>
+              
+              <div class="modal fade bs-example-modal-lg-businessman " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="panel panel-danger">
+                      <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-lg-offset-3  col-sm-6">
 
-                          <div class="panel panel-info">
-                            <div class="panel-heading">ข้อมูลผู้ติดต่อ</div>
+                            <div class="panel panel-info">
+                              <div class="panel-heading">ข้อมูลผู้ติดต่อ</div>
 
-                            <!-- Show &Join table -->
+                              <!-- Show &Join table -->
 
-                            <table class="table table-bordered">
-                              <tr>
-                                <td>ชื่อผู้ติดต่อ : นาย อลงกรณ์  อยู่เกิด</td> 
-                              </tr>
-                              <tr>
-                                <td> เลขที่บัตรประชาชน: 1985566322987</td>
-                              </tr>
-                              <tr>
-                                <td>ตำแหน่ง: ประชาสัมพันธ์</td>
-                              </tr>
-                              <tr>
-                                <td>เบอร์โทรศัพท์ : 0857856130</td>
-                              </tr>
-                              <tr>
-                                <td>E-mail : Alongkornyukerd@gmail.com</td>    
-                              </tr>
-                            </table>
+                              <table class="table table-bordered">
+                                <tr>
+                                  <td>ชื่อผู้ติดต่อ : นาย อลงกรณ์  อยู่เกิด</td> 
+                                </tr>
+                                <tr>
+                                  <td> เลขที่บัตรประชาชน: 1985566322987</td>
+                                </tr>
+                                <tr>
+                                  <td>ตำแหน่ง: ประชาสัมพันธ์</td>
+                                </tr>
+                                <tr>
+                                  <td>เบอร์โทรศัพท์ : 0857856130</td>
+                                </tr>
+                                <tr>
+                                  <td>E-mail : Alongkornyukerd@gmail.com</td>    
+                                </tr>
+                              </table>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End -->
-                    <div class="row">
-                      <div class="col-lg-offset-3  col-sm-6">
-                        <div class="panel panel-info">
-                          <div class="panel-heading">ข้อมูลทางธุรกิจ</div>
-
-                          <!-- Show &Join table -->
-                          
-                          <table class="table table-bordered">
-                            <tr>
-                              <td>ชื่อกิจการ :  Hotel</td> 
-                            </tr>
-                            <tr>
-                              <td>ชื่อเจ้าของกิจการ : นางสาว กมลฉัตร สินไชย</td>
-                            </tr>
-                            <tr>
-                              <td>ที่อยู่ : 528/9 ม.9 ตำบล หนองหาร อำเภอ สันทราย จังหวัด เชียงใหม่ </td>
-                            </tr>
-                            <tr>
-                              <td>โทรศัพท์ : 075242500</td> 
-                            </tr>
-                            <tr>
-                              <td>โทรสาร : 075986258</td>
-                            </tr>
-                            <tr>
-                              <td>website : www.Hotelcom.com</td>
-                            </tr>
-                            <tr>
-                              <td>เลขที่ทะเบียนพาณิชย์ : กห58759</td>    
-                            </tr>
-                            <tr>
-                              <td>ประเภทกิจการ: บริษัทจำกัด</td>    
-                            </tr>
-                            <tr>
-                              <td>ลักษณะการประกอบการ : การผลิต</td>    
-                            </tr>
-                            <tr>
-                              <td>สาขาอุตสาหกรรมที่ทำอยู่: ยา</td>    
-                            </tr>
-                            <tr>
-                              <td>เงินจดทะเบียน : 58222 บาท</td>    
-                            </tr>
-                            <tr>
-                              <td>จำนวนปีที่ประกอบการ:2 ปี</td>    
-                            </tr>
-                          </table>
                         </div>
                       </div>
 
                       <!-- End -->
+                      <div class="row">
+                        <div class="col-lg-offset-3  col-sm-6">
+                          <div class="panel panel-info">
+                            <div class="panel-heading">ข้อมูลทางธุรกิจ</div>
 
-                    </div>
-                  </div> 
+                            <!-- Show &Join table -->
+                            
+                            <table class="table table-bordered">
+                              <tr>
+                                <td>ชื่อกิจการ :  Hotel</td> 
+                              </tr>
+                              <tr>
+                                <td>ชื่อเจ้าของกิจการ : นางสาว กมลฉัตร สินไชย</td>
+                              </tr>
+                              <tr>
+                                <td>ที่อยู่ : 528/9 ม.9 ตำบล หนองหาร อำเภอ สันทราย จังหวัด เชียงใหม่ </td>
+                              </tr>
+                              <tr>
+                                <td>โทรศัพท์ : 075242500</td> 
+                              </tr>
+                              <tr>
+                                <td>โทรสาร : 075986258</td>
+                              </tr>
+                              <tr>
+                                <td>website : www.Hotelcom.com</td>
+                              </tr>
+                              <tr>
+                                <td>เลขที่ทะเบียนพาณิชย์ : กห58759</td>    
+                              </tr>
+                              <tr>
+                                <td>ประเภทกิจการ: บริษัทจำกัด</td>    
+                              </tr>
+                              <tr>
+                                <td>ลักษณะการประกอบการ : การผลิต</td>    
+                              </tr>
+                              <tr>
+                                <td>สาขาอุตสาหกรรมที่ทำอยู่: ยา</td>    
+                              </tr>
+                              <tr>
+                                <td>เงินจดทะเบียน : 58222 บาท</td>    
+                              </tr>
+                              <tr>
+                                <td>จำนวนปีที่ประกอบการ:2 ปี</td>    
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
 
-                  <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <!-- End -->
+
+                      </div>
+                    </div> 
+
+                    <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                   </div>
+
                  </div>
-
                </div>
-             </div>
 
+             </div>
            </div>
          </div>
-       </div>
 
+
+       </div>
 
      </div>
 
    </div>
-
  </div>
-</div>
 </div>
 </div>
 <!-- /. row-->
@@ -352,7 +323,9 @@
                                 <td>วันรับรางวัลผลงานวิจัย: 15/08/58</td>    
                               </tr>
                               <tr>
-                                <td>เลือกไฟล์ที่จะอัฟโหลด: </td>    
+                                <td>
+                                รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
+                                 </td>    
                               </tr>
                             </table>
                           </div>

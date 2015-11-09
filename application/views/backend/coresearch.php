@@ -28,6 +28,7 @@
             <td></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อผู้เสนอโครงการ" name="research"></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
+              <td><input type="date" class="form-control"  name="dateresearch"></td>
             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
              <option value="สำเร็จ">รอดำเนินงาน</option>
@@ -72,7 +73,7 @@
           <td >รอดำเนินการ</td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้นท์</button></td>                     
+          <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ดาว์นโหลด</button></td>                     
         </tr>       
       </table>     
       <!-- End -->

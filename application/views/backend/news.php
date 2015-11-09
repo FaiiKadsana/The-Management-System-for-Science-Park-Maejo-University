@@ -7,9 +7,9 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="page-header">
-        <small>New</small>
-       </h1>
-       <ol class="breadcrumb">
+          <small>New</small>
+        </h1>
+        <ol class="breadcrumb">
          <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/new")?>">จัดการข่าวสารประชาสัมพันธ์</a></li>
        </ol>
      </div>
@@ -98,6 +98,9 @@
                       <tr>
                         <td>รายละเอียด :  เป็นนวัตกรรมใหม่ที่เกี่ยวกับ ข้าว ที่ มีสารอาหารครบ</td> 
                       </tr>
+                      <tr>
+                        <td>วันที่ : 15/08/2587</td> 
+                      </tr>
                     </table>
                     <!-- End -->   
 
@@ -146,6 +149,10 @@
               <div class="col-lg-4">
                 <input type="file" name="picture">
               </div>
+              <label class="col-lg-2 control-label">วันที่</label>
+              <div class="col-lg-4">
+                <input type="date" name="d">
+              </div>
             </div><br><br>
 
           </div>
@@ -191,6 +198,10 @@
             <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
             <div class="col-lg-4">
               <input type="file" name="picture">
+            </div>
+            <label class="col-lg-2 control-label">วันที่</label>
+            <div class="col-lg-4">
+              <input type="date" name="d">
             </div>
           </div><br><br>
 

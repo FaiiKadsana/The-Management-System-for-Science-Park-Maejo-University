@@ -159,7 +159,7 @@
                  <input type="text" class="form-control" name="per_ln" placeholder="นามสกุล"   />
                </div>
              </div>
-             <br><br>
+           
 
              <div class="form-group">
                <label class="col-lg-2 control-label">รหัสบัตรประชาชน</label>
@@ -176,7 +176,7 @@
              </div>
 
            </div>
-           <br><br>
+       
 
            <div class="form-group">
              <label class="col-lg-2 control-label">email</label>
@@ -189,7 +189,7 @@
             </div>
 
           </div>
-          <br><br>
+          
 
           <div class="form-group">
             <label class="col-lg-2 control-label">Password</label>
@@ -198,10 +198,13 @@
             </div>
             <label class="col-lg-2 control-label">status</label>
             <div class="col-lg-4">
-              <input type="text" class="form-control" name="per_status"   />
+              <input type="checkbox"  name="per_status" >Service Platform<br>
+              <input type="checkbox"  name="per_status" />Co-Research Platform<br>
+              <input type="checkbox"  name="per_status" />IRTC Platform<br>
+              <input type="checkbox"  name="per_status" />TBI Platform<br>
             </div>
           </div>
-          <br><br>
+          
 
 
           <div class="form-group">
@@ -209,7 +212,7 @@
             <div class="col-lg-4">
               <input type="file" name="picture">
             </div>
-          </div><br><br>
+          </div>
 
         </div>
       </div>
@@ -231,14 +234,12 @@
   <div class="modal fade bs-example-modal-lg-editperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-
-       <div class="row">
+        <div class="row">
          <div class="col-lg-9 col-lg-offset-1">
           <hr>
           <center><h3>ข้อมูลบุคลากร</h3></center><br> 
-          <center>
 
-           <div class="form-group">
+          <div class="form-group">
             <div class="col-lg-4">
               <select class="form-control"  name="per_title">
                <option value="นาย">นาย</option>
@@ -253,7 +254,7 @@
              <input type="text" class="form-control" name="per_ln" placeholder="นามสกุล"   />
            </div>
          </div>
-         <br><br>
+        
 
          <div class="form-group">
            <label class="col-lg-2 control-label">รหัสบัตรประชาชน</label>
@@ -270,7 +271,7 @@
          </div>
 
        </div>
-       <br><br>
+       
 
        <div class="form-group">
          <label class="col-lg-2 control-label">email</label>
@@ -283,7 +284,7 @@
         </div>
 
       </div>
-      <br><br>
+     
 
       <div class="form-group">
         <label class="col-lg-2 control-label">Password</label>
@@ -292,10 +293,13 @@
         </div>
         <label class="col-lg-2 control-label">status</label>
         <div class="col-lg-4">
-          <input type="text" class="form-control" name="per_status"   />
+          <input type="checkbox"  name="per_status" >Service Platform<br>
+          <input type="checkbox"  name="per_status" />Co-Research Platform<br>
+          <input type="checkbox"  name="per_status" />IRTC Platform<br>
+          <input type="checkbox"  name="per_status" />TBI Platform<br>
         </div>
       </div>
-      <br><br>
+   
 
 
       <div class="form-group">
@@ -303,20 +307,17 @@
         <div class="col-lg-4">
           <input type="file" name="picture">
         </div>
-      </div><br><br>
-
-    </div>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-  </div>
+      </div>
 
 </div>
 </div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
 
-
-
+</div>
+</div>
 
 </div>
 </div>

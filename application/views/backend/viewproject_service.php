@@ -84,51 +84,22 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-offset-1 col-sm-10">
-          <div class="panel panel-info">
-           <div class="panel-heading">ประวัติการศึกษา</div>
-
-           <table class="table table-hover  table-hover table-striped table-condensed">
-            <tr>
-              <th>ปีการศึกษา</th>
-              <th>ระดับการศึกษา</th>
-              <th>คณะ</th>
-              <th>สาขาวิชา</th>
-              <th>ชื่อสถาบัน</th>
-            </tr>
-            <!-- Show &Join table -->
-            <tr>
-              <td>2553</td>
-              <td>ปริญญาตรี</td>
-              <td>วิทยาศาสตร์</td>
-              <td>วิทยาการคอม</td>
-              <td>แม่โจ้</td>
-            </tr>
-
-            <!--end -->
-          </table>
-
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
-<!-- /. row-->
+  <!-- /. row-->
 
-<!-- Star row-->
-<div class="row">
- <div class="col-sm-12">
-   <div class="panel panel-warning">
-    <div class="panel-heading">ผู้ประกอบการ</div>
-    <div class="panel-body">
+  <!-- Star row-->
+  <div class="row">
+   <div class="col-sm-12">
+     <div class="panel panel-warning">
+      <div class="panel-heading">ผู้ประกอบการ</div>
+      <div class="panel-body">
 
-      <div class="col-lg-offset-1 col-sm-10">
-        <div class="panel panel-info">
-          <div class="panel-heading"></div>
+        <div class="col-lg-offset-1 col-sm-10">
+          <div class="panel panel-info">
+            <div class="panel-heading"></div>
 
-           <table class="table table-hover  table-hover table-striped table-condensed">
+            <table class="table table-hover  table-hover table-striped table-condensed">
               <tr>
                 <th>#</th>
                 <th>ชื่อกิจการ</th>
@@ -349,9 +320,9 @@
                               <tr>
                                 <td>วันรับรางวัลผลงานวิจัย: 15/08/58</td>    
                               </tr>
-                              <tr>
-                                <td>เลือกไฟล์ที่จะอัฟโหลด: </td>    
-                              </tr>
+                               <td>
+                                รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
+                                 </td>  
                             </table>
                           </div>
                         </div>

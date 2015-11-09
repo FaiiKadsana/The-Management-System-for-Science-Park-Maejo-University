@@ -26,7 +26,7 @@
     <a href="<?php echo base_url("backend/catalog")?>"><i class="fa fa-list"></i> จัดการแค็ตตาล็อก</a>
   </li>
   <li>
-    <a href="tables.html"><i class="fa fa-print"></i> ปริ้นท์เอกสาร</a>
+    <a target ="_blank"  href="http://stdb.most.go.th/"><i class="fa fa-search"></i></i> ค้นหาข้มูลนักวิจัย</a>
   </li>
   <li>
     <a href="<?php echo base_url("backend/news")?>"><i class="fa fa-bullhorn"></i> จัดการข่าวประชาสัมพันธ์</a>
