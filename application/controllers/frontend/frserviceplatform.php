@@ -46,29 +46,29 @@ class Frserviceplatform extends CI_Controller {
 			$insertCompany["C_no_year"]=$this->input->post("C_no_year");
 
 
-			$insertservice=array();
-			$insertservice["S_id"]=$this->input->post("S_id");
-			$insertservice["S_date"]=$this->input->post("S_date");
-			$insertservice["S_no_emp_total"]=$this->input->post("S_no_emp_total");
-			$insertservice["S_no_emp_reg"]=$this->input->post("S_no_emp_reg");
-			$insertservice["S_no_emp_tem"]=$this->input->post("S_no_emp_tem");
-			$insertservice["S_main_pro1"]=$this->input->post("S_main_pro1");
-			$insertservice["S_main_pro2"]=$this->input->post("S_main_pro2");
-			$insertservice["S_main_pro3"]=$this->input->post("S_main_pro3");
-			$insertservice["S_circulation"]=$this->input->post("S_circulation");
-			$insertservice["S_profit"]=$this->input->post("S_profit");
-			$insertservice["S_capital"]=$this->input->post("S_capital");
-			$insertservice["S_management"]=$this->input->post("S_management");
-			$insertservice["S_work"]=$this->input->post("S_work");
-			$insertservice["S_humanresource"]=$this->input->post("S_humanresource");
-			$insertservice["S_technology"]=$this->input->post("S_technology");
-			$insertservice["S_technology_etc"]=$this->input->post("S_technology_etc");
-			$insertservice["S_etc"]=$this->input->post("S_etc");
-			$insertservice["S_etc_deteil"]=$this->input->post("S_etc_deteil");
-			$insertservice["S_detail"]=$this->input->post("S_detail");
-			$insertservice["S_agreement"]=$this->input->post("S_agreement");
-			$insertservice["S_provider"]=$this->input->post("S_provider");
-			$insertservice["S_provider1"]=$this->input->post("S_provider1");
+			$insertService=array();
+			$insertService["S_id"]=$this->input->post("S_id");
+			$insertService["S_date"]=$this->input->post("S_date");
+			$insertService["S_no_emp_total"]=$this->input->post("S_no_emp_total");
+			$insertService["S_no_emp_reg"]=$this->input->post("S_no_emp_reg");
+			$insertService["S_no_emp_tem"]=$this->input->post("S_no_emp_tem");
+			$insertService["S_main_pro1"]=$this->input->post("S_main_pro1");
+			$insertService["S_main_pro2"]=$this->input->post("S_main_pro2");
+			$insertService["S_main_pro3"]=$this->input->post("S_main_pro3");
+			$insertService["S_circulation"]=$this->input->post("S_circulation");
+			$insertService["S_profit"]=$this->input->post("S_profit");
+			$insertService["S_capital"]=$this->input->post("S_capital");
+			$insertService["S_management"]=$this->input->post("S_management");
+			$insertService["S_work"]=$this->input->post("S_work");
+			$insertService["S_humanresource"]=$this->input->post("S_humanresource");
+			$insertService["S_technology"]=$this->input->post("S_technology");
+			$insertService["S_technology_etc"]=$this->input->post("S_technology_etc");
+			$insertService["S_etc"]=$this->input->post("S_etc");
+			$insertService["S_etc_deteil"]=$this->input->post("S_etc_deteil");
+			$insertService["S_detail"]=$this->input->post("S_detail");
+			$insertService["S_agreement"]=$this->input->post("S_agreement");
+			$insertService["S_provider"]=$this->input->post("S_provider");
+			$insertService["S_provider1"]=$this->input->post("S_provider1");
 			
 			
 			$this->load->view('index/recaptchalib');
@@ -82,27 +82,28 @@ class Frserviceplatform extends CI_Controller {
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
-				redirect('index/contact', 'refresh');
+				redirect('index/frserviceplatform', 'refresh');
 
 			}else if (!$resp->is_valid) {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-				redirect('index/contact', 'refresh');
+				redirect('index/frserviceplatform', 'refresh');
 
 			} else {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('ส่งข้อความเรียบร้อยแล้วครับ');</script>";
-				$this->db->insert('contact', $insertData);
-				redirect('index/contact', 'refresh');
+				$this->db->insert('contact_person', $insertData);
+				$this->db->insert('company', $insertCompany);
+				$this->db->insert('service', $insertService);
+				redirect('index/frserviceplatform', 'refresh');
 			}
 			
 
 
 		}
 
-		$data['action']=site_url('index/contact/index/');
-	
-		$this->load->view('frontend/frserviceplatform',$data);
+		$data['action']=site_url('index/frserviceplatform/index/');
+		$this->load->view('frontend/frserviceplatform',$data,$data,$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
 	

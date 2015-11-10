@@ -361,15 +361,16 @@
 		require_once('recaptchalib.php');
                   $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; // you got this from the signup page
                   echo recaptcha_get_html($publickey);
-                  ?>
-		</center><br>
-                <div class="row">
-                  	<div class="col-md-offset-5  col-sm-7">
-                  		<button type="button" class="btn btn-success  btn-lg" >ตกลง</button>
-                  		<button type="button" class="btn btn-success  btn-lg">ยกเลิก</button>
-                  	</div>
-                </div>
+        ?>
+		<br>
+               <div class="form-group">
+                  <br>
+                 
+                      <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
+                      <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
+              </div>
+        </center>
     </form>
 </form>
 
-              <br><br><br>
+              <br><br>
