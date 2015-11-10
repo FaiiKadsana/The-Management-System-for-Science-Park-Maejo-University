@@ -7,7 +7,7 @@
       <li><a class="" href="<?php echo base_url("backend/project_service")?>">Service Platform</a></li>
       <li><a class="" href="<?php echo base_url("backend/project_coresearch")?>">Co-Research Platform</a></li>
       <li><a class="" href="<?php echo base_url("backend/project_irct")?>">IRTC Platform</a></li>                          
-      <li><a class="" href="form_validation.html">TBI Platform</a></li>
+      <li><a class="" href="<?php echo base_url("backend/project_tbi")?>">TBI Platform</a></li>
     </ul>
   </li>
   <li>
@@ -16,7 +16,7 @@
       <li><a class="" href="<?php echo base_url("backend/service")?>">Service Platform</a></li>
       <li><a class="" href="<?php echo base_url("backend/coresearch")?>">Co-Research Platform</a></li>
       <li><a class="" href="<?php echo base_url("backend/irtc")?>">IRTC Platform</a></li>                          
-      <li><a class="" href="form_validation.html">TBI Platform</a></li>
+      <li><a class="" href="<?php echo base_url("backend/tbi")?>">TBI Platform</a></li>
     </ul>
   </li>
   <li >

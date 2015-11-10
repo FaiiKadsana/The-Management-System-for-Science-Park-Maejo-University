@@ -250,7 +250,7 @@
              <input type="text" class="form-control" name="bus_ln" placeholder="นามสกุล"   />
            </div>
          </div>
-         <br><br>
+        
 
 
          <div class="form-group">

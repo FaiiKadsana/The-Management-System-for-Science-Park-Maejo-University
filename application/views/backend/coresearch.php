@@ -11,7 +11,7 @@
          <small>Co-Research Platform</small>
        </h1>
        <ol class="breadcrumb">
-         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_coresearch")?>">จัดการข้อเสนอโครงการ</a></li>
+         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/coresearch")?>">จัดการข้อเสนอโครงการ</a></li>
        </ol>
      </div>
    </div></br>
@@ -39,7 +39,7 @@
            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
            <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
            <td width="5%"></td>
-           <td><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></td>
+           <td><a href="<?php echo base_url("backend/frcoresearch")?>"><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></a></td>
          </tr>
        </table>
      </form>
@@ -76,7 +76,7 @@
           <td >12/05/2558</td>  
           <td >รอดำเนินการ</td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
-          <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+          <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ดาว์นโหลด</button></td> 
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
         </tr>       
