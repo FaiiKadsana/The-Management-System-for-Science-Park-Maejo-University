@@ -8,11 +8,11 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="page-header">
-         <small>TBI Platform</small>
+         <small>Co-Research Platform</small>
        </h1>
        <ol class="breadcrumb">
-         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/tbi")?>">จัดการข้อเสนอโครงการ</a></li>
-         <li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/filetbi")?>">ไฟล์เอกสารแนบ</a></li>
+         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/coresearch")?>">จัดการข้อเสนอโครงการ</a></li>
+         <li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/filecoresearch")?>">ไฟล์เอกสารแนบ</a></li>
        </ol>
      </div>
    </div></br>
@@ -87,7 +87,7 @@
            <td width="80%">
            </td>
            <td>
-             <a href="<?php echo base_url("backend/tbi")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
+             <a href="<?php echo base_url("backend/coresearch")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
            </td>
          </tr>
        </table>

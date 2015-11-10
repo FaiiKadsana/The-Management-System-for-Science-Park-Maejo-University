@@ -16,16 +16,17 @@
 	<div class="col-sm-12">
 
 		<center>
-
-			<table  width="70%"  >
+			<table width="80%">
 				<tr>
-					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
+					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='50%' height='20%'></td>
 					<td width="60%" align="center">
 						<p>แบบฟอร์มกรอกข้อมูลผู้ประกอบการ/SMEs/วิสาหกิจชุมชน</p>
 						<p>ที่มารับบริการอุทยานวิทยาศาสตร์ภูมิภาค เครือข่ายภาคเหนือ</p>
 					</td>
-					<td width="25%" align="center"><img src='<?php echo base_url("asset/images/banner1.png") ?>' width='50%' height='20%'></td>
+					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/banner1.png") ?>' width='50%' height='20%'></td>
 				</tr>
+			</table>
+			<table  width="80%"  >
 				<tr>
 					<td colspan="2" > </td>
 					<td  align="left"> 
@@ -304,8 +305,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td colspan="1"></td>
-					<td colspan="2" align="right">
+					
+					<td colspan="3" align="right">
 						<table>
 							<tr>
 								<td>ชื่อผู้ให้การแนะนำ..................................................</td>
