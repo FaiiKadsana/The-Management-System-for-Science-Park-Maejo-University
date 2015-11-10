@@ -20,7 +20,7 @@
     </ul>
   </li>
   <li >
-    <a href="index.html"><i class="fa fa-shopping-cart"></i> จัดการการซื้อขายงานวิจัย</a>
+    <a href="<?php echo base_url("backend/dealing")?>"><i class="fa fa-shopping-cart"></i> จัดการการซื้อขายงานวิจัย</a>
   </li>
   <li>
     <a href="<?php echo base_url("backend/catalog")?>"><i class="fa fa-list"></i> จัดการแค็ตตาล็อก</a>
