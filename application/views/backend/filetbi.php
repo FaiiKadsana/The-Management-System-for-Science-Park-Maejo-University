@@ -12,41 +12,11 @@
        </h1>
        <ol class="breadcrumb">
          <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/tbi")?>">จัดการข้อเสนอโครงการ</a></li>
+         <li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/filetbi")?>">ไฟล์เอกสารแนบ</a></li>
        </ol>
      </div>
    </div></br>
    <!-- /.row -->
-
-     <!-- Star row-->
-   <div class="row">
-    <div class=" col-sm-12">
-     <center>
-       <form id="" method="post" class="form-horizontal" action="">
-        <table >
-
-          <tr>
-            <td></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อผู้เสนอโครงการ" name="research"></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
-             <td><input type="date" class="form-control"  name="dateresearch"></td>
-            <td><select class="form-control"  name="statussearch">
-             <option value=""> เลือกสถานะ</option>
-             <option value="รอดำเนินงาน">preincubatee</option>
-             <option value="รออนุมัติ">incubatee</option>
-             <option value="อนุมัติ">start up</option>
-              <option value="ไม่อนุมัติ">sping off(gratduate)</option>
-           </select></td>
-           <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-           <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
-           <td width="5%"></td>
-           <td><a href="<?php echo base_url("backend/frtbi")?>"><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></a></td>
-         </tr>
-       </table>
-     </form>
-   </center>
- </div>
-</div><br>
-<!-- /.row -->
 
 <!-- Star row-->
 <div class="row">
@@ -87,6 +57,8 @@
       </div>
        </div>
       <!-- /.row -->
+
+
 
 
 

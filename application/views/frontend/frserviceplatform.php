@@ -282,7 +282,13 @@
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_technology" value="ทรัพย์สินทางปัญญา"> ทรัพย์สินทางปัญญา
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_technology" value="การประหยัดพลังงาน"> การประหยัดพลังงาน
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_technology" value="มาตรการด้านสิ่งแวดล้อม"> มาตรการด้านสิ่งแวดล้อม<br>
-									<input type="radio" name="S_technology" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="S_technology_etc" placeholder="โปรดระบุ" >
+									
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" align="left">
+								<br>
+									 อื่นๆ: <input type="text" size="50" name="S_technology_etc" placeholder="โปรดระบุ" >
 								</td>
 							</tr>
 							<tr>

@@ -77,7 +77,7 @@
           <td >รอดำเนินการ</td>
           <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrirtc")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ดาว์นโหลด</button></td>                     
+          <td><a href="<?php echo base_url("backend/irtcplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ดาว์นโหลด</button></td>                     
          <td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
         </tr>       
       </table>     
