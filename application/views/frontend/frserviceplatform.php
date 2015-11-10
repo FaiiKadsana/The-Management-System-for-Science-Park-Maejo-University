@@ -47,22 +47,22 @@
 						</tr>
 						<tr>
 							<td colspan="3"  align="center"><br>
-								ชื่อ: <select name=""> 
+								ชื่อ: <select name="P_title"> 
 								<option value="นาย">นาย</option>
 								<option value="นาง">นาง</option>
 								<option value="นางสาว">นางสาว</option>
 							</select>
-							&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="" >
-							&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="" >
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="P_name" >
+							&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="P_lastname" >
 						</td>
 					</tr>
 					<tr>
-						<td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="" >
-							&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="" ></td>
+						<td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" >
+							&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ></td>
 						</tr>
 						<tr>
-							<td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="" >
-								&nbsp;&nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="" ></td>
+							<td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" >
+								&nbsp;&nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ></td>
 							</tr>
 							<tr>
 								<td  align="left"> 
