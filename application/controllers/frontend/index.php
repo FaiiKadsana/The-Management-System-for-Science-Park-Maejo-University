@@ -63,8 +63,6 @@ class Index extends CI_Controller {
 		//$this->load->helper('string');
 		//echo random_string('alnum',6);
 
-
-
 		$this->load->view('frontend/index',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');

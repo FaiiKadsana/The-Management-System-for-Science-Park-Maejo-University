@@ -33,8 +33,8 @@ class Frserviceplatform extends CI_Controller {
 			$insertAddress["C_address"]=$this->input->post("C_address");
 			$insertCompany["C_phone"]=$this->input->post("C_phone");
 			$insertCompany["C_fax"]=$this->input->post("C_fax");
-			$insertCompany["C_website"]=$this->input->post("email");
-			$insertCompany["C_no_com"]=$this->input->post("C_website");
+			$insertCompany["C_website"]=$this->input->post("C_website");
+			$insertCompany["C_no_com"]=$this->input->post("C_no_com");
 			$insertCompany["C_no_com_etc"]=$this->input->post("C_no_com_etc");
 			$insertCompany["C_company_type"]=$this->input->post("C_company_type");
 			$insertCompany["C_company_type_etc"]=$this->input->post("C_company_type_etc");
@@ -68,6 +68,7 @@ class Frserviceplatform extends CI_Controller {
 			$insertservice["S_detail"]=$this->input->post("S_detail");
 			$insertservice["S_agreement"]=$this->input->post("S_agreement");
 			$insertservice["S_provider"]=$this->input->post("S_provider");
+			$insertservice["S_provider1"]=$this->input->post("S_provider1");
 			
 			
 			$this->load->view('index/recaptchalib');
