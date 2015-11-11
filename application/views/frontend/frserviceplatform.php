@@ -1,3 +1,4 @@
+
 <!-- Section -->
 <div id="section_header">
 	<h2>Service Platform</h2>
@@ -25,8 +26,7 @@
 			<div class="col-sm-12 ">
 
 				<center>
-					
-
+				
 					<table  width="70%" >
 						<tr>
 							<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
@@ -76,7 +76,7 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="center">
-									ชื่อกิจการ: <input type="text" size="30" name="C_name" >
+									ชื่อกิจการ: <input type="text" size="30" name="C_name">
 									ที่อยู่: <textarea name="C_address" cols="60" rows="3" placeholder="ที่อยู่"></textarea>
 									
 									
@@ -85,7 +85,7 @@
 							<tr>
 								<td colspan="3" align="center">
 									โทรศัพท์: <input type="text" size="20" name="C_phone" >
-									&nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="C_fax" >
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="C_fax" >
 									&nbsp;&nbsp;&nbsp;Website: <input type="text" size="30" name="C_website" >
 								</td>
 							</tr>
@@ -132,21 +132,21 @@
 							<tr>
 								<td colspan="3"  align="left">
 									<input type="radio" name="C_industry_type" value="อาหารและอาหารสัตว์"> อาหารและอาหารสัตว์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="สิ่งทอและเครื่องนุ่งห่ม"> สิ่งทอและเครื่องนุ่งห่ม
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="รองเท้าและเครื่องหนัง"> รองเท้าและเครื่องหนัง
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="ผลิตภัณฑ์จากไม้และเครื่องเรือน"> ผลิตภัณฑ์จากไม้และเครื่องเรือน<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="สิ่งทอและเครื่องนุ่งห่ม"> สิ่งทอและเครื่องนุ่งห่ม
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="รองเท้าและเครื่องหนัง"> รองเท้าและเครื่องหนัง
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="ผลิตภัณฑ์จากไม้และเครื่องเรือน"> ผลิตภัณฑ์จากไม้และเครื่องเรือน<br>
 									<input type="radio" name="C_industry_type" value="ยาและเคมีภัณฑ์"> ยาและเคมีภัณฑ์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="ยางพาราและผลิตภัณฑ์"> ยางพาราและผลิตภัณฑ์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก"> บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="เซรามิกส์และแก้ว"> เซรามิกส์และแก้ว<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ยางพาราและผลิตภัณฑ์"> ยางพาราและผลิตภัณฑ์
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก"> บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เซรามิกส์และแก้ว"> เซรามิกส์และแก้ว<br>
 									<input type="radio" name="C_industry_type" value="เครื่องใช้ไฟฟ้าและอิเล็กทรอนิกส์"> เครื่องใช้ไฟฟ้าและอิเล็กทรอนิกส์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="ชิ้นส่วนและยานยนต์"> ชิ้นส่วนและยานยนต์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="อัญมณีและเครื่องประดับ"> อัญมณีและเครื่องประดับ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="เหล็กและโลหะการ"> เหล็กและโลหะการ<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ชิ้นส่วนและยานยนต์"> ชิ้นส่วนและยานยนต์
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="อัญมณีและเครื่องประดับ"> อัญมณีและเครื่องประดับ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เหล็กและโลหะการ"> เหล็กและโลหะการ<br>
 									<input type="radio" name="C_industry_type" value="เครื่องจักรกล"> เครื่องจักรกล
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="ท่องเที่ยว"> ท่องเที่ยว
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="4" value="บริการด้านสุขภาพ"> บริการด้านสุขภาพ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="C_industry_type_etc" placeholder="ระบุ" >
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ท่องเที่ยว"> ท่องเที่ยว
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="บริการด้านสุขภาพ"> บริการด้านสุขภาพ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="อื่นๆ"> อื่นๆ&nbsp;&nbsp;<input type="text" size="30" name="C_industry_type_etc" placeholder="ระบุ" >
 								</td>
 							</tr>
 							<tr>
@@ -197,14 +197,14 @@
 
 							<tr>
 								<td colspan="3" align="left">
-									<input type="radio" name="6" value="ขยายตลาด"> ขยายตลาด
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="6" value="พัฒนาผลิตภัณฑ์"> พัฒนาผลิตภัณฑ์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="6" value="แบรนด์"> แบรนด์
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="สำรวจความต้องการของตลาด"> สำรวจความต้องการของตลาด<br>
+									<input type="radio" name="S_circulation" value="ขยายตลาด"> ขยายตลาด
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="พัฒนาผลิตภัณฑ์"> พัฒนาผลิตภัณฑ์
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="แบรนด์"> แบรนด์
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="S_circulation" value="สำรวจความต้องการของตลาด"> สำรวจความต้องการของตลาด<br>
 									<input type="radio" name="6" value="จัดทำแผนส่งเสริมการตลาด"> จัดทำแผนส่งเสริมการตลาด
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="6" value="หาพันธมิตรทางธุรกิจ"> หาพันธมิตรทางธุรกิจ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="6" value="พัฒนาธุรกิจใหม่"> พัฒนาธุรกิจใหม่
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="พัฒนาตลาดต่างประเทศ"> พัฒนาตลาดต่างประเทศ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="หาพันธมิตรทางธุรกิจ"> หาพันธมิตรทางธุรกิจ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="พัฒนาธุรกิจใหม่"> พัฒนาธุรกิจใหม่
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="S_circulation" value="พัฒนาตลาดต่างประเทศ"> พัฒนาตลาดต่างประเทศ
 								</td>
 							</tr>
 							<tr>
@@ -214,9 +214,9 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<input type="radio" name="7" value="การเพิ่มประสิทธิภาพ"> การเพิ่มประสิทธิภาพ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="7" value="การลดต้นทุน"> การลดต้นทุน
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="7" value="การจัดซื้อ จัดหา"> การจัดซื้อ จัดหา
+									<input type="radio" name="S_profit" value="การเพิ่มประสิทธิภาพ"> การเพิ่มประสิทธิภาพ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_profit" value="การลดต้นทุน"> การลดต้นทุน
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_profit" value="การจัดซื้อ จัดหา"> การจัดซื้อ จัดหา
 								</td>
 							</tr>
 							<tr>
@@ -226,8 +226,8 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<input type="radio" name="9" value="ระดมทุน"> ระดมทุน
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="9" value="การนำอุปกรณ์เครื่องจักรเข้ามาใช้งาน"> การนำอุปกรณ์เครื่องจักรเข้ามาใช้งาน
+									<input type="radio" name="S_capital" value="ระดมทุน"> ระดมทุน
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_capital" value="การนำอุปกรณ์เครื่องจักรเข้ามาใช้งาน"> การนำอุปกรณ์เครื่องจักรเข้ามาใช้งาน
 								</td>
 							</tr>
 							<tr>
@@ -237,13 +237,13 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<input type="radio" name="8" value="การวางแผนธุรกิจ(Business Plan)/กลยุทธ์การจัดการ"> การวางแผนธุรกิจ(Business Plan)/กลยุทธ์การจัดการ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="8" value="บริหารจัดการบัญชี"> บริหารจัดการบัญชี
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="8" value="กฎหมาย"> กฎหมาย<br>
-									<input type="radio" name="8" value="การใช้เทคโนโลยีสารสนเทศ(IT)"> การใช้เทคโนโลยีสารสนเทศ(IT)
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="8" value="การเริ่มต้นกิจการ/การเลิกกิจการ"> การเริ่มต้นกิจการ/การเลิกกิจการ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="8" value="การสืบทอดธุรกิจ"> การสืบทอดธุรกิจ<br>
-									<input type="radio" name="8" value="การปฎิรูปการบริหารจัดการ"> การปฎิรูปการบริหารจัดการ
+									<input type="radio" name="S_management" value="การวางแผนธุรกิจ(Business Plan)/กลยุทธ์การจัดการ"> การวางแผนธุรกิจ(Business Plan)/กลยุทธ์การจัดการ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="บริหารจัดการบัญชี"> บริหารจัดการบัญชี
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="กฎหมาย"> กฎหมาย<br>
+									<input type="radio" name="S_management" value="การใช้เทคโนโลยีสารสนเทศ(IT)"> การใช้เทคโนโลยีสารสนเทศ(IT)
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="การเริ่มต้นกิจการ/การเลิกกิจการ"> การเริ่มต้นกิจการ/การเลิกกิจการ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="การสืบทอดธุรกิจ"> การสืบทอดธุรกิจ<br>
+									<input type="radio" name="S_management" value="การปฎิรูปการบริหารจัดการ"> การปฎิรูปการบริหารจัดการ
 								</td>
 							</tr>
 							<tr>
@@ -253,9 +253,9 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<input type="radio" name="10" value="เพิ่มประสิทธิภาพการผลิต"> เพิ่มประสิทธิภาพการผลิต
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="10" value="คุณภาพ"> คุณภาพ
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="10" value="มาตรฐาน(standard)"> มาตรฐาน(standard)
+									<input type="radio" name="S_work" value="เพิ่มประสิทธิภาพการผลิต"> เพิ่มประสิทธิภาพการผลิต
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_work" value="คุณภาพ"> คุณภาพ
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_work" value="มาตรฐาน(standard)"> มาตรฐาน(standard)
 								</td>
 							</tr>
 							<tr>
@@ -288,7 +288,7 @@
 							<tr>
 								<td colspan="3" align="left">
 								<br>
-									 อื่นๆ: <input type="text" size="50" name="S_technology_etc" placeholder="โปรดระบุ" >
+									 อื่นๆ: <input type="text" size="50" name="S_etc_deteil" placeholder="โปรดระบุ" >
 								</td>
 							</tr>
 							<tr>
@@ -344,10 +344,10 @@
 			<center>
 				<table width="90%">
 					<tr>
-						<td>หนังสือรับรองการจดทะเบียนนิติบุคคล: <input type="file" name=""></td>
-						<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม: <input type="file" name=""></td>
-						<td>หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name=""></td>
-						<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name=""></td>
+						<td>หนังสือรับรองการจดทะเบียนนิติบุคคล: <input type="file" name="F_1"></td>
+						<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม: <input type="file" name="F_2"></td>
+						<td>หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name="F_3"></td>
+						<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name="F_4"></td>
 					</tr>
 				</table>
 			</center>
@@ -359,7 +359,7 @@
 		<center>
 		<?php
 		require_once('recaptchalib.php');
-                  $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; // you got this from the signup page
+                  $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; 
                   echo recaptcha_get_html($publickey);
         ?>
 		<br>
