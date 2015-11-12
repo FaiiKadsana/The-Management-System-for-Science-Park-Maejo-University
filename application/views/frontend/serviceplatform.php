@@ -4,6 +4,18 @@
 </div>
 
 <div class="row">
+	<div class="col-sm-12">
+		<center>
+			<table width="100%">
+				<tr>
+					<td align="center"><b style="color:red;">*หมายเหตุ สำหรับผู้ประกอบการ</b></td>
+				</tr>
+			</table>
+		</center>
+	</div>
+</div>
+<br>
+<div class="row">
 	<div class="col-md-offset-3  col-sm-9">
 		<center>
 			<form id="" method="post" class="form-horizontal" action="">
