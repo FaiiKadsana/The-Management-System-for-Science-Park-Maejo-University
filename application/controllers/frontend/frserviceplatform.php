@@ -16,9 +16,10 @@ class Frserviceplatform extends CI_Controller {
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
 			
-				
+			$insert = $this->input->post("C_id");
+
 			$insertData=array();
-			$insertData["C_id"]=;
+			//$insertData["C_id"]=;
 			$insertData["P_title"]=$this->input->post("P_title");
 			$insertData["P_name"]=$this->input->post("P_name");
 			$insertData["P_lastname"]=$this->input->post("P_lastname");
@@ -26,7 +27,9 @@ class Frserviceplatform extends CI_Controller {
 			$insertData["P_position"]=$this->input->post("P_position");
 			$insertData["P_phone"]=$this->input->post("P_phone");
 			$insertData["P_mail"]=$this->input->post("P_mail");
-						
+			$insertData["C_id"]=$insert;
+			
+
 			$insertCompany=array();
 			$insertCompany["C_name"]=$this->input->post("C_name");
 			$insertCompany["C_address"]=$this->input->post("C_address");
@@ -83,14 +86,14 @@ class Frserviceplatform extends CI_Controller {
 				$_POST["recaptcha_response_field"]);
 
 
-			/*if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" ||  $insertData["P_id_card"]==""
-			 	|| $insertData["P_position"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]=="" ){
+			if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" ||  $insertData["P_id_card"]==""
+			 	|| $insertData["P_position"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]=="" || $insertData["C_id"]==' . $insert . '){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
 				redirect('frontend/frserviceplatform', 'refresh');
 
-			} if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]=="" 
+			} /*if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]=="" 
 				|| $insertCompany["C_website"]=="" || $insertCompany["C_no_com"]=="" || $insertCompany["C_no_com_etc"]==""
 				|| $insertCompany["C_company_type"]=="" || $insertCompany["C_company_type_etc"]=="" || $insertCompany["C_undertaking"]==""
 				|| $insertCompany["C_undertaking_etc"]=="" || $insertCompany["C_industry_type"]=="" || $insertCompany["C_industry_type_etc"]==""
@@ -100,7 +103,7 @@ class Frserviceplatform extends CI_Controller {
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
 				redirect('frontend/frserviceplatform', 'refresh');
 
-			}*/if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]==""
+			}*/else if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]==""
 				|| $insertCompany["C_website"]=="" || $insertCompany["C_no_com"]=="" || $insertCompany["C_no_com_etc"]=="" || $insertCompany["C_company_type"]=="" 
 				|| $insertCompany["C_company_type_etc"]==""){
 
