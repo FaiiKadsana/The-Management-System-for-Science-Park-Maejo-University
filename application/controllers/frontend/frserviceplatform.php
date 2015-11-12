@@ -5,7 +5,6 @@ class Frserviceplatform extends CI_Controller {
 	public function __construct (){
 		parent::__construct();
 		$this->load->helper('string');
-		
 		//$this->load->library('session');
 
 	}
@@ -17,8 +16,10 @@ class Frserviceplatform extends CI_Controller {
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
 			
-				
+			$insert = $this->input->post("C_id");
+
 			$insertData=array();
+			//$insertData["C_id"]=;
 			$insertData["P_title"]=$this->input->post("P_title");
 			$insertData["P_name"]=$this->input->post("P_name");
 			$insertData["P_lastname"]=$this->input->post("P_lastname");
@@ -26,11 +27,12 @@ class Frserviceplatform extends CI_Controller {
 			$insertData["P_position"]=$this->input->post("P_position");
 			$insertData["P_phone"]=$this->input->post("P_phone");
 			$insertData["P_mail"]=$this->input->post("P_mail");
-
+			$insertData["C_id"]=$insert;
 			
+
 			$insertCompany=array();
 			$insertCompany["C_name"]=$this->input->post("C_name");
-			$insertAddress["C_address"]=$this->input->post("C_address");
+			$insertCompany["C_address"]=$this->input->post("C_address");
 			$insertCompany["C_phone"]=$this->input->post("C_phone");
 			$insertCompany["C_fax"]=$this->input->post("C_fax");
 			$insertCompany["C_website"]=$this->input->post("C_website");
@@ -45,8 +47,7 @@ class Frserviceplatform extends CI_Controller {
 			$insertCompany["C_investment"]=$this->input->post("C_investment");
 			$insertCompany["C_no_year"]=$this->input->post("C_no_year");
 
-
-			$insertService=array();
+			/*$insertService=array();
 			$insertService["S_id"]=$this->input->post("S_id");
 			$insertService["S_date"]=$this->input->post("S_date");
 			$insertService["S_no_emp_total"]=$this->input->post("S_no_emp_total");
@@ -69,44 +70,75 @@ class Frserviceplatform extends CI_Controller {
 			$insertService["S_agreement"]=$this->input->post("S_agreement");
 			$insertService["S_provider"]=$this->input->post("S_provider");
 			$insertService["S_provider1"]=$this->input->post("S_provider1");
+
+			$insertFile=array();
+			$insertFile["F_1"]=$this->input->post("F_1");
+			$insertFile["F_2"]=$this->input->post("F_2");
+			$insertFile["F_3"]=$this->input->post("F_3");
+			$insertFile["F_4"]=$this->input->post("F_4");
+			*/
 			
-			
-			$this->load->view('index/recaptchalib');
+			$this->load->view('frontend/recaptchalib');
 			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
 			$resp = recaptcha_check_answer ($privatekey,
 				$_SERVER["REMOTE_ADDR"],
 				$_POST["recaptcha_challenge_field"],
 				$_POST["recaptcha_response_field"]);
 
-			if($insertData["subject"]=="" || $insertData["detail"]=="" || $insertData["name"]=="" ||  $insertData["email"]=="" ){
+
+			if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" ||  $insertData["P_id_card"]==""
+			 	|| $insertData["P_position"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]=="" || $insertData["C_id"]==' . $insert . '){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
-				redirect('index/frserviceplatform', 'refresh');
+				redirect('frontend/frserviceplatform', 'refresh');
+
+			} /*if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]=="" 
+				|| $insertCompany["C_website"]=="" || $insertCompany["C_no_com"]=="" || $insertCompany["C_no_com_etc"]==""
+				|| $insertCompany["C_company_type"]=="" || $insertCompany["C_company_type_etc"]=="" || $insertCompany["C_undertaking"]==""
+				|| $insertCompany["C_undertaking_etc"]=="" || $insertCompany["C_industry_type"]=="" || $insertCompany["C_industry_type_etc"]==""
+				|| $insertCompany["C_investment"]=="" || $insertCompany["C_no_year"]=="" ){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
+				redirect('frontend/frserviceplatform', 'refresh');
+
+			}*/else if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]==""
+				|| $insertCompany["C_website"]=="" || $insertCompany["C_no_com"]=="" || $insertCompany["C_no_com_etc"]=="" || $insertCompany["C_company_type"]=="" 
+				|| $insertCompany["C_company_type_etc"]==""){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
+				redirect('frontend/frserviceplatform', 'refresh');
 
 			}else if (!$resp->is_valid) {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-				redirect('index/frserviceplatform', 'refresh');
+				redirect('frontend/frserviceplatform', 'refresh');
 
 			} else {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('ส่งข้อความเรียบร้อยแล้วครับ');</script>";
+				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
 				$this->db->insert('contact_person', $insertData);
 				$this->db->insert('company', $insertCompany);
-				$this->db->insert('service', $insertService);
-				redirect('index/frserviceplatform', 'refresh');
+				//$this->db->insert('service', $insertService);
+				//$this->db->insert('file', $insertFile);
+				//print_r($this->db->last_query());
+				redirect('frontend/frserviceplatform', 'refresh');
 			}
-			
-
 
 		}
 
-		$data['action']=site_url('index/frserviceplatform/index/');
-		$this->load->view('frontend/frserviceplatform',$data,$data,$data);
+		$data['action']=site_url('frontend/frserviceplatform/index/');
+		$this->load->view('frontend/frserviceplatform',$data,$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
-	
+	 
+	}
+
+	public function ediddata(){
+
+
 	}
 
 }

@@ -21,9 +21,9 @@ class Index extends CI_Controller {
 		$config["total_rows"] = $this->db->count_all("news");
 		$config["per_page"]=4;
 		$config['uri_segment'] = 4;
-		$config['full_tag_open'] = '<ul>'; 
+		$config['full_tag_open'] = '<ul class="pagination">'; 
 		$config['full_tag_close'] = '</ul>'; 
-		$config['num_tag_open'] = '<li>'; 
+		$config['num_tag_open'] = '<li>';  
 		$config['num_tag_close'] = '</li>'; 
 		$config['cur_tag_open'] = '<li class="active"><a><span>'; 
 		$config['cur_tag_close'] = '<span class="sr-only">(current)</span></a></span></li>'; 
@@ -32,9 +32,9 @@ class Index extends CI_Controller {
 		$config['next_tag_open'] = '<li>'; 
 		$config['next_tag_close'] = '</li>'; 
 		$config['first_link'] = '&laquo;'; 
-		$config['prev_link'] = '&lsaquo;'; 
+		$config['prev_link'] = '<'; 
 		$config['last_link'] = '&raquo;'; 
-		$config['next_link'] = '&rsaquo;'; 
+		$config['next_link'] = '>'; 
 		$config['first_tag_open'] = '<li>'; 
 		$config['first_tag_close'] = '</li>'; 
 		$config['last_tag_open'] = '<li>'; 
