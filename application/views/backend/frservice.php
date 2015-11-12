@@ -43,7 +43,7 @@
       <center>
         <table  width="80%" >
           <tr>
-            <td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
+            <td width="10%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
             <td width="60%" align="center">
               <p>แบบฟอร์มกรอกข้อมูลผู้ประกอบการ/SMEs/วิสาหกิจชุมชน</p>
               <p>ที่มารับบริการอุทยานวิทยาศาสตร์ภูมิภาค เครือข่ายภาคเหนือ</p>
@@ -90,23 +90,9 @@
             </tr>
             <tr>
               <td colspan="3" align="center">
-                ชื่อกิจการ: <input type="text" size="30" name="" ><br>
-                <textarea name="" cols="30" rows="3" placeholder="ที่อยู่"></textarea>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                ตำบล <select name=""> 
-                <option value="นาหมื่นครี">นาหมื่นครี</option>
-                <option value="นาโยง">นาโยง</option>
-              </select>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              อำเภอ <select name=""> 
-              <option value="นาโยง">นาโยง</option>
-              <option value="สันทราย">สันทราย</option>
-            </select>
-            &nbsp;&nbsp;&nbsp;&nbsp; 
-            จังหวัด <select name=""> 
-            <option value="ตรัง">ตรัง</option>
-            <option value="เชียงใหม่">เชียงใหม่</option>
-          </select>
+                ชื่อกิจการ: <input type="text" size="30" name="" >
+               ที่อยู่: <textarea name="" cols="40" rows="3" placeholder="ที่อยู่"></textarea>
+               
         </td>
       </tr>
       <tr>

@@ -181,37 +181,12 @@
 
                                   <div class="form-group">
                                     <label class="col-lg-2 control-label">ที่อยู่</label>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-10">
                                       <textarea class="form-control"  name="rec_address">   </textarea>
                                     </div>
-                                    <label class="col-lg-2 control-label">ตำบล</label>
-                                    <div class="col-lg-4">
-                                      <select class="form-control"  name="rec_subdistrict">
-                                        <option value="ศ.ดร.">หนองหาร</option>
-                                        <option value="รศ.ดร.">นาหมื่นศรี</option>
-                                      </select>
-                                    </div>
                                   </div>
 
-
-                                  <div class="form-group">
-                                    <label class="col-lg-2 control-label">อำเภอ</label>
-                                    <div class="col-lg-4">
-                                      <select class="form-control"  name="rec_district">
-                                        <option value="ศ.ดร.">สันทราย</option>
-                                        <option value="รศ.ดร.">นาโยง</option>
-                                      </select>
-                                    </div>
-                                    <label class="col-lg-2 control-label">จังหวัด</label>
-                                    <div class="col-lg-4">
-                                      <select class="form-control"  name="rec_province">
-                                        <option value="ศ.ดร.">เชียงใหม่</option>
-                                        <option value="รศ.ดร.">ตรัง</option>
-                                      </select>
-                                    </div>
-                                  </div>
-
-
+                                  
                                   <div class="form-group">
                                     <label class="col-lg-2 control-label">โทรศัะพท์ที่ติดต่อสะดวก</label>
                                     <div class="col-lg-4">
@@ -262,10 +237,10 @@
                             </div>
                           </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
 
 
                         </div>
@@ -288,29 +263,29 @@
         </div>
 
 
-<div class="row">
-   <div class="col-sm-12">
-     <table>
-       <tr>
-         <td width="80%">
-         </td>
-         <td width="80%">
-         </td>
-         <td>
-           <a href="<?php echo base_url("backend/project_tbi")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
-         </td>
-       </tr>
-     </table>
+        <div class="row">
+         <div class="col-sm-12">
+           <table>
+             <tr>
+               <td width="80%">
+               </td>
+               <td width="80%">
+               </td>
+               <td>
+                 <a href="<?php echo base_url("backend/project_tbi")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
+               </td>
+             </tr>
+           </table>
+         </div>
+
+       </div>
+
+
+     </div>
+     <!-- /.container-fluid -->
+
    </div>
+   <!-- /#page-wrapper -->
 
  </div>
-
-
-      </div>
-      <!-- /.container-fluid -->
-
-    </div>
-    <!-- /#page-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
+ <!-- /#wrapper -->

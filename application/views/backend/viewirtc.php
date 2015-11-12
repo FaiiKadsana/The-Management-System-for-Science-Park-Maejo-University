@@ -70,18 +70,7 @@
                 ชื่อผู้รับผิดชอบ: <input type="text" name="" size="26" disabled> ตำแหน่ง: <input type="text" name="" size="26" disabled> <br>
                 หน่วยงานรับผิดชอบ: <input type="text" name="" size="22" disabled> เบอร์โทรศัพท์: <input type="tel" name="" size="22" disabled> <br>
                 แฟกซ์: <input type="text" name="" size="30" disabled> อีเมล์: <input type="email" name="" size="30" disabled> <br>
-                ที่อยู่: <textarea name="" cols="40" rows="3" placeholder=" ที่อยู่" disabled></textarea>ตำบล: <select name="" disabled> 
-                <option value="นาหมื่นครี">นาหมื่นครี</option>
-                <option value="นาโยง">นาโยง</option>
-              </select> <br>
-              อำเภอ: <select name="" disabled> 
-              <option value="นาหมื่นครี">นาหมื่นครี</option>
-              <option value="นาโยง">นาโยง</option>
-            </select> 
-            จังหวัด: <select name="" disabled> 
-            <option value="นาหมื่นครี">นาหมื่นครี</option>
-            <option value="นาโยง">นาโยง</option>
-          </select> <br><br>
+                ที่อยู่: <textarea name="" cols="70" rows="3" placeholder=" ที่อยู่" disabled></textarea> <br><br>
         </td>
       </tr>
       <tr>
@@ -102,18 +91,7 @@
           <br>
           ประเภทนิติบุคคล: <input type="text" name="" size="24" disabled> ทุนจดทะเบียน: <input type="text" name="" size="20" disabled> <br>
           จำนวนพนักงาน: <input type="text" name="" size="18" disabled> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="" size="18" disabled> <br>
-          ที่อยู่: <textarea name="" cols="40" rows="3" placeholder=" ที่อยู่" disabled></textarea>ตำบล: <select name="" disabled > 
-          <option value="นาหมื่นครี">นาหมื่นครี</option>
-          <option value="นาโยง">นาโยง</option>
-        </select> <br>
-        อำเภอ: <select name="" disabled> 
-        <option value="นาหมื่นครี">นาหมื่นครี</option>
-        <option value="นาโยง">นาโยง</option>
-      </select>
-      จังหวัด: <select name="" disabled> 
-      <option value="นาหมื่นครี">นาหมื่นครี</option>
-      <option value="นาโยง">นาโยง</option>
-    </select> <br>
+          ที่อยู่: <textarea name="" cols="70" rows="3" placeholder=" ที่อยู่" disabled></textarea><br>
     ผู้ติดต่อประสานงาน: <input type="text" name="" size="18" disabled> เบอร์ผู้ติดต่อประสานงาน: <input type="email" name="" size="16" disabled> <br><br>
   </td>
 </tr>

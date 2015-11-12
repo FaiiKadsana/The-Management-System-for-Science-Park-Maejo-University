@@ -135,22 +135,8 @@
           </tr>
           <tr>
             <td colspan="3" align="center">
-              <textarea name="" cols="30" rows="3" placeholder="ที่อยู่" disabled></textarea>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              ตำบล: <select name="" disabled> 
-              <option value="นาหมื่นครี">นาหมื่นครี</option>
-              <option value="นาโยง">นาโยง</option>
-            </select>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            อำเภอ: <select name="" disabled> 
-            <option value="นาโยง">นาโยง</option>
-            <option value="สันทราย">สันทราย</option>
-          </select>
-          &nbsp;&nbsp;&nbsp;&nbsp; 
-          จังหวัด: <select name="" disabled> 
-          <option value="ตรัง">ตรัง</option>
-          <option value="เชียงใหม่">เชียงใหม่</option>
-        </select>
+             ที่อยู่: <textarea name="" cols="80" rows="3" placeholder="ที่อยู่" disabled></textarea>
+              
       </td>
     </tr>
     <tr>

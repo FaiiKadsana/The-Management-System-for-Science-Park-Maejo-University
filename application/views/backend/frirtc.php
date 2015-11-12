@@ -69,18 +69,7 @@
                 ชื่อผู้รับผิดชอบ: <input type="text" name="" size="26"> ตำแหน่ง: <input type="text" name="" size="26"> <br>
                 หน่วยงานรับผิดชอบ: <input type="text" name="" size="22"> เบอร์โทรศัพท์: <input type="tel" name="" size="22"> <br>
                 แฟกซ์: <input type="text" name="" size="30"> อีเมล์: <input type="email" name="" size="30"> <br>
-                ที่อยู่: <textarea name="" cols="40" rows="3" placeholder=" ที่อยู่" ></textarea>ตำบล: <select name="" > 
-                <option value="นาหมื่นครี">นาหมื่นครี</option>
-                <option value="นาโยง">นาโยง</option>
-              </select> <br>
-              อำเภอ: <select name="" > 
-              <option value="นาหมื่นครี">นาหมื่นครี</option>
-              <option value="นาโยง">นาโยง</option>
-            </select> 
-            จังหวัด: <select name="" > 
-            <option value="นาหมื่นครี">นาหมื่นครี</option>
-            <option value="นาโยง">นาโยง</option>
-          </select> <br><br>
+                ที่อยู่: <textarea name="" cols="70" rows="3" placeholder=" ที่อยู่" ></textarea> <br><br>
         </td>
       </tr>
       <tr>
@@ -101,18 +90,7 @@
           <br>
           ประเภทนิติบุคคล: <input type="text" name="" size="24"> ทุนจดทะเบียน: <input type="text" name="" size="20"> <br>
           จำนวนพนักงาน: <input type="text" name="" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="" size="18"> <br>
-          ที่อยู่: <textarea name="" cols="40" rows="3" placeholder=" ที่อยู่" ></textarea>ตำบล: <select name="" > 
-          <option value="นาหมื่นครี">นาหมื่นครี</option>
-          <option value="นาโยง">นาโยง</option>
-        </select> <br>
-        อำเภอ: <select name="" > 
-        <option value="นาหมื่นครี">นาหมื่นครี</option>
-        <option value="นาโยง">นาโยง</option>
-      </select>
-      จังหวัด: <select name="" > 
-      <option value="นาหมื่นครี">นาหมื่นครี</option>
-      <option value="นาโยง">นาโยง</option>
-    </select> <br>
+          ที่อยู่: <textarea name="" cols="70" rows="3" placeholder=" ที่อยู่" ></textarea> <br>
     ผู้ติดต่อประสานงาน: <input type="text" name="" size="18"> เบอร์ผู้ติดต่อประสานงาน: <input type="email" name="" size="16"> <br><br>
   </td>
 </tr>

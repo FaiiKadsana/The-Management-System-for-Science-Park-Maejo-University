@@ -82,7 +82,7 @@
 								<td><a href="<?php echo base_url("backend/viewproject_tbi")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i> ดู</button></a></td> 
 								<td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_tbi"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
 								<td><a href="<?php echo base_url("backend/editproject_tbi")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button></a></td>
-								<td><a href="<?php echo base_url("backend/")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i> </button></a></td>                  
+								<td>สัญญา<input type="file" name=""></td>                  
 							</tr>       
 						</table>     
 						<!-- End -->
@@ -203,37 +203,12 @@
 
 																	<div class="form-group">
 																		<label class="col-lg-2 control-label">ที่อยู่</label>
-																		<div class="col-lg-4">
+																		<div class="col-lg-10">
 																			<textarea class="form-control"  name="rec_address">   </textarea>
 																		</div>
-																		<label class="col-lg-2 control-label">ตำบล</label>
-																		<div class="col-lg-4">
-																			<select class="form-control"  name="rec_subdistrict">
-																				<option value="ศ.ดร.">หนองหาร</option>
-																				<option value="รศ.ดร.">นาหมื่นศรี</option>
-																			</select>
-																		</div>
 																	</div>
 
-
-																	<div class="form-group">
-																		<label class="col-lg-2 control-label">อำเภอ</label>
-																		<div class="col-lg-4">
-																			<select class="form-control"  name="rec_district">
-																				<option value="ศ.ดร.">สันทราย</option>
-																				<option value="รศ.ดร.">นาโยง</option>
-																			</select>
-																		</div>
-																		<label class="col-lg-2 control-label">จังหวัด</label>
-																		<div class="col-lg-4">
-																			<select class="form-control"  name="rec_province">
-																				<option value="ศ.ดร.">เชียงใหม่</option>
-																				<option value="รศ.ดร.">ตรัง</option>
-																			</select>
-																		</div>
-																	</div>
-
-
+																	
 																	<div class="form-group">
 																		<label class="col-lg-2 control-label">โทรศัะพท์ที่ติดต่อสะดวก</label>
 																		<div class="col-lg-4">
