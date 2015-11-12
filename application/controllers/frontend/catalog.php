@@ -17,9 +17,9 @@ class Catalog extends CI_Controller {
 		//แบ่งหน้า
 		$config["base_url"]=base_url()."/index/catalog/catalog";
 		$config["total_rows"] = $this->db->count_all("catalog");
-		$config["per_page"]=10;
+		$config["per_page"]=12;
 		$config['uri_segment'] = 4;
-		$config['full_tag_open'] = '<ul>'; 
+		$config['full_tag_open'] = '<ul class="pagination">'; 
 		$config['full_tag_close'] = '</ul>'; 
 		$config['num_tag_open'] = '<li>'; 
 		$config['num_tag_close'] = '</li>'; 
@@ -30,9 +30,9 @@ class Catalog extends CI_Controller {
 		$config['next_tag_open'] = '<li>'; 
 		$config['next_tag_close'] = '</li>'; 
 		$config['first_link'] = '&laquo;'; 
-		$config['prev_link'] = '&lsaquo;'; 
+		$config['prev_link'] = '<';
 		$config['last_link'] = '&raquo;'; 
-		$config['next_link'] = '&rsaquo;'; 
+		$config['next_link'] = '>';  
 		$config['first_tag_open'] = '<li>'; 
 		$config['first_tag_close'] = '</li>'; 
 		$config['last_tag_open'] = '<li>'; 
@@ -41,14 +41,13 @@ class Catalog extends CI_Controller {
 		$this->pagination->initialize($config);
 
 		//ดึกข้อมูลสำหรับบ่งหน้า
-		$this->db->limit($config['per_page'],$this->uri->segment(4));
-		$data['page']=$this->pagination->create_links();			
+		$this->db->limit($config['per_page'],$this->uri->segment(4));			
 
 		//*************************Project_แถบล่าง__type1
 		$this->db->select('*');
 		$this->db->from('catalog');
-		$this->db->join('project','user.u_id = project.p_post');
-		$this->db->join('upload','project.p_id = upload.up_id_data');
+		$this->db->join('research','user.u_id = project.p_post');
+		$this->db->join('researchers','project.p_id = upload.up_id_data');
 		$this->db->where('project.p_status = 1');
 		$this->db->where('upload.up_id_type = 2');
 		$this->db->group_by("project.p_id"); 
@@ -59,7 +58,7 @@ class Catalog extends CI_Controller {
 		$data['catalog'] = $catalog->result();
 		//**************************//
 
-		
+		$data['page']=$this->pagination->create_links();
 
 		$this->load->view('frontend/catalog',$data);
 
