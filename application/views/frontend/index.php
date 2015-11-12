@@ -43,12 +43,8 @@
 						<?php  } ?>
 
 						<div class="row">
-<<<<<<< HEAD
-=======
 							<center>
 							<div class="paginationnext" >
->>>>>>> 2a0f9e41ca5281298da307425fd05c9e68fdd1e5
-
 							<div class="col-md-12" >
 								<ul class="paginationnext" >
 
@@ -57,18 +53,16 @@
 									</li>
 									<ul>
 								</div>
-<<<<<<< HEAD
 							</div>  
-=======
+
 							</div>
 							</center>
 						</div>  
->>>>>>> 2a0f9e41ca5281298da307425fd05c9e68fdd1e5
 
 						</div>	
 					</div>	
 
-				</div>	
+				
 
 				<div class= 'col-md-5'>	
 					<center>
