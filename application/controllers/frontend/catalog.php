@@ -46,7 +46,7 @@ class Catalog extends CI_Controller {
 		//*************************Project_แถบล่าง__type1
 		$this->db->select('*');
 		$this->db->from('catalog');
-		$this->db->join('research','user.u_id = project.p_post');
+		$this->db->join('research','research.Re_id = catalog.Re_id');
 		$this->db->join('researchers','project.p_id = upload.up_id_data');
 		$this->db->where('project.p_status = 1');
 		$this->db->where('upload.up_id_type = 2');
