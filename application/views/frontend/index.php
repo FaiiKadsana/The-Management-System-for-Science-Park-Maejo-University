@@ -16,9 +16,9 @@
 				<div class="col-md-12">
 
 					<?php 
-						foreach ($news as $rownew){
+					foreach ($news as $rownew){
 
-					?>
+						?>
 
 						<div class="row">
 							<div class="col-md-4">
@@ -43,40 +43,43 @@
 						<?php  } ?>
 
 						<div class="row">
-							<div class="paginationnext" >
 
-								<div class="col-md-12" >
-									<?php echo $page; ?>
+							<div class="col-md-12" >
+								<ul class="paginationnext" >
+
+									<li>
+										<?php echo $page; ?>
+									</li>
+									<ul>
 								</div>
-							</div>
-						</div>  
+							</div>  
 
+						</div>	
 					</div>	
+
 				</div>	
 
-			</div>	
+				<div class= 'col-md-5'>	
+					<center>
+						<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
+					</center><br>
 
-			<div class= 'col-md-5'>	
-				<center>
-					<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
-				</center><br>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h2><strong>Calendar</strong></h2>
+								</div><br>
+								<div class="panel-body">
+									<!-- Calenda -->
+									<?php echo $calendar; ?>
+								</div>
+							</div> 
+						</div>
+					</div>	
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h2><strong>Calendar</strong></h2>
-							</div><br>
-							<div class="panel-body">
-								<!-- Calenda -->
-								<?php echo $calendar; ?>
-							</div>
-						</div> 
-					</div>
-				</div>	
-
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 

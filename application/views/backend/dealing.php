@@ -68,7 +68,62 @@
             <td><a href="<?php echo base_url("backend/editdealing")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
             <td>สัญญาการซื้อขาย<input type="file" name=""></td>                  
           </tr>       
-        </table>     
+        </table>  
+
+
+         <!-- start popup -->
+          <form id="" method="post" class="form-horizontal" action="">
+
+            <div class="modal fade bs-example-modal-lg-addcatalog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                 <div class="row">
+                   <div class="col-lg-9 col-lg-offset-1">
+                    <hr>
+                    <center><h3>จัดการซื้อขายงานวิจัย</h3></center><br> 
+                    
+                    <div class="form-group">
+                     <label class="col-lg-2 control-label">ชื่อโครงการ</label>
+                     <div class="col-lg-4">
+                      <input type="text" class="form-control" name=""   />
+                    </div>
+                    <label class="col-lg-2 control-label">ขายวันที่</label>
+                    <div class="col-lg-4">
+                      <input type="date" class="form-control" name=""   />
+                    </div>
+                  </div>
+                  <br><br>
+
+
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">ราคา</label>
+                    <div class="col-lg-4">
+                      <input type="text" class="form-control" name=""   />
+                    </div>
+                    <label class="col-lg-2 control-label">ผู้ซื้อ</label>
+                    <div class="col-lg-4">
+                      <input type="text" class="form-control" name=""   />
+                    </div>
+                  </div>
+                  <br><br>
+
+                  
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </form>
+    <!-- End popup -->    
         <!-- End -->
 
       </div>
