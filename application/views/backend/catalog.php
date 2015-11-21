@@ -73,8 +73,8 @@
         </table>     
         <!-- End -->
 
-        <!-- start popup แก้ไขผลงาน-->
-        <form id="" method="post" class="form-horizontal" action="">
+        <!-- start popup เพิ่มผลงาน-->
+        <form id="" method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
 
           <div class="modal fade bs-example-modal-lg-addcatalog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg">
@@ -101,7 +101,7 @@
                   </div>
                   <label class="col-lg-2 control-label">ผลงานวิจัย</label>
                   <div class="col-lg-4">
-                    <input type="tel" class="form-control" name="rec_phone"   />
+                    <input type="tel" class="form-control" name="Re_name"   />
                   </div>
                 </div>
                 <br><br>
@@ -110,11 +110,11 @@
                 <div class="form-group">
                   <label class="col-lg-2 control-label">นักวิจัย</label>
                   <div class="col-lg-4">
-                    <input type="text" class="form-control" name="rec_work_unit"   />
+                    <input type="text" class="form-control" name="Rec_name"   />
                   </div>
                   <label class="col-lg-2 control-label">ราคา</label>
                   <div class="col-lg-4">
-                    <input type="text" class="form-control" name="rec_work_unit"   />
+                    <input type="text" class="form-control" name="Cl_price"   />
                   </div>
                 </div>
                 <br><br>
@@ -122,11 +122,11 @@
                 <div class="form-group">
                  <label class="col-lg-2 control-label">รายละเอียด</label>
                  <div class="col-lg-4">
-                   <textarea >    </textarea>
+                   <textarea name="Cl_property" class="form-control">    </textarea>
                  </div>
                  <label class="col-lg-2 control-label">เบอร์โทรศัพท์ติดต่อ</label>
                  <div class="col-lg-4">
-                   <input type="text" class="form-control" name="rec_work_unit"   />
+                   <input type="text" class="form-control" name="Cl_contact"   />
                  </div>
                </div>
                <br><br>
@@ -134,7 +134,7 @@
                <div class="form-group">
                 <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
                 <div class="col-lg-4">
-                  <input type="file" name="rec_img">
+                  <input type="file" name="Cl_picture">
                 </div>
               </div><br><br>
 
@@ -142,8 +142,8 @@
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
+            <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
           </div>
 
 

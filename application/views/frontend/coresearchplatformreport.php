@@ -17,7 +17,7 @@
 
 
 		<center>
-			<p>(Industrial Research and Technology Capacity Development Program: IRTC)</p>
+			<p>Collaborative Research Project</p>
 			<p>ข้อเสนอโครงการฉบับย่อ</p>
 			<p>เพื่อขอรับการสนับสนุนตามกลไกอุทยานวิทยาศาสตร์ภาคเหนือ</p>
 			<p>ปีงบประมาณ 2558</p>

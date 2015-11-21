@@ -1,3 +1,4 @@
+<?php $random=random_string('alnum',6); ?>
 <!-- Section -->
 <div id="section_header">
 	<h2>IRCT Platform</h2>
@@ -12,7 +13,7 @@
 					<table width="55%">
 						<tr>
 							<td width="30%"></td>
-							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name=""></td>
+							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="S_id"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
 						</tr>
 					</table>
 				</center>

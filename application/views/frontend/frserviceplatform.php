@@ -1,10 +1,11 @@
+<?php $random=random_string('alnum',6); ?>
 
 <!-- Section -->
 <div id="section_header">
 	<h2>Service Platform</h2>
 </div>
 
-<form method="post" action="<?php echo $action; ?>">
+<form method="post" action="<?php echo $action; ?>" enctype="multipart/form-data">
 
 <div class="row fromfont">
 	<div class="col-sm-12">
@@ -15,7 +16,7 @@
 					<table width="70%">
 						<tr>
 							<td width="30%"></td>
-							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="S_id"><?php echo random_string('alnum',6);?></td>
+							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="S_id"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
 						</tr>
 					</table>
 				</center>
@@ -26,7 +27,7 @@
 			<div class="col-sm-12 ">
 
 				<center>
-				
+
 					<table  width="70%" >
 						<tr>
 							<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
@@ -40,7 +41,7 @@
 							<td colspan="2" > </td>
 							<td  align="left"> 
 								<p> สถาบันบ่มเพาะวิสาหกิจ มหาวิทยาลัย </p>
-								<p> วันที่มารับบริการ <input type="date"  name="S_date" > </p>
+								<p> วันที่มารับบริการ <input type="date"  name="S_date" ><b style="color:red;"> *</b></p>
 							</td>
 						</tr>
 						<tr>
@@ -55,18 +56,18 @@
 								<option value="นาย">นาย</option>
 								<option value="นาง">นาง</option>
 								<option value="นางสาว">นางสาว</option>
-							</select>
-							&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="P_name" >
-							&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="P_lastname" >
+							</select><b style="color:red;"> *</b>
+							&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="P_name" ><b style="color:red;"> *</b>
+							&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="P_lastname" ><b style="color:red;"> *
 						</td>
 					</tr>
 					<tr>
-						<td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" >
-							&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ></td>
+						<td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
+							&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ><b style="color:red;"> *</b></td>
 						</tr>
 						<tr>
-							<td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" >
-								&nbsp;&nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ></td>
+							<td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
+								&nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ><b style="color:red;"> *</b></td>
 							</tr>
 							<tr>
 								<td  align="left"> 
@@ -76,15 +77,15 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="center">
-									ชื่อกิจการ: <input type="text" size="30" name="C_name">
-									ที่อยู่: <textarea name="C_address" cols="60" rows="3" placeholder="ที่อยู่"></textarea>
+									ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b>
+									&nbsp;ที่อยู่: <textarea name="C_address" cols="60" rows="3" placeholder="ที่อยู่"></textarea>
 									
 									
 								</td>
 							</tr>
 							<tr>
 								<td colspan="3" align="center">
-									โทรศัพท์: <input type="text" size="20" name="C_phone" >
+									โทรศัพท์: <input type="text" size="20" name="C_phone" ><b style="color:red;"> *</b>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="C_fax" >
 									&nbsp;&nbsp;&nbsp;Website: <input type="text" size="30" name="C_website" >
 								</td>
@@ -92,13 +93,13 @@
 							<tr>
 								<td colspan="3" align="left">
 									<b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="ไม่มี"> ไม่มี  
-									&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="มี"> มี
-									&nbsp;&nbsp;<input type="text" size="30" name="C_no_com_etc" placeholder="กรุณากรอก" >                                                                                                                
+									&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="มี"> มี 
+									&nbsp;&nbsp;<input type="text" size="30" name="C_no_com_etc" placeholder="กรุณากรอก" ><b style="color:red;"> *</b>                                                                                                               
 								</td>
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<b>ประเภทกิจการ (เลือกข้อใดข้อหนึ่ง)</b>
+									<b>ประเภทกิจการ (เลือกข้อใดข้อหนึ่ง)</b><b style="color:red;"> *</b>     
 								</td>
 							</tr>
 							<tr>
@@ -113,7 +114,7 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<b>ลักษณะการประกอบการ (เลือกข้อใดข้อหนึ่ง)</b>
+									<b>ลักษณะการประกอบการ (เลือกข้อใดข้อหนึ่ง)</b><b style="color:red;"> *</b>   
 								</td>
 							</tr>
 							<tr>
@@ -126,7 +127,7 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<b>สาขาอุตสาหกรรมที่ทำอยู่ (เลือกข้อใดข้อหนึ่ง)</b>
+									<b>สาขาอุตสาหกรรมที่ทำอยู่ (เลือกข้อใดข้อหนึ่ง)</b><b style="color:red;"> *</b>   
 								</td>
 							</tr>
 							<tr>
@@ -176,7 +177,7 @@
 										</tr>
 										<tr>
 											<td align="center"><br><br>
-												ลงชื่อ <input type="text" size="25" name="S_provider" ><br>
+												ลงชื่อ <input type="text" size="25" name="S_provider" ><b style="color:red;"> *</b><br>
 												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<input type="text" size="25" name="S_provider1" >)<br>
 												<b>ผู้ขอรับบริการ</b>
 											</td>
@@ -288,12 +289,12 @@
 							<tr>
 								<td colspan="3" align="left">
 								<br>
-									 อื่นๆ: <input type="text" size="50" name="S_etc_deteil" placeholder="โปรดระบุ" >
+									 อื่นๆ: <input type="text" size="50" name="S_detail_etc" placeholder="โปรดระบุ" >
 								</td>
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<b>เรื่องที่มาขอคำปรึกษาแนะนำ (สำหรับผู้มารับบริการ)</b>
+									<b>เรื่องที่มาขอคำปรึกษาแนะนำ (สำหรับผู้มารับบริการ)</b><b style="color:red;"> *</b>   
 								</td>
 							</tr>
 							<tr>
@@ -344,10 +345,10 @@
 			<center>
 				<table width="90%">
 					<tr>
-						<td>หนังสือรับรองการจดทะเบียนนิติบุคคล: <input type="file" name="F_1"></td>
-						<td>สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม: <input type="file" name="F_2"></td>
-						<td>หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name="F_3"></td>
-						<td>สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name="F_4"></td>
+						<td><b style="color:red;"> *</b>   หนังสือรับรองการจดทะเบียนนิติบุคคล: <input type="file" name="F_1"></td>
+						<td><b style="color:red;"> *</b>   สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม: <input type="file" name="F_2"></td>
+						<td><b style="color:red;"> *</b>   หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name="F_3"></td>
+						<td><b style="color:red;"> *</b>   สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name="F_4"></td>
 					</tr>
 				</table>
 			</center>

@@ -22,14 +22,15 @@
                     <p class="styletext">
 					<font>สถาบันบ่มเพาะวิสาหกิจ</font>อาคารอำนวยยศสุข มหาวิทยาลัยแม่โจ้ 
 					<br>
-				<i class="fa fa-asterisk"></i> <a href="" style="font-size: 15px;margin-left: 0px;">Service Platform</a><br>
-                <i class="fa fa-asterisk"></i> <a href="http://stdb.most.go.th/Home"style="font-size: 15px;margin-left: 0px;">ฐานข้อมูลโครงสร้างพื้นฐาน ภาครัฐ</a><br>
-                <i class="fa fa-asterisk"></i>  <a href=""style="font-size: 15px;margin-left: 0px;">Co-Research Platform</a><br>	
-				<i class="fa fa-asterisk"></i> <a href=""style="font-size: 15px;margin-left: 0px;">IRCT Platform</a><br>
-                <i class="fa fa-asterisk"></i> <a href=""style="font-size: 15px;margin-left: 0px;">บ่มเพาะ TBI Platform</a>	 
+				<i class="fa fa-asterisk"></i> <a href="<?php echo base_url("frontend/serviceplatform")?>" style="font-size: 15px;margin-left: 0px;">Service Platform</a><br>
+                <i class="fa fa-asterisk"></i> <a target ="_blank" href="http://stdb.most.go.th/Home" style="font-size: 15px;margin-left: 0px;">ฐานข้อมูลโครงสร้างพื้นฐาน ภาครัฐ</a><br>
+                <i class="fa fa-asterisk"></i>  <a href="<?php echo base_url("frontend/coresearchplatform")?>" style="font-size: 15px;margin-left: 0px;">Co-Research Platform</a><br>	
+				<i class="fa fa-asterisk"></i> <a href="<?php echo base_url("frontend/irtcplatform")?>" style="font-size: 15px;margin-left: 0px;">IRCT Platform</a><br>
+                <i class="fa fa-asterisk"></i> <a href="<?php echo base_url("frontend/tbiplatform")?>" style="font-size: 15px;margin-left: 0px;">บ่มเพาะ TBI Platform</a><br>
+                <i class="fa fa-asterisk"></i> <a target ="_blank" href="http://www.nsp.or.th" style="font-size: 15px;margin-left: 0px;">Privilege Card</a>	 
 					
 				</div>
-    </div><br>
+    </div>
  <div class="row" >
       <div class="col-md-8"> <span class="copyright">* Copyright &copy; 2015 Your Website Name. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></span> </div>
     </div>

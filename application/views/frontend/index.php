@@ -22,8 +22,8 @@
 
 						<div class="row">
 							<div class="col-md-4">
-								<div class="col-md-4 " style="heigth:100px;" style="width:40px;">
-									<?php echo '<img src= "'.base_url().$rownew->up_name.'" style="height:130px;" style="width:40px;">'; ?>
+								<div class="col-md-4 ">
+									<?php echo '<img src= "'.base_url().$rownew->up_name.'" style="height:100px;" >'; ?>
 								</div>
 							</div>
 							<div class="col-md-8" > 
@@ -44,47 +44,46 @@
 
 						<div class="row">
 							<center>
-							<div class="paginationnext" >
-							<div class="col-md-12" >
-								<ul class="paginationnext" >
+								<div class="paginationnext" >
+									<div class="col-md-12" >
+										<ul class="paginationnext" >
 
-									<li>
-										<?php echo $page; ?>
-									</li>
-									<ul>
-								</div>
-							</div>  
-
-							</div>
+											<li>
+												<?php echo $page; ?>
+											</li>
+											<ul>
+									</div>
+								</div>  
 							</center>
-						</div>  
-
-						</div>	
-					</div>	
-
-				
-
-				<div class= 'col-md-5'>	
-					<center>
-						<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
-					</center><br>
-
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h2><strong>Calendar</strong></h2>
-								</div><br>
-								<div class="panel-body">
-									<!-- Calenda -->
-									<?php echo $calendar; ?>
-								</div>
-							</div> 
 						</div>
-					</div>	
+						
+					</div>  
 
+				</div>	
+			</div>	
+
+
+					<div class= 'col-md-5'>	
+						<center>
+							<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
+						</center><br>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h2><strong>Calendar</strong></h2>
+									</div><br>
+									<div class="panel-body">
+										<!-- Calenda -->
+										<?php echo $calendar; ?>
+									</div>
+								</div> 
+							</div>
+						</div>	
+
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 

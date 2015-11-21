@@ -15,21 +15,8 @@ class Frserviceplatform extends CI_Controller {
 
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
-			
-			$insert = $this->input->post("C_id");
 
-			$insertData=array();
-			//$insertData["C_id"]=;
-			$insertData["P_title"]=$this->input->post("P_title");
-			$insertData["P_name"]=$this->input->post("P_name");
-			$insertData["P_lastname"]=$this->input->post("P_lastname");
-			$insertData["P_id_card"]=$this->input->post("P_id_card");
-			$insertData["P_position"]=$this->input->post("P_position");
-			$insertData["P_phone"]=$this->input->post("P_phone");
-			$insertData["P_mail"]=$this->input->post("P_mail");
-			$insertData["C_id"]=$insert;
-			
-
+	
 			$insertCompany=array();
 			$insertCompany["C_name"]=$this->input->post("C_name");
 			$insertCompany["C_address"]=$this->input->post("C_address");
@@ -46,9 +33,22 @@ class Frserviceplatform extends CI_Controller {
 			$insertCompany["C_industry_type_etc"]=$this->input->post("C_industry_type_etc");
 			$insertCompany["C_investment"]=$this->input->post("C_investment");
 			$insertCompany["C_no_year"]=$this->input->post("C_no_year");
+		
 
-			/*$insertService=array();
-			$insertService["S_id"]=$this->input->post("S_id");
+			$insertData=array();
+			$insertData["P_title"]=$this->input->post("P_title");
+			$insertData["P_name"]=$this->input->post("P_name");
+			$insertData["P_lastname"]=$this->input->post("P_lastname");
+			$insertData["P_id_card"]=$this->input->post("P_id_card");
+			$insertData["P_position"]=$this->input->post("P_position");
+			$insertData["P_phone"]=$this->input->post("P_phone");
+			$insertData["P_mail"]=$this->input->post("P_mail");
+
+			$insertstatusform=array();
+			$insertstatusform["Spf_status"]='"ServicePlatForm"';
+			
+		   	$insertService=array();
+			$insertService["S_id"]=$this->input->post("random");
 			$insertService["S_date"]=$this->input->post("S_date");
 			$insertService["S_no_emp_total"]=$this->input->post("S_no_emp_total");
 			$insertService["S_no_emp_reg"]=$this->input->post("S_no_emp_reg");
@@ -63,20 +63,37 @@ class Frserviceplatform extends CI_Controller {
 			$insertService["S_work"]=$this->input->post("S_work");
 			$insertService["S_humanresource"]=$this->input->post("S_humanresource");
 			$insertService["S_technology"]=$this->input->post("S_technology");
-			$insertService["S_technology_etc"]=$this->input->post("S_technology_etc");
-			$insertService["S_etc"]=$this->input->post("S_etc");
-			$insertService["S_etc_deteil"]=$this->input->post("S_etc_deteil");
+			$insertService["S_detail_etc"]=$this->input->post("S_detail_etc");
 			$insertService["S_detail"]=$this->input->post("S_detail");
 			$insertService["S_agreement"]=$this->input->post("S_agreement");
 			$insertService["S_provider"]=$this->input->post("S_provider");
 			$insertService["S_provider1"]=$this->input->post("S_provider1");
+			$insertService["Sp_id"]='1';
+			//echo "<pre>";
+			//print_r($insertService["S_detail_etc"]);
+
+			//die();
+			$file1 = iconv("UTF-8", "TIS-620", $_FILES["F_1"]["name"]);
+			$file2 = iconv("UTF-8", "TIS-620", $_FILES["F_2"]["name"]);
+			$file3 = iconv("UTF-8", "TIS-620", $_FILES["F_3"]["name"]);
+			$file4 = iconv("UTF-8", "TIS-620", $_FILES["F_4"]["name"]);
+			
+
+			$path = "File/ServiceFile";
+			if(!@mkdir($path,0,true)){}else{ };
+			chmod($path, 0777);	
+			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file1);
+			// echo $_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_1"]["name"];
+			move_uploaded_file($_FILES["F_2"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file2);
+			move_uploaded_file($_FILES["F_3"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file3);
+			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file4);
 
 			$insertFile=array();
-			$insertFile["F_1"]=$this->input->post("F_1");
-			$insertFile["F_2"]=$this->input->post("F_2");
-			$insertFile["F_3"]=$this->input->post("F_3");
-			$insertFile["F_4"]=$this->input->post("F_4");
-			*/
+			$insertFile["F_1"]=$_FILES["F_1"]["name"];
+			$insertFile["F_2"]=$_FILES["F_2"]["name"];
+			$insertFile["F_3"]=$_FILES["F_3"]["name"];
+			$insertFile["F_4"]=$_FILES["F_4"]["name"];
+
 			
 			$this->load->view('frontend/recaptchalib');
 			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
@@ -85,58 +102,80 @@ class Frserviceplatform extends CI_Controller {
 				$_POST["recaptcha_challenge_field"],
 				$_POST["recaptcha_response_field"]);
 
-
-			if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" ||  $insertData["P_id_card"]==""
-			 	|| $insertData["P_position"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]=="" || $insertData["C_id"]==' . $insert . '){
-
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
-				redirect('frontend/frserviceplatform', 'refresh');
-
-			} /*if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]=="" 
-				|| $insertCompany["C_website"]=="" || $insertCompany["C_no_com"]=="" || $insertCompany["C_no_com_etc"]==""
-				|| $insertCompany["C_company_type"]=="" || $insertCompany["C_company_type_etc"]=="" || $insertCompany["C_undertaking"]==""
-				|| $insertCompany["C_undertaking_etc"]=="" || $insertCompany["C_industry_type"]=="" || $insertCompany["C_industry_type_etc"]==""
-				|| $insertCompany["C_investment"]=="" || $insertCompany["C_no_year"]=="" ){
+			if($insertCompany["C_name"]=="" || $insertCompany["C_phone"]=="" 
+				|| $insertCompany["C_no_com"]=="" || $insertCompany["C_company_type"]=="" 
+				|| $insertCompany["C_undertaking"]=="" || $insertCompany["C_industry_type"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
 				redirect('frontend/frserviceplatform', 'refresh');
 
-			}*/else if($insertCompany["C_name"]=="" || $insertCompany["C_address"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_fax"]==""
-				|| $insertCompany["C_website"]=="" || $insertCompany["C_no_com"]=="" || $insertCompany["C_no_com_etc"]=="" || $insertCompany["C_company_type"]=="" 
-				|| $insertCompany["C_company_type_etc"]==""){
+			}else if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" || $insertData["P_id_card"]==""
+			 	|| $insertData["P_position"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยคะ');</script>";
 				redirect('frontend/frserviceplatform', 'refresh');
 
-			}else if (!$resp->is_valid) {
+			}else if($insertService["S_id"]=="" || $insertService["S_date"]=="" || $insertService["S_detail"]=="" || $insertService["S_provider"]=="" ){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
+				redirect('frontend/frserviceplatform', 'refresh');
+
+			}
+			else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
+				redirect('frontend/frserviceplatform', 'refresh');
+
+			}
+			else if (!$resp->is_valid) {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
 				redirect('frontend/frserviceplatform', 'refresh');
 
-			} else {
+			}else {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
-				$this->db->insert('contact_person', $insertData);
 				$this->db->insert('company', $insertCompany);
-				//$this->db->insert('service', $insertService);
-				//$this->db->insert('file', $insertFile);
+
+            	//print_r($C_id);
+            	//die(); //ทำแค่ถึงตรงนี้
 				//print_r($this->db->last_query());
+
+					$C_id = $this->db->insert_id();
+            		$insertData["C_id"] = $C_id;
+				$this->db->insert('contact_person', $insertData);
+
+				$this->db->insert('file', $insertFile);
+
+					//$insertstatusform["C_id"] = $C_id;
+					//$P_id = $this->db->insert_id();
+					//$insertstatusform["P_id"] = $P_id;
+				//$this->db->insert('status_platform', $insertstatusform);
+
+					$insertService["C_id"] = $C_id;
+					$F_id = $this->db->insert_id();
+					$insertService["F_id"] = $F_id;
+				$this->db->insert('service', $insertService);
+
 				redirect('frontend/frserviceplatform', 'refresh');
 			}
 
 		}
 
 		$data['action']=site_url('frontend/frserviceplatform/index/');
-		$this->load->view('frontend/frserviceplatform',$data,$data);
+		$this->load->view('frontend/frserviceplatform',$data,$data,$data,$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
 	 
 	}
 
-	public function ediddata(){
+	public function searchdata(){
+
+		
 
 
 	}

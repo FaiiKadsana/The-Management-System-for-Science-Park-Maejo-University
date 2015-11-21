@@ -16,8 +16,9 @@ class News_Model extends CI_Model {
 
 			);
 
-		$this->db->insert("researcher",$insert);
+		$this->db->insert("news",$insert);
 	
 		return true;
 	}
+
 }

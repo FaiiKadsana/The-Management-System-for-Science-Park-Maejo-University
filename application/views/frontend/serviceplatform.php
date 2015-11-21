@@ -1,3 +1,38 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<?php 
+
+?>
+
+
+<script>
+  $(function() {
+    var availableTags = [ 
+<?php 
+$i=0;
+foreach ($service as $rowservice){
+	$i++; 
+	//echo $rowservice->S_id ;
+	 $auto =  " ' ".$rowservice->S_id." ' ";
+	
+	if("6" == $i){
+		$auto .= " ";
+	}else{
+		$auto .= ",";
+	}
+
+	echo $auto;
+} ?>
+
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+
 <!-- Section -->
 <div id="section_header">
 	<h2>Service Platform</h2>
@@ -21,11 +56,13 @@
 			<form id="" method="post" class="form-horizontal" action="">
 				<table >
 					<tr>
-						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research"></td>
+						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research" id="tags"></td>
 						<td width="15%"><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
 						<td width="15%"><a href="<?php echo base_url("frontend/frserviceplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
-						<td><a href="<?php echo base_url("frontend/serviceplatformreport")?>"><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></a></td>
+						<td><a target ="_blank" href="<?php echo base_url ("asset/form download/IRTC Form.pdf")?>"><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></a></td>
 					</tr>
+
+
 				</table>
 			</form>
 		</center>
@@ -58,7 +95,7 @@
 						<td >Hotal</td>   
 						<td >กังหันลม</td>
 						<td >อยู่ในช่วงดำเนินงาน</td>
-						<td><a href="<?php echo base_url("frontend/serviceplatformreport")?>"><button type="button" class="btn btn-info" ><i class="fa fa-download"></i>ดาว์นโหลด</button></a></td> 
+						<td><a href="<?php echo base_url("frontend/serviceplatformreport")?>"><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 
 						
 					</tr>       
 				</table>     

@@ -18,5 +18,6 @@
 <link href="<?php echo base_url("asset/css/style.css"); ?>" rel="stylesheet" type="text/css" media="all"/>	
 <!--<script src="js/jquery.min.js"></script>-->
 <script src="<?php echo base_url("asset/js/jquery.min.js"); ?>"></script>
+
 </head>
 <body>

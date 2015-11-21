@@ -72,7 +72,7 @@
       </table>     
       <!-- End -->
       <!-- start popup ดูข่าว-->
-      <form id="" method="post" class="form-horizontal" action=" ">
+      <form id="" method="post" class="form-horizontal" action=" " enctype="multipart/form-data">
 
         <div class="modal fade bs-example-modal-lg-viewnew" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">

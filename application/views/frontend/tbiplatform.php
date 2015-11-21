@@ -12,7 +12,7 @@
 						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research"></td>
 						<td width="15%"><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
 						<td width="15%"><a href="<?php echo base_url("frontend/frtbiplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
-						<td><a href="<?php echo base_url("frontend/tbiplatformreport")?>"><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></a></td>
+						<td><a target ="_blank" href="<?php echo base_url ("asset/form download/บ่มเพาะ TBI Form.pdf")?>"><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></a></td>
 					</tr>
 				</table>
 			</form>
@@ -46,7 +46,7 @@
 						<td >Hotal</td>   
 						<td >กังหันลม</td>
 						<td >อยู่ในช่วงดำเนินงาน</td>
-						<td><a href="<?php echo base_url("frontend/tbiplatformreport")?>"><button type="button" class="btn btn-info" ><i class="fa fa-download"></i>ดาว์นโหลด</button></a></td> 
+						<td><a href="<?php echo base_url("frontend/tbiplatformreport")?>"><button type="button" class="btn btn-info" ><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 
 						
 					</tr>       
 				</table>     

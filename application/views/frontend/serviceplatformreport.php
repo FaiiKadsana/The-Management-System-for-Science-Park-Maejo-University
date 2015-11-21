@@ -1,5 +1,5 @@
-
-<div class="row">
+<body onclick="window.print()">
+<div class="row" >
 	<div class="col-sm-12">
 		<center>
 			<table width="55%">
@@ -11,10 +11,8 @@
 		</center>
 	</div>
 </div>
-
 <div class="row fromfont">
 	<div class="col-sm-12">
-
 		<center>
 			<table width="80%">
 				<tr>
@@ -29,13 +27,13 @@
 			<table  width="80%"  >
 				<tr>
 					<td colspan="2" > </td>
-					<td  align="left"> 
+					<td width="12%" align="left"> 
 						<p>สถาบันบ่มเพาะวิสาหกิจมหาวิทยาลัย</p>
 						<p> วันที่มารับบริการ ....../............/.......</p>
 					</td>
 				</tr>
 				<tr>
-					<td  align="left"> 
+					<td width="88%"  align="left"> 
 						<p><b><u>ข้อมูลส่วนตัว</u></b></p>
 					</td>
 					<td colspan="2" > </td>
@@ -319,3 +317,4 @@
 
 	</div>
 </div>
+</body>
