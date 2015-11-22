@@ -29,7 +29,7 @@ font-weight: bold; color: #00F;
          <small>Home</small>
        </h1>
        <ol class="breadcrumb">
-         <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index/display")?>">Home</a></li>
+         <li><i class="active"> <i class="fa fa-home"></i></i><a href="<?php echo base_url("backend/index/display")?>"> Home</a></li>
        </ol>
      </div>
    </div>

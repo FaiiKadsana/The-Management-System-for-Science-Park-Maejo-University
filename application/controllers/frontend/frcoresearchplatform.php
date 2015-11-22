@@ -45,7 +45,7 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertService=array();
 			$insertService["S_no_emp_total"]=$this->input->post("S_no_emp_total");
 			$insertService["S_main_pro1"]=$this->input->post("S_main_pro1");
-			$insertService["Sp_id"]='2';
+			$insertService["Spf_id"]='2';
 
 
 			$insertplan=array();
@@ -120,6 +120,7 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertbudgetinvest["Bg_in_sum2"]=$this->input->post("Bg_in_sum2");
 			$insertbudgetinvest["Bg_in_sum3"]=$this->input->post("Bg_in_sum3");
 			$insertbudgetinvest["Bg_in_sum4"]=$this->input->post("Bg_in_sum4");
+			
 
 			
 			$insertcoresearch=array();
@@ -135,7 +136,7 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertcoresearch["Co_result"]=$this->input->post("Co_result");
 			$insertcoresearch["Co_dem"]=$this->input->post("Co_dem");
 			$insertcoresearch["Co_agreement"]=$this->input->post("Co_agreement");	
-			$insertService["Sp_id"]='2';
+			$insertcoresearch["Spf_id"]='2';
 
 
 			$path = "File/CoresearchFile";
@@ -157,6 +158,8 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertFile["F_2"]=$_FILES["F_2"]["name"];
 			$insertFile["F_3"]=$_FILES["F_3"]["name"];
 			$insertFile["F_4"]=$_FILES["F_4"]["name"];
+			$insertFile["Spf_id"]='2';
+
 
 			$this->load->view('frontend/recaptchalib');
 			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
@@ -192,37 +195,127 @@ class Frcoresearchplatform extends CI_Controller {
 			}else {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
-				$this->db->insert('company', $insertCompany);
 
             	//print_r($C_id);
             	//die(); //ทำแค่ถึงตรงนี้
 				//print_r($this->db->last_query());
 
-			$C_id = $this->db->insert_id();
-			$insertData["C_id"] = $C_id;
-			$this->db->insert('contact_person', $insertData);
+				
+				$this->db->insert('responsible_person', $insertresponsible);
+				$objQuery1 = mssql_query($insertresponsible);
+				if(!$objQuery1)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertresponsible."]";
+					exit();
+				}
 
-			$this->db->insert('file', $insertFile);
+				$this->db->insert('company', $insertCompany);
+				$objQuery2 = mssql_query($insertCompany);
+				if(!$objQuery2)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertCompany."]";
+					exit();
+				}
 
-			$insertService["C_id"] = $C_id;
-			$F_id = $this->db->insert_id();
-			$insertService["F_id"] = $F_id;
-			$this->db->insert('service', $insertService);
+				$this->db->insert('contact_person', $insertData);
+				$objQuery3 = mssql_query($insertData);
+				if(!$objQuery3)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertData."]";
+					exit();
+				}
+
+				$this->db->insert('file', $insertFile);
+				$objQuery4 = mssql_query($insertFile);
+				if(!$objQuery4)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertFile."]";
+					exit();
+				}
+
+				$this->db->insert('plan', $insertplan);
+				$objQuery5 = mssql_query($insertplan);
+				if(!$objQuery5)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertplan."]";
+					exit();
+				}
+
+				$this->db->insert('budget_action', $insertbudgetaction);
+				$objQuery6 = mssql_query($insertbudgetaction);
+				if(!$objQuery6)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertbudgetaction."]";
+					exit();
+				}
+
+				$this->db->insert('budget_invest', $insertbudgetinvest);
+				$objQuery7 = mssql_query($insertbudgetinvest);
+				if(!$objQuery7)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertbudgetinvest."]";
+					exit();
+				}
+	
+
+				$C_id = $this->db->insert_id();
+				$insertService["C_id"] = $C_id;
+				$P_id = $this->db->insert_id();
+				$insertService["P_id"] = $P_id;
+				$F_id = $this->db->insert_id();
+				$insertService["F_id"] = $F_id;
+				$this->db->insert('service', $insertService);
+				$objQuery8 = mssql_query($insertService);
+				if(!$objQuery8)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertService."]";
+					exit();
+				}
 
 
-			$this->db->insert('responsible_person', $insertresponsible);
-			$this->db->insert('budget_action', $insertbudgetaction);
-			$this->db->insert('budget_invest', $insertbudgetinvest);
-			$this->db->insert('plan', $insertplan);
+				$insertcoresearch["C_id"] = $C_id;
+				$insertcoresearch["P_id"] = $P_id;
+				$insertcoresearch["F_id"] = $F_id;
+				$Rp_id = $this->db->insert_id();
+				$insertcoresearch["Rp_id"] = $Rp_id;
+				$Bg_in_id = $this->db->insert_id();
+				$insertcoresearch["Bg_in_id"] = $Bg_in_id;
+				$Pl_id = $this->db->insert_id();
+				$insertcoresearch["Pl_id"] = $Pl_id;
+				$Bg_id = $this->db->insert_id();
+				$insertcoresearch["Bg_id"] = $Bg_id;
+				$this->db->insert('co-research_irct', $insertcoresearch);
+				$objQuery9 = mssql_query($insertcoresearch);
+				if(!$objQuery9)
+				{
+					mssql_query("ROLLBACK"); 
+					echo "Error Save [".$insertcoresearch."]";
+					exit();
+				}
+				//**** Commit Transaction ****//
+				if(($objQuery1) and ($objQuery2) and ($objQuery3) and ($objQuery4) and ($objQuery5) and ($objQuery6) and ($objQuery7) and ($objQuery8) and ($objQuery9))
+				{
+					mssql_query("COMMIT"); 
+				}
 
-			redirect('frontend/frserviceplatform', 'refresh');
+				//mssql_close($objConnect);
+
+				redirect('frontend/frserviceplatform', 'refresh');
 		}
 	}
 
-	$data['action']=site_url('frontend/frcoresearchplatform/index/');
-	$this->load->view('frontend/frcoresearchplatform',$data,$data,$data,$data);
-	$this->load->view('frontend/script');	
-	$this->load->view('frontend/footer');
+		$data['action']=site_url('frontend/frcoresearchplatform/index/');
+		$this->load->view('frontend/frcoresearchplatform',$data);
+		$this->load->view('frontend/script');	
+		$this->load->view('frontend/footer');
 
-}
+	}
 }

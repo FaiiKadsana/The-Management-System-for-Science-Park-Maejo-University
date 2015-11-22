@@ -15,7 +15,7 @@
 					<table width="55%">
 						<tr>
 							<td width="30%"></td>
-							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="S_id"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
+							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="Co_id"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
 						</tr>
 					</table>
 				</center>
@@ -31,7 +31,7 @@
 					<p>เพื่อขอรับการสนับสนุนตามกลไกอุทยานวิทยาศาสตร์ภาคเหนือ</p>
 					<p>ปีงบประมาณ 2558</p>
 					<br>
-					<table  width="55%" >
+					<table  width="60%" >
 						<tr>
 							<td width="30%" colspan="2"> 
 								วันที่:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"  name="Co_date" ><b style="color:red;"> *</b>
@@ -78,7 +78,7 @@
 								ประเภทนิติบุคคล: <input type="text" name="C_company_type" size="22"><b style="color:red;"> *</b>&nbsp;&nbsp; ทุนจดทะเบียน: <input type="text" name="C_investment" size="20"> <br>
 								จำนวนพนักงาน: <input type="text" name="S_no_emp_total" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="S_main_pro1" size="20"> <br>
 								ที่อยู่: <textarea name="C_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea> <br>
-								ผู้ติดต่อประสานงาน: <input type="text" name="P_name" size="16"><b style="color:red;"> *</b> เบอร์ผู้ติดต่อประสานงาน: <input type="email" name="P_phone" size="16"><b style="color:red;"> *</b> <br><br><br>
+								ผู้ติดต่อประสานงาน: <input type="text" name="P_name" size="16"><b style="color:red;"> *</b> เบอร์ผู้ติดต่อประสานงาน: <input type="tel" name="P_phone" size="16"><b style="color:red;"> *</b> <br><br><br>
 							</td>
 						</tr>
 						<tr>

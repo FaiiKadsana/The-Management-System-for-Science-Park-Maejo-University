@@ -113,7 +113,7 @@
         <!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
         <br>
         <div align='left' style='font-size: 14px;'>
-          เบอร์โทร :22222 </br>
+          เบอร์โทร :0801450009 </br>
 
         </div>
       </div>

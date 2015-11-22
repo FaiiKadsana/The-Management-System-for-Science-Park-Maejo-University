@@ -18,34 +18,32 @@ class Frserviceplatform extends CI_Controller {
 
 	
 			$insertCompany=array();
+			$insertCompany["C_no_com"]=$this->input->post("C_no_com");
+			$insertCompany["C_no_com_etc"]=$this->input->post("C_no_com_etc");
 			$insertCompany["C_name"]=$this->input->post("C_name");
 			$insertCompany["C_address"]=$this->input->post("C_address");
 			$insertCompany["C_phone"]=$this->input->post("C_phone");
 			$insertCompany["C_fax"]=$this->input->post("C_fax");
 			$insertCompany["C_website"]=$this->input->post("C_website");
-			$insertCompany["C_no_com"]=$this->input->post("C_no_com");
-			$insertCompany["C_no_com_etc"]=$this->input->post("C_no_com_etc");
+			$insertCompany["C_investment"]=$this->input->post("C_investment");
+			$insertCompany["C_no_year"]=$this->input->post("C_no_year");
 			$insertCompany["C_company_type"]=$this->input->post("C_company_type");
 			$insertCompany["C_company_type_etc"]=$this->input->post("C_company_type_etc");
 			$insertCompany["C_undertaking"]=$this->input->post("C_undertaking");
 			$insertCompany["C_undertaking_etc"]=$this->input->post("C_undertaking_etc");
 			$insertCompany["C_industry_type"]=$this->input->post("C_industry_type");
 			$insertCompany["C_industry_type_etc"]=$this->input->post("C_industry_type_etc");
-			$insertCompany["C_investment"]=$this->input->post("C_investment");
-			$insertCompany["C_no_year"]=$this->input->post("C_no_year");
 		
 
 			$insertData=array();
+			$insertData["P_id_card"]=$this->input->post("P_id_card");
 			$insertData["P_title"]=$this->input->post("P_title");
 			$insertData["P_name"]=$this->input->post("P_name");
 			$insertData["P_lastname"]=$this->input->post("P_lastname");
-			$insertData["P_id_card"]=$this->input->post("P_id_card");
-			$insertData["P_position"]=$this->input->post("P_position");
 			$insertData["P_phone"]=$this->input->post("P_phone");
 			$insertData["P_mail"]=$this->input->post("P_mail");
-
-			$insertstatusform=array();
-			$insertstatusform["Spf_status"]='"ServicePlatForm"';
+			$insertData["P_position"]=$this->input->post("P_position");
+			
 			
 		   	$insertService=array();
 			$insertService["S_id"]=$this->input->post("random");
@@ -63,12 +61,16 @@ class Frserviceplatform extends CI_Controller {
 			$insertService["S_work"]=$this->input->post("S_work");
 			$insertService["S_humanresource"]=$this->input->post("S_humanresource");
 			$insertService["S_technology"]=$this->input->post("S_technology");
-			$insertService["S_detail_etc"]=$this->input->post("S_detail_etc");
+			$insertService["S_deteil_etc"]=$this->input->post("S_deteil_etc");
 			$insertService["S_detail"]=$this->input->post("S_detail");
-			$insertService["S_agreement"]=$this->input->post("S_agreement");
+			$insertService["S_comment"]=$this->input->post("S_comment");
 			$insertService["S_provider"]=$this->input->post("S_provider");
 			$insertService["S_provider1"]=$this->input->post("S_provider1");
-			$insertService["Sp_id"]='1';
+			$insertService["S_solution"]=$this->input->post("S_solution");
+			$insertService["S_solution_detail"]=$this->input->post("S_solution_detail");
+			$insertService["S_solution_name"]=$this->input->post("S_solution_name");
+			//$insertService["S_agreement"]=$this->input->post("S_agreement");
+			$insertService["Spf_id"]='1';
 			//echo "<pre>";
 			//print_r($insertService["S_detail_etc"]);
 
@@ -93,6 +95,7 @@ class Frserviceplatform extends CI_Controller {
 			$insertFile["F_2"]=$_FILES["F_2"]["name"];
 			$insertFile["F_3"]=$_FILES["F_3"]["name"];
 			$insertFile["F_4"]=$_FILES["F_4"]["name"];
+			$insertFile["Spf_id"]='1';
 
 			
 			$this->load->view('frontend/recaptchalib');
@@ -103,8 +106,7 @@ class Frserviceplatform extends CI_Controller {
 				$_POST["recaptcha_response_field"]);
 
 			if($insertCompany["C_name"]=="" || $insertCompany["C_phone"]=="" 
-				|| $insertCompany["C_no_com"]=="" || $insertCompany["C_company_type"]=="" 
-				|| $insertCompany["C_undertaking"]=="" || $insertCompany["C_industry_type"]=="" ){
+				|| $insertCompany["C_no_com"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
@@ -149,6 +151,7 @@ class Frserviceplatform extends CI_Controller {
             		$insertData["C_id"] = $C_id;
 				$this->db->insert('contact_person', $insertData);
 
+					
 				$this->db->insert('file', $insertFile);
 
 					//$insertstatusform["C_id"] = $C_id;
@@ -159,6 +162,8 @@ class Frserviceplatform extends CI_Controller {
 					$insertService["C_id"] = $C_id;
 					$F_id = $this->db->insert_id();
 					$insertService["F_id"] = $F_id;
+					$P_id = $this->db->insert_id();
+					$insertService["P_id"] = $P_id;
 				$this->db->insert('service', $insertService);
 
 				redirect('frontend/frserviceplatform', 'refresh');

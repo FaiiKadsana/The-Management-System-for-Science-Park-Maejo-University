@@ -182,8 +182,8 @@
 												<b>ผู้ขอรับบริการ</b>
 											</td>
 											<td align="center" colspan="2">
-												<input type="radio" name="S_agreement" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล
-												<input type="radio" name="S_agreement" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
+												<input type="radio" name="S_comment" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล
+												<input type="radio" name="S_comment" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
 											</td>
 										</tr>
 									</table>
@@ -289,7 +289,7 @@
 							<tr>
 								<td colspan="3" align="left">
 								<br>
-									 อื่นๆ: <input type="text" size="50" name="S_detail_etc" placeholder="โปรดระบุ" >
+									 อื่นๆ: <input type="text" size="50" name="S_deteil_etc" placeholder="โปรดระบุ" >
 								</td>
 							</tr>
 							<tr>
@@ -310,15 +310,15 @@
 							</tr>
 							<tr>
 								<td colspan="3" align="left">
-									<input type="radio" name="13" value="ให้คำปรึกษาแนะนำโดยเจ้าหน้าที่ประจำหน่วย"> ให้คำปรึกษาแนะนำโดยเจ้าหน้าที่ประจำหน่วย
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="13" value="แนะนำให้คำปรึกษาภายนอก"> แนะนำให้คำปรึกษาภายนอก<br>
-									<input type="radio" name="13" value="แนะนำไปยังหน่วยอื่น"> แนะนำไปยังหน่วยอื่น
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="13" value="แนะนำไปยังหน่วยบริการอื่นๆ(ที่ไม่ใช่อุทยานวิทยาศาสตร์และเทคโนโลยีเครือข่ายภาคเหนือตอนบน)"> แนะนำไปยังหน่วยบริการอื่นๆ(ที่ไม่ใช่อุทยานวิทยาศาสตร์และเทคโนโลยีเครือข่ายภาคเหนือตอนบน)<br>
+									<input type="radio" name="S_solution" value="ให้คำปรึกษาแนะนำโดยเจ้าหน้าที่ประจำหน่วย"> ให้คำปรึกษาแนะนำโดยเจ้าหน้าที่ประจำหน่วย
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_solution" value="แนะนำให้คำปรึกษาภายนอก"> แนะนำให้คำปรึกษาภายนอก<br>
+									<input type="radio" name="S_solution" value="แนะนำไปยังหน่วยอื่น"> แนะนำไปยังหน่วยอื่น
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_solution" value="แนะนำไปยังหน่วยบริการอื่นๆ(ที่ไม่ใช่อุทยานวิทยาศาสตร์และเทคโนโลยีเครือข่ายภาคเหนือตอนบน)"> แนะนำไปยังหน่วยบริการอื่นๆ(ที่ไม่ใช่อุทยานวิทยาศาสตร์และเทคโนโลยีเครือข่ายภาคเหนือตอนบน)<br>
 								</td>
 							</tr>
 							<tr>
 								<td colspan="3" align="center">
-									<textarea name="" cols="80" rows="3" ></textarea>
+									<textarea name="S_solution_detail" cols="80" rows="3" ></textarea>
 								</td>
 							</tr>
 							<tr>
@@ -326,7 +326,7 @@
 								<td colspan="2" align="right">
 									<table>
 										<tr>
-											<td>ชื่อผู้ให้การแนะนำ: <input type="text" size="30" name=""  ></td>
+											<td>ชื่อผู้ให้การแนะนำ: <input type="text" size="30" name="S_solution_name"  ></td>
 										</tr>
 									</table>
 								</td>

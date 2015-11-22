@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">ระบบบริหารจัดการอุทยานวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</a>
+            <a class="navbar-brand" href="<?php echo base_url("backend/index/display")?>">ระบบบริหารจัดการอุทยานวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</a>
         </div>
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">
