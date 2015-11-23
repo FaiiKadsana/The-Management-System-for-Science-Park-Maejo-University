@@ -110,7 +110,7 @@
                 <div class="form-group">
                   <label class="col-lg-2 control-label">นักวิจัย</label>
                   <div class="col-lg-4">
-                    <input type="text" class="form-control" name="Rec_name"   />
+                    <input type="text" class="form-control" name="Rec_name_thai"   />
                   </div>
                   <label class="col-lg-2 control-label">ราคา</label>
                   <div class="col-lg-4">

@@ -1,4 +1,4 @@
-
+<?php echo $catalog;?>
 <!-- Section -->
 <div id="section_header">
 	<h2>ผลงานวิจัยพร้อมใช้ประโยชน์</h2>
@@ -12,8 +12,7 @@
 			<div class="paddd">
 				<div class="team style2 box-shadow">
 					<div class="team-header">
-						<?php echo '<img src= "'.base_url().$rowcatalog->Cl_picture.'" style="height:130px;" style="width:40px;">'; ?>
-					</div>
+						<!--<?php //echo '<img src= "'.base_url().$rowcatalog->Cl_picture.'" style="height:130px;" style="width:40px;">'; ?>-->					</div>
 					<div class="team-date">
 						<p><font size='3'>ชื่อผลงาน  : <?php echo $rowcatalog->Re_name;?></font></p>
 						<i class="piksell-color small-text">ชื่อนักวิจัย : <?php echo $rowcatalog->Rec_name_thai;?></font></i><br>
