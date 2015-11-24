@@ -364,7 +364,7 @@
             <tr>
               <td>
                 <br>
-                <select class="form-control"  name="">
+                <select class="form-control"  name="S_status">
                  <option value=""> เลือกสถานะ</option>
                  <option value="รอดำเนินงาน">รอดำเนินงาน</option>
                  <option value="รออนุมัติ">รออนุมัติ</option>
