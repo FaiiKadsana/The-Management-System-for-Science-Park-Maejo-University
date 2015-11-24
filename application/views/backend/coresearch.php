@@ -17,7 +17,7 @@
    </div></br>
    <!-- /.row -->
 
-     <!-- Star row-->
+   <!-- Star row-->
    <div class="row">
     <div class=" col-sm-12">
      <center>
@@ -26,18 +26,17 @@
 
           <tr>
             <td></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อผู้เสนอโครงการ" name="research"></td>
             <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
-              <td><input type="date" class="form-control"  name="dateresearch"></td>
+            <td><input type="date" class="form-control"  name="dateresearch"></td>
             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
              <option value="รอดำเนินงาน">รอดำเนินงาน</option>
              <option value="รออนุมัติ">รออนุมัติ</option>ห
              <option value="อนุมัติ">อนุมัติ</option>
-              <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
+             <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
            </select></td>
            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-           <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
+           <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
            <td width="5%"></td>
            <td><a href="<?php echo base_url("backend/frcoresearch")?>"><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button></a></td>
          </tr>
@@ -59,7 +58,7 @@
           <th width="5%">#</th>
           <th width="20%">ชื่อสถานประกอบการ</th>
           <th width="20%">ชื่อผู้ประสานงาน</th>
-           <th width="20%">วันที่ยืนโครงการ</th> 
+          <th width="20%">วันที่ยืนโครงการ</th> 
           <th width="30%">สถานะ</th>    
           <th></th>
           <th></th>
@@ -77,16 +76,16 @@
           <td >รอดำเนินการ</td>
           <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/coresearchplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ดาว์นโหลด</button></td> 
+          <td><a href="<?php echo base_url("backend/coresearchplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
           <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
         </tr>       
       </table>     
       <!-- End -->
     </div>
-     </div>
-      </div>
-       </div>
-      <!-- /.row -->
+  </div>
+</div>
+</div>
+<!-- /.row -->
 
 
 

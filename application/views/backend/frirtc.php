@@ -340,6 +340,20 @@
                 <td><b style="color:red;"> *</b> หนังสือมอบอำนาจ (ถ้ามี) :<input type="file" name="F_3"></td>
                 <td><b style="color:red;"> *</b> สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย :<input type="file" name="F_4"></td>
               </tr>
+               <tr>
+            <td>
+              <br>
+              <select class="form-control"  name="">
+               <option value=""> เลือกสถานะ</option>
+               <option value="รอดำเนินงาน">รอดำเนินงาน</option>
+               <option value="รออนุมัติ">รออนุมัติ</option>
+               <option value="อนุมัติ">อนุมัติ</option>
+               <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
+             </select></td>
+              <td><b style="color:red;"> *</b> </td>
+             <td></td>
+             <td></td>
+           </tr>
             </table>
           </center>
         </div>

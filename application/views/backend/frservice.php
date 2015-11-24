@@ -371,7 +371,7 @@
                  <option value="อนุมัติ">อนุมัติ</option>
                  <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
                </select></td>
-               <td></td>
+                <td><b style="color:red;"> *</b> </td>
                <td></td>
                <td></td>
              </tr>
