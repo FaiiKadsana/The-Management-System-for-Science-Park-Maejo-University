@@ -15,25 +15,25 @@
      </div>
    </div></br></br>
 
+     <form id="" method="post" class="form-horizontal" action="">
+
    <div class="row"> 
     <div class="col-sm-12 ">
       <center>
-
         <table >
-
           <tr>
             <td></td>
             <td><input type="text" class="form-control" placeholder="ชื่อโครงการ" name=""></td>
-            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-            <td width="20%"><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
+            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button> </td>
+            <td width="20%"><button class="btn btn-success" type="reset" > ล้างข้อมูล</button> </td>
             <td ><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>    
-
           </tr>
         </table>
       </center>
       <!-- /input-group -->
     </div>
-  </div><br>        
+  </div><br> 
+  </form>       
   <!-- /.row -->
 
   <!-- Star row-->
@@ -86,11 +86,11 @@
                     <div class="form-group">
                      <label class="col-lg-2 control-label">ชื่อโครงการ</label>
                      <div class="col-lg-4">
-                      <input type="text" class="form-control" name=""   />
+                      <input type="text" class="form-control" name="D_name"   />
                     </div>
                     <label class="col-lg-2 control-label">ขายวันที่</label>
                     <div class="col-lg-4">
-                      <input type="date" class="form-control" name=""   />
+                      <input type="date" class="form-control" name="D_date"   />
                     </div>
                   </div>
                   <br><br>
@@ -99,11 +99,11 @@
                   <div class="form-group">
                     <label class="col-lg-2 control-label">ราคา</label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name=""   />
+                      <input type="text" class="form-control" name="D_price"   />
                     </div>
                     <label class="col-lg-2 control-label">ผู้ซื้อ</label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name=""   />
+                      <input type="text" class="form-control" name="D_name_buyer"   />
                     </div>
                   </div>
                   <br><br>
@@ -113,8 +113,8 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+              <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
 
 

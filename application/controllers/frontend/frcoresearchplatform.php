@@ -202,12 +202,13 @@ class Frcoresearchplatform extends CI_Controller {
 
 				
 				$this->db->insert('responsible_person', $insertresponsible);
-				$objQuery1 = mssql_query($insertresponsible);
+				$objQuery1 = sqlsrv_query($insertresponsible);
 				if(!$objQuery1)
 				{
 					mssql_query("ROLLBACK"); 
 					echo "Error Save [".$insertresponsible."]";
 					exit();
+					echo "1";
 				}
 
 				$this->db->insert('company', $insertCompany);
@@ -217,6 +218,7 @@ class Frcoresearchplatform extends CI_Controller {
 					mssql_query("ROLLBACK"); 
 					echo "Error Save [".$insertCompany."]";
 					exit();
+					echo "2";
 				}
 
 				$this->db->insert('contact_person', $insertData);
@@ -226,6 +228,7 @@ class Frcoresearchplatform extends CI_Controller {
 					mssql_query("ROLLBACK"); 
 					echo "Error Save [".$insertData."]";
 					exit();
+					echo "4";
 				}
 
 				$this->db->insert('file', $insertFile);
@@ -244,6 +247,7 @@ class Frcoresearchplatform extends CI_Controller {
 					mssql_query("ROLLBACK"); 
 					echo "Error Save [".$insertplan."]";
 					exit();
+					echo 1;
 				}
 
 				$this->db->insert('budget_action', $insertbudgetaction);
@@ -253,6 +257,7 @@ class Frcoresearchplatform extends CI_Controller {
 					mssql_query("ROLLBACK"); 
 					echo "Error Save [".$insertbudgetaction."]";
 					exit();
+					echo 1;
 				}
 
 				$this->db->insert('budget_invest', $insertbudgetinvest);
@@ -262,6 +267,7 @@ class Frcoresearchplatform extends CI_Controller {
 					mssql_query("ROLLBACK"); 
 					echo "Error Save [".$insertbudgetinvest."]";
 					exit();
+					echo 1;
 				}
 	
 

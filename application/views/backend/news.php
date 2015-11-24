@@ -15,6 +15,7 @@
      </div>
    </div></br></br>
 
+  <form id="" method="post" class="form-horizontal" action="">
    <div class="row"> 
     <div class="col-sm-12 ">
       <center>
@@ -26,7 +27,15 @@
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search ">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                <center>
+                  <table >
+                    <tr>
+                      <td> <button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      <td width="20%"><button class="btn btn-success" type="reset" > ล้างข้อมูล</button> </td>
+                      <td >  <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addnew"><i class="fa fa-plus"></i> เพิ่ม</button></td>    
+                    </tr>
+                  </table>
+                </center>
               </span>
             </div>
           </td>
@@ -37,7 +46,9 @@
     </center>
     <!-- /input-group -->
   </div>
-</div><br>        
+</div>
+</form>
+<br>        
 
 
 <!-- Star row-->
@@ -64,8 +75,7 @@
           <td >1</td>
           <td >นวัตกรรมใหม่</td>
           <td >เป็นนวัตกรรมใหม่ที่เกี่ยวกับ เกตรกร</td>   
-          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewnew"><i class="fa fa-eye"></i>  ดู</button></td> 
-          <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addnew"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
+          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewnew"><i class="fa fa-eye"></i>  ดู</button></td>           
           <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editnew"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i>  ลบ</button></td>                     
         </tr>       
@@ -120,7 +130,7 @@
 
     <!-- End popup ดูข่าว--> 
     <!-- start popup เพิ่มผลงาน-->
-    <form id="" method="post" class="form-horizontal" action="<?php echo $action ?>">
+    <form class="form-horizontal" enctype="multipart/form-data" role="form" method="post" action"<?php $action; ?>" >
 
       <div class="modal fade bs-example-modal-lg-addnew" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
@@ -135,11 +145,11 @@
               <div class="form-group">
                <label class="col-lg-2 control-label">หัวข้อข่าว</label>
                <div class="col-lg-4">
-                <input type="title" class="form-control" name="rec_phone"   />
+                <input type="title" class="form-control" name="ne_sub"   />
               </div>
               <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
               <div class="col-lg-4">
-                <textarea ></textarea>
+                <textarea name="ne_text"></textarea>
               </div>
             </div>
             <br><br>
@@ -147,11 +157,11 @@
             <div class="form-group">
               <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
               <div class="col-lg-4">
-                <input type="file" name="picture">
+                <input type="file" name="userfile[]">
               </div>
               <label class="col-lg-2 control-label">วันที่</label>
               <div class="col-lg-4">
-                <input type="date" name="d">
+                <input type="date" name="ne_date_up">
               </div>
             </div><br><br>
 
@@ -159,8 +169,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+          <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
 
       </div>

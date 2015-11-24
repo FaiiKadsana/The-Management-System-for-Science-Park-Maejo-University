@@ -12,6 +12,8 @@ class dealing extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
+
+		
 		$this->load->view('backend/dealing');
 		$this->load->view('backend/script');	
 		

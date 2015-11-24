@@ -45,9 +45,9 @@ class Catalog extends CI_Controller {
 
 		//*************************Project_แถบล่าง__type1
 		$this->db->select('*');
-		$this->db->join('research','catalog.Re_id = research.Re_id');
-		$this->db->join('researchers','catalog.Rec_id = researchers.Rec_id' );
-		//$this->db->order_by("Cl_id", "desc");
+		$this->db->join('research','research.Re_id = catalog.Re_id');
+		$this->db->join('researchers','researchers.Rec_id = catalog.Rec_id');
+		$this->db->order_by("Cl_id", "desc");
 
 		$this->db->limit(8,0);
 
