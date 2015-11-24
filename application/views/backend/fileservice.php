@@ -28,16 +28,16 @@
            <tr class="bg-success">
             <th width="30%">หนังสือรับรองการจดทะเบียนนิติบุคคล</th>
             <th width="30%">สำเนาบัตรประชาชนของผู้มีสิทธิลงนาม</th>
-           
+            
             
           </tr>   
 
           <!-- Show &Join table -->
 
           <tr class="bg-success">
-           <td ><input type="file" name=""></td>
-           <td ><input type="file" name=""></td> 
-                  
+           <td ><a href="">523.pdf</a></td>
+           <td ><a href="">523.pdf</a></td> 
+           
          </tr>       
        </table>     
        <!-- End -->
@@ -48,52 +48,52 @@
 <!-- /.row -->
 
 <br>
- <!-- Star row-->
-   <div class="row">
-    <div class="col-sm-12">
-      <div class="panel panel-default">
-        <div class="panel-heading">ไฟล์เอกสารแนบ</div>
-        <div class="panel-body">
-         <table class="table table-striped">
-           <tr class="bg-success">
+<!-- Star row-->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">ไฟล์เอกสารแนบ</div>
+      <div class="panel-body">
+       <table class="table table-striped">
+         <tr class="bg-success">
            
-            <th width="30%">หนังสือมอบอำนาจ(ถ้ามี)</th> 
-            <th width="30%">สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย</th>    
-            
-          </tr>   
-
-          <!-- Show &Join table -->
-
-          <tr class="bg-success">
-        
-           <td ><input type="file" name=""></td>   
-           <td ><input type="file" name=""></td>
+          <th width="30%">หนังสือมอบอำนาจ(ถ้ามี)</th> 
+          <th width="30%">สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย</th>    
           
-         </tr>       
-       </table>     
-       <!-- End -->
-     </div>
-   </div>
- </div>
+        </tr>   
+
+        <!-- Show &Join table -->
+
+        <tr class="bg-success">
+          
+          <td ><a href="">523.pdf</a></td>
+          <td ><a href="">523.pdf</a></td> 
+          
+        </tr>       
+      </table>     
+      <!-- End -->
+    </div>
+  </div>
+</div>
 </div>
 <!-- /.row -->
 
-  <div class="row">
-     <div class="col-sm-12">
-       <table>
-         <tr>
-           <td width="80%">
-           </td>
-           <td width="80%">
-           </td>
-           <td>
-             <a href="<?php echo base_url("backend/service")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
-           </td>
-         </tr>
-       </table>
-     </div>
+<div class="row">
+ <div class="col-sm-12">
+   <table>
+     <tr>
+       <td width="80%">
+       </td>
+       <td width="80%">
+       </td>
+       <td>
+         <a href="<?php echo base_url("backend/service")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
+       </td>
+     </tr>
+   </table>
+ </div>
 
-   </div>
+</div>
 
 
 

@@ -24,10 +24,7 @@
 
           <tr>
             <td></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อนักวิจัย" name="research"></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อโครงการ"  name="project_research"></td>
-            <td><input type="text" class="form-control" placeholder="ปีที่ทำโครงการ" name="yearresearch"></td>
-            <td><select class="form-control"  name="statussearch">
+             <td><select class="form-control"  name="statussearch">
              <option value=""> เลือกสถานะ</option>
              <option value="สำเร็จ"> อนุมัติ</option>
              <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
@@ -39,7 +36,7 @@
              <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
            </select></td>
            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-           <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
+           <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
 
 
          </tr>
