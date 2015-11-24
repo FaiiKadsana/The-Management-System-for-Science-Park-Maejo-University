@@ -55,7 +55,7 @@
           <th></th>
           <th></th>
           <th></th>
-          <th></th>
+
         </tr>   
 
         <!-- Show &Join table -->
@@ -68,7 +68,7 @@
           <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
           <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delperson"><i class="fa fa-times"></i>  ลบ</button></td>                     
+
         </tr>       
       </table>     
       <!-- End -->
@@ -159,7 +159,7 @@
                  <input type="text" class="form-control" name="per_ln" placeholder="นามสกุล"   />
                </div>
              </div>
-           
+
 
              <div class="form-group">
                <label class="col-lg-2 control-label">รหัสบัตรประชาชน</label>
@@ -176,7 +176,7 @@
              </div>
 
            </div>
-       
+
 
            <div class="form-group">
              <label class="col-lg-2 control-label">email</label>
@@ -212,18 +212,26 @@
             <div class="col-lg-4">
               <input type="file" name="picture">
             </div>
-          </div>
+            <label class="col-lg-2 control-label">สถานะ</label>
+            <div class="col-lg-4">
+             <select class="form-control"  name="statussearch">
+               <option value=""> เลือกสถานะ</option>
+               <option value="รอดำเนินงาน">พนักงาน</option>
+               <option value="รออนุมัติ">ลาออก</option>ห
+             </select>
+           </div>
+         </div>
 
-        </div>
-      </div>
+       </div>
+     </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-
+     <div class="modal-footer">
+      <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
+
   </div>
+</div>
 </div>
 
 </form>
@@ -254,7 +262,7 @@
              <input type="text" class="form-control" name="per_ln" placeholder="นามสกุล"   />
            </div>
          </div>
-        
+
 
          <div class="form-group">
            <label class="col-lg-2 control-label">รหัสบัตรประชาชน</label>
@@ -284,7 +292,7 @@
         </div>
 
       </div>
-     
+
 
       <div class="form-group">
         <label class="col-lg-2 control-label">Password</label>
@@ -299,7 +307,7 @@
           <input type="checkbox"  name="per_status" />TBI Platform<br>
         </div>
       </div>
-   
+
 
 
       <div class="form-group">
@@ -307,11 +315,19 @@
         <div class="col-lg-4">
           <input type="file" name="picture">
         </div>
-      </div>
+        <label class="col-lg-2 control-label">สถานะ</label>
+        <div class="col-lg-4">
+         <select class="form-control"  name="statussearch">
+           <option value=""> เลือกสถานะ</option>
+           <option value="รอดำเนินงาน">พนักงาน</option>
+           <option value="รออนุมัติ">ลาออก</option>ห
+         </select>
+       </div>
+     </div>
 
-</div>
-</div>
-<div class="modal-footer">
+   </div>
+ </div>
+ <div class="modal-footer">
   <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>

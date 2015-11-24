@@ -54,6 +54,9 @@
               <td>เบอร์โทรศัพท์ติดต่อ : 0857856130</td>
             </tr>
             <tr>
+              <td>สถานะ : ใช้ประโยชน์</td>
+            </tr>
+            <tr>
               <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editcatalog"><i class="fa fa-wrench"></i> แก้ไข</button></td>
             </tr>
           </table>
@@ -112,25 +115,33 @@
                   <div class="col-lg-4">
                     <input type="file" name="rec_img">
                   </div>
-                </div><br><br>
+                  <label class="col-lg-2 control-label">สถานะ</label>
+                  <div class="col-lg-4">
+                   <select class="form-control"  name="statussearch">
+                     <option value=""> เลือกสถานะ</option>
+                     <option value="รอดำเนินงาน">ใช้ประโยชน์</option>
+                     <option value="รออนุมัติ">ยังไม่ใช้ประโยชน์</option>ห
+                   </select>
+                 </div>
+               </div><br><br>
 
-              </div>
-            </div>
+             </div>
+           </div>
 
-            <div class="modal-footer">
-              <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-
-
+           <div class="modal-footer">
+            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
+
+
         </div>
       </div>
+    </div>
 
-    </form>
-    <!-- End popup แก้ไขผลงาน--> 
+  </form>
+  <!-- End popup แก้ไขผลงาน--> 
 
-  </div>
+</div>
 </div>
 </div>
 
