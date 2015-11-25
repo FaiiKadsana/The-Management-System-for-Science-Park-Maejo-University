@@ -99,13 +99,6 @@ class Frservice extends CI_Controller {
 			$insertFile["F_4"]=$_FILES["F_4"]["name"];
 			$insertFile["Spf_id"]='1';
 
-			
-			$this->load->view('frontend/recaptchalib');
-			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
-			$resp = recaptcha_check_answer ($privatekey,
-				$_SERVER["REMOTE_ADDR"],
-				$_POST["recaptcha_challenge_field"],
-				$_POST["recaptcha_response_field"]);
 
 			if($insertCompany["C_name"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_no_com"]=="" ){
 
@@ -134,12 +127,7 @@ class Frservice extends CI_Controller {
 				redirect('frontend/frserviceplatform', 'refresh');
 
 			}
-			else if (!$resp->is_valid) {
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-				redirect('frontend/frserviceplatform', 'refresh');
-
-			}else {
+			else {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
 				$this->db->insert('company', $insertCompany);
