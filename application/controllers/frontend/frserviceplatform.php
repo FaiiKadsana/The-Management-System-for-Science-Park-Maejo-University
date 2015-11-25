@@ -70,7 +70,7 @@ class Frserviceplatform extends CI_Controller {
 			$insertService["S_solution_detail"]=$this->input->post("S_solution_detail");
 			$insertService["S_solution_name"]=$this->input->post("S_solution_name");
 			//$insertService["S_agreement"]=$this->input->post("S_agreement");
-			$insertService["S_status"]='1';
+			$insertService["S_status"]="รอดำเนินการ";
 			$insertService["Spf_id"]='1';
 			//echo "<pre>";
 			//print_r($insertService["S_detail_etc"]);
