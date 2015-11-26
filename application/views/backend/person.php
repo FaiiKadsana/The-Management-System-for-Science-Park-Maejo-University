@@ -73,8 +73,7 @@
       </table>     
       <!-- End -->
       <!-- start popup ดูข่าว-->
-      <form id="" method="post" class="form-horizontal" action="">
-
+      
         <div class="modal fade bs-example-modal-lg-viewperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -133,7 +132,7 @@
 
     <!-- End popup ดูข่าว--> 
     <!-- start popup เพิ่มผลงาน-->
-    <form id="" method="post" class="form-horizontal" action="">
+    <form id="" method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
 
       <div class="modal fade bs-example-modal-lg-addperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
@@ -144,89 +143,92 @@
               <hr>
               <center><h3>ข้อมูลบุคลากร</h3></center><br> 
 
-              <div class="form-group">
-                <div class="col-lg-4">
-                  <select class="form-control"  name="per_title">
-                   <option value="นาย">นาย</option>
-                   <option value="นาง">นาง</option>
-                   <option value="นางสาว">นางสาว</option>
-                 </select>
-               </div>
-               <div class="col-lg-4">
-                 <input type="text" class="form-control" name="per_name" placeholder="ชื่อ"   />
-               </div>
-               <div class="col-lg-4">
-                 <input type="text" class="form-control" name="per_ln" placeholder="นามสกุล"   />
-               </div>
-             </div>
-
-
-             <div class="form-group">
-               <label class="col-lg-2 control-label">รหัสบัตรประชาชน</label>
-               <div class="col-lg-4">
-                <input type="text" class="form-control" name="per_id"   />
-              </div>
-              <label class="col-lg-2 control-label">ตำแหน่ง</label>
-              <div class="col-lg-4">
-               <select class="form-control"  name="per_title">
-                 <option value=" ">พนักงาน</option>
-                 <option value=" ">พนักงาน</option>
-                 <option value=" ">พนักงาน</option>
-               </select>
-             </div>
-
-           </div>
-
-
-           <div class="form-group">
-             <label class="col-lg-2 control-label">email</label>
-             <div class="col-lg-4">
-              <input type="email" class="form-control" name="per_email"   />
-            </div>
-            <label class="col-lg-2 control-label">เบอร์โทรศัพท์</label>
+               <div class="form-group">
             <div class="col-lg-4">
-              <input type="tel" class="form-control" name="per_tell"   />
-            </div>
-
-          </div>
-          
-
-          <div class="form-group">
-            <label class="col-lg-2 control-label">Password</label>
-            <div class="col-lg-4">
-              <input type="password" class="form-control" name="per_Password"   />
-            </div>
-            <label class="col-lg-2 control-label">status</label>
-            <div class="col-lg-4">
-              <input type="checkbox"  name="per_status" >Service Platform<br>
-              <input type="checkbox"  name="per_status" />Co-Research Platform<br>
-              <input type="checkbox"  name="per_status" />IRTC Platform<br>
-              <input type="checkbox"  name="per_status" />TBI Platform<br>
-            </div>
-          </div>
-          
-
-
-          <div class="form-group">
-            <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
-            <div class="col-lg-4">
-              <input type="file" name="picture">
-            </div>
-            <label class="col-lg-2 control-label">สถานะ</label>
-            <div class="col-lg-4">
-             <select class="form-control"  name="statussearch">
-               <option value=""> เลือกสถานะ</option>
-               <option value="รอดำเนินงาน">พนักงาน</option>
-               <option value="รออนุมัติ">ลาออก</option>ห
+              <select class="form-control"  name="O_title">
+               <option value="นาย">นาย</option>
+               <option value="นาง">นาง</option>
+               <option value="นางสาว">นางสาว</option>
              </select>
            </div>
+           <div class="col-lg-4">
+             <input type="text" class="form-control" name="O_name" placeholder="ชื่อ"   />
+           </div>
+           <div class="col-lg-4">
+             <input type="text" class="form-control" name="O_lastname" placeholder="นามสกุล"   />
+           </div>
          </div>
+
+
+         <div class="form-group">
+           <label class="col-lg-2 control-label">รหัสบัตรประชาชน</label>
+           <div class="col-lg-4">
+            <input type="text" class="form-control" name="O_id_card"   />
+          </div>
+          <label class="col-lg-2 control-label">ตำแหน่ง</label>
+          <div class="col-lg-4">
+           <select class="form-control"  name="O_position">
+             <option value="นักวิชาการศึกษา">นักวิชาการศึกษา </option>
+             <option value="เจ้าหน้าที่บริหารงานทั่วไป">เจ้าหน้าที่บริหารงานทั่วไป </option>
+             <option value="นักจัดการทรัพย์สินทางปัญญา">นักจัดการทรัพย์สินทางปฝ่ายบ่มเพาะธุรกิจและนวัตกรรมญญา </option>
+             <option value="นักพัฒนาธุรกิจ">นักพัฒนาธุรกิจ</option>
+             <option value="ฝ่ายบ่มเพาะธุรกิจและนวัตกรรม">ฝ่ายบ่มเพาะธุรกิจและนวัตกรรม</option>
+             <option value="ฝ่ายฝึกอบรมและถ่ายทอดเทคโนโลยี">ฝ่ายฝึกอบรมและถ่ายทอดเทคโนโลยี</option>
+           </select>
+         </div>
+
+       </div>
+       
+
+       <div class="form-group">
+         <label class="col-lg-2 control-label">email</label>
+         <div class="col-lg-4">
+          <input type="email" class="form-control" name="O_email"   />
+        </div>
+        <label class="col-lg-2 control-label">เบอร์โทรศัพท์</label>
+        <div class="col-lg-4">
+          <input type="tel" class="form-control" name="O_phone"   />
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-lg-2 control-label">Password</label>
+        <div class="col-lg-4">
+          <input type="password" class="form-control" name="O_password"   />
+        </div>
+        <label class="col-lg-2 control-label">status</label>
+        <div class="col-lg-4">
+          <input type="checkbox"  name="O_status"  value="Service Platform">Service Platform<br>
+          <input type="checkbox"  name="O_status" value="Co-Research Platform" />Co-Research Platform<br>
+          <input type="checkbox"  name="O_status" value="IRTC Platform"/>IRTC Platform<br>
+          <input type="checkbox"  name="O_status" value="TBI Platform"/>TBI Platform<br>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+        <div class="col-lg-4">
+          <input type="file" name="O_picture">
+        </div>
+        <label class="col-lg-2 control-label">สถานะ</label>
+        <div class="col-lg-4">
+         <select class="form-control"  name="O_status_work">
+           <option value=""> เลือกสถานะ</option>
+           <option value="พนักงาน">พนักงาน</option>
+           <option value="ลาออก">ลาออก</option>
+         </select>
+       </div>
+     </div>
 
        </div>
      </div>
 
      <div class="modal-footer">
-      <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+      <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
 

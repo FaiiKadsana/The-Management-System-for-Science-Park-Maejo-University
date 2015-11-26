@@ -173,7 +173,7 @@ class Frserviceplatform extends CI_Controller {
 		}
 
 		$data['action']=site_url('frontend/frserviceplatform/index/');
-		$this->load->view('frontend/frserviceplatform',$data,$data,$data,$data);
+		$this->load->view('frontend/frserviceplatform',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
 	 

@@ -25,7 +25,7 @@ class Contact extends CI_Controller {
 			$insertData["email"]=$this->input->post("email");
 			$insertData["detail"]=$this->input->post("detail");
 			$insertData["date"]= date("Y-m-d H:i:s");
-		
+
 			$this->load->view('frontend/recaptchalib');
 			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
 			$resp = recaptcha_check_answer ($privatekey,
@@ -61,8 +61,30 @@ class Contact extends CI_Controller {
 		$this->load->view('frontend/contact',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
-	
+
 	}
 
+	public function showperson(){
+		$this->db->select('officer.O_title,
+			officer.O_name,
+			officer.O_lastname,
+			officer.O_position,
+			officer.O_phone');
+		
+		$this->db->order_by("O_id", "desc");
+
+		$this->db->limit(8,0);
+
+		$officer = $this->db->get('officer');
+		
+		print_r ($this->db->last_query());
+
+		$data['officer'] = $officer->result();
+
+		//**************************//
+	
+		$this->load->view('frontend/contact',$data);
+		
+	}
 	
 }

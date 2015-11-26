@@ -8,6 +8,7 @@
     <!-- start 6 -->
 
     <div class="col-sm-6">
+
      <div class="row">
        <div class="col-md-offset-1 col-sm-11 padd">
          <h4 ><span>ติดต่อ</span></h4>
@@ -98,6 +99,7 @@
     </div>
   </div>
 
+ <?php  foreach ($officer as $rowofficer) { ?>
   <div class="row">
    <div class="col-md-offset-1  col-sm-11">
     <div class="col-sm-5 paddd">
@@ -105,43 +107,23 @@
       <div class="team style2 box-shadow">
         <div class="team-header">
 
-         <img src='<?php echo base_url("asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="200px">
+       <!-- <img src='<?php //echo base_url(//"asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="200px">-->
        </div>
        <div class="team-date">	
-        <h6><font size='3'>นางสาวนิตยา&nbsp;ถาวัน</font></h6>
-        <i class="piksell-color small-text">นักวิชาการศึกษา</i>
+        <h6><font size='3'><?php echo $rowofficer->O_title;?><?php echo $rowofficer->O_name;?>&nbsp;<?php echo $rowofficer->O_lastname;?></font></h6>
+        <i class="piksell-color small-text"><?php echo $rowofficer->O_position;?></i>
         <!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
         <br>
         <div align='left' style='font-size: 14px;'>
-          เบอร์โทร :0801450009 </br>
+          เบอร์โทร :<?php echo $rowofficer->O_phone;?> </br>
 
         </div>
       </div>
     </div>
   </div>
-
-  <div class="col-sm-5 paddd">
-
-    <div class="team style2 box-shadow">
-      <div class="team-header">
-
-       <img src='<?php echo base_url("asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="200px">
-     </div>
-     <div class="team-date">  
-      <h6><font size='3'>นางสาวนิตยา&nbsp;ถาวัน</font></h6>
-      <i class="piksell-color small-text">นักวิชาการศึกษา</i>
-      <!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
-      <br>
-      <div align='left' style='font-size: 14px;'>
-        เบอร์โทร :22222 </br>
-
-      </div>
-    </div>
-  </div>
-</div>
-
 </div>
 </div>
+<?php } ?>
 
 </div>
 <!-- end 6 -->
