@@ -18,6 +18,8 @@
      </div>
    </div></br>
    <!-- /.row -->
+ 
+  <form method="post" action="<?php echo $action; ?>" enctype="multipart/form-data">
 
 <div class="row">
         <div class="col-sm-12">
@@ -94,7 +96,7 @@
                   <option value="นาง">นาง</option>
                   <option value="นางสาว">นางสาว</option>
                 </select> <b style="color:red;"> *</b>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <input type="text" size="30" name="Tbi_name" ><b style="color:red;"> *</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <input type="text" size="30" name="Tbi_name1" ><b style="color:red;"> *</b>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="Tbi_lastname" ><b style="color:red;"> *</b>
               </td>
             </tr>
@@ -617,14 +619,7 @@
   </div>
 </div>
 <br>
-<form method="post" action="frtbiplatform.php" >
-  <center>
-    <?php
-    require_once('recaptchalib.php');
-    $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; 
-    echo recaptcha_get_html($publickey);
-    ?>
-    <br>
+<center>
     <div class="form-group">
       <br>
       
@@ -632,11 +627,10 @@
       <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
     </div>
   </center>
-</form>
-</form>
+
 
 <br>
-
+</form>
 
    </div>
 <!-- /.container-fluid -->

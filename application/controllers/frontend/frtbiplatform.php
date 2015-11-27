@@ -107,12 +107,12 @@ class Frtbiplatform extends CI_Controller {
 			$insertTbiservice["Tbi_asset_etc"]=$this->input->post("Tbi_asset_etc");
 
 
-			/*$file1 = iconv("UTF-8", "TIS-620", $_FILES["F_1"]["name"]);
+			$file1 = iconv("UTF-8", "TIS-620", $_FILES["F_1"]["name"]);
 			$file2 = iconv("UTF-8", "TIS-620", $_FILES["F_2"]["name"]);
 			$file3 = iconv("UTF-8", "TIS-620", $_FILES["F_3"]["name"]);
 			$file4 = iconv("UTF-8", "TIS-620", $_FILES["F_4"]["name"]);
 
-			$path = "File/ServiceFile";
+			$path = "File/TbiFile";
 			if(!@mkdir($path,0,true)){}else{ };
 			chmod($path, 0777);	
 			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file1);
@@ -125,9 +125,9 @@ class Frtbiplatform extends CI_Controller {
 			$insertFile["F_2"]=$_FILES["F_2"]["name"];
 			$insertFile["F_3"]=$_FILES["F_3"]["name"];
 			$insertFile["F_4"]=$_FILES["F_4"]["name"];
-			$insertFile["Spf_id"]='1';
+			$insertFile["Spf_id"]='4';
 
-			$insertTbi=array();
+			/*$insertTbi=array();
 			$insertTbi["Tbi_id4"]=$this->input->post("Tbi_id4");
 			$insertTbi["Tbi_date"]=$this->input->post("Tbi_date");
 			$insertTbi["Tbi_name"]=$this->input->post("Tbi_name");
@@ -177,23 +177,23 @@ class Frtbiplatform extends CI_Controller {
 
 	}
 
-		else if($insertTbiservice["Tbi_investment"]=="" || $insertTbiservice["Tbi_train"]=="" || $insertTbiservice["Tbi_counsel"]=="" || $insertTbiservice["Tbi_lab"]==""
+	else if($insertTbiservice["Tbi_investment"]=="" || $insertTbiservice["Tbi_train"]=="" || $insertTbiservice["Tbi_counsel"]=="" || $insertTbiservice["Tbi_lab"]==""
 		|| $insertTbiservice["Tbi_funding"]=="" || $insertTbiservice["Tbi_asset"]=="" ){
 
-			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
-			redirect('frontend/frtbiplatform', 'refresh');
+		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+	echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
+	redirect('frontend/frtbiplatform', 'refresh');
 
-		}
+}
 
-		/*else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
+else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
 
-			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
-			redirect('frontend/frtbiplatform', 'refresh');
+	echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+	echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
+	redirect('frontend/frtbiplatform', 'refresh');
 
-		}
-		else if( $insertTbi["Tbi_date"]=="" 
+}
+		/*else if( $insertTbi["Tbi_date"]=="" 
 				){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
@@ -215,8 +215,9 @@ class Frtbiplatform extends CI_Controller {
 			$this->db->insert('tbi_person', $insertTbiperson);	
 			$this->db->insert('tbi_person1', $insertTbiperson1);
 			$this->db->insert('tbi_service', $insertTbiservice);
+			$this->db->insert('file', $insertFile);
 			print_r ($this->db->last_query());
-//$this->db->insert('tbi', $insertTbi);
+			//$this->db->insert('tbi', $insertTbi);
 
 
 		}
