@@ -84,7 +84,7 @@
 									<option value="นาง">นาง</option>
 									<option value="นางสาว">นางสาว</option>
 								</select> <b style="color:red;"> *</b>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <input type="text" size="30" name="Tbi_name" ><b style="color:red;"> *</b>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <input type="text" size="30" name="Tbi_name1" ><b style="color:red;"> *</b>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="Tbi_lastname" ><b style="color:red;"> *</b>
 							</td>
 						</tr>
@@ -183,7 +183,7 @@
 						<tr>
 							<td colspan="3" align="left">
 								&nbsp;&nbsp;&nbsp;&nbsp;1.9
-								ปัจจุบันท่านประกอบอาชีพใด 
+								ปัจจุบันท่านประกอบอาชีพใด <b style="color:red;"> *</b>
 							</td>
 						</tr>
 						<tr>
