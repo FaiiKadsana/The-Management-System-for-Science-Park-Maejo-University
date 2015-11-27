@@ -45,7 +45,7 @@ class Catalog extends CI_Controller {
 
 		//*************************
 		$this->db->select('*');
-		$this->db->join('O','research.Re_id = catalog.Re_id');
+		$this->db->join('research','research.Re_id = catalog.Re_id');
 		$this->db->join('researchers','researchers.Rec_id = catalog.Rec_id');
 		$this->db->order_by("Cl_id", "desc");
 

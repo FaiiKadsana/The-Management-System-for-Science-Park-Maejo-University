@@ -78,20 +78,19 @@ $(function() {
 			<div class="panel-heading">Service Platform</div>
 			<div class="panel-body">
 				<table class="table table-striped">
-					<?php if (empty($keyword)) { 
-						?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+					<?php if (empty($keyword)) { ?>    
+
+					<?php }else{ ?>
+
+					<?php foreach($search as $row){?>
 					<tr class="bg-success">
 						<th width="15%">เลขที่แบบฟอร์ม</th>
 						<th width="20%">ชื่อสถานประกอบการ</th>
 						<th width="20%">ชื่อผู้ประสานงาน</th>
 						<th width="20%">วันที่ยืนโครงการ</th> 
 						<th width="20%">สถานะ</th>    
-					</tr> 
-
-					<?php }else{ ?>
- 
-
-					<?php foreach($service as $row){?>
+					</tr>
 					<tr class="bg-success">
 						<td ><?php echo $row->S_id; ?></td>
 						<td ><?php echo $row->C_name; ?></td>
@@ -103,20 +102,6 @@ $(function() {
 					<?php } ?>      
 				</table>     
 				<!-- End -->
-
-				<div class="row">
-					<center>
-						<div class="paginationnext" >
-							<div class="col-md-12" >
-								<ul class="paginationnext" >
-
-									<?php echo $page; ?>
-
-								<ul>
-							</div>
-						</div>  
-					</center>
-				</div>
 			</div>
 		</div>
 	</div>
