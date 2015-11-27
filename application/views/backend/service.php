@@ -54,6 +54,7 @@
       <div class="panel-body">
        <table class="table table-striped">
         <?php if (empty($rssearch)) { ?>
+        
       <?php }else{ ?>
 
        <tr class="bg-success">

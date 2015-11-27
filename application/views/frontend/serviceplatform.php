@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
@@ -8,30 +8,30 @@
 
 
 <script>
-  $(function() {
-    var availableTags = [ 
-<?php 
-$i=0;
-foreach ($service as $rowservice){
-	$i++; 
+$(function() {
+	var availableTags = [ 
+	<?php 
+	/*$i=0;
+	foreach ($service as $rowservice){
+		$i++; 
 	//echo $rowservice->S_id ;
-	 $auto =  " ' ".$rowservice->S_id." ' ";
-	
-	if("6" == $i){
-		$auto .= " ";
-	}else{
-		$auto .= ",";
-	}
+		$auto =  " ' ".$rowservice->S_id." ' ";
 
-	echo $auto;
-} ?>
+		if("6" == $i){
+			$auto .= " ";
+		}else{
+			$auto .= ",";
+		}
 
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  });
-  </script>
+		echo $auto;
+	} */?>
+
+	];
+	$( "#tags" ).autocomplete({
+		source: availableTags
+	});
+});
+</script>-->
 
 <!-- Section -->
 <div id="section_header">
@@ -53,15 +53,15 @@ foreach ($service as $rowservice){
 <div class="row">
 	<div class="col-md-offset-3  col-sm-9">
 		<center>
-			<form id="" method="post" class="form-horizontal" action="">
+			<form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
+				<!--<?php //$search = array('S_id'=>'S_id','value'=>"",);?>-->
 				<table >
 					<tr>
-						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="research" id="tags"></td>
-						<td width="15%"><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
+						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="keyword" value=""></td>
+						<td width="15%"><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
 						<td width="15%"><a href="<?php echo base_url("frontend/frserviceplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
 						<td><a target ="_blank" href="<?php echo base_url ("asset/form download/IRTC Form.pdf")?>"><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></a></td>
 					</tr>
-
 
 				</table>
 			</form>
@@ -78,34 +78,52 @@ foreach ($service as $rowservice){
 			<div class="panel-heading">Service Platform</div>
 			<div class="panel-body">
 				<table class="table table-striped">
+					<?php if (empty($keyword)) { 
+						?>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 					<tr class="bg-success">
-						<th width="5%">#</th>
-						<th width="25%">เลขที่แบบฟอร์ม</th>
-						<th width="25%">ชื่อบริษัท</th>
-						<th width="25%">ชื่อโครงการ</th> 
-						<th width="30%">สถานะ</th>     
-						<th></th>
-					</tr>   
+						<th width="15%">เลขที่แบบฟอร์ม</th>
+						<th width="20%">ชื่อสถานประกอบการ</th>
+						<th width="20%">ชื่อผู้ประสานงาน</th>
+						<th width="20%">วันที่ยืนโครงการ</th> 
+						<th width="20%">สถานะ</th>    
+					</tr> 
 
-					<!-- Show &Join table -->
+					<?php }else{ ?>
+ 
 
+					<?php foreach($service as $row){?>
 					<tr class="bg-success">
-						<td >1</td>
-						<td >259863</td>
-						<td >Hotal</td>   
-						<td >กังหันลม</td>
-						<td >อยู่ในช่วงดำเนินงาน</td>
-						<td><a href="<?php echo base_url("frontend/serviceplatformreport")?>"><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 
-						
-					</tr>       
+						<td ><?php echo $row->S_id; ?></td>
+						<td ><?php echo $row->C_name; ?></td>
+						<td ><?php echo $row->P_title , $row->P_name , $row->P_lastname ; ?> </td>
+						<td ><?php echo $row->S_date; ?></td>  
+						<td ><?php echo $row->S_status; ?></td>
+						<td><a href="<?php echo base_url("frontend/serviceplatformreport")?>"><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	
+					</tr> 
+					<?php } ?>      
 				</table>     
 				<!-- End -->
 
+				<div class="row">
+					<center>
+						<div class="paginationnext" >
+							<div class="col-md-12" >
+								<ul class="paginationnext" >
 
-				<!-- /.row -->
+									<?php echo $page; ?>
+
+								<ul>
+							</div>
+						</div>  
+					</center>
+				</div>
 			</div>
-
 		</div>
 	</div>
+				<?php }  ?>
+			<!-- /.row -->
 </div>
-       <!-- End  row-->
+<!-- End  row-->
+<!--</div>
+</div>
+</div>-->

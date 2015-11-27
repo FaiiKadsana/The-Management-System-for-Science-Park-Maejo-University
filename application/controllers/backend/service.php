@@ -69,7 +69,7 @@ class Service extends CI_Controller {
 			$this->db->from('service');
 			$this->db->join('contact_person','contact_person.P_id = service.P_id');
 			$this->db->join('company','company.C_id = service.C_id');
-			$this->db->where('S_status = 2');
+			//$this->db->where('S_status = 2');
 			$this->db->group_by("service.S_id"); 
 			$this->db->order_by("service.S_id", "desc"); 
 			$rssearch = $this->db->get();
