@@ -35,13 +35,12 @@ class Coresearchplatform extends CI_Controller {
 			$this->db->or_like('S_date',$data['S_date']);
 			$this->db->or_like('S_status',$data['S_status']);
 			$this->db->select('*');
-			$this->db->from('co-research_irct');
 			$this->db->join('contact_person','contact_person.P_id = service.P_id');
 			$this->db->join('company','company.C_id = service.C_id');
 			//$this->db->where('S_status = 2');
 			$this->db->group_by("service.S_id"); 
 			$this->db->order_by("service.S_id", "desc"); 
-			$rssearch = $this->db->get();
+			$rssearch = $this->db->get('co-research_irct');
 			$data['rssearch'] = $rssearch->result_array();
 
 		}

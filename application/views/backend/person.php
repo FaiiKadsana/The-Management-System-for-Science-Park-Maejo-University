@@ -18,15 +18,17 @@
    <div class="row"> 
     <div class="col-sm-12 ">
       <center>
+        <form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
         <table >
           <tr>
            <td>
            </td>
            <td>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search ">
+              <input type="text" class="form-control" placeholder="Search" name="keyword">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i> เพิ่ม</button>
               </span>
             </div>
           </td>
@@ -34,19 +36,26 @@
           </td>
         </tr>
       </table>
+    </form>
     </center>
     <!-- /input-group -->
   </div>
 </div><br>        
 
 
-<!-- Star row-->
+<!-- Search-->
 <div class="row">
   <div class="col-sm-12">
     <div class="panel panel-default">
       <div class="panel-heading">ข้อมูลบุคลากร</div>
       <div class="panel-body">
+            <?php if (empty($keyword)) { ?>    
+
+          <?php }else{ ?>
+
        <table class="table table-striped">
+    
+        <?php foreach($search as $row){?>
          <tr class="bg-success">
           <th width="5%">#</th>
           <th width="25%">ชื่อ</th>
@@ -56,23 +65,21 @@
           <th></th>
           <th></th>
 
-        </tr>   
-
-        <!-- Show &Join table -->
-
+        </tr> 
         <tr class="bg-success">
-          <td>1</td>
-          <td>อลงกรณ์</td>
-          <td>อยู่เกิด</td> 
-          <td>พนักงานขาย</td>  
-          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td> 
-          <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
+          <td><?php echo $row->O_id; ?></td>
+          <td><?php echo $row->O_title , $row->O_name ; ?></td>
+          <td><?php echo $row->O_lastname;?></td> 
+          <td><?php echo $row->O_position;?></td>  
+          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
           <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+        </tr> 
+        <?php } ?>           
+      </table> 
 
-        </tr>       
-      </table>     
       <!-- End -->
-      <!-- start popup ดูข่าว-->
+
+      <!-- start popup ดูข้อมูล-->
       
         <div class="modal fade bs-example-modal-lg-viewperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">
@@ -130,7 +137,7 @@
       </div>
     </div>
 
-    <!-- End popup ดูข่าว--> 
+    <!-- End popup ดูข้อมูล--> 
     <!-- start popup เพิ่มผลงาน-->
     <form id="" method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
 
@@ -374,6 +381,7 @@
 
 </div>
 </div>
+<?php }  ?> 
 </div>
 
 

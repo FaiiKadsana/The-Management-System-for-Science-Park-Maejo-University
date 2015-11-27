@@ -4,6 +4,7 @@ class Person extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
+		$this->load->library('pagination');
 
 
 	}
@@ -13,7 +14,7 @@ class Person extends CI_Controller {
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
 
-		if( $_SERVER["REQUEST_METHOD"] == "POST")
+		/*if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
 
 			$insertPerson=array();
@@ -52,13 +53,38 @@ class Person extends CI_Controller {
 			redirect('backend/person', 'refresh');
 		}
 
-	}
+	}*/
 
-	$data['action']=site_url('backend/person/index/');
+	//*************************
+		$this->db->select('officer.O_id,officer.O_title, officer.O_name, officer.O_lastname,officer.O_position');
+		$this->db->order_by("O_name", "desc");
+ 
+		$this->db->limit(10,0);
+
+		$officer = $this->db->get('officer');
+		
+		//print_r ($this->db->last_query());
+
+		$data['officer'] = $officer->result();
+
+		
+		//SEARCH
+		if( $_SERVER["REQUEST_METHOD"] == "POST")
+		{
+			$data['keyword'] = $this->input->post('keyword');
+			$this->db->select('officer.O_id,officer.O_title, officer.O_name, officer.O_lastname,officer.O_position');
+			$this->db->like('O_name',$data['keyword']);
+			$search1 = $this->db->get('officer');
+			//print_r ($this->db->last_query());
+			$data['search'] = $search1->result();
+			print_r($data['search']);
+		}
+
+
+	$data['action']=site_url("backend/person",$data);
 	$this->load->view('backend/person',$data);
 	$this->load->view('backend/script');	
 
 }
-
 
 }
