@@ -4,16 +4,25 @@ class Serviceplatformreport extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-		//$this->load->model("index_model","index_model");
 		//$this->load->library('session');
 
 	}
 	public function index(){
+
+		$this->db->select('*');
+		$this->db->join('contact_person','contact_person.P_id = service.P_id');
+		$this->db->join('company','company.C_id = service.C_id');
+	
+		$service1 = $this->db->get('service');
 		
+		//print_r ($this->db->last_query());
+
+		$data['service'] = $service1->result();
+
+		//$data['action']=site_url('frontend/serviceplatformreport/index/');	
 		$this->load->view('frontend/serviceplatformreport');
 		$this->load->view('frontend/script');	
 	
 	}
 
-	
 }
