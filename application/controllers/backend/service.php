@@ -52,8 +52,8 @@ class Service extends CI_Controller {
 
 			
 			$data['search'] = $search1->result();
-			print_r ($this->db->last_query());
-				//print_r($data['search']);
+			//print_r ($this->db->last_query());
+				print_r($data['search']);
 			
 		}
 

@@ -54,7 +54,8 @@
       <div class="panel-body">
        <table class="table table-striped">
 
-<?php if (empty($keyword1)||empty($keyword)) { ?>
+<?php if (empty($keyword1)||empty($keyword)) { 
+   echo '1' ; ?>
 
        <tr class="bg-success">
          <th width="15%">เลขที่แบบฟอร์ม</th>
@@ -77,9 +78,11 @@
           <td><a href="<?php echo base_url("backend/serviceplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
           <td><a href="<?php echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
         </tr> 
-
+       
          <?php } ?>
-      <?php }else if ($keyword1||$keyword){ ?>
+
+      <?php }else if ($keyword1||$keyword){
+       echo '2' ;  ?>
 
        <tr class="bg-success">
        <th width="15%">เลขที่แบบฟอร์ม</th>
@@ -101,7 +104,7 @@
         <td><a href="<?php echo base_url("backend/serviceplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
         <td><a href="<?php echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
       </tr> 
-      <?php } ?>
+      <?php } }?>
     </table>     
   <!-- End -->
 
@@ -109,7 +112,7 @@
 </div>
 </div>
 </div>
-<?php }  ?>
+
 <!-- /.row -->
 
 </div>
