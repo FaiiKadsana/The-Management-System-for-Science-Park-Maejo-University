@@ -19,7 +19,7 @@ class Serviceplatform extends CI_Controller {
 		$this->db->join('contact_person','contact_person.P_id = service.P_id');
 		$this->db->join('company','company.C_id = service.C_id');
 		$this->db->order_by("S_date", "desc");
- 
+
 		$this->db->limit(10,0);
 
 		$service = $this->db->get('service');
@@ -45,25 +45,17 @@ class Serviceplatform extends CI_Controller {
 			$data['search'] = $search1->result();
 			//print_r($data['search']);
 		}
+		
 
-		$data["action"]=base_url("frontend/serviceplatform",$data);
+		
 		
 		$data['page']=$this->pagination->create_links();
+		$data["action"]=base_url("frontend/serviceplatform",$data);
 		$this->load->view('frontend/serviceplatform',$data);
-		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
-	
+		$this->load->view('frontend/script');	
 	}
-	public function count(){
-
-		$this->db->select('COUNT(S_id) as COUNTnum') ;
-		$this->db->from('service');
-
-		$service = $this->db->get();
-		$data['service'] = $service->result();
-		$this->load->view('frontend/serviceplatform',$data);
-
-	}
-
 	
+
+
 }
