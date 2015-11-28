@@ -47,7 +47,7 @@ class Project_Service extends CI_Controller {
 	}
 
 	$data['action']=site_url('backend/project_service/index/');
-	$this->load->view('backend/project_service');
+	$this->load->view('backend/project_service',$data);
 	$this->load->view('backend/script');	
 
 }

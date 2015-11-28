@@ -12,7 +12,9 @@ class Project_tbi extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/project_tbi');
+
+		$data['action']=site_url('backend/project_tbi/index/');
+		$this->load->view('backend/project_tbi',$data);
 		$this->load->view('backend/script');	
 		
 	}

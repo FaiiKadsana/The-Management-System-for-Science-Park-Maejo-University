@@ -12,7 +12,9 @@ class Project_coresearch extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/project_coresearch');
+
+		$data['action']=site_url('backend/project_coresearch/index/');
+		$this->load->view('backend/project_coresearch',$data);
 		$this->load->view('backend/script');	
 		
 	}

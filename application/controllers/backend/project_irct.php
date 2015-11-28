@@ -12,7 +12,9 @@ class Project_irct extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/project_irct');
+
+		$data['action']=site_url('backend/project_irct/index/');
+		$this->load->view('backend/project_irct',$data);
 		$this->load->view('backend/script');	
 		
 	}

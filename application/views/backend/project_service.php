@@ -16,7 +16,7 @@
    </div></br>
    <!-- /.row -->
    <!-- Star row-->
-   <form method="post" action="<?php echo $action; ?>" enctype="multipart/form-data">
+   <form method="post" action= "<?php echo $action; ?>" enctype= "multipart/form-data">
 
      <div class="row">
       <div class=" col-sm-12">
