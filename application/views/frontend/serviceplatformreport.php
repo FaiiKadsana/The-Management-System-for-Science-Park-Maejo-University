@@ -4,9 +4,9 @@
 <div class="row" >
 	<div class="col-sm-12">
 		<center>
-			<table width="55%">
+			<table width="100%">
 				<tr>
-					<td width="20%"></td>
+					<td width="5%"></td>
 					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
 				</tr>
 			</table>
@@ -16,20 +16,20 @@
 <div class="row fromfont">
 	<div class="col-sm-12">
 		<center>
-			<table width="80%">
+			<table width="100%">
 				<tr>
-					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='50%' height='20%'></td>
+					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='50%' height='8%'></td>
 					<td width="60%" align="center">
 						<p>แบบฟอร์มกรอกข้อมูลผู้ประกอบการ/SMEs/วิสาหกิจชุมชน</p>
 						<p>ที่มารับบริการอุทยานวิทยาศาสตร์ภูมิภาค เครือข่ายภาคเหนือ</p>
 					</td>
-					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/banner1.png") ?>' width='50%' height='20%'></td>
+					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/banner1.png") ?>' width='50%' height='8%'></td>
 				</tr>
 			</table>
-			<table  width="80%"  >
+			<table  width="100%"  >
 				<tr>
-					<td colspan="2" > </td>
-					<td width="12%" align="left"> 
+					
+					<td colspan="3"  align="right"> 
 						<p>สถาบันบ่มเพาะวิสาหกิจมหาวิทยาลัย</p>
 						<p>วันที่มารับบริการ ....<?php echo $rowservice->S_date;?>.....</p>
 					</td>
@@ -41,13 +41,13 @@
 					<td colspan="2" > </td>
 				</tr>
 				<tr>
-					<td colspan="3"  align="center"><br>
-						ชื่อ......<?php echo $rowservice->P_title;?>...<?php echo $rowservice->P_name;?>................ นามสกุล......<?php echo $rowservice->P_lastname;?>.........
+					<td colspan="3"  align="left"><br>
+						ชื่อ.............<?php echo $rowservice->P_title;?>.....<?php echo $rowservice->P_name;?>..................... นามสกุล...........<?php echo $rowservice->P_lastname;?>..........................
 					</td>
 				</tr>
 				<tr>
-					<td  colspan="3" align="center">เลขที่บัตรประชาชน.......<?php echo $rowservice->P_id_card;?>........&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง.....<?php echo $rowservice->P_position;?>......</td><tr>
-					<td colspan="3"  align="center">เบอร์โทรติดต่อ......<?php echo $rowservice->P_phone;?>.....&nbsp;&nbsp;&nbsp;&nbsp;E-mail:.......<?php echo $rowservice->P_mail;?>.............</td>
+					<td  colspan="3" align="left">เลขที่บัตรประชาชน.......<?php echo $rowservice->P_id_card;?>........&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง.....<?php echo $rowservice->P_position;?>......</td><tr>
+					<td colspan="3"  align="left">เบอร์โทรติดต่อ......<?php echo $rowservice->P_phone;?>.....&nbsp;&nbsp;&nbsp;&nbsp;E-mail:.......<?php echo $rowservice->P_mail;?>.............</td>
 				</tr>
 				<tr>
 					<td  align="left"> 
@@ -56,22 +56,22 @@
 					<td colspan="2" > </td>
 				</tr>
 				<tr>
-					<td colspan="3" align="center">
-						ชื่อกิจการ......<?php echo $rowservice->C_name;?>......<br>
-						ที่อยู่.......<?php echo $rowservice->C_address;?>........<br>
+					<td colspan="3" align="left">
+						ชื่อกิจการ...............................<?php echo $rowservice->C_name;?>............................................................................<br>
+						ที่อยู่.......<?php echo $rowservice->C_address;?>............................................................................................................<br>
 						
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3" align="center">
-						โทรศัพท์.....<?php echo $rowservice->C_phone;?>.....&nbsp;&nbsp;&nbsp;โทรสาร.....<?php echo $rowservice->C_fax;?>.....&nbsp;&nbsp;&nbsp;Website.....<?php echo $rowservice->C_website;?>......<br>
+					<td colspan="3" align="left">
+						โทรศัพท์.........<?php echo $rowservice->C_phone;?>.........&nbsp;&nbsp;&nbsp;โทรสาร.........<?php echo $rowservice->C_fax;?>......&nbsp;&nbsp;&nbsp;Website.....<?php echo $rowservice->C_website;?>......................................<br>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
 						<b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="ไม่มี"> ไม่มี  
 						&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="มี"> มี กรุณากรอก
-						&nbsp;&nbsp;......<?php echo $rowservice->C_no_com_etc;?>........                                                                                                                
+						&nbsp;&nbsp;......<?php echo $rowservice->C_no_com_etc;?>..............................................                                                                                                                
 					</td>
 				</tr>
 				<tr>
@@ -110,41 +110,41 @@
 				<tr>
 					<td colspan="3"  align="left">
 						<input type="radio" name="C_industry_type" value="อาหารและอาหารสัตว์"> อาหารและอาหารสัตว์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="สิ่งทอและเครื่องนุ่งห่ม"> สิ่งทอและเครื่องนุ่งห่ม
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="รองเท้าและเครื่องหนัง"> รองเท้าและเครื่องหนัง
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="ผลิตภัณฑ์จากไม้และเครื่องเรือน"> ผลิตภัณฑ์จากไม้และเครื่องเรือน<br>
-						<input type="radio" name="C_industry_type" value="ยาและเคมีภัณฑ์"> ยาและเคมีภัณฑ์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ยางพาราและผลิตภัณฑ์"> ยางพาราและผลิตภัณฑ์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก"> บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เซรามิกส์และแก้ว"> เซรามิกส์และแก้ว<br>
-						<input type="radio" name="C_industry_type" value="เครื่องใช้ไฟฟ้าและอิเล็กทรอนิกส์"> เครื่องใช้ไฟฟ้าและอิเล็กทรอนิกส์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ชิ้นส่วนและยานยนต์"> ชิ้นส่วนและยานยนต์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="อัญมณีและเครื่องประดับ"> อัญมณีและเครื่องประดับ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เหล็กและโลหะการ"> เหล็กและโลหะการ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_industry_type" value="สิ่งทอและเครื่องนุ่งห่ม"> สิ่งทอและเครื่องนุ่งห่ม
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="รองเท้าและเครื่องหนัง"> รองเท้าและเครื่องหนัง<br>
+						<input type="radio" name="C_industry_type" value="ผลิตภัณฑ์จากไม้และเครื่องเรือน"> ผลิตภัณฑ์จากไม้และเครื่องเรือน
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="ยาและเคมีภัณฑ์"> ยาและเคมีภัณฑ์
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ยางพาราและผลิตภัณฑ์"> ยางพาราและผลิตภัณฑ์<br>
+						<input type="radio" name="C_industry_type" value="บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก"> บรรจุภัณฑ์ผลิตภัณฑ์พลาสติก
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เซรามิกส์และแก้ว"> เซรามิกส์และแก้ว
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เครื่องใช้ไฟฟ้าและอิเล็กทรอนิกส์"> เครื่องใช้ไฟฟ้าและอิเล็กทรอนิกส์<br>
+						<input type="radio" name="C_industry_type" value="ชิ้นส่วนและยานยนต์"> ชิ้นส่วนและยานยนต์
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="อัญมณีและเครื่องประดับ"> อัญมณีและเครื่องประดับ
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="เหล็กและโลหะการ"> เหล็กและโลหะการ<br>
 						<input type="radio" name="C_industry_type" value="เครื่องจักรกล"> เครื่องจักรกล
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="ท่องเที่ยว"> ท่องเที่ยว
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_industry_type" value="บริการด้านสุขภาพ"> บริการด้านสุขภาพ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_industry_type" value="อื่นๆ"> อื่นๆ ระบุ&nbsp;&nbsp;..............................<?php echo $rowservice->C_industry_type_etc;?>.....................
+						<input type="radio" name="C_industry_type" value="ท่องเที่ยว"> ท่องเที่ยว
+						<input type="radio" name="C_industry_type" value="บริการด้านสุขภาพ"> บริการด้านสุขภาพ
+						<input type="radio" name="C_industry_type" value="อื่นๆ"> อื่นๆ ระบุ&nbsp;&nbsp;..............................<?php echo $rowservice->C_industry_type_etc;?>.....................
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						เงินจดทะเบียน...................<?php echo $rowservice->C_investment;?>....................บาท(ถ้ามี)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวนปีที่ประกอบการ.................<?php echo $rowservice->C_no_year;?>..................ปี
+						เงินจดทะเบียน...................<?php echo $rowservice->C_investment;?>.......บาท(ถ้ามี)&nbsp;&nbsp;&nbsp;&nbsp;จำนวนปีที่ประกอบการ.................<?php echo $rowservice->C_no_year;?>..................ปี
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						จำนวนลูกจ้างทั้งหมด......<?php echo $rowservice->S_no_emp_total;?>..........&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;แบ่งเป็นลูกค้าปรจำ.........<?php echo $rowservice->S_no_emp_reg;?>.......&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;ลูกจ้างชั่วคราว.......<?php echo $rowservice->S_no_emp_tem;?>.......&nbsp;&nbsp;อัตรา
+						จำนวนลูกจ้างทั้งหมด......<?php echo $rowservice->S_no_emp_total;?>..........&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;แบ่งเป็นลูกค้าปรจำ.........<?php echo $rowservice->S_no_emp_reg;?>.......&nbsp;&nbsp;อัตรา<br>ลูกจ้างชั่วคราว.......<?php echo $rowservice->S_no_emp_tem;?>.......&nbsp;&nbsp;อัตรา
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						ผลิตภัณฑ์หลัก&nbsp;&nbsp;1.)........<?php echo $rowservice->S_main_pro1;?>.........&nbsp;&nbsp;2.).......<?php echo $rowservice->S_main_pro2;?>.........&nbsp;&nbsp;3.)..........<?php echo $rowservice->S_main_pro3;?>...........
+						ผลิตภัณฑ์หลัก&nbsp;&nbsp;1.)..........<?php echo $rowservice->S_main_pro1;?>.........&nbsp;&nbsp;2.).......<?php echo $rowservice->S_main_pro2;?>............&nbsp;&nbsp;3.)..........<?php echo $rowservice->S_main_pro3;?>.....................
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						<br>
+						
 						<table width="100%" border="1">
 							<tr>
 								<td colspan="3" align="center">
@@ -154,13 +154,13 @@
 								</td>
 							</tr>
 							<tr>
-								<td align="center"><br><br>
-									ลงชื่อ.............<?php echo $rowservice->S_provider;?>............<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(........<?php echo $rowservice->S_provider1;?>........)<br>
+								<td width="30%" align="center">
+									ลงชื่อ..<?php echo $rowservice->S_provider;?>..<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;(..<?php echo $rowservice->S_provider1;?>..)<br>
 									<b>ผู้ขอรับบริการ</b>
 								</td>
 								<td align="center" colspan="2">
-									<input type="radio" name="S_agreement" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล
+									<input type="radio" name="S_agreement" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล<br>
 									<input type="radio" name="S_agreement" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
 								</td>
 							</tr>
@@ -178,11 +178,11 @@
 					<td colspan="3" align="left">
 						<input type="radio" name="S_circulation" value="ขยายตลาด"> ขยายตลาด
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="พัฒนาผลิตภัณฑ์"> พัฒนาผลิตภัณฑ์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="แบรนด์"> แบรนด์
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="S_circulation" value="สำรวจความต้องการของตลาด"> สำรวจความต้องการของตลาด<br>
-						<input type="radio" name="S_circulation" value="จัดทำแผนส่งเสริมการตลาด"> จัดทำแผนส่งเสริมการตลาด
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="หาพันธมิตรทางธุรกิจ"> หาพันธมิตรทางธุรกิจ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="พัฒนาธุรกิจใหม่"> พัฒนาธุรกิจใหม่
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="แบรนด์"> แบรนด์<br>
+						<input type="radio" name="S_circulation" value="สำรวจความต้องการของตลาด"> สำรวจความต้องการของตลาด
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="S_circulation" value="จัดทำแผนส่งเสริมการตลาด"> จัดทำแผนส่งเสริมการตลาด
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_circulation" value="หาพันธมิตรทางธุรกิจ"> หาพันธมิตรทางธุรกิจ<br>
+						<input type="radio" name="S_circulation" value="พัฒนาธุรกิจใหม่"> พัฒนาธุรกิจใหม่
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="S_circulation" value="พัฒนาตลาดต่างประเทศ"> พัฒนาตลาดต่างประเทศ
 					</td>
 				</tr>
@@ -217,11 +217,11 @@
 				<tr>
 					<td colspan="3" align="left">
 						<input type="radio" name="S_management" value="การวางแผนธุรกิจ(Business Plan)/กลยุทธ์การจัดการ"> การวางแผนธุรกิจ(Business Plan)/กลยุทธ์การจัดการ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="บริหารจัดการบัญชี"> บริหารจัดการบัญชี
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="กฎหมาย"> กฎหมาย<br>
+						&nbsp;&nbsp; <input type="radio" name="S_management" value="บริหารจัดการบัญชี"> บริหารจัดการบัญชี
+						&nbsp;&nbsp; <input type="radio" name="S_management" value="กฎหมาย"> กฎหมาย<br>
 						<input type="radio" name="S_management" value="การใช้เทคโนโลยีสารสนเทศ(IT)"> การใช้เทคโนโลยีสารสนเทศ(IT)
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="การเริ่มต้นกิจการ/การเลิกกิจการ"> การเริ่มต้นกิจการ/การเลิกกิจการ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_management" value="การสืบทอดธุรกิจ"> การสืบทอดธุรกิจ<br>
+						&nbsp;&nbsp; <input type="radio" name="S_management" value="การเริ่มต้นกิจการ/การเลิกกิจการ"> การเริ่มต้นกิจการ/การเลิกกิจการ
+						&nbsp;&nbsp; <input type="radio" name="S_management" value="การสืบทอดธุรกิจ"> การสืบทอดธุรกิจ<br>
 						<input type="radio" name="S_management" value="การปฎิรูปการบริหารจัดการ"> การปฎิรูปการบริหารจัดการ
 					</td>
 				</tr>
@@ -258,15 +258,14 @@
 				<tr>
 					<td colspan="3" align="left">
 						<input type="radio" name="S_technology" value="พัฒนาเทคโนโลยี"> พัฒนาเทคโนโลยี
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_technology" value="ทรัพย์สินทางปัญญา"> ทรัพย์สินทางปัญญา
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_technology" value="การประหยัดพลังงาน"> การประหยัดพลังงาน
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_technology" value="มาตรการด้านสิ่งแวดล้อม"> มาตรการด้านสิ่งแวดล้อม<br>
-						<br>
-					</td>
+						<input type="radio" name="S_technology" value="ทรัพย์สินทางปัญญา"> ทรัพย์สินทางปัญญา
+						<input type="radio" name="S_technology" value="การประหยัดพลังงาน"> การประหยัดพลังงาน
+						<input type="radio" name="S_technology" value="มาตรการด้านสิ่งแวดล้อม"> มาตรการด้านสิ่งแวดล้อม<br>
+									
 				</tr>
 				<tr>
 					<td>
-						อื่นๆโปรดระบุ...................<?php echo $rowservice->S_deteil_etc;?>.........................
+						อื่นๆโปรดระบุ...................<?php echo $rowservice->S_deteil_etc;?>............................................................................................................
 					</td>
 				</tr>
 				<tr>
@@ -275,8 +274,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3" align="center">
-						....................................<?php echo $rowservice->S_detail;?>.............................................<br>
+					<td colspan="3" align="left">
+						....................................<?php echo $rowservice->S_detail;?>................................................................................................<br>
 						
 					</td>
 				</tr>
@@ -296,7 +295,7 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="center">
-						........................<?php echo $rowservice->S_solution_detail;?>........................<br>
+						........................<?php echo $rowservice->S_solution_detail;?>.................................................................................................<br>
 						
 					</td>
 				</tr>
