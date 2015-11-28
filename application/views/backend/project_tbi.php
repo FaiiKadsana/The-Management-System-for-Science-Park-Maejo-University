@@ -42,7 +42,7 @@
 
 							</tr>
 						</table>
-					</form>
+					
 				</center>
 			</div>
 		</div><br>

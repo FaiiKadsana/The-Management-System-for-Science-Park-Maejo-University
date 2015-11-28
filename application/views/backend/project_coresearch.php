@@ -16,39 +16,38 @@
    </div></br>
    <!-- /.row -->
    <!-- Star row-->
-   <form method="post" action= "<?php echo $action; ?>" enctype= "multipart/form-data">
-   <div class="row">
-    <div class=" col-sm-12">
-     <center>
-       <form id="" method="post" class="form-horizontal" action="">
-        <table >
+   <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+     <div class="row">
+      <div class=" col-sm-12" >
+       <center>
+         
+          <table >
 
-          <tr>
-            <td></td>
-            <td><select class="form-control"  name="statussearch">
-             <option value=""> เลือกสถานะ</option>
-             <option value="สำเร็จ"> อนุมัติ</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
-             <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
-           </select></td>
-           <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
-           <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
+            <tr>
+              <td></td>
+              <td><select class="form-control"  name="statussearch">
+               <option value=""> เลือกสถานะ</option>
+               <option value="สำเร็จ"> อนุมัติ</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+               <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
+             </select></td>
+             <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+             <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
 
 
-         </tr>
-       </table>
-     </form>
-   </center>
- </div>
-</div><br>
-<!-- /.row -->
-<!-- Star row-->
-<div class="row">
+           </tr>
+         </table>
+     </center>
+   </div>
+ </div><br>
+ <!-- /.row -->
+ <!-- Star row-->
+ <div class="row">
   <div class="col-sm-12">
     <div class="panel panel-default">
       <div class="panel-heading">Co-Research Platform</div>
@@ -89,7 +88,7 @@
       <!-- /.row -->
     </div>
 
-    <form id="" method="post" class="form-horizontal" action="">
+
       <div class="modal fade bs-example-modal-lg-addproject_coresearcher" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -107,11 +106,11 @@
                   <div class="form-group">
                     <label class="col-lg-2 control-label">ชื่อ</label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="rec_name_thai" placeholder="ภาษาไทย"  reqquired />
+                      <input type="text" class="form-control" name="Rec_name_thai" placeholder="ภาษาไทย"  reqquired />
                     </div>
                     <label class="col-lg-2 control-label">นามสกุล</label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="rec_ln_thai" placeholder="ภาษาไทย"  />
+                      <input type="text" class="form-control" name="Rec_ln_thai" placeholder="ภาษาไทย"  />
                     </div>
                   </div>
                   
@@ -119,11 +118,11 @@
                   <div class="form-group">
                     <label class="col-lg-2 control-label"></label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="rec_name_eng" placeholder="ภาษาอังกฤษ"  />
+                      <input type="text" class="form-control" name="Rec_name_eng" placeholder="ภาษาอังกฤษ"  />
                     </div>
                     <label class="col-lg-2 control-label"></label>
                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="rec_ln_eng" placeholder="ภาษาอังกฤษ"  />
+                      <input type="text" class="form-control" name="Rec_ln_eng" placeholder="ภาษาอังกฤษ"  />
                     </div>
                   </div>
                   
@@ -131,7 +130,7 @@
                   <div class="form-group">
                    <label class="col-lg-2 control-label">ที่อยู่</label>
                    <div class="col-lg-10">
-                    <textarea class="form-control"  name="rec_address">   </textarea>
+                    <textarea class="form-control"  name="Rec_address">   </textarea>
                   </div>
                 </div>
                 
@@ -142,11 +141,11 @@
                 <div class="form-group">
                  <label class="col-lg-2 control-label">เบอร์โทร</label>
                  <div class="col-lg-4">
-                  <input type="tel" class="form-control" name="rec_phone"   />
+                  <input type="tel" class="form-control" name="Rec_phone"   />
                 </div>
                 <label class="col-lg-2 control-label">E-mail</label>
                 <div class="col-lg-4">
-                  <input type="email" class="form-control" name="rec_mail"   />
+                  <input type="email" class="form-control" name="Rec_mail"   />
                 </div>
 
               </div>
@@ -156,7 +155,7 @@
               <div class="form-group">
                 <label class="col-lg-2 control-label">ตำแหน่ง</label>
                 <div class="col-lg-4">
-                  <select class="form-control"  name="rec_position">
+                  <select class="form-control"  name="Rec_position">
                     <option value="ศ.ดร.">ศ.ดร.</option>
                     <option value="รศ.ดร.">รศ.ดร.</option>
                     <option value="พศ.ดร.">พศ.ดร.</option>
@@ -169,7 +168,7 @@
                 </div>
                 <label class="col-lg-2 control-label">หน่วยงานสังกัด</label>
                 <div class="col-lg-4">
-                  <input type="text" class="form-control" name="rec_unit"   />
+                  <input type="text" class="form-control" name="Rec_unit"   />
                 </div>
               </div>
               
@@ -178,11 +177,11 @@
 
                 <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
                 <div class="col-lg-4">
-                  <input type="file" name="rec_img">
+                <input type="file" name="Rec_picture1">
                 </div>
                 <label class="col-lg-2 control-label">สถานที่ทำงาน</label>
                 <div class="col-lg-4">
-                  <input type="text" name="rec_office">
+                  <input type="text" name="Rec_office">
                 </div>
               </div>
               <br><br>
@@ -526,11 +525,11 @@
         <div class="form-group">
           <label class="col-lg-2 control-label">ชื่อโครงการ</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_name" placeholder="ภาษาไทย"   />
+            <input type="text" class="form-control" name="Re_name1" placeholder="ภาษาไทย"   />
           </div>
           <label class="col-lg-2 control-label"></label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_name_eng"  placeholder="ภาษาอังกฤษ"  />
+            <input type="text" class="form-control" name="Re_name_eng"  placeholder="ภาษาอังกฤษ"  />
           </div>
         </div>
         
@@ -538,7 +537,7 @@
         <div class="form-group"> 
           <label class="col-lg-2 control-label">กลุ่มอุตสาหกรรม</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="ret_detail"  />
+            <input type="text" class="form-control" name="Re_industry_group"  />
           </div>
           <label class="col-lg-2 control-label">หน่วยงานวิจัย</label>
           <div class="col-lg-4">
@@ -550,11 +549,11 @@
         <div class="form-group">
           <label class="col-lg-2 control-label">ปีที่เริ่ม<br>ทำโครงการ</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_start"   />
+            <input type="text" class="form-control" name="Re_start"   />
           </div>
           <label class="col-lg-2 control-label">ปีที่สิ้นสุด<br>ทำโครงการ</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_end"  />
+            <input type="text" class="form-control" name="Re_end"  />
           </div>
         </div>
         
@@ -562,13 +561,13 @@
         <div class="form-group">
           <label class="col-lg-2 control-label">เลขที่<br>สิทธิบัตร</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_id_patent"   />
+            <input type="text" class="form-control" name="Re_id_patent"   />
           </div>
           <label class="col-lg-2 control-label">สถานภาพ<br>โครงการ</label>
           <div class="col-lg-4">
-            <select class="form-control"  name="re_status" >
-              <option value="th">อย่ในช่วงดำเนินงาน</option>
-              <option value="en">สำเร้จแล้ว</option>
+            <select class="form-control"  name="Re_status" >
+              <option value="อย่ในช่วงดำเนินงาน">อย่ในช่วงดำเนินงาน</option>
+              <option value="สำเร้จแล้ว">สำเร้จแล้ว</option>
             </select>
           </div>
         </div>
@@ -578,17 +577,17 @@
         <div class="form-group">
           <label class="col-lg-2 control-label">แหล่งเงินทุน<br>อุทยาน</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_finances_1"  />
+            <input type="text" class="form-control" name="Re_finances_sp"  />
           </div>
           <label class="col-lg-2 control-label">แหล่งเงินทุน<br>บริษัท</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" name="re_finances_2"  />
+            <input type="text" class="form-control" name="Re_finances_b"  />
           </div>
         </div>
         <div class="form-group">
          <label class="col-lg-2 control-label">บทสรุป</label>
          <div class="col-lg-4">
-          <textarea class="form-control" name="re_abstract"></textarea>
+          <textarea class="form-control" name="Re_abstract"></textarea>
         </div>
         <label class="col-lg-2 control-label">รางวัลผลงานวิจัย</label>
         <div class="col-lg-4">
@@ -612,7 +611,7 @@
     <div class="form-group">             
       <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
       <div class="col-lg-4">
-        <input type="file" name="re_picture">
+        <input type="file" name="Re_picture1">
       </div>
     </div>
 
@@ -634,7 +633,7 @@
     </div>
     <label class="col-lg-2 control-label">หมายเหตุ</label>
     <div class="col-lg-4">
-      <input type="text" class="form-control" name="1"   />
+      <input type="text" class="form-control" name="Re_notes"   />
     </div>
   </div>
 
@@ -647,13 +646,13 @@
 
 
 <div class="modal-footer">
-  <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+  <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 
 </div>
 
-</form>
+
 
 </div>
 </div>
