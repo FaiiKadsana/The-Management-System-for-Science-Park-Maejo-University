@@ -109,6 +109,6 @@ $(function() {
 			<!-- /.row -->
 </div>
 <!-- End  row-->
-<!--</div>
 </div>
-</div>-->
+</div>
+</div>

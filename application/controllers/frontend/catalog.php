@@ -1,5 +1,5 @@
 <?php defined ('BASEPATH') OR exit ('No direct script access allwed');
-
+header("Content-Type: text/html; charset=utf-8");
 class Catalog extends CI_Controller {
 
 	public function __construct (){

@@ -22,14 +22,13 @@
         <table >
           <tr>
            <td>
+            <td><input type="text" class="form-control"  name="keyword"></td>
+            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+           <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
            </td>
            <td>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" name="keyword">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
                 <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i> เพิ่ม</button>
-              </span>
             </div>
           </td>
           <td>
@@ -49,13 +48,32 @@
     <div class="panel panel-default">
       <div class="panel-heading">ข้อมูลบุคลากร</div>
       <div class="panel-body">
-            <?php if (empty($keyword)) { ?>    
+      <table class="table table-striped">
+        <?php if (empty($keyword)) { ?>
+        <tr class="bg-success">
+          <th width="5%">#</th>
+          <th width="25%">ชื่อ</th>
+          <th width="25%">นามสกุล</th>
+          <th width="25%">ตำแหน่ง</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
 
-          <?php }else{ ?>
+        <?php foreach($officer as $row){?>
+           
+        <tr class="bg-success">
+          <td><?php echo $row->O_id; ?></td>
+          <td><?php echo $row->O_title , $row->O_name ; ?></td>
+          <td><?php echo $row->O_lastname;?></td> 
+          <td><?php echo $row->O_position;?></td>  
+          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
+          <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+        </tr> 
+        <?php } ?>  
+        <?php }else if($keyword){ ?>
 
-       <table class="table table-striped">
-    
-        <?php foreach($search as $row){?>
+        <?php foreach($search as $row){ ?>
          <tr class="bg-success">
           <th width="5%">#</th>
           <th width="25%">ชื่อ</th>
@@ -64,7 +82,6 @@
           <th></th>
           <th></th>
           <th></th>
-
         </tr> 
         <tr class="bg-success">
           <td><?php echo $row->O_id; ?></td>
@@ -74,7 +91,8 @@
           <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
           <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
         </tr> 
-        <?php } ?>           
+        <?php } } ?> 
+
       </table> 
 
       <!-- End -->
@@ -381,7 +399,6 @@
 
 </div>
 </div>
-<?php }  ?> 
 </div>
 
 
