@@ -79,7 +79,12 @@ $(function() {
 			<div class="panel-body">
 				<table class="table table-striped">
 
-					<?php if (empty($keyword)) { ?>    
+					<?php if (empty($keyword)) { 
+
+					echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+					echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
+
+					?>    
 
 					<?php }else{ ?>
 
@@ -99,16 +104,15 @@ $(function() {
 						<td ><?php echo $row->S_status; ?></td>
 						<td><a target ="_blank" href="<?php echo base_url('frontend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	
 					</tr> 
-					<?php } ?>      
+					<?php } }?>      
 				</table>     
 				<!-- End -->
+				</div>
 			</div>
 		</div>
+				<!-- /.row -->
+			</div>
+			<!-- End  row-->
+		</div>
 	</div>
-				<?php }  ?>
-			<!-- /.row -->
-</div>
-<!-- End  row-->
-</div>
-</div>
 </div>

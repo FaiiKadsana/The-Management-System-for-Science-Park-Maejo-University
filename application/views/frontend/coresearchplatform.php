@@ -30,13 +30,16 @@
 			<div class="panel-body">
 				<table class="table table-striped">
 
-					<?php if (empty($keyword)) { ?>    
+					<?php if (empty($keyword)) { 
+
+					echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+					echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";?>    
 
 					<?php }else{ ?>
 
 					<?php foreach($search as $row){?>
 					<tr class="bg-success">
-						<th width="5%">เลขที่แบบฟอร์ม</th>
+						<th width="15%">เลขที่แบบฟอร์ม</th>
 						<th width="20%">ชื่อบริษัท</th>
 						<th width="20%">ชื่อโครงการ</th>
 						<th width="20%">วันที่ยืนโครงการ</th>  

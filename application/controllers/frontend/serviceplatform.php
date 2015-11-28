@@ -4,7 +4,6 @@ class Serviceplatform extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-		$this->load->library('pagination');
 		//$this->load->library('session');
 
 	}
@@ -44,15 +43,13 @@ class Serviceplatform extends CI_Controller {
 			$data['search'] = $search1->result();
 			//print_r($data['search']);
 		}
+	
 		
-
-		
-		
-		$data['page']=$this->pagination->create_links();
 		$data["action"]=base_url("frontend/serviceplatform",$data);
 		$this->load->view('frontend/serviceplatform',$data);
+		$this->load->view('frontend/script');
 		$this->load->view('frontend/footer');
-		$this->load->view('frontend/script');	
+			
 	}
 	
 

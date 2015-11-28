@@ -18,6 +18,7 @@ class Frcoresearchplatform extends CI_Controller {
 			
 			
 			$insertCompany=array();
+			$insertCompany["C_name"]=$this->input->post("C_name");
 			$insertCompany["C_address"]=$this->input->post("C_address");
 			$insertCompany["C_company_type"]=$this->input->post("C_company_type");
 			$insertCompany["C_company_type_etc"]=$this->input->post("C_company_type_etc");
@@ -248,7 +249,7 @@ class Frcoresearchplatform extends CI_Controller {
 				
 				$insertcoresearch["Rp_id"] = $Rp_id;
 
-				$this->db->insert('co-research_irct', $insertcoresearch);
+				$this->db->insert('coresearch_irct', $insertcoresearch);
 
             	//die(); //ทำแค่ถึงตรงนี้
 

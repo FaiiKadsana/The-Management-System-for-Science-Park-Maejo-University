@@ -14,13 +14,13 @@ class Coresearchplatform extends CI_Controller {
 		$this->load->view('frontend/menu');
 		$this->load->view('frontend/slider');
 
-		$this->db->select('co-research_irct.Co_id,company.C_name,co-research_irct.Co_name_pro,co-research_irct.Co_date,co-research_irct.Co_status');
-		$this->db->join('company','co-research_irct.C_id = company.C_id');
+		$this->db->select('coresearch_irct.Co_id,company.C_name,coresearch_irct.Co_name_pro,coresearch_irct.Co_date,coresearch_irct.Co_status');
+		$this->db->join('company','coresearch_irct.C_id = company.C_id');
 		$this->db->order_by("Co_date", "desc");
  
 		$this->db->limit(10,0);
 
-		$service = $this->db->get('co-research_irct');
+		$service = $this->db->get('coresearch_irct');
 		
 		//print_r ($this->db->last_query());
 
@@ -30,11 +30,13 @@ class Coresearchplatform extends CI_Controller {
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
 			$data['keyword'] = $this->input->post('keyword');
-			$this->db->select('co-research_irct.Co_id,company.C_name,co-research_irct.Co_name_pro,co-research_irct.Co_date,co-research_irct.Co_status');
-			$this->db->join('company','co-research_irct.C_id = company.C_id');
+			$this->db->select('coresearch_irct.Co_id,company.C_name,coresearch_irct.Co_name_pro,coresearch_irct.Co_date,coresearch_irct.Co_status');
+			$this->db->join('company','coresearch_irct.C_id = company.C_id');
 			$this->db->like('Co_id',$data['keyword']);
-			$search1 = $this->db->get('co-research_irct');
+			$search1 = $this->db->get('coresearch_irct');
 			$data['search'] = $search1->result();
+
+			//print_r($data['search']);
 
 		}
 

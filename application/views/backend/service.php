@@ -27,7 +27,7 @@
             <td></td>
             <td><input type="date" class="form-control"  name="keyword"></td>
             <td><select class="form-control"  name="keyword1">
-             <option value=""> เลือกสถานะ</option>
+             <option value="0"> เลือกสถานะ</option>
              <option value="รอดำเนินงาน">รอดำเนินงาน</option>
              <option value="รออนุมัติ">รออนุมัติ</option>
              <option value="อนุมัติ">อนุมัติ</option>
@@ -54,7 +54,7 @@
       <div class="panel-body">
        <table class="table table-striped">
 
-<?php if (empty($keyword1)||empty($keyword1)) { ?>
+<?php if (empty($keyword1)||empty($keyword)) { ?>
 
        <tr class="bg-success">
          <th width="15%">เลขที่แบบฟอร์ม</th>
@@ -79,7 +79,7 @@
         </tr> 
 
          <?php } ?>
-      <?php }else if ($keyword1){ ?>
+      <?php }else if ($keyword1||$keyword){ ?>
 
        <tr class="bg-success">
        <th width="15%">เลขที่แบบฟอร์ม</th>
