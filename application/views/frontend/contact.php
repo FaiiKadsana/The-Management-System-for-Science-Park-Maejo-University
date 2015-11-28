@@ -92,22 +92,20 @@
 
   <!-- start 6 -->
 
-  <div class="col-sm-6">
+<div class="col-sm-6">
    <div class="row">
      <div class="col-md-offset-1 col-sm-11 padd">
       <h4 ><span>บุคลากร</span></h4>
     </div>
   </div>
-
+<div class="row">
+  <div class="col-md-offset-1  col-sm-11">
  <?php  foreach ($officer as $rowofficer) { ?>
-  <div class="row">
-   <div class="col-md-offset-1  col-sm-11">
-    <div class="col-sm-5 paddd">
+    <div class="col-sm-6 paddd">
 
       <div class="team style2 box-shadow">
         <div class="team-header">
-
-       <!-- <img src='<?php //echo base_url(//"asset/images/personnel/P.jpg") ?>' class="picture-personnel box-shadow" height="200px">-->
+           <?php echo '<img src= "'.base_url().'asset/img/person/'.$rowofficer->O_picture.'" style="height:200px;" style="width:40px;">'; ?>
        </div>
        <div class="team-date">	
         <h6><font size='3'><?php echo $rowofficer->O_title;?><?php echo $rowofficer->O_name;?>&nbsp;<?php echo $rowofficer->O_lastname;?></font></h6>
@@ -121,10 +119,22 @@
       </div>
     </div>
   </div>
-</div>
-</div>
-<?php } ?>
 
+<?php } ?>
+<div class="row">
+      <center>
+        <div class="paginationnext" >
+          <div class="col-md-12" >
+            <ul class="paginationnext" >
+                <?php echo $page; ?>  
+            <ul>
+          </div>
+        </div>  
+      </center>
+</div>
+</div>
+
+</div>
 </div>
 <!-- end 6 -->
 

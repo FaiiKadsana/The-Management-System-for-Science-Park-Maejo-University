@@ -14,7 +14,7 @@ class Coresearchplatform extends CI_Controller {
 		$this->load->view('frontend/menu');
 		$this->load->view('frontend/slider');
 
-		$this->db->select('service.S_id, company.C_name, contact_person.P_title,contact_person.P_name, contact_person.P_lastname, service.S_date, service.S_status');
+		/*$this->db->select('service.S_id, company.C_name, contact_person.P_title,contact_person.P_name, contact_person.P_lastname, service.S_date, service.S_status');
 		$this->db->join('contact_person','contact_person.P_id = service.P_id');
 		$this->db->join('company','company.C_id = service.C_id');
 		$this->db->order_by("S_date", "desc");
@@ -27,7 +27,7 @@ class Coresearchplatform extends CI_Controller {
 
 		$data['service'] = $service->result();
 
-		//**************************//
+		//**************************
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
 			$data['S_date'] = $this->input->post('S_date');
@@ -45,7 +45,7 @@ class Coresearchplatform extends CI_Controller {
 
 		}
 
-		$data["action"]=base_url("frontend/coresearchplatform",$data);
+		$data["action"]=base_url("frontend/coresearchplatform",$data);*/
 		$this->load->view('frontend/coresearchplatform',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
