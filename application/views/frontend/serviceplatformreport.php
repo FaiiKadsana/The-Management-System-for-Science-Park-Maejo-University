@@ -1,6 +1,6 @@
 <body onclick="window.print()">
 
-<?php  foreach ($P_name as $rowservice) { ?>
+<?php  foreach ($service as $rowservice) { ?>
 <div class="row" >
 	<div class="col-sm-12">
 		<center>
@@ -42,7 +42,7 @@
 				</tr>
 				<tr>
 					<td colspan="3"  align="center"><br>
-						ชื่อ (นาย/นาง/นางสาว) ............<?php echo $rowservice->P_name;?>................ นามสกุล.............................................................................................
+						ชื่อ......<?php echo $rowservice->P_title;?>...<?php echo $rowservice->P_name;?>................ นามสกุล.............................................................................................
 					</td>
 				</tr>
 				<tr>

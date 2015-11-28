@@ -38,8 +38,7 @@ class Serviceplatform extends CI_Controller {
 			$this->db->join('company','company.C_id = service.C_id');
 			//$this->db->where('S_id',$data['keyword']);
 			$this->db->like('S_id',$data['keyword']);
-			//$this->db->group_by("service.S_id"); 
-			//$this->db->order_by("service.S_id", "desc"); 
+	
 			$search1 = $this->db->get('service');
 			//print_r ($this->db->last_query());
 			$data['search'] = $search1->result();

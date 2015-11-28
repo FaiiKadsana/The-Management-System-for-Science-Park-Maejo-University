@@ -16,10 +16,16 @@
    </div></br>
    <!-- /.row -->
    <!-- Star row-->
+<<<<<<< HEAD
    <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+=======
+ 
+>>>>>>> Science-Park 28/11/2558
 
      <div class="row">
       <div class=" col-sm-12">
+
+     
        <center>
         <table >
 
@@ -87,6 +93,7 @@
       <!-- /.row -->
     </div>
 
+<<<<<<< HEAD
        <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
        <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -110,6 +117,27 @@
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="Rec_ln_thai" placeholder="ภาษาไทย"  />
                     </div>
+=======
+    <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+
+          <div class="panel panel-warning">
+            <div class="panel-heading">ข้อมูลนักวิจัย</div>
+            <div class="panel-body">
+
+
+             <div class="row">
+               <div class="col-lg-9 col-lg-offset-1">
+                <hr>
+                <center><h3>ข้อมูลนักวิจัย</h3></center><br> 
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">ชื่อ</label>
+                  <div class="col-lg-4">
+                    <input type="text" class="form-control" name="Rec_name_thai" placeholder="ภาษาไทย"  reqquired />
+>>>>>>> Science-Park 28/11/2558
                   </div>
                   
 
@@ -640,27 +668,37 @@
 
 </div>
 </div>
-<!-- ข้อมูลโครงการ -->
+              <!-- ข้อมูลโครงการ -->
 
 
-<div class="modal-footer">
-  <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-  <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
-</div>
-
-</div>
-
+<<<<<<< HEAD
 
 
 </div>
 </div>
+=======
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+                <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+>>>>>>> Science-Park 28/11/2558
 
+            </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<<<<<<< HEAD
 </div>
 </div>
 
 </form>
+=======
+
+>>>>>>> Science-Park 28/11/2558
 </div>
 <!-- /.container-fluid -->
 

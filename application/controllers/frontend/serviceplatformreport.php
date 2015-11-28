@@ -7,11 +7,12 @@ class Serviceplatformreport extends CI_Controller {
 		//$this->load->library('session');
 
 	}
-	public function index(){
+	public function index($S_id){
 
 		$this->db->select('*');
 		$this->db->join('contact_person','contact_person.P_id = service.P_id');
 		$this->db->join('company','company.C_id = service.C_id');
+		$this->db->where("S_id",$S_id);
 	
 		$service1 = $this->db->get('service');
 		
@@ -19,8 +20,8 @@ class Serviceplatformreport extends CI_Controller {
 
 		$data['service'] = $service1->result();
 
-		//$data['action']=site_url('frontend/serviceplatformreport/index/');	
-		$this->load->view('frontend/serviceplatformreport');
+		$data['action']=site_url('frontend/serviceplatformreport/index/');	
+		$this->load->view('frontend/serviceplatformreport',$data);
 		$this->load->view('frontend/script');	
 	
 	}

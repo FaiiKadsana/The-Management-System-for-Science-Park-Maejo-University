@@ -14,20 +14,9 @@ class Frcoresearchplatform extends CI_Controller {
 		$this->load->view('frontend/header');
 		$this->load->view('frontend/menu');
 
-		if( $_SERVER["REQUEST_METHOD"] == "POST")
-		{
+		if( $_SERVER["REQUEST_METHOD"] == "POST"){
 			
-			$insertresponsible=array();
-			$insertresponsible["Rp_name"]=$this->input->post("Rp_name");
-			$insertresponsible["Rp_position"]=$this->input->post("Rp_position");
-			$insertresponsible["Rp_institute"]=$this->input->post("Rp_institute");
-			$insertresponsible["Rp_address"]=$this->input->post("Rp_address");
-			$insertresponsible["Rp_phone"]=$this->input->post("Rp_phone");
-			$insertresponsible["Rp_fax"]=$this->input->post("Rp_fax");
-			$insertresponsible["Rp_mail"]=$this->input->post("Rp_mail");
-			//$insertresponsible["Spf_id"]=$this->input->post("Spf_id");
-
-
+			
 			$insertCompany=array();
 			$insertCompany["C_address"]=$this->input->post("C_address");
 			$insertCompany["C_company_type"]=$this->input->post("C_company_type");
@@ -43,8 +32,8 @@ class Frcoresearchplatform extends CI_Controller {
 
 
 			$insertService=array();
-			$insertService["S_no_emp_total"]=$this->input->post("S_no_emp_total");
-			$insertService["S_main_pro1"]=$this->input->post("S_main_pro1");
+			$insertService["Co_no_emp_total"]=$this->input->post("Co_no_emp_total");
+			$insertService["Co_main_pro1"]=$this->input->post("Co_main_pro1");
 			$insertService["Spf_id"]='2';
 
 
@@ -122,7 +111,6 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertbudgetinvest["Bg_in_sum4"]=$this->input->post("Bg_in_sum4");
 			
 
-			
 			$insertcoresearch=array();
 			$insertcoresearch["Co_id"]=$this->input->post("random");
 			$insertcoresearch["Co_date"]=$this->input->post("Co_date");
@@ -137,6 +125,8 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertcoresearch["Co_dem"]=$this->input->post("Co_dem");
 			$insertcoresearch["Co_agreement"]=$this->input->post("Co_agreement");	
 			$insertcoresearch["Spf_id"]='2';
+			$insertcoresearch["Co_status"]="รอดำเนินการ";
+			
 
 
 			$path = "File/CoresearchFile";
@@ -159,6 +149,16 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertFile["F_3"]=$_FILES["F_3"]["name"];
 			$insertFile["F_4"]=$_FILES["F_4"]["name"];
 			$insertFile["Spf_id"]='2';
+
+			$insertresponsible=array();
+			$insertresponsible["Rp_name"]=$this->input->post("Rp_name");
+			$insertresponsible["Rp_position"]=$this->input->post("Rp_position");
+			$insertresponsible["Rp_institute"]=$this->input->post("Rp_institute");
+			$insertresponsible["Rp_address"]=$this->input->post("Rp_address");
+			$insertresponsible["Rp_phone"]=$this->input->post("Rp_phone");
+			$insertresponsible["Rp_fax"]=$this->input->post("Rp_fax");
+			$insertresponsible["Rp_mail"]=$this->input->post("Rp_mail");
+			//$insertresponsible["Spf_id"]=$this->input->post("Spf_id");
 
 
 			$this->load->view('frontend/recaptchalib');
@@ -193,128 +193,68 @@ class Frcoresearchplatform extends CI_Controller {
 				redirect('frontend/frcoresearchplatform', 'refresh');
 
 			}else {
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
-
+				
             	//print_r($C_id);
             	//die(); //ทำแค่ถึงตรงนี้
 				//print_r($this->db->last_query());
 
-				
-				$this->db->insert('responsible_person', $insertresponsible);
-				$objQuery1 = sqlsrv_query($insertresponsible);
-				if(!$objQuery1)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertresponsible."]";
-					exit();
-					echo "1";
-				}
-
 				$this->db->insert('company', $insertCompany);
-				$objQuery2 = mssql_query($insertCompany);
-				if(!$objQuery2)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertCompany."]";
-					exit();
-					echo "2";
-				}
-
+				
+				$C_id = $this->db->insert_id();
+            	$insertData["C_id"] = $C_id;
 				$this->db->insert('contact_person', $insertData);
-				$objQuery3 = mssql_query($insertData);
-				if(!$objQuery3)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertData."]";
-					exit();
-					echo "4";
-				}
 
-				$this->db->insert('file', $insertFile);
-				$objQuery4 = mssql_query($insertFile);
-				if(!$objQuery4)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertFile."]";
-					exit();
-				}
+				$P_id = $this->db->insert_id();
+
+				$this->db->insert('co_company', $insertService);
+
+				$Co_com_id = $this->db->insert_id();
 
 				$this->db->insert('plan', $insertplan);
-				$objQuery5 = mssql_query($insertplan);
-				if(!$objQuery5)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertplan."]";
-					exit();
-					echo 1;
-				}
+
+				$Pl_id = $this->db->insert_id();
 
 				$this->db->insert('budget_action', $insertbudgetaction);
-				$objQuery6 = mssql_query($insertbudgetaction);
-				if(!$objQuery6)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertbudgetaction."]";
-					exit();
-					echo 1;
-				}
+
+				$Bg_id = $this->db->insert_id();
 
 				$this->db->insert('budget_invest', $insertbudgetinvest);
-				$objQuery7 = mssql_query($insertbudgetinvest);
-				if(!$objQuery7)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertbudgetinvest."]";
-					exit();
-					echo 1;
-				}
-	
 
-				$C_id = $this->db->insert_id();
-				$insertService["C_id"] = $C_id;
-				$P_id = $this->db->insert_id();
-				$insertService["P_id"] = $P_id;
-				$F_id = $this->db->insert_id();
-				$insertService["F_id"] = $F_id;
-				$this->db->insert('service', $insertService);
-				$objQuery8 = mssql_query($insertService);
-				if(!$objQuery8)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertService."]";
-					exit();
-				}
-
-
-				$insertcoresearch["C_id"] = $C_id;
-				$insertcoresearch["P_id"] = $P_id;
-				$insertcoresearch["F_id"] = $F_id;
-				$Rp_id = $this->db->insert_id();
-				$insertcoresearch["Rp_id"] = $Rp_id;
 				$Bg_in_id = $this->db->insert_id();
-				$insertcoresearch["Bg_in_id"] = $Bg_in_id;
-				$Pl_id = $this->db->insert_id();
+
+				$this->db->insert('file', $insertFile);
+
+				$F_id = $this->db->insert_id();
+
+				$this->db->insert('responsible_person', $insertresponsible);
+
+				$Rp_id = $this->db->insert_id();
+			
+			
+				$insertcoresearch["C_id"] = $C_id;
+	
+				$insertcoresearch["P_id"] = $P_id;
+
+				$insertcoresearch["Co_com_id"] = $Co_com_id;
+
 				$insertcoresearch["Pl_id"] = $Pl_id;
-				$Bg_id = $this->db->insert_id();
+
 				$insertcoresearch["Bg_id"] = $Bg_id;
+
+				$insertcoresearch["Bg_in_id"] = $Bg_in_id;
+
+				$insertcoresearch["F_id"] = $F_id;
+
+				
+				$insertcoresearch["Rp_id"] = $Rp_id;
+
 				$this->db->insert('co-research_irct', $insertcoresearch);
-				$objQuery9 = mssql_query($insertcoresearch);
-				if(!$objQuery9)
-				{
-					mssql_query("ROLLBACK"); 
-					echo "Error Save [".$insertcoresearch."]";
-					exit();
-				}
-				//**** Commit Transaction ****//
-				if(($objQuery1) and ($objQuery2) and ($objQuery3) and ($objQuery4) and ($objQuery5) and ($objQuery6) and ($objQuery7) and ($objQuery8) and ($objQuery9))
-				{
-					mssql_query("COMMIT"); 
-				}
 
-				//mssql_close($objConnect);
+            	//die(); //ทำแค่ถึงตรงนี้
 
-				redirect('frontend/frserviceplatform', 'refresh');
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
+				redirect('frontend/frcoresearchplatform', 'refresh');
 		}
 	}
 

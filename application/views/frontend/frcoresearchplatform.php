@@ -55,7 +55,7 @@
 								<br>
 								ชื่อผู้รับผิดชอบ: <input type="text" name="Rp_name" size="23"><b style="color:red;"> *</b>&nbsp;&nbsp;ตำแหน่ง: <input type="text" name="Rp_position" size="23"><b style="color:red;"> *</b> 
 								หน่วยงานรับผิดชอบ: <input type="tel" name="Rp_institute" size="20"><b style="color:red;"> *</b>  เบอร์โทรศัพท์: <input type="tel" name="Rp_phone" size="20"><b style="color:red;"> *</b> <br>
-								แฟกซ์: <input type="email" name="Rp_phone" size="30"> อีเมล์: <input type="email" name="Rp_mail" size="30"> <br>
+								แฟกซ์: <input type="tel" name="Rp_phone" size="30"> อีเมล์: <input type="email" name="Rp_mail" size="30"> <br>
 								ที่อยู่: <textarea name="Rp_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea><br><br>
 							</td>
 						</tr>
@@ -76,7 +76,7 @@
 							<td >
 								<br>
 								ประเภทนิติบุคคล: <input type="text" name="C_company_type" size="22"><b style="color:red;"> *</b>&nbsp;&nbsp; ทุนจดทะเบียน: <input type="text" name="C_investment" size="20"> <br>
-								จำนวนพนักงาน: <input type="text" name="S_no_emp_total" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="S_main_pro1" size="20"> <br>
+								จำนวนพนักงาน: <input type="text" name="Co_no_emp_total" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="Co_main_pro1" size="20"> <br>
 								ที่อยู่: <textarea name="C_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea> <br>
 								ผู้ติดต่อประสานงาน: <input type="text" name="P_name" size="16"><b style="color:red;"> *</b> เบอร์ผู้ติดต่อประสานงาน: <input type="tel" name="P_phone" size="16"><b style="color:red;"> *</b> <br><br><br>
 							</td>
