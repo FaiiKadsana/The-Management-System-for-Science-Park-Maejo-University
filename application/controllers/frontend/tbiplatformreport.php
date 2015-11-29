@@ -8,8 +8,22 @@ class Tbiplatformreport extends CI_Controller {
 		//$this->load->library('session');
 
 	}
-	public function index(){
+	public function index($Tbi_id){
+
+		$this->db->select('*');
+		$this->db->join('tbi_person','tbi_person.Tbi_id= tbi.Tbi_id');
+		$this->db->join('tbi_person1','tbi_person1.Tbi_id1 = tbi.Tbi_id1');
+		$this->db->join('tbi_business','tbi_business.B_id = tbi.B_id');
+		$this->db->join('tbi_service','tbi_service.Tbi_id2 = tbi.Tbi_id2');
+		$this->db->where("Tbi_id",$Tbi_id);
+	
+		$service1 = $this->db->get('tbi');
 		
+		//print_r ($this->db->last_query());
+
+		$data['tbi'] = $service1->result();
+
+		$data['action']=site_url('frontend/tbiplatformreport/index/');		
 		$this->load->view('frontend/tbiplatformreport');
 		$this->load->view('frontend/script');	
 	

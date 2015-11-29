@@ -1,4 +1,6 @@
+<body onclick="window.print()">
 
+<?php  foreach ($tbi as $rowstbi) { ?>
 <div class="row">
 	<div class="col-sm-12">
 		<center>
@@ -535,3 +537,5 @@
 
 	</div>
 </div>
+<?php } ?>
+</body>
