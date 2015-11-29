@@ -26,6 +26,17 @@
 			</div>
 		<?php } ?>
 	</div>
+	<div class="row">
+		<center>
+			<div class="paginationnext" >
+				<div class="col-md-12" >
+					<ul class="paginationnext" >
+						<?php echo $page; ?>
+					<ul>
+				</div>
+			</div>  
+		</center>
+	</div>
 </div>
 </div>
 

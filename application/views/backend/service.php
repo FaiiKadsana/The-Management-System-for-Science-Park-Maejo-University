@@ -54,8 +54,7 @@
       <div class="panel-body">
        <table class="table table-striped">
 
-<?php if (empty($keyword1)||empty($keyword)) { 
-   echo '1' ; ?>
+    <?php if (empty($keyword1)) { ?>
 
        <tr class="bg-success">
          <th width="15%">เลขที่แบบฟอร์ม</th>
@@ -81,8 +80,7 @@
        
          <?php } ?>
 
-      <?php }else if ($keyword1||$keyword){
-       echo '2' ;  ?>
+      <?php }else{ ;?>
 
        <tr class="bg-success">
        <th width="15%">เลขที่แบบฟอร์ม</th>
@@ -110,6 +108,19 @@
 
 </div>
 </div>
+
+<div class="row">
+  <center>
+    <div class="paginationnext" >
+      <div class="col-md-12" >
+        <ul class="paginationnext" >
+          <?php echo $page; ?>
+          <ul>
+          </div>
+        </div>  
+      </center>
+    </div>
+    
 </div>
 </div>
 

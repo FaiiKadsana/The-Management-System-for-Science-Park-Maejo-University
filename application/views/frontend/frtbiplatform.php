@@ -472,7 +472,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="3" align="left">
+							<td colspan="3" align="left" >
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การให้บริการข้อมูล"> การให้บริการข้อมูล<br>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การสืบค้นข้อมูลทรัพย์สินทางปัญญา"> การสืบค้นข้อมูลทรัพย์สินทางปัญญา<br>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การจดทะเบียนทรัพย์สินทางปัญญา"> การจดทะเบียนทรัพย์สินทางปัญญา<br>
@@ -483,9 +483,9 @@
 							</td>
 						</tr>
 						<tr>
-							<td colspan="3" align="center">
+							<td colspan="3" align="center" >
 								<br>
-								<table border="1" width="80%">
+								<table border="1" width="80%" >
 									<tr>
 										<td colspan="3" align="center">
 											<p><b>คำรับรองของผู้สมัคร</b> <b style="color:red;"> *</b>  </p>
@@ -510,10 +510,8 @@
 									</tr>
 									<br>
 								</table>
-
 							</td>
 						</tr>
-
 						<tr>
 							<td colspan="3" align="center">
 								<br>
@@ -521,7 +519,7 @@
 								<table border="1" width="80%">
 									<tr>
 										<td colspan="3" align="center">
-											<p><b>สำหรับเจ้าหน้าที่</b> <b style="color:red;"> *</b>  </p>
+											<p><b>สำหรับเจ้าหน้าที่</b> <b style="color:red;"> *</b></p>
 											<table>
 												<tr>
 													<td colspan="2" align="left">
@@ -550,7 +548,6 @@
 										</td>
 									</tr>
 								</table>
-
 							</td>
 						</tr>
 						<tr>
@@ -559,7 +556,7 @@
 								<table border="1" width="80%">
 									<tr>
 										<td colspan="3" align="center">
-											<p><b>แนวปฏิบัติของการบ่มเพาะผู้ประกอบการ</b> <b style="color:red;"> *</b>  </p>
+											<p><b>แนวปฏิบัติของการบ่มเพาะผู้ประกอบการ</b></p>
 											<table>
 												<tr>
 													<td colspan="3" align="left">

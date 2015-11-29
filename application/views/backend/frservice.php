@@ -40,7 +40,7 @@
       <div class="col-sm-12 ">
 
         <center>
-         <table  width="70%" >
+         <table  width="80%" >
           <tr>
             <td width="15%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='80%' height='20%'></td>
             <td width="60%" align="center">
@@ -63,43 +63,43 @@
             <td colspan="2" > </td>
           </tr>
           <tr>
-            <td colspan="3"  align="center"><br>
-              ชื่อ: <select name="P_title"> 
+            <td colspan="3"  align="left"><br>
+              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <select name="P_title"> 
               <option value="นาย">นาย</option>
               <option value="นาง">นาง</option>
               <option value="นางสาว">นางสาว</option>
             </select><b style="color:red;"> *</b>
-            &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30" name="P_name" ><b style="color:red;"> *</b>
+            &nbsp;&nbsp;<input type="text" size="30" name="P_name" ><b style="color:red;"> *</b>
             &nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="P_lastname" ><b style="color:red;"> *
           </td>
         </tr>
         <tr>
-          <td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
+          <td  colspan="3" align="left">
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
             &nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ><b style="color:red;"> *</b></td>
           </tr>
           <tr>
-            <td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
-              &nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ><b style="color:red;"> *</b></td>
+            <td colspan="3"  align="left">
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;เเบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
+            &nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ><b style="color:red;"> *</b></td>
             </tr>
             <tr>
               <td  align="left"> 
                 <p><b><u>ข้อมูลทางธุรกิจ</u></b></p>
               </td>
-              <td colspan="2" > </td>
+              <td colspan="2" ></td>
             </tr>
             <tr>
-              <td colspan="3" align="center">
-                ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b>
-                &nbsp;ที่อยู่: <textarea name="C_address" cols="60" rows="3" placeholder="ที่อยู่"></textarea>
-
-
+              <td colspan="3" align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b>
+                &nbsp;&nbsp;ที่อยู่: <textarea name="C_address" cols="50" rows="3" placeholder="ที่อยู่"></textarea>
               </td>
             </tr>
             <tr>
-              <td colspan="3" align="center">
-                โทรศัพท์: <input type="text" size="20" name="C_phone" ><b style="color:red;"> *</b>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="C_fax" >
-                &nbsp;&nbsp;&nbsp;Website: <input type="text" size="30" name="C_website" >
+              <td colspan="3" align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;โทรศัพท์: <input type="text" size="20" name="C_phone" ><b style="color:red;"> *</b>
+                &nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="C_fax" >
+                &nbsp;&nbsp;Website: <input type="text" size="25" name="C_website" >
               </td>
             </tr>
             <tr>
