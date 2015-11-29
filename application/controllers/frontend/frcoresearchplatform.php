@@ -117,6 +117,7 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertcoresearch["Co_date"]=$this->input->post("Co_date");
 			$insertcoresearch["Co_name_pro"]=$this->input->post("Co_name_pro");
 			$insertcoresearch["Co_secter"]=$this->input->post("Co_secter");
+			$insertcoresearch["Co_secter_etc"]=$this->input->post("Co_secter_etc");
 			$insertcoresearch["Co_origin"]=$this->input->post("Co_origin");
 			$insertcoresearch["Co_objective"]=$this->input->post("Co_objective");
 			$insertcoresearch["Co_reason"]=$this->input->post("Co_reason");

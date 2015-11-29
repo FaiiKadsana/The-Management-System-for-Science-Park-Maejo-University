@@ -46,7 +46,7 @@
 						<tr>
 							<td width="30%">2.กลุ่มอุตสาหกรรม </td>
 							<td >
-								<input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="Others"> Others ระบุ <input type="text" name="" size="15"><b style="color:red;"> *</b> 
+								<input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="Others"> Others ระบุ <input type="text" name="Co_secter_etc" size="15"><b style="color:red;"> *</b> 
 							</td>
 						</tr>
 						<tr>

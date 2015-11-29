@@ -7,7 +7,7 @@
 			<table width="100%">
 				<tr>
 					<td width="5%"></td>
-					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
+					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม.....<?php echo $rowservice->S_id;?>....</td>
 				</tr>
 			</table>
 		</center>
@@ -134,7 +134,7 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						จำนวนลูกจ้างทั้งหมด......<?php echo $rowservice->S_no_emp_total;?>..........&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;แบ่งเป็นลูกค้าปรจำ.........<?php echo $rowservice->S_no_emp_reg;?>.......&nbsp;&nbsp;อัตรา<br>ลูกจ้างชั่วคราว.......<?php echo $rowservice->S_no_emp_tem;?>.......&nbsp;&nbsp;อัตรา
+						จำนวนลูกจ้างทั้งหมด..<?php echo $rowservice->S_no_emp_total;?>..&nbsp;&nbsp;อัตรา&nbsp;&nbsp;&nbsp;&nbsp;แบ่งเป็นลูกค้าปรจำ..<?php echo $rowservice->S_no_emp_reg;?>..&nbsp;&nbsp;อัตรา&nbsp;&nbsp;ลูกจ้างชั่วคราว..<?php echo $rowservice->S_no_emp_tem;?>..&nbsp;&nbsp;อัตรา
 					</td>
 				</tr>
 				<tr>
