@@ -7,7 +7,7 @@
 			<table width="55%">
 				<tr>
 					<td width="20%"></td>
-					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
+					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม...........<?php echo $row->Co_id;?>......</td>
 				</tr>
 			</table>
 		</center>
@@ -105,7 +105,7 @@
 						<td >
 
 							<center>
-								<br>
+								
 								<table border="1" width="100%">
 									<tr>
 										<th rowspan="2" align="center">กิจกรรม</th>
@@ -174,7 +174,7 @@
 										<td align="center"><?php echo $row->Pl_month6;?></td>
 									</tr>
 								</table>
-								<br>
+								
 							</center>
 
 						</td>
@@ -189,7 +189,7 @@
 
 					<tr>
 						<td colspan="2" width="30%" >13.งบประมาณโครงการ 
-							<br><br>
+							<br>
 							<table  border="1" width="100%">
 								<tr>
 									<th rowspan="2" align="center" width="20%">กิจกรรม</th>
@@ -279,9 +279,9 @@
 									<th><?php echo $row->Bg_in_sum4;?></th>
 								</tr>
 							</table>
-							<br>
+							
 							<p style="color:red;">*หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 50% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 50%</p>
-							<br>
+							
 						</td>	
 					</tr>
 				</table>
