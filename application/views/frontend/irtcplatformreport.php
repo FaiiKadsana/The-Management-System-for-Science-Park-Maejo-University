@@ -1,17 +1,16 @@
 <body onclick="window.print()">
 
-	<?php  foreach ($coresearch_irct as $row) { ?>
-	<div class="row">
-		<div class="col-sm-12">
-			<center>
-				<table width="100%">
-					<tr>
-						<td width="20%"></td>
-						<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม.......<?php echo $row->Co_id;?>.....</td>
-					</tr>
-				</table>
-			</center>
-		</div>
+<?php  foreach ($irct as $row) { ?>
+<div class="row">
+	<div class="col-sm-12">
+		<center>
+			<table width="55%">
+				<tr>
+					<td width="20%"></td>
+					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
+				</tr>
+			</table>
+		</center>
 	</div>
 
 	<div class="row fromfont">
@@ -285,9 +284,6 @@
 							<br>
 						</td>	
 					</tr>
-
-
-
 				</table>
 				<br><br><br><br><br><br>
 				<table width="90%" border="1">
@@ -317,5 +313,5 @@
 
 		</div>
 	</div>
-	<?php } ?>
+<?php } ?>
 </body>
