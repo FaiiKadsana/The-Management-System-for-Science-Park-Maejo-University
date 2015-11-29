@@ -1,4 +1,5 @@
 <?php defined ('BASEPATH') OR exit ('No direct script access allwed');
+header("Content-Type: text/html; charset=utf-8");
 
 class Frtbiplatform extends CI_Controller {
 
@@ -58,7 +59,7 @@ class Frtbiplatform extends CI_Controller {
 			$file = iconv("UTF-8", "TIS-620", $_FILES["Tbi_picture"]["name"]);
 			$file1 = iconv("UTF-8", "TIS-620", $_POST["Tbi_name1"]);
 
-			$path = "asset\img\Tbi";
+			$path = "asset\img\TBIPerson";
 			if(!@mkdir($path,0,true)){}else{ };
 			chmod($path, 0777);	
 			move_uploaded_file($_FILES["Tbi_picture"]["tmp_name"],$path.'/'.$file1.'_'.$file);
@@ -112,7 +113,7 @@ class Frtbiplatform extends CI_Controller {
 			$file3 = iconv("UTF-8", "TIS-620", $_FILES["F_3"]["name"]);
 			$file4 = iconv("UTF-8", "TIS-620", $_FILES["F_4"]["name"]);
 
-			$path = "File/TbiFile";
+			$path = "File/TBIFile";
 			if(!@mkdir($path,0,true)){}else{ };
 			chmod($path, 0777);	
 			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file1);
@@ -121,10 +122,10 @@ class Frtbiplatform extends CI_Controller {
 			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file4);
 
 			$insertFile=array();
-			$insertFile["F_1"]=$_FILES["F_1"]["name"];
-			$insertFile["F_2"]=$_FILES["F_2"]["name"];
-			$insertFile["F_3"]=$_FILES["F_3"]["name"];
-			$insertFile["F_4"]=$_FILES["F_4"]["name"];
+			$insertFile["F_1"]=$_POST["random"].'_'.$_FILES["F_1"]["name"];
+			$insertFile["F_2"]=$_POST["random"].'_'.$_FILES["F_2"]["name"];
+			$insertFile["F_3"]=$_POST["random"].'_'.$_FILES["F_3"]["name"];
+			$insertFile["F_4"]=$_POST["random"].'_'.$_FILES["F_4"]["name"];
 		
 
 			$insertTbi=array();

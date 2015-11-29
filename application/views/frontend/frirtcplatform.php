@@ -32,7 +32,7 @@
 					<p>เพื่อขอรับการสนับสนุนตามกลไกอุทยานวิทยาศาสตร์ภาคเหนือ</p>
 					<p>ปีงบประมาณ 2558</p>
 					<br>
-				<table  width="75%" >
+				<table  width="60%" >
                 <tr>
                   <td width="30%" colspan="2"> 
                     วันที่:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"  name="Co_date" ><b style="color:red;"> *</b>
@@ -47,16 +47,16 @@
                   <tr>
                     <td width="30%">2.กลุ่มอุตสาหกรรม </td>
                     <td >
-                      <input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="Others"> Others ระบุ <input type="text" name="" size="15"><b style="color:red;"> *</b> 
+                      <input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="Others"> Others ระบุ <input type="text" name="Co_secter_etc" size="15"><b style="color:red;"> *</b> 
                     </td>
                   </tr>
                   <tr>
                     <td width="30%">3.ผู้รับผิดชอบโครงการและความเชี่ยวชาญ </td>
                     <td >
                       <br>
-                      ชื่อผู้รับผิดชอบ: <input type="text" name="Rp_name" size="23"><b style="color:red;"> *</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" name="Rp_position" size="23"><b style="color:red;"> *</b> 
+                      ชื่อผู้รับผิดชอบ: <input type="text" name="Rp_name" size="23"><b style="color:red;"> *</b>&nbsp;&nbsp;ตำแหน่ง: <input type="text" name="Rp_position" size="23"><b style="color:red;"> *</b> 
                       หน่วยงานรับผิดชอบ: <input type="tel" name="Rp_institute" size="20"><b style="color:red;"> *</b>  เบอร์โทรศัพท์: <input type="tel" name="Rp_phone" size="20"><b style="color:red;"> *</b> <br>
-                      แฟกซ์: <input type="email" name="Rp_phone" size="30"> อีเมล์: <input type="email" name="Rp_mail" size="30"> <br>
+                      แฟกซ์: <input type="tel" name="Rp_phone" size="30"> อีเมล์: <input type="email" name="Rp_mail" size="30"> <br>
                       ที่อยู่: <textarea name="Rp_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea><br><br>
                     </td>
                   </tr>
@@ -76,6 +76,7 @@
                     <td width="30%">6.รายละเอียดผู้ประกอบการ</td>
                     <td >
                       <br>
+                      ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b><br>
                       ประเภทนิติบุคคล: <input type="text" name="C_company_type" size="22"><b style="color:red;"> *</b>&nbsp;&nbsp; ทุนจดทะเบียน: <input type="text" name="C_investment" size="20"> <br>
                       จำนวนพนักงาน: <input type="text" name="S_no_emp_total" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="S_main_pro1" size="20"> <br>
                       ที่อยู่: <textarea name="C_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea> <br>
@@ -198,7 +199,7 @@
                         <tr>
                           <th rowspan="2" align="center" width="20%">กิจกรรม</th>
                           <th rowspan="2"  align="center" width="30%">ค่าใช้จ่ายสนับสนุนโดยอุทยานฯ(ไม่เกิน 40%)</th>
-                          <th   align="center"width="30%">ค่าใช้จ่ายสนับสนุนโดยเอกชน(มากกว่าหรือเท่ากับ 60%)</th>
+                          <th align="center"width="30%">ค่าใช้จ่ายสนับสนุนโดยเอกชน(มากกว่าหรือเท่ากับ 60%)</th>
                           <th rowspan="2"  align="center">รวม(บาท)</th>
                         </tr>
                         <tr>
@@ -327,14 +328,22 @@
         </div>
       </div>
 <br><br>
+<form method="post" action="frcoresearchplatform.php" >
+  <center>
+    <?php
+    require_once('recaptchalib.php');
+    $publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; 
+    echo recaptcha_get_html($publickey);
+    ?>
+    <br>
+    <div class="form-group">
+      <br>
 
-        <center>
-          <div class="form-group">
-            <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
-            <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
-          </div>
-        </center>
+      <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
+      <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
+    </div>
+  </center>
+</form>
+</form>
 
-    </form>
-
-<br><br><br>
+<br><br>

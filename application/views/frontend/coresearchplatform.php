@@ -6,13 +6,13 @@
 <div class="row">
 	<div class="col-md-offset-3  col-sm-9">
 		<center>
-			<form id="" method="post" class="form-horizontal" action="">
+			<form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
 				<table >
 					<tr>
 						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="keyword"></td>
 						<td width="15%"><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
 						<td width="15%"><a href="<?php echo base_url("frontend/frcoresearchplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
-						<td><a target ="_blank" href="<?php echo base_url ("asset/form download/Co-research From.pdf")?>"><button class="btn btn-success" type="button" >ดาว์นโหลดแบบฟอร์ม</button></a></td>
+						<td><a target ="_blank" href="<?php echo base_url ("asset/form download/Co-research From.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
 					</tr>
 				</table>
 			</form>
@@ -46,9 +46,6 @@
 						<th width="20%">สถานะ</th>     
 						<th></th>
 					</tr>   
-
-					<!-- Show &Join table -->
-
 					<tr class="bg-success">
 						<td ><?php echo $row->Co_id; ?></td>
 						<td ><?php echo $row->C_name; ?></td>

@@ -12,22 +12,11 @@ class Frirtcplatform extends CI_Controller {
 		
 		$this->load->view('frontend/header');
 		$this->load->view('frontend/menu');
-
-			if( $_SERVER["REQUEST_METHOD"] == "POST")
-		{
+if( $_SERVER["REQUEST_METHOD"] == "POST"){
 			
-			$insertresponsible=array();
-			$insertresponsible["Rp_name"]=$this->input->post("Rp_name");
-			$insertresponsible["Rp_position"]=$this->input->post("Rp_position");
-			$insertresponsible["Rp_institute"]=$this->input->post("Rp_institute");
-			$insertresponsible["Rp_address"]=$this->input->post("Rp_address");
-			$insertresponsible["Rp_phone"]=$this->input->post("Rp_phone");
-			$insertresponsible["Rp_fax"]=$this->input->post("Rp_fax");
-			$insertresponsible["Rp_mail"]=$this->input->post("Rp_mail");
-			//$insertresponsible["Spf_id"]=$this->input->post("Spf_id");
-
-
+			
 			$insertCompany=array();
+			$insertCompany["C_name"]=$this->input->post("C_name");
 			$insertCompany["C_address"]=$this->input->post("C_address");
 			$insertCompany["C_company_type"]=$this->input->post("C_company_type");
 			$insertCompany["C_company_type_etc"]=$this->input->post("C_company_type_etc");
@@ -42,8 +31,8 @@ class Frirtcplatform extends CI_Controller {
 
 
 			$insertService=array();
-			$insertService["S_no_emp_total"]=$this->input->post("S_no_emp_total");
-			$insertService["S_main_pro1"]=$this->input->post("S_main_pro1");
+			$insertService["Co_no_emp_total"]=$this->input->post("Co_no_emp_total");
+			$insertService["Co_main_pro1"]=$this->input->post("Co_main_pro1");
 			$insertService["Spf_id"]='3';
 
 
@@ -126,6 +115,7 @@ class Frirtcplatform extends CI_Controller {
 			$insertcoresearch["Co_date"]=$this->input->post("Co_date");
 			$insertcoresearch["Co_name_pro"]=$this->input->post("Co_name_pro");
 			$insertcoresearch["Co_secter"]=$this->input->post("Co_secter");
+			$insertcoresearch["Co_secter_etc"]=$this->input->post("Co_secter_etc");
 			$insertcoresearch["Co_origin"]=$this->input->post("Co_origin");
 			$insertcoresearch["Co_objective"]=$this->input->post("Co_objective");
 			$insertcoresearch["Co_reason"]=$this->input->post("Co_reason");
@@ -135,7 +125,13 @@ class Frirtcplatform extends CI_Controller {
 			$insertcoresearch["Co_dem"]=$this->input->post("Co_dem");
 			$insertcoresearch["Co_agreement"]=$this->input->post("Co_agreement");	
 			$insertcoresearch["Spf_id"]='3';
-
+			$insertcoresearch["Co_status"]="รอดำเนินการ";
+			
+			$file1 = iconv("UTF-8", "TIS-620", $_FILES["F_1"]["name"]);
+			$file2 = iconv("UTF-8", "TIS-620", $_FILES["F_2"]["name"]);
+			$file3 = iconv("UTF-8", "TIS-620", $_FILES["F_3"]["name"]);
+			$file4 = iconv("UTF-8", "TIS-620", $_FILES["F_4"]["name"]);
+			
 
 			$path = "File/IRTCFile";
 			if(!@mkdir($path,0,true)){}else{ };
@@ -145,18 +141,37 @@ class Frirtcplatform extends CI_Controller {
 			// $F_1 = pathinfo($_FILES["F_1"]["name"], PATHINFO_EXTENSION);
 			//$is_file_upload = date('YmdHis') .".". $ext;
 
-			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_1"]["name"]);
+			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file1);
 			// echo $_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_1"]["name"];
-			move_uploaded_file($_FILES["F_2"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_2"]["name"]);
-			move_uploaded_file($_FILES["F_3"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_3"]["name"]);
-			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_4"]["name"]);
+			move_uploaded_file($_FILES["F_2"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file2);
+			move_uploaded_file($_FILES["F_3"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file3);
+			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file4);
 
 			$insertFile=array();
-			$insertFile["F_1"]=$_FILES["F_1"]["name"];
-			$insertFile["F_2"]=$_FILES["F_2"]["name"];
-			$insertFile["F_3"]=$_FILES["F_3"]["name"];
-			$insertFile["F_4"]=$_FILES["F_4"]["name"];
+			$insertFile["F_1"]=$_POST['random'].'_'.$_FILES["F_1"]["name"];
+			$insertFile["F_2"]=$_POST['random'].'_'.$_FILES["F_2"]["name"];
+			$insertFile["F_3"]=$_POST['random'].'_'.$_FILES["F_3"]["name"];
+			$insertFile["F_4"]=$_POST['random'].'_'.$_FILES["F_4"]["name"];
 			$insertFile["Spf_id"]='3';
+
+			$insertresponsible=array();
+			$insertresponsible["Rp_name"]=$this->input->post("Rp_name");
+			$insertresponsible["Rp_position"]=$this->input->post("Rp_position");
+			$insertresponsible["Rp_institute"]=$this->input->post("Rp_institute");
+			$insertresponsible["Rp_address"]=$this->input->post("Rp_address");
+			$insertresponsible["Rp_phone"]=$this->input->post("Rp_phone");
+			$insertresponsible["Rp_fax"]=$this->input->post("Rp_fax");
+			$insertresponsible["Rp_mail"]=$this->input->post("Rp_mail");
+			//$insertresponsible["Spf_id"]=$this->input->post("Spf_id");
+
+
+			$this->load->view('frontend/recaptchalib');
+			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
+			$resp = recaptcha_check_answer ($privatekey,
+				$_SERVER["REMOTE_ADDR"],
+				$_POST["recaptcha_challenge_field"],
+				$_POST["recaptcha_response_field"]);
+
 
 			/*if($insertresponsible["Co_date"]=="" || $insertresponsible["Co_name_pro"]=="" || $insertresponsible["Co_secter"]=="" 
 				|| $insertresponsible["Co_origin"]=="" || $insertresponsible["Co_objective"]=="" ){
@@ -179,53 +194,71 @@ class Frirtcplatform extends CI_Controller {
 			}else*/ if (!$resp->is_valid) {
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-				redirect('frontend/frirtcplatform', 'refresh');
+				redirect('frontend/frcoresearchplatform', 'refresh');
 
 			}else {
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
-
+				
             	//print_r($C_id);
             	//die(); //ทำแค่ถึงตรงนี้
 				//print_r($this->db->last_query());
 
-				
-				$this->db->insert('responsible_person', $insertresponsible);
-			
 				$this->db->insert('company', $insertCompany);
-			
+				
+				$C_id = $this->db->insert_id();
+            	$insertData["C_id"] = $C_id;
 				$this->db->insert('contact_person', $insertData);
 
-				$this->db->insert('file', $insertFile);
+				$P_id = $this->db->insert_id();
+
+				$this->db->insert('co_company', $insertService);
+
+				$Co_com_id = $this->db->insert_id();
 
 				$this->db->insert('plan', $insertplan);
 
+				$Pl_id = $this->db->insert_id();
+
 				$this->db->insert('budget_action', $insertbudgetaction);
 
-				$this->db->insert('budget_invest', $insertbudgetinvest);
-	
-				$C_id = $this->db->insert_id();
-				$insertService["C_id"] = $C_id;
-				$P_id = $this->db->insert_id();
-				$insertService["P_id"] = $P_id;
-				$F_id = $this->db->insert_id();
-				$insertService["F_id"] = $F_id;
-				$this->db->insert('service', $insertService);
-
-				$insertcoresearch["C_id"] = $C_id;
-				$insertcoresearch["P_id"] = $P_id;
-				$insertcoresearch["F_id"] = $F_id;
-				$Rp_id = $this->db->insert_id();
-				$insertcoresearch["Rp_id"] = $Rp_id;
-				$Bg_in_id = $this->db->insert_id();
-				$insertcoresearch["Bg_in_id"] = $Bg_in_id;
-				$Pl_id = $this->db->insert_id();
-				$insertcoresearch["Pl_id"] = $Pl_id;
 				$Bg_id = $this->db->insert_id();
-				$insertcoresearch["Bg_id"] = $Bg_id;
-				$this->db->insert('co-research_irct', $insertcoresearch);
 
-				redirect('frontend/frirtcplatform', 'refresh');
+				$this->db->insert('budget_invest', $insertbudgetinvest);
+
+				$Bg_in_id = $this->db->insert_id();
+
+				$this->db->insert('file', $insertFile);
+
+				$F_id = $this->db->insert_id();
+
+				$this->db->insert('responsible_person', $insertresponsible);
+
+				$Rp_id = $this->db->insert_id();
+			
+			
+				$insertcoresearch["C_id"] = $C_id;
+	
+				$insertcoresearch["P_id"] = $P_id;
+
+				$insertcoresearch["Co_com_id"] = $Co_com_id;
+
+				$insertcoresearch["Pl_id"] = $Pl_id;
+
+				$insertcoresearch["Bg_id"] = $Bg_id;
+
+				$insertcoresearch["Bg_in_id"] = $Bg_in_id;
+
+				$insertcoresearch["F_id"] = $F_id;
+
+				
+				$insertcoresearch["Rp_id"] = $Rp_id;
+
+				$this->db->insert('coresearch_irct', $insertcoresearch);
+
+            	//die(); //ทำแค่ถึงตรงนี้
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
+				redirect('frontend/frcoresearchplatform', 'refresh');
 		}
 	}
 
