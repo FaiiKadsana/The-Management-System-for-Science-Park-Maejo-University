@@ -129,7 +129,11 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertcoresearch["Spf_id"]='2';
 			$insertcoresearch["Co_status"]="รอดำเนินการ";
 			
-
+			$file1 = iconv("UTF-8", "TIS-620", $_FILES["F_1"]["name"]);
+			$file2 = iconv("UTF-8", "TIS-620", $_FILES["F_2"]["name"]);
+			$file3 = iconv("UTF-8", "TIS-620", $_FILES["F_3"]["name"]);
+			$file4 = iconv("UTF-8", "TIS-620", $_FILES["F_4"]["name"]);
+			
 
 			$path = "File/CoresearchFile";
 			if(!@mkdir($path,0,true)){}else{ };
@@ -139,11 +143,11 @@ class Frcoresearchplatform extends CI_Controller {
 			// $F_1 = pathinfo($_FILES["F_1"]["name"], PATHINFO_EXTENSION);
 			//$is_file_upload = date('YmdHis') .".". $ext;
 
-			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_1"]["name"]);
+			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file1);
 			// echo $_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_1"]["name"];
-			move_uploaded_file($_FILES["F_2"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_2"]["name"]);
-			move_uploaded_file($_FILES["F_3"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_3"]["name"]);
-			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$_FILES["F_4"]["name"]);
+			move_uploaded_file($_FILES["F_2"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file2);
+			move_uploaded_file($_FILES["F_3"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file3);
+			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file4);
 
 			$insertFile=array();
 			$insertFile["F_1"]=$_FILES["F_1"]["name"];

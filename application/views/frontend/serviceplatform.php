@@ -99,7 +99,7 @@ $(function() {
 					<tr class="bg-success">
 						<td ><?php echo $row->S_id; ?></td>
 						<td ><?php echo $row->C_name; ?></td>
-						<td ><?php echo $row->P_title , $row->P_name , $row->P_lastname ; ?> </td>
+						<td ><?php echo $row->P_title; ?><?php echo $row->P_name;?>&nbsp;<?php echo $row->P_lastname ; ?></td>
 						<td ><?php echo $row->S_date; ?></td>  
 						<td ><?php echo $row->S_status; ?></td>
 						<td><a target ="_blank" href="<?php echo base_url('frontend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	

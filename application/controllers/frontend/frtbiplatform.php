@@ -14,8 +14,6 @@ class Frtbiplatform extends CI_Controller {
 		$this->load->view('frontend/menu');
 
 
-
-
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
 		{
 
@@ -38,9 +36,9 @@ class Frtbiplatform extends CI_Controller {
 			$insertTbibusiness["B_emp_sum"]=$this->input->post("B_emp_sum");
 			$insertTbibusiness["B_source_etc"]=$this->input->post("B_source_etc");
 
-
 			$insertTbiperson=array();
-			$insertTbiperson["Tbi_picture"]=$_FILES["Tbi_picture"]["name"];
+			//$insertTbiperson["Tbi_picture"]=$_FILES["Tbi_picture"]["name"];
+			$insertTbiperson["Tbi_picture"]=$_POST["Tbi_name1"].'_'.$_FILES["Tbi_picture"]["name"];
 			$insertTbiperson["Tbi_title"]=$this->input->post("Tbi_title");
 			$insertTbiperson["Tbi_name1"]=$this->input->post("Tbi_name1");
 			$insertTbiperson["Tbi_lastname"]=$this->input->post("Tbi_lastname");
@@ -58,10 +56,12 @@ class Frtbiplatform extends CI_Controller {
 			$insertTbiperson["Tbi_mail"]=$this->input->post("Tbi_mail");
 
 			$file = iconv("UTF-8", "TIS-620", $_FILES["Tbi_picture"]["name"]);
+			$file1 = iconv("UTF-8", "TIS-620", $_POST["Tbi_name1"]);
+
 			$path = "asset\img\Tbi";
 			if(!@mkdir($path,0,true)){}else{ };
 			chmod($path, 0777);	
-			move_uploaded_file($_FILES["Tbi_picture"]["tmp_name"],$path.'/'.$_POST['Tbi_name1'].'_'.$file);
+			move_uploaded_file($_FILES["Tbi_picture"]["tmp_name"],$path.'/'.$file1.'_'.$file);
 			
 
 			$insertTbiperson1=array();
