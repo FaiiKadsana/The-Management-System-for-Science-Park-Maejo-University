@@ -51,7 +51,7 @@
 							<td colspan="2" > </td>
 						</tr>
 						<tr>
-							<td colspan="3"  align="center"><br>
+							<td colspan="3"  align="left"><br>
 								ชื่อ: <select name="P_title"> 
 								<option value="นาย">นาย</option>
 								<option value="นาง">นาง</option>
@@ -62,11 +62,11 @@
 						</td>
 					</tr>
 					<tr>
-						<td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
+						<td  colspan="3" align="left">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
 							&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ><b style="color:red;"> *</b></td>
 						</tr>
 						<tr>
-							<td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
+							<td colspan="3"  align="left">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
 								&nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ><b style="color:red;"> *</b></td>
 							</tr>
 							<tr>
@@ -76,7 +76,7 @@
 								<td colspan="2" > </td>
 							</tr>
 							<tr>
-								<td colspan="3" align="center">
+								<td colspan="3" align="left">
 									ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b>
 									&nbsp;ที่อยู่: <textarea name="C_address" cols="60" rows="3" placeholder="ที่อยู่"></textarea>
 									
@@ -84,7 +84,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="3" align="center">
+								<td colspan="3" align="left">
 									โทรศัพท์: <input type="text" size="20" name="C_phone" ><b style="color:red;"> *</b>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โทรสาร: <input type="text" size="20" name="C_fax" >
 									&nbsp;&nbsp;&nbsp;Website: <input type="text" size="30" name="C_website" >
@@ -182,7 +182,7 @@
 												<b>ผู้ขอรับบริการ</b>
 											</td>
 											<td align="center" colspan="2">
-												<input type="radio" name="S_comment" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล
+												<input type="radio" name="S_comment" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูลz
 												<input type="radio" name="S_comment" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
 											</td>
 										</tr>

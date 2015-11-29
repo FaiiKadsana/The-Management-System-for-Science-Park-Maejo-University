@@ -1,4 +1,6 @@
+<body onclick="window.print()">
 
+<?php  foreach ($service as $rowservice) { ?>
 <div class="row">
 	<div class="col-sm-12">
 		<center>
@@ -25,7 +27,7 @@
 			<table  width="55%" border="1">
 			<tr>
 				<td colspan="2">
-						&nbsp;&nbsp;&nbsp;&nbsp;วันที่....../................/........
+						&nbsp;&nbsp;&nbsp;&nbsp;วันที่...<?php echo $rowservice->P_lastname;?>...
 				</td>
 			</tr>
 				<tr>
@@ -274,3 +276,5 @@
 
 	</div>
 </div>
+<?php } ?>
+</body>

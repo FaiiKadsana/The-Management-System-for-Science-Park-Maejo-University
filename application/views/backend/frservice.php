@@ -63,7 +63,7 @@
             <td colspan="2" > </td>
           </tr>
           <tr>
-            <td colspan="3"  align="center"><br>
+            <td colspan="3"  align="left"><br>
               ชื่อ: <select name="P_title"> 
               <option value="นาย">นาย</option>
               <option value="นาง">นาง</option>
@@ -74,11 +74,11 @@
           </td>
         </tr>
         <tr>
-          <td  colspan="3" align="center">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
+          <td  colspan="3" align="left">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
             &nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ><b style="color:red;"> *</b></td>
           </tr>
           <tr>
-            <td colspan="3"  align="center">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
+            <td colspan="3"  align="left">เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
               &nbsp;&nbsp;&nbsp;E-mail: <input type="email" size="40" name="P_mail" ><b style="color:red;"> *</b></td>
             </tr>
             <tr>

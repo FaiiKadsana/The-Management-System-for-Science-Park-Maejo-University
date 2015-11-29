@@ -161,7 +161,7 @@
 								</td>
 								<td align="center" colspan="2">
 									<input type="radio" name="S_agreement" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล<br>
-									<input type="radio" name="S_agreement" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="S_agreement" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
 								</td>
 							</tr>
 						</table>
