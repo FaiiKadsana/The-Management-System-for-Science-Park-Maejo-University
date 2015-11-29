@@ -4,43 +4,43 @@
 <div class="row">
 	<div class="col-sm-12">
 		<center>
-			<table width="55%">
+			<table width="100%">
 				<tr>
 					<td width="20%"></td>
-					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม......................................</td>
+					<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม...<?php echo $rowtbi->Tbi_id3;?>...</td>
 				</tr>
 			</table>
 		</center>
 	</div>
 </div>
-
+<br>
 
 <div class="row">
 	<div class="col-sm-12 ">
 		<center>
 			<table  width="70%" >
 				<tr>
-					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/mju_logo.jpg") ?>' width='70%' ></td>
+					<td width="15%" align="center"><img src='<?php echo base_url("asset/images/mju_logo.jpg") ?>' width='30%'height='5%' ></td>
 					<td width="60%" align="center">
 						<p>โครงการการบ่มเพาะผู้ประกอบการเทคโนโลยี  มหาวิทยาลัยแม่โจ้</p>
 						<p>ภายใต้โครงการอุทยานวิทยาศาสตร์  มหาวิทยาลัยแม่โจ้</p>
 					</td>
-					<td width="25%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='70%' height='20%'></td>
+					<td width="25%" align="center"><img src='<?php echo base_url("asset/images/N.jpg") ?>' width='50%' height='15%'></td>
 				</tr>
 			</table>
 		</center>
-		<br>
+		
 
 		<center>
-			<table width="70%" >
+			<table width="100%" >
 
 				<tr>
-					<td colspan="2" align="right" width="%">
-						ใบสมัครรับบริการบ่มเพาะผู้ประกอบการเทคโนโลยี
+					<td colspan="2" align="center" width="%">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ใบสมัครรับบริการบ่มเพาะผู้ประกอบการเทคโนโลยี
 					</td>
 					<td >
 
-						<table border="1" width="30%" align="right">
+						<table border="1" width="60%" align="right">
 							<tr>
 								<td align="center">
 									<br>
@@ -54,9 +54,9 @@
 				</tr>
 				<tr>
 					<td colspan="2" align="left">
-						วันที่.........../.............../..........
+						วันที่......<?php echo $rowtbi->Tbi_date;?>......
 					</td>
-					<td align="right">เลขที่...............................</td>
+					<td align="right">เลขที่.....<?php echo $rowtbi->Tbi_id4;?>.....</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
@@ -65,36 +65,36 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						1.1  (นาย /นาง /นางสาว )	ชื่อ.....................................................................นามสกุล.............................................................................
+						1.1  <?php echo $rowtbi->Tbi_title;?>	ชื่อ...............<?php echo $rowtbi->Tbi_name1;?>.....................นามสกุล................<?php echo $rowtbi->Tbi_lastname;?>...................
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						1.2 เลขประจำตัวประชาชน...................................................................................................................................
+						1.2 เลขประจำตัวประชาชน.........................<?php echo $rowtbi->Tbi_code;?>.............................
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						1.3 เกิดวันที่..................................................................................................ปัจจุบันอายุ............................ ปี
+						1.3 เกิดวันที่...................<?php echo $rowtbi->Tbi_birthday;?>.....................................ปัจจุบันอายุ........<?php echo $rowtbi->Tbi_age;?>....... ปี
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
 						1.4 ชื้อชาติ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="1" value="ไทย"> ไทย  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_ethnicity" value="ไทย"> ไทย  
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="1" value="อื่นๆ"> อื่นๆ ระบุ
-						&nbsp;&nbsp;........................................ 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_ethnicity" value="อื่นๆ"> อื่นๆ ระบุ
+						&nbsp;&nbsp;..........<?php echo $rowtbi->Tbi_ethnicity_etc;?>........... 
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						1.5 ศาสนา&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="พุทธ"> พุทธ 
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="คริสต์"> คริสต์  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="อิสลาม"> อิสลาม  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="ฮินดู"> ฮินดู   
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="2" value="อื่นๆ"> อื่นๆ ระบุ
-						&nbsp;&nbsp;....................................................................................
+						1.5 ศาสนา&nbsp;&nbsp;<input type="radio" name="Tbi_nationality" value="พุทธ"> พุทธ 
+						&nbsp;&nbsp;<input type="radio" name="Tbi_nationality" value="คริสต์"> คริสต์  
+						&nbsp;&nbsp;<input type="radio" name="Tbi_nationality" value="อิสลาม"> อิสลาม  
+						&nbsp;&nbsp;<input type="radio" name="Tbi_nationality" value="ฮินดู"> ฮินดู   
+						&nbsp;&nbsp;<input type="radio" name="Tbi_nationality" value="อื่นๆ"> อื่นๆ ระบุ
+						&nbsp;&nbsp;..................<?php echo $rowtbi->Tbi_nationality_etc;?>.............................
 					</td>
 				</tr>
 				<tr>
@@ -104,13 +104,14 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="center">
-						ที่อยู่..............................................................................................................................................................................................................<br>
-						....................................................................................................................................................................................................................
+						ที่อยู่................<?php echo $rowtbi->Tbi_address;?>....................<br>
+						
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						1.7 โทรศัพท์ที่ติดต่อสะดวก..........................โทรสาร..................................มือถือ.................................E-mail.........................................................
+						1.7 โทรศัพท์ที่ติดต่อสะดวก....<?php echo $rowtbi->Tbi_tell;?>....โทรสาร...<?php echo $rowtbi->Tbi_fax;?>...มือถือ....<?php echo $rowtbi->Tbi_phone;?>....<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail..........<?php echo $rowtbi->Tbi_mail;?>.............
 					</td>
 				</tr>
 				<tr>
@@ -120,32 +121,32 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="3" value="สำเร็จการศึกษา"> สำเร็จการศึกษา เมื่อ ปี พ.ศ. ..............................................
-						สาขาวิชา.......................................สถาบัน.................................................<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_evidence_register_etc" value="สำเร็จการศึกษา"> สำเร็จการศึกษา เมื่อ ปี พ.ศ. ..........<?php echo $rowtbi->Tbi_year;?>..............
+						สาขาวิชา.....<?php echo $rowtbi->Tbi_major;?>.....สถาบัน.....<?php echo $rowtbi->Tbi_university;?>......<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="4" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="ปริญญาตรี"> ปริญญาตรี	<br>
+						<input type="radio" name="Tbi_degree" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_degree" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_degree" value="ปริญญาตรี"> ปริญญาตรี	<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="4" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="4" value="ปริญญาเอก"> ปริญญาเอก  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="4" value="อื่นๆ"> อื่นๆ ระบุ
-						&nbsp;&nbsp;.................................................
+						<input type="radio" name="Tbi_degree" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_degree" value="ปริญญาเอก"> ปริญญาเอก  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_degree" value="อื่นๆ"> อื่นๆ ระบุ
+						&nbsp;&nbsp;.......<?php echo $rowtbi->Tbi_degree_etc;?>........
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="3" value="กำลังศึกษา"> กำลังศึกษา ในชั้นปีที่ ...............................................
-						สาขาวิชา............................................สถาบัน...............................................<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_evidence_register_etc" value="กำลังศึกษา"> กำลังศึกษา ในชั้นปีที่ ........<?php echo $rowtbi->Tbi_year;?>.......
+						สาขาวิชา.........<?php echo $rowtbi->Tbi_major;?>...........สถาบัน........<?php echo $rowtbi->Tbi_university;?>.........<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="5" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="ปริญญาตรี"> ปริญญาตรี<br>
+						<input type="radio" name="Tbi_degree" value="มัธยมศึกษาตอนปลาย/ปวช."> มัธยมศึกษาตอนปลาย/ปวช. 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_degree" value="อนุปริญญา/ปวส./ปวท."> อนุปริญญา/ปวส./ปวท.  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_degree" value="ปริญญาตรี"> ปริญญาตรี<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="5" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="5" value="ปริญญาเอก"> ปริญญาเอก  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="5" value="อื่นๆ"> อื่นๆ ระบุ
-						&nbsp;&nbsp;......................................................
+						<input type="radio" name="Tbi_degree" value="ปริญญาโทหรือสูงกว่า"> ปริญญาโทหรือสูงกว่า     
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_degree" value="ปริญญาเอก"> ปริญญาเอก  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_degree" value="อื่นๆ"> อื่นๆ ระบุ
+						&nbsp;&nbsp;.........<?php echo $rowtbi->Tbi_degree_etc;?>.............
 					</td>
 				</tr>
 				<tr>
@@ -155,16 +156,16 @@
 				</tr>
 				<tr>
 					<td  colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="เพิ่งสำเร็จการศึกษา"> เพิ่งสำเร็จการศึกษา ไม่เกิน 1 ปี และยังหางานทำไม่ได้<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ไม่ได้ประกอบอาชีพใดๆ"> ไม่ได้ประกอบอาชีพใดๆ (เช่น ว่างงาน ลาออกจากงาน ถูกเลิกจ้าง เกษียณอายุ ปิดกิจการ สำเร็จการศึกษาเกิน 1ปี และยังหางานทำไม่ได้) <br>
-						&nbsp;&nbsp;&nbsp;&nbsp;มาเป็นเวลา.............................ปี<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="พนักงานประจำ/ลูกจ้างประจำ บริษัท">พนักงานประจำ/ลูกจ้างประจำ บริษัท.......................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;อยู่ในภาคธุรกิจใด(เลือกเพียงข้อเดียว)&nbsp;&nbsp;<input type="radio" name="7" value="การผลิต"> การผลิต&nbsp;&nbsp;<input type="radio" name="7" value="การค้า"> การค้า&nbsp;&nbsp;<input type="radio" name="7" value="การบริการ"> การบริการ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ข้าราชการ หรือพนักงานรัฐวิสาหกิจ สังกัด">ข้าราชการ หรือพนักงานรัฐวิสาหกิจ สังกัด.......................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ลูกจ้างรายวัน หรือรับจ้างทั่วไป"> ลูกจ้างรายวัน หรือรับจ้างทั่วไป<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ)"> ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ) โปรดระบุ ....................................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="ประกอบธุรกิจส่วนตัว"> ประกอบธุรกิจส่วนตัว หรือ เป็นเจ้าของกิจการ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="6" value="อื่นๆ"> อื่นๆ โปรดระบุ................................................................<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="เพิ่งสำเร็จการศึกษา"> เพิ่งสำเร็จการศึกษา ไม่เกิน 1 ปี และยังหางานทำไม่ได้<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="ไม่ได้ประกอบอาชีพใดๆ"> ไม่ได้ประกอบอาชีพใดๆ (เช่น ว่างงาน ลาออกจากงาน ถูกเลิกจ้าง เกษียณอายุ ปิดกิจการ สำเร็จการศึกษาเกิน 1ปี และยังหางานทำไม่ได้) <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;มาเป็นเวลา......<?php echo $rowtbi->Tbi_notwork_time;?>.......ปี<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="พนักงานประจำ/ลูกจ้างประจำ บริษัท">พนักงานประจำ/ลูกจ้างประจำ บริษัท.......<?php echo $rowtbi->Tbi_emp_company;?>.......<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;อยู่ในภาคธุรกิจใด(เลือกเพียงข้อเดียว)&nbsp;&nbsp;<input type="radio" name="Tbi_type_business" value="การผลิต"> การผลิต&nbsp;&nbsp;<input type="radio" name="Tbi_type_business" value="การค้า"> การค้า&nbsp;&nbsp;<input type="radio" name="Tbi_type_business" value="การบริการ"> การบริการ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="ข้าราชการ หรือพนักงานรัฐวิสาหกิจ สังกัด">ข้าราชการ หรือพนักงานรัฐวิสาหกิจ สังกัด......<?php echo $rowtbi->Tbi_official;?>......<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="ลูกจ้างรายวัน หรือรับจ้างทั่วไป"> ลูกจ้างรายวัน หรือรับจ้างทั่วไป<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ)"> ประกอบวิชาชีพอิสระ (เช่น ทนายความ ฯลฯ) โปรดระบุ ...........<?php echo $rowtbi->Tbi_etc;?>......<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="ประกอบธุรกิจส่วนตัว"> ประกอบธุรกิจส่วนตัว หรือ เป็นเจ้าของกิจการ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_occupation" value="อื่นๆ"> อื่นๆ โปรดระบุ.......<?php echo $rowtbi->Tbi_etc;?>.......<br>
 					</td>
 				</tr>
 				<tr>
@@ -174,9 +175,9 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="เป็นเจ้าของ"> เป็นเจ้าของ หรือหุ้นส่วนผู้จัดการในธุรกิจอยู่แล้ว ตั้งแต่ปี พ.ศ........................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="เป็นทายาทของเจ้าของธุรกิจ"> เป็นทายาทของเจ้าของธุรกิจ และกำลังเตรียมรับสืบทอดธุรกิจ <br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="7" value="ไม่เคยเป็นเจ้าของธุรกิจ"> ไม่เคยเป็นเจ้าของธุรกิจ และไม่ได้เป็นทายาทธุรกิจ<br>        
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_owners" value="เป็นเจ้าของ"> เป็นเจ้าของ หรือหุ้นส่วนผู้จัดการในธุรกิจอยู่แล้ว ตั้งแต่ปี พ.ศ.....<?php echo $rowtbi->Tbi_owners_year;?>.....<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_owners" value="เป็นทายาทของเจ้าของธุรกิจ"> เป็นทายาทของเจ้าของธุรกิจ และกำลังเตรียมรับสืบทอดธุรกิจ <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_owners" value="ไม่เคยเป็นเจ้าของธุรกิจ"> ไม่เคยเป็นเจ้าของธุรกิจ และไม่ได้เป็นทายาทธุรกิจ<br>        
 					</td>
 				</tr>
 				<tr>
@@ -191,8 +192,8 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="8" value="ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร"> ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="8" value="มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว"> มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_concept" value="ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร"> ยังไม่มีแนวคิดว่าจะลงทุนในธุรกิจอะไร<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_concept" value="มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว"> มีโครงการหรือแนวคิดเกี่ยวกับธุรกิจที่จะลงทุนอยู่แล้ว<br>
 					</td>
 				</tr>
 				<tr>
@@ -202,10 +203,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การผลิต"> การผลิต&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต...............................................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การบริการ"> การบริการ&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต...............................................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การค้าส่ง"> การค้าส่ง&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต...............................................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="9" value="การค้าปลีก"> การค้าปลีก&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต.............................................................
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_interest" value="การผลิต"> การผลิต&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต............<?php echo $rowtbi->B_manufacture;?>........<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_interest" value="การบริการ"> การบริการ&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต..........<?php echo $rowtbi->B_service;?>........<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_interest" value="การค้าส่ง"> การค้าส่ง&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต..........<?php echo $rowtbi->B_wholesale;?>........<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_interest" value="การค้าปลีก"> การค้าปลีก&nbsp;&nbsp;&nbsp;โปรดระบุประเภทสินค้าที่จะผลิต........<?php echo $rowtbi->B_retail;?>........
 					</td>
 				</tr>
 				<tr>
@@ -215,10 +216,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว"> มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน"> มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="กำลังจัดทำแผนธุรกิจ"> กำลังจัดทำแผนธุรกิจ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="10" value="ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ"> ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_business_plan" value="มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว"> มีแผนธุรกิจแล้ว และเคยนำไปเสนอกับแหล่งเงินทุนแล้ว<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_business_plan" value="มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน"> มีแผนธุรกิจแล้ว แต่ยังไม่เคยนำไปเสนอกับแหล่งเงินทุน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_business_plan" value="กำลังจัดทำแผนธุรกิจ"> กำลังจัดทำแผนธุรกิจ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_business_plan" value="ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ"> ยังไม่ได้ดำเนินการใดๆเกี่ยวกับแผนธุรกิจ
 					</td>
 				</tr>
 				<tr>
@@ -228,14 +229,14 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="11" value="ภายในเดือน"> ภายในเดือน............................ปี.........................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="11" value="ยังไม่มีเป้าหมายกำหนดเวลา"> ยังไม่มีเป้าหมายกำหนดเวลา
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_goal" value="ภายในเดือน"> ภายในเดือน......<?php echo $rowtbi->B_goal_month;?>.......ปี......<?php echo $rowtbi->B_goal_year;?>.....<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_goal" value="ยังไม่มีเป้าหมายกำหนดเวลา"> ยังไม่มีเป้าหมายกำหนดเวลา
 
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						2.5	ท่านคาดว่ากิจการที่จะเริ่มจัดตั้ง จะต้องใช้เงินลงทุนในปีแรก ประมาณ .................................................... บาท        
+						2.5	ท่านคาดว่ากิจการที่จะเริ่มจัดตั้ง จะต้องใช้เงินลงทุนในปีแรก ประมาณ ........<?php echo $rowtbi->B_investment;?>........ บาท        
 					</td>
 				</tr>
 				<tr>
@@ -245,18 +246,18 @@
 				</tr>
 				<tr>
 					<td  colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินส่วนตัวของท่าน"> เงินส่วนตัวของท่าน ประมาณ ...................................... บาท<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินจากหุ้นส่วน"> เงินจากหุ้นส่วน หรือผู้ร่วมทุน ประมาณ.................................... บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_resources" value="เงินส่วนตัวของท่าน"> เงินส่วนตัวของท่าน ประมาณ ..........<?php echo $rowtbi->B_balance;?>....... บาท<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_resources" value="เงินจากหุ้นส่วน"> เงินจากหุ้นส่วน หรือผู้ร่วมทุน ประมาณ.....<?php echo $rowtbi->B_balance;?>....... บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="13" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว 
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="13" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ 
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="13" value="บริษัทหรือกิจการอื่น"> บริษัทหรือกิจการอื่น&nbsp;&nbsp;ระบุ...............................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="12" value="เงินกู้ยืม"> เงินกู้ยืม ประมาณ .......................................... บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
+						<input type="radio" name="B_source" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="B_source" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_source" value="บริษัทหรือกิจการอื่น"> บริษัทหรือกิจการอื่น&nbsp;&nbsp;ระบุ.....<?php echo $rowtbi->B_source_etc;?>.......<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_resources" value="เงินกู้ยืม"> เงินกู้ยืม ประมาณ ......<?php echo $rowtbi->B_balance;?>....... บาท ซึ่งคาดว่าจะได้จากแหล่งใดบ้าง<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="14" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารของรัฐ"> ธนาคารของรัฐ &nbsp;&nbsp;ระบุ..........................................
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="ธนาคารพาณิชย์ของเอกชน"> ธนาคารพาณิชย์ของเอกชน&nbsp;&nbsp;ระบุ....................................................<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="14" value="สถาบันการเงินที่ไม่ใช่ธนาคาร"> สถาบันการเงินที่ไม่ใช่ธนาคาร (นันแบงค์ เช่น บริษัทเครดิต, ลิสซิ่ง) &nbsp;&nbsp;ระบุ..............................................
+						<input type="radio" name="B_source" value="ญาติ สมาชิกในครอบครัว"> ญาติ สมาชิกในครอบครัว &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_source" value="บุคคลอื่นที่ไม่ใช่ญาติ"> บุคคลอื่นที่ไม่ใช่ญาติ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_source" value="ธนาคารของรัฐ"> ธนาคารของรัฐ &nbsp;&nbsp;ระบุ........<?php echo $rowtbi->B_source_etc;?>.............
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_source" value="ธนาคารพาณิชย์ของเอกชน"> ธนาคารพาณิชย์ของเอกชน&nbsp;&nbsp;ระบุ.........<?php echo $rowtbi->B_source_etc;?>..........<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_source" value="สถาบันการเงินที่ไม่ใช่ธนาคาร"> สถาบันการเงินที่ไม่ใช่ธนาคาร (นันแบงค์ เช่น บริษัทเครดิต, ลิสซิ่ง) &nbsp;&nbsp;ระบุ........<?php echo $rowtbi->B_source_etc;?>..........
 					</td>
 				</tr>
 				<tr>
@@ -266,18 +267,18 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ตัวท่านเอง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="18" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="18" value="มี"> มี<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- หุ้นส่วนที่ร่วมบริหารจัดการ/ดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="15" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="15" value="มีประมาณ"> มีประมาณ
-						.................................คน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงาน/ผู้ปฏิบัติงานที่เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="16" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="16" value="มีประมาณ"> มีประมาณ
-						.................................คน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงานอื่นๆที่ไม่ได้เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="17" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="17" value="มีประมาณ"> มีประมาณ
-						.................................คน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ตัวท่านเอง&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="ไม่มี">ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="มี"> มี<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- หุ้นส่วนที่ร่วมบริหารจัดการ/ดำเนินงาน&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="มีประมาณ"> มีประมาณ
+						.....<?php echo $rowtbi->B_emp_sum;?>....คน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงาน/ผู้ปฏิบัติงานที่เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="มีประมาณ"> มีประมาณ
+						.....<?php echo $rowtbi->B_emp_sum;?>....คน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- พนักงานอื่นๆที่ไม่ได้เป็นสมาชิกในครอบครัว&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="ไม่มี"> ไม่มี &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="B_employee" value="มีประมาณ"> มีประมาณ
+						.....<?php echo $rowtbi->B_emp_sum;?>....คน<br>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						<u><b><p>ส่วนที่ 3&nbsp;&nbsp;&nbsp;&nbsp;บริการที่ต้องการจากโครงการการบ่มเพาะผู้ประกอบการเทคโนโลยี มหาวิทยาลัยแม่โจ้</p></b></u>
+						<u><b><p>ส่วนที่3&nbsp;บริการที่ต้องการจากโครงการการบ่มเพาะผู้ประกอบการเทคโนโลยีมหาวิทยาลัยแม่โจ้</p></b></u>
 					</td>
 				</tr>
 				<tr>
@@ -287,11 +288,11 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ"> การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การจัดทำแผนธุรกิจ"> การจัดทำแผนธุรกิจ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การจัดทำ เว็บไซต์"> การจัดทำ เว็บไซต์<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="การออกแบบและจัดทำโลโก้"> การออกแบบและจัดทำโลโก้<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="18" value="อื่นๆ"> อื่นๆ ระบุ............................................        
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_investment" value="การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ"> การให้บริการข้อมูลเบื้องต้นก่อนการบ่มเพาะ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_investment" value="การจัดทำแผนธุรกิจ"> การจัดทำแผนธุรกิจ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_investment" value="การจัดทำ เว็บไซต์"> การจัดทำ เว็บไซต์<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_investment" value="การออกแบบและจัดทำโลโก้"> การออกแบบและจัดทำโลโก้<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_investment" value="อื่นๆ"> อื่นๆ ระบุ.......<?php echo $rowtbi->Tbi_investment_etc;?>........        
 					</td>
 				</tr>
 				<tr>
@@ -301,11 +302,11 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การตลาด"> การตลาด<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การบัญชี-การเงิน"> การบัญชี-การเงิน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การผลิต"> การผลิต<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="การทรัพยากรบุคคล"> การทรัพยากรบุคคล<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="19" value="อื่นๆ"> อื่นๆ ระบุ..................................       
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_train" value="การตลาด"> การตลาด<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_train" value="การบัญชี-การเงิน"> การบัญชี-การเงิน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_train" value="การผลิต"> การผลิต<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_train" value="การทรัพยากรบุคคล"> การทรัพยากรบุคคล<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_train" value="อื่นๆ"> อื่นๆ ระบุ......<?php echo $rowtbi->Tbi_train_etc;?>........       
 					</td>
 				</tr>
 				<tr>
@@ -315,10 +316,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การวิจัยและพัฒนาเทคโนโลยีการผลิต"> การวิจัยและพัฒนาเทคโนโลยีการผลิต<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การวิจัยและพัฒนาผลิตภัณฑ์"> การวิจัยและพัฒนาผลิตภัณฑ์<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="การพัฒนาบรรจุภัณฑ์"> การพัฒนาบรรจุภัณฑ์<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="20" value="อื่นๆ"> อื่นๆ ระบุ.............................        
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_research" value="การวิจัยและพัฒนาเทคโนโลยีการผลิต"> การวิจัยและพัฒนาเทคโนโลยีการผลิต<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_research" value="การวิจัยและพัฒนาผลิตภัณฑ์"> การวิจัยและพัฒนาผลิตภัณฑ์<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_research" value="การพัฒนาบรรจุภัณฑ์"> การพัฒนาบรรจุภัณฑ์<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_research" value="อื่นๆ"> อื่นๆ ระบุ......<?php echo $rowtbi->Tbi_research_etc;?>......        
 					</td>
 				</tr>
 				<tr>
@@ -328,10 +329,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การใช้พื้นที่"> การใช้พื้นที่<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การใช้เลขานุการกลาง"> การใช้เลขานุการกลาง<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="การบริการจัดทำบัญชี"> การบริการจัดทำบัญชี<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="21" value="อื่นๆ"> อื่นๆ ระบุ..............................................       
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_service" value="การใช้พื้นที่"> การใช้พื้นที่<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_service" value="การใช้เลขานุการกลาง"> การใช้เลขานุการกลาง<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_service" value="การบริการจัดทำบัญชี"> การบริการจัดทำบัญชี<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_service" value="อื่นๆ"> อื่นๆ ระบุ........<?php echo $rowtbi->Tbi_service_etc;?>........       
 					</td>
 				</tr>
 				<tr>
@@ -341,24 +342,24 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="แหล่งเงินทุน"> แหล่งเงินทุน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การร่วมลงทุน"> การร่วมลงทุน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล"> การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การตั้งโรงงาน"> การตั้งโรงงาน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การตลาด"> การตลาด<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การเงิน"> การเงิน<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบัญชี"> การบัญชี<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบริหารบุคคล"> การบริหารบุคคล<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การบริหารการผลิต"> การบริหารการผลิต<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="ภาษี"> ภาษี<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="กฎหมาย"> กฎหมาย<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="การค้าระหว่างประเทศ"> การค้าระหว่างประเทศ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="22" value="อื่นๆ"> อื่นๆ ระบุ ..........................................        
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="แหล่งเงินทุน"> แหล่งเงินทุน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การร่วมลงทุน"> การร่วมลงทุน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล"> การจัดตั้งธุรกิจ/จดทะเบียนนิติบุคคล<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การตั้งโรงงาน"> การตั้งโรงงาน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การตลาด"> การตลาด<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การเงิน"> การเงิน<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การบัญชี"> การบัญชี<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การบริหารบุคคล"> การบริหารบุคคล<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การบริหารการผลิต"> การบริหารการผลิต<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="ภาษี"> ภาษี<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="กฎหมาย"> กฎหมาย<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="การค้าระหว่างประเทศ"> การค้าระหว่างประเทศ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_counsel" value="อื่นๆ"> อื่นๆ ระบุ .........<?php echo $rowtbi->Tbi_counsel_etc;?>...........        
 					</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						3.6 การขอใช้บริการห้องปฏิบัติการ ระบุ.............................................................      
+						3.6 การขอใช้บริการห้องปฏิบัติการ ระบุ................<?php echo $rowtbi->Tbi_lab;?>.............      
 					</td>
 				</tr>
 				<tr>
@@ -368,11 +369,11 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value=" อย."> อย.<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value=" GMP"> GMP<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value=" HACCP"> HACCP<br>    
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value="ISO"> ISO.......................... <br>      
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="23" value="อื่นๆ"> อื่นๆ ระบุ............................................. <br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_certification" value=" อย."> อย.<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_certification" value=" GMP"> GMP<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_certification" value=" HACCP"> HACCP<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_certification" value="ISO"> ISO.....<?php echo $rowtbi->Tbi_certification_iso;?>.... <br>      
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_certification" value="อื่นๆ"> อื่นๆ ระบุ.......<?php echo $rowtbi->Tbi_certification_etc;?>....... <br>    
 					</td>
 				</tr>
 				<tr>
@@ -382,10 +383,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge"> การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="การจัดนิทรรศการ ออกบูธ"> การจัดนิทรรศการ ออกบูธ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="24" value="อื่นๆ"> อื่นๆ ระบุ....................................................<br>    
-					</td>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_announce" value="การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge"> การถ่ายทอดเทคโนโลยีภายใต้โครงการBridge<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_announce" value="การจัดนิทรรศการ ออกบูธ"> การจัดนิทรรศการ ออกบูธ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_announce" value="อื่นๆ"> อื่นๆ ระบุ........<?php echo $rowtbi->Tbi_announce_etc;?>.........<br>    
+					<br><br><br><br><br><br></</td>
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
@@ -394,12 +395,14 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="OIL"> OIL<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="NIA"> NIA<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="I03 CR (รัฐร่วมเอกชน)"> I03 CR (รัฐร่วมเอกชน)<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="IP Fund"> IP Fund<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="25" value="อื่นๆ"> อื่นๆ ระบุ.........................................................<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_coordinate" value="OIL"> OIL<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_coordinate" value="NIA"> NIA<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_coordinate" value="I03 CR (รัฐร่วมเอกชน)"> I03 CR (รัฐร่วมเอกชน)<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_coordinate" value="IP Fund"> IP Fund<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_coordinate" value="อื่นๆ"> อื่นๆ ระบุ.......<?php echo $rowtbi->Tbi_coordinate_etc;?>.........<br>    
+					
 					</td>
+					
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
@@ -408,10 +411,10 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)"> การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ"> การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="การส่งเสริมทางการตลาด"> การส่งเสริมทางการตลาด<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="26" value="อื่นๆ"> อื่นๆ ระบุ....................................................<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_funding" value="การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)"> การพัฒนาผลิตภัณฑ์ต้นแบบ (Prototype)<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_funding" value="การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ"> การให้คำปรึกษาด้านเทคโนโลยีและธุรกิจ<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_funding" value="การส่งเสริมทางการตลาด"> การส่งเสริมทางการตลาด<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_funding" value="อื่นๆ"> อื่นๆ ระบุ........<?php echo $rowtbi->Tbi_funding_etc;?>.......<br>    
 					</td>
 				</tr>
 				<tr>
@@ -421,13 +424,13 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การให้บริการข้อมูล"> การให้บริการข้อมูล<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การสืบค้นข้อมูลทรัพย์สินทางปัญญา"> การสืบค้นข้อมูลทรัพย์สินทางปัญญา<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การจดทะเบียนทรัพย์สินทางปัญญา"> การจดทะเบียนทรัพย์สินทางปัญญา<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การอนุญาตใช้สิทธ์"> การอนุญาตใช้สิทธ์<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การเจรจาใช้สิทธิ์"> การเจรจาใช้สิทธิ์<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="การประเมินมูลค่าทรัพย์สินทางปัญญา"> การประเมินมูลค่าทรัพย์สินทางปัญญา<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="27" value="อื่นๆ"> อื่นๆ ระบุ..................................................................<br>    
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การให้บริการข้อมูล"> การให้บริการข้อมูล<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การสืบค้นข้อมูลทรัพย์สินทางปัญญา"> การสืบค้นข้อมูลทรัพย์สินทางปัญญา<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การจดทะเบียนทรัพย์สินทางปัญญา"> การจดทะเบียนทรัพย์สินทางปัญญา<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การอนุญาตใช้สิทธ์"> การอนุญาตใช้สิทธ์<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การเจรจาใช้สิทธิ์"> การเจรจาใช้สิทธิ์<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="การประเมินมูลค่าทรัพย์สินทางปัญญา"> การประเมินมูลค่าทรัพย์สินทางปัญญา<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_asset" value="อื่นๆ"> อื่นๆ ระบุ.......<?php echo $rowtbi->Tbi_asset_etc;?>........<br>    
 					</td>
 				</tr>
 				<tr>
@@ -452,14 +455,14 @@
 									</table><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) .....................................<br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้สมัคร</b><br><br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (..............................)<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่......./.........../......<br> <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (....<?php echo $rowtbi->Tbi_name;?>...)<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่...<?php echo $rowtbi->Tbi_date_register;?>...<br> <br>
 								<br>
 								<br>
 								</td>
 							</tr>
 						</table>
-<br>
+<br><br><br><br><br><br><br>
 					</td>
 				</tr>
 
@@ -476,25 +479,25 @@
 										<tr>
 											<td colspan="2" align="left">
 												<p><b>หลักฐานประกอบการยื่นสมัคร</b></p>								
-												<input type="checkbox" name="28" value="ใบสมัคร"> ใบสมัคร<br>
-												<input type="checkbox" name="28" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว ................................................<br> 
-												<input type="checkbox" name="28" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา............................................<br> 
-												<input type="checkbox" name="28" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน .............................................<br> 
+												<input type="checkbox" name="Tbi_evidence_register" value="ใบสมัคร"> ใบสมัคร<br>
+												<input type="checkbox" name="Tbi_evidence_register" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว .....<?php echo $rowtbi->Tbi_code;?>...<br> 
+												<input type="checkbox" name="Tbi_evidence_register" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา.....<?php echo $rowtbi->Tbi_education;?>....<br> 
+												<input type="checkbox" name="Tbi_evidence_register" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน ....<?php echo $rowtbi->Tbi_department;?>....<br> 
 											</td>
 											<td align="left">
 												<p><b>การนัดหมาย</b></p>
-												<input type="radio" name="29" value="นัดนำเสนอแนวคิดธุรกิจ "> นัดนำเสนอแนวคิดธุรกิจ<br>
-												วันที่......./.........../......<br> 
-												<input type="radio" name="29" value="นัดเข้าพบสถานประกอบการธุรกิจ"> นัดเข้าพบสถานประกอบการธุรกิจ<br>
-												วันที่......./.........../......<br> 
+												<input type="radio" name="Tbi_ appointment" value="นัดนำเสนอแนวคิดธุรกิจ "> นัดนำเสนอแนวคิดธุรกิจ<br>
+												วันที่...<?php echo $rowtbi->Tbi_date_concept;?>...<br> 
+												<input type="radio" name="Tbi_ appointment" value="นัดเข้าพบสถานประกอบการธุรกิจ"> นัดเข้าพบสถานประกอบการธุรกิจ<br>
+												วันที่....<?php echo $rowtbi->Tbi_date_meet;?>....<br> 
 
 											</td>
 										</tr>	
 										<tr><td colspan="3" align="left">
-											<input type="checkbox" name="28" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
-											<input type="checkbox" name="28" value="Concept paper"> Concept paper<br> 
-											<input type="checkbox" name="28" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
-											<input type="checkbox" name="28" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> <br>
+											<input type="checkbox" name="Tbi_evidence_register" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
+											<input type="checkbox" name="Tbi_evidence_register" value="Concept paper"> Concept paper<br> 
+											<input type="checkbox" name="Tbi_evidence_register" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
+											<input type="checkbox" name="Tbi_evidence_register" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> <br>
 										</td></tr>
 									</table><br>
 								</td>
@@ -514,18 +517,18 @@
 									<table>
 										<tr>
 											<td colspan="3" align="left">
-												<input type="checkbox" name="30" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
-												<input type="checkbox" name="30" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
-												<input type="checkbox" name="30" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
-												<input type="checkbox" name="30" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า"> มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
-												<input type="checkbox" name="30" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ"> มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
+												<input type="checkbox" name="Tbi_ practicality" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
+												<input type="checkbox" name="Tbi_ practicality" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
+												<input type="checkbox" name="Tbi_ practicality" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
+												<input type="checkbox" name="Tbi_ practicality" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า"> มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
+												<input type="checkbox" name="Tbi_ practicality" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ"> มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
 											</td>
 										</tr>
 									</table><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) ...................................<br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ตรวจใบสมัคร</b><br><br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (................................)<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่......./.........../......<br> <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (......<?php echo $rowtbi->Tbi_inspector;?>......)<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่....<?php echo $rowtbi->Tbi_date_inspect;?>....<br> <br>
 								</td>
 							</tr>
 						</table>
