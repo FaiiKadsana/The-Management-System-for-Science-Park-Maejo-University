@@ -484,7 +484,7 @@
 						</tr>
 						<tr>
 							<td colspan="3" align="center" >
-								<br>
+							
 								<table border="1" width="80%" >
 									<tr>
 										<td colspan="3" align="center">
@@ -508,7 +508,7 @@
 										</td>
 										<br>
 									</tr>
-									<br>
+									
 								</table>
 							</td>
 						</tr>
