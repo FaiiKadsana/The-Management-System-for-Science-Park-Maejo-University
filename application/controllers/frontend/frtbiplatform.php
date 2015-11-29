@@ -125,9 +125,10 @@ class Frtbiplatform extends CI_Controller {
 			$insertFile["F_2"]=$_FILES["F_2"]["name"];
 			$insertFile["F_3"]=$_FILES["F_3"]["name"];
 			$insertFile["F_4"]=$_FILES["F_4"]["name"];
-			$insertFile["Spf_id"]='4';
+		
 
 			$insertTbi=array();
+			$insertTbi["Tbi_id3"]=$this->input->post("random");
 			$insertTbi["Tbi_id4"]=$this->input->post("Tbi_id4");
 			$insertTbi["Tbi_date"]=$this->input->post("Tbi_date");
 			$insertTbi["Tbi_name"]=$this->input->post("Tbi_name");
@@ -158,7 +159,7 @@ class Frtbiplatform extends CI_Controller {
 				|| $insertTbibusiness["B_resources"]==""|| $insertTbibusiness["B_business_plan"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยคะ');</script>";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
 				redirect('frontend/frtbiplatform', 'refresh');
 
 			}
@@ -166,17 +167,17 @@ class Frtbiplatform extends CI_Controller {
 				|| $insertTbiperson["Tbi_phone"]==""|| $insertTbiperson["Tbi_mail"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วย');</script>";
 				redirect('frontend/frtbiplatform', 'refresh');
 
 			}
-			else if($insertTbiperson1["Tbi_education"]=="" || $insertTbiperson1["Tbi_occupation"]=="" ){
+			/*else if(){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะ');</script>";
 				redirect('frontend/frtbiplatform', 'refresh');
 
-			}
+			}*/
 
 			else if($insertTbiservice["Tbi_investment"]=="" || $insertTbiservice["Tbi_train"]=="" || $insertTbiservice["Tbi_counsel"]=="" || $insertTbiservice["Tbi_lab"]==""
 				|| $insertTbiservice["Tbi_funding"]=="" || $insertTbiservice["Tbi_asset"]=="" ){
@@ -190,7 +191,7 @@ class Frtbiplatform extends CI_Controller {
 			else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
+				echo "<script>alert('กรุณาแนบเอกสารให้ครบคะ');</script>";
 				redirect('frontend/frtbiplatform', 'refresh');
 
 			}
@@ -230,6 +231,8 @@ class Frtbiplatform extends CI_Controller {
 
 			$this->db->insert('file1', $insertFile);
 
+				$F_id1 = $this->db->insert_id();
+
 				$insertTbi["B_id"] = $B_id;
 	
 				$insertTbi["Tbi_id"] = $Tbi_id;
@@ -237,8 +240,6 @@ class Frtbiplatform extends CI_Controller {
 				$insertTbi["Tbi_id1"] = $Tbi_id1;
 
 				$insertTbi["Tbi_id2"] = $Tbi_id2;
-
-				$insertTbi["Tbi_id5"] = $Tbi_id5;
 
 				$insertTbi["F_id1"] = $F_id1;
 
