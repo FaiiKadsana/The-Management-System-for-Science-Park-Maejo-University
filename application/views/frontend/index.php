@@ -48,9 +48,8 @@
 									<div class="col-md-12" >
 										<ul class="paginationnext" >
 
-											<li>
 												<?php echo $page; ?>
-											</li>
+											
 											<ul>
 									</div>
 								</div>  
