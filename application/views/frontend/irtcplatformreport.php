@@ -1,20 +1,6 @@
 <body onclick="window.print()">
 
-<<<<<<< HEAD
-	<?php  foreach ($coresearch_irct as $row) { ?>
-	<div class="row">
-		<div class="col-sm-12">
-			<center>
-				<table width="100%">
-					<tr>
-						<td width="20%"></td>
-						<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม.......<?php echo $row->Co_id;?>.....</td>
-					</tr>
-				</table>
-			</center>
-		</div>
-=======
-<?php  foreach ($irct as $rowirct) { ?>
+<?php  foreach ($irct as $row) { ?>
 <div class="row">
 	<div class="col-sm-12">
 		<center>
@@ -25,7 +11,6 @@
 				</tr>
 			</table>
 		</center>
->>>>>>> Science-Park 29/11/2558
 	</div>
 
 	<div class="row fromfont">
@@ -299,9 +284,6 @@
 							<br>
 						</td>	
 					</tr>
-
-
-
 				</table>
 				<br><br><br><br><br><br>
 				<table width="90%" border="1">
@@ -331,10 +313,5 @@
 
 		</div>
 	</div>
-<<<<<<< HEAD
-	<?php } ?>
-=======
-</div>
 <?php } ?>
->>>>>>> Science-Park 29/11/2558
 </body>

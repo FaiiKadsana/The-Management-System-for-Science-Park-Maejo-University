@@ -58,10 +58,7 @@
 						<td ><?php echo $row->Co_name_pro; ?></td>     
 						<td ><?php echo $row->Co_date; ?></td>
 						<td ><?php echo $row->Co_status; ?></td>
-<<<<<<< HEAD
 
-=======
->>>>>>> Science-Park 29/11/2558
 						<td><a target ="_blank" href="<?php echo base_url('frontend/irtcplatformreport/index/'.$row->Co_id)?>"><button type="button" class="btn btn-info" ><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 
 						
 					</tr>   
