@@ -129,61 +129,63 @@
 										<tr>
 											<td width="40%" align="center"><input type="text" size="30" name="Pl_activity1"></td>
 											<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-											<td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-											<td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-											<td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-											<td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-											<td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
 										</tr>
 										<tr>
 											<td width="40%" align="center"><input type="text" size="30" name="Pl_activity2"></td>
 											<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-											<td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-											<td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-											<td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-											<td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-											<td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
 										</tr>
 										<tr>
 											<td width="40%" align="center"><input type="text" size="30" name="Pl_activity3"></td>
 											<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-											<td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-											<td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-											<td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-											<td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-											<td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
 										</tr>
 										<tr>
 											<td width="40%" align="center"><input type="text" size="30" name="Pl_activity4"></td>
 											<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-											<td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-											<td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-											<td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-											<td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-											<td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
 										</tr>
 										<tr>
 											<td width="40%" align="center"><input type="text" size="30" name="Pl_activity5"></td>
 											<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-											<td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-											<td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-											<td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-											<td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-											<td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
 										</tr>
 										<tr>
 											<td width="40%" align="center"><input type="text" size="30" name="Pl_activity6"></td>
-											<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-											<td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-											<td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-											<td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-											<td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-											<td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+										<td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+											<td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
+
 										</tr>
+										<b style="color:red;"> *หมายเหตุ 1 คือจำนวนเดือนที่ดำเนินงาน</b>
 									</table>
 									<br>
 								</center>
-
+                                        
 							</td>
 						</tr>
 						<tr>
