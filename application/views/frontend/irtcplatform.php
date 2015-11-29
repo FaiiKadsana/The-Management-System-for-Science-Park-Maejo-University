@@ -29,6 +29,14 @@
 			<div class="panel-heading">IRCT Platform</div>
 			<div class="panel-body">
 				<table class="table table-striped">
+					<?php if (empty($keyword)) { 
+
+					echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+					echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";?>    
+
+					<?php }else{ ?>
+
+					<?php foreach($search as $row){?>
 					<tr class="bg-success">
 						<th width="5%">#</th>
 						<th width="25%">เลขที่แบบฟอร์ม</th>
@@ -40,15 +48,16 @@
 
 					<!-- Show &Join table -->
 
-					<tr class="bg-success">
-						<td >1</td>
-						<td >259863</td>
-						<td >Hotal</td>   
-						<td >กังหันลม</td>
-						<td >อยู่ในช่วงดำเนินงาน</td>
-						<td><a href="<?php echo base_url("frontend/irtcplatformreport")?>"><button type="button" class="btn btn-info" ><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 
+						<tr class="bg-success">
+						<td ><?php echo $row->Co_id; ?></td>
+						<td ><?php echo $row->C_name; ?></td>
+						<td ><?php echo $row->Co_name_pro; ?></td>     
+						<td ><?php echo $row->Co_date; ?></td>
+						<td ><?php echo $row->Co_status; ?></td>
+						<td><a target ="_blank" href="<?php echo base_url('frontend/irtcplatformreport/index/'.$row->Co_id)?>"><button type="button" class="btn btn-info" ><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 
 						
-					</tr>       
+					</tr>   
+					<?php } }?>     
 				</table>     
 				<!-- End -->
 

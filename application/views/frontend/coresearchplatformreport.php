@@ -46,10 +46,10 @@
 						<td width="30%">3.ผู้รับผิดชอบโครงการและความเชี่ยวชาญ</td>
 						<td >
 							<br>
-							ชื่อผู้รับผิดชอบ: <?php echo $row->Rp_name;?>&nbsp;&nbsp;  ตำแหน่ง: <?php echo $row->Rp_position;?> <br>
-							หน่วยงานรับผิดชอบ: <?php echo $row->Rp_institute;?>&nbsp;&nbsp;  เบอร์โทรศัพท์: <?php echo $row->Rp_phone;?> <br>
-							แฟกซ์: <?php echo $row->Rp_fax;?>&nbsp;&nbsp;  อีเมล์: <?php echo $row->Rp_mail;?> <br>
-							ที่อยู่: <?php echo $row->Rp_address;?><br><br>
+								ชื่อผู้รับผิดชอบ: <?php echo $row->Rp_name;?>&nbsp;&nbsp;  ตำแหน่ง: <?php echo $row->Rp_position;?> <br>
+								หน่วยงานรับผิดชอบ: <?php echo $row->Rp_institute;?>&nbsp;&nbsp;  เบอร์โทรศัพท์: <?php echo $row->Rp_phone;?> <br>
+								แฟกซ์: <?php echo $row->Rp_fax;?>&nbsp;&nbsp;  อีเมล์: <?php echo $row->Rp_mail;?> <br>
+								ที่อยู่: <?php echo $row->Rp_address;?><br><br>
 						</td>
 					</tr>
 					<tr>
@@ -67,11 +67,11 @@
 					<tr>
 						<td width="30%">6.รายละเอียดผู้ประกอบการ</td>
 						<td ><br>
-							ชื่อกิจการ: <?php echo $row->C_name;?><br>
-							ประเภทนิติบุคคล: <?php echo $row->C_company_type;?>&nbsp;&nbsp;ทุนจดทะเบียน: <?php echo $row->C_investment;?> <br>
-							จำนวนพนักงาน: <?php echo $row->Co_no_emp_total;?>&nbsp;&nbsp;ผลิตภัณฑ์หลักขององค์กร: <?php echo $row->Co_main_pro1;?> <br>
-							ที่อยู่: <?php echo $row->C_address;?> <br>
-							ผู้ติดต่อประสานงาน: <?php echo $row->P_title;?>&nbsp;<?php echo $row->P_name;?>&nbsp;&nbsp;<?php echo $row->P_lastname;?>&nbsp;&nbsp;เบอร์ผู้ติดต่อประสานงาน: <?php echo $row->P_phone;?><br><br>
+							    ชื่อกิจการ: <?php echo $row->C_name;?><br>
+								ประเภทนิติบุคคล: <?php echo $row->C_company_type;?>&nbsp;&nbsp;ทุนจดทะเบียน: <?php echo $row->C_investment;?> <br>
+								จำนวนพนักงาน: <?php echo $row->Co_no_emp_total;?>&nbsp;&nbsp;ผลิตภัณฑ์หลักขององค์กร: <?php echo $row->Co_main_pro1;?> <br>
+								ที่อยู่: <?php echo $row->C_address;?> <br>
+								ผู้ติดต่อประสานงาน: <?php echo $row->P_title;?>&nbsp;<?php echo $row->P_name;?>&nbsp;&nbsp;<?php echo $row->P_lastname;?>&nbsp;&nbsp;เบอร์ผู้ติดต่อประสานงาน: <?php echo $row->P_phone;?><br><br>
 						</td>
 					</tr>
 					<tr>
@@ -137,7 +137,7 @@
 									</tr>
 									<tr>
 										<td width="40%" align="center"><?php echo $row->Pl_activity3;?></td>
-										<td align="center"><?php echo $row->Pl_month1;?></td>
+									<td align="center"><?php echo $row->Pl_month1;?></td>
 										<td align="center"><?php echo $row->Pl_month2;?></td>
 										<td align="center"><?php echo $row->Pl_month3;?></td>
 										<td align="center"><?php echo $row->Pl_month4;?></td>
@@ -164,7 +164,7 @@
 									</tr>
 									<tr>
 										<td width="40%" align="center"><?php echo $row->Pl_activity6;?></td>
-										<td align="center"><?php echo $row->Pl_month1;?></td>
+									<td align="center"><?php echo $row->Pl_month1;?></td>
 										<td align="center"><?php echo $row->Pl_month2;?></td>
 										<td align="center"><?php echo $row->Pl_month3;?></td>
 										<td align="center"><?php echo $row->Pl_month4;?></td>
@@ -251,73 +251,73 @@
 									<td width="30%"><?php echo $row->Bg_total1;?></td>
 									<td width="30%"><?php echo $row->Bg_total2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->Bg_total3;?></td>
-										<td><?php echo $row->Bg_total4;?></td>
-									</tr>
-									<tr>
-										<td width="20%">2.งบลงทุน<br>&nbsp;2.1ค่าครุภัณฑ์<br>&nbsp;2.2 ค่าก่อสร้าง (อาทิเช่น อาคาร สิ่งปลูกสร้าง สาธารณูปโภค)</td>										
-										<td width="30%">2.)<?php echo $row->Bg_in_invest1;?><br>
-											2.1)<?php echo $row->Bg_in_durable1;?><br>
-											2.2) <?php echo $row->Bg_in_building1;?><br>
-										</td>
-										<td width="30%">
-											2.) <?php echo $row->Bg_in_invest2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.) <?php echo $row->Bg_in_invest3;?><br> 
-											2.1) <?php echo $row->Bg_in_durable2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1) <?php echo $row->Bg_in_durable3;?><br>
-											2.2) <?php echo $row->Bg_in_building2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2) <?php echo $row->Bg_in_building3;?><br>
-										</td>
-										<td>
-											2.) <?php echo $row->Bg_in_invest4;?><br>
-											2.1) <?php echo $row->Bg_in_durable4;?><br>
-											2.2) <?php echo $row->Bg_in_building4;?><br>
-										</td>
-									</tr>
-									<tr>
-										<td width="20%">รวมงบลงทุน</td>
-										<td width="30%"><?php echo $row->Bg_in_total1;?></td>
-										<td width="30%"><?php echo $row->Bg_in_total2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->Bg_in_total3;?></td>
-											<td><?php echo $row->Bg_in_total4;?></td>
-										</tr>
-										<tr>
-											<th width="20%">รวมงบประมาณทั้งหมด</th>
-											<th width="30%"><?php echo $row->Bg_in_sum1;?></th>
-											<th width="30%" align="left"><?php echo $row->Bg_in_sum2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->Bg_in_sum3;?></th>
-												<th><?php echo $row->Bg_in_sum4;?></th>
-											</tr>
-										</table>
-										<br>
-										<p style="color:red;">*หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 60% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 40%</p>
-										<br>
-									</td>	
+									<td><?php echo $row->Bg_total4;?></td>
 								</tr>
 								<tr>
-									<td colspan="2"   width="30%">14.ลายเซ็น
-
-										<center>
-											<table  width="80%">
-												<tr>
-													<br><br><br>
-													<td width="40%"> 
-														<p>ผู้รับผิดชอบโครงการ</p>
-														<p>&nbsp;&nbsp; (มหาวิทยาลัย)</p>
-													</td>
-													<td width="40%"> 
-														<p>ผู้ประกอบการ (เอกชน)</p>
-														<p>(ประทับตราบริษัท ถ้ามี)</p>
-													</td>
-												</tr>
-											</table>
-										</center>
-
+									<td width="20%">2.งบลงทุน<br>&nbsp;2.1ค่าครุภัณฑ์<br>&nbsp;2.2 ค่าก่อสร้าง (อาทิเช่น อาคาร สิ่งปลูกสร้าง สาธารณูปโภค)</td>										
+									<td width="30%">2.)<?php echo $row->Bg_in_invest1;?><br>
+										2.1)<?php echo $row->Bg_in_durable1;?><br>
+										2.2) <?php echo $row->Bg_in_building1;?><br>
+									</td>
+									<td width="30%">
+										2.) <?php echo $row->Bg_in_invest2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.) <?php echo $row->Bg_in_invest3;?><br> 
+										2.1) <?php echo $row->Bg_in_durable2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1) <?php echo $row->Bg_in_durable3;?><br>
+										2.2) <?php echo $row->Bg_in_building2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2) <?php echo $row->Bg_in_building3;?><br>
+									</td>
+									<td>
+										2.) <?php echo $row->Bg_in_invest4;?><br>
+										2.1) <?php echo $row->Bg_in_durable4;?><br>
+										2.2) <?php echo $row->Bg_in_building4;?><br>
 									</td>
 								</tr>
+								<tr>
+									<td width="20%">รวมงบลงทุน</td>
+									<td width="30%"><?php echo $row->Bg_in_total1;?></td>
+									<td width="30%"><?php echo $row->Bg_in_total2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->Bg_in_total3;?></td>
+									<td><?php echo $row->Bg_in_total4;?></td>
+								</tr>
+								<tr>
+									<th width="20%">รวมงบประมาณทั้งหมด</th>
+									<th width="30%"><?php echo $row->Bg_in_sum1;?></th>
+									<th width="30%" align="left"><?php echo $row->Bg_in_sum2;?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->Bg_in_sum3;?></th>
+									<th><?php echo $row->Bg_in_sum4;?></th>
+								</tr>
 							</table>
-						</center>	
+							<br>
+							<p style="color:red;">*หมายเหตุ  สัดส่วนการสนับสนุนงบประมาณ ภาคเอกชนไม่ต่ำกว่า 60% อุทยานวิทยาศาสตร์ภาคเหนือไม่เกิน 40%</p>
+							<br>
+						</td>	
+					</tr>
+					<tr>
+						<td colspan="2"   width="30%">14.ลายเซ็น
 
-					</div>
-				</div>
-				<?php } ?>
-			</body>
+							<center>
+								<table  width="80%">
+									<tr>
+										<br><br><br>
+										<td width="40%"> 
+											<p>ผู้รับผิดชอบโครงการ</p>
+											<p>&nbsp;&nbsp; (มหาวิทยาลัย)</p>
+										</td>
+										<td width="40%"> 
+											<p>ผู้ประกอบการ (เอกชน)</p>
+											<p>(ประทับตราบริษัท ถ้ามี)</p>
+										</td>
+									</tr>
+								</table>
+							</center>
+
+						</td>
+					</tr>
+				</table>
+			</center>	
+
+		</div>
+	</div>
+	<?php } ?>
+</body>
