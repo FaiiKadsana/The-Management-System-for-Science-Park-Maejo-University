@@ -12,7 +12,8 @@ class Frirtcplatform extends CI_Controller {
 		
 		$this->load->view('frontend/header');
 		$this->load->view('frontend/menu');
-if( $_SERVER["REQUEST_METHOD"] == "POST"){
+
+		if( $_SERVER["REQUEST_METHOD"] == "POST"){
 			
 			
 			$insertCompany=array();
@@ -252,7 +253,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST"){
 				
 				$insertcoresearch["Rp_id"] = $Rp_id;
 
-				$this->db->insert('coresearch_irct', $insertcoresearch);
+				$this->db->insert('irct', $insertcoresearch);
 
             	//die(); //ทำแค่ถึงตรงนี้
 
