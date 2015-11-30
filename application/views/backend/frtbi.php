@@ -27,7 +27,7 @@
             <table width="70%">
               <tr>
                 <td width="30%"></td>
-                <td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<label type="" size="20" name="Tbi_id3"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
+                <td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="Tbi_id3"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
               </tr>
             </table>
           </center>
@@ -526,7 +526,7 @@
               </td>
             </tr>
 
-            <tr>
+            <!--<tr>
               <td colspan="3" align="center">
                 <br>
                 <br>
@@ -591,9 +591,8 @@
                     </td>
                   </tr>
                 </table>
-
               </td>
-            </tr>
+            </tr>-->
           </table>
         </center>
 
@@ -613,9 +612,22 @@
           <td><b style="color:red;"> *</b> หนังสือมอบอำนาจ(ถ้ามี): <input type="file" name="F_3">  </td>
           <td><b style="color:red;"> *</b> สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย: <input type="file" name="F_4">   </td>
         </tr>
+          <tr>
+              <td>
+                <br>
+                <select class="form-control"  name="Tbi_status" >
+                 <option value="">เลือกสถานะ</option>
+                 <option value="pre incubated">pre incubated</option>
+                 <option value="incubated">incubated</option>
+                 <option value="startup">startup</option>
+                 <option value="spin of (graduate)">spin of (graduate)</option>
+               </select> </td>
+               <td><b style="color:red;"> *</b> </td>
+               <td></td>
+               <td></td>
+             </tr>
       </table>
     </center>
-
   </div>
 </div>
 <br>

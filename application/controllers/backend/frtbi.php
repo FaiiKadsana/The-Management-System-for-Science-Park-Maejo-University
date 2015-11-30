@@ -36,9 +36,9 @@ class Frtbi extends CI_Controller {
 			$insertTbibusiness["B_emp_sum"]=$this->input->post("B_emp_sum");
 			$insertTbibusiness["B_source_etc"]=$this->input->post("B_source_etc");
 
-
 			$insertTbiperson=array();
-			$insertTbiperson["Tbi_picture"]=$_FILES["Tbi_picture"]["name"];
+			//$insertTbiperson["Tbi_picture"]=$_FILES["Tbi_picture"]["name"];
+			$insertTbiperson["Tbi_picture"]=$_POST["Tbi_name1"].'_'.$_FILES["Tbi_picture"]["name"];
 			$insertTbiperson["Tbi_title"]=$this->input->post("Tbi_title");
 			$insertTbiperson["Tbi_name1"]=$this->input->post("Tbi_name1");
 			$insertTbiperson["Tbi_lastname"]=$this->input->post("Tbi_lastname");
@@ -56,10 +56,12 @@ class Frtbi extends CI_Controller {
 			$insertTbiperson["Tbi_mail"]=$this->input->post("Tbi_mail");
 
 			$file = iconv("UTF-8", "TIS-620", $_FILES["Tbi_picture"]["name"]);
-			$path = "asset\img\Tbi";
+			$file1 = iconv("UTF-8", "TIS-620", $_POST["Tbi_name1"]);
+
+			$path = "asset\img\TBIPerson";
 			if(!@mkdir($path,0,true)){}else{ };
 			chmod($path, 0777);	
-			move_uploaded_file($_FILES["Tbi_picture"]["tmp_name"],$path.'/'.$_POST['Tbi_name1'].'_'.$file);
+			move_uploaded_file($_FILES["Tbi_picture"]["tmp_name"],$path.'/'.$file1.'_'.$file);
 			
 
 			$insertTbiperson1=array();
@@ -110,7 +112,7 @@ class Frtbi extends CI_Controller {
 			$file3 = iconv("UTF-8", "TIS-620", $_FILES["F_3"]["name"]);
 			$file4 = iconv("UTF-8", "TIS-620", $_FILES["F_4"]["name"]);
 
-			$path = "File/TbiFile";
+			$path = "File/TBIFile";
 			if(!@mkdir($path,0,true)){}else{ };
 			chmod($path, 0777);	
 			move_uploaded_file($_FILES["F_1"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file1);
@@ -119,90 +121,118 @@ class Frtbi extends CI_Controller {
 			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file4);
 
 			$insertFile=array();
-			$insertFile["F_1"]=$_FILES["F_1"]["name"];
-			$insertFile["F_2"]=$_FILES["F_2"]["name"];
-			$insertFile["F_3"]=$_FILES["F_3"]["name"];
-			$insertFile["F_4"]=$_FILES["F_4"]["name"];
-			$insertFile["Spf_id"]='4';
+			$insertFile["F_1"]=$_POST["random"].'_'.$_FILES["F_1"]["name"];
+			$insertFile["F_2"]=$_POST["random"].'_'.$_FILES["F_2"]["name"];
+			$insertFile["F_3"]=$_POST["random"].'_'.$_FILES["F_3"]["name"];
+			$insertFile["F_4"]=$_POST["random"].'_'.$_FILES["F_4"]["name"];
+		
 
-			/*$insertTbi=array();
+			$insertTbi=array();
+			$insertTbi["Tbi_id3"]=$this->input->post("random");
 			$insertTbi["Tbi_id4"]=$this->input->post("Tbi_id4");
 			$insertTbi["Tbi_date"]=$this->input->post("Tbi_date");
 			$insertTbi["Tbi_name"]=$this->input->post("Tbi_name");
-			$insertTbi["Tbi_evidence_register"]=$this->input->post("Tbi_evidence_register");
-			$insertTbi["Tbi_evidence_register_etc"]=$this->input->post("Tbi_evidence_register_etc");
-			$insertTbi["Tbi_code"]=$this->input->post("Tbi_code");
-			$insertTbi["Tbi_education"]=$this->input->post("Tbi_education");
-			$insertTbi["Tbi_appointment"]=$this->input->post("Tbi_appointment");
-			$insertTbi["Tbi_date_concept"]=$this->input->post("Tbi_date_concept");
-			$insertTbi["Tbi_date_meet"]=$this->input->post("Tbi_date_meet");
-			$insertTbi["Tbi_practicality"]=$this->input->post("Tbi_practicality");
-			$insertTbi["Tbi_inspector"]=$this->input->post("Tbi_inspector");
-			$insertTbi["Tbi_date_inspect"]=$this->input->post("Tbi_date_inspect");
-			$insertTbi["Tbi_date_register"]=$this->input->post("Tbi_date_register");*/
+			//$insertTbi["Tbi_evidence_register"]=$this->input->post("Tbi_evidence_register");
+			//$insertTbi["Tbi_evidence_register_etc"]=$this->input->post("Tbi_evidence_register_etc");
+			//$insertTbi["Tbi_code"]=$this->input->post("Tbi_code");
+			//$insertTbi["Tbi_education"]=$this->input->post("Tbi_education");
+			//$insertTbi["Tbi_appointment"]=$this->input->post("Tbi_appointment");
+			//$insertTbi["Tbi_date_concept"]=$this->input->post("Tbi_date_concept");
+			//$insertTbi["Tbi_date_meet"]=$this->input->post("Tbi_date_meet");
+			//$insertTbi["Tbi_practicality"]=$this->input->post("Tbi_practicality");
+			//$insertTbi["Tbi_inspector"]=$this->input->post("Tbi_inspector");
+			//$insertTbi["Tbi_date_inspect"]=$this->input->post("Tbi_date_inspect");
+			$insertTbi["Tbi_date_register"]=$this->input->post("Tbi_date_register");
+			$insertTbi["Tbi_status"]=$this->input->post("Tbi_status");
+			$insertTbi["Spf_id"]='4';
+			$insertTbi["Tbi_id5"]='1';
 
-
+		
 			if($insertTbibusiness["B_concept"]=="" || $insertTbibusiness["B_interest"]=="" || $insertTbibusiness["B_business_plan"]==""
 				|| $insertTbibusiness["B_resources"]==""|| $insertTbibusiness["B_business_plan"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยคะ');</script>";
-			redirect('backend/frtbi', 'refresh');
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
+				redirect('frontend/frtbiplatform', 'refresh');
 
-		}
-		else if($insertTbiperson["Tbi_name1"]=="" || $insertTbiperson["Tbi_code"]=="" || $insertTbiperson["Tbi_lastname"]=="" || $insertTbiperson["Tbi_tell"]==""
-			|| $insertTbiperson["Tbi_phone"]==""|| $insertTbiperson["Tbi_mail"]=="" ){
-
-			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-		echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
-		redirect('backend/frtbi', 'refresh');
-
-	}
-	else if($insertTbiperson1["Tbi_education"]=="" || $insertTbiperson1["Tbi_occupation"]=="" ){
-
-		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-		echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
-		redirect('backend/frtbi', 'refresh');
-
-	}
-
-	else if($insertTbiservice["Tbi_investment"]=="" || $insertTbiservice["Tbi_train"]=="" || $insertTbiservice["Tbi_counsel"]=="" || $insertTbiservice["Tbi_lab"]==""
-		|| $insertTbiservice["Tbi_funding"]=="" || $insertTbiservice["Tbi_asset"]=="" ){
-
-		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-	echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
-	redirect('backend/frtbi', 'refresh');
-
-}
-
-else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
-
-	echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-	echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
-	redirect('backend/frtbi', 'refresh');
-
-}
-		/*else if( $insertTbi["Tbi_date"]=="" 
-				){
+			}
+			else if($insertTbiperson["Tbi_name1"]=="" || $insertTbiperson["Tbi_code"]=="" || $insertTbiperson["Tbi_lastname"]=="" || $insertTbiperson["Tbi_tell"]==""
+				|| $insertTbiperson["Tbi_phone"]==""|| $insertTbiperson["Tbi_mail"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
-			redirect('frontend/frtbiplatform', 'refresh');
-		}*/
-		else {
-			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
-			
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วย');</script>";
+				redirect('frontend/frtbiplatform', 'refresh');
 
+			}
+			/*else if(){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะ');</script>";
+				redirect('frontend/frtbiplatform', 'refresh');
+
+			}*/
+
+			else if($insertTbiservice["Tbi_investment"]=="" || $insertTbiservice["Tbi_train"]=="" || $insertTbiservice["Tbi_counsel"]=="" || $insertTbiservice["Tbi_lab"]==""
+				|| $insertTbiservice["Tbi_funding"]=="" || $insertTbiservice["Tbi_asset"]=="" ){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
+				redirect('frontend/frtbiplatform', 'refresh');
+
+			}
+
+			else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณาแนบเอกสารให้ครบคะ');</script>";
+				redirect('frontend/frtbiplatform', 'refresh');
+
+			}
+			
+			else if( $insertTbi["Tbi_date"]=="" || $insertTbi["Tbi_status"]==""){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
+				redirect('frontend/frtbiplatform', 'refresh');
+			
+			}else {
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
+				
 
 			$this->db->insert('tbi_business', $insertTbibusiness);
-			$this->db->insert('tbi_person', $insertTbiperson);	
-			$this->db->insert('tbi_person1', $insertTbiperson1);
-			$this->db->insert('tbi_service', $insertTbiservice);
-			$this->db->insert('file', $insertFile);
-			print_r ($this->db->last_query());
-			//$this->db->insert('tbi', $insertTbi);
 
+				$B_id = $this->db->insert_id();
+
+			$this->db->insert('tbi_person', $insertTbiperson);
+
+				$Tbi_id = $this->db->insert_id();
+
+			$this->db->insert('tbi_person1', $insertTbiperson1);
+
+				$Tbi_id1 = $this->db->insert_id();
+
+			$this->db->insert('tbi_service', $insertTbiservice);
+
+				$Tbi_id2 = $this->db->insert_id();
+
+			$this->db->insert('file1', $insertFile);
+
+				$F_id1 = $this->db->insert_id();
+
+				$insertTbi["B_id"] = $B_id;
+	
+				$insertTbi["Tbi_id"] = $Tbi_id;
+
+				$insertTbi["Tbi_id1"] = $Tbi_id1;
+
+				$insertTbi["Tbi_id2"] = $Tbi_id2;
+
+				$insertTbi["F_id1"] = $F_id1;
+
+			$this->db->insert('tbi', $insertTbi);
+
+			//print_r ($this->db->last_query());	
 
 		}
 	}
