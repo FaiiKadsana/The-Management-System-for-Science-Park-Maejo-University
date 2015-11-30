@@ -15,19 +15,18 @@
      </div>
    </div></br>
    <!-- /.row -->
-<<<<<<< HEAD
+
   <!-- Star row-->
    <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
      <div class="row">
       <div class=" col-sm-12" >
-=======
+
    <!-- Star row-->
 
    <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
      <div class="row">
       <div class=" col-sm-12">
-     
->>>>>>> Science-Park 29/11/2558
+
        <center>
          
           <table >
@@ -97,14 +96,14 @@
       <!-- /.row -->
     </div>
 
-<<<<<<< HEAD
+
 
       <div class="modal fade bs-example-modal-lg-addproject_coresearcher" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
-=======
+
        <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
        <div class="modal-dialog modal-lg">
->>>>>>> Science-Park 29/11/2558
+
           <div class="modal-content">
 
             <div class="panel panel-warning">
@@ -126,8 +125,7 @@
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="Rec_ln_thai" placeholder="ภาษาไทย"  />
                     </div>
-<<<<<<< HEAD
-=======
+
 
     <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
       <div class="modal-dialog modal-lg">
@@ -149,7 +147,6 @@
                   <div class="col-lg-4">
                     <input type="text" class="form-control" name="Rec_name_thai" placeholder="ภาษาไทย"  reqquired />
 
->>>>>>> Science-Park 29/11/2558
                   </div>
                   
 
@@ -681,7 +678,7 @@
 </div>
 <!-- ข้อมูลโครงการ -->
 
-<<<<<<< HEAD
+
 
 <div class="modal-footer">
   <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
@@ -694,7 +691,7 @@
 
 </div>
 </div>
-=======
+
 </div>
 </div>
 
@@ -703,14 +700,11 @@
                 <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
 
->>>>>>> Science-Park 29/11/2558
+
 
 
 </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> Science-Park 29/11/2558
 </div>
 </div>
 

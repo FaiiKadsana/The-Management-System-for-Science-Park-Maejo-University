@@ -373,7 +373,7 @@
 
 <div class="row">
   <div class="col-md-offset-5  col-sm-7">
-  <button type="button" class="btn btn-warning    btn-lg">แก้ไข</button>
+  <button type="submit" class="btn btn-warning    btn-lg">แก้ไข</button>
     <button type="reset" class="btn btn-warning  btn-lg">ยกเลิก</button>
   </div>
 </div>
