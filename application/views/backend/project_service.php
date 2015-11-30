@@ -15,7 +15,10 @@
      </div>
    </div></br>
    <!-- /.row -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> Science-Park 30/11/2558
   <!-- Star row-->
    <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
      <div class="row">
@@ -678,7 +681,10 @@
 </div>
 <!-- ข้อมูลโครงการ -->
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Science-Park 30/11/2558
 
 <div class="modal-footer">
   <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
@@ -686,8 +692,6 @@
 </div>
 
 </div>
-
-
 
 </div>
 </div>
@@ -700,9 +704,12 @@
                 <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> Science-Park 30/11/2558
 </div>
 
 </div>

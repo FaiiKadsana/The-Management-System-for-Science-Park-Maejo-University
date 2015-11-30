@@ -12,7 +12,7 @@ class Calendar_Model extends CI_Model {
 			'month_type' => 'long',
 			'day_type' => 'shot',
 			'show_next_prev' => TRUE,
-			'next_prev_url' => base_url() .'backend/index/display' 
+			'next_prev_url' => base_url() .'frontend/index/display' 
 			);
 		
 		$this->conf['template'] = '

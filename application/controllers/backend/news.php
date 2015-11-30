@@ -5,19 +5,20 @@ class News extends CI_Controller {
 	public function __construct (){
 		parent::__construct();
 		$this->load->library('pagination');
-		$this->load->library('session');
+		//$this->load->library('session');
 
 	}
+
 	public function index(){
-		
+
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
 
 		//แบ่งหน้า
-		$config["base_url"]=base_url()."/frontend/catalog/catalog";
-		$config["total_rows"] = $this->db->count_all("catalog");
-		$config["per_page"]=8;
+		$config["base_url"]=base_url()."/backend/news/news";
+		$config["total_rows"] = $this->db->count_all("news");
+		$config["per_page"]=5;
 		$config['uri_segment'] = 4;
 		$config['full_tag_open'] = '<ul class="pagination">'; 
 		$config['full_tag_close'] = '</ul>'; 
@@ -43,72 +44,80 @@ class News extends CI_Controller {
 		//ดึกข้อมูลสำหรับบ่งหน้า
 		$this->db->limit($config['per_page'],$this->uri->segment(4));		
 
-		//*************************Project_แถบล่าง__type1
-			//ดึงข้อมูลจากฐาน
-			$this->db->order_by("ne_date_up", "desc"); 
-			$rs = $this->db->get('news');
-			
-			$data['rs'] = $rs->result_array();
-			$data['page']=$this->pagination->create_links();
-			
-			$this->load->view('backend/news',$data);
-			$this->load->view('backend/script');	
-
-	}
-	public function add_news()
-		{	
-			$this->load->view('backend/header');
-			$this->load->view('backend/menutop');
-			$this->load->view('backend/menu');
-				
 		
-			if( $_SERVER["REQUEST_METHOD"] == "POST")
-			{
-					$insertData=array(
-					"ne_sub"=>$this->input->post("news"),
-					"ne_text"=>$this->input->post("newsdetail"),
-					"ne_type"=>$this->input->post("type_news"),
-					"ne_date_up"=>date("Y-m-d H:i:s"),
-					"ne_date_cre"=>date("Y-m-d H:i:s")
-					);
+		$results = array();
+		$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_text,news.Ne_date_up');
+		$this->db->order_by("Ne_id", "desc");
+ 
+		$this->db->limit(5,0);
 
-					$this->db->insert('news', $insertData);
-										
-				//-------UPLOAD IMG------//
-					$last_id = mysql_insert_id(); 
-					$folderName = date('dmY');
-					$path = 'asset/img/upload/' . $folderName;
-					if ( ! file_exists($path) )
-					{	
-					$create = mkdir($path, 0777 , TRUE);
-					if ( ! $create )
-					return;
-					}
-					$this->load->library('upload');
-					$this->upload->initialize(array(
-					"upload_path"=>$path,
-					"allowed_types"=>"*"
-					));
-					if($this->upload->do_multi_upload("userfile")){
-					$upload_data =  $this->upload->get_multi_upload_data();	
-					}		
-					foreach($upload_data as $value){  
-					$updateData["up_name"] = "asset/img/upload/".$folderName."/".$value['file_name'];
-					$updateData["up_id_data"]=$last_id;
-					$updateData["up_id_type"]=1;					
-					$updateData["up_type_file"]= 1;
-					$updateData["up_date_cre"]= date("Y-m-d H:i:s");
-					$this->db->insert('upload', $updateData);	
-					}
-				//--------------------//
+		$rssearch = $this->db->get('news');
 
-					print_r ($this->db->last_query());
-				
-					redirect('backend/catalog', 'refresh');
-			}
-			$data["action"]=base_url("catalog/add_news");
-			$this->load->view('backend/catalog',$data);
-			$this->load->view('backend/script');	
+		$data['news'] = $rssearch->result();
+
+		//print_r ($this->db->last_query());
+
+		//SEARCH
+		if($_SERVER["REQUEST_METHOD"] == "POST")
+		{
+			$data['keyword'] = $this->input->post('keyword');
+			//print_r ($_POST);
+			
+			$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_text,news.Ne_date_up');
+			$this->db->like('Ne_sub',$data['keyword']);
+
+			$search1 = $this->db->get('news');
+			
+			$data['search'] = $search1->result();
+			//print_r ($this->db->last_query());
+			//print_r($data['search']);	
+
 		}
+
+		$data['page']=$this->pagination->create_links();
+		$data['action1']=site_url("backend/news/index/");
+		$data['action']=site_url("backend/news/addnews/");	
+		$this->load->view('backend/news',$data);
+		$this->load->view('backend/script');
+	}
+
+	public function addnews(){
+
+			if( $_SERVER["REQUEST_METHOD"] == "POST")
+		{
+			
+			$insertNews=array();
+			$insertNews["Ne_sub"]=$this->input->post("Ne_sub");
+			$insertNews["Ne_text"]=$this->input->post("Ne_text");
+			$insertNews["Ne_date_up"]=date("Y-m-d H:i:s");
+			$insertNews["Ne_date_cre"]=date("Y-m-d H:i:s");
+		
+			$file = iconv("UTF-8", "TIS-620", $_FILES["Ne_picture"]["name"]);
+			$file1 = iconv("UTF-8", "TIS-620", $_POST["Ne_sub"]);
+
+			$insertNews["Ne_picture"]=$_POST["Ne_sub"].'_'.$_FILES["Ne_picture"]["name"];
+
+			$path = "asset\img\News";
+			if(!@mkdir($path,0,true)){}else{ };
+			chmod($path, 0777);	
+			move_uploaded_file($_FILES["Ne_picture"]["tmp_name"],$path.'/'.$file1.'_'.$file);
+
+			
+			if($insertNews["Ne_sub"]=="" || $insertNews["Ne_text"]==""){
+
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
+				//redirect('backend/news', 'refresh');
+
+			}else {
+				echo "<meta http-equv=i'Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
+				$this->db->insert('news', $insertNews);
+				redirect('backend/news', 'refresh');
+			}
+
+		}
+		
+	}
 
 }
