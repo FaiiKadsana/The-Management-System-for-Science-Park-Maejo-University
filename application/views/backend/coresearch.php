@@ -32,7 +32,7 @@
              <option value=""> เลือกสถานะ</option>
              <option value="รอดำเนินงาน">รอดำเนินงาน</option>
              <option value="รออนุมัติ">รออนุมัติ</option>ห
-             <option value="อนุมัติ">อนุมัติ</option>
+             <option value="อนุมัติ">อนุมัติ</option> 
              <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
            </select></td>
            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
@@ -73,9 +73,9 @@
           <td ><?php echo $row->Co_name_pro; ?></td>
           <td ><?php echo $row->Co_date; ?></td> 
           <td ><?php echo $row->Co_status; ?></td>
-          <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url('backend/viewcoresearch/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/coresearchplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
+         <td><a target ="_blank" href="<?php echo base_url('backend/coresearchplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
           <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
         </tr>  
 
@@ -99,7 +99,7 @@
           <td ><?php echo $row->Co_name_pro; ?></td>
           <td ><?php echo $row->Co_date; ?></td> 
           <td ><?php echo $row->Co_status; ?></td>
-          <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url('backend/viewcoresearch/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
          <td><a target ="_blank" href="<?php echo base_url('backend/coresearchplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>
           <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    

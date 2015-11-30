@@ -1,3 +1,5 @@
+<?php  foreach ($coresearch_irct as $row) { ?>
+
 <div id="page-wrapper ">
 
   <div class="container-fluid">
@@ -27,7 +29,7 @@
           <table width="100%">
             <tr>
               <td width="30%"></td>
-              <td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name="" disabled></td>
+              <td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name="Co_id" value="<?php echo $row->Co_id;?>" disabled></td>
             </tr>
           </table>
         </center>
@@ -43,10 +45,10 @@
           <p>เพื่อขอรับการสนับสนุนตามกลไกอุทยานวิทยาศาสตร์ภาคเหนือ</p>
           <p>ปีงบประมาณ 2558</p>
           <br>
-          <table  width="80%" >
+          <table  width="100%" >
           <tr>
               <td width="35%" colspan="2"> 
-                วันที่:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"  name="dateca" disabled >
+                วันที่:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date"  name="Co_date" value="<?php echo $row->Co_date;?>" disabled >
              <br><br><br><br> </td>
 
             </tr>
@@ -54,69 +56,73 @@
             <tr>
               <td width="35%">1.ชื่อโครงการ</td>
               <td >
-                <textarea type="text" cols="80" name="" rows="3" disabled placeholder="(เป็นโครงการวิจัยและพัฒนาที่ภาคเอกชนพร้อมร่วมมือในการวิจัยและพัฒนาร่วมกัน)"></textarea>
+                <textarea type="text" cols="80" name="Co_name_pro" rows="3" disabled><?php echo $row->Co_name_pro;?>"</textarea>
               </td>
             </tr>
             <tr>
               <td width="35%">2.กลุ่มอุตสาหกรรม</td>
               <td >
-                <input type="radio"  name="1" value="Focus (ข้าวทั้งห่วงโซ่)" disabled> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="1" value="4 Focus Industries"disabled> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="1" value="Others" disabled> Others ระบุ <input type="text" name="" size="15" disabled>   
+               <input type="radio" name="Co_secter" <?php if($row->Co_secter == 'Focus (ข้าวทั้งห่วงโซ่)'){?>
+              checked <?php }else{} ?>  disabled> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Co_secter" <?php if($row->Co_secter == '4 Focus Industries'){?>
+              checked <?php }else{} ?> disabled> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Co_secter" <?php if($row->Co_secter == 'Others'){?>
+              checked <?php }else{} ?>  disabled> Others ระบุ <input type="text" name="Co_secter_etc" value="<?php echo $row->Co_secter_etc;?>" size="15" disabled>   
               </td>
             </tr>
             <tr>
               <td width="35%">3.ผู้รับผิดชอบโครงการและความเชี่ยวชาญ</td>
               <td >
                 <br>
-                ชื่อผู้รับผิดชอบ: <input type="text" name="" size="26" disabled> ตำแหน่ง: <input type="text" name="" size="26" disabled> <br>
-                หน่วยงานรับผิดชอบ: <input type="text" name="" size="22" disabled> เบอร์โทรศัพท์: <input type="tel" name="" size="22" disabled> <br>
-                แฟกซ์: <input type="text" name="" size="30" disabled> อีเมล์: <input type="email" name="" size="30" disabled> <br>
-                ที่อยู่: <textarea name="" cols="70" rows="3" placeholder=" ที่อยู่" disabled></textarea>
+                ชื่อผู้รับผิดชอบ: <input type="text" name="Rp_name" value="<?php echo $row->Rp_name;?>"size="26" disabled> ตำแหน่ง: <input type="text" name="Rp_position" value="<?php echo $row->Rp_position;?>" size="26" disabled> <br>
+                หน่วยงานรับผิดชอบ: <input type="text" name="Rp_institute" value="<?php echo $row->Rp_institute;?>" size="22" disabled> เบอร์โทรศัพท์: <input type="tel" name="Rp_phone" value="<?php echo $row->Rp_phone;?>" size="22" disabled> <br>
+                แฟกซ์: <input type="text" name="Rp_fax" value="<?php echo $row->Rp_fax;?>" size="30" disabled> อีเมล์: <input type="email" name="Rp_mail" value="<?php echo $row->Rp_mail;?>" size="30" disabled> <br>
+                ที่อยู่: <textarea name="Rp_address" cols="70" rows="3"  disabled><?php echo $row->Rp_address;?></textarea>
       <br><br>
       </tr>
       <tr>
         <td width="35%">4.ที่มาของโครงการ</td>
         <td >
-          <textarea name="" cols="80" rows="3" disabled></textarea>
+          <textarea name="Co_origin" cols="80" rows="3" disabled><?php echo $row->Co_origin;?></textarea>
         </td>
       </tr>
       <tr>
         <td width="35%">5.วัตถุประสงค์</td>
         <td >
-          <textarea name="" cols="80" rows="3" disabled></textarea>
+          <textarea name="Co_objective" cols="80" rows="3" disabled><?php echo $row->Co_objective;?></textarea>
         </td>
       </tr>
       <tr>
         <td width="35%">6.รายละเอียดผู้ประกอบการ</td>
         <td >
           <br>
-          ประเภทนิติบุคคล: <input type="text" name="" size="24" disabled> ทุนจดทะเบียน: <input type="text" name="" size="20" disabled> <br>
-          จำนวนพนักงาน: <input type="text" name="" size="18" disabled> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="" size="18" disabled> <br>
-          ที่อยู่: <textarea name="" cols="70" rows="3" placeholder=" ที่อยู่" disabled></textarea> <br>
-    ผู้ติดต่อประสานงาน: <input type="text" name="" size="18" disabled> เบอร์ผู้ติดต่อประสานงาน: <input type="email" name="" size="16" disabled> <br><br>
+          ชื่อกิจการ: <input type="text" name="C_name" value="<?php echo $row->C_name;?>" size="24" disabled><br>
+          ประเภทนิติบุคคล: <input type="text" name="C_company_type" value="<?php echo $row->C_company_type;?>" size="24" disabled> ทุนจดทะเบียน: <input type="text" name="C_investment" value="<?php echo $row->C_investment;?>" size="20" disabled> <br>
+          จำนวนพนักงาน: <input type="text" name="Co_no_emp_total" value="<?php echo $row->Co_no_emp_total;?>" size="18" disabled> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="Co_main_pro1" value="<?php echo $row->Co_main_pro1;?>" size="18" disabled> <br>
+          ที่อยู่: <textarea name="C_address" cols="70" rows="3"  disabled><?php echo $row->C_address;?></textarea> <br>
+    ผู้ติดต่อประสานงาน: <input type="text" name="P_name" value="<?php echo $row->P_name;?>" size="18" disabled> เบอร์ผู้ติดต่อประสานงาน: <input type="email" name="P_phone" value="<?php echo $row->P_phone;?>"size="16" disabled> <br><br>
   </td>
 </tr>
 <tr>
   <td width="35%">7.เหตุผลที่สนใจร่วมงานวิจัยและพัฒนาสำหรับโครงการนี้</td>
   <td >
-    <textarea name="" cols="80" rows="3" disabled></textarea>
+    <textarea name="Co_reason" cols="80" rows="3" disabled><?php echo $row->Co_reason;?></textarea>
   </td>
 </tr>
 <tr>
   <td width="35%">8.โครงการ/งานวิจัยที่เคยทำร่วมกับผู้เชี่ยวชาญ</td>
   <td >
-    <textarea name="" cols="80" rows="3" disabled></textarea>
+    <textarea name="Co_pro_together" cols="80" rows="3" disabled><?php echo $row->Co_pro_together;?></textarea>
   </td>
 </tr>
 <tr>
   <td width="35%">9.การใช้ผลงานวิจัยเดิมที่นำมาต่อยอดเพื่อพัฒนาสู่เชิงพาณิชย์</td>
   <td >
-    <textarea name="" cols="80" rows="3" disabled></textarea>
+    <textarea name="Co_dem" cols="80" rows="3" disabled><?php echo $row->Co_dem;?></textarea>
   </td>
 </tr>
 <tr>
   <td width="35%">10.รายละเอียดห้องปฏิบัติการ และนักวิจัย</td>
   <td >
-    <textarea name="" cols="80" rows="3" disabled></textarea>
+    <textarea name="Co_lab_re" cols="80" rows="3" disabled><?php echo $row->Co_lab_re;?></textarea>
   </td>
 </tr>
 <tr>
@@ -139,58 +145,58 @@
           <td align="center">6</td>
         </tr>
         <tr>
-          <td width="40%" align="center"><input type="text" size="30" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="1" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="2" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="3" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="4" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="5" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="6" name="" disabled></td>
+          <td width="40%" align="center"><input type="text" size="30" name="Pl_activity1" value="<?php echo $row->Pl_activity1;?>" disabled></td>
+          <td align="center"><input type="text" name="Pl_month1" value="<?php echo $row->Pl_month1;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month2" value="<?php echo $row->Pl_month2;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month3" value="<?php echo $row->Pl_month3;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month4" value="<?php echo $row->Pl_month4;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month5" value="<?php echo $row->Pl_month5;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month6" value="<?php echo $row->Pl_month6;?>" size="2" disabled></td>
         </tr>
         <tr>
-          <td width="40%" align="center"><input type="text" size="30" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="1" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="2" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="3" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="4" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="5" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="6" name="" disabled></td>
+          <td width="40%" align="center"><input type="text" size="30" name="Pl_activity2" value="<?php echo $row->Pl_activity2;?>" disabled></td>
+         <td align="center"><input type="text" name="Pl_month1" value="<?php echo $row->Pl_month1;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month2" value="<?php echo $row->Pl_month2;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month3" value="<?php echo $row->Pl_month3;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month4" value="<?php echo $row->Pl_month4;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month5" value="<?php echo $row->Pl_month5;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month6" value="<?php echo $row->Pl_month6;?>" size="2" disabled></td>
         </tr>
         <tr>
-          <td width="40%" align="center"><input type="text" size="30" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="1" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="2" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="3" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="4" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="5" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="6" name="" disabled></td>
+          <td width="40%" align="center"><input type="text" size="30" name="Pl_activity3" value="<?php echo $row->Pl_activity3;?>" disabled></td>
+          <td align="center"><input type="text" name="Pl_month1" value="<?php echo $row->Pl_month1;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month2" value="<?php echo $row->Pl_month2;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month3" value="<?php echo $row->Pl_month3;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month4" value="<?php echo $row->Pl_month4;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month5" value="<?php echo $row->Pl_month5;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month6" value="<?php echo $row->Pl_month6;?>" size="2" disabled></td>
         </tr>
         <tr>
-          <td width="40%" align="center"><input type="text" size="30" name=""disabled></td>
-          <td align="center"><input type="checkbox" value="1" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="2" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="3" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="4" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="5" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="6" name="" disabled></td>
+          <td width="40%" align="center"><input type="text" size="30" name="Pl_activity4" value="<?php echo $row->Pl_activity4;?>" disabled></td>
+     <td align="center"><input type="text" name="Pl_month1" value="<?php echo $row->Pl_month1;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month2" value="<?php echo $row->Pl_month2;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month3" value="<?php echo $row->Pl_month3;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month4" value="<?php echo $row->Pl_month4;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month5" value="<?php echo $row->Pl_month5;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month6" value="<?php echo $row->Pl_month6;?>" size="2" disabled></td>
         </tr>
         <tr>
-          <td width="40%" align="center"><input type="text" size="30" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="1" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="2" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="3" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="4" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="5" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="6" name="" disabled></td>
+          <td width="40%" align="center"><input type="text" size="30" name="Pl_activity5" value="<?php echo $row->Pl_activity5;?>" disabled></td>
+       <td align="center"><input type="text" name="Pl_month1" value="<?php echo $row->Pl_month1;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month2" value="<?php echo $row->Pl_month2;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month3" value="<?php echo $row->Pl_month3;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month4" value="<?php echo $row->Pl_month4;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month5" value="<?php echo $row->Pl_month5;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month6" value="<?php echo $row->Pl_month6;?>" size="2" disabled></td>
         </tr>
         <tr>
-          <td width="40%" align="center"><input type="text" size="30" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="1" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="2" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="3" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="4" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="5" name="" disabled></td>
-          <td align="center"><input type="checkbox" value="6" name="" disabled></td>
+          <td width="40%" align="center"><input type="text" size="30" name="Pl_activity6" value="<?php echo $row->Pl_activity6;?>" disabled></td>
+         <td align="center"><input type="text" name="Pl_month1" value="<?php echo $row->Pl_month1;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month2" value="<?php echo $row->Pl_month2;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month3" value="<?php echo $row->Pl_month3;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month4" value="<?php echo $row->Pl_month4;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month5" value="<?php echo $row->Pl_month5;?>" size="2" disabled></td>
+          <td align="center"><input type="text" name="Pl_month6" value="<?php echo $row->Pl_month6;?>" size="2" disabled></td>
         </tr>
       </table>
       <br>
@@ -201,7 +207,7 @@
 <tr>
   <td width="35%">12.ผลที่คาดว่าจะได้รับ</td>
   <td > 
-    <textarea name="" cols="80" rows="3" placeholder="•รายได้เพิ่มขึ้นของผู้ประกอบการในภาคเอกชนที่เป็นผลมาจากโครงการ xxx บาท  • มูลค่าการลงทุนในการวิจัยและพัฒนา (R&D) ของภาคเอกชนที่เพิ่มขึ้น xxx บาท  • จำนวนการจ้างงานวิจัยที่อยู่ในภาคเอกชนเพิ่มขึ้น xxx คน  •..."  disabled></textarea>
+    <textarea name="Co_result" cols="80" rows="3"  disabled><?php echo $row->Co_result;?></textarea>
   </td>
 </tr>
 <tr>
@@ -230,70 +236,66 @@
       </tr>
       <tr>
         <td width="20%">1.งบดำเนินการ<br>&nbsp;1.1ค่าตอบแทน<br>&nbsp;1.2ค่าจ้าง<br>&nbsp;1.3ค่าใช้จ่ายในการดำเนินงาน<br>&nbsp;1.4ค่าวัสดุ<br>&nbsp;1.5ค่าใช้สอย<br>&nbsp;1.6ค่าบริหารจัดการ</td>                    
-        <td width="30%"><input type="text" size="20"  disabled name="1" placeholder="1"><br>
-          <input type="text" size="20" name="" placeholder="1.1" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.2" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.3" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.4" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.5" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.6" disabled><br>
+        <td width="30%"><input type="text" size="20"  disabled name="Bg_action1" value="<?php echo $row->Bg_action1;?>" placeholder="1"><br>
+          <input type="text" size="20" name="Bg_reward1" value="<?php echo $row->Bg_reward1;?>"  disabled><br>
+          <input type="text" size="20" name="Bg_wage1" value="<?php echo $row->Bg_wage1;?>" disabled><br>
+          <input type="text" size="20" name="Bg_expenses1" value="<?php echo $row->Bg_expenses1;?>" disabled><br>
+          <input type="text" size="20" name="Bg_material1" value="<?php echo $row->Bg_material1;?>" disabled><br>
+          <input type="text" size="20" name="" name="Bg_living1" value="<?php echo $row->Bg_living1;?>" disabled><br>
+          <input type="text" size="20" name="" name="Bg_management1" value="<?php echo $row->Bg_management1;?>" disabled><br>
         </td>
         <td width="30%">
-          <input type="text" size="10" name="" placeholder="1" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1" disabled><br>
-          <input type="text" size="10" name="" placeholder="1.1" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1.1" disabled><br>
-          <input type="text" size="10" name="" placeholder="1.2" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1.2" disabled><br>
-          <input type="text" size="10" name="" placeholder="1.3" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1.3" disabled><br>
-          <input type="text" size="10" name="" placeholder="1.4" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1.4" disabled><br>
-          <input type="text" size="10" name="" placeholder="1.5" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1.5" disabled><br>
-          <input type="text" size="10" name="" placeholder="1.6" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="1.6" disabled><br>
+          <input type="text" size="10" name="Bg_action2" value="<?php echo $row->Bg_action2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_action3" value="<?php echo $row->Bg_action3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_reward2" value="<?php echo $row->Bg_reward2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_reward3" value="<?php echo $row->Bg_reward3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_wage2" value="<?php echo $row->Bg_wage2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_wage3" value="<?php echo $row->Bg_wage3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_expenses2" value="<?php echo $row->Bg_expenses2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_expenses3" value="<?php echo $row->Bg_expenses3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_material2" value="<?php echo $row->Bg_material2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_material3" value="<?php echo $row->Bg_material3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_living2" value="<?php echo $row->Bg_living2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_living3" value="<?php echo $row->Bg_living3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_management2" value="<?php echo $row->Bg_management2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_management3" value="<?php echo $row->Bg_management3;?>" disabled><br>
         </td>
         <td>
-          <input type="text" size="20" name="" placeholder="1" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.1" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.2" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.3" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.4" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.4" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.4" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.4" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.5" disabled><br>
-          <input type="text" size="20" name="" placeholder="1.6" disabled><br>
-        </td>
+          <input type="text" size="20" name="Bg_action4" value="<?php echo $row->Bg_action4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_reward4" value="<?php echo $row->Bg_reward4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_wage4" value="<?php echo $row->Bg_expenses4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_material4" value="<?php echo $row->Bg_material4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_living4" value="<?php echo $row->Bg_living4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_management4" value="<?php echo $row->Bg_management4;?>" disabled><br>
+                  </td>
       </tr>
       <tr>
         <td width="20%">รวมงบดำเนินการ</td>
-        <td width="30%"><input type="text" size="20" name="" disabled></td>
-        <td width="30%"><input type="text" size="10" name=""disabled >&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" disabled><br></td>
-        <td><input type="text" size="20" name="" disabled></td>
+        <td width="30%"><input type="text" size="20" name="Bg_total1" value="<?php echo $row->Bg_total1;?>" disabled></td>
+        <td width="30%"><input type="text" size="10" name="Bg_total2" value="<?php echo $row->Bg_total2;?>" disabled >&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_total3" value="<?php echo $row->Bg_total3;?>" disabled><br></td>
+        <td><input type="text" size="20" name="Bg_total4" value="<?php echo $row->Bg_total4;?>" disabled></td>
       </tr>
       <tr>
         <td width="20%">2.งบลงทุน<br>&nbsp;2.1ค่าครุภัณฑ์<br>&nbsp;2.2 ค่าก่อสร้าง (อาทิเช่น อาคาร สิ่งปลูกสร้าง สาธารณูปโภค)</td>                    
-        <td width="30%"><input type="text" size="20" name="1" disabled placeholder="2"><br>
-          <input type="text" size="20" name="" placeholder="2.1" disabled><br>
-          <input type="text" size="20" name="" placeholder="2.2" disabled><br>
+        <td width="30%"><input type="text" size="20" name="Bg_in_invest1" value="<?php echo $row->Bg_in_invest1;?>" disabled placeholder="2"><br>
+          <input type="text" size="20" name="Bg_in_durable1" value="<?php echo $row->Bg_in_durable1;?>"  disabled><br>
+          <input type="text" size="20" name="Bg_in_building1" value="<?php echo $row->Bg_in_building1;?>"  disabled><br>
         </td>
         <td width="30%">
-          <input type="text" size="10" name="" placeholder="2" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="2" disabled><br>
-          <input type="text" size="10" name="" placeholder="2.1" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="2.1" disabled><br>
-          <input type="text" size="10" name="" placeholder="2.2" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" placeholder="2.2" disabled><br>
+          <input type="text" size="10"  name="Bg_in_invest2" value="<?php echo $row->Bg_in_invest2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_in_invest3" value="<?php echo $row->Bg_in_invest3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_in_durable2" value="<?php echo $row->Bg_in_durable2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_in_durable3" value="<?php echo $row->Bg_in_durable3;?>" disabled><br>
+          <input type="text" size="10" name="Bg_in_building2" value="<?php echo $row->Bg_in_building2;?>" disabled>&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_in_building3" value="<?php echo $row->Bg_in_building3;?>" disabled><br>
         </td>
         <td>
-          <input type="text" size="20" name="" placeholder="2" disabled><br>
-          <input type="text" size="20" name="" placeholder="2.1" disabled><br>
-          <input type="text" size="20" name="" placeholder="2.2" disabled><br>
+          <input type="text" size="20" name="Bg_in_invest4" value="<?php echo $row->Bg_in_invest4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_in_durable4" value="<?php echo $row->Bg_in_durable4;?>" disabled><br>
+          <input type="text" size="20" name="Bg_in_building4" value="<?php echo $row->Bg_in_building4;?>" disabled><br>
         </td>
       </tr>
       <tr>
         <td width="20%">รวมงบลงทุน</td>
-        <td width="30%"><input type="text" size="20" name="" disabled></td>
-        <td width="30%"><input type="text" size="10" name="" disabled >&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="" disabled><br></td>
-        <td><input type="text" size="20" name="" disabled></td>
+        <td width="30%"><input type="text" size="20" name="Bg_in_total1" value="<?php echo $row->Bg_in_total1;?>" disabled></td>
+        <td width="30%"><input type="text" size="10" name="Bg_in_total2" value="<?php echo $row->Bg_in_total2;?>" disabled >&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_in_total3" value="<?php echo $row->Bg_in_total3;?>" disabled><br></td>
+        <td><input type="text" size="20" name="Bg_in_total4" value="<?php echo $row->Bg_in_total4;?>" disabled></td>
       </tr>
       <tr>
         <th width="20%">รวมงบประมาณทั้งหมด</th>
-        <th width="30%"><input type="text" size="20" name="" disabled></th>
-        <th width="30%"><input type="text" size="10" name="" disabled >&nbsp;&nbsp;&nbsp;<input type="text" size="10" name=""  disabled><br></th>
-        <th><input type="text" size="20" name="" disabled ></th>
+        <th width="30%"><input type="text" size="20" name="Bg_in_sum1" value="<?php echo $row->Bg_in_sum1;?>" disabled></th>
+        <th width="30%"><input type="text" size="10" name="Bg_in_sum2" value="<?php echo $row->Bg_in_sum2;?>" disabled >&nbsp;&nbsp;&nbsp;<input type="text" size="10" name="Bg_in_sum3" value="<?php echo $row->Bg_in_sum3;?>" disabled><br></th>
+        <th><input type="text" size="20" name="Bg_in_sum4" value="<?php echo $row->Bg_in_sum4;?>" disabled ></th>
       </tr>
     </table>
     <br>
@@ -362,3 +364,4 @@
 
 </div>
 <!-- /#wrapper -->
+<?php } ?>

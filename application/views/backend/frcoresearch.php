@@ -145,56 +145,56 @@
                           <tr>
                             <td width="40%" align="center"><input type="text" size="30" name="Pl_activity1"></td>
                             <td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-                            <td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-                            <td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-                            <td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-                            <td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-                            <td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
                           </tr>
                           <tr>
                             <td width="40%" align="center"><input type="text" size="30" name="Pl_activity2"></td>
                             <td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-                            <td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-                            <td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-                            <td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-                            <td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-                            <td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
                           </tr>
                           <tr>
                             <td width="40%" align="center"><input type="text" size="30" name="Pl_activity3"></td>
                             <td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-                            <td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-                            <td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-                            <td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-                            <td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-                            <td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
                           </tr>
                           <tr>
                             <td width="40%" align="center"><input type="text" size="30" name="Pl_activity4"></td>
                             <td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-                            <td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-                            <td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-                            <td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-                            <td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-                            <td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
                           </tr>
                           <tr>
                             <td width="40%" align="center"><input type="text" size="30" name="Pl_activity5"></td>
                             <td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-                            <td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-                            <td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-                            <td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-                            <td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-                            <td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
                           </tr>
                           <tr>
                             <td width="40%" align="center"><input type="text" size="30" name="Pl_activity6"></td>
                             <td align="center"><input type="checkbox" value="1" name="Pl_month1"></td>
-                            <td align="center"><input type="checkbox" value="2" name="Pl_month2"></td>
-                            <td align="center"><input type="checkbox" value="3" name="Pl_month3"></td>
-                            <td align="center"><input type="checkbox" value="4" name="Pl_month4"></td>
-                            <td align="center"><input type="checkbox" value="5" name="Pl_month5"></td>
-                            <td align="center"><input type="checkbox" value="6" name="Pl_month6"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month2"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month3"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month4"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month5"></td>
+                            <td align="center"><input type="checkbox" value="1" name="Pl_month6"></td>
                           </tr>
                         </table>
                         <br>
@@ -341,32 +341,32 @@
                 <td><b style="color:red;"> *</b> หนังสือมอบอำนาจ (ถ้ามี) :<input type="file" name="F_3"></td>
                 <td><b style="color:red;"> *</b> สำเนาบัตรประชาชน/สำเนาบัตรข้าราชการของนักวิจัย :<input type="file" name="F_4"></td>
               </tr>
-                <tr>
-              <td>
-                <br>
-                <select class="form-control"  name="" >
-                 <option value="">เลือกสถานะ</option>
-                 <option value="รอดำเนินงาน">รอดำเนินงาน</option>
-                 <option value="รออนุมัติ">รออนุมัติ</option>
-                 <option value="อนุมัติ">อนุมัติ</option>
-                 <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
-               </select> </td>
-               <td><b style="color:red;"> *</b> </td>
-               <td></td>
-               <td></td>
-             </tr>
-            </table>
-          </center>
-        </div>
-      </div>
-      <br><br>
+              <tr>
+                <td>
+                  <br>
+                  <select class="form-control"  name="" >
+                   <option value="">เลือกสถานะ</option>
+                   <option value="รอดำเนินงาน">รอดำเนินงาน</option>
+                   <option value="รออนุมัติ">รออนุมัติ</option>
+                   <option value="อนุมัติ">อนุมัติ</option>
+                   <option value="ไม่อนุมัติ">ไม่อนุมัติ</option>
+                 </select> </td>
+                 <td><b style="color:red;"> *</b> </td>
+                 <td></td>
+                 <td></td>
+               </tr>
+             </table>
+           </center>
+         </div>
+       </div>
+       <br><br>
 
-        <center>
-          <div class="form-group">
-            <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
-            <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
-          </div>
-        </center>
+       <center>
+        <div class="form-group">
+          <button  type="submit" class="btn btn-primary " ><strong>ตกลง</strong></button> 
+          <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button>   
+        </div>
+      </center>
 
     </form>
 
