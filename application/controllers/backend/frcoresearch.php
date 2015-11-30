@@ -169,7 +169,7 @@ class Frcoresearch extends CI_Controller {
 			if($insertCompany["C_name"]=="" || $insertCompany["C_company_type"]=="" || $insertCompany["C_investment"]=="" ){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ ');</script>";
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
 			redirect('backend/frcoresearch', 'refresh');
 
 			}else if($insertData["P_name"]=="" || $insertData["P_phone"]==""){

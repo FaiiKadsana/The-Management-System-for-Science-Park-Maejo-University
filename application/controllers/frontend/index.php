@@ -52,7 +52,7 @@ class Index extends CI_Controller {
 		
 		$this->db->order_by("Ne_id", "desc");
 
-		$this->db->limit(4,0);
+		//$this->db->limit(4,0);
 
 		$news1 = $this->db->get('news');
 		
