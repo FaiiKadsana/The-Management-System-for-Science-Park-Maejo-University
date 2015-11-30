@@ -81,24 +81,33 @@
           <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
+<<<<<<< HEAD
           <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
 >>>>>>> 15e66631c2f7fb7937f26c56812f5bfee5f3327a
+=======
+          <!--<td><a href="<?php //echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>-->                    
+>>>>>>> Science-Park 1/12/2558
         </tr>  
 
         <?php } ?>
 
         <?php }else{ ;?>
 
+<<<<<<< HEAD
         <tr class="bg-success">
+=======
+       <tr class="bg-success">
+>>>>>>> Science-Park 1/12/2558
           <th width="15%">เลขที่แบบฟอร์ม</th>
           <th width="20%">ชื่อสถานประกอบการ</th>
           <th width="20%">ชื่อโครงการ</th>
           <th width="20%">วันที่ยืนโครงการ</th> 
-          <th width="20%">สถานะ</th>       
+          <th width="20%">สถานะ</th>   
         </tr>   
 
         <?php foreach($search as $row){?>
 
+<<<<<<< HEAD
         <tr class="bg-success">
 
           <td >1</td>
@@ -125,6 +134,9 @@
       </tr>  
 =======
 =======
+=======
+         <tr class="bg-success">
+>>>>>>> Science-Park 1/12/2558
           <td ><?php echo $row->Co_id; ?></td>
           <td ><?php echo $row->C_name; ?></td>
           <td ><?php echo $row->Co_name_pro; ?></td>
@@ -133,14 +145,20 @@
           <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
-          <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
+          <!--<td><a href="<?php //echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>-->                    
         </tr>  
 >>>>>>> 15e66631c2f7fb7937f26c56812f5bfee5f3327a
 
       <?php } }?>
 
+<<<<<<< HEAD
     </table>     
     <!-- End -->
+=======
+      </table>     
+      <!-- End -->
+    </div>
+>>>>>>> Science-Park 1/12/2558
   </div>
 </div>
 
