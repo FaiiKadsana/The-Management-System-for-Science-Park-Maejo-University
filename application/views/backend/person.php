@@ -28,7 +28,7 @@
             </td>
             <td>
               <div class="input-group">
-              <a href="<?php echo base_url("backend/addperson")?>"><button type="button" class="btn btn-btn btn-primary"><i class="fa fa-plus"></i>  เพิ่ม</button></a>
+              <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i>  เพิ่ม</button>
              </div>
            </td>
            <td>
@@ -48,7 +48,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">ข้อมูลบุคลากร</div>
       <div class="panel-body">
-<<<<<<< HEAD
+
         <table class="table table-striped">
           <?php if (empty($keyword)) { ?>
           <tr class="bg-success">
@@ -68,8 +68,8 @@
             <td><?php echo $row->O_title , $row->O_name ; ?></td>
             <td><?php echo $row->O_lastname;?></td> 
             <td><?php echo $row->O_position;?></td>  
-            <td><a href="<?php echo base_url("backend/viewperson")?>"><button type="button" class="btn btn-info"><i class="fa fa-eye"></i>  ดู</button></a></td>          
-            <td><a href="<?php echo base_url("backend/editperson")?>"><button type="button" class="btn btn-btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
+            <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></td>
           </tr> 
           <?php } ?>  
           <?php }else if($keyword){ ?>
@@ -89,63 +89,14 @@
             <td><?php echo $row->O_title , $row->O_name ; ?></td>
             <td><?php echo $row->O_lastname;?></td> 
             <td><?php echo $row->O_position;?></td>  
-            <td><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></td>          
-            <td><a href="<?php echo base_url("backend/editperson")?>"><button type="button" class="btn btn-btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>            
+            <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           </tr> 
           <?php } } ?> 
 
         </table> 
 
         <!-- End -->
-=======
-      <table class="table table-striped">
-        <?php if (empty($keyword)) { ?>
-        <tr class="bg-success">
-          <th width="5%">#</th>
-          <th width="25%">ชื่อ</th>
-          <th width="25%">นามสกุล</th>
-          <th width="25%">ตำแหน่ง</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-
-        <?php foreach($officer as $row){?>
-           
-        <tr class="bg-success">
-          <td><?php echo $row->O_id; ?></td>
-          <td><?php echo $row->O_title , $row->O_name ; ?></td>
-          <td><?php echo $row->O_lastname;?></td> 
-          <td><?php echo $row->O_position;?></td>  
-          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
-          <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-        </tr> 
-        <?php } ?>  
-        <?php }else{ ?>
-
-        <?php foreach($search as $row){ ?>
-         <tr class="bg-success">
-          <th width="5%">#</th>
-          <th width="25%">ชื่อ</th>
-          <th width="25%">นามสกุล</th>
-          <th width="25%">ตำแหน่ง</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr> 
-        <tr class="bg-success">
-          <td><?php echo $row->O_id; ?></td>
-          <td><?php echo $row->O_title , $row->O_name ; ?></td>
-          <td><?php echo $row->O_lastname;?></td> 
-          <td><?php echo $row->O_position;?></td>  
-          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
-          <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-        </tr> 
-        <?php } } ?> 
-
-      </table> 
-
-      <!-- End -->
 
 
       <!-- start popup ดูข้อมูล-->
@@ -417,32 +368,6 @@
 
 </form>
 <!-- End popup แก้ไขผลงาน--> 
-
-<!--end popup ลบ -->
-<form id="" method="post" class="form-horizontal" action="">
-  <div class="modal fade bs-example-modal-sm-delperson"tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-
-       <div class="row">
-         <div class="col-lg-11 ">
-          <div class="form-group">
-           <label class="col-lg-9 control-label">ยืนยันการลบ</label>
-         </div>
-
-       </div>
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-success">ตกลง</button>
-       <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-     </div>
-   </div>
- </div>
-</div>
-</form>
-<!--end popup ลบ-->
-
->>>>>>> Science-Park 30/11/2558
 
 <!-- /.row -->
 </div>
