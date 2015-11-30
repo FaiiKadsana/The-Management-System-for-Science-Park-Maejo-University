@@ -236,7 +236,7 @@
 							checked <?php }else{} ?>  > การเพิ่มประสิทธิภาพ
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="S_profit" <?php if($rowservice->S_profit == 'การลดต้นทุน'){?>
 							checked <?php }else{} ?>  > การลดต้นทุน
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_profit" <?php if($rowservice->S_profit == 'พัฒนาตการจัดซื้อ จัดหาลาดต่างประเทศ'){?>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="S_profit" <?php if($rowservice->S_profit == 'การจัดซื้อ จัดหา'){?>
 							checked <?php }else{} ?>  > การจัดซื้อ จัดหา
 						</td>
 					</tr>

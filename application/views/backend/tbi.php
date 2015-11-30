@@ -74,7 +74,7 @@
           <td >รอดำเนินการ</td>
           <td><a href="<?php echo base_url("backend/viewtbi")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrtbi")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/tbiplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
+         <td><a target ="_blank" href="<?php echo base_url('backend/tbiplatformreport/index/'.$row->Tbi_id3)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
          <td><a href="<?php echo base_url("backend/filetbi")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
         </tr>       
       </table>     
