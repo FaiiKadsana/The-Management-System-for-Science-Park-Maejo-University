@@ -28,7 +28,11 @@
             </td>
             <td>
               <div class="input-group">
+<<<<<<< HEAD
               <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i>  เพิ่ม</button>
+=======
+              <a href="<?php echo base_url("backend/person")?>"><button type="button" class="btn btn-btn btn-primary"><i class="fa fa-plus"></i>  เพิ่ม</button></a>
+>>>>>>> Science-Park 30/11/2558
              </div>
            </td>
            <td>
@@ -97,7 +101,10 @@
         </table> 
 
         <!-- End -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> Science-Park 30/11/2558
 
       <!-- start popup ดูข้อมูล-->
       
@@ -369,6 +376,33 @@
 </form>
 <!-- End popup แก้ไขผลงาน--> 
 
+<<<<<<< HEAD
+=======
+<!--end popup ลบ -->
+<form id="" method="post" class="form-horizontal" action="">
+  <div class="modal fade bs-example-modal-sm-delperson"tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+
+       <div class="row">
+         <div class="col-lg-11 ">
+          <div class="form-group">
+           <label class="col-lg-9 control-label">ยืนยันการลบ</label>
+         </div>
+
+       </div>
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-success">ตกลง</button>
+       <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
+     </div>
+   </div>
+ </div>
+</div>
+</form>
+<!--end popup ลบ-->
+
+>>>>>>> Science-Park 30/11/2558
 <!-- /.row -->
 </div>
 

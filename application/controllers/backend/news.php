@@ -44,8 +44,6 @@ class News extends CI_Controller {
 		//ดึกข้อมูลสำหรับบ่งหน้า
 		$this->db->limit($config['per_page'],$this->uri->segment(4));		
 
-		
-		$results = array();
 		$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_text,news.Ne_date_up');
 		$this->db->order_by("Ne_id", "desc");
  
@@ -76,7 +74,8 @@ class News extends CI_Controller {
 
 		$data['page']=$this->pagination->create_links();
 		$data['action1']=site_url("backend/news/index/");
-		$data['action']=site_url("backend/news/addnews/");	
+		$data['action']=site_url("backend/news/addnews/");
+		$data['action2']=site_url("backend/news/viewnews/");		
 		$this->load->view('backend/news',$data);
 		$this->load->view('backend/script');
 	}
@@ -118,6 +117,25 @@ class News extends CI_Controller {
 
 		}
 		
+	}
+
+	public function viewnews($Ne_id){
+
+		//$this->db->select('news.Ne_id,news.Ne_picture,news.Ne_sub,news.Ne_text,news.Ne_date_up');
+		$this->db->select('*');
+
+		$this->db->where("Ne_id",$Ne_id);
+
+		$rssearch = $this->db->get('news');
+
+		$data['news'] = $rssearch->result();
+		
+		//print_r ($this->db->last_query());
+
+	}
+
+	public function update(){
+
 	}
 
 }

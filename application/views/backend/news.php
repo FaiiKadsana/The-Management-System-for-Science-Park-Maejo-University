@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="page-header">
-          <small>New</small>
+          <small>News</small>
         </h1>
         <ol class="breadcrumb">
          <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/new")?>">จัดการข่าวสารประชาสัมพันธ์</a></li>
@@ -91,8 +91,8 @@
         <tr class="bg-success">
           <td ><?php echo $row->Ne_id; ?></td>
           <td ><?php echo $row->Ne_sub; ?></td>
-          <td ><?php echo $row->Ne_text; ?></td>    
-          <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewnew"><i class="fa fa-eye"></i>  ดู</button></td>           
+          <td ><?php echo $row->Ne_text; ?></td> 
+          <td><button type="button" class="btn btn-info" data-toggle="modal" ><i class="fa fa-eye"></i>  ดู</button></td>           
           <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editnew"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i>  ลบ</button></td>                     
         </tr> 
@@ -172,34 +172,34 @@
 <!-- End popup เพิ่มผลงาน--> 
 
  <!-- start popup ดูข่าว-->
-      <form id="" method="post" class="form-horizontal" action=" " enctype="multipart/form-data">
+  <form id="" method="post" class="form-horizontal" enctype="multipart/form-data"  action="<?php echo $action2 ; ?>">
+
+    <?php  foreach ($news as $rownews) { ?>
 
         <div class="modal fade bs-example-modal-lg-viewnew" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="panel-body">
-                <form id="" method="post" class="form-horizontal" action="">
                  <div class="row">
                    <div class="col-lg-12">
                     <hr>
                     <center><h3>ข้อมูลข่าว</h3></center><br> 
 
                     <div class="col-sm-2">
-                      <img width="200px" height="260px" src="<?php echo base_url("asset2/img/011.jpg") ?>"> <br><br>
-
+                      <?php echo '<img src= "'.base_url().'asset/img/News/'.$rownews->Ne_picture.'" style="height:200px;" style="width:40px;">'; ?>
                     </div>
 
                     <div class="col-lg-offset-1 col-sm-8">
                      <!-- Show &Join table -->
                      <table class="table table-bordered">
                       <tr>
-                        <td>หัวข้อข่าว: นวัตกรรมใหม่</td> 
+                        <td>หัวข้อข่าว: <?php echo $rownews->Ne_sub;?> </td> 
                       </tr>
                       <tr>
-                        <td>รายละเอียด :  เป็นนวัตกรรมใหม่ที่เกี่ยวกับ ข้าว ที่ มีสารอาหารครบ</td> 
+                        <td>รายละเอียด :  <?php echo $rownews->Ne_text;?> </td> 
                       </tr>
                       <tr>
-                        <td>วันที่ : 15/08/2587</td> 
+                        <td>วันที่ : <?php echo $rownews->Ne_date_up;?></td> 
                       </tr>
                     </table>
                     <!-- End -->   
@@ -210,14 +210,13 @@
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
-
-              </div>
-            </form>
-          </div>
-        </div>
+              </div> 
+          </div>    
+        </div> 
       </div>
     </div>
-
+    <?php } ?> 
+  </form>
     <!-- End popup ดูข่าว--> 
 
 <!-- start popup แก้ไขผลงาน-->
