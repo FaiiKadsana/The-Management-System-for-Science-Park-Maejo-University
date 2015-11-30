@@ -16,7 +16,7 @@
 						<table width="70%">
 							<tr>
 								<td width="30%"></td>
-								<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<label type="" size="20" name="Tbi_id3"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
+								<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="Tbi_id3"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
 							</tr>
 						</table>
 					</center>
@@ -510,73 +510,6 @@
 									</tr>
 									
 								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" align="center">
-								<br>
-								<br>
-								<table border="1" width="80%">
-									<tr>
-										<td colspan="3" align="center">
-											<p><b>สำหรับเจ้าหน้าที่</b> <b style="color:red;"> *</b></p>
-											<table>
-												<tr>
-													<td colspan="2" align="left">
-														<p><b>หลักฐานประกอบการยื่นสมัคร</b></p>								
-														<input type="checkbox" name="Tbi_evidence_register" value="ใบสมัคร"> ใบสมัคร<br>
-														<input type="checkbox" name="Tbi_evidence_register" value="สำเนาบัตรประชาชน  เลขประจำตัว"> สำเนาบัตรประชาชน  เลขประจำตัว <input type="text" size="15" name="Tbi_evidence_register_etc" ><br> 
-														<input type="checkbox" name="Tbi_evidence_register" value="สำเนาหลักฐานการศึกษา วุฒิการศึกษา"> สำเนาหลักฐานการศึกษา วุฒิการศึกษา<input type="text" size="15" name="Tbi_evidence_register_etc" ><br> 
-														<input type="checkbox" name="Tbi_evidence_register" value="เอกสารรับรองการทำงาน  ชื่อหน่วยงาน"> เอกสารรับรองการทำงาน  ชื่อหน่วยงาน <input type="text" size="15" name="Tbi_evidence_register_etc" ><br> 
-													</td>
-													<td align="left">
-														<p><b>การนัดหมาย</b></p>
-														<input type="radio" name="Tbi_ appointment" value="นัดนำเสนอแนวคิดธุรกิจ "> นัดนำเสนอแนวคิดธุรกิจ<br>
-														วันที่: <input type="date"  name="Tbi_date_ concept" ><br> 
-														<input type="radio" name="Tbi_ appointment" value="นัดเข้าพบสถานประกอบการธุรกิจ"> นัดเข้าพบสถานประกอบการธุรกิจ<br>
-														วันที่: <input type="date"  name="Tbi_date_ meet" ><br> 
-
-													</td>
-												</tr>	
-												<tr><td colspan="3" align="left">
-													<input type="checkbox" name="Tbi_evidence_register" value="รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป"> รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
-													<input type="checkbox" name="Tbi_evidence_register" value="Concept paper"> Concept paper<br> 
-													<input type="checkbox" name="Tbi_evidence_register" value="แผนธุรกิจ"> แผนธุรกิจ<br> 
-													<input type="checkbox" name="Tbi_evidence_register" value="ข้อมูล Idea/Innovation/Technology เพิ่มเติม"> ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> 
-												</td></tr>
-											</table><br>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" align="center">
-								<br>
-								<table border="1" width="80%">
-									<tr>
-										<td colspan="3" align="center">
-											<p><b>แนวปฏิบัติของการบ่มเพาะผู้ประกอบการ</b></p>
-											<table>
-												<tr>
-													<td colspan="3" align="left">
-														<br>
-														<input type="checkbox" name="Tbi_practicality" value="มีผลงานวิจัยสนับสนุน"> มีผลงานวิจัยสนับสนุน<br>
-														<input type="checkbox" name="Tbi_practicality" value="เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว"> เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
-														<input type="checkbox" name="Tbi_practicality" value="ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี"> ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
-														<input type="checkbox" name="Tbi_practicality" value="มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า"> มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
-														<input type="checkbox" name="Tbi_practicality" value="มีทุนทรัพย์ในการเริ่มต้นธุรกิจ"> มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
-													</td>
-												</tr>
-											</table><br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) <input type="text" size="30" name="" ><br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ตรวจใบสมัคร</b><br><br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (<input type="text" size="30" name="Tbi_inspector" >)<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่: <input type="date" size="30" name="Tbi_date_inspect" ><br><br>
-										</td>
-									</tr>
-								</table>
-
 							</td>
 						</tr>
 					</table>

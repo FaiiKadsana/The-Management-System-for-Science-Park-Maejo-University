@@ -21,16 +21,15 @@
    <div class="row">
     <div class=" col-sm-12">
      <center>
-       <form id="" method="post" class="form-horizontal" action="">
+      <form id="" method="post" class="form-horizontal" action="<?php $action; ?>">
         <table >
-
           <tr>
             <td></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อผู้ขอใช้บริการ" name="research"></td>
-            <td><input type="date" class="form-control"  name="dateresearch"></td>
-            <td><select class="form-control"  name="statussearch">
+            <!--<td><input type="text" class="form-control" placeholder="กรอกชื่อผู้ขอใช้บริการ" name="research"></td>
+            <td><input type="date" class="form-control"  name="dateresearch"></td>-->
+            <td><select class="form-control"  name="keyword1">
              <option value=""> เลือกสถานะ</option>
-             <option value="รอดำเนินงาน">preincubatee</option>
+             <option value="รอดำเนินงาน">pre incubated</option>
              <option value="รออนุมัติ">incubatee</option>
              <option value="อนุมัติ">start up</option>
               <option value="ไม่อนุมัติ">sping off(gratduate)</option>

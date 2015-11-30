@@ -72,10 +72,17 @@
           <td ><?php echo $row->Co_name_pro; ?></td>
           <td ><?php echo $row->Co_date; ?></td> 
           <td ><?php echo $row->Co_status; ?></td>
+<<<<<<< HEAD
           <td><a  href="<?php echo base_url('backend/viewirtc/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrirct")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>
           <td><a href="<?php echo base_url("backend/fileirtc")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
+=======
+          <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+          <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
+          <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
+>>>>>>> 15e66631c2f7fb7937f26c56812f5bfee5f3327a
         </tr>  
 
         <?php } ?>
@@ -104,6 +111,7 @@
           <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
           <td><a href="<?php echo base_url("backend/fileirtc")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
         </tr>       
+<<<<<<< HEAD
 
         <td ><?php echo $row->Co_id; ?></td>
         <td ><?php echo $row->C_name; ?></td>
@@ -115,6 +123,19 @@
         <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
         <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
       </tr>  
+=======
+=======
+          <td ><?php echo $row->Co_id; ?></td>
+          <td ><?php echo $row->C_name; ?></td>
+          <td ><?php echo $row->Co_name_pro; ?></td>
+          <td ><?php echo $row->Co_date; ?></td> 
+          <td ><?php echo $row->Co_status; ?></td>
+          <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+          <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
+          <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
+        </tr>  
+>>>>>>> 15e66631c2f7fb7937f26c56812f5bfee5f3327a
 
       <?php } }?>
 

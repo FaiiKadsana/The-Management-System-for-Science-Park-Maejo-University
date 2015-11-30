@@ -5,7 +5,6 @@ class Frtbiplatform extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-		//$this->load->model("index_model","index_model");
 		//$this->load->library('session');
 
 	}
@@ -133,17 +132,18 @@ class Frtbiplatform extends CI_Controller {
 			$insertTbi["Tbi_id4"]=$this->input->post("Tbi_id4");
 			$insertTbi["Tbi_date"]=$this->input->post("Tbi_date");
 			$insertTbi["Tbi_name"]=$this->input->post("Tbi_name");
-			$insertTbi["Tbi_evidence_register"]=$this->input->post("Tbi_evidence_register");
-			$insertTbi["Tbi_evidence_register_etc"]=$this->input->post("Tbi_evidence_register_etc");
-			$insertTbi["Tbi_code"]=$this->input->post("Tbi_code");
-			$insertTbi["Tbi_education"]=$this->input->post("Tbi_education");
-			$insertTbi["Tbi_appointment"]=$this->input->post("Tbi_appointment");
-			$insertTbi["Tbi_date_concept"]=$this->input->post("Tbi_date_concept");
-			$insertTbi["Tbi_date_meet"]=$this->input->post("Tbi_date_meet");
-			$insertTbi["Tbi_practicality"]=$this->input->post("Tbi_practicality");
-			$insertTbi["Tbi_inspector"]=$this->input->post("Tbi_inspector");
-			$insertTbi["Tbi_date_inspect"]=$this->input->post("Tbi_date_inspect");
+			//$insertTbi["Tbi_evidence_register"]=$this->input->post("Tbi_evidence_register");
+			//$insertTbi["Tbi_evidence_register_etc"]=$this->input->post("Tbi_evidence_register_etc");
+			//$insertTbi["Tbi_code"]=$this->input->post("Tbi_code");
+			//$insertTbi["Tbi_education"]=$this->input->post("Tbi_education");
+			//$insertTbi["Tbi_appointment"]=$this->input->post("Tbi_appointment");
+			//$insertTbi["Tbi_date_concept"]=$this->input->post("Tbi_date_concept");
+			//$insertTbi["Tbi_date_meet"]=$this->input->post("Tbi_date_meet");
+			//$insertTbi["Tbi_practicality"]=$this->input->post("Tbi_practicality");
+			//$insertTbi["Tbi_inspector"]=$this->input->post("Tbi_inspector");
+			//$insertTbi["Tbi_date_inspect"]=$this->input->post("Tbi_date_inspect");
 			$insertTbi["Tbi_date_register"]=$this->input->post("Tbi_date_register");
+			$insertTbi["Tbi_status"]='pre incubated';
 			$insertTbi["Spf_id"]='4';
 			$insertTbi["Tbi_id5"]='1';
 
@@ -197,7 +197,7 @@ class Frtbiplatform extends CI_Controller {
 
 			}
 			
-			else if( $insertTbi["Tbi_date"]=="" ){
+			else if( $insertTbi["Tbi_date"]=="" || $insertTbi["Tbi_name"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
@@ -252,6 +252,7 @@ class Frtbiplatform extends CI_Controller {
 	}
 
 	$data['action']=site_url('frontend/frtbiplatform/index/');
+	$data['action1']=site_url('frontend/frtbiplatform/statut_tbi/');
 	$this->load->view('frontend/frtbiplatform',$data);
 	$this->load->view('frontend/script');	
 	$this->load->view('frontend/footer');
@@ -259,15 +260,14 @@ class Frtbiplatform extends CI_Controller {
 }
 	public function statut_tbi(){
 
-		$this->db->select('tatus_tbi.Tbi_status');	
-		$this->db->order_by("O_id", "asc");
-		$officer = $this->db->get('tatus_tbi');
+		$this->db->select('status_tbi.Tbi_status');	
+		$this->db->order_by("Tbi_id5", "asc");
+		$officer = $this->db->get('status_tbi');
 		
 		//print_r ($this->db->last_query());
 
-		$data['tatus_tbi'] = $officer->result();
+		$data['status_tbi'] = $officer->result();
 
-		//$data['action']=site_url('frontend/frtbiplatform/statut_tbi/');
 	}
 
 
