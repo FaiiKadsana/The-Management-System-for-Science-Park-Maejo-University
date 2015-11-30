@@ -56,7 +56,7 @@
 
         <?php if (empty($keyword1)) { ?> 
 
-         <tr class="bg-success">
+        <tr class="bg-success">
           <th width="15%">เลขที่แบบฟอร์ม</th>
           <th width="20%">ชื่อสถานประกอบการ</th>
           <th width="20%">ชื่อโครงการ</th>
@@ -64,7 +64,7 @@
           <th width="20%">สถานะ</th>   
         </tr>   
 
-       <?php foreach($irct as $row){?>
+        <?php foreach($irct as $row){?>
 
         <tr class="bg-success">
           <td ><?php echo $row->Co_id; ?></td>
@@ -72,17 +72,17 @@
           <td ><?php echo $row->Co_name_pro; ?></td>
           <td ><?php echo $row->Co_date; ?></td> 
           <td ><?php echo $row->Co_status; ?></td>
-          <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
-          <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/coresearchplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
-          <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
+          <td><a  href="<?php echo base_url('backend/viewirtc/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url("backend/editfrirct")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+          <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>
+          <td><a href="<?php echo base_url("backend/fileirtc")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
         </tr>  
 
-         <?php } ?>
+        <?php } ?>
 
-      <?php }else{ ;?>
+        <?php }else{ ;?>
 
-          <tr class="bg-success">
+        <tr class="bg-success">
           <th width="15%">เลขที่แบบฟอร์ม</th>
           <th width="20%">ชื่อสถานประกอบการ</th>
           <th width="20%">ชื่อโครงการ</th>
@@ -90,40 +90,40 @@
           <th width="20%">สถานะ</th>       
         </tr>   
 
-       <?php foreach($search as $row){?>
+        <?php foreach($search as $row){?>
 
         <tr class="bg-success">
-<<<<<<< HEAD
+
           <td >1</td>
           <td >อลงกรณ์</td>
           <td >กังหันลม</td> 
           <td >12/05/2558</td>   
           <td >รอดำเนินการ</td>
-          <td><a href="<?php echo base_url("backend/viewirtc")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a  href="<?php echo base_url('backend/viewirtc/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrirtc")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-        <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                    
+          <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
           <td><a href="<?php echo base_url("backend/fileirtc")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
         </tr>       
-=======
-          <td ><?php echo $row->Co_id; ?></td>
-          <td ><?php echo $row->C_name; ?></td>
-          <td ><?php echo $row->Co_name_pro; ?></td>
-          <td ><?php echo $row->Co_date; ?></td> 
-          <td ><?php echo $row->Co_status; ?></td>
-          <td><a href="<?php echo base_url("backend/viewcoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
-          <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><a href="<?php echo base_url("backend/coresearchplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
-          <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
-        </tr>  
+
+        <td ><?php echo $row->Co_id; ?></td>
+        <td ><?php echo $row->C_name; ?></td>
+        <td ><?php echo $row->Co_name_pro; ?></td>
+        <td ><?php echo $row->Co_date; ?></td> 
+        <td ><?php echo $row->Co_status; ?></td>
+        <td><a  href="<?php echo base_url('backend/viewirtc/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+        <td><a href="<?php echo base_url("backend/editfrcoresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+        <td><a target ="_blank" href="<?php echo base_url('backend/irtcplatformreport/index/'.$row->Co_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td> 
+        <td><a href="<?php echo base_url("backend/filecoresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>                    
+      </tr>  
 
       <?php } }?>
->>>>>>> 0a5be33ba82720d140bd209e71e91b5bca00d8d1
-      </table>     
-      <!-- End -->
-    </div>
-  </div>
 
-  <div class="row">
+    </table>     
+    <!-- End -->
+  </div>
+</div>
+
+<div class="row">
   <center>
     <div class="paginationnext" >
       <div class="col-md-12" >
@@ -135,7 +135,7 @@
       </center>
     </div>
 
-</div>
+  </div>
 </div>
 <!-- /.row -->
 
