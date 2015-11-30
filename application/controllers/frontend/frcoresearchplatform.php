@@ -175,28 +175,36 @@ class Frcoresearchplatform extends CI_Controller {
 				$_POST["recaptcha_response_field"]);
 
 
-			/*if($insertresponsible["Co_date"]=="" || $insertresponsible["Co_name_pro"]=="" || $insertresponsible["Co_secter"]=="" 
-				|| $insertresponsible["Co_origin"]=="" || $insertresponsible["Co_objective"]=="" ){
-
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
-			redirect('frontend/frcoresearchplatform', 'refresh');
-
-			}else if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]==""){
+			if($insertCompany["C_name"]=="" || $insertCompany["C_company_type"]=="" || $insertCompany["C_investment"]=="" ){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบ');</script>";
-			redirect('frontend/frcoresearchplatform', 'refresh');
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ ');</script>";
+			redirect('backend/frcoresearch', 'refresh');
 
-			}else if (!$resp->is_valid) {
+			}else if($insertData["P_name"]=="" || $insertData["P_phone"]==""){
+
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-			echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-			redirect('frontend/frcoresearchplatform', 'refresh');
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
+			redirect('backend/frcoresearch', 'refresh');
 
-			}else*/ if (!$resp->is_valid) {
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
-				redirect('frontend/frcoresearchplatform', 'refresh');
+			}else if($insertresponsible["Rp_name"]=="" || $insertresponsible["Rp_position"]=="" || $insertresponsible["Rp_phone"]=="" || $insertresponsible["Rp_institute"]==""){
+
+			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ >_<');</script>";
+			redirect('backend/frcoresearch', 'refresh');
+
+			}else if($insertcoresearch["Co_date"]=="" || $insertcoresearch["Co_name_pro"]=="" || $insertcoresearch["Co_secter"]=="" 
+				|| $insertcoresearch["Co_origin"]=="" || $insertcoresearch["Co_objective"]=="" || $insertcoresearch["Co_status"]=="" ){
+
+			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบนะคะ ^_^');</script>";
+			redirect('backend/frcoresearch', 'refresh');
+
+			}else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]=="" ){
+
+			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบนะคะ *_*');</script>";
+			redirect('backend/frcoresearch', 'refresh');
 
 			}else {
 				

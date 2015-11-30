@@ -64,21 +64,16 @@
           </tr>
           <tr>
             <td colspan="3"  align="left"><br>
-
-              ชื่อ: <select name="P_title"> 
-
               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <select name="P_title"> 
-
               <option value="นาย">นาย</option>
               <option value="นาง">นาง</option>
               <option value="นางสาว">นางสาว</option>
             </select><b style="color:red;"> *</b>
             &nbsp;&nbsp;<input type="text" size="30" name="P_name" ><b style="color:red;"> *</b>
-            &nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="P_lastname" ><b style="color:red;"> *
+            &nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="P_lastname" ><b style="color:red;"> *
           </td>
         </tr>
         <tr>
-
           <td  colspan="3" align="left">เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
             &nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" size="30" name="P_position" ><b style="color:red;"> *</b></td>
           </tr>

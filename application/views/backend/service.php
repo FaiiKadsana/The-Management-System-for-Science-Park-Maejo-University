@@ -92,7 +92,7 @@
        <tr class="bg-success">
         <td ><?php echo $row->S_id; ?></td>
         <td ><?php echo $row->C_name; ?></td>
-        <td ><?php echo $row->P_title , $row->P_name , $row->P_lastname ; ?> </td>
+        <td ><?php echo $row->P_title; ?><?php echo $row->P_name;?>&nbsp;<?php echo $row->P_lastname ; ?></td>
         <td ><?php echo $row->S_date; ?></td>  
         <td ><?php echo $row->S_status; ?></td>
         <td><a href="<?php echo base_url("backend/viewservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>

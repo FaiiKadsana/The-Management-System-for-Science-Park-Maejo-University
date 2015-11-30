@@ -7,10 +7,10 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="page-header">
-          <small>Person1</small>
+          <small>Officer</small>
         </h1>
         <ol class="breadcrumb">
-         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/person")?>">จัดการบุคคล</a></li>
+         <li class="active"> <i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/person")?>">จัดการข้อมูลบุคคลกร</a></li>
        </ol>
      </div>
    </div></br></br>
@@ -22,18 +22,14 @@
           <table >
             <tr>
              <td>
-              <td><input type="text" class="form-control"  name="keyword"></td>
+              <td><input type="text" class="form-control" placeholder="กรอกชื่อบุคลากร" name="keyword"></td>
               <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
               <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
             </td>
             <td>
-              <div class="input-group">
-<<<<<<< HEAD
-              <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"></i>  เพิ่ม</button>
-=======
-              <a href="<?php echo base_url("backend/person")?>"><button type="button" class="btn btn-btn btn-primary"><i class="fa fa-plus"></i>  เพิ่ม</button></a>
->>>>>>> Science-Park 30/11/2558
-             </div>
+            <div class="input-group">
+             <button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addperson"><i class="fa fa-plus"> <a href="<?php echo base_url("backend/person")?>"></a></i> เพิ่ม</button>
+            </div>
            </td>
            <td>
            </td>
@@ -101,10 +97,7 @@
         </table> 
 
         <!-- End -->
-<<<<<<< HEAD
 
-=======
->>>>>>> Science-Park 30/11/2558
 
       <!-- start popup ดูข้อมูล-->
       
@@ -165,8 +158,8 @@
     </div>
 
     <!-- End popup ดูข้อมูล--> 
-    <!-- start popup เพิ่มผลงาน-->
-    <form id="" method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+    <!-- start popup เพิ่มพนักงาน-->
+    <form id="" method="post" class="form-horizontal" action="<?php echo $action1; ?>" enctype="multipart/form-data">
 
       <div class="modal fade bs-example-modal-lg-addperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
@@ -261,6 +254,7 @@
 
      <div class="modal-footer">
       <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
+       <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button> 
       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
 
@@ -363,6 +357,7 @@
  </div>
  <div class="modal-footer">
   <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+   <button  type="reset"  class="btn btn-danger"><strong>ยกเลิก</strong></button> 
   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 
@@ -376,8 +371,6 @@
 </form>
 <!-- End popup แก้ไขผลงาน--> 
 
-<<<<<<< HEAD
-=======
 <!--end popup ลบ -->
 <form id="" method="post" class="form-horizontal" action="">
   <div class="modal fade bs-example-modal-sm-delperson"tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -394,6 +387,7 @@
      </div>
      <div class="modal-footer">
        <button type="button" class="btn btn-success">ตกลง</button>
+        <button  type="reset" class="btn btn-warning " ><strong>ยกเลิก</strong></button> 
        <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
      </div>
    </div>
@@ -402,7 +396,6 @@
 </form>
 <!--end popup ลบ-->
 
->>>>>>> Science-Park 30/11/2558
 <!-- /.row -->
 </div>
 

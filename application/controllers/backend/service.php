@@ -17,7 +17,7 @@ class Service extends CI_Controller {
 		//แบ่งหน้า
 		$config["base_url"]=base_url()."/backend/service/service";
 		$config["total_rows"] = $this->db->count_all("service");
-		$config["per_page"]=10;
+		$config["per_page"]=8;
 		$config['uri_segment'] = 4;
 		$config['full_tag_open'] = '<ul class="pagination">'; 
 		$config['full_tag_close'] = '</ul>'; 
@@ -49,7 +49,7 @@ class Service extends CI_Controller {
 		$this->db->join('company','company.C_id = service.C_id');
 		$this->db->order_by("S_date", "desc");
  
-		$this->db->limit(1,0);
+		//$this->db->limit(10,0);
 
 		$service = $this->db->get('service');
 		
@@ -78,12 +78,12 @@ class Service extends CI_Controller {
 			//print_r($data['search']);
 			
 		}
+		
 		$data['page']=$this->pagination->create_links();
 		$data["action"]=base_url("backend/service",$data);
 		$this->load->view('backend/service',$data);
 		$this->load->view('backend/script');	
 		
 	}
-
 
 }

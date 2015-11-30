@@ -63,7 +63,7 @@
                   <tr>
                     <td width="30%">2.กลุ่มอุตสาหกรรม </td>
                     <td >
-                      <input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="Others"> Others ระบุ <input type="text" name="" size="15"><b style="color:red;"> *</b> 
+                      <input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio"  name="Co_secter" value="Others"> Others ระบุ <input type="text" name="Co_secter_etc" size="15"><b style="color:red;"> *</b> 
                     </td>
                   </tr>
                   <tr>
@@ -72,7 +72,7 @@
                       <br>
                       ชื่อผู้รับผิดชอบ: <input type="text" name="Rp_name" size="23"><b style="color:red;"> *</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตำแหน่ง: <input type="text" name="Rp_position" size="23"><b style="color:red;"> *</b> 
                       หน่วยงานรับผิดชอบ: <input type="tel" name="Rp_institute" size="20"><b style="color:red;"> *</b>  เบอร์โทรศัพท์: <input type="tel" name="Rp_phone" size="20"><b style="color:red;"> *</b> <br>
-                      แฟกซ์: <input type="email" name="Rp_phone" size="30"> อีเมล์: <input type="email" name="Rp_mail" size="30"> <br>
+                      แฟกซ์: <input type="tel" name="Rp_phone" size="30"> อีเมล์: <input type="email" name="Rp_mail" size="30"> <br>
                       ที่อยู่: <textarea name="Rp_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea><br><br>
                     </td>
                   </tr>
@@ -92,6 +92,7 @@
                     <td width="30%">6.รายละเอียดผู้ประกอบการ</td>
                     <td >
                       <br>
+                      ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b><br>
                       ประเภทนิติบุคคล: <input type="text" name="C_company_type" size="22"><b style="color:red;"> *</b>&nbsp;&nbsp; ทุนจดทะเบียน: <input type="text" name="C_investment" size="20"> <br>
                       จำนวนพนักงาน: <input type="text" name="S_no_emp_total" size="18"> ผลิตภัณฑ์หลักขององค์กร: <input type="tel" name="S_main_pro1" size="20"> <br>
                       ที่อยู่: <textarea name="C_address" cols="80" rows="3" placeholder=" ที่อยู่" ></textarea> <br>
