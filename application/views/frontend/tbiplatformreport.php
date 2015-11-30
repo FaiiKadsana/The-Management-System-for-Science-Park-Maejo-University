@@ -1,4 +1,4 @@
-<body onclick="window.print()">
+ <body onclick="window.print()">
 
 	<?php  foreach ($tbi as $rowtbi) { ?>
 	<div class="row">

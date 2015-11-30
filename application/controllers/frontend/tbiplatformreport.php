@@ -5,7 +5,7 @@ class Tbiplatformreport extends CI_Controller {
 	public function __construct (){
 		parent::__construct();
 		//$this->load->model("index_model","index_model");
-		//$this->load->library('session');
+		//$this->load->library('session'); 
 
 	}
 	public function index($Tbi_id3){

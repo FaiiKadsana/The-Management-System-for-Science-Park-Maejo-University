@@ -4,15 +4,30 @@ class Viewtbi extends CI_Controller {
 
 	public function __construct (){
 		parent::__construct();
-	
+
 
 	}
-	public function index(){
-		
+	public function index($Tbi_id3){
+
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/viewtbi');
+
+		$this->db->select('*');
+		$this->db->join('tbi_person','tbi_person.Tbi_id= tbi.Tbi_id');
+		$this->db->join('tbi_person1','tbi_person1.Tbi_id1 = tbi.Tbi_id1');
+		$this->db->join('tbi_business','tbi_business.B_id = tbi.B_id');
+		$this->db->join('tbi_service','tbi_service.Tbi_id2 = tbi.Tbi_id2');
+		$this->db->where("Tbi_id3",$Tbi_id3);
+
+		$service1 = $this->db->get('tbi');
+		
+		//print_r ($this->db->last_query());
+
+		$data['tbi'] = $service1->result();
+
+		$data['action']=site_url('backend/viewtbi/index/');		
+		$this->load->view('backend/viewtbi',$data);
 		$this->load->view('backend/script');	
 		
 	}
