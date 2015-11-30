@@ -31,7 +31,6 @@ class Index extends CI_Controller {
 
 		$data['calendar'] = $this->calendar_model->generate($year, $month);
 		$this->load->view('backend/index' , $data);
-
 		$this->load->view('backend/script');	
 		
 	}

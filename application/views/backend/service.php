@@ -2,7 +2,6 @@
 
   <div class="container-fluid">
 
-
     <!-- Page Heading -->
     <!-- Star row-->
     <div class="row">
@@ -25,7 +24,6 @@
         <table >
           <tr>
             <td></td>
-            <td><input type="date" class="form-control"  name="keyword"></td>
             <td><select class="form-control"  name="keyword1">
              <option value="0"> เลือกสถานะ</option>
              <option value="รอดำเนินงาน">รอดำเนินงาน</option>

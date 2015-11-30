@@ -17,6 +17,7 @@ class Index extends CI_Controller {
 		$this->load->view('frontend/slider');
 
 		//แบ่งหน้า
+		
 		$config["base_url"]=base_url()."/frontend/index/index";
 		$config["total_rows"] = $this->db->count_all("news");
 		$config["per_page"]=4;
@@ -43,25 +44,23 @@ class Index extends CI_Controller {
 		$this->pagination->initialize($config);
 		
 		//ดึกข้อมูลสำหรับบ่งหน้า
-		$this->db->limit($config['per_page'],$this->uri->segment(4));
-		
-		$this->db->select('*');
-		$this->db->from('news');
-		$this->db->join('upload','news.ne_id = upload.up_id_data');
-		$this->db->group_by("ne_date_up"); 
-		$this->db->order_by("ne_date_cre", "desc");
+		$this->db->limit($config['per_page'],$this->uri->segment(4));		
 
-		//print_r($this->db->last_query());
+		//*************************
+
+		$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_date_up,news.Ne_picture,news.Ne_text');
+		
+		$this->db->order_by("Ne_id", "desc");
 
 		$this->db->limit(4,0);
-		$news = $this->db->get();
-		$data['news'] = $news->result();
+
+		$news1 = $this->db->get('news');
+		
+		//print_r ($this->db->last_query());
+
+		$data['news'] = $news1->result();
 
 		$data['page']=$this->pagination->create_links();
-
-		//random id
-		//$this->load->helper('string');
-		//echo random_string('alnum',6);
 
 		$this->load->view('frontend/index',$data);
 		$this->load->view('frontend/script');	
@@ -75,8 +74,7 @@ class Index extends CI_Controller {
 		if (!$year) {
 			$year = date('Y');
 		}
-		if (!$month) {
-
+		else if (!$month) {
 			$month = date('m');
 		}
 	

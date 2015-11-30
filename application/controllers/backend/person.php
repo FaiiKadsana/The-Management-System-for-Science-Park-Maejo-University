@@ -64,9 +64,39 @@ class Person extends CI_Controller {
 
 	//SEARCH
 
+	//แบ่งหน้า
+		$config["base_url"]=base_url()."/backend/person/person";
+		$config["total_rows"] = $this->db->count_all("officer");
+		$config["per_page"]=5;
+		$config['uri_segment'] = 4;
+		$config['full_tag_open'] = '<ul class="pagination">'; 
+		$config['full_tag_close'] = '</ul>'; 
+		$config['num_tag_open'] = '<li>';  
+		$config['num_tag_close'] = '</li>'; 
+		$config['cur_tag_open'] = '<li class="active"><a><span>'; 
+		$config['cur_tag_close'] = '<span class="sr-only">(current)</span></a></span></li>'; 
+		$config['prev_tag_open'] = '<li>'; 
+		$config['prev_tag_close'] = '</li>'; 
+		$config['next_tag_open'] = '<li>'; 
+		$config['next_tag_close'] = '</li>'; 
+		$config['first_link'] = '&laquo;'; 
+		$config['prev_link'] = '<'; 
+		$config['last_link'] = '&raquo;'; 
+		$config['next_link'] = '>'; 
+		$config['first_tag_open'] = '<li>'; 
+		$config['first_tag_close'] = '</li>'; 
+		$config['last_tag_open'] = '<li>'; 
+		$config['last_tag_close'] = '</li>'; 
+        //จบแบ่งหน้า
+		$this->pagination->initialize($config);
+		
+		//ดึกข้อมูลสำหรับบ่งหน้า
+		$this->db->limit($config['per_page'],$this->uri->segment(4));		
+
+
 	$this->db->select('officer.O_id,officer.O_title, officer.O_name, officer.O_lastname,officer.O_position');
 	$this->db->order_by("O_id", "asc");
-	$this->db->limit(10,0);
+	//$this->db->limit(10,0);
 	$officer = $this->db->get('officer');
 
 		//print_r ($this->db->last_query());
@@ -87,6 +117,7 @@ class Person extends CI_Controller {
 
 	//END SEARCH
 
+	$data['page']=$this->pagination->create_links();
 	$data['action']=site_url("backend/person",$data);
 	$this->load->view('backend/person',$data);
 	$this->load->view('backend/script');	
