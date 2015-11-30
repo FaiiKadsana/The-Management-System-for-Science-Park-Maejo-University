@@ -69,8 +69,15 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						<b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="ไม่มี"> ไม่มี  
-						&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" value="มี"> มี กรุณากรอก
+						<b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+						<input type="radio" name="C_no_com" 
+						<?php if($rowservice->C_no_com != null){?>
+						checked
+						<?php }else{} ?>  >ไม่มี  
+						&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" 
+						<?php if($rowservice->C_no_com != null){?>
+						checked
+						<?php }else{} ?>  > มี กรุณากรอก
 						&nbsp;&nbsp;......<?php echo $rowservice->C_no_com_etc;?>..............................................                                                                                                                
 					</td>
 				</tr>
@@ -81,12 +88,27 @@
 				</tr>
 				<tr>
 					<td colspan="3" align="left">
-						<input type="radio" name="C_company_type" value="เจ้าของกิจการ(บุคคลธรรมดา)"> เจ้าของกิจการ(บุคคลธรรมดา)  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_company_type" value="ห้างหุ้นส่วนสามัญ"> ห้างหุ้นส่วนสามัญ
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_company_type" value="ห้างหุ้นส่วนจำกัด"> ห้างหุ่นส่วนจำกัด<br>
-						<input type="radio" name="C_company_type" value="เบริษัทจำกัด"> บริษัทจำกัด  
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_company_type" value="วิสาหกิจชุมชน"> วิสาหกิจชุมชน
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_company_type" value="อื่นๆ"> อื่นๆ ระบุ&nbsp;&nbsp;..............<?php echo $rowservice->C_company_type_etc;?>..................................                                                                                                          
+						<input type="radio" name="C_company_type" <?php if($rowservice->C_company_type == 'เจ้าของกิจการ(บุคคลธรรมดา)'){?>
+						checked <?php }else{} ?>  >เจ้าของกิจการ(บุคคลธรรมดา)  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_company_type"<?php if($rowservice->C_company_type == 'ห้างหุ้นส่วนสามัญ'){?>
+						checked
+						<?php }else{} ?>  > ห้างหุ้นส่วนสามัญ
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="C_company_type" 
+						<?php if($rowservice->C_company_type == 'ห้างหุ่นส่วนจำกัด'){?>
+						checked
+						<?php }else{} ?>  > ห้างหุ่นส่วนจำกัด<br>
+						<input type="radio" name="C_company_type" 
+						<?php if($rowservice->C_company_type == 'บริษัทจำกัด'){?>
+						checked
+						<?php }else{} ?>  > บริษัทจำกัด  
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_company_type" 
+						<?php if($rowservice->C_company_type == 'วิสาหกิจชุมชน'){?>
+						checked
+						<?php }else{} ?>  >วิสาหกิจชุมชน
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="C_company_type" 
+						<?php if($rowservice->C_company_type == 'อื่นๆ'){?>
+						checked
+						<?php }else{} ?>  > อื่นๆ ระบุ&nbsp;&nbsp;..............<?php echo $rowservice->C_company_type_etc;?>..................................                                                                                                          
 					</td>
 				</tr>
 				<tr>
