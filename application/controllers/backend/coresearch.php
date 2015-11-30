@@ -14,10 +14,10 @@ class Coresearch extends CI_Controller {
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
 
-			//แบ่งหน้า
-		$config["base_url"]=base_url()."/backend/coresearch/coresearch";
+		//แบ่งหน้า
+		$config["base_url"]=base_url()."/backend/coresearch/coresearch/";
 		$config["total_rows"] = $this->db->count_all("coresearch_irct");
-		$config["per_page"]=6;
+		$config["per_page"]=5;
 		$config['uri_segment'] = 4;
 		$config['full_tag_open'] = '<ul class="pagination">'; 
 		$config['full_tag_close'] = '</ul>'; 
@@ -79,8 +79,8 @@ class Coresearch extends CI_Controller {
 		}
 
 		$data['page']=$this->pagination->create_links();
-		//$data["action"]=base_url('backend/coresearch/index/');
-		$data["action"]=base_url("backend/coresearch",$data);
+		$data["action"]=base_url('backend/coresearch/index/');
+		//$data["action"]=base_url("backend/coresearch",$data);
 		$this->load->view('backend/coresearch',$data);
 		$this->load->view('backend/script');	
 		

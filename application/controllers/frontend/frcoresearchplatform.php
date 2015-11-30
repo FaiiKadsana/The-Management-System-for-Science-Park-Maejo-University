@@ -128,7 +128,7 @@ class Frcoresearchplatform extends CI_Controller {
 			$insertcoresearch["Co_dem"]=$this->input->post("Co_dem");
 			$insertcoresearch["Co_agreement"]=$this->input->post("Co_agreement");	
 			$insertcoresearch["Spf_id"]='2';
-			$insertcoresearch["Co_status"]="รอดำเนินการ";
+			$insertcoresearch["Co_status"]="รอดำเนินงาน";
 			
 			$file1 = iconv("UTF-8", "TIS-620", $_FILES["F_1"]["name"]);
 			$file2 = iconv("UTF-8", "TIS-620", $_FILES["F_2"]["name"]);
@@ -179,34 +179,39 @@ class Frcoresearchplatform extends CI_Controller {
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ ');</script>";
-			redirect('backend/frcoresearch', 'refresh');
+			redirect('frontend/frcoresearch', 'refresh');
 
 			}else if($insertData["P_name"]=="" || $insertData["P_phone"]==""){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
-			redirect('backend/frcoresearch', 'refresh');
+			redirect('frontend/frcoresearch', 'refresh');
 
 			}else if($insertresponsible["Rp_name"]=="" || $insertresponsible["Rp_position"]=="" || $insertresponsible["Rp_phone"]=="" || $insertresponsible["Rp_institute"]==""){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ >_<');</script>";
-			redirect('backend/frcoresearch', 'refresh');
+			redirect('frontend/frcoresearch', 'refresh');
 
 			}else if($insertcoresearch["Co_date"]=="" || $insertcoresearch["Co_name_pro"]=="" || $insertcoresearch["Co_secter"]=="" 
 				|| $insertcoresearch["Co_origin"]=="" || $insertcoresearch["Co_objective"]=="" || $insertcoresearch["Co_status"]=="" ){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบนะคะ ^_^');</script>";
-			redirect('backend/frcoresearch', 'refresh');
+			redirect('frontend/frcoresearch', 'refresh');
 
 			}else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]=="" ){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบนะคะ *_*');</script>";
-			redirect('backend/frcoresearch', 'refresh');
+			redirect('frontend/frcoresearch', 'refresh');
 
-			}else {
+			}else if (!$resp->is_valid) {
+				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+				echo "<script>alert('กรุณาพิมพ์รหัสตามภาพ');</script>";
+				redirect('frontend/frserviceplatform', 'refresh');
+
+			}else{
 				
             	//print_r($C_id);
             	//die(); //ทำแค่ถึงตรงนี้
