@@ -39,7 +39,10 @@
 					<tr>
 						<td width="30%">2.กลุ่มอุตสาหกรรม</td>
 						<td >
-							<input type="radio"  name="Co_secter" value="Focus (ข้าวทั้งห่วงโซ่)"> Focus (ข้าวทั้งห่วงโซ่)<input type="radio"  name="Co_secter" value="4 Focus Industries"> 4 Focus Industries<input type="radio"  name="Co_secter" value="Others"> Others ระบุ...<?php echo $row->Co_secter_etc;?>...
+							<input type="radio" name="Co_secter" <?php if($row->Co_secter == 'Focus (ข้าวทั้งห่วงโซ่)'){?>
+							checked <?php }else{} ?>  > Focus (ข้าวทั้งห่วงโซ่)<input type="radio" name="Co_secter" <?php if($row->Co_secter == '4 Focus Industries'){?>
+							checked <?php }else{} ?>  > 4 Focus Industries<input type="radio" name="Co_secter" <?php if($row->Co_secter == 'Others'){?>
+							checked <?php }else{} ?>  > Others ระบุ...<?php echo $row->Co_secter_etc;?>...
 						</td>
 					</tr>
 					<tr>
@@ -283,9 +286,9 @@
 
 						</td>	
 					</tr>
-</table>
-<br><br><br><br><br><br>
-<table width="90%" border="1">
+				</table>
+				<br><br><br><br><br><br>
+				<table width="90%" border="1">
 					<tr>
 						<td colspan="2"   width="30%">14.ลายเซ็น
 
