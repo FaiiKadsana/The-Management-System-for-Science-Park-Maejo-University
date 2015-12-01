@@ -16,7 +16,6 @@ class Coresearch extends CI_Controller {
 
 		//แบ่งหน้า
 		$config["base_url"]=base_url()."/backend/coresearch/coresearch/";
-		$config["total_rows"] = $this->db->count_all("coresearch_irct");
 		$config["per_page"]=5;
 		$config['uri_segment'] = 4;
 		$config['full_tag_open'] = '<ul class="pagination">'; 
@@ -36,12 +35,11 @@ class Coresearch extends CI_Controller {
 		$config['first_tag_open'] = '<li>'; 
 		$config['first_tag_close'] = '</li>'; 
 		$config['last_tag_open'] = '<li>'; 
-		$config['last_tag_close'] = '</li>'; 
-        //จบแบ่งหน้า
-		$this->pagination->initialize($config);
-		
+		$config['last_tag_close'] = '</li>';
+
 		//ดึกข้อมูลสำหรับบ่งหน้า
-		$this->db->limit($config['per_page'],$this->uri->segment(4));		
+		$this->db->limit($config['per_page'],$this->uri->segment(4));	
+
 
 		//*************************
 
@@ -75,10 +73,15 @@ class Coresearch extends CI_Controller {
 			$data['search'] = $search1->result();
 			//print_r ($this->db->last_query());
 			//print_r($data['search']);
-			
+
 		}
 
+		$config["total_rows"] = $this->db->count_all("coresearch_irct"); 
+        //จบแบ่งหน้า
+		$this->pagination->initialize($config);
+			
 		$data['page']=$this->pagination->create_links();
+
 		$data["action"]=base_url('backend/coresearch/index/');
 		//$data["action"]=base_url("backend/coresearch",$data);
 		$this->load->view('backend/coresearch',$data);

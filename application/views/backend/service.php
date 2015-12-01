@@ -25,7 +25,7 @@
           <tr>
             <td></td>
             <td><select class="form-control"  name="keyword1">
-             <option value="0"> เลือกสถานะ</option>
+             <option value=""> เลือกสถานะ</option>
              <option value="รอดำเนินงาน">รอดำเนินงาน</option>
              <option value="รออนุมัติ">รออนุมัติ</option>
              <option value="อนุมัติ">อนุมัติ</option>
@@ -70,7 +70,7 @@
           <td ><?php echo $row->P_title , $row->P_name , $row->P_lastname ; ?> </td>
           <td ><?php echo $row->S_date; ?></td>  
           <td ><?php echo $row->S_status; ?></td>
-          <td><a href="<?php echo base_url('backend/viewservice/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url('backend/viewservice/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i> ดู</button></a></td>
           <td><a href="<?php echo base_url("backend/editfrservice")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           <td><a target ="_blank" href="<?php echo base_url('backend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></a></td>                     
           <!--<td><a href="<?php //echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>-->
