@@ -1,3 +1,4 @@
+<?php  foreach ($coresearch_irtc $row) { ?>
 <div id="page-wrapper">
 
   <div class="container-fluid">
@@ -37,28 +38,28 @@
           <!-- Show &Join table -->
           <table class="table table-bordered">
             <tr>
-              <td>ชื่อนักวิจัย : อ. อลงกรณ์  อยู่เกิด</td> 
+              <td>ชื่อนักวิจัย : <?php echo $row->Rec_name_thai;?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $row->Rec_ln_thai;?></td> 
             </tr>
             <tr>
-              <td>Mr. Alongkorn Yukerd</td>
+              <td><?php echo $row->Rec_name_eng;?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $row->Rec_ln_eng;?></td>
             </tr>
             <tr>
-              <td>ตำแหน่ง : อาจารย์</td>
+              <td>ตำแหน่ง : <?php echo $row->Rec_position;?></td>
             </tr>
             <tr>
-              <td>หน่วยงานสังกัด : clud FriA</td> 
+              <td>หน่วยงานสังกัด : <?php echo $row->Rec_unit;?></td> 
             </tr>
             <tr>
-              <td>ที่อยู่ที่สามรถติดต่อไดั : 57/2 ม.1 ตำบล นาหมื่นศรี  อำเภอ นาโยง จังหวัด ตรัง</td>
+              <td>ที่อยู่ที่สามรถติดต่อไดั : <?php echo $row->Rec_address;?> </td>
             </tr>
             <tr>
-              <td>เบอร์โทรศัพท์ : 0857856130</td>
+              <td>เบอร์โทรศัพท์ : <?php echo $row->Rec_phone;?></td>
             </tr>
             <tr>
-              <td>E-mail : Alongkornyukerd@gmail.com</td>    
+              <td>E-mail : <?php echo $row->Rec_mail;?></td>    
             </tr>
             <tr>
-              <td>สถานที่ทำงาน: แม่โจ้</td>    
+              <td>สถานที่ทำงาน: <?php echo $row->Rec_office;?></td>    
             </tr>
           </table>
           <!-- End -->
@@ -71,13 +72,13 @@
 
            <table class="table table-hover  table-hover table-striped table-condensed">
             <tr>
-              <th>#</th>
+
               <th>ความเชี่ยวชาญ</th>
             </tr>
             <!-- Show &Join table -->
             <tr>
-              <td>1</td>
-              <td>คอมพิวเตอร์</td>
+              
+              <td><?php echo $rowservice->Rec_office;?></td>
             </tr>
             <!--end -->
           </table>
@@ -103,34 +104,34 @@
             <table class="table table-hover  table-hover table-striped table-condensed">
               <table class="table table-hover  table-hover table-striped table-condensed">
                 <tr>
-                  <th>#</th>
+
                   <th>ชื่อกิจการ</th>
-                  <th>ชื่อเจ้าของกิจการ</th>
-                  <th>นามสกุลเจ้าของกิจการ</th>
-                  <th>ประเภทกิจการา</th>
+                  <th>ประเภทกิจการ</th>
+                  <th>ชื่อผู้ติดต่อ</th>
+                  <th>ตำแหน่งผู้ติดต่อ</th>
                 </tr>
                 <!-- Show &Join table -->
                 <tr>
-                  <td>1</td>
-                  <td><a  href="<?php echo base_url("backend/viewproject_irtc_entrepreneur")?>"><p  class="co" >Hotel</p></td>
-                  <td>อลงกร</td>
-                  <td>อยู่เกิด</td>
-                  <td>บริษัทจำกัด</td>
+
+                  <td><a  href="<?php echo base_url("backend/viewproject_service_entrepreneur")?>"><p  class="co" ><?php echo $row->C_name;?></p></a></td>
+                  <td><?php echo $row->C_company_type;?></td>
+                  <td><?php echo $row->P_name;?></td>
+                  <td><?php echo $row->P_position;?></td>
                 </tr>
                 <!--end -->
               </table>
               
-             
-           </div>
-         </div>
+
+            </div>
+          </div>
 
 
-       </div>
+        </div>
 
-     </div>
+      </div>
 
-   </div>
- </div>
+    </div>
+  </div>
 </div>
 </div>
 <!-- /. row-->
@@ -147,59 +148,59 @@
 
           <table class="table table-hover  table-hover table-striped table-condensed">
             <tr>
-              <th>#</th>
+
               <th>ชื่อผลงานวิจัย</th>
               <th style="width: 15%">ปีที่ทำงานวิจัย</th>
-              <th style="width: 15%">สถาน</th>
-              <th style="width: 20%">รางวัลงานวิจัย</th>
-              <th style="width: 15%">ประเภทรางวัล</th>
+              <th style="width: 15%">สถานภาพโครงการ</th>
+              <th style="width: 20%">ประเภทรางวัล</th>
+              <th style="width: 15%">วันที่ได้รับรางวัล</th>
               <th></th>
 
               <!-- Show &Join table -->
               <tr>
-                <td>1</td>
-                <td><a  href="<?php echo base_url("backend/viewproject_irtc_project")?>"><p class="co">กังหันลบ</p></td>
-                <td>2553</td>
-                <td>สำเร็จ</td>
-                <td>นานาชาติ</td>
-                <td>n/s</td>
+
+                <td><a  href="<?php echo base_url("backend/viewproject_service_project")?>"><p class="co" ><?php echo $row->Re_name1;?></p></a></td>
+                <td><?php echo $row->Re_start;?></td>
+                <td><?php echo $row->Re_status;?></td>
+                <td><?php echo $row->Rea_type;?></td>
+                <td><?php echo $row->Rea_date;?></td>
                 <td></td>
-              </tr>
-              <!--end -->
-            </table>
+                <!--end -->
+              </table>
 
-      
 
-         </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- /. row-->
+      </div>
+      <div class="row">
+       <div class="col-sm-12">
+         <table>
+           <tr>
+             <td width="80%">
+             </td>
+             <td width="80%">
+             </td>
+             <td>
+               <a href="<?php echo base_url("backend/project_irct")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
+             </td>
+           </tr>
+         </table>
        </div>
 
      </div>
-     <!-- /. row-->
-   </div>
-   <div class="row">
-     <div class="col-sm-12">
-       <table>
-         <tr>
-           <td width="80%">
-           </td>
-           <td width="80%">
-           </td>
-           <td>
-             <a href="<?php echo base_url("backend/project_irct")?>"><button type="button" class="btn btn-success"><i class="fa fa-arrow-left"></i> กลับ</button></a>
-           </td>
-         </tr>
-       </table>
-     </div>
+
+
 
    </div>
-
-
+   <!-- /.container-fluid -->
 
  </div>
- <!-- /.container-fluid -->
-
-</div>
-<!-- /#page-wrapper -->
+ <!-- /#page-wrapper -->
 
 </div>
 <!-- /#wrapper -->
+<?php } ?>

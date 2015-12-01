@@ -38,28 +38,28 @@
           <!-- Show &Join table -->
           <table class="table table-bordered">
             <tr>
-              <td>ชื่อนักวิจัย : <?php echo $rowservice->S_solution_detail;?>  <?php echo $rowservice->S_solution_detail;?></td> 
+              <td>ชื่อนักวิจัย : <?php echo $rowservice->Rec_name_thai;?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $rowservice->Rec_ln_thai;?></td> 
             </tr>
             <tr>
-              <td>Mr. Alongkorn Yukerd</td>
+              <td><?php echo $rowservice->Rec_name_eng;?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $rowservice->Rec_ln_eng;?></td>
             </tr>
             <tr>
-              <td>ตำแหน่ง : อาจารย์</td>
+              <td>ตำแหน่ง : <?php echo $rowservice->Rec_position;?></td>
             </tr>
             <tr>
-              <td>หน่วยงานสังกัด : clud FriA</td> 
+              <td>หน่วยงานสังกัด : <?php echo $rowservice->Rec_unit;?></td> 
             </tr>
             <tr>
-              <td>ที่อยู่ที่สามรถติดต่อไดั : 57/2 ม.1  ตำบล นาหมื่นศรี  อำเภอ นาโยง  จังหวัด ตรัง</td>
+              <td>ที่อยู่ที่สามรถติดต่อไดั : <?php echo $rowservice->Rec_address;?> </td>
             </tr>
             <tr>
-              <td>เบอร์โทรศัพท์ : 0857856130</td>
+              <td>เบอร์โทรศัพท์ : <?php echo $rowservice->Rec_phone;?></td>
             </tr>
             <tr>
-              <td>E-mail : Alongkornyukerd@gmail.com</td>    
+              <td>E-mail : <?php echo $rowservice->Rec_mail;?></td>    
             </tr>
             <tr>
-              <td>สถานที่ทำงาน: แม่โจ้</td>    
+              <td>สถานที่ทำงาน: <?php echo $rowservice->Rec_office;?></td>    
             </tr>
           </table>
           <!-- End -->
@@ -72,13 +72,13 @@
 
            <table class="table table-hover  table-hover table-striped table-condensed">
             <tr>
-              <th>#</th>
+
               <th>ความเชี่ยวชาญ</th>
             </tr>
             <!-- Show &Join table -->
             <tr>
-              <td>1</td>
-              <td>คอมพิวเตอร์</td>
+
+              <td><?php echo $rowservice->Rec_office;?></td>
             </tr>
             <!--end -->
           </table>
@@ -103,32 +103,32 @@
 
             <table class="table table-hover  table-hover table-striped table-condensed">
               <tr>
-                <th>#</th>
+
                 <th>ชื่อกิจการ</th>
-                <th>ชื่อเจ้าของกิจการ</th>
-                <th>นามสกุลเจ้าของกิจการ</th>
                 <th>ประเภทกิจการ</th>
+                <th>ชื่อผู้ติดต่อ</th>
+                <th>ตำแหน่งผู้ติดต่อ</th>
               </tr>
               <!-- Show &Join table -->
               <tr>
-                <td>1</td>
-                <td><a  href="<?php echo base_url("backend/viewproject_service_entrepreneur")?>"><p  class="co" >Hotel</p></a></td>
-                <td>อลงกร</td>
-                <td>อยู่เกิด</td>
-                <td>บริษัทจำกัด</td>
+
+                <td><a  href="<?php echo base_url("backend/viewproject_service_entrepreneur")?>"><p  class="co" ><?php echo $rowservice->C_name;?></p></a></td>
+                <td><?php echo $rowservice->C_company_type;?></td>
+                <td><?php echo $rowservice->P_name;?></td>
+                <td><?php echo $rowservice->P_position;?></td>
               </tr>
               <!--end -->
             </table>
             
-                  </div>
-       </div>
+          </div>
+        </div>
 
 
-     </div>
+      </div>
 
-   </div>
+    </div>
 
- </div>
+  </div>
 </div>
 </div>
 </div>
@@ -146,36 +146,36 @@
 
           <table class="table table-hover  table-hover table-striped table-condensed">
             <tr>
-              <th>#</th>
+
               <th>ชื่อผลงานวิจัย</th>
               <th style="width: 15%">ปีที่ทำงานวิจัย</th>
-              <th style="width: 15%">สถาน</th>
-              <th style="width: 20%">รางวัลงานวิจัย</th>
-              <th style="width: 15%">ประเภทรางวัล</th>
+              <th style="width: 15%">สถานภาพโครงการ</th>
+              <th style="width: 20%">ประเภทรางวัล</th>
+              <th style="width: 15%">วันที่ได้รับรางวัล</th>
               <th></th>
 
               <!-- Show &Join table -->
               <tr>
-                <td>1</td>
-                <td><a  href="<?php echo base_url("backend/viewproject_service_project")?>"><p class="co" >กังหันลบ</p></a></td>
-                <td>2554</td>
-                <td>สำเร็จ</td>
-                <td>นานาชาติ</td>
-                <td>n/s</td>
+
+                <td><a  href="<?php echo base_url("backend/viewproject_service_project")?>"><p class="co" ><?php echo $rowservice->Re_name1;?></p></a></td>
+                <td><?php echo $rowservice->Re_start;?></td>
+                <td><?php echo $rowservice->Re_status;?></td>
+                <td><?php echo $rowservice->Rea_type;?></td>
+                <td><?php echo $rowservice->Rea_date;?></td>
                 <td></td>
               </tr>
               <!--end -->
             </table>
 
-          
 
-         </div>
-       </div>
 
-     </div>
-     <!-- /. row-->
-   </div>
-   <div class="row">
+          </div>
+        </div>
+
+      </div>
+      <!-- /. row-->
+    </div>
+    <div class="row">
      <div class="col-sm-12">
        <table>
          <tr>

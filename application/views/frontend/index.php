@@ -68,8 +68,9 @@
 										<h2><strong>Calendar</strong></h2>
 									</div><br>
 									<div class="panel-body">
-										<!-- Calenda -->
-										<?php echo $calendar; ?>
+									<center>
+										<embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" name="flashplayer" src="http://i251.photobucket.com/albums/gg294/wafpaf/calendars/swf/flowers1.swf" quality="high" width="500" height="300" swliveconnect="true" allowscriptaccess="samedomain" /></embed><br /> <a href="http://www.zalim-code.com/day.htm" target="new"></a>
+									</center>
 									</div>
 								</div> 
 							</div>

@@ -18,16 +18,11 @@
    <div class="row"> 
     <div class="col-sm-12 ">
       <center>
-
         <table >
-
           <tr>
             <td></td>
-            <td><input type="text" class="form-control" placeholder="กรอกชื่อผลงาน"  name=""></td>
-            <td><button class="btn btn-success" type="button" ><i class="fa fa-search"></i> ค้นหา</button></td>
-            <td ><button class="btn btn-success" type="button" >ล้างข้อมูล</button> </td>
-
-
+           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>   
+            <td ></td>
           </tr>
         </table>
       </center>
@@ -64,8 +59,7 @@
             <td >อลงกรณ์</td>   
             <td >085666666</td>
             <td >ใช้ประโยชน์</td>
-            <td><a href="<?php echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
-            <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
+            <td><a href="<?php echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>      
             <td><a href="<?php echo base_url("backend/editcatalog")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
             
           </tr>       
