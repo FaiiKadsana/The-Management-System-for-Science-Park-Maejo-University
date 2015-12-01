@@ -1,3 +1,5 @@
+<?php  foreach ($service as $rowservice) { ?>
+
 <div id="page-wrapper">
 
   <div class="container-fluid">
@@ -36,7 +38,7 @@
           <!-- Show &Join table -->
           <table class="table table-bordered">
             <tr>
-              <td>ชื่อนักวิจัย : อ. อลงกรณ์  อยู่เกิด</td> 
+              <td>ชื่อนักวิจัย : <?php echo $rowservice->S_solution_detail;?>  <?php echo $rowservice->S_solution_detail;?></td> 
             </tr>
             <tr>
               <td>Mr. Alongkorn Yukerd</td>
@@ -200,3 +202,4 @@
 
 </div>
 <!-- /#wrapper -->
+<?php } ?>

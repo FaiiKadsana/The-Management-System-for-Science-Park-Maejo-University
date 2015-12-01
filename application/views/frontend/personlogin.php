@@ -12,7 +12,7 @@
 	<div class="panel-body">
 	<div class="row">
 			<div class="col-xs-12" >
-			<form class="form-horizontal" action="<?php echo base_url("backend/index/display")?>" method="POST" role="form">
+			<form class="form-horizontal"  method="POST" action="<?php echo $action; ?>">
 				<div class="form-group">
 					<label for="username" class="col-sm-2 col-sm-offset-2 control-label">Login : </label>
 						<div class="col-sm-4">
@@ -25,15 +25,7 @@
 							<input type="password" class="form-control" name="password" id="password" placeholder="input Password">
 						</div><div class="col-sm-4"></div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-4 col-sm-8">
-						<div class="checkbox">
-						<label>
-							<input type="checkbox"> Remember me
-						</label>
-						</div>
-					</div>
-				</div>
+			
 				<div class="form-group">
 					<div class="col-sm-12">
 					</div>

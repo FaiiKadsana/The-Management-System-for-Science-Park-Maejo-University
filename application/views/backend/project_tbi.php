@@ -63,7 +63,7 @@
 								<th></th>
 								<th></th>
 								<th></th>
-								<th></th>
+								
 							</tr>   
 
 							<!-- Show &Join table -->
@@ -75,7 +75,7 @@
 								<td >อยู่ในช่วงดำเนินงาน</td>
 								<td><a href="<?php echo base_url("backend/viewproject_tbi")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i> ดู</button></a></td> 
 								<td><a href="<?php echo base_url("backend/editproject_tbi")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button></a></td>
-								<td>สัญญา<input type="file" name=""></td>                  
+							                
 							</tr>       
 						</table>     
 						<!-- End -->

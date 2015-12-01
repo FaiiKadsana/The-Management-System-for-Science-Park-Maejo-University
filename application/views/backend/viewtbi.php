@@ -86,7 +86,7 @@
           <tr>
             <td colspan="3" align="left">
               &nbsp;&nbsp;&nbsp;&nbsp;1.1<select  name="Tbi_title"disabled> 
-              <option value="<?php echo $rowservice->Tbi_title;?>"><?php echo $rowservice->Tbi_title;?></option>
+              <option ><?php echo $rowtbi->Tbi_title;?></option>
             </select>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชื่อ: <input type="text" size="30" name="Tbi_name1" value="<?php echo $rowtbi->Tbi_name1;?>" disabled>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30" name="Tbi_lastname" value="<?php echo $rowtbi->Tbi_lastname;?>" disabled>

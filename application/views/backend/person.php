@@ -227,10 +227,11 @@
         </div>
         <label class="col-lg-2 control-label">status</label>
         <div class="col-lg-4">
-          <input type="checkbox"  name="O_status"  value="Service Platform">Service Platform<br>
-          <input type="checkbox"  name="O_status" value="Co-Research Platform" />Co-Research Platform<br>
-          <input type="checkbox"  name="O_status" value="IRTC Platform"/>IRTC Platform<br>
-          <input type="checkbox"  name="O_status" value="TBI Platform"/>TBI Platform<br>
+          <input type="checkbox"  name="O_status"  value="1">Service Platform<br>
+          <input type="checkbox"  name="O_status" value="2" >Co-Research Platform<br>
+          <input type="checkbox"  name="O_status" value="3">IRTC Platform<br>
+          <input type="checkbox"  name="O_status" value="4">TBI Platform<br>
+          <input type="checkbox"  name="O_status" value="5">Service Platform,TBI Platform,IRTC Platform,Service Platform<br>
         </div>
       </div>
 

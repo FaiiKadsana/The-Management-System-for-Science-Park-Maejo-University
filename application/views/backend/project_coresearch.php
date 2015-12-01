@@ -1,5 +1,5 @@
 <div id="page-wrapper">
-
+ 
   <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -79,7 +79,7 @@
           <td><a href="<?php echo base_url("backend/viewproject_coresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_coresearcher"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
           <td><a href="<?php echo base_url("backend/editproject_coresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td>สัญญา<input type="file" name=""></td>                            
+                                  
         </tr>       
       </table>     
       <!-- End -->
@@ -613,7 +613,11 @@
       <div class="col-lg-4">
         <input type="file" name="Re_picture1">
       </div>
-    </div>
+      <label class="col-lg-2 control-label">สัญญา</label>
+      <div class="col-lg-4">
+        <input type="file" name="Co_agreement">
+      </div>
+    </div> 
 
     <br>
 

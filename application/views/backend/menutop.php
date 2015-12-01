@@ -4,7 +4,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -17,15 +17,11 @@
          
          
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> พี่แอน <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $this->session->userdata("set_name") ?><b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-gear"></i> Edit Password</a>
-                    </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="<?php echo base_url("frontend/personlogin")?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        <a href="<?php echo base_url("frontend/personlogin/logout");?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                     </li>
                 </ul>
             </li>
