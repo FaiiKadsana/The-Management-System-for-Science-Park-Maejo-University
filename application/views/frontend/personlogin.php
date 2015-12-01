@@ -12,7 +12,7 @@
 	<div class="panel-body">
 	<div class="row">
 			<div class="col-xs-12" >
-			<form class="form-horizontal" action="<?php echo $action; ?>" method="POST" role="form">
+			<form class="form-horizontal" action="<?php echo base_url("backend/index/display")?>" method="POST" role="form">
 				<div class="form-group">
 					<label for="username" class="col-sm-2 col-sm-offset-2 control-label">Login : </label>
 						<div class="col-sm-4">
@@ -43,7 +43,7 @@
 						<button type="submit" class="btn btn-info" style="width:200px;margin-left:-20px;">Sign in</button>
 					</div>
 				</div>
-			</form>
+		</form>
 		</div>
 	</div>
 	</div>
