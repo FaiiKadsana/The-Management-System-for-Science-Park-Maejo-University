@@ -1,4 +1,4 @@
-<?php  foreach ($service as $rowservice) { ?>
+ <?php  foreach ($service as $rowservice) { ?>
 <div id="page-wrapper ">
 
   <div class="container-fluid">

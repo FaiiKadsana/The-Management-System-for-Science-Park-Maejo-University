@@ -1,4 +1,4 @@
-<?php  foreach ($coresearch_irct as $row) { ?>
+ <?php  foreach ($coresearch_irct as $row) { ?>
 
 <div id="page-wrapper ">
 
