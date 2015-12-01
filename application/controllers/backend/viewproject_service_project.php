@@ -12,6 +12,9 @@ class Viewproject_service_project extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
+
+
+		
 		$this->load->view('backend/viewproject_service_project');
 		$this->load->view('backend/script');	
 		

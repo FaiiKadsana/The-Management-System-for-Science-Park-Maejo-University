@@ -28,11 +28,11 @@
             <!--<td><input type="text" class="form-control" placeholder="กรอกชื่อผู้ขอใช้บริการ" name="research"></td>
             <td><input type="date" class="form-control"  name="dateresearch"></td>-->
             <td><select class="form-control"  name="keyword1">
-             <option value="0"> เลือกสถานะ</option>
-             <option value="รอดำเนินงาน">pre incubated</option>
-             <option value="รออนุมัติ">incubatee</option>
-             <option value="อนุมัติ">start up</option>
-             <option value="ไม่อนุมัติ">sping off(gratduate)</option>
+             <option value=""> เลือกสถานะ</option>
+             <option value="pre incubated">pre incubated</option>
+             <option value="incubated">incubated</option>
+             <option value="start up">start up</option>
+             <option value="sping off(gratduate)">sping off(gratduate)</option>
 
            </select></td>
            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>

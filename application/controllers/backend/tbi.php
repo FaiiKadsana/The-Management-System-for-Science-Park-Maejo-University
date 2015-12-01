@@ -57,7 +57,7 @@ class Tbi extends CI_Controller {
 
 		$data['tbi1'] = $service->result();
 
-		echo '1';
+		//echo '1';
 		
 		//SEARCH
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
@@ -68,16 +68,16 @@ class Tbi extends CI_Controller {
 			$this->db->select('tbi_person.Tbi_name1,tbi_person.Tbi_title,tbi_person.Tbi_lastname,tbi.Tbi_id3,tbi.Tbi_date,tbi.Tbi_status');
 			$this->db->join('tbi_person','tbi.Tbi_id = tbi_person.Tbi_id');
 			//$this->db->like('Tbi_status',$data['keyword1']);
-			$this->db->or_like('Tbi_status',$data['keyword1']);
-
+			$this->db->like('tbi.Tbi_status',$data['keyword1']);
+		//	print_r ($this->db->last_query());
 			$search1 = $this->db->get('tbi');
 			
 			$data['search'] = $search1->result();
 
-			echo '2';
+		//	echo '2';
 
 			//print_r ($this->db->last_query());
-			print_r($data['search']);
+		//	print_r($data['search']);
 			
 		}
 		

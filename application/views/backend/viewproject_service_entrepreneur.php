@@ -11,12 +11,13 @@
        </h1>
        <ol class="breadcrumb">
          <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_service")?>">จัดการโครงการ</a></li>
-         <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewproject_service")?>">ดูโครงการ</a></li>
+         <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewproject_service")?>"> ดูโครงการ</a></li>
        </ol>
      </div>
    </div></br>
    <!-- /.row -->
 
+      <?php  foreach ($service as $rowservice) { ?>
 
         <div class="panel panel-danger">
           <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
@@ -105,7 +106,7 @@
           </div>
         </div> 
 
-     
+     <?php } ?>
 
 </div>
 <!-- /.container-fluid -->

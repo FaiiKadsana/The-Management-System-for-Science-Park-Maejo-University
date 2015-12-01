@@ -142,6 +142,7 @@ class News extends CI_Controller {
 				$updateData=array(
 				"Ne_sub"=>$this->input->post("Ne_sub"),
 				"Ne_text"=>$this->input->post("Ne_text"),
+				"Ne_picture" => $this->input->post("Ne_picture"),
 				"Ne_date_up" => date("Y-m-d H:i:s")
 				);
 	

@@ -107,12 +107,8 @@ class Project_Service extends CI_Controller {
 }
 	public function search(){
 
-		$this->load->view('backend/header');
-		$this->load->view('backend/menutop');
-		$this->load->view('backend/menu');
-
 			//แบ่งหน้า
-		$config["base_url"]=base_url()."/backend/service/service";
+		$config["base_url"]=base_url()."/backend/project_service/project_service";
 		$config["total_rows"] = $this->db->count_all("service");
 		$config["per_page"]=8;
 		$config['uri_segment'] = 4;
@@ -176,9 +172,7 @@ class Project_Service extends CI_Controller {
 			
 		}
 
-		$data['page']=$this->pagination->create_links();
-		$this->load->view('backend/project_service',$data);
-		$this->load->view('backend/script');	
+		$data['page']=$this->pagination->create_links();	
 
 	}
 

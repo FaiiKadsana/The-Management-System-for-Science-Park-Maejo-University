@@ -112,7 +112,7 @@
               <!-- Show &Join table -->
               <tr>
                 <td>1</td>
-                <td><a  href="<?php echo base_url("backend/viewproject_service_entrepreneur")?>"><p  class="co" >Hotel</p></a></td>
+                <td><?php echo anchor("backend/viewproject_service/index/".$rownew['ne_id'],$rownew['ne_sub'],"target='_blank'");?><p  class="co" >Hotel</p></a></td>
                 <td>อลงกร</td>
                 <td>อยู่เกิด</td>
                 <td>บริษัทจำกัด</td>
