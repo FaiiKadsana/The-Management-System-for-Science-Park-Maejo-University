@@ -1,0 +1,102 @@
+if(===== '1'){
+
+<table style="width: 50%" class="table table-bordered table-hover">
+	<thead>
+		<tr class="success">
+			<th>No.</th>
+			<th>ID</th>
+			<th>Username</th>
+			<th>Name</th>
+			<th>Lastname</th>
+			<th>Permition</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		
+		<tr>
+			<td><?php echo $count++;?></td>
+			<td><?php echo $rows['id']?></td>
+			<td><?php echo $rows['username']?></td>
+			<td><?php echo $rows['name'];?></td>
+			<td><?php echo $rows['lastname'];?></td>
+			<td><?php echo ($rows['type_code'] === '2')?'ผู้ใช้ทั่วไป' :'2'; ?>
+			</td>
+			<td>
+				<form action="edit.php" method="post">
+				
+					<input type="hidden" name="id-edit" value="<?php echo $rows['id']; ?>">
+					<input type="hidden" name="user-edit" value="<?php echo $rows['username']; ?>">
+					<input type="hidden" name="name-edit" value="<?php echo $rows['name']; ?>">
+					<input type="hidden" name="lname-edit" value="<?php echo $rows['lastname']; ?>">
+					
+					<button type="submit" class="btn btn-warning">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true">แก้ไข</span>
+					</button>
+				
+				</form>
+			</td>
+			<td>
+				<form action="del.php" method="post">
+					
+					<input type="hidden" name="id-del" value="<?php echo $rows['id']; ?>">
+					<button type="submit" class="btn btn-danger" Onclick="return ConfirmDelete();">
+						<span class="glyphicon glyphicon-trash" aria-hidden="true">ลบ</span>
+					</button>
+				
+				</form>
+			</td>
+		</tr>
+		
+	</tbody>
+
+	
+</table>
+
+
+}else{
+
+
+
+
+
+<table style="width: 50%" class="table table-bordered table-hover">
+	<thead>
+		<tr class="success">
+			<th>No.</th>
+			<th>ID</th>
+			<th>Username</th>
+			<th>Name</th>
+			<th>Lastname</th>
+			<th>Permition</th>
+
+		</tr>
+	</thead>
+	
+	<tbody>
+		
+		<tr>
+			<td><?php echo $count++;?></td>
+			<td><?php echo $rows['id']?></td>
+			<td><?php echo $rows['username']?></td>
+			<td><?php echo $rows['name'];?></td>
+			<td><?php echo $rows['lastname'];?></td>
+			<td><?php echo ($rows['type_code'] === '2')?'ผู้ใช้ทั่วไป' :'2'; ?>
+			</td>
+			
+		</tr>
+		
+	</tbody>
+
+	
+</table>
+
+
+
+
+
+
+
+}
