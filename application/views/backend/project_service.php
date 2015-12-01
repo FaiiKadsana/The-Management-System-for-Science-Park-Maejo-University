@@ -28,7 +28,7 @@
 
           <tr>
             <td></td>
-            <td><select class="form-control"  name="statussearch">
+            <td><select class="form-control"  name="S_status">
              <option value=""> เลือกสถานะ</option>
              <option value="สำเร็จ"> อนุมัติ</option>
              <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
@@ -41,7 +41,6 @@
            </select></td>
            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
            <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
-
 
          </tr>
        </table>

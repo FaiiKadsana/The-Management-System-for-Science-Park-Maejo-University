@@ -30,6 +30,7 @@ class Project_Service extends CI_Controller {
 			$insertResearchers["Rec_position"]=$this->input->post("Rec_position");
 			$insertResearchers["Rec_unit"]=$this->input->post("Rec_unit");
 			$insertResearchers["Rec_office"]=$this->input->post("Rec_office");
+			$insertResearchers["Spf_id"]='1';
 			
 			$file = iconv("UTF-8", "TIS-620", $_FILES["Rec_picture1"]["name"]);
 			$path = "asset\img\Researchers";
@@ -50,6 +51,7 @@ class Project_Service extends CI_Controller {
 			$insertResearch["Re_finances_sp"]=$this->input->post("Re_finances_sp");
 			$insertResearch["Re_finances_b"]=$this->input->post("Re_finances_b");
 			$insertResearch["Re_notes"]=$this->input->post("Re_notes");
+			$insertResearch["Sp_id"]='1';
 			
 			$file = iconv("UTF-8", "TIS-620", $_FILES["Re_picture1"]["name"]);
 			$path = "asset\img\Research";
@@ -63,32 +65,43 @@ class Project_Service extends CI_Controller {
 				|| $insertResearchers["Rec_mail"]==""|| $insertResearchers["Rec_position"]==""
 				|| $insertResearchers["Rec_unit"]==""|| $insertResearchers["Rec_office"]==""){
 
-				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยคะ');</script>";
 			redirect('backend/project_service', 'refresh');
 
 		}
-		else if($insertResearch["Re_id_patent"]=="" || $insertResearch["Re_name1"]==""
-			|| $insertResearch["Re_name_eng"]=="" || $insertResearch["Re_industry_group"]==""
-			|| $insertResearch["Re_status"]==""|| $insertResearch["Re_abstract"]=="" ){
+			else if($insertResearch["Re_id_patent"]=="" || $insertResearch["Re_name1"]==""
+				|| $insertResearch["Re_name_eng"]=="" || $insertResearch["Re_industry_group"]==""
+				|| $insertResearch["Re_status"]==""|| $insertResearch["Re_abstract"]=="" ){
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-		echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
-		redirect('backend/project_service', 'refresh');
+			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
+			redirect('backend/project_service', 'refresh');
 
-	}
-	else {
-		echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-		echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
+		}
+			else {
 
-		$this->db->insert('researchers', $insertResearchers);
-		$this->db->insert('research', $insertResearch);
-		redirect('backend/project_service', 'refresh');
+			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+			echo "<script>alert('ส่งข้อความเรียบร้อยแล้ว');</script>";
+
+			$this->db->insert('researchers', $insertResearchers);
+
+			$Rec_id = $this->db->insert_id();
+            $insertResearch["Rec_id"] = $Rec_id;
+
+			$this->db->insert('research', $insertResearch);
+
+            $insertResearch["Rec_id"] = $Rec_id;
+            $this->db->insert('researchers', $insertResearchers);
+
+
+
+			redirect('backend/project_service', 'refresh');
+		}
 	}
-}
-$data['action']=site_url('backend/project_service/index/');
-$this->load->view('backend/project_service',$data);
-$this->load->view('backend/script');	
+			$data['action']=site_url('backend/project_service/index/');
+			$this->load->view('backend/project_service',$data);
+			$this->load->view('backend/script');	
 
 }
 
