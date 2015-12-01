@@ -75,7 +75,8 @@ class News extends CI_Controller {
 		$data['page']=$this->pagination->create_links();
 		$data['action1']=site_url("backend/news/index/");
 		$data['action']=site_url("backend/news/addnews/");
-		$data['action2']=site_url("backend/news/viewnews/");		
+		//$data['action2']=site_url("backend/news/viewnews/");
+		$data["action3"]=base_url('backend/news/updatenews/');		
 		$this->load->view('backend/news',$data);
 		$this->load->view('backend/script');
 	}
@@ -134,7 +135,28 @@ class News extends CI_Controller {
 
 	}
 
-	public function update(){
+	public function updatenews($id=0){
+
+			if( $_SERVER["REQUEST_METHOD"] == "POST"){
+				$update = $this->input->post("id");
+				$updateData=array(
+				"Ne_sub"=>$this->input->post("Ne_sub"),
+				"Ne_text"=>$this->input->post("Ne_text"),
+				"Ne_date_up" => date("Y-m-d H:i:s")
+				);
+	
+				$this->db->where('Ne_id', $update);
+				$this->db->update('news',$updateData);
+			}
+		
+		
+				$this->db->where("Ne_id",$id);
+				$rs = $this->db->get("news");
+				$row=$rs->row();
+				$data["Ne_id"]=$row->id;
+				$data["Ne_sub"]=$row->Ne_sub;
+				$data["Ne_text"]=$row->Ne_text;		
+
 
 	}
 

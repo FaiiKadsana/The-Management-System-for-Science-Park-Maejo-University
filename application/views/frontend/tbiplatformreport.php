@@ -20,7 +20,7 @@
 			<center>
 				<table  width="70%" >
 					<tr>
-						<td width="15%" align="center"><img src='<?php echo base_url("asset/images/mju_logo.jpg") ?>' width='30%'height='5%' ></td>
+						<td width="15%" align="center"><img src='<?php echo base_url("asset/images/mju_logo.jpg") ?>' width='50%'height='5%' ></td>
 						<td width="60%" align="center">
 							<p>โครงการการบ่มเพาะผู้ประกอบการเทคโนโลยี  มหาวิทยาลัยแม่โจ้</p>
 							<p>ภายใต้โครงการอุทยานวิทยาศาสตร์  มหาวิทยาลัยแม่โจ้</p>
@@ -36,7 +36,7 @@
 
 					<tr>
 						<td colspan="2" align="center" width="%">
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ใบสมัครรับบริการบ่มเพาะผู้ประกอบการเทคโนโลยี
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ใบสมัครรับบริการบ่มเพาะผู้ประกอบการเทคโนโลยี
 						</td>
 						<td >
 
@@ -44,8 +44,8 @@
 								<tr>
 									<td align="center">
 										<br>
-										<p>ติดรูปถ่ายหน้าตรง</p>
-										<p>ขนาด1 นิ้ว</p>
+										<?php echo '<img src= "'.base_url().'asset/img/TBIPerson/'.$rowtbi->Tbi_picture.'" style="height:70px;" style="width:40px;">'; ?>
+										<!--<p>ขนาด1 นิ้ว</p>-->
 										<br>
 									</td>
 								</tr>

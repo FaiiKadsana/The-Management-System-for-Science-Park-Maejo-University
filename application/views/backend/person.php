@@ -68,7 +68,7 @@
             <td><?php echo $row->O_title , $row->O_name ; ?></td>
             <td><?php echo $row->O_lastname;?></td> 
             <td><?php echo $row->O_position;?></td>  
-            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>          
+           <!-- <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td> -->          
             <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></td>
           </tr> 
           <?php } ?>  
@@ -89,7 +89,7 @@
             <td><?php echo $row->O_title , $row->O_name ; ?></td>
             <td><?php echo $row->O_lastname;?></td> 
             <td><?php echo $row->O_position;?></td>  
-            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td>            
+           <!-- <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewperson"><i class="fa fa-eye"></i>  ดู</button></td> -->           
             <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editperson"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
           </tr> 
           <?php } } ?> 
@@ -101,7 +101,7 @@
 
       <!-- start popup ดูข้อมูล-->
       
-        <div class="modal fade bs-example-modal-lg-viewperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <!--  <div class="modal fade bs-example-modal-lg-viewperson" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="panel-body">
@@ -112,12 +112,12 @@
                     <center><h3>ข้อมูลบุคลากร</h3></center><br> 
 
                     <div class="col-sm-2">
-                      <img width="200px" height="260px" src="<?php echo base_url("asset2/img/011.jpg") ?>"> <br><br>
+                      <img width="200px" height="260px" src="<?php //echo base_url("asset2/img/011.jpg") ?>"> <br><br>
 
                     </div>
 
                     <div class="col-lg-offset-1 col-sm-8">
-                     <!-- Show &Join table -->
+                    
                      <table class="table table-bordered">
                       <tr>
                         <td>นาย: มนตรี  ศรีษะเกษ</td> 
@@ -141,7 +141,7 @@
                         <td>สถานะ : sevice plamform</td> 
                       </tr>
                     </table>
-                    <!-- End -->   
+                    
 
                   </div>
                 </div>
@@ -155,7 +155,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- End popup ดูข้อมูล--> 
     <!-- start popup เพิ่มพนักงาน-->

@@ -57,7 +57,7 @@ class Tbi extends CI_Controller {
 
 		$data['tbi1'] = $service->result();
 
-	
+		echo '1';
 		
 		//SEARCH
 		if( $_SERVER["REQUEST_METHOD"] == "POST")
@@ -77,7 +77,7 @@ class Tbi extends CI_Controller {
 			echo '2';
 
 			//print_r ($this->db->last_query());
-			//print_r($data['search']);
+			print_r($data['search']);
 			
 		}
 		

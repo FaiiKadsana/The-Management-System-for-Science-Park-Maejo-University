@@ -44,8 +44,7 @@
 								<tr>
 									<td align="center">
 										<br>
-										<p>ติดรูปถ่ายหน้าตรง</p>
-										<p>ขนาด1 นิ้ว</p>
+										<?php echo '<img src= "'.base_url().'asset/img/TBIPerson/'.$rowtbi->Tbi_picture.'" style="height:70px;" style="width:40px;">'; ?>
 										<br>
 									</td>
 								</tr>
