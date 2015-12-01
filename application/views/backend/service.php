@@ -52,9 +52,9 @@
       <div class="panel-body">
        <table class="table table-striped">
 
-        <?php if (empty($keyword1)) { ?>
+    <?php if (empty($keyword1)) { ?>
 
-        <tr class="bg-success">
+       <tr class="bg-success">
          <th width="15%">เลขที่แบบฟอร์ม</th>
          <th width="20%">ชื่อสถานประกอบการ</th>
          <th width="20%">ชื่อผู้ประสานงาน</th>
@@ -62,48 +62,30 @@
          <th width="20%">สถานะ</th>    
        </tr>  
 
-       <?php foreach($service as $row){?>
+       <?php foreach($service as $row) { ?>
 
        <tr class="bg-success">
-        <td ><?php echo $row->S_id; ?></td>
-        <td ><?php echo $row->C_name; ?></td>
-        <td ><?php echo $row->P_title , $row->P_name , $row->P_lastname ; ?> </td>
-        <td ><?php echo $row->S_date; ?></td>  
-        <td ><?php echo $row->S_status; ?></td>
-        <td><a  href="<?php echo base_url('backend/viewservice/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
-        <td><a href="<?php echo base_url("backend/editfrservice")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-        <td><a target ="_blank" href="<?php echo base_url('backend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
-        <td><a href="<?php echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
-      </tr> 
-
-      <?php } ?>
+          <td ><?php echo $row->S_id; ?></td>
+          <td ><?php echo $row->C_name; ?></td>
+          <td ><?php echo $row->P_title , $row->P_name , $row->P_lastname ; ?> </td>
+          <td ><?php echo $row->S_date; ?></td>  
+          <td ><?php echo $row->S_status; ?></td>
+          <td><a href="<?php echo base_url("backend/viewservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <td><a href="<?php echo base_url("backend/editfrservice")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+          <td><a target ="_blank" href="<?php echo base_url('backend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
+          <!--<td><a href="<?php //echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>-->
+        </tr> 
+       
+         <?php } ?>
 
       <?php }else{ ;?>
 
-      <tr class="bg-success">
+       <tr class="bg-success">
        <th width="15%">เลขที่แบบฟอร์ม</th>
        <th width="20%">ชื่อสถานประกอบการ</th>
        <th width="20%">ชื่อผู้ประสานงาน</th>
        <th width="20%">วันที่ยืนโครงการ</th> 
        <th width="20%">สถานะ</th>    
-<<<<<<< HEAD
-     </tr>  
-
-     <?php foreach($search as $row){?>
-     <tr class="bg-success">
-      <td ><?php echo $row->S_id; ?></td>
-      <td ><?php echo $row->C_name; ?></td>
-      <td ><?php echo $row->P_title; ?><?php echo $row->P_name;?>&nbsp;<?php echo $row->P_lastname ; ?></td>
-      <td ><?php echo $row->S_date; ?></td>  
-      <td ><?php echo $row->S_status; ?></td>
-      <td><a  href="<?php echo base_url('backend/viewservice/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
-      <td><a href="<?php echo base_url("backend/editfrservice")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-      <td><a target ="_blank" href="<?php echo base_url('backend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                    
-      <td><a href="<?php echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
-    </tr> 
-    <?php } }?>
-  </table>     
-=======
        </tr>  
 
        <?php foreach($search as $row){?>
@@ -115,12 +97,11 @@
         <td ><?php echo $row->S_status; ?></td>
         <td><a href="<?php echo base_url("backend/viewservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
         <td><a href="<?php echo base_url("backend/editfrservice")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-        <td><a target ="_blank" href="<?php echo base_url('backend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
-        <td><a href="<?php echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>
+        <td><a href="<?php echo base_url("backend/serviceplatformreport")?>"><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                     
+        <!--<td><a href="<?php //echo base_url("backend/fileservice")?>"><button type="button" class="btn btn-info" ><i class="fa fa-paperclip"></i>  ไฟล์เอกสารแนบ</button></a></td>-->
       </tr> 
       <?php } }?>
     </table>     
->>>>>>> Science-Park 30/11/2558
   <!-- End -->
 
 </div>
@@ -138,7 +119,7 @@
       </center>
     </div>
     
-  </div>
+</div>
 </div>
 
 <!-- /.row -->
