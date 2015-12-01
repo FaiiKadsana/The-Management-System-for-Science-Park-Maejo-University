@@ -18,7 +18,8 @@
 
    <!-- Star row-->
 
-   <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+   <form method="post" class="form-horizontal" action="<?php echo $action1; ?>" >
+
      <div class="row">
       <div class=" col-sm-12">
 
@@ -85,10 +86,15 @@
         </tr>       
       </table>     
       <!-- End -->
-
-
-      <!-- /.row -->
     </div>
+
+  </div>
+</div>
+<!-- /.row -->
+</div>
+</form>
+
+<form method="post" class="form-horizontal" action="<?php echo $action; ?>" >
 
 <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg">
@@ -134,10 +140,6 @@
                     <textarea class="form-control"  name="Rec_address">   </textarea>
                   </div>
                 </div>
-                
-
-                
-                
 
                 <div class="form-group">
                  <label class="col-lg-2 control-label">เบอร์โทร</label>
@@ -151,8 +153,6 @@
 
               </div>
               
-
-
               <div class="form-group">
                 <label class="col-lg-2 control-label">ตำแหน่ง</label>
                 <div class="col-lg-4">
@@ -189,7 +189,7 @@
               <div class="form-group">    
                 <label class="col-lg-2 control-label">ความเชียวชาญ</label>
                 <div class="col-lg-4">
-                  <input type="text" class="form-control" name="sct_detail"   />
+                  <input type="text" class="form-control" name="Rec_sct_detail"   />
                 </div>
               </div>
 
@@ -364,8 +364,6 @@
     </div>
 
 
-
-
     <div class="row">
      <div class="col-lg-12">
 
@@ -451,7 +449,6 @@
     </div>
 
 
-
     <div class="row">
      <div class="col-lg-12">
 
@@ -512,7 +509,10 @@
 
 </div>
 </div>
+
 <!-- ข้อมูลผู้ประกอบการ -->
+
+
 <div class="panel panel-warning">
   <div class="panel-heading">ข้อมูลโครงการ</div>
   <div class="panel-body">
@@ -643,8 +643,8 @@
 
 </div>
 </div>
-<!-- ข้อมูลโครงการ -->
 
+<!-- ข้อมูลโครงการ -->
 
 <div class="modal-footer">
   <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
@@ -653,15 +653,11 @@
 
 </div>
 
+</div>
+</div>
+</div>
+</div>
 
-
-</div>
-</div>
-
-
-</div>
-</div>
-</div>
 
 </form>
 </div>
