@@ -112,7 +112,7 @@
                 <!-- Show &Join table -->
                 <tr>
                   <td>1</td>
-                  <td><p  class="co" data-toggle="modal" data-target=".bs-example-modal-lg-businessman" >Hotal</p></td>
+                  <td><a  href="<?php echo base_url("backend/viewproject_coresearch_entrepreneur")?>"><p  class="co" >Hotal</p></td>
                   <td>อลงกร</td>
                   <td>อยู่เกิด</td>
                   <td>บริษัทจำกัด</td>
@@ -120,104 +120,7 @@
                 <!--end -->
               </table>
               
-              <div class="modal fade bs-example-modal-lg-businessman " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="panel panel-danger">
-                      <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
-                      <div class="panel-body">
-                        <div class="row">
-                          <div class="col-lg-offset-3  col-sm-6">
-
-                            <div class="panel panel-info">
-                              <div class="panel-heading">ข้อมูลผู้ติดต่อ</div>
-
-                              <!-- Show &Join table -->
-
-                              <table class="table table-bordered">
-                                <tr>
-                                  <td>ชื่อผู้ติดต่อ : นางสาว กมลฉัตร สินไชย</td> 
-                                </tr>
-                                <tr>
-                                  <td> เลขที่บัตรประชาชน: 1985566322987</td>
-                                </tr>
-                                <tr>
-                                  <td>ตำแหน่ง: ประชาสัมพันธ์</td>
-                                </tr>
-                                <tr>
-                                  <td>เบอร์โทรศัพท์ : 0857856130</td>
-                                </tr>
-                                <tr>
-                                  <td>E-mail : Alongkornyukerd@gmail.com</td>    
-                                </tr>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- End -->
-                      <div class="row">
-                        <div class="col-lg-offset-3  col-sm-6">
-                          <div class="panel panel-info">
-                            <div class="panel-heading">ข้อมูลทางธุรกิจ</div>
-
-                            <!-- Show &Join table -->
-                            
-                            <table class="table table-bordered">
-                              <tr>
-                                <td>ชื่อกิจการ : Hotal</td> 
-                              </tr>
-                              <tr>
-                                <td>ชื่อเจ้าของกิจการ : นางสาว เกศนา ปัญญา</td>
-                              </tr>
-                              <tr>
-                                <td>ที่อยู่ : 895/2 ม.9 ตำบล หนองหาร  อำเภอ สันทราย  จังหวัด เชียงใหม่</td>
-                              </tr>
-                              <tr>
-                                <td>โทรศัพท์ : 075242500</td> 
-                              </tr>
-                              <tr>
-                                <td>โทรสาร : 079683296</td>
-                              </tr>
-                              <tr>
-                                <td>website : www.Hotalcom.com</td>
-                              </tr>
-                              <tr>
-                                <td>เลขที่ทะเบียนพาณิชย์ : กห58759</td>    
-                              </tr>
-                              <tr>
-                                <td>ประเภทกิจการ: บริษัทจำกัด</td>    
-                              </tr>
-                              <tr>
-                                <td>ลักษณะการประกอบการ : การผลิต</td>    
-                              </tr>
-                              <tr>
-                                <td>สาขาอุตสาหกรรมที่ทำอยู่: ยา</td>    
-                              </tr>
-                              <tr>
-                                <td>เงินจดทะเบียน : 58222 บาท</td>    
-                              </tr>
-                              <tr>
-                                <td>จำนวนปีที่ประกอบการ:2 ปี</td>    
-                              </tr>
-                            </table>
-                          </div>
-                        </div>
-
-                        <!-- End -->
-
-                      </div>
-                    </div> 
-
-                    <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                   </div>
-
-                 </div>
-               </div>
-
-             </div>
+              
            </div>
          </div>
 
@@ -255,7 +158,7 @@
               <!-- Show &Join table -->
               <tr>
                 <td>1</td>
-                <td><p class="co" data-toggle="modal" data-target=".bs-example-modal-lg-portfolio">กังหันลบ</p></td>
+                <td><a  href="<?php echo base_url("backend/viewproject_coresearch_project")?>"><p class="co">กังหันลบ</p></td>
                 <td>2553</td>
                 <td>สำเร็จ</td>
                 <td>นานาชาติ</td>
@@ -265,92 +168,7 @@
               <!--end -->
             </table>
 
-            <div class="modal fade bs-example-modal-lg-portfolio " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="panel panel-danger">
-                    <div class="panel-heading">ข้อมูลโครงการ</div>
-                    <div class="panel-body">
-                      <div class="row">
-                        <div class="col-lg-offset-3  col-sm-6">
-
-                          <div class="panel panel-info">
-                            <div class="panel-heading">โครงการ</div>
-
-                            <!-- Show &Join table -->
-
-                            <table class="table table-bordered">
-                              <tr>
-                                <td>ชื่อโครงการ : กังหันลม</td> 
-                              </tr>
-                              <tr>
-                                <td> Service</td>
-                              </tr>
-                              <tr>
-                                <td>กลุ่มอุตสาหกรรม: พาณิชย์</td>
-                              </tr>
-                              <tr>
-                                <td>หน่วยงานวิจัย : วิทยาการคอม</td>
-                              </tr>
-                              <tr>
-                                <td>ปีที่เริ่มทำโครงการ: 2538</td>    
-                              </tr>
-                              <tr>
-                                <td>ปีที่สิ้นสุดทำโครงการ: 2558</td>    
-                              </tr>
-                              <tr>
-                                <td>เลขที่สิทธิบัตร: กห5865</td>    
-                              </tr>
-                              <tr>
-                                <td>สถานภาพโครงการ: อยู่ในช่วงดำเนินงาน</td>    
-                              </tr>
-                              <tr>
-                                <td>แหล่งเงินทุนอุทยาน: 50 %</td>    
-                              </tr>
-                              <tr>
-                                <td>แหล่งเงินทุนบริษัท: 50 %</td>    
-                              </tr>
-                              <tr>
-                                <td>บทสรุป: เป็นงานวิจัย กังหันลมเพื่อใช้ในการเกษร</td>    
-                              </tr>
-                              <tr>
-                                <td>รางวัลผลงานวิจัย: นานาชาติ</td>    
-                              </tr>
-                              <tr>
-                                <td>ประเภทรางวัล: n/s</td>    
-                              </tr>
-                              <tr>
-                                <td>วันรับรางวัลผลงานวิจัย: 15/08/58</td>    
-                              </tr>
-                               <td>
-                                รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
-                                 </td> 
-                                 <tr> 
-                                <td>
-                                สถานะโครงการ: อนุมัติ 
-                               </td>    
-                             </tr>
-                             <tr> 
-                                <td>
-                                หมายเหตุ: รออนุมัติ
-                               </td>    
-                             </tr> 
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End -->
-
-                  </div>
-                  <div class="modal-footer">
-                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                 </div>
-               </div> 
-
-             </div>
-           </div>
+       
 
          </div>
        </div>

@@ -7,11 +7,11 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="page-header">
-         <small>Service Platform</small>
+         <small>Co-Research Platform</small>
        </h1>
        <ol class="breadcrumb">
-         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_service")?>">จัดการโครงการ</a></li>
-         <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewproject_service")?>">ดูโครงการ</a></li>
+         <li class="active"><i class="fa fa-home"></i> <a href="<?php echo base_url("backend/index/display")?>">Home</a></li><li><i class="fa fa-pencil"></i> <a href="<?php echo base_url("backend/project_coresearch")?>">จัดการโครงการ</a></li>
+         <li><i class="fa fa-eye"></i><a href="<?php echo base_url("backend/viewproject_coresearch")?>">ดูโครงการ</a></li>
        </ol>
      </div>
    </div></br>
@@ -25,7 +25,7 @@
               <div class="col-lg-offset-3  col-sm-6">
 
                 <div class="panel panel-info">
-                  <div class="panel-heading">ข้อมูลผู้ติดต่อ</div>
+                  <div class="panel-heading">ข้อมูลผู้ติดต่อ</div> 
 
                   <!-- Show &Join table -->
 
