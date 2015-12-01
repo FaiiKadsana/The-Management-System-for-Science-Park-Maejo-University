@@ -15,98 +15,89 @@
      </div>
    </div></br>
    <!-- /.row -->
-<<<<<<< HEAD
 
-=======
->>>>>>> Science-Park 30/11/2558
-  <!-- Star row-->
-   <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+
+
+       <!-- Star row-->
+
+       <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+         <div class="row">
+          <div class=" col-sm-12">
+
+           <center>
+
+            <table >
+
+              <tr>
+                <td></td>
+                <td><select class="form-control"  name="statussearch">
+                 <option value=""> เลือกสถานะ</option>
+                 <option value="สำเร็จ"> อนุมัติ</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
+                 <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
+               </select></td>
+               <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+               <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
+
+
+             </tr>
+           </table>
+         </center>
+       </div>
+     </div><br>
+     <!-- /.row -->
+     <!-- Star row-->
      <div class="row">
-      <div class=" col-sm-12" >
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">Service Platform</div>
+          <div class="panel-body">
+           <table class="table table-striped">
+             <tr class="bg-success">
+              <th width="5%">#</th>
+              <th width="15%">ชื่อนักวิจัย</th>
+              <th width="15%">ชื่อโครงการ</th>
+              <th width="20%">ชื่อสถานประกอบการ</th> 
+              <th width="35%">สถานะ</th>     
+              <th width="25%">ปีที่ทำวิจัย</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
 
-   <!-- Star row-->
+            </tr>   
 
-   <form method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
-     <div class="row">
-      <div class=" col-sm-12">
+            <!-- Show &Join table -->
 
-       <center>
-         
-          <table >
-
-            <tr>
-              <td></td>
-              <td><select class="form-control"  name="statussearch">
-               <option value=""> เลือกสถานะ</option>
-               <option value="สำเร็จ"> อนุมัติ</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> ลงนามในสัญญา</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 1</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 1</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 2</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> รายงานความก้าวหน้าครั้งที่ 2</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> ส่งรายงานฉบับสมบูรณ์ พร้อมแผ่นซีดี 1 แผ่น</option>
-               <option value="อยู่ในช่วงดำเนินงาน"> จ่ายเงินงวดที่ 3</option>
-             </select></td>
-             <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
-             <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
-
-
-           </tr>
-         </table>
-     </center>
-   </div>
- </div><br>
- <!-- /.row -->
- <!-- Star row-->
- <div class="row">
-  <div class="col-sm-12">
-    <div class="panel panel-default">
-      <div class="panel-heading">Co-Research Platform</div>
-      <div class="panel-body">
-       <table class="table table-striped">
-         <tr class="bg-success">
-          <th width="5%">#</th>
-          <th width="15%">ชื่อนักวิจัย</th>
-          <th width="15%">ชื่อโครงการ</th>
-          <th width="20%">ชื่อสถานประกอบการ</th> 
-          <th width="35%">สถานะ</th>     
-          <th width="25%">ปีที่ทำวิจัย</th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-
-        </tr>   
-
-        <!-- Show &Join table -->
-
-        <tr class="bg-success">
-          <td >1</td>
-          <td >อลงกรณ์</td>
-          <td >อยู่เกิด</td>   
-          <td >กังหันลม</td>
-          <td >อยู่ในช่วงดำเนินงาน</td>
-          <td >2558</td>
-          <td><a href="<?php echo base_url("backend/viewproject_coresearch")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
-          <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_coresearcher"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
-          <td><a href="<?php echo base_url("backend/editproject_coresearch")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td>สัญญา<input type="file" name=""></td>                            
-        </tr>       
-      </table>     
-      <!-- End -->
+            <tr class="bg-success">
+              <td >1</td>
+              <td >อลงกรณ์</td>
+              <td >อยู่เกิด</td>   
+              <td >กังหันลม</td>
+              <td >อยู่ในช่วงดำเนินงาน</td>
+              <td >2558</td>
+              <td><a href="<?php echo base_url("backend/viewproject_service")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
+              <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addproject_service"><i class="fa fa-plus"></i> เพิ่ม</button></td>          
+              <td><a href="<?php echo base_url("backend/editproject_service")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+              <td>สัญญา<input type="file" name=""></td>                            
+            </tr>       
+          </table>     
+          <!-- End -->
 
 
-      <!-- /.row -->
-    </div>
+          <!-- /.row -->
+        </div>
 
 
 
-      <div class="modal fade bs-example-modal-lg-addproject_coresearcher" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
 
        <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-       <div class="modal-dialog modal-lg">
-
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
 
             <div class="panel panel-warning">
@@ -128,28 +119,6 @@
                     <div class="col-lg-4">
                       <input type="text" class="form-control" name="Rec_ln_thai" placeholder="ภาษาไทย"  />
                     </div>
-
-
-    <div class="modal fade bs-example-modal-lg-addproject_service" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-
-          <div class="panel panel-warning">
-            <div class="panel-heading">ข้อมูลนักวิจัย</div>
-            <div class="panel-body">
-
-
-             <div class="row">
-               <div class="col-lg-9 col-lg-offset-1">
-                <hr>
-                <center><h3>ข้อมูลนักวิจัย</h3></center><br> 
-
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">ชื่อ</label>
-                  <div class="col-lg-4">
-                    <input type="text" class="form-control" name="Rec_name_thai" placeholder="ภาษาไทย"  reqquired />
-
                   </div>
                   
 
@@ -633,6 +602,7 @@
         </div>
       </div>
       
+
       <div class="form-group">
        <label class="col-lg-2 control-label">ประเภทรางวัล</label>
        <div class="col-lg-4">
@@ -681,10 +651,6 @@
 </div>
 <!-- ข้อมูลโครงการ -->
 
-<<<<<<< HEAD
-
-=======
->>>>>>> Science-Park 30/11/2558
 
 <div class="modal-footer">
   <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
@@ -693,30 +659,17 @@
 
 </div>
 
+
+
 </div>
 </div>
 
+
 </div>
-</div>
-
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> เพิ่ม</button>
-                <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> Science-Park 30/11/2558
-</div>
-
 </div>
 </div>
 
 </form>
-
 </div>
 <!-- /.container-fluid -->
 
