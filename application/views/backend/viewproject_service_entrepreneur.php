@@ -1,3 +1,4 @@
+ <?php  foreach ($service as $rowservice) { ?>
  <div id="page-wrapper">
 
   <div class="container-fluid">
@@ -17,96 +18,92 @@
    </div></br>
    <!-- /.row -->
 
-      <?php  foreach ($service as $rowservice) { ?>
 
-        <div class="panel panel-danger">
-          <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-lg-offset-3  col-sm-6">
+   <div class="panel panel-danger">
+    <div class="panel-heading">ข้อมูลผู้ประกอบการ</div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-offset-3  col-sm-6">
 
-                <div class="panel panel-info">
-                  <div class="panel-heading">ข้อมูลผู้ติดต่อ</div>
+          <div class="panel panel-info">
+            <div class="panel-heading">ข้อมูลผู้ติดต่อ</div>
 
-                  <!-- Show &Join table -->
+            <!-- Show &Join table -->
 
-                  <table class="table table-bordered">
-                    <tr>
-                      <td>ชื่อผู้ติดต่อ : นางสาว กมลฉัตร สินไชย</td> 
-                    </tr>
-                    <tr>
-                      <td> เลขที่บัตรประชาชน: 1929900366417</td>
-                    </tr>
-                    <tr>
-                      <td>ตำแหน่ง: ประชาสัมพันธ์</td>
-                    </tr>
-                    <tr>
-                      <td>เบอร์โทรศัพท์ : 0915247393</td>
-                    </tr>
-                    <tr>
-                      <td>E-mail : kamonchatsinchai305@gmail.com</td>    
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
+            <table class="table table-bordered">
+              <tr>
+                <td>ชื่อผู้ติดต่อ : <?php echo $rowservice->P_title;?> &nbsp;&nbsp; <?php echo $rowservice->P_name;?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $rowservice->P_lastname;?></td> 
+              </tr>
+              <tr>
+                <td> เลขที่บัตรประชาชน: <?php echo $rowservice->P_id_card;?></td>
+              </tr>
+              <tr>
+                <td>ตำแหน่ง: <?php echo $rowservice->P_position;?></td>
+              </tr>
+              <tr>
+                <td>เบอร์โทรศัพท์ : <?php echo $rowservice->P_phone;?></td>
+              </tr>
+              <tr>
+                <td>E-mail : <?php echo $rowservice->P_mail;?></td>    
+              </tr>
+            </table>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- End -->
-          <div class="row">
-            <div class="col-lg-offset-3  col-sm-6">
-              <div class="panel panel-info">
-                <div class="panel-heading">ข้อมูลทางธุรกิจ</div>
+    <!-- End -->
+    <div class="row">
+      <div class="col-lg-offset-3  col-sm-6">
+        <div class="panel panel-info">
+          <div class="panel-heading">ข้อมูลทางธุรกิจ</div>
 
-                <!-- Show &Join table -->
+          <!-- Show &Join table -->
 
-                <table class="table table-bordered">
-                  <tr>
-                    <td>ชื่อกิจการ :  Hotel</td> 
-                  </tr>
-                  <tr>
-                    <td>ชื่อเจ้าของกิจการ : นางสาว เกศนา ปัญญา</td>
-                  </tr>
-                  <tr>
-                    <td>ที่อยู่ : 892/6 ม.3  ตำบล หนองหาร  อำเภอ สันทราย จังหวัด เชียงใหม่</td>
-                  </tr>
-                  <tr>
-                    <td>โทรศัพท์ : 075242500</td> 
-                  </tr>
-                  <tr>
-                    <td>โทรสาร : 075896258</td>
-                  </tr>
-                  <tr>
-                    <td>website : www.Hotlecom.com</td>
-                  </tr>
-                  <tr>
-                    <td>เลขที่ทะเบียนพาณิชย์ : กห28956</td>    
-                  </tr>
-                  <tr>
-                    <td>ประเภทกิจการ: บริษัทจำกัด</td>    
-                  </tr>
-                  <tr>
-                    <td>ลักษณะการประกอบการ : การผลิต</td>    
-                  </tr>
-                  <tr>
-                    <td>สาขาอุตสาหกรรมที่ทำอยู่: ยา</td>    
-                  </tr>
-                  <tr>
-                    <td>เงินจดทะเบียน : 58222 บาท</td>    
-                  </tr>
-                  <tr>
-                    <td>จำนวนปีที่ประกอบการ:2 ปี</td>    
-                  </tr>
-                </table>
-              </div>
-            </div>
+          <table class="table table-bordered">
+            <tr>
+              <td>ชื่อกิจการ :  <?php echo $rowservice->C_name;?></td> 
+            </tr>
+            <tr>
+              <td>ที่อยู่ : <?php echo $rowservice->C_address;?></td>
+            </tr>
+            <tr>
+              <td>โทรศัพท์ : <?php echo $rowservice->C_phone;?></td> 
+            </tr>
+            <tr>
+              <td>โทรสาร : <?php echo $rowservice->C_fax;?></td>
+            </tr>
+            <tr>
+              <td>website : <?php echo $rowservice->C_website;?></td>
+            </tr>
+            <tr>
+              <td>เลขที่ทะเบียนพาณิชย์ : <?php echo $rowservice->C_no_com_etc;?></td>    
+            </tr>
+            <tr>
+              <td>ประเภทกิจการ: <?php echo $rowservice->C_company_type;?></td>    
+            </tr>
+            <tr>
+              <td>ลักษณะการประกอบการ : <?php echo $rowservice->C_undertaking;?></td>    
+            </tr>
+            <tr>
+              <td>สาขาอุตสาหกรรมที่ทำอยู่: <?php echo $rowservice->C_industry_type;?></td>    
+            </tr>
+            <tr>
+              <td>เงินจดทะเบียน : <?php echo $rowservice->C_investment;?> บาท</td>    
+            </tr>
+            <tr>
+              <td>จำนวนปีที่ประกอบการ:<?php echo $rowservice->C_no_year;?> ปี</td>    
+            </tr>
+          </table>
+        </div>
+      </div>
 
-            <!-- End -->
+      <!-- End -->
 
-          </div>
-        </div> 
+    </div>
+  </div> 
 
-     <?php } ?>
+
 
 </div>
 <!-- /.container-fluid -->
@@ -116,3 +113,4 @@
 
 </div>
 <!-- /#wrapper -->
+<?php } ?>

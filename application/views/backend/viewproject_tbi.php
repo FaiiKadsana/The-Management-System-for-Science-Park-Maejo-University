@@ -33,41 +33,41 @@
             <!-- Show &Join table -->
             <table class="table table-bordered">
               <tr>
-              <td>ชื่อ-นามสกุล: นาย อลงกรณ์  อยู่เกิด</td> 
+              <td>ชื่อ-นามสกุล: <?php echo $rowservice->Tbi_title;?>&nbsp;&nbsp; <?php echo $rowservice->Tbi_name1;?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $rowservice->Tbi_lastname;?> </td> 
               </tr>
               <tr>
-                <td>เลขประจำตัวประชาชน : 1929900366417</td>
+                <td>เลขประจำตัวประชาชน : <?php echo $rowservice->Tbi_code;?></td>
               </tr>
               <tr>
-                <td>วันเกิด : 17/05/2536 </td> 
+                <td>วันเกิด : <?php echo $rowservice->Tbi_birthday;?> </td> 
               </tr>
               <tr>
-                <td>เชื่อชาติ : ไทย </td> 
+                <td>เชื่อชาติ : <?php echo $rowservice->Tbi_ethnicity;?> </td> 
               </tr>
               <tr>
-                <td>ศาสนา : พุทธ </td> 
+                <td>ศาสนา : <?php echo $rowservice->Tbi_nationality;?> </td> 
               </tr>
               <tr>
-                <td>ที่อยู่ที่สามรถติดต่อไดั : 57/2 ม.1 ตำบล นาหมื่นศรี  อำเภอ นาโยง จังหวัด ตรัง</td>
+                <td>ที่อยู่ที่สามรถติดต่อไดั : <?php echo $rowservice->Tbi_address;?></td>
               </tr>
               <tr>
-                <td>เบอร์โทรศัพท์ที่ติดต่อสะดวก : 0857856130</td>
+                <td>เบอร์โทรศัพท์ที่ติดต่อสะดวก : <?php echo $rowservice->Tbi_tell;?></td>
               </tr>
                <tr>
-                <td>โทรสาร : 0857856130</td>
+                <td>โทรสาร : <?php echo $rowservice->Tbi_fax;?></td>
               </tr>
                <tr>
-                <td>มือถือ : 0857856130</td>
+                <td>มือถือ : <?php echo $rowservice->Tbi_phone;?></td>
               </tr>
               <tr>
-                <td>E-mail : Alongkornyukerd@gmail.com</td>    
+                <td>E-mail : <?php echo $rowservice->Tbi_mail;?></td>    
               </tr>
               <tr>
-                <td>สถานะ: แม่โจ้</td>    
+                <td>สถานะ: <?php echo $rowservice->Tbi_status;?></td>    
               </tr>
-               <tr>
-                <td>หมายเหตุ: แม่โจ้</td>    
-              </tr>
+              <!-- <tr>
+                <td>หมายเหตุ: <?php //echo $rowservice->Rec_ln_eng;?></td>    
+              </tr> -->
             </table>
             <!-- End -->
           </div>

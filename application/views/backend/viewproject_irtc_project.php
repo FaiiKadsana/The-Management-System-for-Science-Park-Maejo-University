@@ -1,4 +1,6 @@
- <div id="page-wrapper">
+<?php  foreach ($coresearch_irct as $row) { ?>
+
+<div id="page-wrapper">
 
   <div class="container-fluid">
 
@@ -18,90 +20,82 @@
    </div></br>
    <!-- /.row -->
 
+   <div class="panel panel-danger">
+    <div class="panel-heading">ข้อมูลโครงการ</div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-offset-3  col-sm-6">
 
-                  <div class="panel panel-danger">
-                    <div class="panel-heading">ข้อมูลโครงการ</div>
-                    <div class="panel-body">
-                      <div class="row">
-                        <div class="col-lg-offset-3  col-sm-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">โครงการ</div>
 
-                          <div class="panel panel-info">
-                            <div class="panel-heading">โครงการ</div>
- 
-                            <!-- Show &Join table -->
+            <!-- Show &Join table -->
 
-                            <table class="table table-bordered">
-                              <tr>
-                                <td>ชื่อโครงการ : กังหันลม</td> 
-                              </tr>
-                              <tr>
-                                <td> Service</td>
-                              </tr>
-                              <tr>
-                                <td>กลุ่มอุตสาหกรรม: พาณิชย์</td>
-                              </tr>
-                              <tr>
-                                <td>หน่วยงานวิจัย : วิทยาการคอม</td>
-                              </tr>
-                              <tr>
-                                <td>ปีที่เริ่มทำโครงการ: 2538</td>    
-                              </tr>
-                              <tr>
-                                <td>ปีที่สิ้นสุดทำโครงการ: 2558</td>    
-                              </tr>
-                              <tr>
-                                <td>เลขที่สิทธิบัตร: กห25896</td>    
-                              </tr>
-                              <tr>
-                                <td>สถานภาพโครงการ: อยู่ในช่วงดำเนินงาน</td>    
-                              </tr>
-                              <tr>
-                                <td>แหล่งเงินทุนอุทยาน: 50 %</td>    
-                              </tr>
-                              <tr>
-                                <td>แหล่งเงินทุนบริษัท: 50 %</td>    
-                              </tr>
-                              <tr>
-                                <td>บทสรุป: ทำกังหันลมเพื่อใช้ในการเกษร</td>    
-                              </tr>
-                              <tr>
-                                <td>รางวัลผลงานวิจัย: นานาชาติ</td>    
-                              </tr>
-                              <tr>
-                                <td>ประเภทรางวัล: n/s</td>    
-                              </tr>
-                              <tr>
-                                <td>วันรับรางวัลผลงานวิจัย: 15/08/58</td>    
-                              </tr>
-                               <td>
-                                รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
-                                 </td>
-                                <tr> 
-                                <td>
-                                สถานะโครงการ: อนุมัติ 
-                               </td>    
-                             </tr>
-                             <tr> 
+            <table class="table table-bordered">
+              <tr>
+                <td>ชื่อโครงการ : <?php echo $row->Re_name1;?></td> 
+              </tr>
+              <tr>
+                <td>กลุ่มอุตสาหกรรม: <?php echo $row->Re_industry_group;?></td>
+              </tr>
+              <tr>
+                <td>ปีที่เริ่มทำโครงการ: <?php echo $row->Re_start;?></td>    
+              </tr>
+              <tr>
+                <td>ปีที่สิ้นสุดทำโครงการ: <?php echo $row->Re_end;?></td>    
+              </tr>
+              <tr>
+                <td>เลขที่สิทธิบัตร: <?php echo $row->Re_id_patent;?></td>    
+              </tr>
+              <tr>
+                <td>สถานภาพโครงการ: <?php echo $row->Re_status;?></td>    
+              </tr>
+              <tr>
+                <td>แหล่งเงินทุนอุทยาน: <?php echo $row->Re_finances_sp;?></td>    
+              </tr>
+              <tr>
+                <td>แหล่งเงินทุนบริษัท: <?php echo $row->Re_finances_b;?></td>    
+              </tr>
+              <tr>
+                <td>บทสรุป: <?php echo $row->Re_abstract;?></td>    
+              </tr>
+              <tr>
+                <td>ประเภทรางวัล: <?php echo $row->Rea_type;?></td>    
+              </tr>
+              <tr>
+                <td>วันรับรางวัลผลงานวิจัย: <?php echo $row->Rea_date;?></td>    
+              </tr>
+              <td>
+                รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
+              </td>
+              <tr> 
+                <td>
+                  สถานะโครงการ: <?php echo $row->Sp_status;?> 
+                </td>    
+              </tr>
+                             <!--<tr> 
                                 <td>
                                 หมายเหตุ: รออนุมัติ
                                </td>    
-                             </tr>  
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End -->
-
-                 
+                             </tr> --> 
+                           </table>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
 
 
-</div>
-<!-- /.container-fluid -->
+                   <!-- End -->
 
-</div>
-<!-- /#page-wrapper -->
+                   
 
-</div>
-<!-- /#wrapper -->
+
+                 </div>
+                 <!-- /.container-fluid -->
+
+               </div>
+               <!-- /#page-wrapper -->
+
+             </div>
+             <!-- /#wrapper -->
+             <?php } ?>

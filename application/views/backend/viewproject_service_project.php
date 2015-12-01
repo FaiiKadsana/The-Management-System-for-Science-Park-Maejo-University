@@ -1,3 +1,4 @@
+<?php  foreach ($service as $rowservice) { ?>
  <div id="page-wrapper">
 
   <div class="container-fluid">
@@ -31,60 +32,51 @@
 
                             <table class="table table-bordered">
                               <tr>
-                                <td>ชื่อโครงการ : กังหันลม</td> 
+                                <td>ชื่อโครงการ : <?php echo $rowservice->Re_name1;?></td> 
                               </tr>
                               <tr>
-                                <td> Service</td>
+                                <td>กลุ่มอุตสาหกรรม: <?php echo $rowservice->Re_industry_group;?></td>
+                              </tr>
+                               <tr>
+                                <td>ปีที่เริ่มทำโครงการ: <?php echo $rowservice->Re_start;?></td>    
                               </tr>
                               <tr>
-                                <td>กลุ่มอุตสาหกรรม: พาณิชย์</td>
+                                <td>ปีที่สิ้นสุดทำโครงการ: <?php echo $rowservice->Re_end;?></td>    
                               </tr>
                               <tr>
-                                <td>หน่วยงานวิจัย : วิทยาการคอม</td>
+                                <td>เลขที่สิทธิบัตร: <?php echo $rowservice->Re_id_patent;?></td>    
                               </tr>
                               <tr>
-                                <td>ปีที่เริ่มทำโครงการ: 2538</td>    
+                                <td>สถานภาพโครงการ: <?php echo $rowservice->Re_status;?></td>    
                               </tr>
                               <tr>
-                                <td>ปีที่สิ้นสุดทำโครงการ: 2558</td>    
+                                <td>แหล่งเงินทุนอุทยาน: <?php echo $rowservice->Re_finances_sp;?></td>    
                               </tr>
                               <tr>
-                                <td>เลขที่สิทธิบัตร: กห25896</td>    
+                                <td>แหล่งเงินทุนบริษัท: <?php echo $rowservice->Re_finances_b;?></td>    
                               </tr>
                               <tr>
-                                <td>สถานภาพโครงการ: อยู่ในช่วงดำเนินงาน</td>    
+                                <td>บทสรุป: <?php echo $rowservice->Re_abstract;?></td>    
+                              </tr>
+                               <tr>
+                                <td>ประเภทรางวัล: <?php echo $rowservice->Rea_type;?></td>    
                               </tr>
                               <tr>
-                                <td>แหล่งเงินทุนอุทยาน: 50 %</td>    
-                              </tr>
-                              <tr>
-                                <td>แหล่งเงินทุนบริษัท: 50 %</td>    
-                              </tr>
-                              <tr>
-                                <td>บทสรุป: ทำกังหันลมเพื่อใช้ในการเกษร</td>    
-                              </tr>
-                              <tr>
-                                <td>รางวัลผลงานวิจัย: นานาชาติ</td>    
-                              </tr>
-                              <tr>
-                                <td>ประเภทรางวัล: n/s</td>    
-                              </tr>
-                              <tr>
-                                <td>วันรับรางวัลผลงานวิจัย: 15/08/58</td>    
+                                <td>วันรับรางวัลผลงานวิจัย: <?php echo $rowservice->Rea_date;?></td>    
                               </tr>
                                <td>
                                 รูป : <img width="150px" height="200px" src="<?php echo base_url("asset2/img/011.jpg") ?>">
                                  </td>
                                 <tr> 
                                 <td>
-                                สถานะโครงการ: อนุมัติ 
+                                สถานะโครงการ: <?php echo $rowservice->Sp_status;?> 
                                </td>    
                              </tr>
-                             <tr> 
+                             <!--<tr> 
                                 <td>
                                 หมายเหตุ: รออนุมัติ
                                </td>    
-                             </tr>  
+                             </tr> --> 
                             </table>
                           </div>
                         </div>
@@ -104,3 +96,4 @@
 
 </div>
 <!-- /#wrapper -->
+<?php } ?>
