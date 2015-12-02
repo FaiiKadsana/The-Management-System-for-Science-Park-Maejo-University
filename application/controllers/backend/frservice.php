@@ -119,7 +119,7 @@ class Frservice extends CI_Controller {
 				redirect('frontend/frserviceplatform', 'refresh');
 
 			}
-			else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_3"]=="" || $insertFile["F_4"]==""){
+			else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_4"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
