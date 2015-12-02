@@ -115,7 +115,9 @@ class Editfrservice extends CI_Controller {
 				$b = $this->db->get('service');
 				$rs=$b->row();
 
-				$this->db->where('C_id',$rs->C_id);
+				$data["S_id"]=$rs->S_id;
+
+			/*	$this->db->where('C_id',$rs->C_id);
 				$a = $this->db->get('company');
 				$as=$a->row();
 
@@ -127,12 +129,12 @@ class Editfrservice extends CI_Controller {
 				$d = $this->db->get('file');
 				$ds=$d->row();
 
-				$data["S_id"]=$rs->S_id;
+			
 				$data["C_no_com"]=$as->C_no_com;
 				$data["C_no_com_etc"]=$as->C_no_com_etc;
 				$data["C_name"]=$as->C_name;	
 				$data["C_address"]=$as->C_address;	
-				$data["C_phone"]=$as->C_phone;	
+				$data["C_phone"]=$as->C_phone;	*/
 
 				//print_r ($data["S_id"]);
 				//redirect('backend/news', 'refresh');
