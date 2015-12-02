@@ -15,56 +15,58 @@
      </div>
    </div></br></br>
 
-   <div class="row"> 
-    <div class="col-sm-12 ">
-      <center>
+<!--    <div class="row"> 
+ <div class="col-sm-12 ">
+   <center>
+ <form id="" method="post" class="form-horizontal" action="<?php //echo $action ; ?>">
+     <table >
+       <tr>
+        <td>
+         <td><input type="date" class="form-control"   name="keyword"></td>
+         <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+         <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
+       </td>
 
-        <table >
-          <tr>
-           <td>
-            <td><input type="date" class="form-control"   name=""></td>
-            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
-            <td ><button class="btn btn-success" type="reset" >ล้างข้อมูล</button> </td>
-          </td>
-
-        </tr>
-      </table>
-
-    </center>
-    <!-- /input-group -->
+     </tr>
+   </table>
+</form>
+ </center>
+ /input-group
   </div>
 </div><br>        
-
+ -->
 
 <!-- Search-->
 <div class="row">
   <div class="col-sm-12">
     <div class="panel panel-default">
-      <div class="panel-heading">ข้อมูลบุคลากร</div>
+      <div class="panel-heading">ข้อมูลการติดต่อ</div>
       <div class="panel-body">
 
         <table class="table table-striped">
+
+        <?php if(empty($keyword)){ ?>
 
           <tr class="bg-success">
             <th width="5%">#</th>
             <th width="20%">ชื่อบริษัท</th>
             <th width="20%">ชื่อ-สุกลผู้ติดต่อ</th>
-            <th width="30%">หัวข้อติดต่อ</th>
-            <th width="10%">วันที่</th>
+            <th width="20%">หัวข้อติดต่อ</th>
+            <th width="20%">วันที่</th>
             <th></th>
             <th></th>
-
           </tr>
 
-
+        <?php $i='1';  foreach ($contact as $row){ ?>
 
           <tr class="bg-success">
             <td><?php echo $i++;?></td>
             <td><?php echo $row->company; ?></td>
             <td><?php echo $row->name; ?></td> 
             <td><?php echo $row->subject; ?></td>  
+            <td><?php echo $row->date; ?></td>  
             <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal<?php echo $row->id; ?>"><i class="fa fa-eye"></i>  ดู</button></td>         
-            <td><a target ="_blank" href="<?php echo base_url('backend/contact/deletecontact/'.$row->id)?>")?><button type="button" class="btn btn-warning" data-toggle ="modal" ><i class="fa fa-times"></i> ลบ</button></a></td>   
+            <td><a target ="_blank" href="<?php echo base_url('backend/contact/deletecontact/'.$row->id)?>")?><button type="button" class="btn btn-danger" data-toggle ="modal" ><i class="fa fa-times"></i> ลบ</button></a></td>   
           </tr>
 
           <form  method="post" class="form-horizontal"   action="<?php echo $action ; ?>" >
@@ -125,20 +127,25 @@
 
        </form>
 
-
+         <?php } }?>
      </table> 
-
-
-
-
-
 
    </div>
  </div>
 </div>
 </div>
 
-
+<div class="row">
+  <center>
+    <div class="paginationnext" >
+      <div class="col-md-12" >
+        <ul class="paginationnext" >
+          <?php echo $page; ?>  
+          <ul>
+          </div>
+        </div>  
+      </center>
+    </div>
 
 </div>
 <!-- /.container-fluid -->

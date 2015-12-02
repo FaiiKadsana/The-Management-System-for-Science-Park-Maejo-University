@@ -24,7 +24,7 @@ class Contact extends CI_Controller {
 			$insertData["subject"]=$this->input->post("subject");
 			$insertData["email"]=$this->input->post("email");
 			$insertData["detail"]=$this->input->post("detail");
-			$insertData["date"]= date("Y-m-d H:i:s");
+			$insertData["date"]= date("Y-m-d");
 
 			$this->load->view('frontend/recaptchalib');
 			$privatekey = "6Lc_hf0SAAAAAA3RRsSijZY-W1aZLCovwCv0J8ZM";
