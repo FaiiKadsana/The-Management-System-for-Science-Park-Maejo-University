@@ -97,7 +97,8 @@
                                 </div>
                                 <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
                                 <div class="col-lg-4">
-                                  <input type="detail" class="form-control" value="<?php echo $row->Ne_text; ?>" name="Ne_text"/>
+                                <textarea name="Ne_text" type="detail" class="form-control" cols="50" rows="4"><?php echo $row->Ne_text; ?></textarea>
+                                
                                 </div>
                               </div>
                               <br><br><br>
@@ -166,7 +167,7 @@
                                 </div>
                                 <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
                                 <div class="col-lg-4">
-                                  <input type="detail" class="form-control" value="<?php echo $row->Ne_text; ?>" name="Ne_text"/>
+                                  <textarea name="Ne_text" type="detail" class="form-control" cols="50" rows="4"><?php echo $row->Ne_text; ?></textarea>
                                 </div>
                               </div>
                               <br><br><br>
@@ -241,7 +242,7 @@
               </div>
               <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
               <div class="col-lg-4">
-                <textarea name="Ne_text" ></textarea>
+                 <textarea name="Ne_text" type="detail" class="form-control" cols="50" rows="4"></textarea>
               </div>
             </div>
             <br><br>
