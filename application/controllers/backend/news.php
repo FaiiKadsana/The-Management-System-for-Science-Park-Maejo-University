@@ -106,7 +106,7 @@ class News extends CI_Controller {
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
-				//redirect('backend/news', 'refresh');
+				redirect('backend/news', 'refresh');
 
 			}else {
 				echo "<meta http-equv=i'Content-Type' content='text/html; charset=utf-8' />";
@@ -121,26 +121,35 @@ class News extends CI_Controller {
 
 	public function updatenews($id=0){
 
+			/*$config['upload_path'] = './asset/img/News/';
+			$config['allowed_types'] = 'gif|jpg|png';
+			$this->load->library('upload', $config);*/
+
 			if( $_SERVER["REQUEST_METHOD"] == "POST"){
 
 				$update = $this->input->post("Ne_id");
 				$updateData=array(
 				"Ne_sub"=>$this->input->post("Ne_sub"),
 				"Ne_text"=>$this->input->post("Ne_text"),
-				"Ne_picture" => $this->input->post("Ne_picture"),
-				"Ne_date_up" => date("Y-m-d H:i:s")
+				"Ne_picture" =>$_POST["Ne_sub"].'_'.$_FILES["Ne_picture"]["name"],
+				"Ne_date_up" =>date("Y-m-d H:i:s")
 				);
-	
+
+				$file = iconv("UTF-8", "TIS-620", $_FILES["Ne_picture"]["name"]);
+				$file1 = iconv("UTF-8", "TIS-620", $_POST["Ne_sub"]);
+				$path = "asset\img\News";
+				if(!@mkdir($path,0,true)){}else{ };
+				chmod($path, 0777);	
+				move_uploaded_file($_FILES["Ne_picture"]["tmp_name"],$path.'/'.$file1.'_'.$file);
+				
 				$this->db->where('Ne_id', $update);
 				$this->db->update('news',$updateData);
 
-				//print_r ($this->db->last_query());
-
-				print_r ($update);
-
 				redirect('backend/news', 'refresh');
+
+				//print_r ($this->db->last_query());
+				//print_r ($update);		
 			}
-		
 		
 				$this->db->where("Ne_id",$id);
 				$rs = $this->db->get("news");
@@ -151,11 +160,9 @@ class News extends CI_Controller {
 				$data["Ne_date_up"]=$row->Ne_date_up;	
 				$data["Ne_picture"]=$row->Ne_picture;	
 
+				//print_r ($data["Ne_id"]);
 
-				print_r ($data["Ne_id"]);
-
-				redirect('backend/news', 'refresh');
-			
+				redirect('backend/news', 'refresh');		
 
 	}
 

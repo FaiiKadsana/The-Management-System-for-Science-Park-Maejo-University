@@ -93,12 +93,11 @@ class Frservice extends CI_Controller {
 			move_uploaded_file($_FILES["F_4"]["tmp_name"],$path.'/'.$_POST['random'].'_'.$file4);
 
 			$insertFile=array();
-			$insertFile["F_1"]=$_FILES["F_1"]["name"];
-			$insertFile["F_2"]=$_FILES["F_2"]["name"];
-			$insertFile["F_3"]=$_FILES["F_3"]["name"];
-			$insertFile["F_4"]=$_FILES["F_4"]["name"];
+			$insertFile["F_1"]=$_POST["random"].'_'.$_FILES["F_1"]["name"];
+			$insertFile["F_2"]=$_POST["random"].'_'.$_FILES["F_2"]["name"];
+			$insertFile["F_3"]=$_POST["random"].'_'.$_FILES["F_3"]["name"];
+			$insertFile["F_4"]=$_POST["random"].'_'.$_FILES["F_4"]["name"];
 			$insertFile["Spf_id"]='1';
-
 
 			if($insertCompany["C_name"]=="" || $insertCompany["C_phone"]=="" || $insertCompany["C_no_com"]=="" ){
 
