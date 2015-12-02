@@ -103,27 +103,27 @@ class Frservice extends CI_Controller {
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบคะ');</script>";
-				redirect('frontend/frserviceplatform', 'refresh');
+				redirect('backend/frservice', 'refresh');
 
 			}else if($insertData["P_title"]=="" || $insertData["P_name"]=="" || $insertData["P_lastname"]=="" || $insertData["P_id_card"]==""
 			 	|| $insertData["P_position"]=="" || $insertData["P_phone"]=="" || $insertData["P_mail"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยคะ');</script>";
-				redirect('frontend/frserviceplatform', 'refresh');
+				redirect('backend/frservice', 'refresh');
 
 			}else if($insertService["S_id"]=="" || $insertService["S_date"]=="" || $insertService["S_detail"]=="" || $insertService["S_provider"]=="" ){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
-				redirect('frontend/frserviceplatform', 'refresh');
+				redirect('backend/frservice', 'refresh');
 
 			}
 			else if($insertFile["F_1"]=="" || $insertFile["F_2"]=="" || $insertFile["F_4"]==""){
 
 				echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
 				echo "<script>alert('กรุณาแนบเอกสารให้ครบด้วยคะ');</script>";
-				redirect('frontend/frserviceplatform', 'refresh');
+				redirect('backend/frservice', 'refresh');
 
 			}
 			else {
