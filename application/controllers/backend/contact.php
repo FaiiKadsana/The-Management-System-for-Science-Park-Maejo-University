@@ -13,8 +13,23 @@ class Contact extends CI_Controller {
 		$this->load->view('backend/header');
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
-		$this->load->view('backend/contact');
+
+		$this->db->select('contact.id,company,name,subject,email,detail,date');
+		$this->db->order_by("id", "desc");
+
+		$data['action']=site_url("backend/contact/index/");
+		$this->load->view('backend/contact',$data);
 		$this->load->view('backend/script');	
+
+	}
+
+	public function deletecontact($id=0){
+
+			$this->db->where('id', $id);
+			$this->db->delete('contact');
+			redirect('backend/contact', 'refresh');
+			exit();
+
 
 	}
 }
