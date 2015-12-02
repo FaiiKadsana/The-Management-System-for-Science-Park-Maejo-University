@@ -73,10 +73,9 @@ class News extends CI_Controller {
 		}
 
 		$data['page']=$this->pagination->create_links();
-		$data['action1']=site_url("backend/news/index/");
 		$data['action']=site_url("backend/news/addnews/");
-		//$data['action2']=site_url("backend/news/viewnews/");
-		$data["action3"]=base_url('backend/news/updatenews/');		
+		$data['action1']=site_url("backend/news/index/");
+		$data["action3"]=base_url('backend/news/updatenews/');			
 		$this->load->view('backend/news',$data);
 		$this->load->view('backend/script');
 	}
@@ -120,29 +119,15 @@ class News extends CI_Controller {
 		
 	}
 
-	public function viewnews($Ne_id){
-
-		//$this->db->select('news.Ne_id,news.Ne_picture,news.Ne_sub,news.Ne_text,news.Ne_date_up');
-		$this->db->select('*');
-
-		$this->db->where("Ne_id",$Ne_id);
-
-		$rssearch = $this->db->get('news');
-
-		$data['news'] = $rssearch->result();
-		
-		//print_r ($this->db->last_query());
-
-	}
-
 	public function updatenews($id=0){
 
 			if( $_SERVER["REQUEST_METHOD"] == "POST"){
+
 				$update = $this->input->post("id");
 				$updateData=array(
 				"Ne_sub"=>$this->input->post("Ne_sub"),
 				"Ne_text"=>$this->input->post("Ne_text"),
-				"Ne_picture" => $this->input->post("Ne_picture"),
+				//"Ne_picture" => $this->input->post("Ne_picture"),
 				"Ne_date_up" => date("Y-m-d H:i:s")
 				);
 	
@@ -154,9 +139,19 @@ class News extends CI_Controller {
 				$this->db->where("Ne_id",$id);
 				$rs = $this->db->get("news");
 				$row=$rs->row();
-				$data["Ne_id"]=$row->id;
-				$data["Ne_sub"]=$row->Ne_sub;
-				$data["Ne_text"]=$row->Ne_text;		
+				$data["Ne_id"]=$row->Ne_id;
+				$data["Ne_sub"]=$row->Ne_sub;r43
+				$data["Ne_text"]=$row->Ne_text;	
+				//$data["Ne_picture"]=$row->Ne_picture;	
+
+	}
+
+	public function deletenews($id=0){
+
+			$this->db->where('Ne_id', $id);
+			$this->db->delete('news');
+			redirect('backend/news', 'refresh');
+			exit();
 
 
 	}

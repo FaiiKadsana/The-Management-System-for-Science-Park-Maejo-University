@@ -74,7 +74,7 @@
          <!-- <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewnew"><i class="fa fa-eye"></i>  ดู</button></td> -->          
           <td>
           <button type="button" class="btn btn-warning" data-toggle ="modal" data-target="#modal<?php echo $row->Ne_id; ?>"><i class="fa fa-wrench"></i> แก้ไข</button></td>
-          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i> ลบ</button></td>                     
+          <td><a target ="_blank" href="<?php echo base_url('backend/news/deletenews/'.$row->Ne_id)?>")?> <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i> ลบ</button></a></td>                     
         </tr> 
 
                 <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" >
@@ -99,7 +99,7 @@
                                   <input type="detail" class="form-control" value="<?php echo $row->Ne_text; ?>" name="Ne_text"/>
                                 </div>
                               </div>
-                              <br><br>
+                              <br><br><br>
 
                               <div class="form-group">
                                 <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
@@ -116,21 +116,20 @@
                           </div>
 
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+                            <a href="<?php echo base_url('backend/news/updatenews/'.$row->Ne_id)?>")?> <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button> </a>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
-
-
                         </div>
                       </div>
                     </div>
 
                     </form>
+                  
         <?php } ?>
 
       <?php }else{ ;?>
 
-      <?php foreach($search as $row){?>
+      <?php $i='1'; foreach($search as $row){?>
 
           <tr class="bg-success">
           <th width="5%">#</th>
@@ -139,15 +138,62 @@
           </tr>  
 
         <tr class="bg-success">
-          <td ><?php echo $row->Ne_id; ?></td>
+          <td ><?php echo $i++;?></td>
           <td ><?php echo $row->Ne_sub; ?></td>
           <td ><?php echo $row->Ne_text; ?></td> 
          <!-- <td><button type="button" class="btn btn-info" data-toggle="modal" ><i class="fa fa-eye"></i>  ดู</button></td> -->           
-          <td><a href="<?php echo base_url('backend/news/'.$row->Ne_id)?>">
-            <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editnew"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i>  ลบ</button></td>                     
+          <td><button type="button" class="btn btn-warning" data-toggle ="modal" data-target="#modal<?php echo $row->Ne_id; ?>"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+          <td><a target ="_blank" href="<?php echo base_url('backend/news/deletenews/'.$row->Ne_id)?>")?><button type="button" class="btn btn-warning" data-toggle ="modal" ><i class="fa fa-times"></i> ลบ</button></a></td>                     
         </tr> 
 
+            <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" >
+
+                      <div class="modal fade bs-example-modal-lg-editnew" id="modal<?php echo $row->Ne_id; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+
+                           <div class="row">
+                             <div class="col-lg-9 col-lg-offset-1">
+                              <hr>
+                              <center><h3>ข้อมูลข่าว</h3></center><br> 
+                              <center>
+
+                               <div class="form-group">
+                                 <label class="col-lg-2 control-label">หัวข้อข่าว</label>
+                                 <div class="col-lg-4">
+                                  <input type="title" class="form-control" value="<?php echo $row->Ne_sub; ?>" name="Ne_sub"/>
+                                </div>
+                                <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
+                                <div class="col-lg-4">
+                                  <input type="detail" class="form-control" value="<?php echo $row->Ne_text; ?>" name="Ne_text"/>
+                                </div>
+                              </div>
+                              <br><br><br>
+
+                              <div class="form-group">
+                                <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+                                <div class="col-lg-4">
+                                  <input type="file" value="<?php echo $row->Ne_picture; ?>" name="Ne_picture">
+                                </div>
+                                <label class="col-lg-2 control-label">วันที่</label>
+                                <div class="col-lg-4">
+                                  <input type="date" value="<?php echo $row->Ne_date_up; ?>" name="Ne_date_up">
+                                </div>
+                              </div><br><br>
+
+                            </div>
+                          </div>
+
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    </form>
+                     
        <?php } }?>
 
       </table>     
@@ -270,61 +316,8 @@
   </form>-->
     <!-- End popup ดูข่าว--> 
 
-<!-- start popup แก้ไขผลงาน-->
-
-<!-- <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" >
-
-  <div class="modal fade bs-example-modal-lg-editnew" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-       <div class="row">
-         <div class="col-lg-9 col-lg-offset-1">
-          <hr>
-          <center><h3>ข้อมูลข่าว</h3></center><br> 
-          <center>
-
-           <div class="form-group">
-             <label class="col-lg-2 control-label">หัวข้อข่าว</label>
-             <div class="col-lg-4">
-              <input type="title" class="form-control" name="Ne_sub"/>
-            </div>
-            <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
-            <div class="col-lg-4">
-              <input type="detail" class="form-control" name="Ne_text"/>
-            </div>
-          </div>
-          <br><br>
-
-          <div class="form-group">
-            <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
-            <div class="col-lg-4">
-              <input type="file" name="picture">
-            </div>
-            <label class="col-lg-2 control-label">วันที่</label>
-            <div class="col-lg-4">
-              <input type="date" name="Ne_date_up">
-            </div>
-          </div><br><br>
-
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-
-
-    </div>
-  </div>
-</div>
-
-</form> -->
-<!-- End popup แก้ไขผลงาน--> 
-
 <!--end popup ลบ -->
-<form id="" method="post" class="form-horizontal" action="">
+<!--<form id="" method="post" class="form-horizontal" action="">
   <div class="modal fade bs-example-modal-sm-delnew" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
@@ -345,7 +338,7 @@
  </div>
 </div>
 </form>
-<!--end popup ลบ-->
+end popup ลบ--> 
 
 </div>
 <!-- /.container-fluid -->
