@@ -15,7 +15,7 @@
      </div>
    </div></br></br>
 
-   <form id="" method="post" class="form-horizontal" action="<?php echo $action ; ?>">
+   <form id="" method="post" class="form-horizontal" action="<?php echo $action ; ?>" >
    <div class="row"> 
     <div class="col-sm-12 ">
       <center>
@@ -78,7 +78,8 @@
             <td ><?php echo $row->Cl_researchers; ?></td>
             <td ><?php echo $row->Cl_status; ?></td>
             <!--<td><a href="<?php //echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>  -->    
-            <td><a href="<?php echo base_url("backend/editcatalog")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+            <td><a target ="_blank" href="<?php echo base_url('backend/editcatalog/index/'.$row->Cl_id)?>")?>
+            <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
             
           </tr> 
 
@@ -104,7 +105,7 @@
             <td ><?php echo $row->Cl_researchers; ?></td>
             <td ><?php echo $row->Cl_status; ?></td>
             <!--<td><a href="<?php //echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> -->     
-            <td><a href="<?php echo base_url("backend/editcatalog")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+            <td><a target ="_blank" href="<?php echo base_url('backend/editcatalog/index/'.$row->Cl_id)?>")?><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
             
           </tr> 
              

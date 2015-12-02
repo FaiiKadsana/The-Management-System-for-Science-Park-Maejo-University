@@ -16,7 +16,6 @@
    </div></br></br>
 
     <form id="" method="post" class="form-horizontal" action="<?php echo $action ; ?>">
-
      <div class="row"> 
       <div class="col-sm-12 ">
         <center>
@@ -53,7 +52,7 @@
             <th width="30%">ผู้ซื้อ</th>     
           </tr>   
 
-          <?php $i='1';  foreach ($news as $row){ ?>
+          <?php $i='1';  foreach ($deal as $row){ ?>
 
           <tr class="bg-success">
             <td ><?php echo $i++;?></td>
@@ -61,9 +60,9 @@
             <td ><?php echo $row->D_date; ?></td>   
             <td ><?php echo $row->D_price; ?> บาท</td>
             <td ><?php echo $row->D_name_buyer; ?></td>
-            <td><a href="<?php echo base_url("backend/viewdealing")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
+          <!--   <td><a href="<?php //echo base_url("backend/viewdealing")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> -->
             <td><a href="<?php echo base_url("backend/editdealing")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-            <td><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                  
+            <td><a href="<?php echo base_url('/File Dealing/'.$row->D_contract)?>DOWNLOAD")?><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></a></td>                  
           </tr>  
 
           <?php } ?>
@@ -80,16 +79,14 @@
             <th width="30%">ผู้ซื้อ</th>     
           </tr>   
 
-          <?php $i='1';  foreach ($news as $row){ ?>
-
           <tr class="bg-success">
             <td ><?php echo $i++;?></td>
             <td ><?php echo $row->D_name; ?></td>
             <td ><?php echo $row->D_date; ?></td>   
             <td ><?php echo $row->D_price; ?> บาท</td>
             <td ><?php echo $row->D_name_buyer; ?></td>
-            <td><a href="<?php echo base_url("backend/viewdealing")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>
-            <td><a href="<?php echo base_url("backend/editdealing")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+           <!--  <td><a href="<?php //echo base_url("backend/viewdealing")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> -->
+            <td><a href="<?php echo base_url("backend/File Dealing")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
             <td><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                  
           </tr>  
 
@@ -154,8 +151,7 @@
                   </div>
                 </div>
                 <br><br>
-
-                
+      
               </div>
             </div>
 

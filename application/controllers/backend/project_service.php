@@ -15,9 +15,6 @@ class Project_Service extends CI_Controller {
 		$this->load->view('backend/menutop');
 		$this->load->view('backend/menu');
 
-		if( $_SERVER["REQUEST_METHOD"] == "POST")
-		{
-
 			//แบ่งหน้า
 		$config["base_url"]=base_url()."/backend/project_service/project_service";
 		$config["total_rows"] = $this->db->count_all("service");
@@ -48,9 +45,11 @@ class Project_Service extends CI_Controller {
 		$this->db->limit($config['per_page'],$this->uri->segment(4));		
 
 		//*************************
-		$this->db->select('service.S_id, company.C_name, contact_person.P_title,contact_person.P_name, contact_person.P_lastname, service.S_date, service.S_status');
-		$this->db->join('contact_person','contact_person.P_id = service.P_id');
-		$this->db->join('company','company.C_id = service.C_id');
+
+		$this->db->select('service.S_id,company.C_name,research.Re_name1,service.S_status,research.Re_start');
+		$this->db->join('company','service.C_id = company.C_id');
+		$this->db->join('research','service.C_id = company.C_id ');
+		$this->db->where("S_status",'อนุมัติ');
 		$this->db->order_by("S_date", "desc");
  
 		//$this->db->limit(10,0);
@@ -69,31 +68,30 @@ class Project_Service extends CI_Controller {
 			$data['keyword1'] = $this->input->post('keyword1');
 			//print_r ($_POST);
 			
-			$this->db->select('service.S_id, company.C_name, contact_person.P_title,contact_person.P_name, contact_person.P_lastname, service.S_date, service.S_status');
-			$this->db->join('contact_person','contact_person.P_id = service.P_id');
-			$this->db->join('company','company.C_id = service.C_id');
+			$this->db->select('service.S_id,company.C_name,research.Re_name1,service.S_status,research.Re_start');
+			$this->db->join('company','service.C_id = company.C_id');
+			$this->db->join('research','service.C_id = company.C_id ');
 			//$this->db->like('S_date',$data['keyword']);
 			$this->db->like('S_status',$data['keyword1']);
 
 			$search1 = $this->db->get('service');
 			
+			//print_r($data['search']);
 			$data['search'] = $search1->result();
 			//print_r ($this->db->last_query());
-			print_r($data['search']);
 			
-		}		
-
-	}
+		}	
+				
 			$data['page']=$this->pagination->create_links();
 			$data['action']=site_url('backend/project_service/index/');
 			$data['action1']=site_url('backend/project_service/add/');
-			$this->load->view('backend/project_service',$data);
+			$this->load->view('backend/project_service',$data,$data);
 			$this->load->view('backend/script');	
 
 }
 	public function add(){
 
-		$insertResearchers=array();
+			$insertResearchers=array();
 			$insertResearchers["Rec_picture1"]=$_POST["Rec_name_thai"].'_'.$_FILES["Rec_picture1"]["name"];
 			$insertResearchers["Rec_name_thai"]=$this->input->post("Rec_name_thai");
 			$insertResearchers["Rec_ln_thai"]=$this->input->post("Rec_ln_thai");
@@ -139,8 +137,7 @@ class Project_Service extends CI_Controller {
 			chmod($path, 0777);	
 			move_uploaded_file($_FILES["Re_picture1"]["tmp_name"],$path.'/'.$file1.'_'.$file);
 
-			if($insertResearchers["Rec_name_thai"]=="" || $insertResearchers["Rec_ln_thai"]==""
-				|| $insertResearchers["Rec_name_eng"]==""|| $insertResearchers["Rec_ln_eng"]==""
+			if($insertResearchers["Rec_name_eng"]==""|| $insertResearchers["Rec_ln_eng"]==""
 				|| $insertResearchers["Rec_address"]==""|| $insertResearchers["Rec_phone"]==""
 				|| $insertResearchers["Rec_mail"]==""|| $insertResearchers["Rec_position"]==""
 				|| $insertResearchers["Rec_unit"]==""|| $insertResearchers["Rec_office"]==""){
@@ -168,12 +165,10 @@ class Project_Service extends CI_Controller {
 
 			$Rec_id = $this->db->insert_id();
             $insertResearch["Rec_id"] = $Rec_id;
-
 			$this->db->insert('research', $insertResearch);
 
 			redirect('backend/project_service', 'refresh');
 		}
 	}	
-
 
 }

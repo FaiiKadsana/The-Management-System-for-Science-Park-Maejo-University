@@ -62,9 +62,9 @@ class dealing extends CI_Controller {
 			//print_r ($_POST);
 			
 			$this->db->select('deal.D_name,deal.D_id,deal.D_date,deal.D_price,deal.D_name_buyer,deal.D_contract');
-			$this->db->like('D_id',$data['keyword']);
+			$this->db->like('D_name',$data['keyword']);
 
-			$search1 = $this->db->get('dealing');
+			$search1 = $this->db->get('deal');
 			
 			$data['search'] = $search1->result();
 			//print_r ($this->db->last_query());

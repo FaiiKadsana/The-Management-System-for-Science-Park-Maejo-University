@@ -124,45 +124,6 @@ class Catalog extends CI_Controller {
 
 	}
 
-	public function updatecatalog($id=0){
-
-			if( $_SERVER["REQUEST_METHOD"] == "POST"){
-
-				$update = $this->input->post("Ne_id");
-				$updateData=array(
-				"Ne_sub"=>$this->input->post("Ne_sub"),
-				"Ne_text"=>$this->input->post("Ne_text"),
-				"Ne_picture" => $this->input->post("Ne_picture"),
-				"Ne_date_up" => date("Y-m-d H:i:s")
-				);
-	
-				$this->db->where('Ne_id', $update);
-				$this->db->update('news',$updateData);
-
-				//print_r ($this->db->last_query());
-
-				print_r ($update);
-
-				redirect('backend/news', 'refresh');
-			}
-		
-		
-				$this->db->where("Ne_id",$id);
-				$rs = $this->db->get("news");
-				$row=$rs->row();
-				$data["Ne_id"]=$row->Ne_id;
-				$data["Ne_sub"]=$row->Ne_sub;
-				$data["Ne_text"]=$row->Ne_text;	
-				$data["Ne_date_up"]=$row->Ne_date_up;	
-				$data["Ne_picture"]=$row->Ne_picture;	
-
-
-				print_r ($data["Ne_id"]);
-
-				redirect('backend/news', 'refresh');
-			
-
-	}
 
 	
 }

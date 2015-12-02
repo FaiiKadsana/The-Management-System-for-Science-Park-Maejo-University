@@ -148,7 +148,7 @@
           <td><a target ="_blank" href="<?php echo base_url('backend/news/deletenews/'.$row->Ne_id)?>")?><button type="button" class="btn btn-warning" data-toggle ="modal" ><i class="fa fa-times"></i> ลบ</button></a></td>                     
         </tr> 
 
-            <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" >
+            <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" enctype="multipart/form-data" >
 
                       <div class="modal fade bs-example-modal-lg-editnew" id="modal<?php echo $row->Ne_id; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                         <div class="modal-dialog modal-lg">
@@ -163,6 +163,7 @@
                                <div class="form-group">
                                  <label class="col-lg-2 control-label">หัวข้อข่าว</label>
                                  <div class="col-lg-4">
+                                  <input type="hidden" class="form-control" value="<?php echo $row->Ne_id; ?>" name="Ne_id"/>
                                   <input type="title" class="form-control" value="<?php echo $row->Ne_sub; ?>" name="Ne_sub"/>
                                 </div>
                                 <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
