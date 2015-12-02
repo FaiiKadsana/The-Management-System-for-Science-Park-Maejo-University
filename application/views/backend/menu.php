@@ -34,6 +34,9 @@
   <li>
     <a href="<?php echo base_url("backend/person")?>"><i class="fa fa-user"></i> จัดการข้อมุลบุคลากร</a>
   </li>
+  <li>
+    <a href="<?php echo base_url("backend/contact")?>"><i class="fa fa-comment"></i> จัดการข้อมูลการติดต่อ</a>
+  </li>
 </ul>
 </div>
 <!-- /.navbar-collapse -->

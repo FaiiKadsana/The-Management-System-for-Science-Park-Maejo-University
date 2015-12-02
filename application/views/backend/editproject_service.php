@@ -756,9 +756,13 @@
                   </div>
 
                   <div class="form-group">             
-                    <label class="col-lg-2 control-label">เลือกไฟล์ที่จะอัฟโหลด</label>
+                    <label class="col-lg-2 control-label">รูป</label>
                     <div class="col-lg-4">
                       <input type="file" name="re_picture">
+                    </div>
+                     <label class="col-lg-2 control-label">สัญญา</label>
+                    <div class="col-lg-4">
+                      <input type="file" name="S_agreement">
                     </div>
                   </div>
 

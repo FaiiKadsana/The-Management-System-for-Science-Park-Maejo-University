@@ -99,10 +99,12 @@ class Contact extends CI_Controller {
 		$data['page']=$this->pagination->create_links();
 
 		$data['action']=site_url('frontend/contact/index/');
+		$data['action1']=site_url('frontend/contact/sendMail/');
 		$this->load->view('frontend/contact',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');
 
 	}
-	
+
+
 }
