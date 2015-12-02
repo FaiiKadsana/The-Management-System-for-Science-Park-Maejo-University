@@ -15,24 +15,24 @@
      </div>
    </div></br></br>
 
-     <form id="" method="post" class="form-horizontal" action="">
+   <form id="" method="post" class="form-horizontal" action="">
 
-   <div class="row"> 
-    <div class="col-sm-12 ">
-      <center>
-        <table >
-          <tr>
-            <td></td>
-            <td><input type="text" class="form-control" placeholder="ชื่อโครงการ" name=""></td>
-            <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button> </td>
-            <td width="20%"><button class="btn btn-success" type="reset" > ล้างข้อมูล</button> </td>
-            <td ><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>    
-          </tr>
-        </table>
-      </center>
-      <!-- /input-group -->
-    </div>
-  </div><br> 
+     <div class="row"> 
+      <div class="col-sm-12 ">
+        <center>
+          <table >
+            <tr>
+              <td></td>
+              <td><input type="text" class="form-control" placeholder="ชื่อโครงการ" name=""></td>
+              <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button> </td>
+              <td width="20%"><button class="btn btn-success" type="reset" > ล้างข้อมูล</button> </td>
+              <td ><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>    
+            </tr>
+          </table>
+        </center>
+        <!-- /input-group -->
+      </div>
+    </div><br> 
   </form>       
   <!-- /.row -->
 
@@ -64,51 +64,60 @@
             <td >อลงกรณ์</td>   
             <td >500 บาท</td>
             <td >085666666</td>
-            <td><a href="<?php echo base_url("backend/viewdealing")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> 
+            <!--<td><a href="<?php //echo base_url(//"backend/viewdealing")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> -->
             <td><a href="<?php echo base_url("backend/editdealing")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
-            <td>สัญญาการซื้อขาย<input type="file" name=""></td>                  
+            <td><button type="button" class="btn btn-success"><i class="fa fa-print"></i> ปริ้น</button></td>                  
           </tr>       
         </table>  
 
 
-         <!-- start popup -->
-          <form id="" method="post" class="form-horizontal" action="">
+        <!-- start popup -->
+        <form id="" method="post" class="form-horizontal" action="">
 
-            <div class="modal fade bs-example-modal-lg-addcatalog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+          <div class="modal fade bs-example-modal-lg-addcatalog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
 
-                 <div class="row">
-                   <div class="col-lg-9 col-lg-offset-1">
-                    <hr>
-                    <center><h3>จัดการซื้อขายงานวิจัย</h3></center><br> 
-                    
-                    <div class="form-group">
-                     <label class="col-lg-2 control-label">ชื่อโครงการ</label>
-                     <div class="col-lg-4">
-                      <input type="text" class="form-control" name="D_name"   />
-                    </div>
-                    <label class="col-lg-2 control-label">ขายวันที่</label>
-                    <div class="col-lg-4">
-                      <input type="date" class="form-control" name="D_date"   />
-                    </div>
-                  </div>
-                  <br><br>
-
+               <div class="row">
+                 <div class="col-lg-9 col-lg-offset-1">
+                  <hr>
+                  <center><h3>จัดการซื้อขายงานวิจัย</h3></center><br> 
 
                   <div class="form-group">
-                    <label class="col-lg-2 control-label">ราคา</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="D_price"   />
-                    </div>
-                    <label class="col-lg-2 control-label">ผู้ซื้อ</label>
-                    <div class="col-lg-4">
-                      <input type="text" class="form-control" name="D_name_buyer"   />
-                    </div>
+                   <label class="col-lg-2 control-label">ชื่อโครงการ</label>
+                   <div class="col-lg-4">
+                    <input type="text" class="form-control" name="D_name"   />
                   </div>
-                  <br><br>
+                  <label class="col-lg-2 control-label">ขายวันที่</label>
+                  <div class="col-lg-4">
+                    <input type="date" class="form-control" name="D_date"   />
+                  </div>
+                </div>
+                <br><br>
 
-                  
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">ราคา</label>
+                  <div class="col-lg-4">
+                    <input type="text" class="form-control" name="D_price"   />
+                  </div>
+                  <label class="col-lg-2 control-label">ผู้ซื้อ</label>
+                  <div class="col-lg-4">
+                    <input type="text" class="form-control" name="D_name_buyer"   />
+                  </div>
+                </div>
+                <br><br>
+
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">สัญญาการซื้อขาย</label>
+                  <div class="col-lg-4">
+                    <input type="file"  name="D_contract"   />
+                  </div>
+                </div>
+                <br><br>
+
+                
               </div>
             </div>
 
@@ -124,11 +133,11 @@
 
     </form>
     <!-- End popup -->    
-        <!-- End -->
+    <!-- End -->
 
-      </div>
-    </div>
   </div>
+</div>
+</div>
 </div>
 
 
