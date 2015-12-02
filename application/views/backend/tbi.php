@@ -28,7 +28,7 @@
             <!--<td><input type="text" class="form-control" placeholder="กรอกชื่อผู้ขอใช้บริการ" name="research"></td>
             <td><input type="date" class="form-control"  name="dateresearch"></td>-->
             <td><select class="form-control"  name="keyword1">
-             <option value=""> เลือกสถานะ</option>
+             <option value="">เลือกสถานะ</option>
              <option value="pre incubated">pre incubated</option>
              <option value="incubated">incubated</option>
              <option value="start up">start up</option>

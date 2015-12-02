@@ -68,7 +68,7 @@ class Tbi extends CI_Controller {
 			$this->db->select('tbi_person.Tbi_name1,tbi_person.Tbi_title,tbi_person.Tbi_lastname,tbi.Tbi_id3,tbi.Tbi_date,tbi.Tbi_status');
 			$this->db->join('tbi_person','tbi.Tbi_id = tbi_person.Tbi_id');
 			//$this->db->like('Tbi_status',$data['keyword1']);
-			$this->db->like('tbi.Tbi_status',$data['keyword1']);
+			$this->db->like('Tbi_status',$data['keyword1']);
 		//	print_r ($this->db->last_query());
 			$search1 = $this->db->get('tbi');
 			
@@ -80,7 +80,8 @@ class Tbi extends CI_Controller {
 		//	print_r($data['search']);
 			
 		}
-		
+
+
 		$data['page']=$this->pagination->create_links();
 		$data["action"]=base_url('backend/tbi/index');
 		$this->load->view('backend/tbi',$data);

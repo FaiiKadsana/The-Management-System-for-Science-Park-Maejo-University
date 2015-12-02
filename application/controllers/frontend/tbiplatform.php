@@ -34,7 +34,7 @@ class Tbiplatform extends CI_Controller {
 		{
 			$data['keyword'] = $this->input->post('keyword');
 			$this->db->select('tbi.Tbi_id3,tbi_person.Tbi_title,tbi_person.Tbi_lastname,tbi_person.Tbi_name1,
-			tbi.Tbi_date,status_tbi.Tbi_status');
+			tbi.Tbi_date,tbi.Tbi_status');
 			$this->db->join('tbi_person','tbi.Tbi_id = tbi_person.Tbi_id');
 			$this->db->join('status_tbi','tbi.Tbi_id5 = status_tbi.Tbi_id5');
 			$this->db->like('Tbi_id3',$data['keyword']);

@@ -85,7 +85,7 @@ class Contact extends CI_Controller {
 		//*************************
 
 		$this->db->select('officer.O_picture,officer.O_title,officer.O_name,officer.O_lastname,officer.O_position,officer.O_phone');
-		
+		$this->db->where("O_status_work",'พนักงาน');
 		$this->db->order_by("O_id", "asc");
 
 		$this->db->limit(6,0);

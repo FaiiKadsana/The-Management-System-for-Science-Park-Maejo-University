@@ -44,16 +44,17 @@ class Catalog extends CI_Controller {
 		$this->db->limit($config['per_page'],$this->uri->segment(4));		
 
 		//*************************
-		$this->db->select('*');
-		$this->db->join('research','research.Re_id = catalog.Re_id');
-		$this->db->join('researchers','researchers.Rec_id = catalog.Rec_id');
+
+
+		$this->db->select('catalog.Cl_picture,catalog.Cl_property,catalog.Cl_price,catalog.Cl_contact,catalog.Cl_researchers,catalog.Cl_research');
+		$this->db->where("Cl_status",'ใช้ประโยชน์');
 		$this->db->order_by("Cl_id", "desc");
 
 		$this->db->limit(8,0);
 
 		$catalog = $this->db->get('catalog');
 		
-		print_r ($this->db->last_query());
+		//print_r ($this->db->last_query());
 
 		$data['catalog'] = $catalog->result();
 

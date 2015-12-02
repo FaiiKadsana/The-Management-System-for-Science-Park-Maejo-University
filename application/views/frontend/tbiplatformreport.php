@@ -583,11 +583,11 @@
 										</td>
 									</tr>
 								</table>
-								<br><br><br><br><br><br><br>
+								<br><br><br>
 							</td>
 						</tr>
 
-						<tr>
+						<!--<tr>
 							<td colspan="3" align="center">
 								<br>
 								<br>
@@ -600,35 +600,35 @@
 												<tr>
 													<td colspan="2" align="left">
 														<p><b>หลักฐานประกอบการยื่นสมัคร</b></p>								
-														<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'ใบสมัคร'){?>
-														checked <?php }else{} ?> > ใบสมัคร<br>
-														<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'สำเนาบัตรประชาชน  เลขประจำตัว'){?>
-														checked <?php }else{} ?> > สำเนาบัตรประชาชน  เลขประจำตัว .....<?php echo $rowtbi->Tbi_code;?>...<br> 
-														<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'สำเนาหลักฐานการศึกษา วุฒิการศึกษา'){?>
-														checked <?php }else{} ?> > สำเนาหลักฐานการศึกษา วุฒิการศึกษา.....<?php echo $rowtbi->Tbi_education;?>....<br> 
-														<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'เอกสารรับรองการทำงาน  ชื่อหน่วยงาน'){?>
-														checked <?php }else{} ?> > เอกสารรับรองการทำงาน  ชื่อหน่วยงาน ....<?php echo $rowtbi->Tbi_department;?>....<br> 
+														<input type="checkbox" name="Tbi_evidence_register" <?php //if($rowtbi->Tbi_evidence_register == 'ใบสมัคร'){?>
+														checked <?php// }else{} ?> > ใบสมัคร<br>
+														<input type="checkbox" name="Tbi_evidence_register" <?php //if($rowtbi->Tbi_evidence_register == 'สำเนาบัตรประชาชน  เลขประจำตัว'){?>
+														checked <?php //}else{} ?> > สำเนาบัตรประชาชน  เลขประจำตัว .....<?php// echo $rowtbi->Tbi_code;?>...<br> 
+														<input type="checkbox" name="Tbi_evidence_register" <?php// if($rowtbi->Tbi_evidence_register == 'สำเนาหลักฐานการศึกษา วุฒิการศึกษา'){?>
+														checked <?php //}else{} ?> > สำเนาหลักฐานการศึกษา วุฒิการศึกษา.....<?php //echo $rowtbi->Tbi_education;?>....<br> 
+														<input type="checkbox" name="Tbi_evidence_register" <?php //if($rowtbi->Tbi_evidence_register == 'เอกสารรับรองการทำงาน  ชื่อหน่วยงาน'){?>
+														checked <?php //}else{} ?> > เอกสารรับรองการทำงาน  ชื่อหน่วยงาน ....<?php // echo $rowtbi->Tbi_department;?>....<br> 
 													</td>
 													<td align="left">
 														<p><b>การนัดหมาย</b></p>
-														<input type="radio" name="Tbi_appointment" <?php if($rowtbi->Tbi_appointment == 'นัดนำเสนอแนวคิดธุรกิจ'){?>
-														checked <?php }else{} ?> > นัดนำเสนอแนวคิดธุรกิจ<br>
-														วันที่...<?php echo $rowtbi->Tbi_date_concept;?>...<br> 
-														<input type="radio" name="Tbi_appointment" <?php if($rowtbi->Tbi_appointment == 'นัดเข้าพบสถานประกอบการธุรกิจ'){?>
-														checked <?php }else{} ?> > นัดเข้าพบสถานประกอบการธุรกิจ<br>
-														วันที่....<?php echo $rowtbi->Tbi_date_meet;?>....<br> 
+														<input type="radio" name="Tbi_appointment" <?php// if($rowtbi->Tbi_appointment == 'นัดนำเสนอแนวคิดธุรกิจ'){?>
+														checked <?php //}else{} ?> > นัดนำเสนอแนวคิดธุรกิจ<br>
+														วันที่...<?php //echo $rowtbi->Tbi_date_concept;?>...<br> 
+														<input type="radio" name="Tbi_appointment" <?php// if($rowtbi->Tbi_appointment == 'นัดเข้าพบสถานประกอบการธุรกิจ'){?>
+														checked <?php //}else{} ?> > นัดเข้าพบสถานประกอบการธุรกิจ<br>
+														วันที่....<?php //echo $rowtbi->Tbi_date_meet;?>....<br> 
 
 													</td>
 												</tr>	
 												<tr><td colspan="3" align="left">
-													<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป'){?>
-													checked <?php }else{} ?> > รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
-													<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'Concept paper'){?>
-													checked <?php }else{} ?> > Concept paper<br> 
-													<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'แผนธุรกิจ'){?>
-													checked <?php }else{} ?> > แผนธุรกิจ<br> 
-													<input type="checkbox" name="Tbi_evidence_register" <?php if($rowtbi->Tbi_evidence_register == 'ข้อมูล Idea/Innovation/Technology เพิ่มเติม'){?>
-													checked <?php }else{} ?> > ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> <br>
+													<input type="checkbox" name="Tbi_evidence_register" <?php //if($rowtbi->Tbi_evidence_register == 'รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป'){?>
+													checked <?php //}else{} ?> > รูปถ่ายหน้าตรงขนาด 1 นิ้ว จำนวน 1 รูป<br> 
+													<input type="checkbox" name="Tbi_evidence_register" <?php // if($rowtbi->Tbi_evidence_register == 'Concept paper'){?>
+													checked <?php //}else{} ?> > Concept paper<br> 
+													<input type="checkbox" name="Tbi_evidence_register" <?php // if($rowtbi->Tbi_evidence_register == 'แผนธุรกิจ'){?>
+													checked <?php //}else{} ?> > แผนธุรกิจ<br> 
+													<input type="checkbox" name="Tbi_evidence_register" <?php // if($rowtbi->Tbi_evidence_register == 'ข้อมูล Idea/Innovation/Technology เพิ่มเติม'){?>
+													checked <?php //}else{} ?> > ข้อมูล Idea/Innovation/Technology เพิ่มเติม<br> <br>
 												</td></tr>
 											</table><br>
 										</td>
@@ -648,29 +648,29 @@
 											<table>
 												<tr>
 													<td colspan="3" align="left">
-														<input type="checkbox" name="Tbi_practicality" <?php if($rowtbi->Tbi_practicality == 'มีผลงานวิจัยสนับสนุน'){?>
-													checked <?php }else{} ?> >  มีผลงานวิจัยสนับสนุน<br>
-														<input type="checkbox" name="Tbi_practicality" <?php if($rowtbi->Tbi_practicality == 'เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว'){?>
-													checked <?php }else{} ?> >  เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
-														<input type="checkbox" name="Tbi_practicality" <?php if($rowtbi->Tbi_practicality == 'ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี'){?>
-													checked <?php }else{} ?> >  ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
-														<input type="checkbox" name="Tbi_practicality" <?php if($rowtbi->Tbi_practicality == 'มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า'){?>
-													checked <?php }else{} ?> >  มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
-														<input type="checkbox" name="Tbi_practicality" <?php if($rowtbi->Tbi_practicality == 'มีทุนทรัพย์ในการเริ่มต้นธุรกิจ'){?>
-													checked <?php }else{} ?> >  มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
+														<input type="checkbox" name="Tbi_practicality" <?php //if($rowtbi->Tbi_practicality == 'มีผลงานวิจัยสนับสนุน'){?>
+													checked <?php// }else{} ?> >  มีผลงานวิจัยสนับสนุน<br>
+														<input type="checkbox" name="Tbi_practicality" <?php //if($rowtbi->Tbi_practicality == 'เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว'){?>
+													checked <?php //}else{} ?> >  เป็นไปได้และถ้าเป็นไปได้ควรมีต้นแบบ (Prototype) หรือผลิตภัณฑ์แล้ว<br>
+														<input type="checkbox" name="Tbi_practicality" <?php //if($rowtbi->Tbi_practicality == 'ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี'){?>
+													checked <?php //}else{} ?> >  ผู้ประกอบการต้องมีความรู้  ความเข้าใจในเทคโนโลยีที่ใช้เป็นอย่างดี<br>
+														<input type="checkbox" name="Tbi_practicality" <?php // if($rowtbi->Tbi_practicality == 'มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า'){?>
+													checked <?php// }else{} ?> >  มีแนวคิดในการปรับปรุงเทคโนโลยีเพื่อให้เกิดผลิตภัณฑ์ที่หลากหลายตามความต้องการของลูกค้า<br>
+														<input type="checkbox" name="Tbi_practicality" <?php // if($rowtbi->Tbi_practicality == 'มีทุนทรัพย์ในการเริ่มต้นธุรกิจ'){?>
+													checked <?php// }else{} ?> >  มีทุนทรัพย์ในการเริ่มต้นธุรกิจ<br>
 													</td>
 												</tr>
 											</table><br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ลายมือชื่อ) ...................................<br>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>ผู้ตรวจใบสมัคร</b><br><br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (......<?php echo $rowtbi->Tbi_inspector;?>......)<br>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่....<?php echo $rowtbi->Tbi_date_inspect;?>....<br> <br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ตัวบรรจง) (......<?php //echo $rowtbi->Tbi_inspector;?>......)<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่....<?php // echo $rowtbi->Tbi_date_inspect;?>....<br> <br>
 										</td>
 									</tr>
 								</table>
 
 							</td>
-						</tr>
+						</tr>-->
 					</table>
 				</center>
 

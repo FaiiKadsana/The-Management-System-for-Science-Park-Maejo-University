@@ -75,7 +75,7 @@ class News extends CI_Controller {
 		$data['page']=$this->pagination->create_links();
 		$data['action']=site_url("backend/news/addnews/");
 		$data['action1']=site_url("backend/news/index/");
-		$data["action3"]=base_url('backend/news/updatenews/');			
+		$data['action3']=base_url("backend/news/updatenews/");			
 		$this->load->view('backend/news',$data);
 		$this->load->view('backend/script');
 	}
@@ -123,16 +123,22 @@ class News extends CI_Controller {
 
 			if( $_SERVER["REQUEST_METHOD"] == "POST"){
 
-				$update = $this->input->post("id");
+				$update = $this->input->post("Ne_id");
 				$updateData=array(
 				"Ne_sub"=>$this->input->post("Ne_sub"),
 				"Ne_text"=>$this->input->post("Ne_text"),
-				//"Ne_picture" => $this->input->post("Ne_picture"),
+				"Ne_picture" => $this->input->post("Ne_picture"),
 				"Ne_date_up" => date("Y-m-d H:i:s")
 				);
 	
 				$this->db->where('Ne_id', $update);
 				$this->db->update('news',$updateData);
+
+				//print_r ($this->db->last_query());
+
+				print_r ($update);
+
+				redirect('backend/news', 'refresh');
 			}
 		
 		
@@ -140,9 +146,16 @@ class News extends CI_Controller {
 				$rs = $this->db->get("news");
 				$row=$rs->row();
 				$data["Ne_id"]=$row->Ne_id;
-				$data["Ne_sub"]=$row->Ne_sub;r43
+				$data["Ne_sub"]=$row->Ne_sub;
 				$data["Ne_text"]=$row->Ne_text;	
-				//$data["Ne_picture"]=$row->Ne_picture;	
+				$data["Ne_date_up"]=$row->Ne_date_up;	
+				$data["Ne_picture"]=$row->Ne_picture;	
+
+
+				print_r ($data["Ne_id"]);
+
+				redirect('backend/news', 'refresh');
+			
 
 	}
 

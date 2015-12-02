@@ -58,7 +58,7 @@
 
 					<div class= 'col-md-5'>	
 						<center>
-							<p class='title-header org'>ปฎิทินการนัดหมาย</p>		
+							<p class='title-header org'>ปฎิทิน</p>		
 						</center><br>
 
 						<div class="row">

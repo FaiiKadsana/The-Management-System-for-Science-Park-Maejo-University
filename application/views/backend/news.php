@@ -92,6 +92,7 @@
                                <div class="form-group">
                                  <label class="col-lg-2 control-label">หัวข้อข่าว</label>
                                  <div class="col-lg-4">
+                                   <input type="hidden" class="form-control" value="<?php echo $row->Ne_id; ?>" name="Ne_id"/>
                                   <input type="title" class="form-control" value="<?php echo $row->Ne_sub; ?>" name="Ne_sub"/>
                                 </div>
                                 <label class="col-lg-2 control-label">รายละเอียดข่าว</label>
@@ -116,7 +117,7 @@
                           </div>
 
                           <div class="modal-footer">
-                            <a href="<?php echo base_url('backend/news/updatenews/'.$row->Ne_id)?>")?> <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button> </a>
+                            <button type="submit" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button> 
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
                         </div>

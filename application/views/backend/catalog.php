@@ -15,22 +15,40 @@
      </div>
    </div></br></br>
 
+   <form id="" method="post" class="form-horizontal" action="<?php echo $action ; ?>">
    <div class="row"> 
     <div class="col-sm-12 ">
       <center>
         <table >
           <tr>
-            <td></td>
-           <td><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>   
-            <td ></td>
-          </tr>
-        </table>
-      </center>
-      <!-- /input-group -->
-    </div>
-  </div><br>        
-  <!-- /.row -->
-
+           <td>
+           </td>
+           <td>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="ชื่อผลงานวิจัย" name="keyword">
+              <span class="input-group-btn">
+                <center>
+                  <table >
+                    <tr> 
+                      <td><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+                      <td width="20%"><button class="btn btn-success" type="reset" > ล้างข้อมูล</button> </td>
+                      <td ><button  type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg-addcatalog"><i class="fa fa-plus"></i> เพิ่ม</button></td>    
+                    </tr>
+                  </table>
+                </center>
+              </span>
+            </div>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <!-- /input-group -->
+  </div>
+</div>
+</form>
+<br><br> 
   <!-- Star row-->
   <div class="row">
     <div class="col-sm-12">
@@ -38,36 +56,64 @@
         <div class="panel-heading">ข้อมูลนักวิจัย</div>
         <div class="panel-body">
          <table class="table table-striped">
+
+
+        <?php if(empty($keyword)){ ?>
+
            <tr class="bg-success">
             <th width="5%">#</th>
+            <th width="25%">รหัสสิทธิบัตร</th> 
             <th width="25%">ชื่อผลงานวิจัย</th>
             <th width="25%">ชื่อนักวิจัย</th>
-            <th width="25%">ติดต่อ</th> 
             <th width="30%">สถานะ</th>     
-            <th></th>
-            <th></th>
-            <th></th>
-            
+        
+          </tr>  
 
-          </tr>   
-
-          <!-- Show &Join table -->
+        <?php $i='1';  foreach ($catalog as $row){ ?>
 
           <tr class="bg-success">
-            <td >1</td>
-            <td >กังหันลม</td>
-            <td >อลงกรณ์</td>   
-            <td >085666666</td>
-            <td >ใช้ประโยชน์</td>
-            <td><a href="<?php echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>      
+            <td ><?php echo $i++;?></td>
+            <td ><?php echo $row->Cl_code_re; ?></td>
+            <td ><?php echo $row->Cl_research; ?></td>   
+            <td ><?php echo $row->Cl_researchers; ?></td>
+            <td ><?php echo $row->Cl_status; ?></td>
+            <!--<td><a href="<?php //echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td>  -->    
             <td><a href="<?php echo base_url("backend/editcatalog")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
             
-          </tr>       
+          </tr> 
+
+          <?php } ?>      
+
+            <?php }else{ ;?>
+
+          <tr class="bg-success">
+            <th width="5%">#</th>
+            <th width="25%">รหัสสิทธิบัตร</th> 
+            <th width="25%">ชื่อผลงานวิจัย</th>
+            <th width="25%">ชื่อนักวิจัย</th>
+            <th width="30%">สถานะ</th>     
+          </tr>  
+
+        <?php $i='1'; foreach($search as $row){?>
+
+
+          <tr class="bg-success">
+            <td ><?php echo $i++;?></td>
+            <td ><?php echo $row->Cl_code_re; ?></td>
+            <td ><?php echo $row->Cl_research; ?></td>   
+            <td ><?php echo $row->Cl_researchers; ?></td>
+            <td ><?php echo $row->Cl_status; ?></td>
+            <!--<td><a href="<?php //echo base_url("backend/viewcatalog")?>"><button type="button" class="btn btn-info" ><i class="fa fa-eye"></i>  ดู</button></a></td> -->     
+            <td><a href="<?php echo base_url("backend/editcatalog")?>"><button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i>  แก้ไข</button></a></td>
+            
+          </tr> 
+             
+            <?php }  } ?>
         </table>     
         <!-- End -->
 
         <!-- start popup เพิ่มผลงาน-->
-        <form id="" method="post" class="form-horizontal" action="<?php echo $action; ?>" enctype="multipart/form-data">
+        <form id="" method="post" class="form-horizontal" action="<?php echo $action1; ?>" enctype="multipart/form-data">
 
           <div class="modal fade bs-example-modal-lg-addcatalog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg">
@@ -77,7 +123,7 @@
                  <div class="col-lg-9 col-lg-offset-1">
                   <hr>
                   <center><h3>ข้อมูลแค็ตตาล็อก</h3></center><br> 
-                  <center>
+                  <!--<center>
                     <div class="form-group">
                       <div class="input-group col-lg-4 control-label">
                         <input type="text" class="form-control" placeholder="Search ">
@@ -86,15 +132,15 @@
                         </span>
                       </div>
                     </div><br><br>
-                  </center>
+                  </center>-->
                   <div class="form-group">
                    <label class="col-lg-2 control-label">เลขที่สิทธิ</label>
                    <div class="col-lg-4">
-                    <input type="tel" class="form-control" name="rec_phone"   />
+                    <input type="tel" class="form-control" name="Cl_code_re"   />
                   </div>
                   <label class="col-lg-2 control-label">ผลงานวิจัย</label>
                   <div class="col-lg-4">
-                    <input type="tel" class="form-control" name="Re_name"   />
+                    <input type="tel" class="form-control" name="Cl_research"   />
                   </div>
                 </div>
                 <br><br>
@@ -103,7 +149,7 @@
                 <div class="form-group">
                   <label class="col-lg-2 control-label">นักวิจัย</label>
                   <div class="col-lg-4">
-                    <input type="text" class="form-control" name="Rec_name_thai"   />
+                    <input type="text" class="form-control" name="Cl_researchers"   />
                   </div>
                   <label class="col-lg-2 control-label">ราคา</label>
                   <div class="col-lg-4">
@@ -131,10 +177,10 @@
                 </div>
                 <label class="col-lg-2 control-label">สถานะ</label>
                 <div class="col-lg-4">
-                 <select class="form-control"  name="statussearch">
+                 <select class="form-control"  name="Cl_status">
                    <option value=""> เลือกสถานะ</option>
-                   <option value="รอดำเนินงาน">ใช้ประโยชน์</option>
-                   <option value="รออนุมัติ">ยังไม่ใช้ประโยชน์</option>ห
+                   <option value="ใช้ประโยชน์">ใช้ประโยชน์</option>
+                   <option value="ยังไม่ใช้ประโยชน์">ยังไม่ใช้ประโยชน์</option>ห
                  </select>
                </div><br><br>
 
@@ -159,12 +205,8 @@
 
 </div>
 </div>
-</div>
+
 <!-- /.row -->
-
-
-
-
 
 </div>
 <!-- /.container-fluid -->

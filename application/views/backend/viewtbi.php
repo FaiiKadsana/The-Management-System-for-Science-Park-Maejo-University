@@ -64,8 +64,7 @@
                 <tr>
                   <td width="25%" align="center">
                     <br>
-                    <p>ติดรูปถ่ายหน้าตรง</p>
-                    <p>ขนาด1 นิ้ว</p>
+                    <?php echo '<img src= "'.base_url().'asset/img/TBIPerson/'.$rowtbi->Tbi_picture.'" style="height:70px;" style="width:40px;">'; ?>
                     <br>
                   </td>
                 </tr>
@@ -638,7 +637,7 @@
         </td>
       </tr>
 
-      <tr>
+      <!-- <tr>
         <td colspan="3" align="center">
           <br>
           <br>
@@ -677,7 +676,7 @@
 
         </td>
       </tr>
-      <tr>
+     <tr>
         <td colspan="3" align="center">
           <br>
           <table border="1" width="80%">
@@ -705,7 +704,7 @@
           </table>
 
         </td>
-      </tr>
+      </tr>-->
     </table>
   </center>
 
