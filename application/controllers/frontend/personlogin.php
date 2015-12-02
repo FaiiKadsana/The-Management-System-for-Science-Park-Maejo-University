@@ -65,7 +65,7 @@
 
  					else
  					{
- 						echo 'base_url("backend/project_service")?>';
+ 						redirect('frontend/personlogin', 'refresh');
  					}
  				}
  				else
