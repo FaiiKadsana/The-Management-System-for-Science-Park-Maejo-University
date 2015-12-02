@@ -74,10 +74,10 @@
          <!-- <td><button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-lg-viewnew"><i class="fa fa-eye"></i>  ดู</button></td> -->          
           <td>
           <button type="button" class="btn btn-warning" data-toggle ="modal" data-target="#modal<?php echo $row->Ne_id; ?>"><i class="fa fa-wrench"></i> แก้ไข</button></td>
-          <td><a target ="_blank" href="<?php echo base_url('backend/news/deletenews/'.$row->Ne_id)?>")?> <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i> ลบ</button></a></td>                     
+          <td><a target ="_blank" href="<?php echo base_url('backend/news/deletenews/'.$row->Ne_id)?>"> <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm-delnew"><i class="fa fa-times"></i> ลบ</button></a></td>                     
         </tr> 
 
-                <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" >
+                <form id="" method="post" class="form-horizontal" action="<?php echo $action3 ; ?>" enctype="multipart/form-data" >
 
                       <div class="modal fade bs-example-modal-lg-editnew" id="modal<?php echo $row->Ne_id; ?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                         <div class="modal-dialog modal-lg">

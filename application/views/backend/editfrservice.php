@@ -1,4 +1,4 @@
- <?php  foreach ($service as $rowservice) { ?>
+
 
 <div id="page-wrapper ">
 
@@ -20,13 +20,15 @@
    </div></br>
    <!-- /.row -->
 
+    <form method="post" action="<?php echo $action; ?>" enctype="multipart/form-data">
+
      <div class="row">
     <div class="col-sm-12">
       <center>
         <table width="100%">
           <tr>
             <td width="30%"></td>
-            <td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name="S_id" value="<?php echo $rowservice->S_id;?>" disabled></td>
+            <td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม:<input type="text" size="20" name="S_id" value="<?php echo $rs->S_id;?>" disabled></td>
           </tr>
         </table>
       </center>
@@ -34,7 +36,6 @@
   </div>
 
   <br>
-
 
   <div class="row">
     <div class="col-sm-12 ">
@@ -68,6 +69,7 @@
               <option><?php echo $rowservice->P_title;?></option>
 
             </select>
+            <input type="hidden" name="S_id" id="S_id" value="<?php echo $rowservice->S_id ;?>">
             &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="P_name" value="<?php echo $rowservice->P_name;?>"  >
             &nbsp;&nbsp;&nbsp;&nbsp;นามสกุล: <input type="text" size="30"  name="P_lastname" value="<?php echo $rowservice->P_lastname;?>"  >
           </td>
@@ -102,9 +104,9 @@
             </tr>
             <tr>
               <td colspan="3" align="left">
-                <b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" <?php if($rowservice->C_no_com == 'ไม่มี'){?>
+                <b>เลขที่ทะเบียนพาณิชย์: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" <?php if($as->C_no_com == 'ไม่มี'){?>
                 checked <?php }else{} ?>  > ไม่มี  
-                &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" <?php if($rowservice->C_no_com == 'มี'){?>
+                &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="C_no_com" <?php if($as->C_no_com == 'มี'){?>
                 checked <?php }else{} ?>> มี
                 &nbsp;&nbsp;<input type="text" size="30"  name="C_no_com_etc" value="<?php echo $rowservice->C_no_com_etc;?>"  >                                                                                                                
               </td>
@@ -416,12 +418,7 @@
       </div>
     </div>
 
-
-
     <br><br>
-
-
-
 
     <div class="row">
      <div class="col-sm-12">
@@ -440,8 +437,7 @@
 
    </div>
 
-
-
+ </form>
 
  </div>
  <!-- /.container-fluid -->
@@ -451,4 +447,3 @@
 
 </div>
 <!-- /#wrapper -->
-<?php } ?>
