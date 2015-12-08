@@ -148,3 +148,9 @@ table.calendar{
 color: red;
 font-size: 16px;
 }
+.menulayer1 li {
+    margin-bottom:4px;
+    list-style-type:none; /* ไม่ให้แสดงเป็น list */
+    width:100px; /* ความกว้าง */
+    height:20px; /* ความสูง */
+}

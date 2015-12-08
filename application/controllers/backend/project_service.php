@@ -147,7 +147,7 @@ class Project_Service extends CI_Controller {
 			redirect('backend/project_service', 'refresh');
 
 		}
-			else if($insertResearch["Re_id_patent"]=="" || $insertResearch["Re_name1"]==""
+			/*else if($insertResearch["Re_id_patent"]=="" || $insertResearch["Re_name1"]==""
 				|| $insertResearch["Re_name_eng"]=="" || $insertResearch["Re_industry_group"]==""
 				|| $insertResearch["Re_status"]==""|| $insertResearch["Re_abstract"]=="" ){
 
@@ -155,7 +155,7 @@ class Project_Service extends CI_Controller {
 			echo "<script>alert('กรุณากรอกรายละเอียดให้ครบด้วยนะคะ');</script>";
 			redirect('backend/project_service', 'refresh');
 
-		}
+		}*/
 			else {
 
 			echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";

@@ -31,7 +31,7 @@
         </div>
 
 
- <?php  foreach ($service as $rowservice) { ?>
+        <?php  foreach ($service as $rowservice) { ?>
 
         <div class="col-lg-offset-1 col-sm-9">
           <!-- ข้อมูลนักวิจัย -->
@@ -58,6 +58,9 @@
             </tr>
             <tr>
               <td>สถานะ : <?php echo $row->Cl_status; ?></td>
+            </tr>
+             <tr>
+              <td>วันผลิต: <?php echo $row->Cl_status; ?></td>
             </tr>
             <tr>
               <td><button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg-editcatalog"><i class="fa fa-wrench"></i> แก้ไข</button></td>
@@ -129,10 +132,17 @@
                  </div>
                </div><br><br>
 
-             </div>
-           </div>
+               <div class="form-group">
+                <label class="col-lg-2 control-label">วันที่ผลต</label>
+                <div class="col-lg-4">
+                  <input type="date" class="form-control" name=""   />
+                </div>
+              </div>
 
-           <div class="modal-footer">
+            </div>
+          </div>
+
+          <div class="modal-footer">
             <button type="button" class="btn btn-warning"><i class="fa fa-wrench"></i> แก้ไข</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>

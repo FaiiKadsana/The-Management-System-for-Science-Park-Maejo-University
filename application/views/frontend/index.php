@@ -25,8 +25,7 @@
 							</div>
 							<div class="col-md-8" > 
 								<br>
-								<h4><?php echo $rownew->Ne_sub;?></h4>
-								<h5><?php echo $rownew->Ne_text;?></h5>
+								<h4><b><a href="<?php echo base_url("frontend/news")?>"> <?php echo $rownew->Ne_sub;?></a></b></h4>
 								<div class="row"> 
 									<div class="col-md-12">
 										<i class="fa fa-calendar"></i> <?php echo $rownew->Ne_date_up;?>
