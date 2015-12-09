@@ -19,18 +19,18 @@
 
       <ul class="dropdown-menu" role="menu">
         <li class="dropdown-header"></li>
-        <li role="presentation" class= "bo"><a href="<?php echo base_url("frontend/serviceplatform")?>" style="font-size: 15px;margin-left: 0px;">Service Platform</a></li>
+        <li role="presentation" class= "bo"><a href="<?php echo base_url("frontend/serviceplatform")?>" style="font-size: 15px;margin-left: 0px;">แบบฟอร์มขอรับคำปรึกษา</a></li>
         <li role="presentation" class="divider"></li>
-        <li class= "bo"><a href="<?php echo base_url("frontend/coresearchplatform")?>"style="font-size: 15px;margin-left: 0px;">Co-Research Platform</a></li>
+        <li class= "bo"><a href="<?php echo base_url("frontend/coresearchplatform")?>"style="font-size: 15px;margin-left: 0px;">แบบฟอร์มข้อเสนอโครงการโครีเสิร์ช</a></li>
         <li role="presentation" class="divider"></li>
-        <li class= "bo"><a href="<?php echo base_url("frontend/irtcplatform")?>"style="font-size: 15px;margin-left: 0px;">IRCT Platform</a></li>  
+        <li class= "bo"><a href="<?php echo base_url("frontend/irtcplatform")?>"style="font-size: 15px;margin-left: 0px;">แบบฟอร์มข้อเสนอโครงการไออาร์ทีซี</a></li>  
         <li role="presentation" class="divider"></li>
-        <li role="presentation" class= "bo"><a href="<?php echo base_url("frontend/tbiplatform")?>"style="font-size: 15px;margin-left: 0px;">บ่มเพาะ TBI Platform </a></li>
+        <li role="presentation" class= "bo"><a href="<?php echo base_url("frontend/tbiplatform")?>"style="font-size: 15px;margin-left: 0px;">แบบฟอร์มโครงการการบ่มเพาะผู้ประกอบการเทคโนโลยี</a></li>
         <li role="presentation" class="divider"></li>
         <li role="presentation" class= "bo"><a  target ="_blank"  href="http://stdb.most.go.th/Home"style="font-size: 15px;margin-left: 0px;">ฐานข้อมูลโครงสร้างพื้นฐาน ภาครัฐ</a></li>  
         <li role="presentation" class="divider"></li>
-        <li role="presentation" class= "bo"><a  target ="_blank"  href="http://www.nsp.or.th"style="font-size: 15px;margin-left: 0px;">Privilege Card </a></li>  	 				
-        
+        <li role="presentation" class= "bo"><a  target ="_blank"  href="http://www.nsp.or.th"style="font-size: 15px;margin-left: 0px;">บริการสำหรับผู้มีสิทธิพิเศษ</a></li>  	 				
+
       </ul>
     </li>
     <li><a href="<?php echo base_url("frontend/contact")?>"><i class="fa fa-phone"></i> ติดต่อ</a></li>
