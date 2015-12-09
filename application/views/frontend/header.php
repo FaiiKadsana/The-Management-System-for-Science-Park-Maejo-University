@@ -20,4 +20,3 @@
 <script src="<?php echo base_url("asset/js/jquery.min.js"); ?>"></script>
 
 </head>
-<body>
