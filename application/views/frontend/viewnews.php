@@ -5,7 +5,8 @@
 
 
 <div class="row">
-	<div class="col-md-12">
+<div class="col-md-1"></div>
+	<div class="col-md-10">
 
 		<div class="row">
 
@@ -18,13 +19,13 @@
 				<br>
 				<h3><?= $Ne_sub;?></h3>
 				<div class="row"> 
-					<div class="col-md-12">
+					<div class="col-md-10">
 						<h4><?= $Ne_text;?></h4>
 					</div>
 				</div>
 				<br><br>
 				<div class="row"> 
-					<div class="col-md-12">
+					<div class="col-md-10">
 						<i class="fa fa-calendar"></i> </h5><?= $Ne_date_up;?></h5>
 					</div>
 				</div>

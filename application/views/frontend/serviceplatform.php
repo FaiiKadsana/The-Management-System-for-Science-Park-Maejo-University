@@ -18,7 +18,7 @@ $(function() {
 		$auto =  " ' ".$rowservice->S_id." ' ";
 
 		if("6" == $i){
-			$auto .= " ";
+			$auto .= " "; 
 		}else{
 			$auto .= ",";
 		}
@@ -50,26 +50,35 @@ $(function() {
 	</div>
 </div>
 <br>
+
 <div class="row">
-	<div class="col-md-offset-3  col-sm-9">
-		<center>
-			<form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
-				<!--<?php //$search = array('S_id'=>'S_id','value'=>"",);?>-->
-				<table >
-					<tr>
-						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="keyword" value=""></td>
-						<td width="15%"><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
-						<td width="15%"><a href="<?php echo base_url("frontend/frserviceplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
-						<td><a target ="_blank" href="<?php echo base_url ("asset/form download/img071.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
-					</tr>
+	<div class="col-sm-12">
+		<div class="col-sm-offset-4 col-sm-5">
+			<center>
+				<form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
+					<table >
+						<tr>
 
-				</table>
-			</form>
-		</center>
+							
+							<td width="15%"><a href="<?php echo base_url("frontend/frserviceplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
+							<td><a target ="_blank" href="<?php echo base_url ("asset/form download/img071.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
+						</tr>
+					</table>
+				</form>
+			</center>
 
+		</div>
+		<div class="col-sm-3">
+			<table>
+				<tr>
+					<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="keyword" value=""></td>
+					<td width="15%"><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </div>
-<!-- End  row-->
+
 <br><br>
 
 <div class="row">
@@ -81,38 +90,38 @@ $(function() {
 
 					<?php if (empty($keyword)) { 
 
-					echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-					echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
+						echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+						echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
 
-					?>    
+						?>    
 
-					<?php }else{ ?>
+						<?php }else{ ?>
 
-					<?php foreach($search as $row){?>
-					<tr class="bg-success">
-						<th width="15%">เลขที่แบบฟอร์ม</th>
-						<th width="20%">ชื่อสถานประกอบการ</th>
-						<th width="20%">ชื่อผู้ประสานงาน</th>
-						<th width="20%">วันที่ยืนโครงการ</th> 
-						<th width="20%">สถานะ</th>    
-					</tr>
-					<tr class="bg-success">
-						<td ><?php echo $row->S_id; ?></td>
-						<td ><?php echo $row->C_name; ?></td>
-						<td ><?php echo $row->P_title; ?><?php echo $row->P_name;?>&nbsp;<?php echo $row->P_lastname ; ?></td>
-						<td ><?php echo $row->S_date; ?></td>  
-						<td ><?php echo $row->S_status; ?></td>
-						<td><a target ="_blank" href="<?php echo base_url('frontend/serviceplatformreport/index/'.$row->S_id)?>"><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	
-					</tr> 
-					<?php } }?>      
-				</table>     
-				<!-- End -->
+						<?php foreach($search as $row){?>
+						<tr class="bg-success">
+							<th width="15%">เลขที่แบบฟอร์ม</th>
+							<th width="20%">ชื่อสถานประกอบการ</th>
+							<th width="20%">ชื่อผู้ประสานงาน</th>
+							<th width="20%">วันที่ยืนโครงการ</th> 
+							<th width="20%">สถานะ</th>    
+						</tr>
+						<tr class="bg-success">
+							<td ><?php echo $row->S_id; ?></td>
+							<td ><?php echo $row->C_name; ?></td>
+							<td ><?php echo $row->P_title; ?><?php echo $row->P_name;?>&nbsp;<?php echo $row->P_lastname ; ?></td>
+							<td ><?php echo $row->S_date; ?></td>  
+							<td ><?php echo $row->S_status; ?></td>
+							<td><a target ="_blank" href="<?php echo base_url('frontend/serviceplatformreport/index/'.$row->S_id)?>"><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	
+						</tr> 
+						<?php } }?>      
+					</table>     
+					<!-- End -->
 				</div>
 			</div>
 		</div>
-				<!-- /.row -->
-			</div>
-			<!-- End  row-->
-		</div>
+		<!-- /.row -->
 	</div>
+	<!-- End  row-->
+</div>
+</div>
 </div>
