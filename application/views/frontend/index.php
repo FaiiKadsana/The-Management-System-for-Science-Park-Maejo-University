@@ -31,7 +31,7 @@
 								<br>
 								<div class="row"> 
 									<div class="col-md-12">
-										<span><h5><i class="fa fa-calendar"></i> <?=date("d - m - Y",strtotime($rownew->Ne_date_up));?></h5></span>
+										<span><h5><i class="fa fa-calendar"></i> <?=date("d - m - Y",strtotime($rownew->Ne_date_up));?></h5> <i class="fa fa-eye"></i><?=$rownew->Ne_view?></span>
 									</div>
 								</div>
 								<br><br>	
