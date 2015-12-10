@@ -25,7 +25,7 @@
 				<br><br>
 				<div class="row"> 
 					<div class="col-md-12">
-						<i class="fa fa-calendar"></i> </h5><?= $Ne_date_up;?></h5>
+						<span><h5><i class="fa fa-calendar"></i> <?=date("d - m - Y",strtotime($Ne_date_up));?></h5></span>
 					</div>
 				</div>
 				<br><br>	

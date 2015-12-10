@@ -1,6 +1,6 @@
 <!-- Section -->
 <div id="section_header">
-	<h2>ผลงาววิจัย</h2>
+	<h2>รายละเอียดผลงานวิจัย</h2>
 </div>
 
 <div class="row">
@@ -13,21 +13,20 @@
 					<?php echo '<img src= "'.base_url().'asset/img/catalog/'.$Cl_picture.'" style="height:200px;" style="width:40px;">'; ?>
 				</div>
 			</div>
-			<div class="col-sm-2">
+			<div class="col-sm-1">
 				
 			</div>
-			<div class="col-sm-5" > 
+			<div class="col-sm-6" > 
 				<br>
-				<h4>ชื่อผลงาน  : <?=$rowcatalog->Cl_research;?></h4><br>
-				<h4>ชื่อนักวิจัย : <?=$rowcatalog->Cl_researchers;?></h4><br>
-				<h4>ราคา : <?=$rowcatalog->Cl_price;?></h4><br>
-				<h5>รายละเอียด : <?=$rowcatalog->Cl_property;?></h5><br>
-				<h4>เบอร์โทร : <?=$rowcatalog->Cl_contact;?></h4><br>
-				<h4>วันที่ผลต : </h4>	
-				
-				<br><br>	
-			</div>
+				<h4>ชื่อผลงาน  : <?=$Cl_research;?></h4>
+				<h5>ชื่อนักวิจัย : <?=$Cl_researchers;?></h5>
+				<h5>เบอร์โทร : <?=$Cl_contact;?></h5>
+				<h5>ราคา : <?=$Cl_price;?></h5>
+				<h5>วันที่ผลต : <?=date("d - m - Y",strtotime($Cl_date));?></h5><br>
+				<h5>รายละเอียด : <?=$Cl_property;?></h5>
 
+				<br><br><br>
+			</div>
 		</div>
 
 	</div>  
