@@ -55,10 +55,10 @@ class Index extends CI_Controller {
 		//$this->db->limit(4,0);
 
 		$news1 = $this->db->get('news');
-		
-		//print_r ($this->db->last_query());
 
 		$data['news'] = $news1->result();
+
+		//print_r($data['news']);
 
 		$data['page']=$this->pagination->create_links();
 

@@ -18,14 +18,17 @@
 					<?php foreach ($news as $rownew){ ?>
 
 						<div class="row">
+							<br>
 							<div class="col-md-4">
 								<div class="col-md-4 ">
 									  <?php echo '<img src= "'.base_url().'asset/img/News/'.$rownew->Ne_picture.'" style="height:100px;" >'; ?>
 								</div>
 							</div>
 							<div class="col-md-8" > 
+			
+								<h4><b><a target ="_blank" href="<?php echo base_url('frontend/viewnews/index/'.$rownew->Ne_id)?>"> <?php echo $rownew->Ne_sub;?></a></b></h4>
+								
 								<br>
-								<h4><b><a href="<?php echo base_url("frontend/news")?>"> <?php echo $rownew->Ne_sub;?></a></b></h4>
 								<div class="row"> 
 									<div class="col-md-12">
 										<i class="fa fa-calendar"></i> <?php echo $rownew->Ne_date_up;?>

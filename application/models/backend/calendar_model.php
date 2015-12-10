@@ -89,29 +89,29 @@ class Calendar_Model extends CI_Model {
 
 	}
 }*/
-function get_calendar_data($year, $month)
-	{
-		//$query = $this->db->select(‘date, data’)->from(‘calendar’)->like(‘date’, “$year-$month”, ‘after’)->get();
-
-		$query = $this->db->select('Cd_date','Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" ,'after')->get();
-
-		//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
-
-		//print_r($this->db->last_query());
-
-		$cal_data = array();
-
-		foreach ($query->result() as $row)
-
-		if (isset($cal_data[0]->subject))
+		function get_calendar_data($year, $month)
 			{
-				
-				$cal_data[substr($row->date,8,2)] = $row->data;
-				 
+				//$query = $this->db->select(‘date, data’)->from(‘calendar’)->like(‘date’, “$year-$month”, ‘after’)->get();
 
+				$query = $this->db->select('Cd_date','Cd_detail')->from('calendar')->like('Cd_date', "$year-$month" ,'after')->get();
+
+				//$query = $this->db->select('date' , 'Cd_detail')->from('calendar')->where('date',"$year-$month",'after')->get();
+
+				//print_r($this->db->last_query());
+
+				$cal_data = array();
+
+				foreach ($query->result() as $row)
+
+				if (isset($cal_data[0]->subject))
+					{
+						
+						$cal_data[substr($row->date,8,2)] = $row->data;
+						 
+
+					}
+				return $cal_data;
 			}
-		return $cal_data;
-	}
 
 	/*function add_calendar_data($date, $data){
 		
@@ -126,10 +126,10 @@ function get_calendar_data($year, $month)
 	}
 }*/
 
-	function generate ($year, $month){
-		
-	$this->load->library('calendar', $this->conf);
-	$cal_data = $this->get_calendar_data($year, $month);
-	return $this->calendar->generate($year, $month, $cal_data);
-}
+		function generate ($year, $month){
+			
+		$this->load->library('calendar', $this->conf);
+		$cal_data = $this->get_calendar_data($year, $month);
+		return $this->calendar->generate($year, $month, $cal_data);
+	}
 }

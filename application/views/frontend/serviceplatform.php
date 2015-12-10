@@ -102,7 +102,7 @@ $(function() {
 						<td ><?php echo $row->P_title; ?><?php echo $row->P_name;?>&nbsp;<?php echo $row->P_lastname ; ?></td>
 						<td ><?php echo $row->S_date; ?></td>  
 						<td ><?php echo $row->S_status; ?></td>
-						<td><a target ="_blank" href="<?php echo base_url('frontend/serviceplatformreport/index/'.$row->S_id)?>")?><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	
+						<td><a target ="_blank" href="<?php echo base_url('frontend/serviceplatformreport/index/'.$row->S_id)?>"><button type="button" class="btn btn-info"><i class="fa fa-print"></i> ปริ้นท์</button></a></td> 	
 					</tr> 
 					<?php } }?>      
 				</table>     

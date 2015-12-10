@@ -8,17 +8,23 @@ class Catalog1 extends CI_Controller {
 		//$this->load->library('session');
 
 	}
-	public function index(){
+	public function index($id=0){
 		
 		$this->load->view('frontend/header');
 		$this->load->view('frontend/menu');
 		
+			$this->db->where("Cl_id",$id);
+			$rs = $this->db->get("catalog");
+			$row=$rs->row();
+			$data["Cl_id"]=$row->Cl_id;
+			$data["Cl_picture"]=$row->Cl_picture;
+			$data["Cl_property"]=$row->Cl_property;	
+			$data["Cl_price"]=$row->Cl_price;	
+			$data["Cl_contact"]=$row->Cl_contact;	
+			$data["Cl_researchers"]=$row->Cl_researchers;	
+			$data["Cl_research"]=$row->Cl_research;		
 
-		$this->db->select('catalog.Cl_picture,catalog.Cl_property,catalog.Cl_price,catalog.Cl_contact,catalog.Cl_researchers,catalog.Cl_research');
-		$this->db->order_by("Cl_id", "desc");
-		$catalog = $this->db->get('catalog');
-		
-		$data['catalog'] = $catalog->result();
+		$data['action']=site_url("frontend/catalog1/index/");	
 		$this->load->view('frontend/catalog1',$data);
 		$this->load->view('frontend/script');	
 		$this->load->view('frontend/footer');

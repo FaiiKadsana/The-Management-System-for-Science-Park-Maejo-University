@@ -5,13 +5,12 @@
 
 <div class="row">
 	<div class="col-sm-12">
-		<?php  foreach ($catalog as $rowcatalog) { ?>
 
 		<div class="row">
 			<div class="col-sm-2"></div>
 			<div class="col-sm-3">
 				<div class="col-sm-12 ">
-					<?php echo '<img src= "'.base_url().'asset/img/catalog/'.$rowcatalog->Cl_picture.'" style="height:200px;" style="width:40px;">'; ?>
+					<?php echo '<img src= "'.base_url().'asset/img/catalog/'.$Cl_picture.'" style="height:200px;" style="width:40px;">'; ?>
 				</div>
 			</div>
 			<div class="col-sm-2">
@@ -19,22 +18,17 @@
 			</div>
 			<div class="col-sm-5" > 
 				<br>
-				<h4>ชื่อผลงาน  : <?php echo $rowcatalog->Cl_research;?></h4><br>
-				<h4>ชื่อนักวิจัย : <?php echo $rowcatalog->Cl_researchers;?></h4><br>
-				<h4>ราคา : <?php echo $rowcatalog->Cl_price;?></h4><br>
-				<h5>รายละเอียด : <?php echo $rowcatalog->Cl_property;?></h5><br>
-				<h4>เบอร์โทร : <?php echo $rowcatalog->Cl_contact;?></h4><br>
-				<h4>วันที่ผลต : </h4>
-
-
-				
+				<h4>ชื่อผลงาน  : <?=$rowcatalog->Cl_research;?></h4><br>
+				<h4>ชื่อนักวิจัย : <?=$rowcatalog->Cl_researchers;?></h4><br>
+				<h4>ราคา : <?=$rowcatalog->Cl_price;?></h4><br>
+				<h5>รายละเอียด : <?=$rowcatalog->Cl_property;?></h5><br>
+				<h4>เบอร์โทร : <?=$rowcatalog->Cl_contact;?></h4><br>
+				<h4>วันที่ผลต : </h4>	
 				
 				<br><br>	
 			</div>
 
 		</div>
-
-		<?php  } ?>
 
 	</div>  
 
