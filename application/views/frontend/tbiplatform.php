@@ -2,7 +2,23 @@
  <div id="section_header">
  	<h2>TBI Platform</h2>
  </div>
+ <div class="row">
+ 	<div class="col-sm-offset-1 col-sm-11">
+ 		<table>
+ 			<tr>
+ 				<td>
+ 					<p><b style="color:red;"> การบ่มเพาะผู้ประกอบการเทคโนโลยี (TBI Platform) </b></p>
+ 					<p>	คือ การบริการในการสร้างผู้ประกอบการรายใหม่ที่ใช้วิทยาศาสตร์ เทคโนโลยีและนวัตกรรมเป็นรากฐานในการ สร้างความตระหนักและสร้างวัฒนธรรมการเป็นผู้ประกอบการ (Mobilization)</p>
+ 					<p>การสรรหาและคัดเลือกผู้ประกอบที่มีศักยภาพเข้าสู่กระบวนการบ่มเพาะจนสามารถจัดตั้งธุรกิจจัดตั้งใหม่ (Start-ups) ให้มีศักยภาพในการดำเนินธุรกิจให้ประสบความสำเร็จได้ (Graduate/Spin-off)</p>
+ 					
+ 				</td>
+ 			</tr>
 
+ 		</table>
+
+ 	</div>
+ </div>
+ <br><br><br><br>
  <div class="row">
  	<div class="col-sm-12">
  		<div class="col-sm-offset-4 col-sm-5">
