@@ -26,12 +26,12 @@
 							</div>
 							<div class="col-md-8" > 
 			
-								<h4><b><a target ="_blank" href="<?php echo base_url('frontend/viewnews/index/'.$rownew->Ne_id)?>"> <?php echo $rownew->Ne_sub;?></a></b></h4>
+								<h4><b><a href="<?php echo base_url('frontend/viewnews/index/'.$rownew->Ne_id)?>"> <?php echo $rownew->Ne_sub;?></a></b></h4>
 								
 								<br>
 								<div class="row"> 
 									<div class="col-md-12">
-										<i class="fa fa-calendar"></i> <?php echo $rownew->Ne_date_up;?>
+										<span><h5><i class="fa fa-calendar"></i> <?=date("d - m - Y",strtotime($rownew->Ne_date_up));?></h5> <i class="fa fa-eye"></i><?=$rownew->Ne_view?></span>
 									</div>
 								</div>
 								<br><br>	

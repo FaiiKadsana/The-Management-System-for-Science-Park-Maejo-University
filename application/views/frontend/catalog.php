@@ -13,12 +13,8 @@
 				<div class="team style2 box-shadow">
 					<div class="team-header">
 						<?php echo '<img src= "'.base_url().'asset/img/catalog/'.$rowcatalog->Cl_picture.'" style="height:200px;" style="width:40px;">'; ?>
-
 						<div class="team-date">
-							<p><font size='3'><b>ชื่อผลงาน  : 
-		
-								<a target ="_blank" href="<?php echo base_url('frontend/catalog1/index/'.$rowcatalog->Cl_id)?>"> <?php echo $rowcatalog->Cl_research;?></a></b></font></p>
-							
+							<p><font size='3'><b>ชื่อผลงาน  : <a href="<?php echo base_url('frontend/catalog1/index/'.$rowcatalog->Cl_id)?>"> <?php echo $rowcatalog->Cl_research;?></a></b></font></p>
 							<i class="piksell-color small-text">ชื่อนักวิจัย : <?php echo $rowcatalog->Cl_researchers;?></font></i><br>
 							<i class="piksell-color small-text">ราคา : <?php echo $rowcatalog->Cl_price;?></i><br>
 							<!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->

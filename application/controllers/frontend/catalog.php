@@ -46,7 +46,7 @@ class Catalog extends CI_Controller {
 		//*************************
 
 
-		$this->db->select('catalog.Cl_picture,catalog.Cl_property,catalog.Cl_price,catalog.Cl_contact,catalog.Cl_researchers,catalog.Cl_research');
+		$this->db->select('catalog.Cl_id,catalog.Cl_picture,catalog.Cl_property,catalog.Cl_price,catalog.Cl_contact,catalog.Cl_researchers,catalog.Cl_research');
 		$this->db->where("Cl_status",'ใช้ประโยชน์');
 		$this->db->order_by("Cl_id", "desc");
 

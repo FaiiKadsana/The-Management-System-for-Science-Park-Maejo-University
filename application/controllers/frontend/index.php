@@ -6,6 +6,8 @@ class Index extends CI_Controller {
 		parent::__construct();
 		$this->load->library('pagination');
 		$this->load->model("frontend/calendar_model");
+		$this->load->library('history');
+		$this->history->exclude();
 		
 		//$this->load->library('session');
 
@@ -48,7 +50,7 @@ class Index extends CI_Controller {
 
 		//*************************
 
-		$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_date_up,news.Ne_picture,news.Ne_text');
+		$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_date_up,news.Ne_picture,news.Ne_text,news.Ne_view');
 		
 		$this->db->order_by("Ne_id", "desc");
 
@@ -61,6 +63,7 @@ class Index extends CI_Controller {
 		//print_r($data['news']);
 
 		$data['page']=$this->pagination->create_links();
+	
 
 		$this->load->view('frontend/index',$data);
 		$this->load->view('frontend/script');	

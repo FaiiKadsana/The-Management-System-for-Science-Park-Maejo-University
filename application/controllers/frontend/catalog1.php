@@ -22,7 +22,8 @@ class Catalog1 extends CI_Controller {
 			$data["Cl_price"]=$row->Cl_price;	
 			$data["Cl_contact"]=$row->Cl_contact;	
 			$data["Cl_researchers"]=$row->Cl_researchers;	
-			$data["Cl_research"]=$row->Cl_research;		
+			$data["Cl_research"]=$row->Cl_research;
+			$data["Cl_date"]=$row->Cl_date;		
 
 		$data['action']=site_url("frontend/catalog1/index/");	
 		$this->load->view('frontend/catalog1',$data);
