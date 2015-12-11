@@ -5,7 +5,7 @@
 
  <div class="row">
  	<div class="col-sm-12">
- 	<div class="col-sm-offset-4 col-sm-5">
+ 		<div class="col-sm-offset-4 col-sm-5">
  			<center>
  				<form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
  					<table >
@@ -20,13 +20,15 @@
 
  		</div>
  		<div class="col-sm-3">
- 			<table>
- 				<tr>
- 					<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="keyword"></td>
- 					<td width="15%"><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
- 				</tr>
- 			</table>
- 		</div>
+ 			<form enctype="multipart/form-data" id="" method="post" class="form-horizontal" action="<?php $action; ?>">
+ 				<table>
+ 					<tr>
+ 						<td width="15%"><input type="text" class="form-control" placeholder="กรอกเลขแบบฟอร์ม" name="keyword"></td>
+ 						<td width="15%"><button class="btn btn-success" type="submit" ><i class="fa fa-search"></i> ค้นหา</button></td>
+ 					</tr>
+ 				</table>
+ 			</form>
+ 		</div> 
  	</div>
  </div>
  <!-- End  row-->
