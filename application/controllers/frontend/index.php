@@ -63,7 +63,7 @@ class Index extends CI_Controller {
 		//print_r($data['news']);
 
 		$data['page']=$this->pagination->create_links();
-	
+
 
 		$this->load->view('frontend/index',$data);
 		$this->load->view('frontend/script');	
@@ -74,18 +74,55 @@ class Index extends CI_Controller {
 
 	function display($year = null, $month = null){
 		
-		if (!$year) {
+		/*if (!$year) {
 			$year = date('Y');
 		}
 		else if (!$month) {
 			$month = date('m');
 		}
-	
+
 		//$this->load->model('Calendar_model');
 		if ($day = $this->input->post('day')) {
 			$this->calendar_model->add_calendar_data('$year-$month-$day',$this->input->post('Cd_date')
-			);
+				);
+		}*/
+
+
+		if (isset($_GET['day'])){
+			$day = $_GET['day'];
+		} else {
+			$day = date("j");
 		}
+		if(isset($_GET['month'])){
+			$month = $_GET['month'];
+		} else {
+			$month = date("n");
+		}
+		if(isset($_GET['year'])){
+			$year = $_GET['year'];
+		}else{
+			$year = date("Y");
+		}
+		$currentTimeStamp = strtotime( "$day-$month-$year");
+		$monthName = date("F", $currentTimeStamp);
+		$numDays = date("t", $currentTimeStamp);
+		$counter = 0;
+		
+		if(isset($_GET['add'])){
+			$title =$_POST['txttitle'];
+			$detail =$_POST['txtdetail'];
+			$eventTime =$_POST['eventTime'];
+			$PatientID =$_POST['PatientID'];
+			$eventdate = $month."/".$day."/".$year;
+			$sqlinsert = "INSERT into eventcalendar(Title,Detail,eventDate,eventTime,PatientID,dateAdded) values ('".$title."','".$detail."','".$eventdate."','".$eventTime."','".$PatientID."',now())";
+			$resultinginsert = mysql_query($sqlinsert);
+			if($resultinginsert ){
+				echo "Event was successfully Added...";
+			}else{
+				echo "Event Failed to be Added....";
+			}
+		}
+		
 
 		$data['calendar'] = $this->calendar_model->generate($year, $month);
 		$this->load->view('frontend/index' , $data);
