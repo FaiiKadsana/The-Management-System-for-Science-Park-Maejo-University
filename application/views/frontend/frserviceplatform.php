@@ -165,12 +165,12 @@
  											</tr>
  											<tr>
  												<td align="center"><br><br>
- 													ลงชื่อ <input type="text" size="25" name="S_provider" ><b style="color:red;"> *</b><br>
+ 													ลงชื่อ <!--<input type="text" size="25" name="S_provider" ><b style="color:red;"> *</b>--><br>
  													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<input type="text" size="25" name="S_provider1" >)<br>
  													<b>ผู้ขอรับบริการ</b>
  												</td>
  												<td align="center" colspan="2">
- 													<input type="radio" name="S_comment" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูลz
+ 													<input type="radio" name="S_comment" value="ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าเห็นด้วย ที่จะให้บันทึกข้อมูล
  													<input type="radio" name="S_comment" value="ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล"> ข้าพเจ้าไม่เห็นด้วย ที่จะให้บันทึกข้อมูล
  												</td>
  											</tr>
@@ -314,22 +314,13 @@
  				</center>
  			</div>
  		</div>
- 		<br><br><br>
- 		<div class="row">
- 			<div class="col-sm-12">
- 				<center>
- 					<table width="70%">
- 						<tr>
- 							<td width="30%"></td>
- 							<td align="right"><b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="S_id"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></td>
- 						</tr>
- 					</table>
- 				</center>
- 			</div>
- 		</div>
- 		<br>
+ 		<br><br>
+ 		
  		<form method="post" action="frserviceplatform.php" >
  			<center>
+ 				<div class="form-group">
+ 				<b style="color:red;">*หมายเหตุ โปรดจำหมายเลขแบบฟอร์ม</b>&nbsp;&nbsp;เลขที่แบบฟอร์ม: <label type="" size="20" name="S_id"><?php echo  $random; ?><input type="hidden" name="random" value="<?php echo  $random; ?>"></b>
+ 				</div><br>
  				<?php
  				require_once('recaptchalib.php');
  				$publickey = "6Lc_hf0SAAAAAEcBdl4ILVSDYc4dbe5wfxlzyY13"; 

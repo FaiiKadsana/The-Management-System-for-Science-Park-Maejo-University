@@ -7,8 +7,8 @@
  		<table>
  			<tr>
  				<td>
- 					<p><b style="color:red;"> การบ่มเพาะผู้ประกอบการเทคโนโลยี (TBI Platform) </b></p>
- 					<p>	คือ การบริการในการสร้างผู้ประกอบการรายใหม่ที่ใช้วิทยาศาสตร์ เทคโนโลยีและนวัตกรรมเป็นรากฐานในการ สร้างความตระหนักและสร้างวัฒนธรรมการเป็นผู้ประกอบการ (Mobilization)</p>
+ 					<p><b style="color:red;"> การบ่มเพาะผู้ประกอบการเทคโนโลยี (TBI Platform) </b></p><br>
+ 					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คือ การบริการในการสร้างผู้ประกอบการรายใหม่ที่ใช้วิทยาศาสตร์ เทคโนโลยีและนวัตกรรมเป็นรากฐานในการ สร้างความตระหนักและสร้างวัฒนธรรมการเป็นผู้ประกอบการ (Mobilization)</p>
  					<p>การสรรหาและคัดเลือกผู้ประกอบที่มีศักยภาพเข้าสู่กระบวนการบ่มเพาะจนสามารถจัดตั้งธุรกิจจัดตั้งใหม่ (Start-ups) ให้มีศักยภาพในการดำเนินธุรกิจให้ประสบความสำเร็จได้ (Graduate/Spin-off)</p>
  					
  				</td>
@@ -18,7 +18,7 @@
 
  	</div>
  </div>
- <br><br><br><br>
+ <br><br><br>
  <div class="row">
  	<div class="col-sm-12">
  		<div class="col-sm-offset-4 col-sm-5">
@@ -27,7 +27,7 @@
  					<table >
  						<tr>
  							<td width="15%"><a href="<?php echo base_url("frontend/frtbiplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
- 							<td><a target ="_blank" href="<?php echo base_url ("asset/form download/บ่มเพาะ TBI Form.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
+ 							<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target ="_blank" href="<?php echo base_url ("asset/form download/บ่มเพาะ TBI Form.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
  						</tr>
  					</table>
  				</form>
@@ -59,8 +59,8 @@
  				<table class="table table-striped">
  					<?php if (empty($keyword)) { 
 
- 						echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
- 						echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
+ 						//echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+ 						//echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
 
  						?> 
  						<?php }else{ ?>

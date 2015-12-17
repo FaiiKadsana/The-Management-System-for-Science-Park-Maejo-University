@@ -43,12 +43,13 @@ $(function() {
 	<table>
 		<tr>
 			<td>
-				<p><b style="color:red;">การพัฒนาบริการอุทยานวิทยาศาสตร์ (Service Platform)</b></p>
-				<p>คือ การให้บริการและการพัฒนาศักยภาพอุทยานวิทยาศาสตร์เพื่อตอบสนองความต้องการของผู้ประกอบการวิสาหกิจขนาดกลางและขนาดย่อม โดยผ่านกิจกรรม 5 กิจกรรม ได้แก่</p>
-			<p>1. การให้บริการด้านการบริหารจัดการทรัพย์สินทางปัญญาแก่ภาคอุตสาหกรรม (IP for Industry) โดยเจ้าหน้าที่ทรัพย์สินทางปัญญา</p>
-			<p>2. การให้บริการออกแบบนวัตกรรมโดยเจ้าหน้าที่ออกแบบนวัตกรรมหรือศูนย์ออกแบบนวัตกรรม (Innovation Design Center)</p>
-			<p>3. การให้บริการและช่วยเหลือภาคอุตสาหกรรมอย่างครบวงจรโดยสำนักงานความร่วมมืออุตสาหกรรม (Office of Industrial Liaison)</p>
-			<p>4. การพัฒนาศักยภาพของห้องปฏิบัติการเพื่อให้บริการแก่ภาคอุตสาหกรรม (Strengthen service laboratory)</p>
+				<p><b style="color:red;">การพัฒนาบริการอุทยานวิทยาศาสตร์ (Service Platform)</b></p><br>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;คือ การให้บริการและการพัฒนาศักยภาพอุทยานวิทยาศาสตร์เพื่อตอบสนองความต้องการของผู้ประกอบการวิสาหกิจขนาดกลางและขนาดย่อม</p>
+				<p>โดยผ่านกิจกรรม 5 กิจกรรม ได้แก่</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. การให้บริการด้านการบริหารจัดการทรัพย์สินทางปัญญาแก่ภาคอุตสาหกรรม (IP for Industry) โดยเจ้าหน้าที่ทรัพย์สินทางปัญญา</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. การให้บริการออกแบบนวัตกรรมโดยเจ้าหน้าที่ออกแบบนวัตกรรมหรือศูนย์ออกแบบนวัตกรรม (Innovation Design Center)</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. การให้บริการและช่วยเหลือภาคอุตสาหกรรมอย่างครบวงจรโดยสำนักงานความร่วมมืออุตสาหกรรม (Office of Industrial Liaison)</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. การพัฒนาศักยภาพของห้องปฏิบัติการเพื่อให้บริการแก่ภาคอุตสาหกรรม (Strengthen service laboratory)</p>
 			</td>
 		</tr>
 
@@ -56,7 +57,7 @@ $(function() {
 		
 	</div>
 </div>
-<br><br><br><br>
+<br><br>
 
 <div class="row">
 	<div class="col-sm-12">
@@ -69,7 +70,7 @@ $(function() {
 		</center>
 	</div>
 </div>
-<br>
+<br><br><br>
 
 <div class="row">
 	<div class="col-sm-12">
@@ -81,7 +82,7 @@ $(function() {
 
 							
 							<td width="15%"><a href="<?php echo base_url("frontend/frserviceplatform")?>"><button class="btn btn-success" type="button" >กรอกแบบฟอร์ม</button></a></td>
-							<td><a target ="_blank" href="<?php echo base_url ("asset/form download/img071.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
+							<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target ="_blank" href="<?php echo base_url ("asset/form download/img071.pdf")?>"><button class="btn btn-success" type="button" >ดาวน์โหลดแบบฟอร์ม</button></a></td>
 						</tr>
 					</table>
 				</form>
@@ -112,8 +113,8 @@ $(function() {
 
 					<?php if (empty($keyword)) { 
 
-						echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
-						echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
+						//echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />";
+						//echo "<script>alert('กรุณากรอกเลขที่แบบฟอร์มในช่องค้นหาคะ');</script>";
 
 						?>    
 
