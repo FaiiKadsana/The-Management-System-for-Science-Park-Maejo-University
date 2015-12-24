@@ -2,15 +2,16 @@
 <div id="section_header">
   <h2>ติดต่อ</h2>
 </div>
+<div class="container">
 
-<div class="row">
-	<div class="col-sm-12">
-    <!-- start 6 -->
+  <!-- start row -->
+<div class="row"> 
+
 
     <div class="col-sm-6">
 
      <div class="row">
-       <div class="col-md-offset-1 col-sm-11 padd">
+       <div class="col-lg-offset-1 col-lg-11 col-md-11 col-sm-11 padd">
          <h4 ><span>ติดต่อ</span></h4>
          <p>	สถาบันบ่มเพาะวิสาหกิจ<br>
            ชั้น 4 อาคารอำนวยยศสุข มหาวิทยาลัยแม่โจ้	</p>
@@ -31,8 +32,9 @@
 
 
 
+
       <div class="row">
-       <div class="col-md-offset-1 col-sm-11 paddd">
+       <div class="col-md-offset-1 col-lg-11 col-md-11 col-sm-11 paddd">
          <h4 ><i class="fa fa-map-marker"></i><span>แผนที่</span></h4>
          <div id="maps"><iframe scrolling="no" marginheight="0" marginwidth="0" style="zoom:-50px" src="https://www.google.com/maps/d/embed?mid=zzvElLEMuTyc.kplDQhnqky-E" width="550" height="360"></iframe></div>
 
@@ -42,7 +44,7 @@
 
 
      <div class="row">
-      <div class="col-md-offset-1 col-sm-8 padd">
+      <div class="col-md-offset-1 col-lg-8 col-md-8 col-sm-8 padd">
         <h4><span>สอบถามเพิ่มเติม</span></h4>
 
         <form method="post" action="<?php echo $action; ?>">
@@ -88,20 +90,18 @@
 
   </div>
 
-  <!-- end 6 -->
-
-  <!-- start 6 -->
+ 
 
 <div class="col-sm-6">
    <div class="row">
-     <div class="col-md-offset-1 col-sm-11 padd">
+     <div class="col-md-offset-1 col-lg-11 col-md-11 col-sm-11 padd">
       <h4 ><span>บุคลากร</span></h4>
     </div>
   </div>
 <div class="row">
-  <div class="col-md-offset-1  col-sm-11">
+  <div class="col-md-offset-1  col-lg-11 col-md-11 col-sm-11">
  <?php  foreach ($officer as $rowofficer) { ?>
-    <div class="col-sm-6 paddd">
+    <div class="col-lg-6 col-md-6 col-sm-6 paddd">
 
       <div class="team style2 box-shadow">
         <div class="team-header">
@@ -119,12 +119,14 @@
       </div>
     </div>
   </div>
-
+ <!-- Ent row -->
 <?php } ?>
+<!-- start row -->
+
 <div class="row">
       <center>
         <div class="paginationnext" >
-          <div class="col-md-12" >
+          <div class="col-lg-12 col-md-12 col-sm-12" >
             <ul class="paginationnext" >
                 <?php echo $page; ?>  
             <ul>
@@ -132,6 +134,7 @@
         </div>  
       </center>
 </div>
+ <!-- Ent row -->
 </div>
 
 </div>
@@ -139,4 +142,6 @@
 <!-- end 6 -->
 
 </div>
+</div>
+
 </div>
