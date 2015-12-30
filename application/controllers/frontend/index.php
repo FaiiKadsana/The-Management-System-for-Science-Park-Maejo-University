@@ -50,8 +50,7 @@ class Index extends CI_Controller {
 
 		//*************************
 
-		$this->db->select('news.Ne_id,n
-			ews.Ne_sub,news.Ne_date_up,news.Ne_picture,news.Ne_text,news.Ne_view');
+		$this->db->select('news.Ne_id,news.Ne_sub,news.Ne_date_up,news.Ne_picture,news.Ne_text,news.Ne_view');
 		
 		$this->db->order_by("Ne_id", "desc");
 
