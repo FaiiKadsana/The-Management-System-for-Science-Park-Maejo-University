@@ -32,38 +32,56 @@
  		<!-- Ent row -->
  		<!-- start row -->
  		<div class="row">
- 			<div class="col-lg-2 col-md-2 col-sm-2">
+ 			<div class="col-lg-1 col-md-1 col-sm-1">
  				<select name="P_title"> 
  					<option value="นาย">นาย</option>
  					<option value="นาง">นาง</option>
  					<option value="นางสาว">นางสาว</option>
- 				</select><b style="color:red;"> *</b>			
+ 				</select>			
  			</div>
- 			<div class="col-lg-5 col-md-5 col-sm-5">
- 				ชื่อ: <input type="text" size="30" name="P_name" ><b style="color:red;"> *</b>		
+ 			<div class="col-lg-2  col-md-2  col-sm-2 ">
+ 				ชื่อ:
  			</div>
- 			<div class="col-lg-5 col-md-5 col-sm-5">
- 				นามสกุล: <input type="text" size="30" name="P_lastname" ><b style="color:red;"> *</b>	
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 				<input type="text" size="20" name="P_name" ><b style="color:red;"> *</b>		
  			</div>
- 		</div>
- 		<!-- Ent row -->
- 		<!-- start row -->
- 		<div class="row">
- 			<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-5 col-md-5 col-sm-5">
- 				เลขที่บัตรประชาชน: <input type="text" size="30" name="P_id_card" ><b style="color:red;"> *</b>
+ 			<div class="col-lg-2 col-md-2 col-sm-2">
+ 				นามสกุล:
  			</div>
- 			<div class="col-lg-5 col-md-5 col-sm-5">
- 				ตำแหน่ง: <input type="text" size="30" name="P_position" ><b style="color:red;"> *</b>
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 				<input type="text" size="20" name="P_lastname" ><b style="color:red;"> *</b>	
  			</div>
  		</div>
  		<!-- Ent row -->
  		<!-- start row -->
  		<div class="row">
- 			<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-5 col-md-5 col-sm-5">
- 				เบอร์โทรติดต่อ: <input type="tel" size="30" name="P_phone" ><b style="color:red;"> *</b>
+ 			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1  col-lg-2 col-md-2 col-sm-2">
+ 				เลขที่บัตรประชาชน:
  			</div>
- 			<div class="col-lg-5 col-md-5 col-sm-5">
- 				E-mail: <input type="email" size="40" name="P_mail" ><b style="color:red;"> *</b>
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 				<input type="text" size="20" name="P_id_card" ><b style="color:red;"> *</b>
+ 			</div>
+ 			<div class="col-lg-2 col-md-2 col-sm-2">
+ 				ตำแหน่ง:
+ 			</div>
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 				 <input type="text" size="20" name="P_position" ><b style="color:red;"> *</b>
+ 			</div>
+ 		</div>
+ 		<!-- Ent row -->
+ 		<!-- start row -->
+ 		<div class="row">
+ 		<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1  col-lg-2 col-md-2 col-sm-2">
+ 				เบอร์โทรติดต่อ:
+ 			</div>
+ 			<div class=" col-lg-3 col-md-3 col-sm-3">
+ 				 <input type="tel" size="20" name="P_phone" ><b style="color:red;"> *</b>
+ 			</div>
+ 			<div class="col-lg-2 col-md-2 col-sm-2">
+ 				E-mail: 
+ 			</div>
+ 			<div class="col-lg-4 col-md-4 col-sm-4">
+ 				<input type="email" size="20" name="P_mail" ><b style="color:red;"> *</b>
  			</div>
  		</div>
  		<!-- Ent row -->
@@ -76,10 +94,13 @@
  		<!-- Ent row -->
  		<!-- start row -->
  		<div class="row">
- 			<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-5 col-md-5 col-sm-5">
- 				ชื่อกิจการ: <input type="text" size="30" name="C_name"><b style="color:red;"> *</b>
+ 		<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1  col-lg-2 col-md-2 col-sm-2">
+ 				ชื่อกิจการ:
  			</div>
- 			<div class="col-lg-5 col-md-5 col-sm-5">
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 				 <input type="text" size="20" name="C_name"><b style="color:red;"> *</b>
+ 			</div>
+ 			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-4 col-md-4 col-sm-4">
  				<textarea name="C_address" cols="50" rows="3" placeholder="ที่อยู่"></textarea>
  			</div>
  		</div>

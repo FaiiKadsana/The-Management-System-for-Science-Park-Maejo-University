@@ -43,11 +43,17 @@
  		<!-- Ent row -->
  		<!-- start row -->
  		<div class="row">
- 			<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-5 col-md-5 col-sm-5">
- 				วันที่:<input type="date" name="Tbi_date"  ><b style="color:red;"> *</b>
+ 			<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-2 col-md-2 col-sm-2">
+ 				วันที่:
  			</div>
- 			<div class="col-lg-5 col-md-5 col-sm-5">
- 				เลขที่: <input type="text" name="Tbi_id4" size="20" ><b style="color:red;"> *</b>
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 		<input type="date" name="Tbi_date"  ><b style="color:red;"> *</b>
+ 		</div>
+ 		<div class="col-lg-2 col-md-2 col-sm-2">
+ 			เลขที่:
+ 		</div>
+ 			<div class="col-lg-3 col-md-3 col-sm-3">
+ 				 <input type="text" name="Tbi_id4" size="20" ><b style="color:red;"> *</b>
  			</div>
  		</div>
  		<!-- Ent row -->
@@ -60,35 +66,59 @@
  		<!-- Ent row -->
  		<!-- start row -->
  		<div class="row">
- 			<div class="col-lg-4 col-md-4 col-sm-4">
- 				&nbsp;&nbsp;&nbsp;&nbsp;1.1 <select name="Tbi_title"> 
+ 			<div class="col-lg-2 col-md-2 col-sm-2">
+ 				1.1 <select name="Tbi_title"> 
  				<option value="นาย">นาย</option>
  				<option value="นาง">นาง</option>
  				<option value="นางสาว">นางสาว</option>
  			</select> <b style="color:red;"> *</b>
  		</div>
- 		<div class="col-lg-4 col-md-4 col-sm-4">
- 			ชื่อ: <input type="text" size="30" name="Tbi_name1" ><b style="color:red;"> *</b>
+ 		<div class="col-lg-2 col-md-2 col-sm-2">
+ 			ชื่อ:
  		</div>
- 		<div class="col-lg-4 col-md-4 col-sm-4">
- 			นามสกุล: <input type="text" size="30" name="Tbi_lastname" ><b style="color:red;"> *</b>
+ 		<div class="col-lg-3 col-md-3 col-sm-3">
+ 			<input type="text" size="20" name="Tbi_name1" ><b style="color:red;"> *</b>
  		</div>
- 	</div>
- 	<!-- Ent row -->
- 	<!-- start row -->
- 	<div class="row">
- 		<div class="col-lg-12 col-md-12 col-sm-12">
- 			1.2
- 			เลขประจำตัวประชาชน: <input type="text" size="50" name="Tbi_code" ><b style="color:red;"> *</b>
+ 		<div class="col-lg-2 col-md-2 col-sm-2">
+ 			นามสกุล:
+ 		</div>
+ 		<div class="col-lg-3 col-md-3 col-sm-3">
+ 			<input type="text" size="20" name="Tbi_lastname" ><b style="color:red;"> *</b>
  		</div>
  	</div>
  	<!-- Ent row -->
  	<!-- start row -->
  	<div class="row">
- 		<div class="col-lg-12 col-md-12 col-sm-12">
+ 		<div class="col-lg-1 col-md-1 col-sm-1">
+ 			1.2	
+ 		</div>
+ 		<div class="col-lg-offset-1 col-lg-2 col-md-2 col-sm-2">
+ 			เลขประจำตัวประชาชน:
+ 		</div>
+ 		<div class="col-lg-3 col-md-3 col-sm-3">
+ 			
+ 			<input type="text" size="20" name="Tbi_code" ><b style="color:red;"> *</b>
+ 		</div>
+ 	</div>
+ 	<!-- Ent row -->
+ 	<!-- start row -->
+ 	<div class="row">
+ 		<div class="col-lg-1 col-md-1 col-sm-1">
  			1.3
- 			เกิดวันที่: <input type="date"  name="Tbi_birthday" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ปัจจุบันอายุ: <input type="text" size="10" name="Tbi_age" > ปี
+ 		</div>
+ 		<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-2 col-md-2 col-sm-2">
+ 			เกิดวันที่: 
+ 		</div>
+ 		<div class="col-lg-3 col-md-3 col-sm-3">
+ 			
+ 			<input type="date"  name="Tbi_birthday" >
+ 		</div>
+ 		<div class="col-lg-2 col-md-2 col-sm-2">
+ 			ปัจจุบันอายุ:
+ 		</div>
+ 		<div class="col-lg-3 col-md-3 col-sm-3">
+ 			
+ 			<input type="text" size="10" name="Tbi_age" > ปี
  		</div>
  	</div>
  	<!-- Ent row -->
@@ -96,8 +126,7 @@
  	<div class="row">
  		<div class="col-lg-12 col-md-12 col-sm-12">
  			1.4
- 			ชื้อชาติ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="Tbi_ethnicity" value="ไทย"> ไทย  
+ 			ชื้อชาติ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" name="Tbi_ethnicity" value="ไทย"> ไทย  
  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="Tbi_ethnicity" value="อื่นๆ"> อื่นๆ
  			&nbsp;&nbsp;<input type="text" size="30" name="Tbi_ethnicity_etc" placeholder="โปรดระบุ" > 
