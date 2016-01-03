@@ -731,3 +731,41 @@ address {
 .fr{
 	color: red;
 }
+/*-- newlist page --*/
+.newlist{
+  background-color: #eee;
+  padding: 10px;
+  border-left: 5px solid #f78e21;
+  border-right: 5px solid #f78e21;
+  border-bottom: 1px dashed #f78e21;
+}
+.newlist h5{
+font-size: 20px;
+
+}
+.user-news{
+color: #f78e21;
+}
+.newlist a:hover{
+border-bottom: 2px dashed #f78e21;
+}
+
+.newlist span ,.newlist i{
+color: #f78e21;
+font-size: 12px;
+
+}
+.newlistimg img{
+
+width: 100%;
+height: 160px;
+padding: 20px;
+}
+.newlistimg{
+  overflow: hidden;
+}
+.new{
+padding: 100px;
+height: 50px;
+}
+/*-- newlist page --*/

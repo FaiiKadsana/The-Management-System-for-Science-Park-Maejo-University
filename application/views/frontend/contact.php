@@ -8,7 +8,7 @@
 <div class="row"> 
 
 
-    <div class="col-sm-6">
+    <div class="col-sm-5">
 
      <div class="row">
        <div class="col-lg-offset-1 col-lg-11 col-md-11 col-sm-11 padd">
@@ -35,8 +35,8 @@
 
       <div class="row">
        <div class="col-md-offset-1 col-lg-11 col-md-11 col-sm-11 paddd">
-         <h4 ><i class="fa fa-map-marker"></i><span>แผนที่</span></h4>
-         <div id="maps"><iframe scrolling="no" marginheight="0" marginwidth="0" style="zoom:-50px" src="https://www.google.com/maps/d/embed?mid=zzvElLEMuTyc.kplDQhnqky-E" width="550" height="360"></iframe></div>
+         <h4 ><i class="fa fa-map-marker"></i> <span>แผนที่</span></h4>
+         <div id="maps"><iframe scrolling="no" marginheight="0" marginwidth="0" style="zoom:-50px" src="https://www.google.com/maps/d/embed?mid=zzvElLEMuTyc.kplDQhnqky-E" width="450" height="360"></iframe></div>
 
        </div>
 
@@ -44,7 +44,7 @@
 
 
      <div class="row">
-      <div class="col-md-offset-1 col-lg-8 col-md-8 col-sm-8 padd">
+      <div class="col-md-offset-1 col-lg-10 col-md-10 col-sm-10 padd">
         <h4><span>สอบถามเพิ่มเติม</span></h4>
 
         <form method="post" action="<?php echo $action; ?>">
@@ -92,7 +92,7 @@
 
  
 
-<div class="col-sm-6">
+<div class="col-sm-7">
    <div class="row">
      <div class="col-md-offset-1 col-lg-11 col-md-11 col-sm-11 padd">
       <h4 ><span>บุคลากร</span></h4>
@@ -107,13 +107,13 @@
         <div class="team-header">
            <?php echo '<img src= "'.base_url().'asset/img/person/'.$rowofficer->O_picture.'" style="height:200px;" style="width:40px;">'; ?>
        </div>
-       <div class="team-date">	
+       <div class="team-date" align='left' style='font-size: 14px;'>	
         <h6><font size='3'><?php echo $rowofficer->O_title;?><?php echo $rowofficer->O_name;?>&nbsp;<?php echo $rowofficer->O_lastname;?></font></h6>
         <i class="piksell-color small-text"><?php echo $rowofficer->O_position;?></i>
         <!--<p>Lorem ipsum ctetur dolor sit amet, conse ctetur tempor elit.</p>-->
         <br>
         <div align='left' style='font-size: 14px;'>
-          เบอร์โทร :<?php echo $rowofficer->O_phone;?> </br>
+          เบอร์โทร : <?php echo $rowofficer->O_phone;?> </br>
 
         </div>
       </div>
